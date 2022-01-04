@@ -79,11 +79,11 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Sites',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Homepage',
+                to: 'https://hardwario.com',
               },
             ],
           },
