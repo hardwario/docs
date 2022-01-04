@@ -6,15 +6,15 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  url: 'https://your-docusaurus-test-site.com',
+  title: 'HARDWARIO Documentation',
+  tagline: 'Technical Resources for Products and Services',
+  url: 'https://docs.hardwario.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'hardwario',
+  projectName: 'docs',
 
   presets: [
     [
@@ -43,9 +43,9 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'My Site',
+        title: 'HARDWARIO',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'HARDWARIO Logo',
           src: 'img/logo.svg',
         },
         items: [
@@ -55,7 +55,7 @@ const config = {
             position: 'left',
             label: 'Tutorial',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          { to: '/blog', label: 'Blog', position: 'left' },
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
@@ -79,16 +79,20 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Forum',
+                href: 'https://forum.hardwario.com',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'LinkedIn',
+                href: 'https://www.linkedin.com/company/hardwario',
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: 'Twitter (EN)',
+                href: 'https://twitter.com/hardwario_en',
+              },
+              {
+                label: 'Twitter (CZ)',
+                href: 'https://twitter.com/hardwario_cz',
               },
             ],
           },
