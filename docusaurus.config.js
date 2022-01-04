@@ -22,6 +22,8 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          routeBasePath: 'chester',
+          path: 'chester',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
@@ -33,25 +35,41 @@ const config = {
     ],
   ],
 
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      ({
+        id: 'tower',
+        path: 'tower',
+        routeBasePath: 'tower',
+        sidebarPath: require.resolve('./sidebars.js'),
+      }),
+    ],
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'HARDWARIO',
         logo: {
           alt: 'HARDWARIO Logo',
           src: 'img/logo.svg',
         },
         items: [
           {
-            type: 'doc',
-            docId: 'intro',
+            to: '/chester/',
+            label: 'CHESTER',
             position: 'left',
-            label: 'Tutorial',
+            activeBaseRegex: `/chester/`,
           },
-          { to: '/blog', label: 'Blog', position: 'left' },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            to: '/tower/',
+            label: 'TOWER',
+            position: 'left',
+            activeBaseRegex: `/tower/`,
+          },
+          {
+            href: 'https://github.com/hardwario/docs',
             label: 'GitHub',
             position: 'right',
           },
@@ -95,12 +113,12 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/hardwario',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} HARDWARIO s.r.o. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
