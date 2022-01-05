@@ -24,7 +24,7 @@ const config = {
         docs: {
           routeBasePath: 'chester',
           path: 'chester',
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: require.resolve('./sidebars-chester.js'),
           // Please change this to your repo.
           editUrl: 'https://github.com/hardwario/docs/edit/main',
         },
@@ -42,7 +42,7 @@ const config = {
         id: 'tower',
         path: 'tower',
         routeBasePath: 'tower',
-        sidebarPath: require.resolve('./sidebars.js'),
+        sidebarPath: require.resolve('./sidebars-tower.js'),
       }),
     ],
   ],

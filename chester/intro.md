@@ -1,6 +1,7 @@
 ---
 slug: /
 title: Introduction
+sidebar_position: 1
 ---
 
-# CHESTER Introduction
+# Introduction

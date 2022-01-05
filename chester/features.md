@@ -1,6 +1,7 @@
 ---
 slug: features
 title: Features
+sidebar_position: 2
 ---
 
-# CHESTER Features
+# Features
