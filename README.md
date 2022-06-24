@@ -1,7 +1,6 @@
 # docs
----
 # HARDWARIO Documentation
-# Technical Resources for Products and Services
+# Technical Resources for Products and Services
 
 This website is built using [Docusaurus 2](https://docusaurus.io), a modern static website generator.
 
@@ -43,7 +42,7 @@ $ npm run build
 
 > This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
-## License
+## License
 
 This project is licensed under a Creative Commons Attribution 4.0 International License - see the [LICENSE](LICENSE) file for details.
 
