@@ -13,8 +13,11 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'hardwario',
-  projectName: 'docs',
+
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en'],
+  },
 
   presets: [
     [
@@ -114,6 +117,10 @@ const config = {
               {
                 label: 'GitHub',
                 href: 'https://github.com/hardwario',
+              },
+              {
+                label: 'GitLab',
+                href: 'https://gitlab.hardwario.com',
               },
             ],
           },
