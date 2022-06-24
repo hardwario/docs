@@ -125,7 +125,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} HARDWARIO s.r.o. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} HARDWARIO a.s. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
