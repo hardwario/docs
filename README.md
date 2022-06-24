@@ -11,25 +11,41 @@ This website is built using [Docusaurus 2](https://docusaurus.io), a modern stat
 
 ## Installation
 
+Clone the repository:
+
+```
+$ git clone git@github.com:hardwario/docs.git
+```
+
+Install the required packages:
+
 ```
 $ npm install
 ```
 
 ## Development
 
+Start the development server:
+
 ```
 $ npm start
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+> This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
 ## Build
+
+Start the production build:
 
 ```
 $ npm run build
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+> This command generates static content into the `build` directory and can be served using any static contents hosting service.
+
+## License
+
+This project is licensed under a Creative Commons Attribution 4.0 International License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
