@@ -42,10 +42,28 @@ const config = {
     [
       '@docusaurus/plugin-content-docs',
       ({
+        id: 'ember',
+        path: 'ember',
+        routeBasePath: 'ember',
+        sidebarPath: require.resolve('./sidebars-ember.js'),
+      }),
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      ({
         id: 'tower',
         path: 'tower',
         routeBasePath: 'tower',
         sidebarPath: require.resolve('./sidebars-tower.js'),
+      }),
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      ({
+        id: 'cloud',
+        path: 'cloud',
+        routeBasePath: 'cloud',
+        sidebarPath: require.resolve('./sidebars-cloud.js'),
       }),
     ],
   ],
@@ -66,10 +84,22 @@ const config = {
             activeBaseRegex: `/chester/`,
           },
           {
+            to: '/ember/',
+            label: 'EMBER',
+            position: 'left',
+            activeBaseRegex: `/ember/`,
+          },
+          {
             to: '/tower/',
             label: 'TOWER',
             position: 'left',
             activeBaseRegex: `/tower/`,
+          },
+          {
+            to: '/cloud/',
+            label: 'CLOUD',
+            position: 'left',
+            activeBaseRegex: `/cloud/`,
           },
           {
             href: 'https://github.com/hardwario/docs',
