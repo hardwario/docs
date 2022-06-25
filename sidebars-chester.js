@@ -19,6 +19,17 @@ const sidebars = {
     'flashing',
     'bluetooth',
     'extensions',
+    {
+      type: 'category',
+      label: 'Firmware SDK',
+      link: {
+        type: 'generated-index',
+      },
+      collapsed: false,
+      items: [
+        'sdk-installation',
+      ],
+    },
   ],
 };
 
