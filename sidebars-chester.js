@@ -18,7 +18,24 @@ const sidebars = {
     },
     'flashing',
     'bluetooth',
-    'extensions',
+    {
+      type: 'category',
+      label: 'Extensions',
+      link: {
+        type: 'generated-index',
+      },
+      collapsed: false,
+      items: [
+        'extensions/chester-x0',
+        'extensions/chester-x2',
+        'extensions/chester-x3',
+        'extensions/chester-x4',
+        'extensions/chester-x6',
+        'extensions/chester-x7',
+        'extensions/chester-x8',
+        'extensions/chester-x9',
+      ],
+    },
     {
       type: 'category',
       label: 'Firmware SDK',
@@ -27,7 +44,10 @@ const sidebars = {
       },
       collapsed: false,
       items: [
-        'sdk-installation',
+        'firmware-sdk/requirements',
+        'firmware-sdk/j-link-installation',
+        'firmware-sdk/install-ubuntu',
+        'firmware-sdk/install-macos',
       ],
     },
   ],
