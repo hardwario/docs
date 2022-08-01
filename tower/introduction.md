@@ -8,6 +8,6 @@ title: Introduction
 
 :::caution
 
-Fow now, please see this link: https://tower.hardwario.com/
+For now, please see this link: https://tower.hardwario.com/
 
 :::
