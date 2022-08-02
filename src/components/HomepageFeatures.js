@@ -8,7 +8,7 @@ const FeatureList = [
     title: 'CHESTER',
     subtitle: 'Configurable IoT Gateway',
     link: '/chester/',
-    Svg: require('../../static/img/undraw_docusaurus_mountain.svg').default,
+    svg: '/img/chester.svg',
     description: (
       <>
         CHESTER is an extensible IoT gateway platform featuring NB-IoT, LTE-M, LoRaWAN, BLE, and GNSS radio technologies.
@@ -19,7 +19,7 @@ const FeatureList = [
     title: 'EMBER',
     subtitle: 'LoRaWAN IoT Hotspot',
     link: '/ember/',
-    Svg: require('../../static/img/undraw_docusaurus_mountain.svg').default,
+    svg: '/img/ember.svg',
     description: (
       <>
         EMBER is a RouterBOARD-based waterproof industrial IoT gateway (with LTE card) for LoRaWAN sensors and actuators.
@@ -30,7 +30,7 @@ const FeatureList = [
     title: 'TOWER',
     subtitle: 'Pluggable IoT Platform',
     link: '/tower/',
-    Svg: require('../../static/img/undraw_docusaurus_tree.svg').default,
+    svg: '/img/tower.svg',
     description: (
       <>
         TOWER is an open-source IoT platform for rapid deployment, featuring sub-GHz radio and a very low power consumption.
@@ -41,7 +41,7 @@ const FeatureList = [
     title: 'CLOUD',
     subtitle: 'Middleware IoT Service',
     link: '/cloud/',
-    Svg: require('../../static/img/undraw_docusaurus_react.svg').default,
+    svg: '/img/cloud.svg',
     description: (
       <>
         CLOUD is a device and data management platform providing REST API services for seamless integration for customers.
@@ -50,11 +50,11 @@ const FeatureList = [
   },
 ];
 
-function Feature({ Svg, title, subtitle, link, description }) {
+function Feature({ svg, title, subtitle, link, description }) {
   return (
     <div className={clsx('col col--3')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} alt={title} />
+        <img src = {svg} width = "200" height = "200" />
       </div>
       <div className="text--center padding-horiz--md">
         <h2>{title}</h2>
