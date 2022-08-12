@@ -1,5 +1,5 @@
 ---
-slug: firmware-sdk/requirements
+slug: requirements
 title: Requirements
 ---
 

@@ -1,5 +1,5 @@
 ---
-slug: firmware-sdk/j-link-installation
+slug: j-link-installation
 title: J-Link Installation
 ---
 

@@ -1,5 +1,5 @@
 ---
-slug: firmware-sdk/installation-on-macos
+slug: installation-on-macos
 title: Installation on macOS
 ---
 

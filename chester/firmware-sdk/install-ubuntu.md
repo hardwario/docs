@@ -1,5 +1,5 @@
 ---
-slug: firmware-sdk/installation-on-ubuntu
+slug: installation-on-ubuntu
 title: Installation on Ubuntu
 ---
 
