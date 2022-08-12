@@ -28,7 +28,6 @@ const config = {
           routeBasePath: 'chester',
           path: 'chester',
           sidebarPath: require.resolve('./sidebars-chester.js'),
-          // Please change this to your repo.
           editUrl: 'https://github.com/hardwario/docs/edit/main',
         },
         theme: {
