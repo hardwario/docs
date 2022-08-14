@@ -30,7 +30,7 @@ const sidebars = {
         'hardware-description/enclosures',
       ],
     },
-    'power-management',
+    'power-mgmt',
     {
       type: 'category',
       label: 'Firmware Flashing',

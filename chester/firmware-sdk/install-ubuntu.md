@@ -5,7 +5,7 @@ title: Installation on Ubuntu
 
 # Installation on Ubuntu
 
-The following chapter will guide you through the CHESTER SDK installation on Ubuntu. It has been tested on **Ubuntu version 22.04**.
+The following chapter will guide you through the CHESTER SDK installation on Ubuntu. It has been tested on **Ubuntu version 20.04 and 22.04**.
 
 :::caution
 
@@ -38,46 +38,38 @@ Before you begin, make sure you comply with the chapter [Requirements](requireme
 1. Install the following APT packages:
 
    ```
-   sudo apt install --no-install-recommends git cmake ninja-build gperf ccache dfu-util device-tree-compiler wget python3-dev python3-pip python3-setuptools python3-tk python3-venv python3-wheel xz-utils file make gcc gcc-multilib g++-multilib libsdl2-dev
+   sudo apt install --no-install-recommends git cmake ninja-build gperf ccache dfu-util device-tree-compiler wget python3-dev python3-pip python3-setuptools python3-tk python3-wheel xz-utils file make gcc gcc-multilib g++-multilib libsdl2-dev
    ```
 
-1. Install the West tool:
+1. Create a target directory for the toolchain:
 
    ```
-   sudo pip3 install --upgrade west
+   mkdir -p $HOME/.local/opt
    ```
 
-1. Initialize the West workspace where you want to start your project:
+1. Download and unpack the toolchain:
 
    ```
-   west init -m git@gitlab.hardwario.com:chester/skeleton.git --manifest-rev main skeleton
+   wget -c https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v0.14.1/zephyr-sdk-0.14.1_linux-x86_64.tar.gz -O - | tar -xz --directory $HOME/.local/opt
    ```
 
-   > Change the last parameter `skeleton` to any desired name for your project directory.
-
-1. Go to the West workspace directory:
+1. Run the setup script from the toolchain directory:
 
    ```
-   cd skeleton
+   $HOME/.local/opt/zephyr-sdk-0.14.1/setup.sh
    ```
 
-1. Setup the default board to CHESTER:
+1. Create the directory for your application and switch into it:
 
    ```
-   west config build.board chester_nrf52840
+   mkdir chester-app && cd chestep-app
    ```
 
-1. Synchronize the West workspace:
+   :::tip
 
-   ```
-   west update
-   ```
+   Change the parameter `chester-app` to any desired name for your project directory.
 
-1. Export Zephyr environment:
-
-   ```
-   west zephyr-export
-   ```
+   :::
 
 1. Initialize the Python virtual environment:
 
@@ -97,6 +89,36 @@ Before you begin, make sure you comply with the chapter [Requirements](requireme
 
    :::
 
+1. Install the West tool:
+
+   ```
+   pip install west
+   ```
+
+1. Initialize the West workspace where you want to start your project:
+
+   ```
+   west init -m git@gitlab.hardwario.com:chester/skeleton.git --manifest-rev main
+   ```
+
+1. Set the default board to CHESTER:
+
+   ```
+   west config build.board chester_nrf52840
+   ```
+
+1. Synchronize the West workspace:
+
+   ```
+   west update
+   ```
+
+1. Export Zephyr environment:
+
+   ```
+   west zephyr-export
+   ```
+
 1. Install the Python dependencies:
 
    ```
@@ -113,24 +135,6 @@ Before you begin, make sure you comply with the chapter [Requirements](requireme
 
    ```
    pip install -r chester/scripts/requirements.txt
-   ```
-
-1. Create a target directory for the toolchain:
-
-   ```
-   mkdir -p $HOME/.local/opt
-   ```
-
-1. Download and unpack the toolchain:
-
-   ```
-   wget -c https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v0.14.1/zephyr-sdk-0.14.1_linux-x86_64.tar.gz -O - | tar -xz --directory $HOME/.local/opt
-   ```
-
-1. Run the setup script from the toolchain directory:
-
-   ```
-   $HOME/.local/opt/zephyr-sdk-0.14.1/setup.sh
    ```
 
 ## Test Build
