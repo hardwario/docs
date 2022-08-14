@@ -7,13 +7,13 @@ HARDWARIO CHESTER is a highly configurable IoT LPWAN gateway. Its primary functi
 
 This documentation helps users and gateway integrators to navigate these essential areas:
 
-1. What are the main parts and parameters of the CHESTER platform - see the **Hardware Description** chapter.
+1. What are the main parts and parameters of the CHESTER platform - see the [**Hardware Description**](category/hardware-description) chapter.
 
 1. How to configure and manage the platform - see the **Platform Management** chapter.
 
-1. How the platform can be powered - see chapter **Power Management**
+1. How the platform can be powered - see the [**Power Management**](power-management) chapter.
 
-1. Which sensors and environments can be connected to the platform and how - see the **Extension and Additional Modules** chapter.
+1. Which sensors and environments can be connected to the platform and how - see the **Extension Modules** chapter.
 
 1. How to modify the behavior of the platform - see the **Firmware** chapter.
 

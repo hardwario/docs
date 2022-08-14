@@ -36,7 +36,7 @@ const sidebars = {
       label: 'Firmware Flashing',
       link: {
         type: 'doc',
-        id: 'firmware-flashing/introduction',
+        id: 'firmware-flashing/index',
       },
       items: [
         'firmware-flashing/app-j-link',
@@ -49,7 +49,7 @@ const sidebars = {
       label: 'Extension Modules',
       link: {
         type: 'doc',
-        id: 'extension-modules/introduction',
+        id: 'extension-modules/index',
       },
       collapsed: false,
       items: [
