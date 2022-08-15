@@ -33,6 +33,8 @@ This method requires a functional Bluetooth-enabled application already running 
 
 Follow these steps to flash the application firmware in CHESTER using Bluetooth:
 
+<!-- TODO This is a blind shot and needs refactoring - probably when HARDWARIO Manager is out -->
+
 1. On your smartphone, start the application **nRF Device Manager**.
 
 1. You will see the list of scanned devices (pull it down to refresh the list).
