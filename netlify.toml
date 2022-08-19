@@ -1,0 +1,11 @@
+[[redirects]]
+  from = "http://chester.hardwario.com/*"
+  to = "http://docs.hardwario.com/chester"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://chester.hardwario.com/*"
+  to = "https://docs.hardwario.com/chester"
+  status = 301
+  force = true
