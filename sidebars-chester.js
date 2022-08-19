@@ -30,13 +30,13 @@ const sidebars = {
         'hardware-description/enclosures',
       ],
     },
-    'power-management',
+    'power-mgmt',
     {
       type: 'category',
       label: 'Firmware Flashing',
       link: {
         type: 'doc',
-        id: 'firmware-flashing/introduction',
+        id: 'firmware-flashing/index',
       },
       items: [
         'firmware-flashing/app-j-link',
@@ -49,7 +49,7 @@ const sidebars = {
       label: 'Extension Modules',
       link: {
         type: 'doc',
-        id: 'extension-modules/introduction',
+        id: 'extension-modules/index',
       },
       collapsed: false,
       items: [
@@ -75,6 +75,8 @@ const sidebars = {
         'firmware-sdk/j-link-installation',
         'firmware-sdk/install-ubuntu',
         'firmware-sdk/install-macos',
+        'firmware-sdk/how-to-i2c-bus',
+        'firmware-sdk/how-to-kconfig',
       ],
     },
   ],

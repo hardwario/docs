@@ -1,5 +1,4 @@
 ---
-slug: introduction
 title: Extension Modules
 ---
 
@@ -7,9 +6,9 @@ title: Extension Modules
 
 The CHESTER mainboard (CHESTER-M) includes these integrated interfaces and peripherals:
 
-* I2C bus (also featuring Sparkfun Qwiic Connect System)
+* I<sup>2</sup>C bus (also featuring Sparkfun Qwiic Connect System)
 * 1-Wire bus (using hardware bus driver with strong pull-up capability)
-* Digital I2C thermometer
+* Digital I<sup>2</sup>C thermometer
 * 3-axis MEMS accelerometer
 * 8 MB NOR flash memory
 * 3-color RGY LED

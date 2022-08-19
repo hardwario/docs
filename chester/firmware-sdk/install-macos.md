@@ -15,7 +15,9 @@ Before you begin, make sure you comply with the chapter [Requirements](requireme
 
 ## Installation Steps
 
-1. Open the Terminal application and make sure the Homebrew package manager is installed:
+1. Open the Terminal application.
+
+1. Install the Homebrew package manager (if not already installed in your system):
 
    ```
    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -24,79 +26,7 @@ Before you begin, make sure you comply with the chapter [Requirements](requireme
 1. Install the following Homebrew packages:
 
    ```
-   brew install cmake ninja gperf python3 ccache qemu dtc wget git west
-   ```
-
-1. Initialize the West workspace where you want to start your project:
-
-   ```
-   west init -m git@gitlab.hardwario.com:chester/skeleton.git --manifest-rev main skeleton
-   ```
-
-   :::tip
-
-   Change the last parameter `skeleton` to any desired name for your project directory.
-
-   :::
-
-1. Go to the West workspace directory:
-
-   ```
-   cd skeleton
-   ```
-
-1. Setup the default board to CHESTER:
-
-   ```
-   west config build.board chester_nrf52840
-   ```
-
-1. Synchronize the West workspace:
-
-   ```
-   west update
-   ```
-
-1. Export Zephyr environment:
-
-   ```
-   west zephyr-export
-   ```
-
-1. Initialize the Python virtual environment:
-
-   ```
-   python3 -m venv venv
-   ```
-
-1. Activate the Python virtual environment:
-
-   ```
-   source venv/bin/activate
-   ```
-
-   :::caution
-
-   When you close the shell (or your text editor with the integrated terminal), you will need to reactivate the virtual Python environment. Just call this command (used in the procedure above): `source venv/bin/activate`. This is a small penalty for great flexibility. In the future, you may have various West workspaces with different versions of the tools, and thanks to the virtual environment, these will not be in version conflict.
-
-   :::
-
-1. Install the Python dependencies:
-
-   ```
-   pip install -r zephyr/scripts/requirements.txt
-   ```
-
-   ```
-   pip install -r nrf/scripts/requirements.txt
-   ```
-
-   ```
-   pip install -r bootloader/mcuboot/scripts/requirements.txt
-   ```
-
-   ```
-   pip install -r chester/scripts/requirements.txt
+   brew install cmake ninja gperf python3 ccache qemu dtc wget
    ```
 
 1. Create a target directory for the toolchain:
@@ -123,6 +53,84 @@ Before you begin, make sure you comply with the chapter [Requirements](requireme
 
    ```
    $HOME/.local/opt/zephyr-sdk-0.14.1/setup.sh
+   ```
+
+1. Create the directory for your application and switch into it:
+
+   ```
+   mkdir chester-app && cd chestep-app
+   ```
+
+   :::tip
+
+   Change the parameter `chester-app` to any desired name for your project directory.
+
+   :::
+
+1. Initialize the Python virtual environment:
+
+   ```
+   python3 -m venv venv
+   ```
+
+1. Activate the Python virtual environment:
+
+   ```
+   source venv/bin/activate
+   ```
+
+   :::caution
+
+   When you close the shell (or your text editor with the integrated terminal), you will need to reactivate the virtual Python environment. Just call this command (used in the procedure above): `source venv/bin/activate`. This is a small penalty for great flexibility. In the future, you may have various West workspaces with different versions of the tools, and thanks to the virtual environment, these will not be in version conflict.
+
+   :::
+
+1. Install the West tool:
+
+   ```
+   pip install west
+   ```
+
+1. Initialize the West workspace where you want to start your project:
+
+   ```
+   west init -m git@gitlab.hardwario.com:chester/skeleton.git --manifest-rev main
+   ```
+
+1. Set the default board to CHESTER:
+
+   ```
+   west config build.board chester_nrf52840
+   ```
+
+1. Synchronize the West workspace:
+
+   ```
+   west update
+   ```
+
+1. Export Zephyr environment:
+
+   ```
+   west zephyr-export
+   ```
+
+1. Install the Python dependencies:
+
+   ```
+   pip install -r zephyr/scripts/requirements.txt
+   ```
+
+   ```
+   pip install -r nrf/scripts/requirements.txt
+   ```
+
+   ```
+   pip install -r bootloader/mcuboot/scripts/requirements.txt
+   ```
+
+   ```
+   pip install -r chester/scripts/requirements.txt
    ```
 
 ## Test Build
