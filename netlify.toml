@@ -9,3 +9,15 @@
   to = "https://docs.hardwario.com/chester"
   status = 301
   force = true
+
+[[redirects]]
+  from = "http://doc.hardwario.com/*"
+  to = "http://docs.hardwario.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://doc.hardwario.com/*"
+  to = "https://docs.hardwario.com/:splat"
+  status = 301
+  force = true
