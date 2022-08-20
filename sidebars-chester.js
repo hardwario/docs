@@ -79,6 +79,7 @@ const sidebars = {
         'firmware-sdk/how-to-kconfig',
       ],
     },
+    'ordering-codes',
   ],
 };
 
