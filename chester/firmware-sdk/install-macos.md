@@ -81,7 +81,7 @@ Before you begin, make sure you comply with the chapter [Requirements](requireme
 
    :::caution
 
-   When you close the shell (or your text editor with the integrated terminal), you will need to reactivate the virtual Python environment. Just call this command (used in the procedure above): `source venv/bin/activate`. This is a small penalty for great flexibility. In the future, you may have various West workspaces with different versions of the tools, and thanks to the virtual environment, these will not be in version conflict.
+   You must reactivate the virtual Python environment when you close the shell (or your text editor with the integrated terminal). Call this command (used in the procedure above): `source venv/bin/activate`. In the future, you may have various West workspaces with different versions of the tools, and thanks to the virtual environment, these will not be in version conflict.
 
    :::
 
