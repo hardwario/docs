@@ -5,7 +5,7 @@ title: Installation on Windows
 
 # Installation on Windows
 
-The following chapter will guide you through the **CHESTER SDK** installation on **Windows**. This guide was on **Windows versions 10 and 11**.
+The following chapter will guide you through the **CHESTER SDK** installation on **Windows**. This guide was tested on **Windows versions 10 and 11**.
 
 :::caution
 
@@ -15,13 +15,23 @@ Before you begin, make sure you comply with the chapter [Requirements](requireme
 
 ## Installation Steps
 
-1. Install the latest stable **Python** release from the [official Python site](https://www.python.org/downloads/windows/).
+The installation steps are split into multiple sections. At the end, you will be able to build the `blinky` sample from the CHESTER SDK.
 
-   :::caution
+### Install Python
 
-   Make sure to enable the checkbox `Add Python 3.x to PATH`.
+:::tip
 
-   :::
+You can skip this step if you already have **Python** installed on your system.
+
+:::
+
+Install the latest stable **Python** release from the [official Python site](https://www.python.org/downloads/windows/).
+
+:::caution
+
+In the **Python** installer, enable the checkbox `Add Python 3.x to PATH`.
+
+:::
 
 ### Install Chocolatey
 
@@ -71,7 +81,7 @@ You can skip this step if you already have **Chocolatey** installed on your syst
 
    :::caution
 
-   It is better to close it now even though we re-open it later. Some important changes are reflected only with the new application session.
+   It is better to close it now even though we re-open it in the next section. Some important changes are reflected only with the new application session.
 
    :::
 
