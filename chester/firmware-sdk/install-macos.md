@@ -160,5 +160,3 @@ Before you begin, make sure you comply with the chapter [Requirements](requireme
 
 Go to this link:
 https://www.nordicsemi.com/Products/Development-tools/nRF-Connect-for-desktop
-
-On Ubuntu, download the AppImage file and give it executable rights.
