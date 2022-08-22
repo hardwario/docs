@@ -254,7 +254,7 @@ You can skip this step if you already have **Chocolatey** installed on your syst
         IDT_LIST:          0 GB         2 KB      0.00%
    ```
 
-# Install nRF Connect for Desktop
+## Install nRF Connect for Desktop
 
 Go to this link:
 https://www.nordicsemi.com/Products/Development-tools/nRF-Connect-for-desktop
