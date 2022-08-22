@@ -1,11 +1,11 @@
 ---
-slug: installation-on-macos
-title: Installation on macOS
+slug: installation-on-windows
+title: Installation on Windows
 ---
 
-# Installation on macOS
+# Installation on Windows
 
-The following chapter will guide you through the CHESTER SDK installation on macOS. It has been tested on **macOS version 12** (Monterey).
+The following chapter will guide you through the CHESTER SDK installation on Ubuntu. It has been tested on **Windows versions 10 and 11**.
 
 :::caution
 
@@ -15,44 +15,64 @@ Before you begin, make sure you comply with the chapter [Requirements](requireme
 
 ## Installation Steps
 
-1. Open the Terminal application.
+1. Install the latest stable Python release from the [official Python site](https://www.python.org/downloads/windows/).
 
-1. Install the Homebrew package manager (if not already installed in your system):
+1. Install Chocolatey package manager software:
 
-   ```
-   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-   ```
+   1. Start PowerShell.
 
-1. Install the following Homebrew packages:
+   1. Run `Get-ExecutionPolicy`. If it returns `Restricted`, then run `Set-ExecutionPolicy AllSigned`.
 
-   ```
-   brew install cmake ninja gperf python3 ccache qemu dtc wget
-   ```
+   1. Execute the following command:
 
-1. Create a target directory for the toolchain:
+      ```
+      Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+      ```
+   1. Wait a few seconds for the command to complete.
 
-   ```
-   mkdir -p $HOME/.local/opt
-   ```
+   1. You are ready to use Chocolatey if you don't see any errors.
 
-1. Download and unpack the toolchain:
-
-   If you have the **Intel processor**, use this command:
+1. Disable global confirmation to avoid having to confirm the installation of individual programs:
 
    ```
-   wget -c https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v0.14.1/zephyr-sdk-0.14.1_macos-x86_64.tar.gz -O - | tar -xz --directory $HOME/.local/opt
+   choco feature enable -n allowGlobalConfirmation
    ```
 
-   If you have the **ARM processor**, use this command:
+1. Use `choco` to install the required dependencies:
 
    ```
-   wget -c https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v0.14.1/zephyr-sdk-0.14.1_macos-aarch64.tar.gz -O - | tar -xz --directory $HOME/.local/opt
+   choco install cmake --installargs 'ADD_CMAKE_TO_PATH=System'
+   choco install ninja gperf python git dtc-msys2 wget unzip
    ```
 
-1. Run the setup script from the toolchain directory:
+1. Go to your home directory:
 
    ```
-   $HOME/.local/opt/zephyr-sdk-0.14.1/setup.sh
+   cd %HOMEPATH%
+   ```
+
+1. Download the toolchain:
+
+   ```
+   wget https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v0.14.1/zephyr-sdk-0.14.1_windows-x86_64.zip
+   ```
+
+1. Unzip the toolchain:
+
+   ```
+   unzip zephyr-sdk-0.14.1_windows-x86_64.zip
+   ```
+
+1. Go to the toolchain director:
+
+   ```
+   cd zephyr-sdk-0.14.1
+   ```
+
+1. Run the Zephyr SDK bundle setup script:
+
+   ```
+   setup.cmd
    ```
 
 1. Create the directory for your application and switch to it:

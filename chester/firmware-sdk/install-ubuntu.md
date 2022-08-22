@@ -5,7 +5,7 @@ title: Installation on Ubuntu
 
 # Installation on Ubuntu
 
-The following chapter will guide you through the CHESTER SDK installation on Ubuntu. It has been tested on **Ubuntu version 20.04 and 22.04**.
+The following chapter will guide you through the CHESTER SDK installation on Ubuntu. It has been tested on **Ubuntu versions 20.04 and 22.04**.
 
 :::caution
 
@@ -59,7 +59,7 @@ Before you begin, make sure you comply with the chapter [Requirements](requireme
    $HOME/.local/opt/zephyr-sdk-0.14.1/setup.sh
    ```
 
-1. Create the directory for your application and switch into it:
+1. Create the directory for your application and switch to it:
 
    ```
    mkdir chester-app && cd chestep-app

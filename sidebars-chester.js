@@ -75,6 +75,7 @@ const sidebars = {
         'firmware-sdk/j-link-installation',
         'firmware-sdk/install-ubuntu',
         'firmware-sdk/install-macos',
+        'firmware-sdk/install-windows',
         'firmware-sdk/how-to-i2c-bus',
         'firmware-sdk/how-to-kconfig',
       ],
