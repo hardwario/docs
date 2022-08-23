@@ -13,7 +13,7 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-
+  scripts: [{src: 'https://plausible.io/js/script.js', defer: true, 'data-domain': 'docs.hardwario.com'}],
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
