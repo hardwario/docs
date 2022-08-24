@@ -65,6 +65,16 @@ const config = {
         sidebarPath: require.resolve('./sidebars-cloud.js'),
       }),
     ],
+    [
+      '@docusaurus/plugin-ideal-image',
+      {
+        quality: 70,
+        max: 1200,
+        min: 640,
+        steps: 2,
+        disableInDev: false,
+      },
+    ],
   ],
 
   themeConfig:
@@ -106,6 +116,16 @@ const config = {
             position: 'right',
           },
         ],
+      },
+      imageZoom: {
+        selector: '.markdown img',
+        options: {
+          margin: 24,
+          background: '#FFFFFF',
+          scrollOffset: 0,
+          container: '#zoom-container',
+          template: '#zoom-template',
+        },
       },
       footer: {
         style: 'dark',
