@@ -10,9 +10,13 @@ const sidebars = {
       link: {
         type: 'generated-index',
       },
-      collapsed: false,
+      collapsed: true,
       items: [
-        'getting-started/system-basics'
+        'getting-started/system-basics',
+        'getting-started/design-principles',
+        'getting-started/desktop-programming',
+        'getting-started/server-raspberry-pi',
+        'getting-started/useful-resources',
       ],
     },
     {
@@ -21,7 +25,7 @@ const sidebars = {
       link: {
         type: 'generated-index',
       },
-      collapsed: false,
+      collapsed: true,
       items: [
         'desktop-programming/about-playground',
         'desktop-programming/playground-installation',
@@ -39,7 +43,7 @@ const sidebars = {
         type: 'doc',
         id: 'server-raspberry-pi/index',
       },
-      collapsed: false,
+      collapsed: true,
       items: [
         'server-raspberry-pi/installation-clean-os',
         'server-raspberry-pi/installation-os'
@@ -52,7 +56,7 @@ const sidebars = {
         type: 'doc',
         id: 'command-line-tools/index',
       },
-      collapsed: false,
+      collapsed: true,
       items: [
         'command-line-tools/firmware-tool',
         'command-line-tools/gateway-service',
@@ -67,7 +71,7 @@ const sidebars = {
         type: 'doc',
         id: 'firmware-development/index',
       },
-      collapsed: false,
+      collapsed: true,
       items: [
         'firmware-development/about-hardwario-code',
         'firmware-development/tower-vscode-extension',
@@ -81,7 +85,7 @@ const sidebars = {
         type: 'doc',
         id: 'firmware-sdk/index',
       },
-      collapsed: false,
+      collapsed: true,
       items: [
         'firmware-sdk/event-driven-programming',
         'firmware-sdk/task-scheduler',
@@ -123,7 +127,7 @@ const sidebars = {
         type: 'doc',
         id: 'radio-communication/index',
       },
-      collapsed: false,
+      collapsed: true,
       items: [
         'radio-communication/sub-ghz-radio',
         'radio-communication/lora-wan-radio'
@@ -135,7 +139,7 @@ const sidebars = {
       link: {
         type: 'generated-index',
       },
-      collapsed: false,
+      collapsed: true,
       items: [
         'mqtt-protocol/topics-reference'
       ],
@@ -146,24 +150,29 @@ const sidebars = {
       link: {
         type: 'generated-index',
       },
-      collapsed: false,
+      collapsed: true,
       items: [
         'platform-integrations/grafana-visualization',
         'platform-integrations/blynk-app',
         'platform-integrations/ubidots-dashboards'
       ],
     },
-    {
+    /*{
       type: 'category',
       label: 'Step-by-Step Projects',
       link: {
         type: 'doc',
         id: 'step-by-step-projects/index',
       },
-      collapsed: false,
+      collapsed: true,
       items: [
 
       ],
+    },*/
+    {
+      type: 'link',
+      label: 'Step-by-Step Projects',
+      href: 'https://www.hackster.io/hardwario/projects',
     },
     {
       type: 'category',
@@ -172,7 +181,7 @@ const sidebars = {
         type: 'doc',
         id: 'hardware-modules/index',
       },
-      collapsed: false,
+      collapsed: true,
       items: [
         'hardware-modules/about-one-wire-slave-module',
         'hardware-modules/about-barometer-tag',
@@ -214,7 +223,7 @@ const sidebars = {
       link: {
         type: 'generated-index',
       },
-      collapsed: false,
+      collapsed: true,
       items: [
         'hardware-interfaces/i2c-bus',
         'hardware-interfaces/spi-interface',

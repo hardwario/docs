@@ -17,6 +17,12 @@ import Image from '@theme/IdealImage';
 
 <p>&nbsp;</p>
 
+## Features
+- Integrated 1-Wire to I²C master bridge DS28E17 (Maxim)
+- Operating voltage range: 2.5 V to 3.6 V
+- Operating temperature range: -20 to 70 °C
+- Mechanical dimensions: 33 x 55 mm
+
 ## References
 - [Shop](https://shop.hardwario.com/1-wire-module/)
 - [Schematics](https://github.com/hardwario/bc-hardware/tree/master/out/bc-module-1-wire)
@@ -25,8 +31,3 @@ import Image from '@theme/IdealImage';
 - [Source File](https://github.com/hardwario/twr-sdk/blob/master/twr/src/twr_onewire.c)
 - [Projects](https://www.hackster.io/hardwario/projects?part_id=73837)
 
-## Features
-- Integrated 1-Wire to I²C master bridge DS28E17 (Maxim)
-- Operating voltage range: 2.5 V to 3.6 V
-- Operating temperature range: -20 to 70 °C
-- Mechanical dimensions: 33 x 55 mm
