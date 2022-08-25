@@ -2,6 +2,7 @@
 slug: application-over-bluetooth
 title: Application over Bluetooth
 ---
+import Image from '@theme/IdealImage';
 
 # Application over Bluetooth
 

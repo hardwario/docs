@@ -2,7 +2,8 @@
 slug: chester-x9
 title: CHESTER-X9 (4-ch output)
 ---
+import Image from '@theme/IdealImage';
 
 # CHESTER-X9
 
-<img src={require('./tb-chester-x9.png').default} />
+<Image img={require('./tb-chester-x9.png')} />

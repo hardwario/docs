@@ -2,6 +2,7 @@
 slug: installation-on-macos
 title: Installation on macOS
 ---
+import Image from '@theme/IdealImage';
 
 # Installation on macOS
 

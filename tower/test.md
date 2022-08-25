@@ -2,6 +2,7 @@
 slug: test
 title: Test
 ---
+import Image from '@theme/IdealImage';
 
 # Test
 

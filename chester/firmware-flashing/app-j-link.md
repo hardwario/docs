@@ -2,6 +2,7 @@
 slug: application-over-j-link
 title: Application over J-Link
 ---
+import Image from '@theme/IdealImage';
 
 # Application over J-Link
 

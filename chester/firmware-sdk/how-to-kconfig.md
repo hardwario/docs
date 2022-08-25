@@ -2,6 +2,7 @@
 slug: how-to-kconfig
 title: "How to: Kconfig"
 ---
+import Image from '@theme/IdealImage';
 
 # How to: Kconfig
 

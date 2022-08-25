@@ -75,6 +75,7 @@ const config = {
         disableInDev: false,
       },
     ],
+    require.resolve("docusaurus-plugin-image-zoom"),
   ],
 
   themeConfig:
@@ -117,15 +118,18 @@ const config = {
           },
         ],
       },
-      imageZoom: {
-        selector: '.markdown img',
-        options: {
-          margin: 24,
-          background: '#FFFFFF',
-          scrollOffset: 0,
-          container: '#zoom-container',
-          template: '#zoom-template',
-        },
+      prism: {
+        theme: require('prism-react-renderer/themes/dracula'),
+      },
+      zoom: {
+        selector: '.markdown :not(em) > img',
+        config: {
+          // options you can specify via https://github.com/francoischalifour/medium-zoom#usage
+          background: {
+            light: 'rgb(255, 255, 255)',
+            dark: 'rgb(50, 50, 50)'
+          }
+        }
       },
       footer: {
         style: 'dark',

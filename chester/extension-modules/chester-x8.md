@@ -2,7 +2,8 @@
 slug: chester-x8
 title: CHESTER-X8 (Precision accel.)
 ---
+import Image from '@theme/IdealImage';
 
 # CHESTER-X8
 
-<img src={require('./tb-chester-x8.png').default} />
+<Image img={require('./tb-chester-x8.png')} />
