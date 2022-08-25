@@ -2,6 +2,7 @@
 slug: installation-on-ubuntu
 title: Installation on Ubuntu
 ---
+import Image from '@theme/IdealImage';
 
 # Installation on Ubuntu
 

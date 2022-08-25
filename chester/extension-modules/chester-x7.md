@@ -2,7 +2,8 @@
 slug: chester-x7
 title: CHESTER-X7 (Diff. input)
 ---
+import Image from '@theme/IdealImage';
 
 # CHESTER-X7
 
-<img src={require('./tb-chester-x7.png').default} />
+<Image img={require('./tb-chester-x7.png')} />

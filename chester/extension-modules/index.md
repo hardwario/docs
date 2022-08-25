@@ -1,6 +1,7 @@
 ---
 title: Extension Modules
 ---
+import Image from '@theme/IdealImage';
 
 # Extension Modules
 

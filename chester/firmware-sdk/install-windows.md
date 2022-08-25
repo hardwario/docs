@@ -2,6 +2,7 @@
 slug: installation-on-windows
 title: Installation on Windows
 ---
+import Image from '@theme/IdealImage';
 
 # Installation on Windows
 

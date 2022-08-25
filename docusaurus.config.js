@@ -65,6 +65,17 @@ const config = {
         sidebarPath: require.resolve('./sidebars-cloud.js'),
       }),
     ],
+    [
+      '@docusaurus/plugin-ideal-image',
+      {
+        quality: 70,
+        max: 1200,
+        min: 640,
+        steps: 2,
+        disableInDev: false,
+      },
+    ],
+    require.resolve("docusaurus-plugin-image-zoom"),
   ],
 
   themeConfig:
@@ -106,6 +117,19 @@ const config = {
             position: 'right',
           },
         ],
+      },
+      prism: {
+        theme: require('prism-react-renderer/themes/dracula'),
+      },
+      zoom: {
+        selector: '.markdown :not(em) > img',
+        config: {
+          // options you can specify via https://github.com/francoischalifour/medium-zoom#usage
+          background: {
+            light: 'rgb(255, 255, 255)',
+            dark: 'rgb(50, 50, 50)'
+          }
+        }
       },
       footer: {
         style: 'dark',

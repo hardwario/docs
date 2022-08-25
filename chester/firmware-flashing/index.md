@@ -1,6 +1,7 @@
 ---
 title: Firmware Flashing
 ---
+import Image from '@theme/IdealImage';
 
 # Firmware Flashing
 

@@ -2,7 +2,8 @@
 slug: chester-x3
 title: CHESTER-X3 (Precision ADC)
 ---
+import Image from '@theme/IdealImage';
 
 # CHESTER-X3
 
-<img src={require('./tb-chester-x3.png').default} />
+<Image img={require('./tb-chester-x3.png')} />

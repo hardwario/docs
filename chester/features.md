@@ -2,6 +2,7 @@
 slug: features
 title: Features
 ---
+import Image from '@theme/IdealImage';
 
 # Features
 
