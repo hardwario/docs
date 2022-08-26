@@ -10,7 +10,7 @@ const sidebars = {
       link: {
         type: 'generated-index',
       },
-      collapsed: false,
+      collapsed: true,
       items: [
         'features',
         'parameters',
@@ -22,11 +22,12 @@ const sidebars = {
       link: {
         type: 'generated-index',
       },
-      collapsed: false,
+      collapsed: true,
       items: [
         'hardware-description/basic-parameters',
         'hardware-description/block-diagram',
         'hardware-description/connector-description',
+        'hardware-description/i2c-address-space',
         'hardware-description/enclosures',
       ],
     },
@@ -38,6 +39,7 @@ const sidebars = {
         type: 'doc',
         id: 'firmware-flashing/index',
       },
+      collapsed: false,
       items: [
         'firmware-flashing/app-j-link',
         'firmware-flashing/app-bluetooth',
@@ -69,7 +71,7 @@ const sidebars = {
       link: {
         type: 'generated-index',
       },
-      collapsed: false,
+      collapsed: true,
       items: [
         'firmware-sdk/requirements',
         'firmware-sdk/j-link-installation',
