@@ -137,7 +137,8 @@ const sidebars = {
       type: 'category',
       label: 'MQTT Protocol',
       link: {
-        type: 'generated-index',
+        type: 'doc',
+        id: 'mqtt-protocol/index',
       },
       collapsed: true,
       items: [

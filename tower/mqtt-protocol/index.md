@@ -1,6 +1,5 @@
 ---
-slug: topics-reference
-title: Topics Reference
+title: MQTT Protocol
 ---
 import Image from '@theme/IdealImage';
 

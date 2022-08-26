@@ -4,11 +4,15 @@ title: "How To: Accelerometer"
 ---
 import Image from '@theme/IdealImage';
 
-The core module comes with three-axis ultra-low-power linear accelerometer connected via the I²C bus. It is capable of motion detection and a free-fall based on interrupts.
+The Core Module comes with three-axis ultra-low-power linear accelerometer(LIS2DH12) connected via the I²C bus. It is capable of motion detection based on interrupts.
+
+## References
+- [Accelerometer SDK Module](https://sdk.hardwario.com/group__twr__lis2dh12.html)
+- GitHub Repository Example
 
 You have two options for how to use the accelerometer:
-  - continuous measurement of acceleration
-  - alarm, which triggers the event handler if defined conditions occur.
+  - **Continuous measurement of acceleration**
+  - **Alarm, which triggers the event handler if defined conditions occur**
 
 ## Continuous Measurement
 
@@ -61,7 +65,7 @@ You also have to instantiate a struct `twr_lis2dh12_result_g_t` to store the res
 
 ## Alarm
 
-Alarm feature that allows you to set up certain conditions when the alarm should be triggered (like wake up, when module is moved in direction of X-axis && acceleration is higher than 1g). The module uses interrupts to inform the microcontroller, which means that it can sleep when it is not being moved and only be awakened when moved.
+Alarm feature that allows you to set up certain conditions when the alarm should be triggered (like wake up, when the module is moved in direction of the X-axis && acceleration is higher than 1g). The module uses interrupts to inform the microcontroller, which means that it can sleep when it is not being moved and only be awakened when moved.
 
 You can set conditions for the alarm in struct `twr_lis2dh12_alarm_t`.
 
@@ -69,9 +73,9 @@ When the accelerometer checks these settings it uses **logical AND operation** m
 
 :::info
 
-In the example below, we set the alarm to be triggered when core module is moved in direction of X-axis with acceleration > 1g. When triggered, integrated red LED will switch on for one second.
+In the example below, we set the alarm to be triggered when the Core Module is moved in direction of the X-axis with acceleration > 1g. When triggered, the integrated red LED will switch on for one second.
 
-After flashing, try to move your Core module very slowly. It will do nothing in any direction. Then try to move it quickly up and down - once again nothing happens, because this movement is in Z-axis. Now try to make a quick move in X-axis and the LED should light up.
+After flashing, try to move your Core module very slowly. It will do nothing in any direction. Then try to move it quickly up and down - once again nothing happens, because this movement is on Z-axis. Now try to make a quick move on X-axis and the LED should light up.
 
 :::
 

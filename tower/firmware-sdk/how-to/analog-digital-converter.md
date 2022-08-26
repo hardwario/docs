@@ -8,7 +8,7 @@ Analog to digital converter can measure the voltage on one of the six inputs **`
 
 ## References
 - [ADC SDK Module](https://sdk.hardwario.com/group__twr__adc.html)
-- Github Repository Example
+- GitHub Repository Example
 
 ## Sampling Types
 
