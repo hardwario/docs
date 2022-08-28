@@ -22,7 +22,8 @@ import Image from '@theme/IdealImage';
 
 :::tip
 
-If you want your device to have a smaller footprint, you can use [**Mini Battery Module**](about-mini-battery-module.md). It will of course last less time because of just **2 batteries**.
+If you want your device to have a smaller footprint, you can use [**Mini Battery Module**](about-mini-battery-module.md).
+It will of course last less time because of just **2 batteries**.
 
 :::
 
@@ -36,7 +37,7 @@ If you want your device to have a smaller footprint, you can use [**Mini Battery
 - Battery disconnect circuit
 - Battery voltage measurement using an ADC input
 - <b>Prototyping area for soldering</b> custom circuits
-- One extra **position for HARDWARIO tag**
+- One extra **position for the HARDWARIO** tag****
 - Operating voltage range: 3.3 to 10 V
 - Operating temperature range: -20 to 70 °C
 - Mechanical dimensions: 88 x 55 mm
