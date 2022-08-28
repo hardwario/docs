@@ -6,14 +6,14 @@ const sidebars = {
     'introduction',
     {
       type: 'category',
-      label: 'Getting Started',
+      label: 'Platform Management',
       link: {
-        type: 'generated-index',
+        type: 'doc',
+        id: 'platform-management/index',
       },
-      collapsed: true,
+      collapsed: false,
       items: [
-        'features',
-        'parameters',
+        'platform-management/mobile-application',
       ],
     },
     {
@@ -34,20 +34,6 @@ const sidebars = {
     'power-mgmt',
     {
       type: 'category',
-      label: 'Firmware Flashing',
-      link: {
-        type: 'doc',
-        id: 'firmware-flashing/index',
-      },
-      collapsed: false,
-      items: [
-        'firmware-flashing/app-j-link',
-        'firmware-flashing/app-bluetooth',
-      ],
-    },
-    'bluetooth',
-    {
-      type: 'category',
       label: 'Extension Modules',
       link: {
         type: 'doc',
@@ -63,6 +49,30 @@ const sidebars = {
         'extension-modules/chester-x7',
         'extension-modules/chester-x8',
         'extension-modules/chester-x9',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Catalog Applications',
+      link: {
+        type: 'generated-index',
+      },
+      collapsed: true,
+      items: [
+        'catalog-applications/chester-current',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Firmware Flashing',
+      link: {
+        type: 'doc',
+        id: 'firmware-flashing/index',
+      },
+      collapsed: false,
+      items: [
+        'firmware-flashing/app-j-link',
+        'firmware-flashing/app-bluetooth',
       ],
     },
     {
