@@ -10,12 +10,12 @@ import Image from '@theme/IdealImage';
       <div><Image img={require('./1-wire-module.png')} /></div>
     </div>
     <div class="col col--6">
-      <div>The <b>1-Wire Slave Module</b> allows you to connect I²C devices over a distance of several meters. The I²C protocol is encapsulated in a 1-Wire protocol. The data are protected using <b>16-bit CRC</b>. You can use the <b>Sensor Module</b> to create a 1-Wire bus master.</div>
+      <p>
+        The <b>1-Wire Slave Module</b> allows you to connect I²C devices over a distance of several meters. The I²C protocol is encapsulated in a 1-Wire protocol. The data are protected using <b>16-bit CRC</b>. You can use the <b>Sensor Module</b> to create a 1-Wire bus master.
+      </p>
     </div>
   </div>
 </div>
-
-<p>&nbsp;</p>
 
 ## Features
 - Integrated 1-Wire to I²C master bridge DS28E17 (Maxim)
