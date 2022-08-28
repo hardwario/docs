@@ -8,22 +8,32 @@ HARDWARIO CHESTER is a highly configurable IoT LPWAN gateway. Its primary functi
 
 This documentation helps users and gateway integrators to navigate these essential areas:
 
-1. What are the main parts and parameters of the CHESTER platform - see the [**Hardware Description**](category/hardware-description) chapter.
+* What are the main parts and parameters of the CHESTER platform - see the chapter:<br/>
+  [**Hardware Description**](category/hardware-description)
 
-1. How to configure and manage the platform - see the **Platform Management** chapter.
+* How to configure and manage the platform - see the chapter:<br/>
+  **Platform Management**
 
-1. How the platform can be powered - see the [**Power Management**](power-management) chapter.
+* How the platform can be powered - see the chapter:<br/>
+  [**Power Management**](./power-mgmt.md)
 
-1. Which sensors and environments can be connected to the platform and how - see the **Extension Modules** chapter.
+* Which sensors and environments can be connected to the platform and how - see the chapter:<br/>
+  [**Extension Modules**](./extension-modules/index.md)
 
-1. How to modify the behavior of the platform - see the **Firmware** chapter.
+* How to create or modify firmware application - see the chapter:<br/>
+  [**Firmware SDK**](category/firmware-sdk)
 
-1. How data is processed and sent from the platform to the Internet - see the **IoT Connectivity** chapter.
+* How data is processed and sent from the platform to the Internet - see the chapter:<br/>
+  **IoT Connectivity**
 
-1. How the platform handles data security - see the **Security** chapter.
+* How the platform handles data security - see the chapter:<br/>
+  **Security**
 
-1. How to integrate platform data with other systems - see the **Cloud Integration** chapter.
+* How to integrate platform data with other systems - see the chapter:<br/>
+  **Cloud Integration**
 
-1. Which versions of the platform are immediately available in stock - see the **Catalogue Applications** chapter.
+* Which versions of the platform are immediately available in stock - see the chapter:<br/>
+  **Catalogue Applications**
 
-1. How to customize the platform and its behavior for your projects - see the **Customization** chapter.
+* How to customize the platform and its behavior for your projects - see the chapter:<br/>
+  **Customization**
