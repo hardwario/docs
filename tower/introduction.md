@@ -31,7 +31,7 @@ It is used in industrial applications, STEM education, and hobby projects (home 
 7. For details on supported radio protocols in TOWER, see the chapter:<br/>
     [**Radio Communication**](radio-communication)
 8. To explore the backbone of the TOWER system on the server, see the chapter:<br/>
-    [**MQTT Protocol**](category/mqtt-protocol)
+    [**MQTT Protocol**](mqtt-protocol)
 9.  If you need to visualize your data and/or connect your project remotely, go to the chapter:<br/>
     [**Platform Integrations**](category/platform-integrations)
 10. To get recipes for building real and meaningful projects, visit the chapter:<br/>
