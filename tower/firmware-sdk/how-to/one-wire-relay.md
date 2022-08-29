@@ -6,24 +6,9 @@ import Image from '@theme/IdealImage';
 
 To make it easier to work with certain 1-Wire devices we implemented a module called `twr_onewire_relay` which allows you to control relay modules connected via 1-Wire bus, for example, the [**Relay module developed by Denkovi**](http://denkovi.com/1-wire-eight-channel-relay-module-for-home-automation-with-din-box).
 
-## Initialization
-- `twr_onewire_relay_init(twr_onewire_relay_t *self, twr_onewire_t *onewire, uint64_t device_number)`
-
-
-## Available Functions
-- **`twr_onewire_relay_set_state(twr_onewire_relay_t *self, twr_onewire_relay_channel_t relay_channel, bool state)`**
-  - `twr_onewire_relay_t *self` - instance of the external relay module
-  - `twr_onewire_relay_channel_t relay_channel` - one of the channels of the relay module which state should be set
-  - `bool state` - what state should the relay channel be set to
-- **`twr_onewire_relay_get_state(twr_onewire_relay_t *self, twr_onewire_relay_channel_t relay_channel, bool *state)`**
-  - `twr_onewire_relay_t *self` - instance of the external relay module
-  - `twr_onewire_relay_channel_t relay_channel` - one of the channels of the relay module
-  - `bool state` - what state should the relay channel be set to
-
-## Types
-
-- `twr_onewire_relay_channel_t` - one of the channels of the relay module, more in the example below
-- `twr_onewire_relay_t` - an instance of the relay, used in all the functions mentioned above
+## References
+- [1-Wire SDK Module](https://sdk.hardwario.com/group__twr__onewire__relay.html)
+- [GitHub Repository Example](https://github.com/hardwario/twr-sdk/tree/master/_examples/onewire-relay)
 
 :::info
 
@@ -84,7 +69,3 @@ In the example we allow the **relays** to be controlled with a **button integrat
 
 </p>
 </details>
-
-## References
-- [SDK Module](https://sdk.hardwario.com/group__twr__onewire__relay.html)
-- [Github Repository Example](https://github.com/hardwario/twr-sdk/tree/master/_examples/onewire-relay)
