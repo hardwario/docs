@@ -24,7 +24,7 @@ The backside slots use two rows of signals:
 
 :::caution
 
-The following table lists the signals in the left-to-right order when you flip the board to the bottom side (the slot A position is on the right side).
+The following table lists the signals in the left-to-right order when you flip the board (slot A is on the right side).
 
 :::
 
@@ -44,7 +44,7 @@ The following table lists the signals in the left-to-right order when you flip t
 
 :::caution
 
-The following table lists the signals in the left-to-right order when you flip the board to the bottom side (the slot A position is on the left side).
+The following table lists the signals in the left-to-right order when you flip the board (slot B is on the left side).
 
 :::
 
