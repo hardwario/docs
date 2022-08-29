@@ -35,8 +35,8 @@ The following table lists the signals in the left-to-right order when you flip t
 |    3     |   `GP2A`    | General purpose I/O    |      `P0.02/AIN0`      |
 |    4     |   `GP1A`    | General purpose I/O    |      `P0.29/AIN5`      |
 |    5     |   `GP0A`    | General purpose I/O    |      `P0.03/AIN1`      |
-|    6     |    `SDA`    | System I2C bus (data)  |           -            |
-|    7     |    `SCL`    | System I2C bus (clock) |           -            |
+|    6     |    `SDA`    | System I²C bus (data)  |           -            |
+|    7     |    `SCL`    | System I²C bus (clock) |           -            |
 |    8     |    `VDD`    | System VDD rail        |           -            |
 |    9     |    `GND`    | System ground signal   |           -            |
 
@@ -55,7 +55,7 @@ The following table lists the signals in the left-to-right order when you flip t
 |    3     |   `GP2B`    | General purpose I/O    |      `P0.04/AIN2`      |
 |    4     |   `GP1B`    | General purpose I/O    |      `P0.30/AIN6`      |
 |    5     |   `GP0B`    | General purpose I/O    |      `P0.28/AIN4`      |
-|    6     |    `SDA`    | System I2C bus (data)  |           -            |
-|    7     |    `SCL`    | System I2C bus (clock) |           -            |
+|    6     |    `SDA`    | System I²C bus (data)  |           -            |
+|    7     |    `SCL`    | System I²C bus (clock) |           -            |
 |    8     |    `VDD`    | System VDD rail        |           -            |
 |    9     |    `GND`    | System ground signal   |           -            |
