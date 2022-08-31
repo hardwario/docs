@@ -77,6 +77,7 @@ const sidebars = {
       items: [
         'firmware-development/about-hardwario-code',
         'firmware-development/tower-vscode-extension',
+        'firmware-development/hardwario-extension-tutorial',
         'firmware-development/development-with-cli-tools'
       ],
     },
