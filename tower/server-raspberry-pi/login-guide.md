@@ -60,7 +60,7 @@ You can use **PuTTY**, which is an application that allows you to connect to a r
 
 :::info
 
-You should be logged in to your Raspberry Pi. We recommend [**changing the password**](change-the-password) (if it was not changed while flashing the microSD card) and [**updating the system**](update-the-system). After that, you can visit the [**Command Line Tool section**](../command-line-tools/index.md) to learn about the tools installed on the Raspberry
+You should be logged in to your Raspberry Pi. We recommend [**changing the password**](#change-the-password) (if it was not changed while flashing the microSD card) and [**updating the system**](#update-the-system). After that, you can visit the [**Command Line Tool section**](../command-line-tools/index.md) to learn about the tools installed on the Raspberry
 
 :::
 
@@ -102,7 +102,7 @@ ssh pi@IP_ADDRESS
 
 :::info
 
-You should be logged in to your Raspberry Pi. We recommend [**changing the password**](change-the-password) (if it was not changed while flashing the microSD card) and [**updating the system**](update-the-system). After that, you can visit the [**Command Line Tool section**](../command-line-tools/index.md) to learn about the tools installed on the Raspberry
+You should be logged in to your Raspberry Pi. We recommend [**changing the password**](#change-the-password) (if it was not changed while flashing the microSD card) and [**updating the system**](#update-the-system). After that, you can visit the [**Command Line Tool section**](../command-line-tools/index.md) to learn about the tools installed on the Raspberry
 
 :::
 
