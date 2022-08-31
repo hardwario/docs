@@ -4,7 +4,7 @@ title: "How To: Accelerometer"
 ---
 import Image from '@theme/IdealImage';
 
-The Core Module comes with three-axis ultra-low-power linear accelerometer(LIS2DH12) connected via the I²C bus. It is capable of motion detection based on interrupts.
+The Core Module comes with three-axis ultra-low-power **linear accelerometer (LIS2DH12)** connected via the I²C bus. It is capable of motion detection based on interrupts.
 
 ## References
 - [Accelerometer SDK Module](https://sdk.hardwario.com/group__twr__lis2dh12.html)
@@ -16,7 +16,7 @@ You have two options for how to use the accelerometer:
 
 ## Continuous Measurement
 
-This can be achieved by setting the update interval in your code with function `twr_lis2dh12_set_update_interval`, which takes the pointer to instantiated accelerometer and time before measurements in milliseconds as parameters.
+This can be achieved by setting the update interval in your code with function `twr_lis2dh12_set_update_interval`, which takes the pointer to instantiated accelerometer and time between measurements in milliseconds as parameters.
 
 You also have to instantiate a struct `twr_lis2dh12_result_g_t` to store the results of measurements. Those values can be retrieved by calling `twr_lis2dh12_get_result_g` function.
 
@@ -65,7 +65,9 @@ You also have to instantiate a struct `twr_lis2dh12_result_g_t` to store the res
 
 ## Alarm
 
-Alarm feature that allows you to set up certain conditions when the alarm should be triggered (like wake up, when the module is moved in direction of the X-axis && acceleration is higher than 1g). The module uses interrupts to inform the microcontroller, which means that it can sleep when it is not being moved and only be awakened when moved.
+The alarm is a feature that allows you to set up certain conditions when the alarm should be triggered (like wake up, when the module is moved in direction of the X-axis && acceleration is higher than 1g).
+
+The module uses interrupts to inform the microcontroller. This means that it can sleep when it is not being moved and only be awakened when moved.
 
 You can set conditions for the alarm in struct `twr_lis2dh12_alarm_t`.
 

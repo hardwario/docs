@@ -6,9 +6,9 @@ import Image from '@theme/IdealImage';
 We developed several **Command Line Tools** to make it possible to work with HARDWARIO TOWER even without GUI applications.
 
 These tools can be used to:
-- Run your server with all needed tools as discussed in the [previous chapter](../server-raspberry-pi/index.md)
+- Run your server with all needed tools as discussed in the [**previous chapter**](../server-raspberry-pi/index.md)
 - Develop your firmware without the use of any **advanced GUI tools**, more on that in the [**firmware development section**](../firmware-development/development-with-cli-tools.md)
-- Store your **MQTT messages** to the **Influx database** with an **mqtt2influxdb** tool, you can read more in [**its own chapter**](./mqtt-to-influx-db.md)
+- Store your **MQTT messages** to the **Influx database** with n **mqtt2influxdb** tool, you can read more in [**its own chapter**](./mqtt-to-influx-db.md)
 
 
 :::note

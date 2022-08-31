@@ -6,7 +6,38 @@ import Image from '@theme/IdealImage';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-TODO GUIDE TO INSTALL BCG
+:::info
+
+You will need Mosquitto MQTT Broker installed and running on your machine for this to work
+
+How to install Mosquitto:
+<Tabs groupId="operating-system">
+<TabItem value="windows" label="Windows" default>
+
+You can follow [**How to Install The Mosquitto MQTT Broker on Windows**](http://www.steves-internet-guide.com/install-mosquitto-broker/) tutorial to install and run mosquitto on your Windows system
+
+</TabItem>
+<TabItem value="linux" label="Linux">
+
+You can follow [**Install Mosquitto MQTT Broker On Ubuntu 20.04 Server**](https://www.vultr.com/docs/install-mosquitto-mqtt-broker-on-ubuntu-20-04-server/) tutorial to install and run mosquitto on your Ubuntu system
+
+</TabItem>
+<TabItem value="macOS" label="macOS">
+
+To install on macOS you can run command:
+
+```
+brew install mosquitto
+```
+
+After the installation, you need to run `mosquitto` in your terminal
+
+</TabItem>
+</Tabs>
+
+Also you will need our [**Gateway Service installed and running**](./gateway-service.md)
+
+:::
 
 This **multi-platform** Python tool is used to control the **radio** and **nodes**.
 
@@ -104,3 +135,54 @@ To get all available commands just type **`bch --help`** to your **CLI**
 
 :::
 
+## Usage Example
+
+:::info
+
+You need to run `mosquitto` and `bcg --device YOUR_RADIO_DONGLE` in another terminal or in the background
+
+:::
+
+#### Subscribe to all MQTT topics (#)
+
+```
+bch sub
+```
+
+#### If you have [your own server](../server-raspberry-pi/index.md), you can run following command with a server hostanem or IP Address (example is `hub.local`)
+
+```
+bch -H hub.local sub
+```
+
+#### Subscribe to specific topics
+
+```
+bch sub node/kitchen/#
+```
+
+#### Publish MQTT message on MQTT broker running localhost
+
+```
+bch pub node/kitchen/thermometer/0:0/temperature 21.70
+```
+
+#### Start pairing mode
+
+```
+bch pairing --start
+bch -H hub.local pairing --start
+```
+
+#### Stop pairing mode
+
+```
+bch pairing --stop
+bch -H hub.local pairing --start
+```
+
+#### List paired nodes
+
+```
+bch node list
+```
