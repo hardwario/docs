@@ -7,17 +7,34 @@ import Image from '@theme/IdealImage';
 [**Battery Module**](../../hardware-modules/about-battery-module.md) and [**Mini Battery Module**](../../hardware-modules/about-mini-battery-module.md) allow you to power your product with **four** or **two AAA batteries**.
 It automatically recognizes if external power is applied (AC module, USB, …) and disconnects batteries from the circuit.
 
-With this module, you can check the battery voltage (manually or periodically with [**Scheduler**](../task-scheduler.md)) and schedule appropriate actions for certain voltage levels.
+With this module, you can check the battery voltage (**manually** or **periodically**) and schedule appropriate actions for certain voltage levels.
 
 ## References
 - [Battery SDK Module](https://sdk.hardwario.com/group__twr__module__battery.html)
 - GitHub Repository Example
+
+## Battery Module Thresholds
+
+SDK offers two voltage level **thresholds**:
+
+```
+TWR_MODULE_BATTERY_EVENT_LEVEL_LOW
+TWR_MODULE_BATTERY_EVENT_LEVEL_CRITICAL
+```
+
+:::tip
+
+  You can use these thresholds to notify yourself that your device will run out of batteries soon and you don't have to worry about checking the voltage every now and then.
+
+:::
 
 :::info
 
   In this example, voltage and charge levels will be sent to your computer over USB every time you press a button on Core Module.
 
 :::
+
+## Examples
 
 <details><summary><b>Voltage Over USB Code Example</b></summary>
 <p>
@@ -65,6 +82,8 @@ With this module, you can check the battery voltage (manually or periodically wi
 
   In this example, the voltage will be sent over the radio every 60 minutes.
 
+  And if the voltage level is critical, it will send a **"CRITICAL"** message over the radio.
+
 :::
 
 <details><summary><b>Voltage Periodically Over Radio Code Example</b></summary>
@@ -88,6 +107,10 @@ With this module, you can check the battery voltage (manually or periodically wi
           {
               twr_radio_pub_battery(&voltage);
           }
+      }
+      if(event == TWR_MODULE_BATTERY_EVENT_LEVEL_CRITICAL)
+      {
+          twr_radio_pub_string("battery/level", "CRITICAL")
       }
   }
 

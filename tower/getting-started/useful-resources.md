@@ -4,6 +4,8 @@ title: Useful Resources
 ---
 import Image from '@theme/IdealImage';
 
+In this chapter, you can find some links to our other websites that can be helpful to the users and developers.
+
 ### [Projects on Hackster.io](https://www.hackster.io/hardwario/projects)
 
 Showcase of **projects from real life**. You can **get inspired** or maybe try to replicate some of them to quick start with TOWER.

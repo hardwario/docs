@@ -4,5 +4,8 @@
             "language": "markdown",
             "scheme": "file"
         }
+    ],
+    "cSpell.words": [
+        "mosquitto"
     ]
 }

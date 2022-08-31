@@ -30,10 +30,11 @@ const sidebars = {
         'desktop-programming/about-playground',
         'desktop-programming/playground-installation',
         'desktop-programming/playground-basics',
-        'desktop-programming/firmware-flashing',
         'desktop-programming/radio-network-management',
+        'desktop-programming/mqtt-messages-management',
         'desktop-programming/node-red-programming',
-        'desktop-programming/data-visualization'
+        'desktop-programming/data-visualization',
+        'desktop-programming/firmware-flashing',
       ],
     },
     {
@@ -46,7 +47,8 @@ const sidebars = {
       collapsed: true,
       items: [
         'server-raspberry-pi/installation-clean-os',
-        'server-raspberry-pi/installation-os'
+        'server-raspberry-pi/installation-os',
+        'server-raspberry-pi/login-guide'
       ],
     },
     {
@@ -192,7 +194,7 @@ const sidebars = {
         'hardware-modules/about-bridge-module',
         'hardware-modules/about-button-module',
         'hardware-modules/about-climate-module',
-        'hardware-modules/about-cloony',
+        //'hardware-modules/about-cloony',
         'hardware-modules/about-co2-module',
         'hardware-modules/about-compact-split-module',
         'hardware-modules/about-core-module',
@@ -200,7 +202,7 @@ const sidebars = {
         'hardware-modules/about-encoder-module',
         'hardware-modules/about-gps-module',
         'hardware-modules/about-humidity-tag',
-        'hardware-modules/about-infragrid-module',
+        //'hardware-modules/about-infragrid-module',
         'hardware-modules/about-lcd-module',
         'hardware-modules/about-lora-module',
         'hardware-modules/about-lux-meter-tag',
@@ -211,10 +213,10 @@ const sidebars = {
         'hardware-modules/about-nfc-tag',
         'hardware-modules/about-pir-module',
         'hardware-modules/about-power-module',
-        'hardware-modules/about-probe-module',
+        //'hardware-modules/about-probe-module',
         'hardware-modules/about-radio-dongle',
         'hardware-modules/about-relay-module',
-        'hardware-modules/about-rs-485-module',
+        //'hardware-modules/about-rs-485-module',
         'hardware-modules/about-sensor-module',
         'hardware-modules/about-soil-sensor',
         'hardware-modules/about-split-module',
@@ -237,7 +239,6 @@ const sidebars = {
         'hardware-interfaces/one-wire-bus'
       ],
     },
-    'test',
   ],
 };
 

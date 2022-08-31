@@ -12,12 +12,10 @@ Analog to digital converter can measure the voltage on one of the six inputs **`
 
 ## Sampling Types
 
-The ADC subsystem has to be initialized by calling **`twr_adc_init()`**.
-
 Each channel can be configured to a **different resolution and oversampling**.
 
 No matter what resolution you choose (**6, 8, 10, 12**) the result is always scaled to a **16-bit** value of **0-65535**.
-In asynchronous mode, you can also get the value directly in volts in the float data type.
+In asynchronous mode, you can also get the value directly in volts in the **float** data type.
 
 Sampling can be **synchronous** and **asynchronous**.
 

@@ -102,3 +102,6 @@ To get all available commands just type **`bcg --help`** to your **CLI**
 </details>
 
 :::
+
+## Usage Example
+
