@@ -63,7 +63,7 @@ Before you begin, make sure you comply with the chapter [Requirements](requireme
 1. Create the directory for your application and switch to it:
 
    ```
-   mkdir chester-app && cd chestep-app
+   mkdir chester-app && cd chester-app
    ```
 
    :::tip
