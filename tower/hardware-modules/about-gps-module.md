@@ -29,8 +29,8 @@ import Image from '@theme/IdealImage';
 - Operating temperature range: -40 to 85 °C
 
 ## References
-- [Shop](https://shop.hardwario.com/gps-module/)
-- [Schematics](https://github.com/hardwario/bc-hardware/tree/master/out/bc-module-gps)
-- [SDK Library](https://sdk.hardwario.com/group__twr__module__gps.html)
-- [Header File](https://github.com/hardwario/twr-sdk/blob/master/twr/inc/twr_module_gps.h)
-- [Source File](https://github.com/hardwario/twr-sdk/blob/master/twr/src/twr_module_gps.c)
+- [**Shop**](https://shop.hardwario.com/gps-module/)
+- [**Schematics**](https://github.com/hardwario/bc-hardware/tree/master/out/bc-module-gps)
+- [**SDK Library**](https://sdk.hardwario.com/group__twr__module__gps.html)
+- [**Header File**](https://github.com/hardwario/twr-sdk/blob/master/twr/inc/twr_module_gps.h)
+- [**Source File**](https://github.com/hardwario/twr-sdk/blob/master/twr/src/twr_module_gps.c)

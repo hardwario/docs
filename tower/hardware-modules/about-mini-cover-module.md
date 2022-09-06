@@ -33,5 +33,5 @@ If you are using bigger modules you can use our [**Standard Cover Module**](./ab
 - Mechanical dimensions: 88 x 55 mm
 
 ## References
-- [Shop](https://shop.hardwario.com/mini-cover-module/)
-- [Schematics](https://github.com/hardwario/bc-hardware/tree/master/out/bc-module-cover-mini)
+- [**Shop**](https://shop.hardwario.com/mini-cover-module/)
+- [**Schematics**](https://github.com/hardwario/bc-hardware/tree/master/out/bc-module-cover-mini)

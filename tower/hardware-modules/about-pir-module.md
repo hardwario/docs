@@ -34,9 +34,9 @@ import Image from '@theme/IdealImage';
 - Dimensions: 33 x 55 mm
 
 ## References
-- [Shop](https://shop.hardwario.com/pir-module/)
-- [Schematics](https://github.com/hardwario/bc-hardware/tree/master/out/bc-module-pir)
-- [SDK Library](https://sdk.hardwario.com/group__twr__module__pir)
-- [Header File](https://github.com/hardwario/twr-sdk/blob/master/twr/inc/twr_module_pir.h)
-- [Source File](https://github.com/hardwario/twr-sdk/blob/master/twr/src/twr_module_pir.c)
-- [Projects](https://www.hackster.io/hardwario/projects?part_id=73716)
+- [**Shop**](https://shop.hardwario.com/pir-module/)
+- [**Schematics**](https://github.com/hardwario/bc-hardware/tree/master/out/bc-module-pir)
+- [**SDK Library**](https://sdk.hardwario.com/group__twr__module__pir)
+- [**Header File**](https://github.com/hardwario/twr-sdk/blob/master/twr/inc/twr_module_pir.h)
+- [**Source File**](https://github.com/hardwario/twr-sdk/blob/master/twr/src/twr_module_pir.c)
+- [**Projects**](https://www.hackster.io/hardwario/projects?part_id=73716)

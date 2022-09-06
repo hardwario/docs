@@ -33,9 +33,9 @@ import Image from '@theme/IdealImage';
 - Mechanical dimensions: 33 x 55 mm
 
 ## References
-- [Shop](https://shop.hardwario.com/relay-module/)
-- [Schematics](https://github.com/hardwario/bc-hardware/tree/master/out/bc-module-relay)
-- [SDK Library](https://sdk.hardwario.com/group__twr__module__relay)
-- [Header File](https://github.com/hardwario/twr-sdk/blob/master/twr/inc/twr_module_relay.h)
-- [Source File](https://github.com/hardwario/twr-sdk/blob/master/twr/src/twr_module_relay.c)
-- [Projects](https://www.hackster.io/hardwario/projects?part_id=73841)
+- [**Shop**](https://shop.hardwario.com/relay-module/)
+- [**Schematics**](https://github.com/hardwario/bc-hardware/tree/master/out/bc-module-relay)
+- [**SDK Library**](https://sdk.hardwario.com/group__twr__module__relay)
+- [**Header File**](https://github.com/hardwario/twr-sdk/blob/master/twr/inc/twr_module_relay.h)
+- [**Source File**](https://github.com/hardwario/twr-sdk/blob/master/twr/src/twr_module_relay.c)
+- [**Projects**](https://www.hackster.io/hardwario/projects?part_id=73841)
