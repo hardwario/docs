@@ -52,5 +52,5 @@ To learn about the next tab visit [**MQTT Messages Management**](./mqtt-messages
 If you prefer a video guide, you can watch this video for the older Playground version, but it works the same.
 
 
-<ReactPlayer controls url='https://www.youtube.com/watch?v=ESrTEdV9PJQ&list=PLfRfhTxkuiVw0s9UQ8x5irref-EBwOghF' />
+<ReactPlayer controls url='https://youtu.be/ESrTEdV9PJQ' />
 

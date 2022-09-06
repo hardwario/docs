@@ -7,7 +7,7 @@ import Image from '@theme/IdealImage';
 Analog to digital converter can measure the voltage on one of the six inputs **`A0`** to **`A5`** and return the measured value. The result can be a **`16-bit`** value or **`float`** number in volts.
 
 ## References
-- [ADC SDK Module](https://sdk.hardwario.com/group__twr__adc.html)
+- [**ADC SDK Module**](https://sdk.hardwario.com/group__twr__adc.html)
 - GitHub Repository Example
 
 ## Sampling Types

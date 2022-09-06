@@ -6,7 +6,7 @@ import Image from '@theme/IdealImage';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-This **multi-platform** Python tool can flash [Radio Dongle](../hardware-modules/about-radio-dongle.md) and [Core Module](../hardware-modules/about-core-module.md) with local binary or the latest released firmware from [our GitHub](https://github.com/orgs/hardwario/repositories?q=twr-&type=all&language=&sort=).
+This **multi-platform** Python tool can flash [**Radio Dongle**](../hardware-modules/about-radio-dongle.md) and [**Core Module**](../hardware-modules/about-core-module.md) with local binary or the latest released firmware from [**our GitHub**](https://github.com/orgs/hardwario/repositories?q=twr-&type=all&language=&sort=).
 
 :::caution
 
@@ -168,7 +168,7 @@ bcf flash --device /dev/ttyUSB0 hardwario/twr-radio-push-button:latest
 
 ## More About Firmware Flashing Tool
 
-You can use **Firmware Flashing Tool** for logging messages from the device. Visit [Development With Command Line Tools chapter](../firmware-development/development-with-cli-tools.md) to get more info about this.
+You can use **Firmware Flashing Tool** for logging messages from the device. Visit [**Development With Command Line Tools chapter**](../firmware-development/development-with-cli-tools.md) to get more info about this.
 
 
 

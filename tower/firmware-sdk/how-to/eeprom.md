@@ -6,6 +6,6 @@ import Image from '@theme/IdealImage';
 
 
 ## References
-- [EEPROM SDK Module](https://sdk.hardwario.com/group__twr__eeprom.html)
+- [**EEPROM SDK Module**](https://sdk.hardwario.com/group__twr__eeprom.html)
 - GitHub Repository Example
 

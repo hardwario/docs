@@ -8,7 +8,7 @@ You can use many **GPIO pins** (**G**eneral **P**urpose **I**nput/**O**utput pin
 The pins are described in the Header Pinout. The pins in SDK have the names `TWR_GPIO_P0` to `TWR_GPIO_P17`. There are also two special pins dedicated to `TWR_GPIO_LED` and `TWR_GPIO_BUTTON`.
 
 ## References
-- [GPIO SDK Module](https://sdk.hardwario.com/group__twr__gpio.html)
+- [**GPIO SDK Module**](https://sdk.hardwario.com/group__twr__gpio.html)
 - GitHub Repository Example
 
 :::info

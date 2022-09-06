@@ -9,7 +9,7 @@ Core Module contains two analog outputs: `DAC0` and `DAC1`. These are real analo
 Both channels can run completely separately with different sample rates.
 
 ## References
-- [DAC SDK Module](https://sdk.hardwario.com/group__twr__dac.html)
+- [**DAC SDK Module**](https://sdk.hardwario.com/group__twr__dac.html)
 - GitHub Repository Example
 
 :::info

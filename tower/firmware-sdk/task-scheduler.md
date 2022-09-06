@@ -9,7 +9,7 @@ We’ve developed our scheduler based on our need for simplicity, and low-power 
 It is important to **not block the task** but do the necessary operation quickly and let the **scheduler run other tasks**. In case you need to create some delay, then the one solution is to create for example a state machine and schedule to call the task later.
 
 ## References
-- [Scheduler SDK Module](https://sdk.hardwario.com/group__twr__scheduler.html)
+- [**Scheduler SDK Module**](https://sdk.hardwario.com/group__twr__scheduler.html)
 - GitHub Repository Example
 
 ## Registering a Task

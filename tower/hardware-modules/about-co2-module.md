@@ -11,7 +11,7 @@ import Image from '@theme/IdealImage';
     </div>
     <div class="col col--6">
       <p>
-        The <b>CO₂ Module</b> is a gas sensor for measuring the <b>carbon dioxide (CO₂) concentration</b>. This module achieves ±50 ppm accuracy. It uses a [non-dispersive infrared (NDIR) sensor](https://en.wikipedia.org/wiki/Carbon_dioxide_sensor) manufactured in Sweden. Thanks to its <b>low-power operation</b> it can be powered by batteries for years.
+        The <b>CO₂ Module</b> is a gas sensor for measuring the <b>carbon dioxide (CO₂) concentration</b>. This module achieves ±50 ppm accuracy. It uses a <a href="https://en.wikipedia.org/wiki/Carbon_dioxide_sensor"><b>non-dispersive infrared (NDIR) sensor</b></a> manufactured in Sweden. Thanks to its <b>low-power operation</b> it can be powered by batteries for years.
       </p>
       <p>
         We have equipped the <b>LP8 sensor</b> with additional circuitry for efficient power management and <b>I²C-only interfacing</b>. This module also features three 5-pin sockets allowing you to <b>connect HARDWARIO tags</b>.
