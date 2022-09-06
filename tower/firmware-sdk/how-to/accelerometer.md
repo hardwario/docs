@@ -7,7 +7,7 @@ import Image from '@theme/IdealImage';
 The Core Module comes with three-axis ultra-low-power **linear accelerometer (LIS2DH12)** connected via the I²C bus. It is capable of motion detection based on interrupts.
 
 ## References
-- [Accelerometer SDK Module](https://sdk.hardwario.com/group__twr__lis2dh12.html)
+- [**Accelerometer SDK Module**](https://sdk.hardwario.com/group__twr__lis2dh12.html)
 - GitHub Repository Example
 
 You have two options for how to use the accelerometer:
