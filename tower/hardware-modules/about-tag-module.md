@@ -35,10 +35,10 @@ It also features pull-up resistors on **SDA/SCL** signals of the **I2C1 bus**.
 - Mechanical dimensions: 44 x 55 mm
 
 ## References
-- [Shop](https://shop.hardwario.com/barometer-tag/)
-- [Schematics](https://github.com/hardwario/bc-hardware/tree/master/out/bc-tag-barometer)
-- [SDK Library](https://sdk.hardwario.com/group__twr__tag__barometer)
-- [Header File](https://github.com/hardwario/twr-sdk/blob/HEAD/twr/inc/twr_tag_barometer.h)
-- [Source File](https://github.com/hardwario/twr-sdk/blob/HEAD/twr/src/twr_tag_barometer.c)
-- [Projects](https://www.hackster.io/hardwario/projects?part_id=108578)
+- [**Shop**](https://shop.hardwario.com/barometer-tag/)
+- [**Schematics**](https://github.com/hardwario/bc-hardware/tree/master/out/bc-tag-barometer)
+- [**SDK Library**](https://sdk.hardwario.com/group__twr__tag__barometer)
+- [**Header File**](https://github.com/hardwario/twr-sdk/blob/HEAD/twr/inc/twr_tag_barometer.h)
+- [**Source File**](https://github.com/hardwario/twr-sdk/blob/HEAD/twr/src/twr_tag_barometer.c)
+- [**Projects**](https://www.hackster.io/hardwario/projects?part_id=108578)
 

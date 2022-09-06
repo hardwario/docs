@@ -27,6 +27,6 @@ import Image from '@theme/IdealImage';
 - Mechanical dimensions: 114 x 33 mm
 
 ## References
-- [Shop](https://shop.hardwario.com/breadboard-module/)
-- [Schematics](https://github.com/hardwario/bc-hardware/tree/master/out/bc-module-breadboard)
-- [Projects](https://www.hackster.io/hardwario/projects?part_id=73867)
+- [**Shop**](https://shop.hardwario.com/breadboard-module/)
+- [**Schematics**](https://github.com/hardwario/bc-hardware/tree/master/out/bc-module-breadboard)
+- [**Projects**](https://www.hackster.io/hardwario/projects?part_id=73867)

@@ -32,7 +32,7 @@ import Image from '@theme/IdealImage';
 - Mechanical dimensions: 88 x 55 mm
 
 ## References
-- [Shop](https://shop.hardwario.com/base-module/)
-- [Schematics](https://github.com/hardwario/bc-hardware/tree/master/out/bc-module-base)
-- [Projects](https://www.hackster.io/hardwario/projects?part_id=73844)
+- [**Shop**](https://shop.hardwario.com/base-module/)
+- [**Schematics**](https://github.com/hardwario/bc-hardware/tree/master/out/bc-module-base)
+- [**Projects**](https://www.hackster.io/hardwario/projects?part_id=73844)
 

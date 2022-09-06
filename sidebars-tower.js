@@ -208,7 +208,7 @@ const sidebars = {
         'hardware-modules/about-lora-module',
         'hardware-modules/about-lux-meter-tag',
         'hardware-modules/about-maxi-base-module',
-        'hardware-modules/about-micro-bit-module',
+        //'hardware-modules/about-micro-bit-module',
         'hardware-modules/about-mini-battery-module',
         'hardware-modules/about-mini-cover-module',
         'hardware-modules/about-nfc-tag',
