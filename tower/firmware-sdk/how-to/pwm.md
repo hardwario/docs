@@ -4,7 +4,7 @@ title: "How To: PWM"
 ---
 import Image from '@theme/IdealImage';
 
-[Pulse Width Modulation (PWM)](https://en.wikipedia.org/wiki/Pulse-width_modulation) is a method to create an analog-like signal from the microcontroller's digital output. It achieves that by fast toggling of the pin with a different ratio of logic **HIGH** and **LOW**. This ratio is called **duty cycle**.
+[**Pulse Width Modulation (PWM)**](https://en.wikipedia.org/wiki/Pulse-width_modulation) is a method to create an analog-like signal from the microcontroller's digital output. It achieves that by fast toggling of the pin with a different ratio of logic **HIGH** and **LOW**. This ratio is called **duty cycle**.
 
 Please check the **Core Module pinout** to see which pins **allow PWM**.
 
@@ -22,7 +22,7 @@ Please check the **Core Module pinout** to see which pins **allow PWM**.
 ```
 
 ## References
-- [PWM SDK Module](https://sdk.hardwario.com/group__twr__pwm.html)
+- [**PWM SDK Module**](https://sdk.hardwario.com/group__twr__pwm.html)
 - GitHub Repository Example
 
 ## Duty Cycle

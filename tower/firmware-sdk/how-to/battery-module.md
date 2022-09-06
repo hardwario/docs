@@ -10,7 +10,7 @@ It automatically recognizes if external power is applied (AC module, USB, …) a
 With this module, you can check the battery voltage (**manually** or **periodically**) and schedule appropriate actions for certain voltage levels.
 
 ## References
-- [Battery SDK Module](https://sdk.hardwario.com/group__twr__module__battery.html)
+- [**Battery SDK Module**](https://sdk.hardwario.com/group__twr__module__battery.html)
 - GitHub Repository Example
 
 ## Battery Module Thresholds

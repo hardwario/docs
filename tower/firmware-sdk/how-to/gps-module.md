@@ -7,7 +7,7 @@ import Image from '@theme/IdealImage';
 GPS Module can be used for getting **position**, **time**, **date** and **altitude**.
 
 ## References
-- [GPS SDK Module](https://sdk.hardwario.com/group__twr__module__gps.html)
+- [**GPS SDK Module**](https://sdk.hardwario.com/group__twr__module__gps.html)
 - GitHub Repository Example
 
 Thanks to the **SDK**, setting up and using the GPS Module **is very simple**. You have to do only two things:

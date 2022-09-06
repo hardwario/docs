@@ -35,5 +35,5 @@ If you are flashing **Radio Dongle** make sure that you have it **Disconnected**
 
 If you prefer a video guide, you can watch this video for the older Playground version, but it works the same.
 
-<ReactPlayer controls url='https://www.youtube.com/watch?list=PLfRfhTxkuiVw0s9UQ8x5irref-EBwOghF&v=3IXLBQ5M6Us' />
+<ReactPlayer controls url='https://youtu.be/3IXLBQ5M6Us' />
 

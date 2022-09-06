@@ -7,8 +7,8 @@ import Image from '@theme/IdealImage';
 To make it easier to work with certain 1-Wire devices we implemented a module called `twr_onewire_relay` which allows you to control relay modules connected via 1-Wire bus, for example, the [**Relay module developed by Denkovi**](http://denkovi.com/1-wire-eight-channel-relay-module-for-home-automation-with-din-box).
 
 ## References
-- [1-Wire SDK Module](https://sdk.hardwario.com/group__twr__onewire__relay.html)
-- [GitHub Repository Example](https://github.com/hardwario/twr-sdk/tree/master/_examples/onewire-relay)
+- [**1-Wire SDK Module**](https://sdk.hardwario.com/group__twr__onewire__relay.html)
+- [**GitHub Repository Example**](https://github.com/hardwario/twr-sdk/tree/master/_examples/onewire-relay)
 
 :::info
 

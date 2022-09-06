@@ -7,7 +7,7 @@ import Image from '@theme/IdealImage';
 Controlling **LED diode** integrated on Core Module is like printing `Hello world`. In this chapter, we will go over some simple examples on how to do that
 
 ## References
-- [LED SDK Module](https://sdk.hardwario.com/group__twr__led.html)
+- [**LED SDK Module**](https://sdk.hardwario.com/group__twr__led.html)
 - GitHub Repository Example
 
 :::info

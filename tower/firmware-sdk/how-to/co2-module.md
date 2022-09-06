@@ -8,10 +8,10 @@ With CO₂ Module you can easily measure the concentration of **carbon dioxide**
 
 It is a low-power module that can be battery-powered for a long period. Remember that the device can need a few days before the best results are achieved.
 
-The module uses [infrared light for measurements](https://en.wikipedia.org/wiki/Carbon_dioxide_sensor).
+The module uses [**infrared light for measurements**](https://en.wikipedia.org/wiki/Carbon_dioxide_sensor).
 
 ## References
-- [CO₂ SDK Module](https://sdk.hardwario.com/group__twr__module__co2.html)
+- [**CO₂ SDK Module**](https://sdk.hardwario.com/group__twr__module__co2.html)
 - GitHub Repository Example
 
 :::info

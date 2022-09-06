@@ -7,13 +7,13 @@ import Image from '@theme/IdealImage';
 `twr_config` functions help you to easily create a **variable** or **structure of variables** that are saved in internal **EEPROM memory**.
 
 The library will automatically initialize your configuration when:
-  - It runs first time
+  - It runs for the first time
   - The signature parameter is different
   - The new configuration structure has a different length
   - The EEPROM is corrupted
 
 ## References
-- [EEPROM Config SDK Module](https://sdk.hardwario.com/group__twr__config.html)
+- [**EEPROM Config SDK Module**](https://sdk.hardwario.com/group__twr__config.html)
 - GitHub Repository Example
 
 ## Initialization

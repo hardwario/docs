@@ -26,7 +26,7 @@ In both modes, you should see the **HARDWARIO logo on the side panel**
     <div class="col col--6">
     </div>
   </div>
-  </div>
+</div>
 
 :::
 
@@ -55,7 +55,7 @@ In both modes, you should see the **HARDWARIO logo on the side panel**
 
 If you didn’t open a folder with HARDWARIO TOWER firmware the extension will activate but **will provide fewer options**.
 
-You will get access to some basic commands that will lead you to our websites and then two commands for **cloning firmware from our [GitHub](https://github.com/hardwario)**.
+You will get access to some basic commands that will lead you to our websites and then two commands for **cloning firmware from our [**GitHub**](https://github.com/hardwario)**.
 
 You can use these commands to get started with the firmware development.
 

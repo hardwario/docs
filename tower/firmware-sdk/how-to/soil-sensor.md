@@ -7,7 +7,7 @@ import Image from '@theme/IdealImage';
 Soil Moisture sensor measures moisture and temperature.
 
 ## References
-- [Soil Sensor SDK Module](https://sdk.hardwario.com/group__twr__soil__sensor.html)
+- [**Soil Sensor SDK Module**](https://sdk.hardwario.com/group__twr__soil__sensor.html)
 - GitHub Repository Example
 
 :::info
