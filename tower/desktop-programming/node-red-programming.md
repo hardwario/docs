@@ -35,14 +35,14 @@ There are a lot of nodes available for Node-RED that you can install but you sho
 <div class="container">
   <div class="row">
     <div class="col col--2">
-      <div><Image img={require('./node-red-node.png')}/></div>
+      <div><Image img={require('./node-red-mqtt-node.png')}/></div>
     </div>
     <div class="col col--8">
     </div>
   </div>
 </div>
 
-You can use nodes for multiple functions. As an example there is a **data visualization** that is tightly connected with the [**Dashboard Tab**](./data-visualization.md).
+You can use nodes for multiple functions. As an example, there is a **data visualization** that is tightly connected with the [**Dashboard Tab**](./data-visualization.md).
 
 :::info
 
