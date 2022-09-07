@@ -25,7 +25,7 @@ import Image from '@theme/IdealImage';
 - Micro-USB connector
 - Two independent I2C buses provided by I2C multiplexer TCA9543
 - Red color LED (driven from FT260 GPIO pin)
-- Operating voltage range: 3.0 to 3.6 V or from USB host
+- Operating voltage range: 3.0 to 3.6 V or from the USB host
 - Operating temperature range: -20 to 70 °C
 - Mechanical dimensions: 33 x 55 mm
 

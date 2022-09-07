@@ -16,13 +16,13 @@ This chapter focuses on developing firmware using strictly command-line tools.
 
 :::caution
 
-This chapter will go over using multiple tools like **cmake** and **ninja**, it will also go over our command-line flashing tool. There is a separate chapter on [**Firmware Flashing Tool**](../command-line-tools/firmware-tool.md) where you can learn how to install it.
+This chapter will go over using multiple tools like **CMake** and **ninja**, it will also go over our command-line flashing tool. There is a separate chapter on [**Firmware Flashing Tool**](../command-line-tools/firmware-tool.md) where you can learn how to install it.
 
 :::
 
 ## Installation
 
-You will need to install few tools so you will be able to build your project:
+You will need to install a few tools so you will be able to build your project:
 
 :::note
 
@@ -34,8 +34,8 @@ All of these have to be in **PATH**
 <TabItem value="windows" label="Windows" default>
 
 - [**bcf**](../command-line-tools/firmware-tool.md)
-- [**cmake**](https://cmake.org/install/)
-- [**ninja**](https://github.com/ninja-build/ninja/releases)
+- [**CMake**](https://cmake.org/install/)
+- [**Ninja**](https://github.com/ninja-build/ninja/releases)
 - [**arm-none-eabi-gcc**](https://mynewt.apache.org/latest/get_started/native_install/cross_tools.html#installing-the-arm-toolchain-for-windows)
 - [**make**](https://www.technewstoday.com/install-and-use-make-in-windows/) (**LEGACY**)
 
@@ -43,8 +43,8 @@ All of these have to be in **PATH**
 <TabItem value="linux" label="Linux">
 
 - [**bcf**](../command-line-tools/firmware-tool.md)
-- [**cmake**](https://cmake.org/install/)
-- [**ninja**](https://github.com/ninja-build/ninja/releases)
+- [**CMake**](https://cmake.org/install/)
+- [**Ninja**](https://github.com/ninja-build/ninja/releases)
 - [**arm-none-eabi-gcc**](https://mynewt.apache.org/latest/get_started/native_install/cross_tools.html#installing-the-arm-toolchain-for-linux)
 - [**make**](https://linuxhint.com/install-make-ubuntu/) (**LEGACY**)
 
@@ -52,15 +52,15 @@ All of these have to be in **PATH**
 <TabItem value="macOS" label="macOS">
 
 - [**bcf**](../command-line-tools/firmware-tool.md)
-- [**cmake**](https://cmake.org/install/)
-- [**ninja**](https://github.com/ninja-build/ninja/releases)
+- [**CMake**](https://cmake.org/install/)
+- [**Ninja**](https://github.com/ninja-build/ninja/releases)
 - [**arm-none-eabi-gcc**](https://mynewt.apache.org/latest/get_started/native_install/cross_tools.html#installing-the-arm-toolchain-for-mac-os-x)
 - [**make**](https://formulae.brew.sh/formula/make) (**LEGACY**)
 
 </TabItem>
 </Tabs>
 
-## Developement cycle
+## Development cycle
 
 - First, you need to clone firmware from [**our GitHub**](https://github.com/hardwario). For a blank start, there is the [**twr-skeleton**](https://github.com/hardwario/twr-skeleton) firmware available
   - To clone the firmware use:
@@ -82,11 +82,11 @@ All of these have to be in **PATH**
   ```
   ninja -C obj/debug
   ```
-- Flash firmware to your device with `bcf` (you will be prompted to select the devive that you want to flash)
+- Flash firmware to your device with `bcf` (you will be prompted to select the device that you want to flash)
   ```
   bcf flash
   ```
-- If you want to attach console to your device for some debugging, run `bcf` with `--log` flag or just run `bcf log`:
+- If you want to attach the console to your device for some debugging, run `bcf` with `--log` flag or just run `bcf log`:
   ```
   bcf flash --log
   ```

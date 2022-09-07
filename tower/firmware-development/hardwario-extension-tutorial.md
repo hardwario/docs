@@ -85,7 +85,7 @@ If you are using standard firmware, the `/src/application.c` file should be open
 
 :::
 
-In this mode, you will get some additional controls on the **bottom panel** and on the **side panel**.
+In this mode, you will get some additional controls on the **bottom panel** and the **side panel**.
 
 On the **bottom panel**, there are some important controls that you can quickly use, without the need for the **side panel controls**
 
@@ -119,11 +119,11 @@ You can use this most of the time while developing
 
 :::caution
 
-You will need a [**JLink Probe**](https://www.segger.com/products/debug-probes/j-link/) for this to work properly. This is for an advanced debugging. You have to have `arm-none-eabi-gdb` and `JLinkGDBServerCL` in **PATH** for this to work. If you are using our portable version you don’t have to worry about that and you just need the JLink Probe
+You will need a [**JLink Probe**](https://www.segger.com/products/debug-probes/j-link/) for this to work properly. This is for advanced debugging. You have to have `arm-none-eabi-gdb` and `JLinkGDBServerCL` in **PATH** for this to work. If you are using our portable version you don’t have to worry about that and you just need the JLink Probe
 
 :::
 
-This command will not attach the console like the **previous one** but will instead try to attach it to the **JLink debugger** for some **advanced debugging**. You can read more about JLink debugging in **Advanced Debugging chapter**.
+This command will not attach the console like the **previous one** but will instead try to attach it to the **JLink debugger** for some **advanced debugging**. You can read more about JLink debugging in the **Advanced Debugging chapter**.
 
 ### Clean All Outputs
 
@@ -131,7 +131,7 @@ This command will clean all the outputs so you can recompile **everything from s
 
 ### Build Firmware
 
-This command will run **cmake** and **ninja** on the code. You can check if you have some **errors** or **warnings** in the code before you flash it into the device.
+This command will run **CMake** and **ninja** on the code. You can check if you have some **errors** or **warnings** in the code before you flash it into the device.
 
 ### Flash Firmware
 
@@ -151,11 +151,11 @@ You will need a [**JLink Probe**](https://www.segger.com/products/debug-probes/j
 
 This command will try to connect to a JLink for advanced debugging.
 
-You can read more about JLink debugging in **Advanced Debugging chapter**.
+You can read more about JLink debugging in the **Advanced Debugging chapter**.
 
-Debugging can be started **multiple ways**:
+Debugging can be started in **multiple ways**:
 
-#### Press F5 button with some *.c or *.h file in focus
+#### Press the F5 button with some *.c or *.h file in focus
 
 :::info
 
@@ -174,7 +174,7 @@ If you want to just run the debug and not change anything in the `launch.json` y
   </div>
   </div>
 
-#### Go to Run and Debug and create `launch.json`
+#### Go to the Run and Debug and create `launch.json`
 
 If you want to have your custom `launch.json` you can go to the **Run and Debug** window on the **side panel** and **click create a launch.json** file and select TOWER Debugger. or add this configuration to an existing one.
 

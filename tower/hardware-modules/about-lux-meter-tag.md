@@ -25,7 +25,7 @@ You can use the sensor to **detect day and night** or it could be used as auxili
 
 ## Features
 - Digital ambient **light sensor OPT3001 (TI)**
-- Communication using **I²C bus**
+- Communication using the **I²C bus**
 - Measures in the range from **0.01 to 83,000 lux**
 - 23-bit effective dynamic range
 - Optional interrupt output

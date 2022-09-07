@@ -18,7 +18,7 @@ You have two options for how to use the accelerometer:
 
 This can be achieved by setting the update interval in your code with function `twr_lis2dh12_set_update_interval`, which takes the pointer to instantiated accelerometer and time between measurements in milliseconds as parameters.
 
-You also have to instantiate a struct `twr_lis2dh12_result_g_t` to store the results of measurements. Those values can be retrieved by calling `twr_lis2dh12_get_result_g` function.
+You also have to instantiate a structure `twr_lis2dh12_result_g_t` to store the results of measurements. Those values can be retrieved by calling `twr_lis2dh12_get_result_g` function.
 
 :::info
 
@@ -69,7 +69,7 @@ The alarm is a feature that allows you to set up certain conditions when the ala
 
 The module uses interrupts to inform the microcontroller. This means that it can sleep when it is not being moved and only be awakened when moved.
 
-You can set conditions for the alarm in struct `twr_lis2dh12_alarm_t`.
+You can set conditions for the alarm in structure `twr_lis2dh12_alarm_t`.
 
 When the accelerometer checks these settings it uses **logical AND operation** meaning that every set condition needs to occur for the alarm to be triggered.
 

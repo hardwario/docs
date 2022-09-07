@@ -9,7 +9,7 @@ In this chapter, we will go over the **Messages Tab** of Playground
 
 :::info
 
-**Messages Tab** is really useful only after you connect to your **Radio Dongle**, you can read about how to do it in [**Radio Network Management chapter**](./radio-network-management.md)
+**Messages Tab** is really useful only after you connect to your **Radio Dongle**, you can read about how to do it in the [**Radio Network Management chapter**](./radio-network-management.md)
 
 :::
 
@@ -19,7 +19,7 @@ In this tab, you can view all the messages from your paired devices or just any 
 
 :::note
 
-If you don't know much about MQTT protocol and MQTT messages, you can visit [**MQTT Protocol section**](../mqtt-protocol/index.md)
+If you don't know much about MQTT protocol and MQTT messages, you can visit an [**MQTT Protocol section**](../mqtt-protocol/index.md)
 
 :::
 
@@ -45,8 +45,8 @@ This is **irreversible**, so be careful.
 
 ### Publish message
 In this part of the tab, you can **Publish MQTT messages**
-- In the left input field, you just put the **topic of the message**, for example: `node/test`
-- In the right input field, you just put the message that you want to send under the selected topic, for example: `test message`
+- In the left input field, you just put the **topic of the message**, for example, `node/test`
+- In the right input field, you just put the message that you want to send under the selected topic, for example, `test message`
 
 After you click the **Publish** button you should see the message appear in the top part (if you are subscribed to the topic you selected)
 

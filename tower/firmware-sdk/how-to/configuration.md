@@ -28,7 +28,7 @@ The last parameter `init_config` can be:
 
 In the simple example below there is a structure for saving a PIR Module configuration (`report_interval`, `pir_sensitivity`, `pir_deadtime`).
 
-In the `application_init()` is some showcase on how to use some of the functions available in `twr_config_*` SDK module.
+In the `application_init()` is some showcase on how to use some of the functions available in the `twr_config_*` SDK module.
 
 :::
 

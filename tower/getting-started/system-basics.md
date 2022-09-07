@@ -52,7 +52,7 @@ We have achieved that thanks to our long-time experience designing ultra-low-pow
 
 TOWER uses simple, yet proven security mechanisms for data encryption and authentication in radio communication.
 
-In every TOWER device, you will also find a special hardware security element - the so-called cryptochip. This special tiny memory allows you to store your security keys securely used in message authentication. You cannot rip the keys from the memory even if you get physical access to the device.
+In every TOWER device, you will also find a special hardware security element - the so-called crypto chip. This special tiny memory allows you to store your security keys securely used in message authentication. You cannot rip the keys from the memory even if you get physical access to the device.
 
 We all know that the “security by obscurity” approach does not work in long term and still, you will find it in so many proprietary products.
 
@@ -62,6 +62,6 @@ We all know that the “security by obscurity” approach does not work in long 
 
 :::note
 
-To learn more about TOWER Design, you can visit [**Design Principles chapter**](./design-principles.md)
+To learn more about TOWER Design, you can visit the [**Design Principles chapter**](./design-principles.md)
 
 :::

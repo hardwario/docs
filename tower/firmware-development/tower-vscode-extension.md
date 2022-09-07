@@ -12,7 +12,7 @@ If you experience some issues or difficulties with the extension or portable ver
 
 :::
 
-This chapter focuses on the HARDWARIO TOWER Visual Studio Code extension, you will need to install some tools for this extension to work fully. If you don't want to bother with this, you can install our standalone HARDWARIO Code, on how to do that visit [**About HARDWARIO Code chapter**](./about-hardwario-code.md).
+This chapter focuses on the HARDWARIO TOWER Visual Studio Code extension, you will need to install some tools for this extension to work fully. If you don't want to bother with this, you can install our standalone HARDWARIO Code, on how to do that visit the [**About HARDWARIO Code chapter**](./about-hardwario-code.md).
 
 ## Installation
 
@@ -43,8 +43,8 @@ The extension will warn you that you are missing some of those and provide you w
 <Tabs groupId="operating-system">
 <TabItem value="windows" label="Windows" default>
 
-- [**cmake**](https://cmake.org/install/)
-- [**ninja**](https://github.com/ninja-build/ninja/releases)
+- [**CMake**](https://cmake.org/install/)
+- [**Ninja**](https://github.com/ninja-build/ninja/releases)
 - [**arm-none-eabi-gcc**](https://mynewt.apache.org/latest/get_started/native_install/cross_tools.html#installing-the-arm-toolchain-for-windows)
 - [**git**](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 - **Linux commands**
@@ -54,8 +54,8 @@ The extension will warn you that you are missing some of those and provide you w
 </TabItem>
 <TabItem value="linux" label="Linux">
 
-- [**cmake**](https://cmake.org/install/)
-- [**ninja**](https://github.com/ninja-build/ninja/releases)
+- [**CMake**](https://cmake.org/install/)
+- [**Ninja**](https://github.com/ninja-build/ninja/releases)
 - [**arm-none-eabi-gcc**](https://mynewt.apache.org/latest/get_started/native_install/cross_tools.html#installing-the-arm-toolchain-for-linux)
 - [**git**](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 - [**make**](https://linuxhint.com/install-make-ubuntu/) (**LEGACY**)
@@ -63,8 +63,8 @@ The extension will warn you that you are missing some of those and provide you w
 </TabItem>
 <TabItem value="macOS" label="macOS">
 
-- [**cmake**](https://cmake.org/install/)
-- [**ninja**](https://github.com/ninja-build/ninja/releases)
+- [**CMake**](https://cmake.org/install/)
+- [**Ninja**](https://github.com/ninja-build/ninja/releases)
 - [**arm-none-eabi-gcc**](https://mynewt.apache.org/latest/get_started/native_install/cross_tools.html#installing-the-arm-toolchain-for-mac-os-x)
 - [**git**](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 - [**make**](https://formulae.brew.sh/formula/make) (**LEGACY**)

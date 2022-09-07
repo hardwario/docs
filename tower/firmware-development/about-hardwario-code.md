@@ -29,11 +29,11 @@ There is a version available for each major operating system. Installation sligh
 <Tabs groupId="operating-system">
 <TabItem value="windows" label="Windows" default>
 
-- Download [**HARDWARIO Code installer for windows**](https://drive.google.com/drive/u/3/folders/1gC91vzSR0O1RONRX6LMJ8_ug1_UOikpt)
+- Download the [**HARDWARIO Code installer for windows**](https://drive.google.com/drive/u/3/folders/1gC91vzSR0O1RONRX6LMJ8_ug1_UOikpt)
 - Complete the installer
   :::info
 
-    At the location selection, we recommend leaving the **default path** that leads to your **user AppData** (the portable version of Visual Studio Code does not support multiple users installation)
+    At the location selection, we recommend leaving the **default path** that leads to your **user AppData** (the portable version of Visual Studio Code does not support multiple user installations)
 
   :::
 - You should have **HARDWARIO Code** icon on the desktop
@@ -45,10 +45,10 @@ There is a version available for each major operating system. Installation sligh
 
 - Download [**HARDWARIO Code**](https://drive.google.com/drive/u/3/folders/1gC91vzSR0O1RONRX6LMJ8_ug1_UOikpt)
 - Unpack the archive wherever you want
-- If you want to have a **shortcut available** and some **additional drivers installed** you can run `install.sh` script from the unpacked folder
+- If you want to have a **shortcut available** and some **additional drivers installed** you can run the `install.sh` script from the unpacked folder
 - Run the **code** binary from the terminal or find **HARDWARIO Code** with your search bar
 - Wait for the **HARDWARIO Code** to open
-- You should see HARDWARIO Logo on the side panel and **HARDWARIO Code** at the top of the window
+- You should see HARDWARIO Logo on the side panel and the **HARDWARIO Code** at the top of the window
 
 :::caution
 
@@ -59,13 +59,13 @@ If you don’t have a **git** installed on your system, you will have to [**inst
 </TabItem>
 <TabItem value="macOS" label="macOS">
 
-- Download [**HARDWARIO Code installation package**](https://drive.google.com/drive/u/3/folders/1gC91vzSR0O1RONRX6LMJ8_ug1_UOikpt) for macOS
+- Download the [**HARDWARIO Code installation package**](https://drive.google.com/drive/u/3/folders/1gC91vzSR0O1RONRX6LMJ8_ug1_UOikpt) for macOS
 - Run the installer by double clicking it
 - Follow the installer instruction
 - You should see a **hardwario-code** folder in your user’s ~/Applications folder
 - Run `~Applications/hardwario-code/Visual Studio Code`
 - Wait for the **HARDWARIO Code** to open
-- You should see HARDWARIO Logo on the side panel and **HARDWARIO Code** at the top of the window
+- You should see HARDWARIO Logo on the side panel and the **HARDWARIO Code** at the top of the window
 
 </TabItem>
 </Tabs>

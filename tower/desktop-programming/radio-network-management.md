@@ -10,7 +10,7 @@ In this chapter, we will go over the **Devices Tab** of Playground
 
 On this tab, you can connect to the **Radio Dongle**
 
-Choose the **Radio Dongle** (there should be `twr-usb-donge` or `bc-usb-dongle` on the line) from the dropdown list and click **Connect**.
+Choose the **Radio Dongle** (there should be `twr-usb-dongle` or `bc-usb-dongle` on the line) from the dropdown list and click **Connect**.
 
 If you just bought the **Radio Dongle** from our shop, you should receive it with the correct firmware and everything should work.
 

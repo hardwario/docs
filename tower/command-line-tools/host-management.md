@@ -149,7 +149,7 @@ You need to run `mosquitto` and `bcg --device YOUR_RADIO_DONGLE` in another term
 bch sub
 ```
 
-#### If you have [your own server](../server-raspberry-pi/index.md), you can run following command with a server hostanem or IP Address (example is `hub.local`)
+#### If you have [your own server](../server-raspberry-pi/index.md), you can run following command with a server hostname or IP Address (example is `hub.local`)
 
 ```
 bch -H hub.local sub
