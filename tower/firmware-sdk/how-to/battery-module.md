@@ -24,7 +24,7 @@ TWR_MODULE_BATTERY_EVENT_LEVEL_CRITICAL
 
 :::tip
 
-  You can use these thresholds to notify yourself that your device will run out of batteries soon and you don't have to worry about checking the voltage every now and then.
+  You can use these thresholds to notify yourself that your device will run out of batteries soon and you don't have to worry about checking the voltage now and then.
 
 :::
 

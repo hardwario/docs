@@ -66,7 +66,7 @@ And then reload **`~/.bashrc`** by:
 source ~/.bashrc
 ```
 
-Thanks to this, you can use **TAB key** to autocomplete commands for **Firmware Flashing Tool**
+Thanks to this, you can use a **TAB key** to autocomplete commands for **Firmware Flashing Tool**
 
 </TabItem>
 <TabItem value="macOS" label="macOS">
@@ -158,7 +158,7 @@ bcf flash hardwario/twr-radio-push-button:latest
 
 :::tip
 
-If you are flashing multiple times in a row you can use **`--device`** flag to skip the prompt for selecting the device every time
+If you are flashing multiple times in a row you can use a **`--device`** flag to skip the prompt for selecting the device every time
 
 ```bash
 bcf flash --device /dev/ttyUSB0 hardwario/twr-radio-push-button:latest

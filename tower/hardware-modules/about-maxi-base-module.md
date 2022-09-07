@@ -24,7 +24,7 @@ import Image from '@theme/IdealImage';
 - Possibility to connect any **IoT module of the TOWER kit**
 - Placement of up to 2 columns of large TOWER kit modules, or up to 4 columns of small TOWER kit modules
 - Terminal block for connecting the CHESTER-X module (connection of external sensors), external button or external power supply (directly to VDD)
-- Adapted for mounting in an Takachi industrial enclosure
+- Adapted for mounting in a Takachi industrial enclosure
 - Operating temperature range: -20 ° C to 80 ° C
 
 ## References

@@ -29,7 +29,7 @@ If you already have your Raspberry Pi running with **Raspberry Pi OS** and you j
 
 - Insert a microSD card into the reader connected to your computer
 - Open **Raspberry Pi Imager**
-- Select **CHOOSE OS** --> **Scrool Down** --> **Use Custom** --> **Select downloaded HARDWARIO Raspbian Image**
+- Select **CHOOSE OS** --> **Scroll Down** --> **Use Custom** --> **Select downloaded HARDWARIO Raspbian Image**
   - It should look something like this
     <div class="container">
     <div class="row">
@@ -46,7 +46,7 @@ If you already have your Raspberry Pi running with **Raspberry Pi OS** and you j
     - Use password authentication
   - Set **username** and **password**
     - You can set up whatever you want but we recommend a different username and strong password. Just make sure to remember it
-  - You can also Configure wireless LAN (WiFi) but that is optional if you have LAN connection
+  - You can also Configure wireless LAN (WiFi) but that is optional if you have a LAN connection
   <div class="container">
     <div class="row">
       <div class="col col--7">
@@ -61,7 +61,7 @@ If you already have your Raspberry Pi running with **Raspberry Pi OS** and you j
 
 :::note
 
-After the flashing is finished insert the microSD card into your Raspberry Pi. If you didn't set up **WiFi** connect your Ethernet cable. Connect [**Radio Dongle**](../hardware-modules/about-radio-dongle.md) and apply power to your Raspberry Pi.
+After the flashing is finished insert the microSD card into your Raspberry Pi. If you didn't set up **WiFi**, connect your Ethernet cable. Connect [**Radio Dongle**](../hardware-modules/about-radio-dongle.md) and apply power to your Raspberry Pi.
 
 After that, you are ready to start using your server.
 
@@ -79,7 +79,7 @@ Without any additional setup, you need to be on the **same network as the Raspbe
 
 To connect to your **Raspberry Pi** you have two options that you can put into the search bar:
 - The IP address of the Raspberry Pi (for how to find it check [**Login Guide**](./login-guide.md#find-out-raspberry-pi-ip) )
-- The hostname that you set up in the previous step (in this tutorial it is [**hub.local**](http://hub.local))
+- The hostname that you set up in the previous step (in this tutorial it is a [**hub.local**](http://hub.local))
 
 
 TODO HUB IMAGE
@@ -87,9 +87,9 @@ TODO HUB IMAGE
 
 ## Troubleshooting
 
-If **Start pairing** button is disabled and you cannot press it. Please make sure you **first connect Radio Dongle and then apply the power to Rasberry Pi.**
+If the **Start pairing** button is disabled and you cannot press it. Please make sure you **first connect Radio Dongle and then apply the power to Raspberry Pi.**
 
-If you are still having trouble with connecting to Radio Dongle it can be because you did `apt update` and `apt upgrade`. There is an issue with mosquitto that **anonymous connections are not allowed**.
+If you are still having trouble with connecting to Radio Dongle it can be because you did an `apt update` and `apt upgrade`. There is an issue with mosquitto that **anonymous connections are not allowed**.
 To fix this issue just run the following command:
 
 ```bash

@@ -51,7 +51,7 @@ You can use **PuTTY**, which is an application that allows you to connect to a r
   </div>
 </div>
 
-- Add your **hostname** or **IP Address** (here it is ``hub.local``)
+- Add your **hostname** or **IP Address** (here it is a ``hub.local``)
 - Select **SSH** if not already selected
 - Click **Open**
 - Log in:
@@ -66,7 +66,7 @@ You should be logged in to your Raspberry Pi. We recommend [**changing the passw
 
 ## Connect With Terminal
 
-On all systems, you can open the integrated terminal and connect with ``ssh`` command
+On all systems, you can open the integrated terminal and connect with the ``ssh`` command
 
 Open a terminal and run the following command:
 

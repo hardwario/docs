@@ -17,7 +17,7 @@ import Image from '@theme/IdealImage';
         This module can power a HARDWARIO TOWER - Industrial IoT Kit node thanks to its integrated LDO regulator. The LDO generates 3.3 V output from the 5 V input.
       </p>
       <p>
-        Reliability is important - that’s why we have implemented a smart overvoltage, undervoltage and reverse polarity protection on the power jack input. This feature guarantees the input voltage range to always stay within the proper limits.
+        Reliability is important - that’s why we have implemented a smart over-voltage, under-voltage and reverse polarity protection on the power jack input. This feature guarantees the input voltage range to always stay within the proper limits.
       </p>
     </div>
   </div>
@@ -38,7 +38,7 @@ The maximum allowed current is **6 A**.
 - **Addressable/digital RGB(W) LED strip output**
 - Integrated voltage translator (3.3 V to 5 V)
 - 2x position for a HARDWARIO TOWER tag
-- **Overvoltage**, **undervoltage** and reverse polarity protection
+- **Over-voltage**, **under-voltage** and reverse polarity protection
 - Pluggable 3-pin terminal block for relay output
 - Pluggable 3-pin terminal block for digital LED strip
 - Operating temperature range: -20 to 70 °C

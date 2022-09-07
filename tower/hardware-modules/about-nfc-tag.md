@@ -30,7 +30,7 @@ Many smartphones are equipped with NFC technology today.
 
 ## Features
 - Integrated NFC tag **NT3H2111 (NXP)**
-- Communication using **I²C bus**
+- Communication using the **I²C bus**
 - 1 kB EEPROM memory
 - Optional interrupt output
 - Optional energy harvesting output

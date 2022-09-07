@@ -13,7 +13,7 @@ The pins are described in the Header Pinout. The pins in SDK have the names `TWR
 
 :::info
 
-This example will turn on the **LED on the Core Module**. The usual and more comfortable way to control LED is to use [**`twr_led`**](./led-control.md) code, but we use the `twr_gpio` for now to explain the **GPIO basics**.
+This example will turn on the **LED on the Core Module**. The usual and more comfortable way to control LED is to use [**`twr_led`**](./led-control.md) code, but we use `twr_gpio` for now to explain the **GPIO basics**.
 
 :::
 
@@ -36,7 +36,7 @@ This example will turn on the **LED on the Core Module**. The usual and more com
 
 :::info
 
-This example will **read the button state** and based on that the **LED will be set to ON/OFF state**.
+This example will **read the button state** and based on that the **LED will be set to the ON/OFF state**.
 
 :::
 

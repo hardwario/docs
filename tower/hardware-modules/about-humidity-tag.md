@@ -27,7 +27,7 @@ Values below this range (**dry air**) can lead to various **health issues**. On 
 
 ## Features
 - Integrated humidity sensor **SHT20 (Sensirion)**
-- Communication using **I²C bus**
+- Communication using the **I²C bus**
 - Measurement range: 0 % to 100 %
 - Measurement accuracy: ±2 %
 - Optional interrupt output
