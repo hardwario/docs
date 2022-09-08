@@ -3,3 +3,69 @@ slug: about-soil-sensor
 title: About Soil Sensor
 ---
 import Image from '@theme/IdealImage';
+
+<div class="container">
+  <div class="row">
+    <div class="col col--4">
+      <div><Image img={require('./1-wire-module.png')} /></div>
+    </div>
+    <div class="col col--6">
+      <p>
+        The <b>Soil Moisture Sensor</b> is a modern, completely sealed capacitive moisture sensor with a temperature sensor. It is using 1-Wire communication protocol and has 3 wire cable that is 2 meters long. Many sensors can be connected to a single 1-Wire Master. The temperature sensor is located in the top part above the soil. The electronics is completely potted in a sealing compound to withstand all kind of weather.
+      </p>
+      <p>
+        The sensor returns soil moisture humidity using relative values. Sensor is very sensitive and you can get range from 6500 when sensor is dry and 13000 when sensor is fully submerged into the water. Measuring is done by two copper strips inside the inner layers of the 4 layer PCB. This way the contacts are not exposed to direct humidity and do not oxidize.
+      </p>
+    </div>
+  </div>
+</div>
+
+:::note
+
+It is also possible to use sensor to **measure water level**.
+
+:::
+
+:::info
+
+[**Arduino Library for Soil Sensor**](https://github.com/hardwario/SoilSensor) is also available (you will also need [**DS28E17 library**](https://github.com/hardwario/arduino-DS28E17)).
+
+:::
+
+<div class="container">
+  <div class="row">
+    <div class="col col--4">
+      <div><Image img={require('./soil-sensor-connection.png')} /></div>
+    </div>
+    <div class="col col--6">
+      <p>
+      </p>
+    </div>
+  </div>
+</div>
+
+
+:::tip
+
+We **do not recommend** to put the top part of the sensor under the ground. Ground planes in this area could affect the measurement electrodes and precision.
+
+:::
+
+## Features
+- Soil moisture sensor
+- Fully digital design
+- **1-Wire bus** communication
+- Possibility to connect multiple sensors in parallel
+- Capacitance-to-digital converter **ZSSC3123**
+- Digital **temperature sensor TMP112**
+- Operating voltage range: 2.8 V to 5.5 V
+- Operating temperature range: -40 to +85 °C
+- Protection marking IP 68
+
+## References
+- [**Shop**](https://shop.hardwario.com/soil-sensor/)
+- [**Schematics**](https://github.com/hardwario/bc-hardware/tree/master/out/bc-soil-sensor)
+- [**SDK Library**](https://sdk.hardwario.com/group__twr__soil__sensor.html)
+- [**Header File**](https://github.com/hardwario/twr-sdk/blob/master/twr/inc/twr_soil_sensor.h)
+- [**Source File**](https://github.com/hardwario/twr-sdk/blob/master/twr/src/twr_soil_sensor.c)
+- [**Projects**](https://www.hackster.io/hardwario/projects?part_id=117389)
