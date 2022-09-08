@@ -14,7 +14,7 @@ import Image from '@theme/IdealImage';
         <b>The Maxi Base Module</b> serves as a base for IoT kit assemblies, which you simply place in the Takachi industrial enclosure (IP67).
       </p>
       <p>
-        In addition to connecting <b>any TOWER module</b>, the kit also includes a terminal block for connecting <a href="../../chester/extension-modules/"><b>one CHESTER-X module</b></a> for connecting external sensors, an external button or external power supply.
+        In addition to connecting <b>any TOWER module</b>, the kit also includes a terminal block for connecting <b>one CHESTER-X module</b> for connecting external sensors, an external button or external power supply.
       </p>
     </div>
   </div>
