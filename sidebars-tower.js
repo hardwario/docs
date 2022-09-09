@@ -29,7 +29,6 @@ const sidebars = {
       items: [
         'desktop-programming/about-playground',
         'desktop-programming/playground-installation',
-        'desktop-programming/playground-basics',
         'desktop-programming/radio-network-management',
         'desktop-programming/mqtt-messages-management',
         'desktop-programming/node-red-programming',
