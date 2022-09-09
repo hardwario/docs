@@ -26,12 +26,14 @@ After you have your account, you can get your API Token.
 ## Import Node-RED Flow
 
 :::info
+
 Here is the complete flow which you can import to **Node-RED**
+
 :::
 
 :::tip
 
-If you don't know what a Node-RED is, you can read [**Desktop Programming section**](../desktop-programming/about-playground.md) or [**Server on Raspberry Pi section**](../server-raspberry-pi/index.md)
+If you don't know what a Node-RED is, you can read the [**Desktop Programming section**](../desktop-programming/about-playground.md) or [**Server on Raspberry Pi section**](../server-raspberry-pi/index.md)
 
 :::
 
