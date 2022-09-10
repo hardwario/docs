@@ -17,6 +17,14 @@ import Image from '@theme/IdealImage';
   </div>
 </div>
 
+:::caution
+
+The maximum current for a **single pin is 16 mA**
+
+The maximum current for all **GPIOs combined is 90 mA**
+
+:::
+
 | Pin  | Signal     | MCU Pin   | 5 V Tolerant |
 | :--- | :--------- | :-------- | :----------- |
 | 1    | P0/A0/TXD0 | PA0 (10)  |              |
@@ -38,7 +46,15 @@ import Image from '@theme/IdealImage';
 | 27   | P16/SCL1   | PB8 (45)  | Yes          |
 | 28   | P17/SDA1   | PB9 (46)  | Yes          |
 
-
+<div class="container">
+  <div class="row">
+    <div class="col col--10">
+      <div><Image img={require('./core-module-pinout.png')} /></div>
+    </div>
+    <div class="col col--0">
+    </div>
+  </div>
+</div>
 
 ## Features
 - ARM Cortex M0+ 32-bit MCU STM32L083CZ (ST)

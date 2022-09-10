@@ -5,6 +5,12 @@ title: Blynk Mobile and Web Application
 import Image from '@theme/IdealImage';
 import ReactPlayer from 'react-player'
 
+[**The Blynk**](https://blynk.io) is a mobile front-end builder and signaling relay (MQTT). This lets you quickly create control and display for your IoT things. Here we will guide you through the process of putting together the hardware and connecting it to the cloud.
+
+The cloud in turn gets interconnected with the project on your phone within the Blynk app. The local side of the project is hosted on the HARDWARIO Raspbian which has all the necessary components prepared for interconnection.
+
+When everything in this example is finished, you should have the ability to turn on and off the relay, switch the LED strip on and off, change the light intensity using the slider and also you would be able to watch the temperature (and other values collected) accompanied by graphs.
+
 :::tip
 
 You can find some examples of how to use [**TOWER with Blynk on our hackster.io page**](https://www.hackster.io/hardwario/projects?category_id=299)
@@ -13,7 +19,32 @@ You can find some examples of how to use [**TOWER with Blynk on our hackster.io 
 
 <Image img={require('./blynk-app-showcase.png')} />
 
+## Setup Blynk
+
+You should start by downloading the **Blynk app** and creating the account
+- [**App Store**](https://apps.apple.com/us/app/blynk-iot/id1559317868)
+- [**Google Play**](https://play.google.com/store/apps/details?id=cloud.blynk)
+
+
+## Node-RED Setup
+
+In Node-RED, install the Blynk package `node-red-contrib-blynk-ws` if you cannot see Blynk nodes.
+
+:::tip
+
+   You can follow one of the [**project tutorials**](https://www.hackster.io/hardwario/projects?category_id=299) where installation, creating and connecting of nodes is explained in detail
+
+:::
+
+### Video Tutorial
+
+If you prefer a video guide, you can watch this video for the older Playground version, but it works the same.
+
 <ReactPlayer controls url='https://youtu.be/cVC_tFuCYTM' />
+
+## ZeRGBA to hex RGB values - Example
+
+Blynk color values need to be transformed to **proper hexadecimal RGB string**. You can use the function block in the Node-RED and paste the code below. Remember to configure **ZeRGBa to MERGE mode** and the range of values has to be set for all three channels to **0 - 255**
 
 :::info
 
