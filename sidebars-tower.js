@@ -77,7 +77,10 @@ const sidebars = {
         'firmware-development/about-hardwario-code',
         'firmware-development/tower-vscode-extension',
         'firmware-development/hardwario-extension-tutorial',
-        'firmware-development/development-with-cli-tools'
+        'firmware-development/hardwario-tower-console',
+        'firmware-development/firmware-debugging',
+        'firmware-development/development-with-cli-tools',
+        'firmware-development/lora-at-commands'
       ],
     },
     {

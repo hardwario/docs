@@ -6,7 +6,7 @@ import Image from '@theme/IdealImage';
 
 With our [**Relay Module**](../../hardware-modules/about-relay-module.md) you can easily control **high voltage/current circuits**. This module is specially designed to consume low levels of power.
 
-::: info
+:::info
 
 The relay consumes power only when changing state.
 
