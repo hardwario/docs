@@ -1,6 +1,18 @@
 [[redirects]]
+  from = "http://doc.hardwario.com/*"
+  to = "https://docs.hardwario.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://doc.hardwario.com/*"
+  to = "https://docs.hardwario.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "http://chester.hardwario.com/*"
-  to = "http://docs.hardwario.com/chester"
+  to = "https://docs.hardwario.com/chester"
   status = 301
   force = true
 
@@ -11,21 +23,20 @@
   force = true
 
 [[redirects]]
-  from = "http://doc.hardwario.com/*"
-  to = "http://docs.hardwario.com/:splat"
+  from = "http://tower.hardwario.com/*"
+  to = "https://docs.hardwario.com/tower"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://doc.hardwario.com/*"
-  to = "https://docs.hardwario.com/:splat"
+  from = "https://tower.hardwario.com/*"
+  to = "https://docs.hardwario.com/tower"
   status = 301
   force = true
-
 
 [[redirects]]
   from = "http://cooper.hardwario.com/*"
-  to = "http://docs.hardwario.com"
+  to = "https://docs.hardwario.com"
   status = 301
   force = true
 
