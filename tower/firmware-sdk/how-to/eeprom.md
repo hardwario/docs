@@ -19,7 +19,8 @@ Reading from the EEPROM does not count, so it is completely **safe to read** fro
 - [**EEPROM SDK Module**](https://sdk.hardwario.com/group__twr__eeprom.html)
 - GitHub Repository Example
 
-
+### EEPROM Size
+[**TOWER Core Module**](../../hardware-modules/about-core-module.md) has 6 KB EEPROM included. In case you need to find this value out inside your code, there is a function for this inside the SDK: `size_t twr_eeprom_get_size(void)`
 
 ## Read/Write Example
 
@@ -31,8 +32,32 @@ Reading from the EEPROM does not count, so it is completely **safe to read** fro
 
 :::
 
-<details><summary><b>Sine Wave Generator Code Example</b></summary>
+:::note
+
+Please note that some of our modules (currently `twr_radio_*` module only) use a **few last dozens of bytes** in EEPROM. If you use those modules, remember to use the memory addresses from **0 up to 6000**.
+
+This makes sure that no data will be overwritten.
+
+:::
+
+:::info
+
+Expected output of the example below
+
+```bash showLineNumbers
+EEPROM size: 6144
+Data:
+3.141590
+hello world!
+```
+
+:::
+
+<details><summary><b>EEPROM Test Code Example</b></summary>
 <p>
+
+
+
 
   ```c showLineNumbers
   #include <application.h>

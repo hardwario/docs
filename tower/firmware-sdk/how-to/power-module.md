@@ -57,3 +57,9 @@ To switch the state, we use the [**button**](./push-button.md).
 
 </p>
 </details>
+
+:::info
+
+We have a separate tutorial on how to control [**Smart LED strip**](./smart-led-strip.md)
+
+:::
