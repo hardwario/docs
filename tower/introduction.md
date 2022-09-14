@@ -7,12 +7,6 @@ import Image from '@theme/IdealImage';
 
 # TOWER Introduction
 
-:::caution
-
-For now, please see this link: https://tower.hardwario.com/
-
-:::
-
 TOWER is a modular, wireless, open-source/open-hardware IoT platform for rapid prototyping and deployment.
 It is used in industrial applications, STEM education, and hobby projects (home automation, gardening, lighting, escape rooms, etc.).
 

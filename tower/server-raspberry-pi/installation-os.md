@@ -93,5 +93,5 @@ If you are still having trouble with connecting to Radio Dongle it can be becaus
 To fix this issue just run the following command:
 
 ```bash
-  echo 'allow_anonymous true' | sudo tee /etc/mosquitto/conf.d/auth.conf
+echo 'allow_anonymous true' | sudo tee /etc/mosquitto/conf.d/auth.conf
 ```

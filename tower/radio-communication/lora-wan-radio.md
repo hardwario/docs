@@ -12,7 +12,7 @@ The message can contain **52 bytes** and you can send/receive data about **every
 
 :::tip
 
-TODO LORA AT SETUP
+LoRa module needs to be set up with AT Commands, to read about how to do that, you can visit [**LoRa AT Commands Configuration chapter**](../radio-communication/lora-at-commands.md)
 
 :::
 
