@@ -45,6 +45,6 @@ There are several buttons on the right side if you open the HARDWARIO TOWER Cons
 - **Restart device** - this command will restart the connected device and start the program on the device from the beginning.
 - **Scroll to bottom** - by default, the console will scroll automatically with the messages. If you scroll to view some message auto scroll will turn off. To start it again, just click this button.
 - **Save Log** - this will save the displayed log.
-- **Allow Input** - this will allow sending input to the device. [**Usable for AT commands**](./lora-at-commands.md).
+- **Allow Input** - this will allow sending input to the device. [**Usable for AT commands**](../radio-communication/lora-at-commands.md).
 - **Maximize window** - this will make the console bigger. It is a standard Visual Studio Code button available on most panels.
 - **Close panel** - this will close the whole panel, not just HARDWARIO TOWER Console.
