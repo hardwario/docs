@@ -115,6 +115,12 @@ You can use this most of the time while developing
 
 :::
 
+:::info
+
+There is a separate chapter for the [**TOWER Console**](./hardwario-tower-console.md)
+
+:::
+
 ### Build + Flash (Debugger)
 
 :::caution
@@ -140,6 +146,12 @@ This command will **flash** the firmware onto the **selected device**. It will a
 ### Attach Console
 
 This command will attach the console to the **selected device** so you can view the **log messages**.
+
+:::info
+
+There is a separate chapter for the [**TOWER Console**](./hardwario-tower-console.md)
+
+:::
 
 ### Attach Debugger
 

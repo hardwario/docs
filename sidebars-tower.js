@@ -78,9 +78,9 @@ const sidebars = {
         'firmware-development/tower-vscode-extension',
         'firmware-development/hardwario-extension-tutorial',
         'firmware-development/hardwario-tower-console',
+        'firmware-development/firmware-quick-start',
         'firmware-development/firmware-debugging',
         'firmware-development/development-with-cli-tools',
-        'firmware-development/lora-at-commands'
       ],
     },
     {
@@ -135,7 +135,8 @@ const sidebars = {
       collapsed: true,
       items: [
         'radio-communication/sub-ghz-radio',
-        'radio-communication/lora-wan-radio'
+        'radio-communication/lora-wan-radio',
+        'radio-communication/lora-at-commands'
       ],
     },
     {

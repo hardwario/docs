@@ -1,6 +1,6 @@
 ---
 slug: hardwario-tower-console
-title: HARDWARIO TOWER Console
+title:  TOWER Console
 ---
 import Image from '@theme/IdealImage';
 
@@ -24,15 +24,27 @@ For the firmware to print something to this console you will have to include som
 
 ## Controls
 
-There are several buttons on the right side if you open the HARDWARIO TOWER Console. They will be listed from left to right:
+There are several buttons on the right side if you open the HARDWARIO TOWER Console. They will be listed from left to right
 
-- Clear console - this will just clear all the log messages that you received.
-- Connect/Disconnect console - this will attach console to the device that is selected on the bottom panel. If the console is already attached it will disconnect it. You don’t have to use this button if you are using extension commands Build + Flash (Console) or Attach console.
-Tip
+<div class="container">
+  <div class="row">
+    <div class="col col--3">
+      <h4>No device connected</h4>
+      <div><Image img={require('./console-commands-disconnected.png')}/></div>
+    </div>
+    <div class="col col--3">
+      <h4>TOWER device connected</h4>
+      <div><Image img={require('./console-commands-connected.png')}/></div>
+    </div>
+  </div>
+</div>
 
-You can read more about mentioned commands in HARDWARIO Code tutorial.
-- Scrool to bottom - by default the console will scroll automatically with the messages. If you scroll to view some message autoscrool will turn off. To start it again, just click this button.
-- Save Log - this will save the displayed log.
-- Allow Input - this will allow to send input to the device. Usable for AT commands.
-- Maximize window - this will make the console bigger. It is a standard Visual Studio Code button available on most panels.
-- Close panel - this will close the whole panel, not just HARDWARIO TOWER Console.
+
+- **Clear console** - this will just clear all the log messages that you received.
+- **Connect/Disconnect console** - this will attach the console to the device that is selected on the bottom panel. If the console is already attached it will disconnect it. You don’t have to use this button if you are using extension commands [**Build + Flash (Console)**](./hardwario-extension-tutorial.md#build--flash-console) or [**Attach console**](./hardwario-extension-tutorial.md#attach-console).
+- **Restart device** - this command will restart the connected device and start the program on the device from the beginning.
+- **Scroll to bottom** - by default, the console will scroll automatically with the messages. If you scroll to view some message auto scroll will turn off. To start it again, just click this button.
+- **Save Log** - this will save the displayed log.
+- **Allow Input** - this will allow sending input to the device. [**Usable for AT commands**](./lora-at-commands.md).
+- **Maximize window** - this will make the console bigger. It is a standard Visual Studio Code button available on most panels.
+- **Close panel** - this will close the whole panel, not just HARDWARIO TOWER Console.
