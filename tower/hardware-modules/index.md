@@ -3,6 +3,7 @@ title: Hardware Modules
 ---
 import Image from '@theme/IdealImage';
 
+<!---
 <div class="container">
   <div class="row">
     <div class="col">
@@ -173,4 +174,4 @@ import Image from '@theme/IdealImage';
     </div>
   </div>
 </div>
-
+-->

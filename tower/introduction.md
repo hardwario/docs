@@ -29,7 +29,7 @@ It is used in industrial applications, STEM education, and hobby projects (home 
 9.  If you need to visualize your data and/or connect your project remotely, go to the chapter:<br/>
     [**Platform Integrations**](category/platform-integrations)
 10. To get recipes for building real and meaningful projects, visit the chapter:<br/>
-    [**Step-by-Step Projects**](step-by-step-projects)
+    [**Step-by-Step Projects**](https://www.hackster.io/hardwario/projects)
 11. For detailed information about the TOWER modules and tags, see the chapter:<br/>
     [**Hardware Modules**](hardware-modules)
 12. To understand hardware layers (not only between the TOWER modules), go to the chapter:<br/>

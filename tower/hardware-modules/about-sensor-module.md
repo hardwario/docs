@@ -7,7 +7,7 @@ import Image from '@theme/IdealImage';
 <div class="container">
   <div class="row">
     <div class="col col--4">
-      <div><Image img={require('./1-wire-module.png')} /></div>
+      <div><Image img={require('./sensor-module.png')} /></div>
     </div>
     <div class="col col--6">
       <p>
