@@ -214,7 +214,7 @@ const sidebars = {
         //'hardware-modules/about-micro-bit-module',
         'hardware-modules/about-mini-battery-module',
         'hardware-modules/about-mini-cover-module',
-        'hardware-modules/about-nfc-tag',
+        //'hardware-modules/about-nfc-tag',
         'hardware-modules/about-pir-module',
         'hardware-modules/about-power-module',
         //'hardware-modules/about-probe-module',
