@@ -190,6 +190,7 @@ const sidebars = {
       },
       collapsed: true,
       items: [
+        'hardware-modules/header-pinout',
         'hardware-modules/about-one-wire-slave-module',
         'hardware-modules/about-barometer-tag',
         'hardware-modules/about-base-module',
