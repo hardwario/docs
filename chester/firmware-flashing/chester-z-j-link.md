@@ -112,7 +112,7 @@ Follow these steps to flash the **CHESTER-Z** firmware:
 
 1. Connect the **Micro-USB** cable to your computer and **SEGGER J-Link**.
 
-1. Download the **CHESTER-Z** firmware package [**v1.3.0**](/download/hio-chester-z-v1.3.0.zip).
+1. Download the **CHESTER-Z** firmware package [**v1.4.0**](/download/hio-chester-z-v1.4.0.zip).
 
 1. Unzip the downloaded package.
 
