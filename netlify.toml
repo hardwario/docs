@@ -35,577 +35,589 @@
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/basics/quick-start-guide/*"
+  from = "https://tower.hardwario.com/en/latest/basics/quick-start-guide/*"
   to = "https://docs.hardwario.com/tower/"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/basics/about-hardwario/*"
+  from = "https://tower.hardwario.com/en/latest/basics/about-hardwario/*"
   to = "https://docs.hardwario.com/tower/getting-started/system-basics"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/basics/about-hardwario#design-decisions"
+  from = "https://tower.hardwario.com/en/latest/basics/about-hardwario#design-decisions"
   to = "https://docs.hardwario.com/tower/getting-started/design-principles"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/basics/hardwario-playground/*"
+  from = "https://tower.hardwario.com/en/latest/basics/hardwario-playground/*"
   to = "https://docs.hardwario.com/tower/getting-started/desktop-programming"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/basics/playground-tabs/devices/*"
+  from = "https://tower.hardwario.com/en/latest/basics/playground-tabs/devices/*"
   to = "https://docs.hardwario.com/tower/desktop-programming/radio-network-management"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/basics/playground-tabs/functions/*"
+  from = "https://tower.hardwario.com/en/latest/basics/playground-tabs/functions/*"
   to = "https://docs.hardwario.com/tower/desktop-programming/node-red-programming"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/basics/playground-tabs/dashboard/*"
+  from = "https://tower.hardwario.com/en/latest/basics/playground-tabs/dashboard/*"
   to = "https://docs.hardwario.com/tower/desktop-programming/data-visualization"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/basics/playground-tabs/messages/*"
+  from = "https://tower.hardwario.com/en/latest/basics/playground-tabs/messages/*"
   to = "https://docs.hardwario.com/tower/desktop-programming/mqtt-messages-management"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/basics/playground-tabs/firmware/*"
+  from = "https://tower.hardwario.com/en/latest/basics/playground-tabs/firmware/*"
   to = "https://docs.hardwario.com/tower/desktop-programming/firmware-flashing"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/basics/module-overview/*"
+  from = "https://tower.hardwario.com/en/latest/basics/module-overview/*"
   to = "https://docs.hardwario.com/tower/hardware-modules/"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/basics/projects/*"
+  from = "https://tower.hardwario.com/en/latest/basics/projects/*"
   to = "https://www.hackster.io/hardwario/projects"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/basics/github-repositories/*"
+  from = "https://tower.hardwario.com/en/latest/basics/github-repositories/*"
   to = "https://github.com/orgs/hardwario/repositories"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/basics/enclosures/*"
+  from = "https://tower.hardwario.com/en/latest/basics/enclosures/*"
   to = "https://shop.hardwario.com/enclosures/"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/tutorials/raspberry-pi-installation/*"
+  from = "https://tower.hardwario.com/en/latest/tutorials/raspberry-pi-installation/*"
   to = "https://docs.hardwario.com/tower/server-raspberry-pi/"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/tutorials/raspberry-pi-login/*"
+  from = "https://tower.hardwario.com/en/latest/tutorials/raspberry-pi-login/*"
   to = "https://docs.hardwario.com/tower/server-raspberry-pi/login-guide"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/tutorials/mqtt-to-influxdb/*"
+  from = "https://tower.hardwario.com/en/latest/tutorials/mqtt-to-influxdb/*"
   to = "https://docs.hardwario.com/tower/command-line-tools/mqtt-to-influx-db"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/tutorials/custom-setup-on-ubuntu/*"
+  from = "https://tower.hardwario.com/en/latest/tutorials/custom-setup-on-ubuntu/*"
   to = "https://docs.hardwario.com/tower/command-line-tools/"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/tutorials/custom-setup-on-macos/*"
+  from = "https://tower.hardwario.com/en/latest/tutorials/custom-setup-on-macos/*"
   to = "https://docs.hardwario.com/tower/command-line-tools/"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/tutorials/custom-setup-on-raspberry-pi/*"
+  from = "https://tower.hardwario.com/en/latest/tutorials/custom-setup-on-raspberry-pi/*"
   to = "https://docs.hardwario.com/tower/server-raspberry-pi/installation-clean-os"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/tutorials/custom-setup-on-synology/*"
+  from = "https://tower.hardwario.com/en/latest/tutorials/custom-setup-on-synology/*"
   to = "https://docs.hardwario.com/tower/server-raspberry-pi/"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/tutorials/custom-setup-on-turris/*"
+  from = "https://tower.hardwario.com/en/latest/tutorials/custom-setup-on-turris/*"
   to = "https://docs.hardwario.com/tower/server-raspberry-pi/"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/interfaces/mqtt-protocol/*"
+  from = "https://tower.hardwario.com/en/latest/interfaces/mqtt-protocol/*"
   to = "https://docs.hardwario.com/tower/mqtt-protocol/"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/interfaces/mqtt-topics/*"
+  from = "https://tower.hardwario.com/en/latest/interfaces/mqtt-topics/*"
   to = "https://docs.hardwario.com/tower/mqtt-protocol/topics-reference"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/interfaces/wireless-network-overview/*"
+  from = "https://tower.hardwario.com/en/latest/interfaces/wireless-network-overview/*"
   to = "https://docs.hardwario.com/tower/radio-communication/"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/interfaces/sub-ghz-radio/*"
+  from = "https://tower.hardwario.com/en/latest/interfaces/sub-ghz-radio/*"
   to = "https://docs.hardwario.com/tower/radio-communication/sub-ghz-radio"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/interfaces/lora-iot-radio/*"
+  from = "https://tower.hardwario.com/en/latest/interfaces/lora-iot-radio/*"
   to = "https://docs.hardwario.com/tower/radio-communication/lora-wan-radio"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/tools/hardwario-firmware-flashing-tool/*"
+  from = "https://tower.hardwario.com/en/latest/tools/hardwario-firmware-flashing-tool/*"
   to = "https://docs.hardwario.com/tower/command-line-tools/firmware-tool"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/tools/hardwario-gateway/*"
+  from = "https://tower.hardwario.com/en/latest/tools/hardwario-gateway/*"
   to = "https://docs.hardwario.com/tower/command-line-tools/gateway-service"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/tools/hardwario-host-tool/*"
+  from = "https://tower.hardwario.com/en/latest/tools/hardwario-host-tool/*"
   to = "https://docs.hardwario.com/tower/command-line-tools/host-management"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/tutorials/lora-at-commands-configuration/*"
+  from = "https://tower.hardwario.com/en/latest/tutorials/lora-at-commands-configuration/*"
   to = "https://docs.hardwario.com/tower/radio-communication/lora-at-commands"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/integrations/grafana-for-visualization/*"
+  from = "https://tower.hardwario.com/en/latest/integrations/grafana-for-visualization/*"
   to = "https://docs.hardwario.com/tower/platform-integrations/grafana-visualization/"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/integrations/blynk-mobile-app-builder/*"
+  from = "https://tower.hardwario.com/en/latest/integrations/blynk-mobile-app-builder/*"
   to = "https://docs.hardwario.com/tower/platform-integrations/blynk-app"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/integrations/ubidots/*"
+  from = "https://tower.hardwario.com/en/latest/integrations/ubidots/*"
   to = "https://docs.hardwario.com/tower/platform-integrations/ubidots-dashboards"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/hardware/header-pinout/*"
+  from = "https://tower.hardwario.com/en/latest/hardware/header-pinout/*"
   to = "https://docs.hardwario.com/tower/hardware-modules/header-pinout"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/hardware/power-management/*"
+  from = "https://tower.hardwario.com/en/latest/hardware/power-management/*"
   to = "https://docs.hardwario.com/tower/firmware-sdk/power-management"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/hardware/i-c-address-space/*"
+  from = "https://tower.hardwario.com/en/latest/hardware/i-c-address-space/*"
   to = "https://docs.hardwario.com/tower/hardware-interfaces/i2c-bus"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/hardware/about-1-wire-module/*"
+  from = "https://tower.hardwario.com/en/latest/hardware/about-1-wire-module/*"
   to = "https://docs.hardwario.com/tower/hardware-modules/about-one-wire-slave-module"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/hardware/about-barometer-tag/*"
+  from = "https://tower.hardwario.com/en/latest/hardware/about-barometer-tag/*"
   to = "https://docs.hardwario.com/tower/hardware-modules/about-barometer-tag"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/hardware/about-base-module/*"
+  from = "https://tower.hardwario.com/en/latest/hardware/about-base-module/*"
   to = "https://docs.hardwario.com/tower/hardware-modules/about-base-module"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/hardware/about-battery-module/*"
+  from = "https://tower.hardwario.com/en/latest/hardware/about-battery-module/*"
   to = "https://docs.hardwario.com/tower/hardware-modules/about-battery-module"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/hardware/about-breadboard-module/*"
+  from = "https://tower.hardwario.com/en/latest/hardware/about-breadboard-module/*"
   to = "https://docs.hardwario.com/tower/hardware-modules/about-breadboard-module"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/hardware/about-button-module/*"
+  from = "https://tower.hardwario.com/en/latest/hardware/about-button-module/*"
   to = "https://docs.hardwario.com/tower/hardware-modules/about-button-module"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/hardware/about-climate-module/*"
+  from = "https://tower.hardwario.com/en/latest/hardware/about-climate-module/*"
   to = "https://docs.hardwario.com/tower/hardware-modules/about-climate-module"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/hardware/about-co2-module/*"
+  from = "https://tower.hardwario.com/en/latest/hardware/about-co2-module/*"
   to = "https://docs.hardwario.com/tower/hardware-modules/about-co2-module"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/hardware/about-core-module/*"
+  from = "https://tower.hardwario.com/en/latest/hardware/about-core-module/*"
   to = "https://docs.hardwario.com/tower/hardware-modules/about-core-module"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/hardware/about-cover-module/*"
+  from = "https://tower.hardwario.com/en/latest/hardware/about-cover-module/*"
   to = "https://docs.hardwario.com/tower/hardware-modules/about-cover-module"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/hardware/about-encoder-module/*"
+  from = "https://tower.hardwario.com/en/latest/hardware/about-encoder-module/*"
   to = "https://docs.hardwario.com/tower/hardware-modules/about-encoder-module"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/hardware/about-gps-module/*"
+  from = "https://tower.hardwario.com/en/latest/hardware/about-gps-module/*"
   to = "https://docs.hardwario.com/tower/hardware-modules/about-gps-module"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/hardware/about-humidity-tag/*"
+  from = "https://tower.hardwario.com/en/latest/hardware/about-humidity-tag/*"
   to = "https://docs.hardwario.com/tower/hardware-modules/about-humidity-tag"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/hardware/about-lcd-module/*"
+  from = "https://tower.hardwario.com/en/latest/hardware/about-lcd-module/*"
   to = "https://docs.hardwario.com/tower/hardware-modules/about-lcd-module"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/hardware/about-lora-module/*"
+  from = "https://tower.hardwario.com/en/latest/hardware/about-lora-module/*"
   to = "https://docs.hardwario.com/tower/hardware-modules/about-lora-module"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/hardware/about-lux-meter-tag/*"
+  from = "https://tower.hardwario.com/en/latest/hardware/about-lux-meter-tag/*"
   to = "https://docs.hardwario.com/tower/hardware-modules/about-lux-meter-tag"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/hardware/about-mini-battery-module/*"
+  from = "https://tower.hardwario.com/en/latest/hardware/about-mini-battery-module/*"
   to = "https://docs.hardwario.com/tower/hardware-modules/about-mini-battery-module"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/hardware/about-mini-cover-module/*"
+  from = "https://tower.hardwario.com/en/latest/hardware/about-mini-cover-module/*"
   to = "https://docs.hardwario.com/tower/hardware-modules/about-mini-cover-module"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/hardware/about-pir-module/*"
+  from = "https://tower.hardwario.com/en/latest/hardware/about-pir-module/*"
   to = "https://docs.hardwario.com/tower/hardware-modules/about-pir-module"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/hardware/about-power-module/*"
+  from = "https://tower.hardwario.com/en/latest/hardware/about-power-module/*"
   to = "https://docs.hardwario.com/tower/hardware-modules/about-power-module"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/hardware/about-radio-dongle/*"
+  from = "https://tower.hardwario.com/en/latest/hardware/about-radio-dongle/*"
   to = "https://docs.hardwario.com/tower/hardware-modules/about-radio-dongle"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/hardware/about-relay-module/*"
+  from = "https://tower.hardwario.com/en/latest/hardware/about-relay-module/*"
   to = "https://docs.hardwario.com/tower/hardware-modules/about-relay-module"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/hardware/about-sensor-module/*"
+  from = "https://tower.hardwario.com/en/latest/hardware/about-sensor-module/*"
   to = "https://docs.hardwario.com/tower/hardware-modules/about-sensor-module"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/hardware/about-soil-sensor/*"
+  from = "https://tower.hardwario.com/en/latest/hardware/about-soil-sensor/*"
   to = "https://docs.hardwario.com/tower/hardware-modules/about-soil-sensor"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/hardware/about-tag-module/*"
+  from = "https://tower.hardwario.com/en/latest/hardware/about-tag-module/*"
   to = "https://docs.hardwario.com/tower/hardware-modules/about-tag-module"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/hardware/about-temperature-tag/*"
+  from = "https://tower.hardwario.com/en/latest/hardware/about-temperature-tag/*"
   to = "https://docs.hardwario.com/tower/hardware-modules/about-temperature-tag"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/firmware/basic-overview/*"
+  from = "https://tower.hardwario.com/en/latest/firmware/basic-overview/*"
   to = "https://docs.hardwario.com/tower/firmware-development/"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/firmware/hardwario-code-installation/*"
+  from = "https://tower.hardwario.com/en/latest/firmware/hardwario-code-installation/*"
   to = "https://docs.hardwario.com/tower/firmware-development/about-hardwario-code"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/firmware/hardwario-code-tutorial/*"
+  from = "https://tower.hardwario.com/en/latest/firmware/hardwario-code-tutorial/*"
   to = "https://docs.hardwario.com/tower/firmware-development/hardwario-extension-tutorial"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/firmware/firmware-quick-start/*"
+  from = "https://tower.hardwario.com/en/latest/firmware/firmware-quick-start/*"
   to = "https://docs.hardwario.com/tower/firmware-development/firmware-quick-start"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/firmware/blank-start/*"
+  from = "https://tower.hardwario.com/en/latest/firmware/blank-start/*"
   to = "https://docs.hardwario.com/tower/firmware-development/firmware-quick-start"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/firmware/debugging/*"
+  from = "https://tower.hardwario.com/en/latest/firmware/debugging/*"
   to = "https://docs.hardwario.com/tower/firmware-development/firmware-debugging"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/firmware/hardwario-console/*"
+  from = "https://tower.hardwario.com/en/latest/firmware/hardwario-console/*"
   to = "https://docs.hardwario.com/tower/firmware-development/hardwario-tower-console"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/firmware/timing-and-scheduler/*"
+  from = "https://tower.hardwario.com/en/latest/firmware/timing-and-scheduler/*"
   to = "https://docs.hardwario.com/tower/firmware-sdk/task-scheduler"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/firmware/how-to-1-wire-relay/*"
+  from = "https://tower.hardwario.com/en/latest/firmware/how-to-1-wire-relay/*"
   to = "https://docs.hardwario.com/tower/firmware-sdk/how-to/how-to-one-wire-relay"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/firmware/how-to-a-d-converter/*"
+  from = "https://tower.hardwario.com/en/latest/firmware/how-to-a-d-converter/*"
   to = "https://docs.hardwario.com/tower/firmware-sdk/how-to/how-to-analog-digital-converter"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/firmware/how-to-accelerometer/*"
+  from = "https://tower.hardwario.com/en/latest/firmware/how-to-accelerometer/*"
   to = "https://docs.hardwario.com/tower/firmware-sdk/how-to/how-to-accelerometer"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/firmware/how-to-battery-module/*"
+  from = "https://tower.hardwario.com/en/latest/firmware/how-to-battery-module/*"
   to = "https://docs.hardwario.com/tower/firmware-sdk/how-to/how-to-battery-module"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/firmware/how-to-co2-module/*"
+  from = "https://tower.hardwario.com/en/latest/firmware/how-to-co2-module/*"
   to = "https://docs.hardwario.com/tower/firmware-sdk/how-to/how-to-co2-module"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/firmware/how-to-d-a-converter/*"
+  from = "https://tower.hardwario.com/en/latest/firmware/how-to-d-a-converter/*"
   to = "https://docs.hardwario.com/tower/firmware-sdk/how-to/how-to-digital-analog-converter"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/firmware/how-to-eeprom/*"
+  from = "https://tower.hardwario.com/en/latest/firmware/how-to-eeprom/*"
   to = "https://docs.hardwario.com/tower/firmware-sdk/how-to/how-to-eeprom"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/firmware/how-to-eeprom-twr_config/*"
+  from = "https://tower.hardwario.com/en/latest/firmware/how-to-eeprom-twr_config/*"
   to = "https://docs.hardwario.com/tower/firmware-sdk/how-to/how-to-eeprom-twr-config"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/firmware/how-to-gfx-graphics-library/*"
+  from = "https://tower.hardwario.com/en/latest/firmware/how-to-gfx-graphics-library/*"
   to = "https://docs.hardwario.com/tower/firmware-sdk/how-to/how-to-gfx-graphics-library"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/firmware/how-to-gpio-pins/*"
+  from = "https://tower.hardwario.com/en/latest/firmware/how-to-gpio-pins/*"
   to = "https://docs.hardwario.com/tower/firmware-sdk/how-to/how-to-gpio-pins"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/firmware/how-to-gps-module/*"
+  from = "https://tower.hardwario.com/en/latest/firmware/how-to-gps-module/*"
   to = "https://docs.hardwario.com/tower/firmware-sdk/how-to/how-to-gps-module"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/firmware/how-to-i-c-bus/*"
+  from = "https://tower.hardwario.com/en/latest/firmware/how-to-i-c-bus/*"
   to = "https://docs.hardwario.com/tower/firmware-sdk/how-to/how-to-i2c-bus"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/firmware/how-to-lcd-module/*"
+  from = "https://tower.hardwario.com/en/latest/firmware/how-to-lcd-module/*"
   to = "https://docs.hardwario.com/tower/firmware-sdk/how-to/how-to-lcd-module"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/firmware/how-to-led-control/*"
+  from = "https://tower.hardwario.com/en/latest/firmware/how-to-led-control/*"
   to = "https://docs.hardwario.com/tower/firmware-sdk/how-to/how-to-led-control"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/firmware/how-to-lora-module/*"
+  from = "https://tower.hardwario.com/en/latest/firmware/how-to-lora-module/*"
   to = "https://docs.hardwario.com/tower/firmware-sdk/how-to/how-to-lora-module"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/firmware/how-to-pir-module/*"
+  from = "https://tower.hardwario.com/en/latest/firmware/how-to-pir-module/*"
   to = "https://docs.hardwario.com/tower/firmware-sdk/how-to/how-to-pir-module"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/firmware/how-to-power-module/*"
+  from = "https://tower.hardwario.com/en/latest/firmware/how-to-power-module/*"
   to = "https://docs.hardwario.com/tower/firmware-sdk/how-to/how-to-power-module"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/firmware/how-to-push-button/*"
+  from = "https://tower.hardwario.com/en/latest/firmware/how-to-push-button/*"
   to = "https://docs.hardwario.com/tower/firmware-sdk/how-to/how-to-push-button"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/firmware/how-to-pwm/*"
+  from = "https://tower.hardwario.com/en/latest/firmware/how-to-pwm/*"
   to = "https://docs.hardwario.com/tower/firmware-sdk/how-to/how-to-pwm"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/firmware/how-to-relay-module/*"
+  from = "https://tower.hardwario.com/en/latest/firmware/how-to-relay-module/*"
   to = "https://docs.hardwario.com/tower/firmware-sdk/how-to/how-to-relay-module"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/firmware/how-to-rtc-clock/*"
+  from = "https://tower.hardwario.com/en/latest/firmware/how-to-rtc-clock/*"
   to = "https://docs.hardwario.com/tower/firmware-sdk/how-to/how-to-rtc-clock"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/firmware/how-to-smart-led-strip/*"
+  from = "https://tower.hardwario.com/en/latest/firmware/how-to-smart-led-strip/*"
   to = "https://docs.hardwario.com/tower/firmware-sdk/how-to/how-to-smart-led-strip"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/firmware/how-to-soil-sensor/*"
+  from = "https://tower.hardwario.com/en/latest/firmware/how-to-soil-sensor/*"
   to = "https://docs.hardwario.com/tower/firmware-sdk/how-to/how-to-soil-sensor"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/firmware/how-to-spi-bus/*"
+  from = "https://tower.hardwario.com/en/latest/firmware/how-to-spi-bus/*"
   to = "https://docs.hardwario.com/tower/firmware-sdk/how-to/how-to-spi-bus"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/firmware/how-to-temperature-sensor/*"
+  from = "https://tower.hardwario.com/en/latest/firmware/how-to-temperature-sensor/*"
   to = "https://docs.hardwario.com/tower/firmware-sdk/how-to/how-to-temperature-sensor"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/*/*/firmware/how-to-uart-interface/*"
+  from = "https://tower.hardwario.com/en/latest/firmware/how-to-uart-interface/*"
   to = "https://docs.hardwario.com/tower/firmware-sdk/how-to/how-to-uart-interface"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://tower.hardwario.com/*"
+  to = "https://docs.hardwario.com/tower"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://tower.hardwario.com/*"
+  to = "https://docs.hardwario.com/tower"
   status = 301
   force = true
