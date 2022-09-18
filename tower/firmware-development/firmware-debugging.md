@@ -18,7 +18,7 @@ The [**Core Module**](../hardware-modules/about-core-module.md) has an integrate
 
 :::note
 
-You can visit the [**twr_log SDK Module**](https://sdk.hardwario.com/group__twr__log.html)
+You can visit the [**twr_log SDK Module**](https://sdk.hardwario.com/group__twr__log.html).
 
 :::
 
@@ -113,7 +113,7 @@ twr_log_error("Log");
 
 :::info
 
-If you didn’t already, you should install [**HARDWARIO Code**](./about-hardwario-code.md)
+If you didn’t already, you should install [**HARDWARIO Code**](./about-hardwario-code.md).
 
 :::
 
@@ -125,7 +125,9 @@ You can use two commands in the extension to attach the console:
 - [**Attach Console**](./hardwario-extension-tutorial.md#attach-console)
 
 :::note
+
   It is advised to use the first one. It will **build the firmware** so it includes all the changes that you did and **flashes it to the device**. After the flashing is done the console will be attached and you can see all the logs.
+
 :::
 
 If you just want to attach the console to the **running Core Module** without building and flashing, you can use the **Attach console command**.
@@ -139,6 +141,7 @@ To learn more about this console you can visit [**HARDWARIO TOWER Console chapte
 :::
 
 <Image img={require('./code-console-debug-example.png')}/>
+<br />
 
 :::tip
 

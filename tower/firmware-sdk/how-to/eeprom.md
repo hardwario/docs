@@ -8,7 +8,7 @@ import Image from '@theme/IdealImage';
 
 :::info
 
-Don’t be afraid of limited W/E cycles. In standard conditions, the chip guarantees **100 000 cycles**. Remember that those cycles are **Write/Erase**
+Don’t be afraid of limited W/E cycles. In standard conditions, the chip guarantees **100 000 cycles**. Remember that those cycles are **Write/Erase**.
 
 Reading from the EEPROM does not count, so it is completely **safe to read** from it as much as you wish.
 
@@ -42,7 +42,7 @@ This makes sure that no data will be overwritten.
 
 :::info
 
-Expected output of the example below
+Expected output of the example below.
 
 ```bash showLineNumbers
 EEPROM size: 6144

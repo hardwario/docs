@@ -12,7 +12,7 @@ The Playground is our desktop application for **all the major operating systems*
 
 :::tip
 
-To learn more about HARDWARIO Playground, visit the [**Desktop Programming section**](../category/desktop-programming)
+To learn more about HARDWARIO Playground, visit the [**Desktop Programming section**](../category/desktop-programming).
 
 :::
 

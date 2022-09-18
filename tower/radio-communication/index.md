@@ -13,7 +13,7 @@ Every [**Core Module**](../hardware-modules/about-core-module.md) has this radio
 
 :::info
 
-To read more about our radio, you can visit [**Sub-GHz Radio chapter**](./sub-ghz-radio.md)
+To read more about our radio, you can visit [**Sub-GHz Radio chapter**](./sub-ghz-radio.md).
 
 :::
 
@@ -25,6 +25,6 @@ LoRa network provides a Low-Power solution for a wide area network. This means y
 
 :::info
 
-To read more about the LoRa Network you can visit [**LoRaWAN Radio chapter**](./lora-wan-radio.md)
+To read more about the LoRa Network you can visit [**LoRaWAN Radio chapter**](./lora-wan-radio.md).
 
 :::

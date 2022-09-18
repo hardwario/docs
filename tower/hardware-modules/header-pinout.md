@@ -16,7 +16,7 @@ TOWER sticks to a well-known and widely accepted standard - the so-called header
 
 :::tip
 
-You can visit the separate chapter to learn more [**About Core Module**](./about-core-module.md)
+You can visit the separate chapter to learn more [**About Core Module**](./about-core-module.md).
 
 :::
 

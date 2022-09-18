@@ -23,7 +23,7 @@ import Image from '@theme/IdealImage';
 
 :::tip
 
-You can read [**more about the MQTT topics and how to use them**](https://www.hivemq.com/blog/mqtt-essentials-part-5-mqtt-topics-best-practices/)
+You can read [**more about the MQTT topics and how to use them**](https://www.hivemq.com/blog/mqtt-essentials-part-5-mqtt-topics-best-practices/).
 
 :::
 
@@ -35,7 +35,7 @@ When you connect the **Radio Dongle** with the connected remote node, you can di
 
 :::note
 
-You can read how to install Mosquitto MQTT broker on the link above or you can [**start your server on Raspberry Pi**](../server-raspberry-pi/index.md)
+You can read how to install Mosquitto MQTT broker on the link above or you can [**start your server on Raspberry Pi**](../server-raspberry-pi/index.md).
 
 :::
 
@@ -54,6 +54,6 @@ node/836d19821664/push-button/-/event-count 5
 
 :::info
 
-You can use **HARDWARIO Playground** to [**manage the radio devices**](../desktop-programming/radio-network-management.md), [**read and send MQTT messages**](../desktop-programming/mqtt-messages-management.md) and process them with [**Node-RED**](../desktop-programming/node-red-programming.md)
+You can use **HARDWARIO Playground** to [**manage the radio devices**](../desktop-programming/radio-network-management.md), [**read and send MQTT messages**](../desktop-programming/mqtt-messages-management.md) and process them with [**Node-RED**](../desktop-programming/node-red-programming.md).
 
 :::

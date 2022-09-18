@@ -15,18 +15,20 @@ Choose the **Radio Dongle** (there should be `twr-usb-dongle` or `bc-usb-dongle`
 If you just bought the **Radio Dongle** from our shop, you should receive it with the correct firmware and everything should work.
 
 <Image img={require('./devices-dongle-selection.png')}/>
+<br />
 
 :::tip
 
-If the connect button returns an error, your **Radio Dongle** may have the wrong firmware. To fix this, go to **Firmware Tab** and flash `bcf-gateway-usb-dongle` firmware to your **Radio Dongle**.
+If the connect button returns an error, your **Radio Dongle** may have the wrong firmware. To fix this, go to **Firmware Tab** and flash `twr-gateway-usb-dongle` firmware to your **Radio Dongle**.
 
-If you don't know how to work with **Firmware Tab** you can visit a [**Firmware Flashing chapter**](./firmware-flashing.md)
+If you don't know how to work with **Firmware Tab** you can visit a [**Firmware Flashing chapter**](./firmware-flashing.md).
 
 :::
 
 After you successfully connect to your **Radio Dongle** the **Start pairing** button should light up and if there are any paired devices, you should see them in the list.
 
 <Image img={require('./devices-dongle-connected.png')}/>
+<br />
 
 :::caution
 
@@ -43,14 +45,13 @@ You can change the **device alias** with the **Rename** button next to it but th
 
 :::tip
 
-To learn about the next tab visit [**MQTT Messages Management**](./mqtt-messages-management.md)
+To learn about the next tab visit [**MQTT Messages Management**](./mqtt-messages-management.md).
 
 :::
 
 ## Video Tutorial
 
 If you prefer a video guide, you can watch this video for the older Playground version, but it works the same.
-
 
 <ReactPlayer controls url='https://youtu.be/ESrTEdV9PJQ' />
 

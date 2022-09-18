@@ -6,11 +6,11 @@ import Image from '@theme/IdealImage';
 
 **I²C** (**I**nter-**I**ntegrated **C**ircuit) is a synchronous, multi-controller/multi-target bus used for communication between sensors, chips, etc.
 
-TOWER uses I²C Bus for a lot of sensors communication. Down below, you can find a list of I²C addresses that TOWER uses.
+TOWER uses I²C Bus for a lot of sensor communication. Down below, you can find a list of I²C addresses that TOWER uses.
 
 :::note
 
-Most of the sensors works with its specific SDK modules so you will most likely not encounter I²C specific functions if you don't develop some driver for new sensor or a chip
+Most of the sensors work with their specific SDK modules so you will most likely not encounter I²C-specific functions if you don't develop some driver for a new sensor or a chip.
 
 :::
 

@@ -11,7 +11,7 @@ The power module provides two features:
 
 :::note
 
-This tutorial goes over the **Relay Control**. If you want to learn about LED Strip control you can visit a separate [**Smart LED Strip chapter**](./smart-led-strip.md )
+This tutorial goes over the **Relay Control**. If you want to learn about LED Strip control you can visit a separate [**Smart LED Strip chapter**](./smart-led-strip.md).
 
 :::
 
@@ -60,6 +60,6 @@ To switch the state, we use the [**button**](./push-button.md).
 
 :::info
 
-We have a separate tutorial on how to control [**Smart LED strip**](./smart-led-strip.md)
+We have a separate tutorial on how to control [**Smart LED strip**](./smart-led-strip.md).
 
 :::

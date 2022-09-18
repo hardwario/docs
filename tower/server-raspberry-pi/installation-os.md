@@ -73,7 +73,7 @@ Now that you have your server up and running you can open a **web browser on you
 
 :::caution
 
-Without any additional setup, you need to be on the **same network as the Raspberry Pi**
+Without any additional setup, you need to be on the **same network as the Raspberry Pi**.
 
 :::
 

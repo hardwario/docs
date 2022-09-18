@@ -6,7 +6,7 @@ import Image from '@theme/IdealImage';
 
 :::info
 
-This tutorial expects that you have a running [**Visual Studio Code with our HARDWARIO TOWER extension**](./tower-vscode-extension.md) or [**HARDWARIO Code**](./about-hardwario-code.md) installed
+This tutorial expects that you have a running [**Visual Studio Code with our HARDWARIO TOWER extension**](./tower-vscode-extension.md) or [**HARDWARIO Code**](./about-hardwario-code.md) installed.
 
 :::
 
@@ -16,7 +16,7 @@ The extension has two operating modes:
 
 :::info
 
-In both modes, you should see the **HARDWARIO logo on the side panel**
+In both modes, you should see the **HARDWARIO logo on the side panel**.
 
 <div class="container">
   <div class="row">
@@ -101,7 +101,7 @@ You can choose if you want to build in `Debug` or `Release` mode. For normal dev
 
 :::info
 
-There are other icons that you can use which will be described later, with the **commands that they call**
+There are other icons that you can use which will be described later, with the **commands that they call**.
 
 :::
 
@@ -111,13 +111,13 @@ This command will do the **whole** cycle that you can use while developing**. It
 
 :::note
 
-You can use this most of the time while developing
+You can use this most of the time while developing.
 
 :::
 
 :::info
 
-There is a separate chapter for the [**TOWER Console**](./hardwario-tower-console.md)
+There is a separate chapter for the [**TOWER Console**](./hardwario-tower-console.md).
 
 :::
 
@@ -125,7 +125,7 @@ There is a separate chapter for the [**TOWER Console**](./hardwario-tower-consol
 
 :::caution
 
-You will need a [**JLink Probe**](https://www.segger.com/products/debug-probes/j-link/) for this to work properly. This is for advanced debugging. You have to have `arm-none-eabi-gdb` and `JLinkGDBServerCL` in **PATH** for this to work. If you are using our portable version you don’t have to worry about that and you just need the JLink Probe
+You will need a [**JLink Probe**](https://www.segger.com/products/debug-probes/j-link/) for this to work properly. This is for advanced debugging. You have to have `arm-none-eabi-gdb` and `JLinkGDBServerCL` in **PATH** for this to work. If you are using our portable version you don’t have to worry about that and you just need the JLink Probe.
 
 :::
 
@@ -149,7 +149,7 @@ This command will attach the console to the **selected device** so you can view 
 
 :::info
 
-There is a separate chapter for the [**TOWER Console**](./hardwario-tower-console.md)
+There is a separate chapter for the [**TOWER Console**](./hardwario-tower-console.md).
 
 :::
 
@@ -157,7 +157,7 @@ There is a separate chapter for the [**TOWER Console**](./hardwario-tower-consol
 
 :::caution
 
-You will need a [**JLink Probe**](https://www.segger.com/products/debug-probes/j-link/) for this to work properly. This is for an advanced debugging. You have to have `arm-none-eabi-gdb` and `JLinkGDBServerCL` in **PATH** for this to work. If you are using our portable version you don’t have to worry about that and you just need the JLink Probe
+You will need a [**JLink Probe**](https://www.segger.com/products/debug-probes/j-link/) for this to work properly. This is for advanced debugging. You have to have `arm-none-eabi-gdb` and `JLinkGDBServerCL` in **PATH** for this to work. If you are using our portable version you don’t have to worry about that and you just need the JLink Probe.
 
 :::
 
@@ -171,7 +171,7 @@ Debugging can be started in **multiple ways**:
 
 :::info
 
-There shouldn't be `launch.json` present in the `.vscode` folder
+There shouldn't be `launch.json` present in the `.vscode` folder.
 
 :::
 

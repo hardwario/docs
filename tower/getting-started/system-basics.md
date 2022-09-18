@@ -22,7 +22,7 @@ As we grow and build the community, we sincerely appreciate every single contrib
 
 :::tip
 
-  You can contribute as well, on [**our GitHub**](https://github.com/orgs/hardwario/repositories) or [**hackster.io**](https://www.hackster.io/hardwario/projects) pages
+  You can contribute as well, on [**our GitHub**](https://github.com/orgs/hardwario/repositories) or [**hackster.io**](https://www.hackster.io/hardwario/projects) pages.
 
 :::
 
@@ -60,8 +60,10 @@ We all know that the “security by obscurity” approach does not work in long 
 
 <Image img={require('./system_concept.png')}/>
 
+<br />
+
 :::note
 
-To learn more about TOWER Design, you can visit the [**Design Principles chapter**](./design-principles.md)
+To learn more about TOWER Design, you can visit the [**Design Principles chapter**](./design-principles.md).
 
 :::

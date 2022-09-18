@@ -14,7 +14,7 @@ This is the main **bus TOWER uses** to communicate with most of the **sensors an
 
 :::note
 
-This chapter goes over some code examples of how to use I²C API. To read more about I²C itself, you can visit [**I²C Bus chapter**](../../hardware-interfaces/i2c-bus.md)
+This chapter goes over some code examples of how to use I²C API. To read more about I²C itself, you can visit [**I²C Bus chapter**](../../hardware-interfaces/i2c-bus.md).
 
 :::
 
@@ -26,7 +26,7 @@ This chapter goes over some code examples of how to use I²C API. To read more a
 
 To start working with **I²C** you always have to initialize it before you start working with it.
 
-For example `twr_i2c_init(TWR_I2C_I2C0, TWR_I2C_SPEED_400_KHZ);` will initialize **I2C_0** with the speed of **400kHz**
+For example `twr_i2c_init(TWR_I2C_I2C0, TWR_I2C_SPEED_400_KHZ);` will initialize **I2C_0** with the speed of **400kHz**.
 
 :::
 
@@ -43,7 +43,7 @@ bool twr_i2c_memory_read_16b (twr_i2c_channel_t channel, uint8_t device_address,
 
 :::info
 
-For example, you can read 8 bits of data from memory address `0x01` over `I2C_0` from a device with address `0x48` and save the data to the `reg_configuration` variable
+For example, you can read 8 bits of data from memory address `0x01` over `I2C_0` from a device with address `0x48` and save the data to the `reg_configuration` variable.
 
 :::
 
@@ -60,7 +60,7 @@ For example, you can read 8 bits of data from memory address `0x01` over `I2C_0`
 
 :::info
 
-To read more data over **I²C** you have to create a `twr_i2c_memory_transfer_t` structure
+To read more data over **I²C** you have to create a `twr_i2c_memory_transfer_t` structure.
 
 :::
 
@@ -94,7 +94,7 @@ bool twr_i2c_memory_write_16b (twr_i2c_channel_t channel, uint8_t device_address
 
 :::info
 
-For example, you can write 8 bits, `0x81` to be specific, of data to memory address `0x01` over `I2C_0` to a device with address `0x48`
+For example, you can write 8 bits, `0x81` to be specific, of data to memory address `0x01` over `I2C_0` to a device with address `0x48`.
 
 :::
 
@@ -110,7 +110,7 @@ For example, you can write 8 bits, `0x81` to be specific, of data to memory addr
 
 :::info
 
-To write more data over **I²C** you have to create a `twr_i2c_memory_transfer_t` structure
+To write more data over **I²C** you have to create a `twr_i2c_memory_transfer_t` structure.
 
 :::
 

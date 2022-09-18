@@ -15,6 +15,6 @@ If you have [**your Raspberry Pi**](../server-raspberry-pi/installation-clean-os
 
 :::tip
 
-To learn how to flash the image to a microSD card or how to set up the needed tools, visit the [**Server on Raspberry Pi section**](../server-raspberry-pi/index.md)
+To learn how to flash the image to a microSD card or how to set up the needed tools, visit the [**Server on Raspberry Pi section**](../server-raspberry-pi/index.md).
 
 :::

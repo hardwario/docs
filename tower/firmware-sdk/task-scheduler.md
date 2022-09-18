@@ -20,7 +20,7 @@ The first thing you will probably run into when working with **Scheduler** is re
 
 In the example below the code will initialize the LCD Module and then schedule a task to run after 5 seconds that will turn the LCD off.
 
-You can also save the task ID when registering a task. Thanks to this you will be able to work on the task anytime you want (run it again, unregister the task)
+You can also save the task ID when registering a task. Thanks to this you will be able to work on the task anytime you want (run it again, unregister the task).
 
 :::
 
@@ -66,7 +66,7 @@ For example: `twr_scheduler_register(disableLCD, NULL, twr_tick_get() + 5000);` 
 
 :::info
 
-You can run `twr_scheduler_register` with a third parameter `TWR_TICK_INFINITY` (`twr_scheduler_register(disableLCD, NULL, TWR_TICK_INFINITY);`) to not run the task after registering but only when you want
+You can run `twr_scheduler_register` with a third parameter `TWR_TICK_INFINITY` (`twr_scheduler_register(disableLCD, NULL, TWR_TICK_INFINITY);`) to not run the task after registering but only when you want.
 
 :::
 
@@ -88,7 +88,7 @@ void twr_scheduler_plan_from_now(twr_scheduler_task_id_t task_id, twr_tick_t tic
 
 :::info
 
-To run a current task again you can use functions from the first set (with the `current` in the name)
+To run a current task again you can use functions from the first set (with the `current` in the name).
 
 You have to call one of these functions in the task function itself for it to work.
 
@@ -135,7 +135,7 @@ void application_init(void) {
 
 :::info
 
-To run a task anywhere you can use functions from the second set (without the `current` in the name)
+To run a task anywhere you can use functions from the second set (without the `current` in the name).
 
 For example, if you want to **turn the LCD off 5 seconds after pushing a button** you can use these functions.
 

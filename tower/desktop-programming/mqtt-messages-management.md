@@ -9,7 +9,7 @@ In this chapter, we will go over the **Messages Tab** of Playground
 
 :::info
 
-**Messages Tab** is really useful only after you connect to your **Radio Dongle**, you can read about how to do it in the [**Radio Network Management chapter**](./radio-network-management.md)
+**Messages Tab** is really useful only after you connect to your **Radio Dongle**, you can read about how to do it in the [**Radio Network Management chapter**](./radio-network-management.md).
 
 :::
 
@@ -19,7 +19,7 @@ In this tab, you can view all the messages from your paired devices or just any 
 
 :::note
 
-If you don't know much about MQTT protocol and MQTT messages, you can visit an [**MQTT Protocol section**](../mqtt-protocol/index.md)
+If you don't know much about MQTT protocol and MQTT messages, you can visit an [**MQTT Protocol section**](../mqtt-protocol/index.md).
 
 :::
 
@@ -69,12 +69,12 @@ If you want to remove the topic from the **subscribed list**, just press the **c
 
 :::note
 
-This list **resets every time** you launch Playground
+This list **resets every time** you launch Playground.
 
 :::
 
 :::tip
 
-To learn about the next tab visit [**Node-RED Programming**](./node-red-programming.md)
+To learn about the next tab visit [**Node-RED Programming**](./node-red-programming.md).
 
 :::

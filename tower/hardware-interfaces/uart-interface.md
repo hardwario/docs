@@ -8,13 +8,13 @@ import Image from '@theme/IdealImage';
 
 :::info
 
-To read more about UART Interface usage with TOWER you can read the [**How To: UART Interface Chapter**](../firmware-sdk/how-to/uart-interface.md) or the [**Debugging chapter**](../firmware-development/firmware-debugging.md)
+To read more about UART Interface usage with TOWER you can read the [**How To: UART Interface Chapter**](../firmware-sdk/how-to/uart-interface.md) or the [**Debugging chapter**](../firmware-development/firmware-debugging.md).
 
 :::
 
 :::tip
 
-If you want to know more about [**UART there is an article about it**](https://www.analog.com/en/analog-dialogue/articles/uart-a-hardware-communication-protocol.html)
+If you want to know more about [**UART there is an article about it**](https://www.analog.com/en/analog-dialogue/articles/uart-a-hardware-communication-protocol.html).
 
 :::
 
@@ -33,13 +33,13 @@ There are three parameters that you can set up the UART with
 
 :::tip
 
-You can see a short format of the UART setup configuration. For example, 8 Data Bits, No Parity and 1 Stop Bit can be represented as **8N1**
+You can see a short format of the UART setup configuration. For example, 8 Data Bits, No Parity and 1 Stop Bit can be represented as **8N1**.
 
 :::
 
 :::note
 
-At the start of each packet, there is always one **Start Bit**
+At the start of each packet, there is always one **Start Bit**.
 
 :::
 
@@ -60,6 +60,6 @@ TOWER logging UART parameters
 
 :::tip
 
-You can visit a separate **Debugging chapter****](../firmware-development/firmware-debugging.md) to learn about how to do that
+You can visit a separate **Debugging chapter****](../firmware-development/firmware-debugging.md) to learn about how to do that.
 
 :::

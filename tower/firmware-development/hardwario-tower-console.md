@@ -6,13 +6,14 @@ import Image from '@theme/IdealImage';
 
 :::info
 
-This tutorial expects that you have a running Visual Studio Code with our HARDWARIO TOWER extension installed. If you don’t please visit the [**About HARDWARIO Code**](./about-hardwario-code.md)
+This tutorial expects that you have a running Visual Studio Code with our HARDWARIO TOWER extension installed. If you don’t please visit the [**About HARDWARIO Code**](./about-hardwario-code.md).
 
 :::
 
 For logging with the **HARDWARIO Code** there is an available tab in the bottom panel.
 
 <Image img={require('./hardwario-console-showcase.png')}/>
+<br />
 
 In this console, there will be some logs displayed from your connected device.
 

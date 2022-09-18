@@ -15,13 +15,13 @@ The SPI uses these signals:
 
 :::note
 
-You can read [**more information about SPI**](https://www.circuitbasics.com/basics-of-the-spi-communication-protocol/)
+You can read [**more information about SPI**](https://www.circuitbasics.com/basics-of-the-spi-communication-protocol/).
 
 :::
 
 
 :::info
 
-To see how the TOWER uses SPI, you can read the [**How To: SPI Bus**](../firmware-sdk/how-to/spi-bus.md)
+To see how the TOWER uses SPI, you can read the [**How To: SPI Bus**](../firmware-sdk/how-to/spi-bus.md).
 
 :::

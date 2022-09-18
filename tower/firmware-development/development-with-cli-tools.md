@@ -8,7 +8,7 @@ import TabItem from '@theme/TabItem';
 
 :::info
 
-If you want to develop using a GUI tool, please visit [**About HARDWARIO Code**](./about-hardwario-code.md) or [**TOWER VSCode Extension**](./tower-vscode-extension.md) chapter
+If you want to develop using a GUI tool, please visit [**About HARDWARIO Code**](./about-hardwario-code.md) or [**TOWER VSCode Extension**](./tower-vscode-extension.md) chapter.
 
 :::
 
@@ -26,7 +26,7 @@ You will need to install a few tools so you will be able to build your project:
 
 :::note
 
-All of these have to be in **PATH**
+All of these have to be in **PATH**.
 
 :::
 
@@ -69,7 +69,7 @@ All of these have to be in **PATH**
     ```
     :::note
 
-    The `--recursive` flag is needed to clone all submodules as well, mainly SDK submodule
+    The `--recursive` flag is needed to clone all submodules as well, mainly SDK submodule.
 
     :::
 - Open the project in your favorite editor

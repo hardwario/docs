@@ -12,7 +12,7 @@ The message can contain **52 bytes** and you can send/receive data about **every
 
 :::tip
 
-LoRa module needs to be set up with AT Commands, to read about how to do that, you can visit [**LoRa AT Commands Configuration chapter**](../radio-communication/lora-at-commands.md)
+LoRa module needs to be set up with AT Commands, to read about how to do that, you can visit [**LoRa AT Commands Configuration chapter**](../radio-communication/lora-at-commands.md).
 
 :::
 
@@ -28,7 +28,7 @@ TOWER has a **LoRa Module** which you can use to create battery-operated nodes t
 
 :::tip
 
-You can read more about [**LoRa Module in its chapter**](../hardware-modules/about-lora-module.md)
+You can read more about [**LoRa Module in its chapter**](../hardware-modules/about-lora-module.md).
 
 :::
 

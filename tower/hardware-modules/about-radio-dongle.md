@@ -20,13 +20,6 @@ import Image from '@theme/IdealImage';
   </div>
 </div>
 
-:::caution
-
-The maximum allowed current is **6 A**.
-
-:::
-
-
 ## Features
 - ARM Cortex M0+ 32-bit MCU STM32L083CZ (ST)
 - 192 kB Flash / 20 kB RAM

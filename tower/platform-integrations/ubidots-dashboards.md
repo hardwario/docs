@@ -10,7 +10,7 @@ On how to set up Ubidots to work with **TOWER**, you just need to follow a few s
 
 :::note
 
-Ubidots offers a free trial, but for more and larger projects you will need to follow their [**Pricing**](https://ubidots.com/pricing)
+Ubidots offers a free trial, but for more and larger projects you will need to follow their [**Pricing**](https://ubidots.com/pricing).
 
 :::
 
@@ -27,13 +27,13 @@ After you have your account, you can get your API Token.
 
 :::info
 
-Here is the complete flow which you can import to **Node-RED**
+Here is the complete flow which you can import to **Node-RED**.
 
 :::
 
 :::tip
 
-If you don't know what a Node-RED is, you can read the [**Desktop Programming section**](../desktop-programming/about-playground.md) or [**Server on Raspberry Pi section**](../server-raspberry-pi/index.md)
+If you don't know what a Node-RED is, you can read the [**Desktop Programming section**](../desktop-programming/about-playground.md) or [**Server on Raspberry Pi section**](../server-raspberry-pi/index.md).
 
 :::
 
@@ -42,7 +42,7 @@ If you don't know what a Node-RED is, you can read the [**Desktop Programming se
 
 :::tip
 
-You can change the `YOUR-TOKEN-HERE` on highlighted line for your **Default Token** here or after import in the GUI by clicking on the **blue Ubidots node**
+You can change the `YOUR-TOKEN-HERE` on highlighted line for your **Default Token** here or after import in the GUI by clicking on the **blue Ubidots node**.
 
 :::
 
@@ -153,7 +153,7 @@ return ubi_msg;
 
 :::info
 
-Thanks to this simple setup a new **Ubidots device will be created for every new TOWER module detected by your TOWER gateway**
+Thanks to this simple setup a new **Ubidots device will be created for every new TOWER module detected by your TOWER gateway**.
 
 You don't have to do any additional setup if you don't want to.
 
