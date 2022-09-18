@@ -80,7 +80,7 @@ There are several effect functions available.
 
 :::tip
 
-These effects look great and you can maybe use them for some signalization without the need of coding them yourself
+These effects look great and you can maybe use them for some signalization without the need of coding them yourself.
 
 :::
 
@@ -129,7 +129,7 @@ The LED strip will light up in the color of a rainbow and will fluently change t
 
 :::note
 
-The second parameter represents the speed of change. Lower number = quicker changes
+The second parameter represents the speed of change. Lower number = quicker changes.
 
 :::
 

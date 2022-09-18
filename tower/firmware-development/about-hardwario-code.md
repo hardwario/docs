@@ -18,7 +18,7 @@ This chapter focuses on **HARDWARIO Code** which is our slightly changed version
 
 If you already have your **Visual Studio Code** and don't want to install the new version, there is an extension available that you can install.
 
-You will need to install all needed tools by yourself, on how to do that visit the [**TOWER VSCode Extension chapter**](./tower-vscode-extension.md)
+You will need to install all needed tools by yourself, on how to do that visit the [**TOWER VSCode Extension chapter**](./tower-vscode-extension.md).
 
 :::
 
@@ -33,7 +33,7 @@ There is a version available for each major operating system. Installation sligh
 - Complete the installer
   :::info
 
-    At the location selection, we recommend leaving the **default path** that leads to your **user AppData** (the portable version of Visual Studio Code does not support multiple user installations)
+    At the location selection, we recommend leaving the **default path** that leads to your **user AppData** (the portable version of Visual Studio Code does not support multiple user installations).
 
   :::
 - You should have **HARDWARIO Code** icon on the desktop
@@ -71,6 +71,7 @@ If you don’t have a **git** installed on your system, you will have to [**inst
 </Tabs>
 
 <Image img={require('./hardwario-code.png')}/>
+<br />
 
 :::tip
 

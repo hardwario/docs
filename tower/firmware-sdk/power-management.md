@@ -37,7 +37,7 @@ The module that can deliver power in the system is called the **energizer**. The
 
 :::note
 
-  In both cases, an **energizer** contains the electronic circuit for **intelligent power management**
+  In both cases, an **energizer** contains the electronic circuit for **intelligent power management**.
 
 :::
 
@@ -68,7 +68,7 @@ Possible power source modules at this moment are **Power Module** and **Core Mod
 
 :::caution
 
-You should be wary of this, in case you are trying to build a device that includes for example the [**Smart LED Strip**](./how-to/smart-led-strip.md). The device will not work as expected if you put **Core Module below the Power Module**
+You should be wary of this, in case you are trying to build a device that includes for example the [**Smart LED Strip**](./how-to/smart-led-strip.md). The device will not work as expected if you put **Core Module below the Power Module**.
 
 :::
 
@@ -76,7 +76,7 @@ You should be wary of this, in case you are trying to build a device that includ
 
 :::info
 
-This is an example of the electronic circuit of the **battery energizer**
+This is an example of the electronic circuit of the **battery energizer**.
 
 :::
 
@@ -91,10 +91,11 @@ This is an example of the electronic circuit of the **battery energizer**
     </div>
   </div>
 </div>
+<br />
 
 :::info
 
-  This is an example of the electronics circuit of the energizer powered by an **external power supply**
+  This is an example of the electronics circuit of the energizer powered by an **external power supply**.
 
 :::
 

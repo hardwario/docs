@@ -17,7 +17,7 @@ Starting with our [**LCD Module**](../../hardware-modules/about-lcd-module.md), 
 
 You always have to **set the font first** before printing any text. Otherwise, nothing is displayed. Not used fonts are removed for optimization.
 
-Example: `twr_gfx_set_font(pgfx, &twr_font_ubuntu_13);`
+Example: `twr_gfx_set_font(pgfx, &twr_font_ubuntu_13);`.
 
 :::
 
@@ -25,9 +25,9 @@ Example: `twr_gfx_set_font(pgfx, &twr_font_ubuntu_13);`
 
 :::info
 
-Every change you make - draw a string or a line, rotate the display, etc is **done internally** and no changes are visible until you call the `twr_gfx_update(pgfx)` function
+Every change you make - draw a string or a line, rotate the display, etc is **done internally** and no changes are visible until you call the `twr_gfx_update(pgfx)` function.
 
-This is done for low-power reasons
+This is done for low-power reasons.
 
 :::
 
@@ -35,7 +35,7 @@ This is done for low-power reasons
 
 :::info
 
-This is a simple example of printing `Hello world` to the [**LCD Module that is available for TOWER Kit**](../../hardware-modules/about-lcd-module.md)
+This is a simple example of printing `Hello world` to the [**LCD Module that is available for TOWER Kit**](../../hardware-modules/about-lcd-module.md).
 
 :::
 
@@ -67,7 +67,7 @@ This is a simple example of printing `Hello world` to the [**LCD Module that is 
 
 :::info
 
-This is a similar example to the last one, but here we use the SSD1303 OLED display for printing the string
+This is a similar example to the last one, but here we use the SSD1303 OLED display for printing the string.
 
 :::
 
@@ -99,7 +99,7 @@ This is a similar example to the last one, but here we use the SSD1303 OLED disp
 
 :::info
 
-You can also create your driver for some special display that you want to use
+You can also create your driver for some special display that you want to use.
 
 :::
 

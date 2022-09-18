@@ -22,7 +22,7 @@ import Image from '@theme/IdealImage';
 
 :::caution
 
-This module cannot be connected directly to the [**Battery Module**](./about-battery-module.md) because of a collision with **Battery Module's tag connector**. If you want to use the Battery Module directly connected, you need to use [**Split Module**](./about-split-module.md)
+This module cannot be connected directly to the [**Battery Module**](./about-battery-module.md) because of a collision with **Battery Module's tag connector**. If you want to use the Battery Module directly connected, you need to use [**Split Module**](./about-split-module.md).
 
 :::
 

@@ -12,9 +12,9 @@ The LCD Module **provides a simple way to show needed information** without conn
 
 :::info
 
-There are functions available for writing and printing onto the LCD but we have a more [**advanced solution with the GFX library**](./graphics-library.md)
+There are functions available for writing and printing onto the LCD but we have a more [**advanced solution with the GFX library**](./graphics-library.md).
 
-Most of the LCD functions use the GFX library internally so you can as well use them directly
+Most of the LCD functions use the GFX library internally so you can as well use them directly.
 
 :::
 
@@ -29,7 +29,7 @@ There are two functions available for the power management
 
 :::caution
 
-You have to call the `twr_module_lcd_on()` after you turn the LCD off, calling any `draw` function or `update` **won't turn the LCD back on**
+You have to call the `twr_module_lcd_on()` after you turn the LCD off, calling any `draw` function or `update` **won't turn the LCD back on**.
 
 :::
 
@@ -108,11 +108,11 @@ This example prints out some text on the screen and lights up LCD LEDs with **bl
 
 :::info
 
-In this example, we are going to switch the LCD-integrated LEDs on and off and make them blink
+In this example, we are going to switch the LCD-integrated LEDs on and off and make them blink.
 
-You can switch them **on by pressing the left button** and switch them **off by pressing the right button**
+You can switch them **on by pressing the left button** and switch them **off by pressing the right button**.
 
-If you hold both buttons, the LEDs will blink fast
+If you hold both buttons, the LEDs will blink fast.
 
 :::
 

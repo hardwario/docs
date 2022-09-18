@@ -6,7 +6,7 @@ import Image from '@theme/IdealImage';
 
 **R**eal **T**ime **C**lock (**RTC**) is a hardware peripheral in the **STM32 microcontroller**. It is used in scheduler for task planning and also can measure real-time.
 
-You can save **date** and **time** into its hardware registers and the clock is running even if you reflash or reset the processor.
+You can save **date** and **time** into its hardware registers and the clock is running even if you flash it again or reset the processor.
 
 :::caution
 
@@ -28,7 +28,7 @@ It contains **seconds**, **minutes**, **hours**, **day**, **month**, **year**. I
 
 :::info
 
-This example sets up the RTC to **10.5.2020 18:26:10**
+This example sets up the RTC to **10.5.2020 18:26:10**.
 
 :::
 

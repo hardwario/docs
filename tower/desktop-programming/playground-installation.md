@@ -12,13 +12,13 @@ To download Playground you can visit the [**Download Page**](https://www.hardwar
 
 :::tip
 
-If you want to download any other version or are interested in the application itself, you can visit the [**Playground GitHub repository**](https://github.com/hardwario/bch-playground/releases)
+If you want to download any other version or are interested in the application itself, you can visit the [**Playground GitHub repository**](https://github.com/hardwario/bch-playground/releases).
 
 :::
 
 :::note
 
-There is always an **installation package** and also just an **executable option**. It is up to you which you choose to download, they should work the same
+There is always an **installation package** and also just an **executable option**. It is up to you which you choose to download, they should work the same.
 
 :::
 <Image img={require('./playground-download.png')}/>

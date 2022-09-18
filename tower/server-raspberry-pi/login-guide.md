@@ -10,7 +10,7 @@ This document describes how to log in to Raspberry Pi using a **remote terminal 
 
 :::caution
 
-This tutorial assumes that you are using a clear [**Raspberry Pi OS**](./installation-clean-os.md) or [**HARDWARIO Raspbian**](./installation-os.md)
+This tutorial assumes that you are using a clear [**Raspberry Pi OS**](./installation-clean-os.md) or [**HARDWARIO Raspbian**](./installation-os.md).
 
 :::
 
@@ -20,7 +20,7 @@ In the case, you want to connect to your Raspberry Pi by IP Address you need to 
 
 :::caution
 
-Every method mentioned below assumes that you are on the same network as the Raspberry Pi
+Every method mentioned below assumes that you are on the same network as the Raspberry Pi.
 
 :::
 
@@ -31,7 +31,7 @@ There are several ways to find out what address the DHCP server assigned to your
 
 :::tip
 
-You will be looking for a device with a specific **hostname** like **raspberry.local**
+You will be looking for a device with a specific **hostname** like **raspberry.local**.
 
 :::
 
@@ -60,7 +60,7 @@ You can use **PuTTY**, which is an application that allows you to connect to a r
 
 :::info
 
-You should be logged in to your Raspberry Pi. We recommend [**changing the password**](#change-the-password) (if it was not changed while flashing the microSD card) and [**updating the system**](#update-the-system). After that, you can visit the [**Command Line Tool section**](../command-line-tools/index.md) to learn about the tools installed on the Raspberry
+You should be logged in to your Raspberry Pi. We recommend [**changing the password**](#change-the-password) (if it was not changed while flashing the microSD card) and [**updating the system**](#update-the-system). After that, you can visit the [**Command Line Tool section**](../command-line-tools/index.md) to learn about the tools installed on the Raspberry.
 
 :::
 
@@ -102,7 +102,7 @@ ssh pi@IP_ADDRESS
 
 :::info
 
-You should be logged in to your Raspberry Pi. We recommend [**changing the password**](#change-the-password) (if it was not changed while flashing the microSD card) and [**updating the system**](#update-the-system). After that, you can visit the [**Command Line Tool section**](../command-line-tools/index.md) to learn about the tools installed on the Raspberry
+You should be logged in to your Raspberry Pi. We recommend [**changing the password**](#change-the-password) (if it was not changed while flashing the microSD card) and [**updating the system**](#update-the-system). After that, you can visit the [**Command Line Tool section**](../command-line-tools/index.md) to learn about the tools installed on the Raspberry.
 
 :::
 

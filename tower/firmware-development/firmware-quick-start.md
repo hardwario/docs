@@ -10,7 +10,7 @@ You can easily edit or create your custom firmware for [**TOWER Core Module**](.
 
 :::tip
 
-If you are returning to the project use the **Open folder** option in VSCode. Go to the `File -> Open Folder...` or use `Ctrl + K` then `Ctrl + O`
+If you are returning to the project use the **Open folder** option in VSCode. Go to the `File -> Open Folder...` or use `Ctrl + K` then `Ctrl + O`.
 
 :::
 

@@ -19,9 +19,9 @@ import Image from '@theme/IdealImage';
 
 :::caution
 
-The maximum current for a **single pin is 16 mA**
+The maximum current for a **single pin is 16 mA**.
 
-The maximum current for all **GPIOs combined is 90 mA**
+The maximum current for all **GPIOs combined is 90 mA**.
 
 :::
 

@@ -10,7 +10,7 @@ This tool is mostly used while **prototyping** and **developing** your projects.
 
 :::tip
 
-If you don't already have Playground installed, you can follow the [**Playground Installation chapter**](./playground-installation.md)
+If you don't already have Playground installed, you can follow the [**Playground Installation chapter**](./playground-installation.md).
 
 :::
 

@@ -43,7 +43,7 @@ The second number after `:` describes the **revision of the sensor**. These numb
 
 :::info
 
-Only allowed values for payload are `true/false`
+Only allowed values for payload are `true/false`.
 
 :::
 

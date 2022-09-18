@@ -6,7 +6,7 @@ import Image from '@theme/IdealImage';
 
 :::info
 
-This chapter goes over how to use TOWER SPI SDK Module if you want to read about the bus itself read the [**SPI Interface chapter**](../../hardware-interfaces/spi-interface.md)
+This chapter goes over how to use TOWER SPI SDK Module if you want to read about the bus itself read the [**SPI Interface chapter**](../../hardware-interfaces/spi-interface.md).
 
 :::
 
@@ -19,7 +19,9 @@ This chapter goes over how to use TOWER SPI SDK Module if you want to read about
 You can choose from **several communication speeds**.
 
 :::info
+
   The communication speed is limited by the maximal speed that the slave device can communicate, the length of the wires, noise, current consumption or electromagnetic radiation limits.
+
 :::
 
 ```c showLineNumbers
@@ -48,9 +50,9 @@ TWR_SPI_MODE_3 // SPI mode of operation is 3 (CPOL = 1, CPHA = 1)
 ### Synchronous transfer
 :::info
 
-You need to create **transmit** and **receive** buffer
+You need to create **transmit** and **receive** buffer.
 
-Then you start the **blocking transfer** and you have to wait for it to finish
+Then you start the **blocking transfer** and you have to wait for it to finish.
 
 :::
 

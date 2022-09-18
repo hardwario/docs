@@ -22,9 +22,9 @@ Function `twr_uart_write` needs to know how **many bytes to send**. That’s why
 
 This example will write a `Hello world` through the **UART1** with the baudrade of **115200**.
 
-There will be **8 data bits, none parity and 1 stop bit**
+There will be **8 data bits, none parity and 1 stop bit**.
 
-This writing is blocking, you will have to wait before the write is done
+This writing is blocking, you will have to wait before the write is done.
 
 :::
 
@@ -52,7 +52,7 @@ This writing is blocking, you will have to wait before the write is done
 
 This is a little bit complicated because you need to create a FIFO structure and a FIFO buffer array. Then you initialize the FIFO and assign it to the UART.
 
-In this example, we demonstrate just the **async write**
+In this example, we demonstrate just the **async write**.
 
 :::
 
@@ -122,9 +122,9 @@ There are again two options to **read received bytes**. You can read data **sync
 
 :::info
 
-This example does asynchronous send and receive of data on `TWR_UART_UART1` with the baudrade of **115200**.
+This example does asynchronous send and receives of data on `TWR_UART_UART1` with the baudrade of **115200**.
 
-There will be **8 data bits, none parity and 1 stop bit**
+There will be **8 data bits, none parity and 1 stop bit**.
 
 :::
 

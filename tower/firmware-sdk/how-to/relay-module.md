@@ -20,7 +20,7 @@ The relay consumes power only when changing state.
 
 In the example, the Relay I2C address is set as `TWR_MODULE_RELAY_I2C_ADDRESS_DEFAULT`, you can also use `TWR_MODULE_RELAY_I2C_ADDRESS_ALTERNATE` if you want to use a **second Relay Module** on one device.
 
-You will just have to solder the **0-ohm resistor** to the second position on the Relay Module
+You will just have to solder the **0-ohm resistor** to the second position on the Relay Module.
 
 :::
 
@@ -28,7 +28,7 @@ You will just have to solder the **0-ohm resistor** to the second position on th
 
 :::info
 
-In the example below, the relay on the **Relay Module** will turn **On/Off** every time you press the button on the **Core Module or Button Module**
+In the example below, the relay on the **Relay Module** will turn **On/Off** every time you press the button on the **Core Module or Button Module**.
 
 :::
 

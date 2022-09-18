@@ -47,7 +47,7 @@ There are two types of devices in the TOWER radio network.
 
 :::info
 
-To read more about how to pair nodes, you can visit the [**Radio Network Management chapter**](../desktop-programming/radio-network-management.md)
+To read more about how to pair nodes, you can visit the [**Radio Network Management chapter**](../desktop-programming/radio-network-management.md).
 
 :::
 
@@ -92,7 +92,7 @@ Thanks to this, you can wait for the temperature message for example in the [**N
 
 :::caution
 
-This is usable only for devices that can have a long delay before the change takes place
+This is usable only for devices that can have a long delay before the change takes place.
 
 :::
 

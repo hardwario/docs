@@ -10,7 +10,7 @@ This document describes how to configure HARDWARIO TOWER LoRa devices with AT co
 
 This document does not explain project-specific firmware commands and functions. They are explained in the project itself.
 
-These commands apply to all firmware in the [**HARDWARIO Playground**](../desktop-programming/about-playground.md) with the prefix `twr-lora-`
+These commands apply to all firmware in the [**HARDWARIO Playground**](../desktop-programming/about-playground.md) with the prefix `twr-lora-`.
 
 :::
 
@@ -20,7 +20,7 @@ The LoRa module can be configured with **AT commands** sent to the [**Core Modul
 
 :::tip
 
-The easiest way to configure the LoRa Module is with our [**HARDWARIO Console**](../firmware-development/hardwario-tower-console.md) which is a part of the [**HARDWARIO Code**](../firmware-development/about-hardwario-code.md)
+The easiest way to configure the LoRa Module is with our [**HARDWARIO Console**](../firmware-development/hardwario-tower-console.md) which is a part of the [**HARDWARIO Code**](../firmware-development/about-hardwario-code.md).
 
 :::
 
@@ -95,7 +95,7 @@ AT$APPSKEY=BF22C15EB89237A65DAABB05B2C91EB4
 
 :::tip
 
-You can use [**online key generators**](https://loratools.nl/#/keys) for testing purposes
+You can use [**online key generators**](https://loratools.nl/#/keys) for testing purposes.
 
 :::
 

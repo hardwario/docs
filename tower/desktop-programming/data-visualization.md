@@ -8,7 +8,7 @@ In this chapter, we will go over the **Dashboard Tab** of Playground
 
 :::info
 
-The **Dashboard Tab** needs the Node-RED set up correctly to work. If you don't know how to do that please visit the [**Node-RED Programming chapter**](./node-red-programming.md)
+The **Dashboard Tab** needs the Node-RED set up correctly to work. If you don't know how to do that please visit the [**Node-RED Programming chapter**](./node-red-programming.md).
 
 :::
 
@@ -25,6 +25,7 @@ On this tab, you can display **gauges**, **graphs**, **buttons** and **other wid
     </div>
   </div>
 </div>
+<br />
 
 :::info
 
@@ -34,6 +35,6 @@ To learn more about data visualization in Playground please visit [**our project
 
 :::tip
 
-To learn about the next tab visit [**Firmware Flashing**](./firmware-flashing.md)
+To learn about the next tab visit [**Firmware Flashing**](./firmware-flashing.md).
 
 :::

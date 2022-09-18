@@ -10,7 +10,7 @@ If you want to use the button even when you can't reach the Core Module, you can
 
 :::note
 
-This tutorial shows how to work with an integrated button or Button Module, but it can be used for your buttons or switches
+This tutorial shows how to work with an integrated button or Button Module, but it can be used for your buttons or switches.
 
 :::
 
@@ -23,11 +23,11 @@ This tutorial shows how to work with an integrated button or Button Module, but 
 
 :::info
 
-In the example below, the button is initialized with the `button_event_handler` function as a handler. It will be called every time an event occurs on the button module
+In the example below, the button is initialized with the `button_event_handler` function as a handler. It will be called every time an event occurs on the button module.
 
-If the button is pressed, the LED on Core Module will be turned off
+If the button is pressed, the LED on Core Module will be turned off.
 
-If the button is held for 1.5 seconds, the LED on Core Module will start blinking fast
+If the button is held for 1.5 seconds, the LED on Core Module will start blinking fast.
 
 :::
 

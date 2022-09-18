@@ -12,7 +12,7 @@ Soil Moisture sensor measures moisture and temperature.
 
 :::info
 
-This is the simplest example with a single connected sensor to the [**Sensor Module**](../../hardware-modules/about-soil-sensor.md)
+This is the simplest example with a single connected sensor to the [**Sensor Module**](../../hardware-modules/about-soil-sensor.md).
 
 :::
 
@@ -54,9 +54,9 @@ This is the simplest example with a single connected sensor to the [**Sensor Mod
 
 :::info
 
-When you connect **multiple sensors**, you need to initialize them with `twr_soil_sensor_init_multiple`. In the **event handler**, you then get the `device_address` in the callback parameter, or you can get the sensor index by calling `twr_soil_sensor_get_index_by_device_address()`
+When you connect **multiple sensors**, you need to initialize them with `twr_soil_sensor_init_multiple`. In the **event handler**, you then get the `device_address` in the callback parameter, or you can get the sensor index by calling `twr_soil_sensor_get_index_by_device_address()`.
 
-The example below shows how to work with multiple sensors
+The example below shows how to work with multiple sensors.
 
 :::
 

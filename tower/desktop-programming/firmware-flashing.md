@@ -17,7 +17,7 @@ A list of firmware is **downloaded automatically**.
 
 :::tip
 
-To flash firmware from the computer just use the **Three Dots** on the right side
+To flash firmware from the computer just use the **Three Dots** on the right side.
 
 :::
 
@@ -25,7 +25,7 @@ After you choose the firmware, make sure that you have the **correct device sele
 
 :::caution
 
-If you are flashing **Radio Dongle** make sure that you have it **Disconnected** in the **Devices Tab**
+If you are flashing **Radio Dongle** make sure that you have it **Disconnected** in the **Devices Tab**.
 
 :::
 

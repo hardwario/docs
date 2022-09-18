@@ -13,7 +13,7 @@ When everything in this example is finished, you should have the ability to turn
 
 :::tip
 
-You can find some examples of how to use [**TOWER with Blynk on our hackster.io page**](https://www.hackster.io/hardwario/projects?category_id=299)
+You can find some examples of how to use [**TOWER with Blynk on our hackster.io page**](https://www.hackster.io/hardwario/projects?category_id=299).
 
 :::
 
@@ -32,7 +32,7 @@ In Node-RED, install the Blynk package `node-red-contrib-blynk-ws` if you cannot
 
 :::tip
 
-   You can follow one of the [**project tutorials**](https://www.hackster.io/hardwario/projects?category_id=299) where installation, creating and connecting of nodes is explained in detail
+   You can follow one of the [**project tutorials**](https://www.hackster.io/hardwario/projects?category_id=299) where installation, creating and connecting of nodes is explained in detail.
 
 :::
 
@@ -50,7 +50,7 @@ Blynk color values need to be transformed to **proper hexadecimal RGB string**. 
 
 You will need to **import the JSON** below to the **Node-RED**.
 
-If you don't know what a **Node-RED** is, you can read the [**Desktop Programming section**](../desktop-programming/about-playground.md) or [**Server on Raspberry Pi section**](../server-raspberry-pi/index.md)
+If you don't know what a **Node-RED** is, you can read the [**Desktop Programming section**](../desktop-programming/about-playground.md) or [**Server on Raspberry Pi section**](../server-raspberry-pi/index.md).
 
 :::
 

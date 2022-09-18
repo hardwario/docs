@@ -11,7 +11,7 @@ In this chapter, we will go over the **Functions Tab** of Playground
 
 The **Functions Tab** uses the [**Node-RED**](https://nodered.org/about/) tool for working with TOWER and other devices.
 
-We can't cover everything about this tool in this tutorial so if you want to learn more, you can visit the [**Node-RED documentation**](https://nodered.org/docs/)
+We can't cover everything about this tool in this tutorial so if you want to learn more, you can visit the [**Node-RED documentation**](https://nodered.org/docs/).
 
 :::
 
@@ -42,6 +42,8 @@ There are a lot of nodes available for Node-RED that you can install but you sho
   </div>
 </div>
 
+<br />
+
 You can use nodes for multiple functions. As an example, there is a **data visualization** that is tightly connected with the [**Dashboard Tab**](./data-visualization.md).
 
 :::info
@@ -52,7 +54,7 @@ To learn more about Node-RED flows please visit [**our projects on hackster.io**
 
 :::tip
 
-To learn about the next tab visit [**Data Visualization**](./data-visualization.md)
+To learn about the next tab visit [**Data Visualization**](./data-visualization.md).
 
 :::
 

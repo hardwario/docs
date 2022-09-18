@@ -10,7 +10,7 @@ For example, you can set up an event that will be called each time that somethin
 
 :::info
 
-  This type of programming the firmware slightly differs from the one described in [**Task Scheduler chapter**](./task-scheduler.md). Although the events are sometimes planned by the scheduler
+  This type of programming the firmware slightly differs from the one described in [**Task Scheduler chapter**](./task-scheduler.md). Although the events are sometimes planned by the scheduler.
 
 :::
 
@@ -18,7 +18,7 @@ For example, you can set up an event that will be called each time that somethin
 
 You need to set the event handler, which is a specific function that will be called when some event occurs.
 
-The functions must have a **specific signature** for every module and tag, you can see the them in the **examples** on [**GitHub**](https://github.com/hardwario) or in the [**How To: chapters**] in this section.
+The functions must have a **specific signature** for every module and tag, you can see them in the **examples** on [**GitHub**](https://github.com/hardwario) or in the [**How To: chapters**] in this section.
 
 :::info
 
@@ -81,7 +81,7 @@ The functions must have a **specific signature** for every module and tag, you c
 
 :::info
 
-  In the second example, there is a function called every time an update occurs on the **Temperature Sensor** integrated into Core Module. The update interval is set for 5 seconds (5 * 1000 milliseconds)
+  In the second example, there is a function called every time an update occurs on the **Temperature Sensor** integrated into Core Module. The update interval is set for 5 seconds (5 * 1000 milliseconds).
 
   Contrary to the previous example you have to set the **update interval** as well as the event handler, this interval will make it so the event handler will be called periodically.
 

@@ -9,7 +9,7 @@ You might want to do this if you need some specific features from our already ex
 
 :::info
 
-This section is about tools for firmware development. If you already have or know those and you just want to see some examples of how to write the firmware, you should visit the [**Firmware SDK section**](../firmware-sdk/index.md)
+This section is about tools for firmware development. If you already have or know those and you just want to see some examples of how to write the firmware, you should visit the [**Firmware SDK section**](../firmware-sdk/index.md).
 
 :::
 

@@ -17,7 +17,7 @@ import TabItem from '@theme/TabItem';
 
 :::info
 
-First, you will need to install [**InfluxDB**](https://www.influxdata.com)
+First, you will need to install [**InfluxDB**](https://www.influxdata.com).
 
 :::
 
@@ -62,7 +62,7 @@ sudo systemctl start influxdb
 
 :::info
 
-After you tested the InfluxDB, you can move to [**Grafana**](https://grafana.com)
+After you tested the InfluxDB, you can move to [**Grafana**](https://grafana.com).
 
 :::
 
@@ -119,13 +119,13 @@ sudo systemctl start grafana-server
 
 :::caution
 
-Make sure you have [**Homebrew**](https://brew.sh) installed
+Make sure you have [**Homebrew**](https://brew.sh) installed.
 
 :::
 
 :::info
 
-First, you will need to install [**InfluxDB**](https://www.influxdata.com)
+First, you will need to install [**InfluxDB**](https://www.influxdata.com).
 
 :::
 
@@ -138,7 +138,7 @@ brew services start influxdb
 
 :::info
 
-After you installed the InfluxDB, you can move to [**Grafana**](https://grafana.com)
+After you installed the InfluxDB, you can move to [**Grafana**](https://grafana.com).
 
 :::
 
@@ -162,8 +162,8 @@ To configure Grafana, you will first have to open it and log in:
 
 :::info
 
-Default **User** is `admin`
-Default **Password** is `admin`
+Default **User** is `admin`.
+Default **Password** is `admin`.
 
 :::
 
@@ -182,7 +182,7 @@ Select **Add Data Source** and fill the data
 
 :::info
 
-Click the **Grafana icon on the top left** -> **Dashboard** -> **Import**
+Click the **Grafana icon on the top left** -> **Dashboard** -> **Import**.
 
 :::
 

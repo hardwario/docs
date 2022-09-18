@@ -17,7 +17,7 @@ Thanks to the **SDK**, setting up and using the GPS Module **is very simple**. Y
 
 :::info
 
-This example will send the date, time, position, number of satellites module sees and fix quality with the use of `twr_log` over the UART to the PC
+This example will send the date, time, position, number of satellites module sees and fix quality with the use of `twr_log` over the UART to the PC.
 
 :::
 
