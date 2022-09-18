@@ -23,18 +23,6 @@
   force = true
 
 [[redirects]]
-  from = "http://tower.hardwario.com/*"
-  to = "https://docs.hardwario.com/tower"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://tower.hardwario.com/*"
-  to = "https://docs.hardwario.com/tower"
-  status = 301
-  force = true
-
-[[redirects]]
   from = "http://cooper.hardwario.com/*"
   to = "https://docs.hardwario.com"
   status = 301
