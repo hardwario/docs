@@ -1,6 +1,6 @@
 ---
 slug: hardwario-extension-tutorial
-title: HARDWARIO Extension Tutorial
+title: TOWER Extension Tutorial
 ---
 import Image from '@theme/IdealImage';
 
@@ -125,11 +125,11 @@ There is a separate chapter for the [**TOWER Console**](./hardwario-tower-consol
 
 :::caution
 
-You will need a [**JLink Probe**](https://www.segger.com/products/debug-probes/j-link/) for this to work properly. This is for advanced debugging. You have to have `arm-none-eabi-gdb` and `JLinkGDBServerCL` in **PATH** for this to work. If you are using our portable version you don’t have to worry about that and you just need the JLink Probe.
+You will need a [**JLink Probe**](https://www.segger.com/products/debug-probes/j-link/) for this to work properly. This is for **advanced debugging**. You have to have `arm-none-eabi-gdb` and `JLinkGDBServerCL` in **PATH** for this to work. If you are using our portable version you don’t have to worry about that and you just need the JLink Probe.
 
 :::
 
-This command will not attach the console like the **previous one** but will instead try to attach it to the **JLink debugger** for some **advanced debugging**. You can read more about JLink debugging in the **Advanced Debugging chapter**.
+This command will not attach the console like the **previous one** but will instead try to attach it to the **JLink debugger** for some **advanced debugging**. You can read more about JLink debugging in the [**Advanced Debugging chapter**](./advanced-debugging.md).
 
 ### Clean All Outputs
 
@@ -163,7 +163,7 @@ You will need a [**JLink Probe**](https://www.segger.com/products/debug-probes/j
 
 This command will try to connect to a JLink for advanced debugging.
 
-You can read more about JLink debugging in the **Advanced Debugging chapter**.
+You can read more about JLink debugging in the [**Advanced Debugging chapter**](./advanced-debugging.md).
 
 Debugging can be started in **multiple ways**:
 

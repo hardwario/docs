@@ -80,6 +80,7 @@ const sidebars = {
         'firmware-development/hardwario-tower-console',
         'firmware-development/firmware-quick-start',
         'firmware-development/firmware-debugging',
+        'firmware-development/advanced-debugging',
         'firmware-development/development-with-cli-tools',
       ],
     },
