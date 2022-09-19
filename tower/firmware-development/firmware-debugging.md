@@ -4,6 +4,12 @@ title: Debugging
 ---
 import Image from '@theme/IdealImage';
 
+:::info
+
+If you want to use the JLink probe to do some advanced debugging, you can [**read the separate chapter for that**](./advanced-debugging.md).
+
+:::
+
 ## Starting Simple
 
 The easiest way to debug and also the way how all the things started was just to print out whatever you consider important to know.
