@@ -8,7 +8,7 @@ To make it easier to work with certain 1-Wire devices we implemented a module ca
 
 ## References
 - [**1-Wire SDK Module**](https://sdk.hardwario.com/group__twr__onewire__relay.html)
-- [**GitHub Repository Example**](https://github.com/hardwario/twr-sdk/tree/master/_examples/onewire-relay)
+- [**GitHub Repository Example**](https://github.com/hardwario/twr-sdk/blob/master/_examples/onewire-relay/application.c)
 
 :::info
 

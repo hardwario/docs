@@ -8,7 +8,7 @@ The LCD Module **provides a simple way to show needed information** without conn
 
 ## References
 - [**LCD SDK Module**](https://sdk.hardwario.com/group__twr__module__lcd.html)
-- GitHub Repository Example
+- [**GitHub Repository Example**](https://github.com/hardwario/twr-sdk/blob/master/_examples/lcd-text/application.c)
 
 :::info
 

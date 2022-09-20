@@ -16,7 +16,7 @@ This tutorial shows how to work with an integrated button or Button Module, but 
 
 ## References
 - [**Push Button SDK Module**](https://sdk.hardwario.com/group__twr__button.html)
-- GitHub Repository Example
+- [**GitHub Repository Example**](https://github.com/hardwario/twr-sdk/blob/master/_examples/button/application.c)
 
 
 ## Example
