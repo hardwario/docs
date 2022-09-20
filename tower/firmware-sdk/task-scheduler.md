@@ -10,7 +10,7 @@ It is important to **not block the task** but do the necessary operation quickly
 
 ## References
 - [**Scheduler SDK Module**](https://sdk.hardwario.com/group__twr__scheduler.html)
-- GitHub Repository Example
+- [**GitHub Repository Example**](https://github.com/hardwario/twr-sdk/blob/master/_examples/scheduler-advanced/application.c)
 
 ## Registering a Task
 

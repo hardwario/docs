@@ -8,7 +8,7 @@ The [**PIR module**](../../hardware-modules/about-pir-module.md) is mostly used 
 
 ## References
 - [**PIR SDK Module**](https://sdk.hardwario.com/group__twr__module__pir.html)
-- GitHub Repository Example
+- [**GitHub Repository Example**](https://github.com/hardwario/twr-sdk/blob/master/_examples/pir/application.c)
 
 ## Sensitivity
 

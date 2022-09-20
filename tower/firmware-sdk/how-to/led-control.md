@@ -8,7 +8,7 @@ Controlling the **LED integrated into Core Module** is like printing `Hello worl
 
 ## References
 - [**LED SDK Module**](https://sdk.hardwario.com/group__twr__led.html)
-- GitHub Repository Example
+- [**GitHub Repository Example**](https://github.com/hardwario/twr-sdk/blob/master/_examples/led-on-off/application.c)
 
 :::info
 
