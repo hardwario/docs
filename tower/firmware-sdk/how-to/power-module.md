@@ -17,7 +17,7 @@ This tutorial goes over the **Relay Control**. If you want to learn about LED St
 
 ## References
 - [**Power Module SDK Module**](https://sdk.hardwario.com/group__twr__module__power.html)
-- GitHub Repository Example
+- [**GitHub Repository Example**](https://github.com/hardwario/twr-radio-power-controller/blob/main/src/application.c)
 
 :::info
 

@@ -64,7 +64,7 @@ Sampling can be **synchronous** and **asynchronous**.
 
 :::
 
-<details><summary><b>Synchronous Sampling Code Example</b></summary>
+<details><summary><b>Asynchronous Sampling Code Example</b></summary>
 <p>
 
   ```c showLineNumbers

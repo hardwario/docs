@@ -12,7 +12,7 @@ The module uses [**infrared light for measurements**](https://en.wikipedia.org/w
 
 ## References
 - [**CO₂ SDK Module**](https://sdk.hardwario.com/group__twr__module__co2.html)
-- GitHub Repository Example
+- [**GitHub Repository Example**](https://github.com/hardwario/twr-radio-co2-monitor/blob/main/src/application.c)
 
 :::info
 
