@@ -10,7 +10,7 @@ The most used community LoRa backends are [**The Things Network**](https://www.t
 
 ## References
 - [**LoRa SDK Module**](https://sdk.hardwario.com/group__twr__module__gps.html)
-- GitHub Repository Example
+- [**GitHub Repository Example**](https://github.com/hardwario/twr-lora-push-button/blob/main/src/application.c)
 
 ## How Does it Work?
 - The message is sent from the device

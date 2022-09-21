@@ -14,7 +14,7 @@ The [**Core Module**](../../hardware-modules/about-core-module.md) comes with an
 
 ## References
 - [**TMP112 SDK Module**](https://sdk.hardwario.com/group__twr__tmp112.html)
-- GitHub Repository Example
+- [**GitHub Repository Example**](https://github.com/hardwario/twr-radio-air-quality-monitor/blob/7e8b21a8becbf9e9834c08a17c04bcb95d62233c/src/application.c)
 
 <details><summary><b>Integrated Temperature Sensor Code Example</b></summary>
 <p>

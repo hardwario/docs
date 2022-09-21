@@ -8,7 +8,7 @@ Soil Moisture sensor measures moisture and temperature.
 
 ## References
 - [**Soil Sensor SDK Module**](https://sdk.hardwario.com/group__twr__soil__sensor.html)
-- GitHub Repository Example
+- [**GitHub Repository Example**](https://github.com/hardwario/twr-radio-soil-sensor/blob/main/src/application.c)
 
 :::info
 

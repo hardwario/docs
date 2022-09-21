@@ -16,7 +16,7 @@ You can save **date** and **time** into its hardware registers and the clock is 
 
 ## References
 - [**RTC SDK Module**](https://sdk.hardwario.com/group__twr__onewire__relay.html)
-- GitHub Repository Example
+- [**GitHub Repository Example**](https://github.com/hardwario/twr-lcd-clock-with-stopwatch/blob/main/src/application.c)
 
 ## RTC Structure
 

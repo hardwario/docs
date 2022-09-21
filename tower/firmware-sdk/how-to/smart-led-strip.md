@@ -9,6 +9,7 @@ The Smart LED Strip provides you an easy way to show values like **temperature a
 You need to use a [**Power Module**](../../hardware-modules/about-power-module.md) that takes care of power and communication between [**Core Module**](../../hardware-modules/about-core-module.md) and the **LED Strip**.
 
 ## References
+- [**LED Strip SDK Module**](https://sdk.hardwario.com/twr__led__strip_8h_source.html)
 - [**GitHub Repository Example**](https://github.com/hardwario/twr-sdk/blob/master/_examples/led-strip/application.c)
 
 ## Available Colors
