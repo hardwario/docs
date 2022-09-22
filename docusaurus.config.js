@@ -45,6 +45,7 @@ const config = {
         path: 'ember',
         routeBasePath: 'ember',
         sidebarPath: require.resolve('./sidebars-ember.js'),
+        editUrl: 'https://github.com/hardwario/docs/edit/main',
       }),
     ],
     [
@@ -54,6 +55,7 @@ const config = {
         path: 'tower',
         routeBasePath: 'tower',
         sidebarPath: require.resolve('./sidebars-tower.js'),
+        editUrl: 'https://github.com/hardwario/docs/edit/main',
       }),
     ],
     [
@@ -63,6 +65,7 @@ const config = {
         path: 'cloud',
         routeBasePath: 'cloud',
         sidebarPath: require.resolve('./sidebars-cloud.js'),
+        editUrl: 'https://github.com/hardwario/docs/edit/main',
       }),
     ],
     [
@@ -130,6 +133,13 @@ const config = {
             dark: 'rgb(50, 50, 50)'
           }
         }
+      },
+      algolia: {
+        apiKey: "00f3bf4268a994b715822ae701e41326",
+        indexName: "hardwario",
+        appId: "AKRT8SVTPP",
+        contextualSearch: false,
+        placeholder: "search",
       },
       footer: {
         style: 'dark',
