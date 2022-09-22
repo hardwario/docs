@@ -13,7 +13,7 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  scripts: [{src: 'https://plausible.io/js/script.js', defer: true, 'data-domain': 'docs.hardwario.com'}],
+
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -45,6 +45,7 @@ const config = {
         path: 'ember',
         routeBasePath: 'ember',
         sidebarPath: require.resolve('./sidebars-ember.js'),
+        editUrl: 'https://github.com/hardwario/docs/edit/main',
       }),
     ],
     [
@@ -54,6 +55,7 @@ const config = {
         path: 'tower',
         routeBasePath: 'tower',
         sidebarPath: require.resolve('./sidebars-tower.js'),
+        editUrl: 'https://github.com/hardwario/docs/edit/main',
       }),
     ],
     [
@@ -63,6 +65,7 @@ const config = {
         path: 'cloud',
         routeBasePath: 'cloud',
         sidebarPath: require.resolve('./sidebars-cloud.js'),
+        editUrl: 'https://github.com/hardwario/docs/edit/main',
       }),
     ],
     [
