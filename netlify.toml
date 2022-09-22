@@ -215,8 +215,14 @@
   force = true
 
 [[redirects]]
-  from = "https://tower.hardwario.com/en/latest/integrations/grafana-for-visualization/*"
-  to = "https://docs.hardwario.com/tower/platform-integrations/grafana-visualization/"
+  from = "https://tower.hardwario.com/en/latest/integrations/grafana--visualization/*"
+  to = "https://docs.hardwario.com/tower/platform-integrations/grafana-viforsualization/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://tower.hardwario.com/en/latest/integrations/homekit-and-siri/*"
+  to = "https://docs.hardwario.com/tower/platform-integrations/homekit-and-siri/"
   status = 301
   force = true
 
