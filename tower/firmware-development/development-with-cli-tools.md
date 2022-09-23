@@ -76,7 +76,7 @@ All of these have to be in **PATH**.
 - Make some changes to the code
 - Run **CMake** to generate build files:
   ```
-  cmake -B obj/debug . -G Ninja -DCMAKE_TOOLCHAIN_FILE=sdk/toolchain/toolchain.cmake
+  cmake -B obj/debug . -G Ninja -DTYPE=debug -DCMAKE_TOOLCHAIN_FILE=sdk/toolchain/toolchain.cmake
   ```
 - Run ninja to generate the final firmware binary:
   ```
