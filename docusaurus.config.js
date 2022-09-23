@@ -140,6 +140,7 @@ const config = {
         appId: "AKRT8SVTPP",
         contextualSearch: false,
         placeholder: "search",
+        searchPagePath: false,
       },
       footer: {
         style: 'dark',
