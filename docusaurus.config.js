@@ -134,6 +134,13 @@ const config = {
           }
         }
       },
+      algolia: {
+        apiKey: "00f3bf4268a994b715822ae701e41326",
+        indexName: "hardwario",
+        appId: "AKRT8SVTPP",
+        contextualSearch: false,
+        placeholder: "search",
+      },
       footer: {
         style: 'dark',
         links: [
