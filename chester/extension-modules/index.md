@@ -42,7 +42,7 @@ On the CHESTER DevKit variant, it is possible to install extension modules desig
 | CHESTER-X8  | Ultra-precise accelerometer                                                                                                                                       |
 | CHESTER-X9  | 4-channel output module with smart protected switch for controlling relays and solenoids                                                                          |
 | CHESTER-X10 | DC/DC converter + Li-Po charger providing power from an external 6-30 VDC line (features input voltage measurement)                                               |
-| CHESTER-X7  | 4-channel differential input converter with software-controlled 5V boost converter for current probes and other industrial sensors                                |
+| CHESTER-K   | 4-channel differential input converter with software-controlled 5V boost converter for current probes and other industrial sensors                                |
 
 ## Cover Modules
 
