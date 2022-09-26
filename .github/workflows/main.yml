@@ -3,8 +3,6 @@ name: main
 on:
   push:
     branches: [ main, master ]
-  pull_request:
-    types: [ closed ]
   workflow_dispatch:
 
 jobs:
