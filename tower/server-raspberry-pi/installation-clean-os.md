@@ -18,12 +18,31 @@ If you didn't already, you should follow the [**Getting Started Tutorial**](http
 
 After the installation is done, you can just [**log into your device with SSH**](./login-guide.md).
 
+:::tip
+
+You can also use our [**Install script**](https://github.com/hardwario/hio-raspbian/blob/master/install.sh) which will do all the needed steps to prepare the Raspberry for use with TOWER.
+
+To run the script, just run the following commands after connecting to the Raspberry.
+
+```
+wget https://raw.githubusercontent.com/hardwario/hio-raspbian/master/install.sh
+chmod +x install.sh
+./install.sh
+```
+:::
+
 - Update and Upgrade all the packages
 
   If you didn't already do it in the [**log into your device with SSH**](./login-guide.md), you should run the following command to have the system **up to date**.
 
   ```bash
   sudo apt update && sudo apt upgrade
+  ```
+
+- Install all dependencies
+
+  ```bash
+  sudo apt install -y curl zip wget apt-transport-https openssl
   ```
 
 - Install Mosquitto server and clients
@@ -95,5 +114,26 @@ After the installation is done, you can just [**log into your device with SSH**]
   ```bash
   pm2 start /usr/bin/python3 --name "bcg-ud" -- /usr/local/bin/bcg --device /dev/bcUD0
   pm2 save
+  ```
 
+- Optionally, you can install the webserver to have the HARDWARIO Hub available
+  :::info
+
+  HARDWARIO Hub is similar to [**HARDWARIO Playground**](../desktop-programming/about-playground.md) but in the browser.
+
+  :::
+
+  :::caution
+
+  This will override any previous webserver that you might have installed.
+
+  :::
+
+  ```bash
+  sudo apt install -y nginx curl zip wget apt-transport-https openssl
+  WEB_ZIP_URL=$(curl -L -s https://api.github.com/repos/bigclownlabs/bch-hub-web/releases/latest | grep browser_download_url | grep zip | head -n 1 | cut -d '"' -f 4)
+  wget "$WEB_ZIP_URL" -O /tmp/web.zip
+  sudo unzip /tmp/web.zip -d /var/www/html
+  rm /tmp/web.zip
+  sudo apt install -y git mc htop tmux
   ```
