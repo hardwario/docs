@@ -311,14 +311,19 @@ Only a single instance of this module can be installed on CHESTER-M.
 
 :::
 
-**Format:** `CHESTER-X4`
+**Format:** `CHESTER-X4[:{A|B}]`
+
+**Legend:**
+
+* `:A` = Expansion module configured for backside slot "A" position
+* `:B` = Expansion module configured for backside slot "B" position
 
 **Available parts:**
 
 | Ordering Code |
 |:--------------|
-|`CHESTER-X4`   |
-|`CHESTER-X4`   |
+|`CHESTER-X4:A` |
+|`CHESTER-X4:B` |
 
 ### CHESTER-X6: S-Wire Bus + 5 V Boost
 
@@ -328,7 +333,12 @@ Only a single instance of this module can be installed on CHESTER-M.
 
 :::
 
-**Format:** `CHESTER-X6`
+**Format:** `CHESTER-X6[:{A|B}]`
+
+**Legend:**
+
+* `:A` = Expansion module configured for backside slot "A" position
+* `:B` = Expansion module configured for backside slot "B" position
 
 **Available parts:**
 
@@ -350,7 +360,8 @@ Only a single instance of this module can be installed on CHESTER-M.
 
 | Ordering Code |
 |:--------------|
-|`CHESTER-X7`   |
+|`CHESTER-X7:A` |
+|`CHESTER-X7:B` |
 
 ### CHESTER-X8: Ultra-Precise Accelerometer
 
@@ -360,33 +371,51 @@ Only a single instance of this module can be installed on CHESTER-M.
 
 :::
 
-**Format:** `CHESTER-X8`
+**Format:** `CHESTER-X8[:{A|B}]`
+
+**Legend:**
+
+* `:A` = Expansion module configured for backside slot "A" position
+* `:B` = Expansion module configured for backside slot "B" position
 
 **Available parts:**
 
 | Ordering Code |
 |:--------------|
-|`CHESTER-X8`   |
+|`CHESTER-X8:A` |
+|`CHESTER-X8:B` |
 
 ### CHESTER-X9: 4x Protected N Switch
 
-**Format:** `CHESTER-X9`
+**Format:** `CHESTER-X9[:{A|B}]`
+
+**Legend:**
+
+* `:A` = Expansion module configured for backside slot "A" position
+* `:B` = Expansion module configured for backside slot "B" position
 
 **Available parts:**
 
 | Ordering Code |
 |:--------------|
-|`CHESTER-X9`   |
+|`CHESTER-X9:A` |
+|`CHESTER-X9:B` |
 
 ### CHESTER-X10: 28 V Buck + Li-Po Charger
 
-**Format:** `CHESTER-X10`
+**Format:** `CHESTER-X10[:{A|B}]`
+
+**Legend:**
+
+* `:A` = Expansion module configured for backside slot "A" position
+* `:B` = Expansion module configured for backside slot "B" position
 
 **Available parts:**
 
-| Ordering Code |
-|:--------------|
-|`CHESTER-X10`  |
+| Ordering Code  |
+|:---------------|
+|`CHESTER-X10:A` |
+|`CHESTER-X10:B` |
 
 ## Other Accessories
 
