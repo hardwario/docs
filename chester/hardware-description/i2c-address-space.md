@@ -25,6 +25,7 @@ Typically, you will not need to search for the I²C addresses while working with
 | CHESTER-X8     | `0x1d`  | ADXL355        |                                    |
 | CHESTER-X0     | `0x20`  | PCAL6416A      | Address in slot A                  |
 | CHESTER-X0     | `0x21`  | PCAL6416A      | Address in slot B                  |
+| CHESTER-R1     | `0x38`  | TCA9534A       |                                    |
 | CHESTER-X6     | `0x39`  | TCA9534A       |                                    |
 | CHESTER-A      | `0x3a`  | TCA9534A       |                                    |
 | CHESTER-G      | `0x3b`  | TCA9534A       |                                    |
@@ -42,6 +43,7 @@ Typically, you will not need to search for the I²C addresses while working with
 | CHESTER-X4     | `0x49`  | TLA2021        |                                    |
 | CHESTER-X3     | `0x4a`  | ADS122C04      | Address in slot A                  |
 | CHESTER-M      | `0x4b`  | TLA2021        |                                    |
+| CHESTER-R1     | `0x4c`  | SC16IS740      |                                    |
 | CHESTER-X6     | `0x4d`  | SC16IS740      |                                    |
 | CHESTER-B1     | `0x4e`  | SC16IS740      |                                    |
 | CHESTER-X3     | `0x4f`  | ADS122C04      | Address in slot B                  |
