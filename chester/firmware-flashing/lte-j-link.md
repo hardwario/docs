@@ -115,11 +115,19 @@ You can install **HARDWARIO Command Line Tools** with these steps:
 
 Follow these steps to flash the LTE modem firmware in the CHESTER device:
 
+1. Open the **CHESTER** enclosure (6 screws from the bottom side).
+
 1. Connect the 10-pin flat cable to the connector labeled `LTE`.
+
+   :::caution
+
+   One of the wires on the flat cable between J-Link and CHESTER has red color. This red color denotes a **signal number 1**. This red-colored signal has to be oriented toward the white dot located next to the SWD connector on CHESTER mainboard. The same rule with the cable applies at the side of **SEGGER J-Link**.
+
+   :::
 
 1. Connect the other side of the 10-pin flat cable to SEGGER J-Link adapter board (and plug the adapter board to SEGGER J-Link device).
 
-1. Connect Micro-USB cable to SEGGER J-Link and your computer.
+1. Connect the **Micro-USB** cable to your computer and **SEGGER J-Link**.
 
 1. Open the **Terminal** (Ubuntu or macOS) or **Command Prompt** (Windows) application.
 

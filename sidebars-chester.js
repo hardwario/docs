@@ -74,6 +74,7 @@ const sidebars = {
         'firmware-flashing/app-j-link',
         'firmware-flashing/app-bluetooth',
         'firmware-flashing/lte-j-link',
+        'firmware-flashing/lrw-j-link',
         'firmware-flashing/chester-z-j-link',
       ],
     },
