@@ -98,7 +98,7 @@ Follow these steps to flash the LoRaWAN modem firmware in the CHESTER device:
 
    :::caution
 
-   One of the wires on the flat cable between J-Link and CHESTER has red color. This red color denotes a **signal number 1**. This red-colored signal has to be oriented toward the white dot located next to the SWD connector on CHESTER mainboard. The same rule with the cable applies at the side of **SEGGER J-Link**.
+   One of the wires on the flat cable between J-Link and CHESTER has red color. This red color denotes a **signal number 1**. This red-colored signal has to be oriented toward the black dot located next to the SWD connector on CHESTER mainboard. The same rule with the cable applies at the side of **SEGGER J-Link**.
 
    :::
 
