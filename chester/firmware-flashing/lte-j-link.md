@@ -117,7 +117,13 @@ Follow these steps to flash the LTE modem firmware in the CHESTER device:
 
 1. Open the **CHESTER** enclosure (6 screws from the bottom side).
 
-1. Connect the 10-pin flat cable to the connector labeled `LTE`.
+   :::caution
+
+   Before flashing LTE we need to erase BLE MCU. Otherwise running firmware in MCU could collide with LTE modem during flash process.
+
+   :::
+
+1. Connect the 10-pin flat cable to the connector labeled `MCU`.
 
    :::caution
 
@@ -132,6 +138,14 @@ Follow these steps to flash the LTE modem firmware in the CHESTER device:
 1. Open the **Terminal** (Ubuntu or macOS) or **Command Prompt** (Windows) application.
 
 1. Activate the Python virtual environment where you have installed the **HARDWARIO Command Line Tools** (see the previous chapter).
+
+1. Erase MCU firmware by typing
+
+   ```
+   hardwario chester app erase
+   ```
+
+1. Connect the 10-pin flat cable to the connector labeled `LTE`.
 
 1. Download the **LTE modem** firmware package [**v1.3.0**](/download/hio-chester-lte-v1.3.0.zip).
 
