@@ -3,10 +3,12 @@ slug: lte-modem-over-j-link
 title: LTE Modem over J-Link
 ---
 import Image from '@theme/IdealImage';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 # LTE Modem over J-Link
 
-This article will describe how to flash the LTE modem firmware in CHESTER using SEGGER J-Link.
+This chapter describes how to flash the LTE modem firmware in **CHESTER** using **SEGGER J-Link**.
 
 ## Requirements
 
@@ -14,39 +16,55 @@ You will need the following hardware and software tools:
 
 * One of these operating systems:
 
-  * Ubuntu 20.04 / 22.04
-  * macOS 11 / 12 (with Homebrew installed)
-  * Windows 10 / Windows 11
+  * **Ubuntu** version 20.04 / 22.04
+  * **macOS** version 11 / 12 (with Homebrew installed)
+  * **Windows** version 10 / 11
 
 * **Python 3** distribution installed on your system:
 
-  * On Ubuntu, run this command in the **Terminal** app:
+  <Tabs groupId="operating-system">
 
-    ```
-    sudo apt install python3
-    ```
+  <TabItem value="ubuntu" label="Ubuntu" default>
 
-  * On macOS, run this command in the **Terminal** app:
+  Run this command in the **Terminal** app:
 
-    ```
-    brew install python3
-    ```
+  ```
+  sudo apt install python3
+  ```
 
-  * On Windows, download the latest stable installer from [this link](https://www.python.org/downloads/windows/).
+  </TabItem>
 
-    :::caution
+  <TabItem value="macos" label="macOS">
 
-    Ensure the Windows installer can modify the `PATH` variable so the Python executable is available from any location.
+  Run this command in the **Terminal** app:
 
-    :::
+  ```
+  brew install python3
+  ```
 
-* HARDWARIO CHESTER device (you will need to open the enclosure top cover with six screws)
+  </TabItem>
 
-* USB debugger/programmer SEGGER J-Link (including a 10-pin SWD adapter + flat cable)
+  <TabItem value="windows" label="Windows">
+
+  Download the latest stable installer from [this link](https://www.python.org/downloads/windows/).
+
+  :::caution
+
+  Ensure the Windows installer can modify the `PATH` variable so the **Python** executable is available from any location.
+
+  :::
+
+  </TabItem>
+
+  </Tabs>
+
+* **CHESTER** device (you will need to open the enclosure top cover with six screws)
+
+* USB debugger/programmer **SEGGER J-Link** (including a 10-pin **SWD** adapter + flat cable)
 
   :::tip
 
-  HARDWARIO provides J-Link + all the required accessories on demand.
+  **HARDWARIO** provides J-Link + all the required accessories on demand.
 
   :::
 
@@ -64,7 +82,7 @@ You will need the following hardware and software tools:
 
 You can install **HARDWARIO Command Line Tools** with these steps:
 
-1. On Windows only - Install SEGGER J-Link drivers:
+1. On Windows only - Install the **SEGGER J-Link** drivers:
 
    * Download [64-bit Intel/AMD installer](https://www.segger.com/downloads/jlink/JLink_Windows_x86_64.exe)
    * Download [32-bit Intel/AMD installer](https://www.segger.com/downloads/jlink/JLink_Windows.exe)
@@ -72,21 +90,45 @@ You can install **HARDWARIO Command Line Tools** with these steps:
 
 1. Open the **Terminal** (Ubuntu or macOS) or **Command Prompt** (Windows) application.
 
-1. Initialize the Python virtual environment:
+1. Initialize the **Python** virtual environment:
 
    ```
    python3 -m venv hardwario-venv
    ```
 
-1. Activate the Python virtual environment:
+1. Activate the **Python** virtual environment:
+
+   <Tabs groupId="operating-system">
+
+   <TabItem value="ubuntu" label="Ubuntu" default>
 
    ```
    source hardwario-venv/bin/activate
    ```
 
+   </TabItem>
+
+   <TabItem value="macos" label="macOS">
+
+   ```
+   source hardwario-venv/bin/activate
+   ```
+
+   </TabItem>
+
+   <TabItem value="windows" label="Windows">
+
+   ```
+   hardwario-venv\Scripts\activate.bat
+   ```
+
+   </TabItem>
+
+   </Tabs>
+
    :::caution
 
-   When you close the **Terminal** or **Command Prompt**, you must reactivate the Python virtual environment. Simply call the command from the above procedure: `source hardwario-venv/bin/activate`.
+   When you close the **Terminal** or **Command Prompt**, you must reactivate the **Python** virtual environment. Simply repeat the appropriate command for the given platform above.
 
    :::
 
@@ -113,7 +155,7 @@ You can install **HARDWARIO Command Line Tools** with these steps:
 
 ## Flashing Procedure
 
-Follow these steps to flash the LTE modem firmware in the CHESTER device:
+Follow these steps to flash the LTE modem firmware in the **CHESTER** device:
 
 1. Open the **CHESTER** enclosure (6 screws from the bottom side).
 
@@ -121,19 +163,19 @@ Follow these steps to flash the LTE modem firmware in the CHESTER device:
 
    :::caution
 
-   One of the wires on the flat cable between J-Link and CHESTER has red color. This red color denotes a **signal number 1**. This red-colored signal has to be oriented toward the white dot located next to the SWD connector on CHESTER mainboard. The same rule with the cable applies at the side of **SEGGER J-Link**.
+   One of the wires on the flat cable between **SEGGER J-Link** and **CHESTER** has red color. This red color denotes signal number `1`. This red-colored signal has to be oriented toward the white dot located next to the **SWD** connector on the **CHESTER** mainboard. The same rule with the cable applies at the side of **SEGGER J-Link**.
 
    :::
 
-1. Connect the other side of the 10-pin flat cable to SEGGER J-Link adapter board (and plug the adapter board to SEGGER J-Link device).
+1. Connect the other side of the 10-pin flat cable to the **SEGGER J-Link** adapter board (and plug the adapter board into the **SEGGER J-Link** device).
 
 1. Connect the **Micro-USB** cable to your computer and **SEGGER J-Link**.
 
 1. Open the **Terminal** (Ubuntu or macOS) or **Command Prompt** (Windows) application.
 
-1. Activate the Python virtual environment where you have installed the **HARDWARIO Command Line Tools** (see the previous chapter).
+1. Activate the **Python** virtual environment where you have installed the **HARDWARIO Command Line Tools** (see the previous chapter).
 
-1. Download the **LTE modem** firmware package [**v1.3.0**](/download/hio-chester-lte-v1.3.0.zip).
+1. Download the **LTE modem** firmware package [**v1.3.0**](pathname:///download/hio-chester-lte-v1.3.0.zip).
 
 1. Run this command to flash the LTE modem firmware:
 
@@ -141,4 +183,4 @@ Follow these steps to flash the LTE modem firmware in the CHESTER device:
    hardwario chester lte flash hio-chester-lte-v1.3.0.zip
    ```
 
-1. Disconnect the SEGGER J-Link adapter.
+1. Disconnect the **SEGGER J-Link** adapter.
