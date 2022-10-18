@@ -159,11 +159,11 @@ Follow these steps to flash the LTE modem firmware in the **CHESTER** device:
 
 1. Open the **CHESTER** enclosure (6 screws from the bottom side).
 
-1. Connect the 10-pin flat cable to the connector labeled `LTE`.
+1. Connect the 10-pin flat cable to the connector labeled `APP` (or `BLE` on hardware revision R3.2 and earlier).
 
    :::caution
 
-   One of the wires on the flat cable between **SEGGER J-Link** and **CHESTER** has red color. This red color denotes signal number `1`. This red-colored signal has to be oriented toward the white dot located next to the **SWD** connector on the **CHESTER** mainboard. The same rule with the cable applies at the side of **SEGGER J-Link**.
+   One of the wires on the flat cable between **SEGGER J-Link** and **CHESTER** has red color. This red color denotes signal number `1`. This red-colored signal has to be oriented toward the black dot located next to the **SWD** connector on the **CHESTER** mainboard. The same rule with the cable applies at the side of **SEGGER J-Link**.
 
    :::
 
@@ -174,6 +174,26 @@ Follow these steps to flash the LTE modem firmware in the **CHESTER** device:
 1. Open the **Terminal** (Ubuntu or macOS) or **Command Prompt** (Windows) application.
 
 1. Activate the **Python** virtual environment where you have installed the **HARDWARIO Command Line Tools** (see the previous chapter).
+
+1. Run this command to erase the application firmware:
+
+   ```
+   hardwario chester app erase
+   ```
+
+   :::tip
+
+   The application firmware erase is required in order to prevent the reset signal collision between **SEGGER J-Link** and the application firmware.
+
+   :::
+
+1. Connect the 10-pin flat cable to the connector labeled `LTE`.
+
+   :::caution
+
+   One of the wires on the flat cable between **SEGGER J-Link** and **CHESTER** has red color. This red color denotes signal number `1`. This red-colored signal has to be oriented toward the black dot located next to the **SWD** connector on the **CHESTER** mainboard. The same rule with the cable applies at the side of **SEGGER J-Link**.
+
+   :::
 
 1. Download the **LTE modem** firmware package [**v1.3.0**](pathname:///download/hio-chester-lte-v1.3.0.zip).
 
