@@ -43,3 +43,6 @@ This documentation helps users and gateway integrators to navigate these essenti
 
 * For a complete reference on the product ordering codes - see the chapter:<br/>
   [**Ordering Codes**](./ordering-codes.md)
+
+* To see the complete reference of the product certification - see the chapter:<br/>
+  [**Product Certification**](./product-certification.md)
