@@ -61,6 +61,7 @@ const sidebars = {
       collapsed: true,
       items: [
         'catalog-applications/chester-current',
+        'catalog-applications/chester-push',
       ],
     },
     {
