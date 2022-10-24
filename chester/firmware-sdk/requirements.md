@@ -58,7 +58,7 @@ If you have not generated your SSH public/private key yet, you can do so using t
 ssh-keygen
 ```
 
-This will help you to generate the keys in your home folder. You should have files `id_rsa` (private key) and `id_rsa.pub` (private key) in the folder `.ssh` of your home directory.
+This will help you to generate the keys in your home folder. You should have files `id_rsa` (private key) and `id_rsa.pub` (public key) in the folder `.ssh` of your home directory.
 
 :::warning
 
