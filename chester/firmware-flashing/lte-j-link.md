@@ -203,4 +203,14 @@ Follow these steps to flash the LTE modem firmware in the **CHESTER** device:
    hardwario chester lte flash hio-chester-lte-v1.3.0.zip
    ```
 
+1. Connect the 10-pin flat cable to the connector labeled `APP` (or `BLE` on hardware revision R3.2 and earlier).
+
+   :::caution
+
+   One of the wires on the flat cable between **SEGGER J-Link** and **CHESTER** has red color. This red color denotes signal number `1`. This red-colored signal has to be oriented toward the black dot located next to the **SWD** connector on the **CHESTER** mainboard. The same rule with the cable applies at the side of **SEGGER J-Link**.
+
+   :::
+
+1. Flash the application firmware.
+
 1. Disconnect the **SEGGER J-Link** adapter.
