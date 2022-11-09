@@ -115,6 +115,13 @@ There are the main reasons for choosing this technology.
 
 You can use all known C language structures and also [**our SDK**](../firmware-sdk/index.md) that is implemented so you can quickly and easily, without any problems with compatibility, create your custom firmware.
 
+## Troubleshooting
+
+If you can't detect or flash the **Radio Dongle** or **Core Module** it can be a driver or OS issue. You can try some fixes based on your system
+
+- On **Windows** and **macOS** please install the [**FTDI VCP drivers**](https://ftdichip.com/drivers/vcp-drivers/)
+- On **Ubuntu**, you need to be in `dialout` user group. Please use the command `sudo usermod -a -G dialout $USER` and restart the computer
+
 ## Next steps
 
 From now you should be able to **create firmware** and **update existing ones**.
