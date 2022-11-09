@@ -16,7 +16,7 @@ Before you begin, make sure you comply with the chapter [Requirements](requireme
 
 ## Installation Steps
 
-The installation steps are split into multiple sections. At the end, you will be able to build the `blinky` sample from the CHESTER SDK.
+The installation steps are split into multiple sections. At the end, you will be able to build the `blinky` sample from the **CHESTER SDK**.
 
 ### Install Python
 
@@ -156,7 +156,7 @@ You can skip this step if you already have **Chocolatey** installed on your syst
 
    :::
 
-### Create Application
+## Create Application
 
 1. Create the directory for your application:
 
@@ -185,14 +185,20 @@ You can skip this step if you already have **Chocolatey** installed on your syst
 1. Activate the **Python** virtual environment:
 
    ```
-   venv/bin/Activate.ps1
+   venv/Scripts/Activate.ps1
    ```
 
    :::caution
 
-   When you close the shell (or your text editor with the integrated terminal), you must reactivate the virtual Python environment. Call this command (used in the procedure above): `venv/bin/Activate.ps1`. In the future, you may have various **West** workspaces with different versions of the tools, and thanks to the virtual environment, these will not be in version conflict.
+   When you close the shell (or your text editor with the integrated terminal), you must reactivate the virtual Python environment. Call this command (used in the procedure above): `venv/Scripts/Activate.ps1`. In the future, you may have various **West** workspaces with different versions of the **Python** packages, and thanks to the virtual environment concept, these will not suffer from version conflicts.
 
    :::
+
+1. Upgrade the **pip** package:
+
+   ```
+   pip install --upgrade pip
+   ```
 
 1. Install the **West** tool:
 
@@ -206,7 +212,7 @@ You can skip this step if you already have **Chocolatey** installed on your syst
    west init -m git@gitlab.hardwario.com:chester/skeleton.git --manifest-rev main
    ```
 
-1. Set the default board to **CHESTER**:
+1. Set the default board to **CHESTER (nRF52840)**:
 
    ```
    west config build.board chester_nrf52840
@@ -264,8 +270,3 @@ You can skip this step if you already have **Chocolatey** installed on your syst
             SRAM:       60576 B       256 KB     23.11%
         IDT_LIST:          0 GB         2 KB      0.00%
    ```
-
-## Install nRF Connect for Desktop
-
-Go to this link:
-https://www.nordicsemi.com/Products/Development-tools/nRF-Connect-for-desktop

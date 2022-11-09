@@ -6,7 +6,7 @@ import Image from '@theme/IdealImage';
 
 # Installation on macOS
 
-The following chapter will guide you through the CHESTER SDK installation on macOS. It has been tested on **macOS version 12** (Monterey).
+The following chapter will guide you through the **CHESTER SDK** installation on **macOS**. This guide was tested on versions **macOS 12 (Monterey)** and **macOS 13 (Ventura)**.
 
 :::caution
 
@@ -16,19 +16,25 @@ Before you begin, make sure you comply with the chapter [Requirements](requireme
 
 ## Installation Steps
 
-1. Open the Terminal application.
+The installation steps are split into multiple sections. At the end, you will be able to build the `blinky` sample from the **CHESTER SDK**.
 
-1. Install the Homebrew package manager (if not already installed in your system):
+### Install Packages
+
+1. Open the **Terminal** application.
+
+1. Install the **Homebrew** package manager (if not already installed in your system):
 
    ```
    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
    ```
 
-1. Install the following Homebrew packages:
+1. Install the following **Homebrew** packages:
 
    ```
    brew install cmake ninja gperf python3 ccache qemu dtc wget
    ```
+
+### Install Toolchain
 
 1. Create a target directory for the toolchain:
 
@@ -50,11 +56,13 @@ Before you begin, make sure you comply with the chapter [Requirements](requireme
    wget -c https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v0.14.1/zephyr-sdk-0.14.1_macos-aarch64.tar.gz -O - | tar -xz --directory $HOME/.local/opt
    ```
 
-1. Run the setup script from the toolchain directory:
+1. Run the **Zephyr SDK** bundle setup script:
 
    ```
    $HOME/.local/opt/zephyr-sdk-0.14.1/setup.sh
    ```
+
+## Create Application
 
 1. Create the directory for your application and switch to it:
 
@@ -68,13 +76,13 @@ Before you begin, make sure you comply with the chapter [Requirements](requireme
 
    :::
 
-1. Initialize the Python virtual environment:
+1. Initialize the **Python** virtual environment:
 
    ```
    python3 -m venv venv
    ```
 
-1. Activate the Python virtual environment:
+1. Activate the **Python** virtual environment:
 
    ```
    source venv/bin/activate
@@ -82,41 +90,47 @@ Before you begin, make sure you comply with the chapter [Requirements](requireme
 
    :::caution
 
-   You must reactivate the virtual Python environment when you close the shell (or your text editor with the integrated terminal). Call this command (used in the procedure above): `source venv/bin/activate`. In the future, you may have various West workspaces with different versions of the tools, and thanks to the virtual environment, these will not be in version conflict.
+   When you close the shell (or your text editor with the integrated terminal), you must reactivate the virtual Python environment. Call this command (used in the procedure above): `source venv/bin/activate`. In the future, you may have various **West** workspaces with different versions of the **Python** packages, and thanks to the virtual environment concept, these will not suffer from version conflicts.
 
    :::
 
-1. Install the West tool:
+1. Upgrade the **pip** package:
+
+   ```
+   pip install --upgrade pip
+   ```
+
+1. Install the **West** tool:
 
    ```
    pip install west
    ```
 
-1. Initialize the West workspace where you want to start your project:
+1. Initialize the **West** workspace where you want to start your project:
 
    ```
    west init -m git@gitlab.hardwario.com:chester/skeleton.git --manifest-rev main
    ```
 
-1. Set the default board to CHESTER:
+1. Set the default board to **CHESTER (nRF52840)**:
 
    ```
    west config build.board chester_nrf52840
    ```
 
-1. Synchronize the West workspace:
+1. Synchronize the **West** workspace:
 
    ```
    west update
    ```
 
-1. Export Zephyr environment:
+1. Export **Zephyr** environment:
 
    ```
    west zephyr-export
    ```
 
-1. Install the Python dependencies:
+1. Install the **Python** dependencies:
 
    ```
    pip install -r zephyr/scripts/requirements.txt
@@ -156,8 +170,3 @@ Before you begin, make sure you comply with the chapter [Requirements](requireme
             SRAM:       60576 B       256 KB     23.11%
         IDT_LIST:          0 GB         2 KB      0.00%
    ```
-
-## Install nRF Connect for Desktop
-
-Go to this link:
-https://www.nordicsemi.com/Products/Development-tools/nRF-Connect-for-desktop
