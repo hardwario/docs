@@ -80,7 +80,7 @@ The lux meter and hygrometer are always included. In the case of the "N" version
 |`CHESTER-S1-N`     |
 |`CHESTER-S1-NP`    |
 
-### CHESTER-Z: Backup + Push-buttons
+### CHESTER-Z: Backup + Push-buttons {#chester-z}
 
 :::caution
 
