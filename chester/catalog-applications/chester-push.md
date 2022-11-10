@@ -30,8 +30,8 @@ CHESTER Push also has a temperature sensor and accelerometer. All these values a
 
 The catalog **CHESTER Push** hardware consists of the following ordering codes:
 
-* `CHESTER-M-CGLS` TODO is there a variant w/o a SAFT battery holder?
-* `CHESTER-Z`
+* `CHESTER-M-CGLS`
+* `CHESTER-Z-[X|1-F]` - [see Ordering codes](../ordering-codes.md#chester-z-backup--push-buttonsX)
 * TODO cables, enclosure milling?
 
 ## Specific Commands
