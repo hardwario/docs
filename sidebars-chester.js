@@ -14,6 +14,7 @@ const sidebars = {
       collapsed: false,
       items: [
         'platform-management/mobile-application',
+        'platform-management/cellular-networks',
       ],
     },
     {

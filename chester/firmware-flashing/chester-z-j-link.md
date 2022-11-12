@@ -46,7 +46,7 @@ You can install **SEGGER J-Link Software and Documentation Pack** with these ste
 
 <TabItem value="ubuntu" label="Ubuntu" default>
 
-1. Download the 64-bit **DEB** package from [this link](https://www.segger.com/downloads/jlink/JLink_Linux_x86_64.deb).
+1. Download the 64-bit **DEB** package from [**this link**](https://www.segger.com/downloads/jlink/JLink_Linux_x86_64.deb).
 
 1. Open the **Terminal** application.
 
@@ -72,7 +72,7 @@ You can install **SEGGER J-Link Software and Documentation Pack** with these ste
 
 <TabItem value="macos" label="macOS">
 
-1. Download the universal **PKG** installer from [this link](https://www.segger.com/downloads/jlink/JLink_MacOSX_universal.pkg).
+1. Download the universal **PKG** installer from [**this link**](https://www.segger.com/downloads/jlink/JLink_MacOSX_universal.pkg).
 
 1. Launch the downloaded installer and finish the installation.
 
@@ -80,7 +80,7 @@ You can install **SEGGER J-Link Software and Documentation Pack** with these ste
 
 <TabItem value="windows" label="Windows">
 
-1. Download the 64-bit Intel installer from [this link](https://www.segger.com/downloads/jlink/JLink_Windows_x86_64.exe).
+1. Download the 64-bit Intel installer from [**this link**](https://www.segger.com/downloads/jlink/JLink_Windows_x86_64.exe).
 
 1. Launch the downloaded installer and finish the installation.
 
@@ -112,7 +112,7 @@ Follow these steps to flash the **CHESTER-Z** firmware:
 
 1. Connect the **Micro-USB** cable to your computer and **SEGGER J-Link**.
 
-1. Download the **CHESTER-Z** firmware package [**v1.4.0**](/download/hio-chester-z-v1.4.0.zip).
+1. Download the **CHESTER-Z** firmware package [**v1.4.0**](pathname:///download/hio-chester-z-v1.4.0.zip).
 
 1. Unzip the downloaded package.
 
