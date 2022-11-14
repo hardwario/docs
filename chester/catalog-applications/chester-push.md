@@ -31,8 +31,8 @@ CHESTER Push also has a temperature sensor and accelerometer. All these values a
 The catalog **CHESTER Push** hardware consists of the following ordering codes:
 
 * `CHESTER-M-CGLS`
-* `CHESTER-Z-[X|1-F]` - [see Ordering codes](../ordering-codes.md#chester-z)
-* TODO cables, enclosure milling?
+* `CHESTER-Z-F` - (see [ordering codes](../ordering-codes.md#chester-z) for more variants)
+* TODO cables, enclosure milling, front panel outline template?
 
 ## Specific Commands
 
