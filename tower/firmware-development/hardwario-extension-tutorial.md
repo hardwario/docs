@@ -55,7 +55,7 @@ In both modes, you should see the **HARDWARIO logo on the side panel**.
 
 If you didn’t open a folder with HARDWARIO TOWER firmware the extension will activate but **will provide fewer options**.
 
-You will get access to some basic commands that will lead you to our websites and then two commands for **cloning firmware from our [**GitHub**](https://github.com/hardwario)**.
+You will get access to some basic commands that will lead you to our websites and then two commands for **cloning firmware from our [GitHub](https://github.com/hardwario)**.
 
 You can use these commands to get started with the firmware development.
 
@@ -63,7 +63,7 @@ You can use these commands to get started with the firmware development.
 
 You will be prompted to select a folder where the [**twr-skeleton firmware**](https://github.com/hardwario/twr-skeleton) should be cloned (**A new folder for the firmware will be created**).
 
-After you select the folder you can **name your firmware folder** so you don’t have some collisions with other firmware folders.
+After you select the folder you **should name your firmware folder** so you don’t have some collisions with other firmware folders.
 
 ### From Existing Project…
 

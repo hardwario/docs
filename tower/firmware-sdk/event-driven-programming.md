@@ -18,7 +18,7 @@ For example, you can set up an event that will be called each time that somethin
 
 You need to set the event handler, which is a specific function that will be called when some event occurs.
 
-The functions must have a **specific signature** for every module and tag, you can see them in the **examples** on [**GitHub**](https://github.com/hardwario) or in the [**How To: chapters**] in this section.
+The functions must have a **specific signature** for every module and tag, you can see them in the **examples** on [**GitHub**](https://github.com/hardwario) or in the **How To: chapters** in this section.
 
 :::info
 
