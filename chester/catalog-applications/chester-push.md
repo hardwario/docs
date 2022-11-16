@@ -6,7 +6,7 @@ import Image from '@theme/IdealImage';
 
 # CHESTER Push
 
-This chapter describes the core functionality, hardware description and example JSON message of the catalog application CHESTER Push.
+This chapter describes the core functionality, hardware description, and example JSON message of the catalog application CHESTER Push.
 
 :::caution
 
@@ -16,23 +16,36 @@ Some of the basics are not provided, as they are common for all CHESTER catalog 
 
 ## Application Overview
 
-CHESTER Push has push buttons on the enclosure that immediately sends the packet when pressed. The number of buttons is configurable from a single button placed in the middle of the enclosure to 4 buttons placed above each other near the left border of the enclosure. So there can be placed different texts or symbols next to each button.
+**CHESTER Push** has push buttons on the enclosure that immediately sends the packet when pressed. The number of buttons is configurable from a single button placed in the middle of the enclosure to 4 buttons placed above each other near the left border of the enclosure. So there can be placed different texts or symbols next to each button.
 
-CHESTER can differentiate between short and long presses of the buttons. In each packet, there is an event to distinguish which button triggered the message's sending. Every message also contains counters of each button for short and long presses.
+**CHESTER Push** can differentiate between short and long presses of the buttons. In each packet, there is an event to distinguish which button triggered the message's sending. Every message also contains counters of each button for short and long presses.
 
-Each button is also equipped with a LED indicator so the operator can see that the press was recognized. Optionally the beep sound can be played for audible confirmation of the button press.
+Each button is also equipped with a **LED indicator** so the operator can see that the press was recognized. Also, the **beep sound is played** for audible confirmation of the button press.
 
-CHESTER Push contains a CHESTER-Z board with a rechargeable Li-Po battery and power supply (6-26 V DC) for charging and powering the CHESTER. Information about external power presence, external voltage, and battery voltage is also reported. With that information, CHESTER Push could be used to monitor, for example, utility power outages.
+**CHESTER Push** contains a **CHESTER-Z** board with a rechargeable Li-Po battery and power supply (6-26 V DC) for charging and powering the **CHESTER Push**. Information about external power presence, external voltage, and battery voltage is also reported. With that information, **CHESTER Push** could be used to monitor, for example, utility power outages.
 
-CHESTER Push also has a temperature sensor and accelerometer. All these values are reported periodically.
+**CHESTER Push** also has a temperature sensor and accelerometer. All these values are reported periodically.
+
+### LED Behaviour
+
+**CHESTER Push** can signal button presses with LEDs in two different ways. This behavior has to be listed in order because each variant uses different firmware.
+
+- **CHESTER Push** - The LED of the pressed button blinks once and then turns off.
+
+- **CHESTER Push FM** (Flip Mode) - The LED of the pressed button blinks once and then is kept on. The LED near the pressed button stays on until a different button is pressed.
 
 ## Hardware Description
 
 The catalog **CHESTER Push** hardware consists of the following ordering codes:
 
-* `CHESTER-M-CGLS`
-* `CHESTER-Z-F` - (see [ordering codes](../ordering-codes.md#chester-z) for more variants)
-* TODO cables, enclosure milling, front panel outline template?
+* `CHESTER-M-CGLS` - CHESTER main board
+* `CHESTER-Z-F` - 4 buttons (see [ordering codes](../ordering-codes.md#chester-z) for more variants)
+* `CHESTER-E2-LP` - Enclosure with light pipe and SMA antenna pigtail
+
+<!---
+## Print Enclosure Template
+TODO
+-->
 
 ## Specific Commands
 
@@ -43,8 +56,7 @@ You can easily explore the whole command tree structure - start with the `help` 
 :::
 
 :::caution
-
-To apply new configuration, you need to call `config save` which applies new configuration parameters and reboots the device.
+To apply a new configuration, you need to call `config save`, which applies new configuration parameters and reboots the device.
 
 :::
 
