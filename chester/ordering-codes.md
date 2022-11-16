@@ -206,7 +206,7 @@ This expansion module occupies both backside slots "A" and "B".
 
 ### CHESTER-X0B: 4x Input w/o 5 V Boost
 
-**Format:** `CHESTER-X0A[:{A|B}]`
+**Format:** `CHESTER-X0B[:{A|B}]`
 
 **Legend:**
 
