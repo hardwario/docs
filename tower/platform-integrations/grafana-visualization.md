@@ -178,7 +178,7 @@ Select **Add Data Source** and fill the data
 
 <Image img={require('./grafana-data-source.png')} />
 
-#### Download [**dashboard.json**](https://tower.hardwario.com/en/latest/_downloads/882b72bc83234952ae383399de296ed8/dashboard.json) and import it to Grafana
+#### Download [**dashboard.json**](./dashboard.json) and import it to Grafana
 
 :::info
 
