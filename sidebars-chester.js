@@ -8,12 +8,11 @@ const sidebars = {
       type: 'category',
       label: 'Platform Management',
       link: {
-        type: 'doc',
-        id: 'platform-management/index',
+        type: 'generated-index',
       },
       collapsed: false,
       items: [
-        'platform-management/mobile-application',
+        'platform-management/hardwario-manager',
         'platform-management/cellular-networks',
       ],
     },
@@ -79,6 +78,19 @@ const sidebars = {
         'firmware-flashing/lte-j-link',
         'firmware-flashing/lrw-j-link',
         'firmware-flashing/chester-z-j-link',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Developer Tools',
+      link: {
+        type: 'generated-index',
+      },
+      collapsed: false,
+      items: [
+        'developer-tools/command-line-tools',
+        'developer-tools/segger-j-link',
+        'developer-tools/power-profiler-kit-ii'
       ],
     },
     {
