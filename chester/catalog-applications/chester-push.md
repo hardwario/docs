@@ -6,45 +6,64 @@ import Image from '@theme/IdealImage';
 
 # CHESTER Push
 
-This chapter describes the core functionality, hardware description, and example JSON message of the catalog application CHESTER Push.
+This chapter describes the core functionality, hardware description, and example **JSON** message of the catalog application **CHESTER Push**.
 
 :::caution
 
-Some of the basics are not provided, as they are common for all CHESTER catalog applications. For example, see the chapter [**Platform Management**](../platform-management/index.md) on how to work with the interactive console.
+Some of the basics are not provided, as they are common for all **CHESTER** catalog applications. For example, see the chapter [**Platform Management**](../platform-management/index.md) on how to work with the interactive console.
 
 :::
 
 ## Application Overview
 
-**CHESTER Push** has push buttons on the enclosure that immediately sends the packet when pressed. The number of buttons is configurable from a single button placed in the middle of the enclosure to 4 buttons placed above each other near the left border of the enclosure. So there can be placed different texts or symbols next to each button.
+**CHESTER Push** has push buttons on the enclosure. The application immediately sends data when any of the push buttons are pressed. For bulk orders, the number of buttons can be configured. An off-the-shelf configuration provides four push buttons on the left side. Alternatively, we can deliver a single push-button version (in the enclosure center). Also, upon a customer's request, we can customize the enclosure printing, and provide various text labels (or symbols) next to each of the push buttons.
 
-**CHESTER Push** can differentiate between short and long presses of the buttons. In each packet, there is an event to distinguish which button triggered the message's sending. Every message also contains counters of each button for short and long presses.
+The application can differentiate between a short press and a long press. In each message, there is an event distinguishing which of the push buttons triggered the sending. Every message also contains counters of each push button for short and long presses.
 
-Each button is also equipped with a **LED indicator** so the operator can see that the press was recognized. Also, the **beep sound is played** for audible confirmation of the button press.
+Each button is also equipped with an **LED indicator** so the operator can see that the press was recognized. Also, the **beep sound** is played from the integrated acoustic buzzer for audible confirmation of the push button press.
 
-**CHESTER Push** contains a **CHESTER-Z** board with a rechargeable Li-Po battery and power supply (6-26 V DC) for charging and powering the **CHESTER Push**. Information about external power presence, external voltage, and battery voltage is also reported. With that information, **CHESTER Push** could be used to monitor, for example, utility power outages.
+The **CHESTER Push** application integrates a **CHESTER-Z-F** extension module with a rechargeable **Li-Ion** battery and DC/DC power supply (input voltage range of 6 VDC to 26 VDC) that can charge the battery and provide a steady power supply for the application. The reported message also provides information about the external power presence, external DC line voltage, and battery voltage. With that extra information, **CHESTER Push** could also be used to monitor power outages.
 
-**CHESTER Push** also has a temperature sensor and accelerometer. All these values are reported periodically.
+**CHESTER Push** also reports temperature and device orientation (using the built-in accelerometer). All these values are provided in every message sent from the device.
 
 ### LED Behaviour
 
-**CHESTER Push** can signal button presses with LEDs in two different ways. This behavior has to be listed in order because each variant uses different firmware.
+The application signals push-button events on LEDs in two different ways and customers can specify which firmware variant better suits their needs.
 
-- **CHESTER Push** - The LED of the pressed button blinks once and then turns off.
+- Standard **CHESTER Push** implementation:
 
-- **CHESTER Push FM** (Flip Mode) - The LED of the pressed button blinks once and then is kept on. The LED near the pressed button stays on until a different button is pressed.
+  The LED on the pressed push button is active for 2 seconds (green for short press, red for long press).
+
+  :::tip
+
+  This variant makes it suitable for low-power operation (months from the integrated **Li-Ion** battery).
+
+  :::
+
+- Alternate **CHESTER Push FM** (stands for **Flip Mode**) implementation:
+
+  The LED on the pressed push button flips (with red color) to the push button that has been pressed (the previous push button is switched off).
+
+  :::caution
+
+  This variant makes is not suitable for low-power operation as the constantly activated LED quickly discharges the battery.
+
+  :::
 
 ## Hardware Description
 
 The catalog **CHESTER Push** hardware consists of the following ordering codes:
 
-* `CHESTER-M-CGLS` - CHESTER main board
-* `CHESTER-Z-F` - 4 buttons (see [ordering codes](../ordering-codes.md#chester-z) for more variants)
+* `CHESTER-M-CGLS` - CHESTER mainboard
+* `CHESTER-Z-F` - Four push buttons (see [**Ordering Codes**](../ordering-codes.md#chester-z) for more variants)
 * `CHESTER-E2-LP` - Enclosure with light pipe and SMA antenna pigtail
 
 <!---
+
 ## Print Enclosure Template
+
 TODO
+
 -->
 
 ## Specific Commands
@@ -56,7 +75,8 @@ You can easily explore the whole command tree structure - start with the `help` 
 :::
 
 :::caution
-To apply a new configuration, you need to call `config save`, which applies new configuration parameters and reboots the device.
+
+To apply a new configuration, you need to call `config save`, which applies the new configuration parameters and reboots the device.
 
 :::
 
