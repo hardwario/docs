@@ -62,7 +62,7 @@ All of these have to be in **PATH**.
 
 ## Development cycle
 
-- First, you need to clone firmware from [**our GitHub**](https://github.com/hardwario). For a blank start, there is the [**twr-skeleton**](https://github.com/hardwario/twr-skeleton) firmware available
+- First, you need to clone some firmware from [**our GitHub**](https://github.com/hardwario). For a blank start, there is the [**twr-skeleton**](https://github.com/hardwario/twr-skeleton) firmware available
   - To clone the firmware use:
     ```
     git clone https://github.com/hardwario/twr-skeleton.git --recursive

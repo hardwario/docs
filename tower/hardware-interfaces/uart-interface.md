@@ -60,6 +60,6 @@ TOWER logging UART parameters
 
 :::tip
 
-You can visit a separate **Debugging chapter****](../firmware-development/firmware-debugging.md) to learn about how to do that.
+You can visit a separate [**Debugging chapter**](../firmware-development/firmware-debugging.md) to learn about how to do that.
 
 :::

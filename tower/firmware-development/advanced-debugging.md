@@ -12,13 +12,13 @@ This chapter is about debugging with [**JLink**](https://www.segger.com/products
 
 :::
 
-If you have a [**JLink probe**](https://www.segger.com/products/debug-probes/j-link/), you can use our Visual Studio Code extension to debug your firmware with it. You will need to install the extension first, for it we have a [**special chapter in this documentation**](./about-hardwario-code.md).
+If you have a [**JLink probe**](https://www.segger.com/products/debug-probes/j-link/), you can use our HARDWARIO Code or Visual Studio Code extension to debug your firmware with it. You will need to install the extension first, for it we have a [**special chapter in this documentation**](./about-hardwario-code.md).
 
 There is a little difference between installation with the Portable version and the standalone extension.
 
 ## Debugging with Portable Version
 
-If you downloaded our [**Portable version of Visual Studio Code**](./about-hardwario-code.md#installation) you should have all the required dependencies in the `/data`(Windows/Linux) or `code-portable-data` (macOS) folder.
+If you downloaded our [**HARDWARIO Code**](./about-hardwario-code.md#installation), you should have all the required dependencies in the `/data` (Windows/Linux) or `code-portable-data` (macOS) folder.
 
 :::info
 
@@ -31,7 +31,7 @@ The only thing that you will need to install is JLink drivers if you don’t hav
 <Tabs groupId="operating-system">
 <TabItem value="windows" label="Windows" default>
 
-Go to the `hardwario-code/data/tower/toolchain/SEGGER/JLink/USBDriver/` and run the `InstDrivers.exe` binary.
+Go to the `%USERPROFILE%/AppData/Local/Programs/HARDWARIO Code/data/tower/toolchain/SEGGER/JLink/USBDriver/` and run the `InstDrivers.exe` binary.
 
 After that, you should be good to go.
 

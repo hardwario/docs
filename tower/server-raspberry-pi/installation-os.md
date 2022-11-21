@@ -15,7 +15,7 @@ If you already have your Raspberry Pi running with **Raspberry Pi OS** and you j
 ## Requirements
 - [**HARDWARIO Raspbian**](https://github.com/hardwario/bc-raspbian/releases/latest)
 - [**Raspberry Pi Imager**](https://www.raspberrypi.com/software/)
-- Raspberry Pi 3b or better
+- Raspberry Pi 3B+ or better
 - MicroSD card with a minimum capacity of 4 GB
 - MicroSD Card Reader (+ optional SD Card Adapter)
 - Ethernet cable or WiFi
@@ -82,7 +82,15 @@ To connect to your **Raspberry Pi** you have two options that you can put into t
 - The hostname that you set up in the previous step (in this tutorial it is a [**hub.local**](http://hub.local))
 
 
-TODO HUB IMAGE
+  <div class="container">
+    <div class="row">
+      <div class="col col--10">
+        <div><Image img={require('./hardwario_hub.png')} /></div>
+      </div>
+      <div class="col col--3">
+      </div>
+    </div>
+    </div>
 
 
 ## Troubleshooting
