@@ -20,7 +20,7 @@ The connectivity is enabled through the **nRF9160** System-in-Package from **Nor
 
 :::
 
-In **HARDWARIO**, we do not restrict customers to use any SIM card provider of their preference (as long as the selected carrier offers one of the supported cellular technologies). On the other hand, for the SIM cards provided by **HARDWARIO**, we can provide extended level of technical support.
+In **HARDWARIO**, we do not restrict customers to use any SIM card provider of their preference (as long as the selected carrier offers one of the supported cellular technologies). On the other hand, for the SIM cards provided by **HARDWARIO**, we can provide an extended level of technical support.
 
 As of now, we can deliver SIM cards for these three carriers:
 
@@ -30,7 +30,7 @@ As of now, we can deliver SIM cards for these three carriers:
 
 :::caution
 
-For plastic SIM card, we only support **Nano-SIM** form factor (4FF). Alternatively, **HARDWARIO** can provide SIM chip variant (MFF2) for bulk orders.
+For plastic SIM cards, we only support **Nano-SIM** form factor (4FF). Alternatively, **HARDWARIO** can provide a SIM chip variant (MFF2) for bulk orders.
 
 :::
 
@@ -40,7 +40,7 @@ This chapter provides settings reference for the tested networks:
 
 :::caution
 
-The table below applies to the SIM cards provided by **HARDWARIO**. We cannot guarantee the data validity if the SIM cards are sourced from anywhere else.
+The table below applies to the SIM cards provided by **HARDWARIO**. We cannot guarantee data validity if the SIM cards are sourced from anywhere else.
 
 :::
 
@@ -87,7 +87,7 @@ lte config autoconn true
 
 :::tip
 
-Having this option enabled is the recommended settings for the **LTE-M** networks (e.g. **Onomondo**).
+Having this option enabled is the recommended setting for the **LTE-M** networks (e.g. **Onomondo**).
 
 :::
 
@@ -107,4 +107,16 @@ Run this command to query the LTE registration state:
 
 ```
 lte state
+```
+
+## Onomondo Configuration
+
+This is the reference LTE settings when using **CHESTER** with the **Onomondo** SIM card:
+
+```
+lte config lte-m-mode true
+lte config nb-iot-mode false
+lte config autoconn true
+lte config apn onomondo
+lte config addr 165.227.146.193
 ```
