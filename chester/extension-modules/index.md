@@ -1,5 +1,5 @@
 ---
-slug: extension-modules
+slug: /extension-modules
 title: Extension Modules
 ---
 import Image from '@theme/IdealImage';

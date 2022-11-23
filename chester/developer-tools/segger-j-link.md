@@ -1,5 +1,5 @@
 ---
-slug: segger-j-link
+slug: /segger-j-link
 title: SEGGER J-Link
 ---
 import Image from '@theme/IdealImage';

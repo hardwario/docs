@@ -1,5 +1,5 @@
 ---
-slug: lorawan-modem-over-j-link
+slug: /lorawan-modem-over-j-link
 title: LoRaWAN Modem over J-Link
 ---
 import Image from '@theme/IdealImage';

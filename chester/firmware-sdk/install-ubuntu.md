@@ -1,5 +1,5 @@
 ---
-slug: installation-on-ubuntu
+slug: /installation-on-ubuntu
 title: Installation on Ubuntu
 ---
 import Image from '@theme/IdealImage';

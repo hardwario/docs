@@ -1,5 +1,5 @@
 ---
-slug: chester-current
+slug: /chester-current
 title: CHESTER Current
 ---
 import Image from '@theme/IdealImage';

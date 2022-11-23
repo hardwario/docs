@@ -1,5 +1,5 @@
 ---
-slug: chester-x6
+slug: /chester-x6
 title: CHESTER-X6 (S-Wire bus)
 ---
 import Image from '@theme/IdealImage';

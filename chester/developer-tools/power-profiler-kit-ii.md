@@ -1,5 +1,5 @@
 ---
-slug: power-profiler-kit-ii
+slug: /power-profiler-kit-ii
 title: Power Profiler Kit II
 ---
 import Image from '@theme/IdealImage';

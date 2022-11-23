@@ -1,5 +1,5 @@
 ---
-slug: block-diagram
+slug: /block-diagram
 title: Block Diagram
 ---
 import Image from '@theme/IdealImage';

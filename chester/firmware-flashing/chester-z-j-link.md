@@ -1,5 +1,5 @@
 ---
-slug: chester-z-over-j-link
+slug: /chester-z-over-j-link
 title: CHESTER-Z over J-Link
 ---
 import Image from '@theme/IdealImage';

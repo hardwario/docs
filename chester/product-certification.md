@@ -1,5 +1,5 @@
 ---
-slug: product-certification
+slug: /product-certification
 title: Product Certification
 ---
 import Image from '@theme/IdealImage';

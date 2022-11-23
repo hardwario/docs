@@ -1,5 +1,5 @@
 ---
-slug: hardwario-manager
+slug: /hardwario-manager
 title: HARDWARIO Manager
 ---
 import Image from '@theme/IdealImage';

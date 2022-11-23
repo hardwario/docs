@@ -1,5 +1,5 @@
 ---
-slug: command-line-tools
+slug: /command-line-tools
 title: Command Line Tools
 ---
 import Image from '@theme/IdealImage';

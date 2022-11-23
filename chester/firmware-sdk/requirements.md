@@ -1,5 +1,5 @@
 ---
-slug: requirements
+slug: /requirements
 title: Requirements
 ---
 import Image from '@theme/IdealImage';

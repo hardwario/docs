@@ -1,5 +1,5 @@
 ---
-slug: catalog-applications
+slug: /catalog-applications
 title: Catalog Applications
 ---
 import Image from '@theme/IdealImage';
