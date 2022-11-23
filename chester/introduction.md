@@ -21,7 +21,7 @@ This documentation helps users and gateway integrators to navigate these essenti
   [**Extension Modules**](./extension-modules/index.md)
 
 * What ready-made firmware applications are available (with devices in stock) - see the chapter:<br/>
-  [**Catalog Applications**](category/catalog-applications)
+  [**Catalog Applications**](./catalog-applications/index.md)
 
 * For the options to upload device firmware - see the chapter:<br/>
   [**Firmware Flashing**](./firmware-flashing/index.md)
