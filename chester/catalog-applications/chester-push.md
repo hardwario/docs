@@ -1,5 +1,5 @@
 ---
-slug: chester-push
+slug: /chester-push
 title: CHESTER Push
 ---
 import Image from '@theme/IdealImage';

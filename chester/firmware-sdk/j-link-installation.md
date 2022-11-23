@@ -1,5 +1,5 @@
 ---
-slug: j-link-installation
+slug: /j-link-installation
 title: J-Link Installation
 ---
 import Image from '@theme/IdealImage';

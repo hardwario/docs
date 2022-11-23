@@ -1,5 +1,5 @@
 ---
-slug: application-over-bluetooth
+slug: /application-over-bluetooth
 title: Application over Bluetooth
 ---
 import Image from '@theme/IdealImage';

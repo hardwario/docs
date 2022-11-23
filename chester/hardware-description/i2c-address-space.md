@@ -1,5 +1,5 @@
 ---
-slug: i2c-address-space
+slug: /i2c-address-space
 title: I²C Address Space
 ---
 import Image from '@theme/IdealImage';

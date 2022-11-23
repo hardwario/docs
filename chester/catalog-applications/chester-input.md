@@ -1,5 +1,5 @@
 ---
-slug: chester-input
+slug: /chester-input
 title: CHESTER Input
 ---
 import Image from '@theme/IdealImage';

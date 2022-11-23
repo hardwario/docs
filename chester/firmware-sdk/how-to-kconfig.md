@@ -1,5 +1,5 @@
 ---
-slug: how-to-kconfig
+slug: /how-to-kconfig
 title: "How to: Kconfig"
 ---
 import Image from '@theme/IdealImage';

@@ -1,5 +1,5 @@
 ---
-slug: lte-modem-over-j-link
+slug: /lte-modem-over-j-link
 title: LTE Modem over J-Link
 ---
 import Image from '@theme/IdealImage';

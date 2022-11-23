@@ -1,5 +1,5 @@
 ---
-slug: chester-x8
+slug: /chester-x8
 title: CHESTER-X8 (Precision accel.)
 ---
 import Image from '@theme/IdealImage';

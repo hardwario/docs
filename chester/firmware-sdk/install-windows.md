@@ -1,5 +1,5 @@
 ---
-slug: installation-on-windows
+slug: /installation-on-windows
 title: Installation on Windows
 ---
 import Image from '@theme/IdealImage';

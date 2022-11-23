@@ -1,5 +1,5 @@
 ---
-slug: cellular-networks
+slug: /cellular-networks
 title: Cellular Networks
 ---
 import Image from '@theme/IdealImage';

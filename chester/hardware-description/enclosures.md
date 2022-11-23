@@ -1,5 +1,5 @@
 ---
-slug: enclosures
+slug: /enclosures
 title: Enclosures
 ---
 import Image from '@theme/IdealImage';

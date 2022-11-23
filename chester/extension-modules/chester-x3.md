@@ -1,5 +1,5 @@
 ---
-slug: chester-x3
+slug: /chester-x3
 title: CHESTER-X3 (Precision ADC)
 ---
 import Image from '@theme/IdealImage';
