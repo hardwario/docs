@@ -55,7 +55,8 @@ const sidebars = {
       type: 'category',
       label: 'Catalog Applications',
       link: {
-        type: 'generated-index',
+        type: 'doc',
+        id: 'catalog-applications/index',
       },
       collapsed: true,
       items: [
