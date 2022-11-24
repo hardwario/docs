@@ -60,9 +60,10 @@ const sidebars = {
       },
       collapsed: true,
       items: [
-        'catalog-applications/chester-push',
+        'catalog-applications/chester-clime',
+        'catalog-applications/chester-current',
         'catalog-applications/chester-input',
-        'catalog-applications/chester-current'
+        'catalog-applications/chester-push'
       ],
     },
     {
