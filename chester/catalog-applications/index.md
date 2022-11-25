@@ -27,16 +27,16 @@ The table below provides an overview of the available catalog applications:
 
 ## Application Firmware
 
-| Application name        | Version | Build date | Remark                         |
-|:------------------------|:--------|:----------:|:-------------------------------|
-| **CHESTER Clime**       |         |            |                                |
-| **CHESTER Clime [Z]**   |         |            | With support for **CHESTER-Z** |
-| **CHESTER Clime IAQ**   |         |            |                                |
-| **CHESTER Push**        |         |            |                                |
-| **CHESTER Push FM**     |         |            |                                |
-| **CHESTER Counter**     |         |            |                                |
-| **CHESTER Input**       |         |            |                                |
-| **CHESTER Input [Z]**   |         |            | With support for **CHESTER-Z** |
-| **CHESTER Current**     |         |            |                                |
-| **CHESTER Current [Z]** |         |            | With support for **CHESTER-Z** |
-| **CHESTER Scale**       |         |            |                                |
+| Application name        | Version                                                                               |            Identifier            | Build date | Remark                         |
+|:------------------------|:--------------------------------------------------------------------------------------|:--------------------------------:|:----------:|:-------------------------------|
+| **CHESTER Clime**       |                                                                                       |                                  |            |                                |
+| **CHESTER Clime [Z]**   |                                                                                       |                                  |            | With support for **CHESTER-Z** |
+| **CHESTER Clime IAQ**   |                                                                                       |                                  |            |                                |
+| **CHESTER Push**        |                                                                                       |                                  |            |                                |
+| **CHESTER Push FM**     |                                                                                       |                                  |            |                                |
+| **CHESTER Counter**     |                                                                                       |                                  |            |                                |
+| **CHESTER Input**       |                                                                                       |                                  |            |                                |
+| **CHESTER Input [Z]**   |                                                                                       |                                  |            | With support for **CHESTER-Z** |
+| **CHESTER Current**     | [**v1.5.0**](https://firmware.hardwario.com/chester/8c75e9d2bf7b45e3b164f45ec6b6bc02) | 8c75e9d2bf7b45e3b164f45ec6b6bc02 | 2022-11-25 |                                |
+| **CHESTER Current [Z]** |                                                                                       |                                  |            | With support for **CHESTER-Z** |
+| **CHESTER Scale**       |                                                                                       |                                  |            |                                |
