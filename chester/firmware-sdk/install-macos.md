@@ -10,7 +10,7 @@ The following chapter will guide you through the **CHESTER SDK** installation on
 
 :::caution
 
-Before you begin, make sure you comply with the chapter [Requirements](requirements).
+Before you begin, make sure you comply with the chapter [Requirements](./requirements.md).
 
 :::
 
