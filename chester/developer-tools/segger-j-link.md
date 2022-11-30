@@ -132,3 +132,41 @@ You can install **HARDWARIO Command Line Tools** with these steps:
    hardwario.common v1.7.2
    hardwario.hardwario v1.3.1
    ```
+## **SEGGER J-Link to APP port connection**
+
+<div class="container">
+    <div class="row">
+    <div class="col col--10">
+      <div><Image img={require('./chester_segger_app.png')}/></div>
+    </div>
+    <div class="col col--2">
+    </div>
+  </div>
+</div>
+<br /> 
+
+## **SEGGER J-Link to LTE port connection**
+
+<div class="container">
+    <div class="row">
+    <div class="col col--10">
+      <div><Image img={require('./chester_segger_lte.png')}/></div>
+    </div>
+    <div class="col col--2">
+    </div>
+  </div>
+</div>
+<br /> 
+
+## **SEGGER J-Link to LRW port connection**
+
+<div class="container">
+    <div class="row">
+    <div class="col col--10">
+      <div><Image img={require('./chester_segger_lrw.png')}/></div>
+    </div>
+    <div class="col col--2">
+    </div>
+  </div>
+</div>
+<br /> 
