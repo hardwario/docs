@@ -10,7 +10,7 @@ The following chapter will guide you through the **CHESTER SDK** installation on
 
 :::caution
 
-Before you begin, make sure you comply with the chapter [Requirements](requirements).
+Before you begin, make sure you comply with the chapter [Requirements](./requirements.md).
 
 :::
 
@@ -147,7 +147,7 @@ You can skip this step if you already have **Chocolatey** installed on your syst
 1. Run the **Zephyr SDK** bundle setup script:
 
    ```
-   setup.cmd
+   .\setup.cmd
    ```
 
    :::tip
