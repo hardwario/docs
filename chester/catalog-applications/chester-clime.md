@@ -30,7 +30,7 @@ The catalog application **CHESTER Clime** measures:
 
 The hardware of this application consists of the following ordering codes:
 
-* `CHESTER-M-CGLS` - Standard mainboard
+* `CHESTER-M-BCGLS` - Standard mainboard
 * `CHESTER-S2` - External hygrometer
 * `CHESTER-E1-LP` - Enclosure with SMA pigtail
 
@@ -50,7 +50,7 @@ Also, the application reports **push-button events** and provides **acoustic** a
 
 The hardware of this application consists of the following ordering codes:
 
-* `CHESTER-M-CGLS` - Standard mainboard
+* `CHESTER-M-BCGLS` - Standard mainboard
 * `CHESTER-S1-BCMP` - Integrated multi-sensor
 * `CHESTER-E7-LP` - Enclosure with SMA pigtail
 
@@ -62,7 +62,7 @@ The catalog application **CHESTER Clime 1W** supports multiple external DS18B20 
 
 The hardware of this application consists of the following ordering codes:
 
-* `CHESTER-M-CGLS` - Standard mainboard
+* `CHESTER-M-BCGLS` - Standard mainboard
 * `CHESTER-E8-LP` - Enclosure with 8 cable glands
 
 See [**Ordering Codes**](../ordering-codes.md) for more details.
