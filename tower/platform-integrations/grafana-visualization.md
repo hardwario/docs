@@ -158,7 +158,7 @@ To configure Grafana, you will first have to open it and log in:
 
 - [**http://localhost:3000/**](http://localhost:3000/) - Grafana is running on your **local machine**
 - **http://hub.local:3000/** - Grafana is running on [**your Raspberry Pi with our Hub installed**](../server-raspberry-pi/installation-os.md)
-- **http://\[ip\]:3000/** - Grafana is installed on your device, you should know the IP address of that device
+- **http://"IP address":3000/** - Grafana is installed on your device, you should know the IP address of that device
 
 :::info
 
@@ -171,26 +171,51 @@ Default **Password** is `admin`.
 
 Select **Add Data Source** and fill the data
 
+<Image img={require('./add_data_source.png')} />
+<br />
+
 - Enter the Name: `node`
 - Select the Type: `InfluxDB`
 - Enter the URL: **http://localhost:8086**
-- Enter the Database: `node`
+
 
 <Image img={require('./grafana-data-source.png')} />
+<br />
+
+- Enter the Database: `node`
+- Click at `Save & Test` button to check if everything is OK. You should se same green notification as on the picture.
+
+<Image img={require('./set_db_name_and_test.png')} />
+
+## Import dashboard
 
 #### Download [**dashboard.json**](./dashboard.json) and import it to Grafana
 
-:::info
+- Click the **Grafana icon on the top left** (1)
+- Click at the **+** icon to expand submenu (2)
+- Click at the **Import** (3)
 
-Click the **Grafana icon on the top left** -> **Dashboard** -> **Import**.
+<Image img={require('./grafana-import_step_1.png')} />
+<br />
 
-:::
+- Click at the **Upload .json File** (4)
 
-#### Upload the `dashboard.json`, choose node as a data source and click **Import**
+<Image img={require('./grafana-import_step_2.png')} />
+<br />
 
-<Image img={require('./grafana-import.png')} />
+- Choose your JSON file (in our case **dashboard.json**) (5)
+- Select file to upload (6)
 
-<Image img={require('./grafana-import-dashboard.png')} />
+<Image img={require('./grafana-import_step_3.png')} />
+<br />
+
+- Select you database (7)
+- Click at the **Import** button (8)
+
+<Image img={require('./grafana-import_step_4.png')} />
+<br />
+
+- Your dashboard is imported.
 
 #### Example output for [**Wireless Climate Monitor**](https://www.hackster.io/jakub-smejkal/radio-climate-monitor-96de57) and [**Wireless CO2 Monitor**](https://www.hackster.io/jakub-smejkal/radio-co2-monitor-311d2c) projects
 
