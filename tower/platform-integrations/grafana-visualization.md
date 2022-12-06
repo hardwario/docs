@@ -146,7 +146,7 @@ brew services start influxdb
 
 :::info
 
-After you installed the InfluxDB, you can move to [**Grafana**](https://grafana.com).
+After you installed InfluxDB, you can move to [**Grafana**](https://grafana.com).
 
 :::
 
@@ -183,7 +183,7 @@ To make this part work without any additional configuration you need to follow t
 
 #### Create a Data Source
 
-Select **Add Data Source** and fill the data
+Select **Add Data Source** and fill in the data
 
 <Image img={require('./add_data_source.png')} />
 <br />
@@ -197,7 +197,7 @@ Select **Add Data Source** and fill the data
 <br />
 
 - Enter the Database: `node`
-- Click at `Save & Test` button to check if everything is OK. You should se same green notification as on the picture.
+- Click on `Save & Test` button to check if everything is OK. You should see the same green notification as in the picture.
 
 <Image img={require('./set_db_name_and_test.png')} />
 
@@ -206,25 +206,25 @@ Select **Add Data Source** and fill the data
 #### Download [**dashboard.json**](./dashboard.json) and import it to Grafana
 
 - Click the **Grafana icon on the top left** (1)
-- Click at the **+** icon to expand submenu (2)
-- Click at the **Import** (3)
+- Click on the **+** icon to expand the submenu (2)
+- Click on the **Import** (3)
 
 <Image img={require('./grafana-import_step_1.png')} />
 <br />
 
-- Click at the **Upload .json File** (4)
+- Click on the **Upload .json File** (4)
 
 <Image img={require('./grafana-import_step_2.png')} />
 <br />
 
 - Choose your JSON file (in our case **dashboard.json**) (5)
-- Select file to upload (6)
+- Select the file to upload (6)
 
 <Image img={require('./grafana-import_step_3.png')} />
 <br />
 
-- Select you database (7)
-- Click at the **Import** button (8)
+- Select your database (7)
+- Click on the **Import** button (8)
 
 <Image img={require('./grafana-import_step_4.png')} />
 <br />
