@@ -6,6 +6,14 @@ import Image from '@theme/IdealImage';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
+:::info
+
+This tutorial is made for the [**Air Quality Monitor**](https://shop.hardwario.com/indoor-air-quality-tester/) connected to the **Raspberry Pi** with the Hub installed on it.
+
+You can use our [**Pre-Installed Image**](../server-raspberry-pi/installation-os.md) or your [**own Raspberry where you will install the Hub**](../server-raspberry-pi/installation-clean-os.md)
+
+:::
+
 [**Grafana**](https://grafana.com) is an open platform for beautiful analytics and monitoring. It allows you to create nice-looking dashboards that will give you quick insights into your sensor data.
 
 <Image img={require('./grafana-for-visualization-grafana.png')} />
@@ -164,6 +172,12 @@ To configure Grafana, you will first have to open it and log in:
 
 Default **User** is `admin`.
 Default **Password** is `admin`.
+
+:::
+
+:::warning
+
+To make this part work without any additional configuration you need to follow the tutorial for [**MQTT Strorage (mqtt2influxdb)**](../command-line-tools/mqtt-to-influx-db.md)
 
 :::
 
