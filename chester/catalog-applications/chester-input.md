@@ -31,7 +31,7 @@ All these inputs and their options are explained in more detail in a chapter [In
 
 ## Hardware Description
 
-The catalog **CHESTER Current** hardware consists of the following ordering codes:
+The catalog **CHESTER Input** hardware consists of the following ordering codes:
 
 * `CHESTER-M-CGLS`
 * `CHESTER-X0B:A`
