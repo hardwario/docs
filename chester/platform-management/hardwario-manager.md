@@ -8,7 +8,7 @@ import TabItem from '@theme/TabItem';
 
 # HARDWARIO Manager
 
-This article will provide...
+This article will provide with informations on how to manage **CHESTER** devices with **HARDWARIO Manager** application.
 
 ## App Installation
 
@@ -16,28 +16,112 @@ This article will provide...
 
 <TabItem value="android" label="Android" default>
 
-Android
+You can download app from [here](https://play.google.com/store/apps/details?id=com.hardwario.manager)
 
 </TabItem>
 
 <TabItem value="ios" label="iOS">
 
-iOS
+<!-- You can download app from [here](https://play.google.com/store/apps/details?id=com.hardwario.manager) -->
+Support for iOS will be add soon. 
 
 </TabItem>
 
 </Tabs>
 
-## Device Scan
+When you open **HARDWARIO Manager**, you will see **SCAN LIST** page. Here you will see near by devices, which use Bluetooth enabled applications. 
 
-QR code + serial number
+<div class="container">
+  <div class="row">
+    <div class="col col--5">
+      <div><Image img={require('./manager_scan_list.png')} /></div>
+    </div>
+    <div class="col col--8">
+    </div>
+  </div>
+</div>
+<br />
+
+## Device Pairing
+
+In order to manage you **CHESTER** device, you have to connect to it via Bluetooth. Every device have **unique** pairing pass key, which you can obtain if you scan QR on the back side of your device. 
+
+:::caution
+You can not use build-in QR code reader in **HARDWARIO Manager** app. 
+:::
+
 
 ## General Information
 
-Note: Possibility to open app-specific screen
+<div class="container">
+  <div class="row">
+    <div class="col col--5">
+      <div><Image img={require('./manager_general_info.png')} /></div>
+    </div>
+    <div class="col col--8">
+    </div>
+  </div>
+</div>
+<br />
+
+:::tip
+
+If the firmware appliacation is supported by **HARDWARIO MANAGER**, the **OPEN APPLICATiON** button appears in the bottom of the information page.
+
+:::
 
 ## Command Terminal
 
+Purpose of the **Command Terminal** is to easily make changes in settings of your app or find out what setting is applied. 
+
+- You have to type a command (for example here it is **info** command) and send it by black arrow **(1)** 
+- Console will return this command to confirm what was send **(2)**
+- Console will return wanted information or it will set certain value **(3)**.
+- You can select already used command in **Command history (4)**.  
+
+<div class="container">
+  <div class="row">
+    <div class="col col--6">
+      <div><Image img={require('./manager_console.png')} /></div>
+    </div>
+    <div class="col col--10">
+    </div>
+  </div>
+</div>
+<br />
+
+:::tip
+
+Anytime when you feel lost, just type **help** command. 
+
+:::
+
 ## Firmware Update
 
+You can update your **CHESTER** device via this page. You can find pre-build apps for catalog application [here](./catalog-applications#application-firmware) or you will receive link to your custom build firmware via e-mail. 
+
+Click at **SCAN QR CODE** to get link to firmware **(1)**. When you do so and you scan valid QR code, you gen information about firmware **(2)**.  If this information is OK, you can start flashing by pressing **UPDATE FIRMWARE (3)**. You can click at **START OVER**, if you want to update to different firmware **(4)**. 
+
+<div class="container">
+  <div class="row">
+    <div class="col col--8">
+      <div><Image img={require('./manager_firmware_update.png')} /></div>
+    </div>
+    <div class="col col--12">
+    </div>
+  </div>
+</div>
+
 ## Device Reboot
+
+This screen will let you remotely restart your device. 
+
+<div class="container">
+  <div class="row">
+    <div class="col col--4">
+      <div><Image img={require('./manager_restart_device.png')} /></div>
+    </div>
+    <div class="col col--8">
+    </div>
+  </div>
+</div>
