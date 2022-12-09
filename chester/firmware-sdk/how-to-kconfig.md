@@ -6,7 +6,7 @@ import Image from '@theme/IdealImage';
 
 # How to: Kconfig
 
-This chapter will demonstrate how to use **Kconfig** in your project.
+This article will demonstrate how to use **Kconfig** in your project.
 
 :::info
 

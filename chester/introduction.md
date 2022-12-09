@@ -8,50 +8,50 @@ import Image from '@theme/IdealImage';
 
 This documentation helps users and gateway integrators to navigate these essential areas:
 
-* How to configure and manage the platform - see the chapter:<br/>
+* How to configure and manage the platform - see the article:<br/>
   [**Platform Management**](./platform-management/index.md)
 
-* What are the main parts and parameters of the **CHESTER** platform - see the chapter:<br/>
+* What are the main parts and parameters of the **CHESTER** platform - see the article:<br/>
   [**Hardware Description**](category/hardware-description)
 
-* What are the platform's powering options - see the chapter:<br/>
+* What are the platform's powering options - see the article:<br/>
   [**Power Management**](./power-mgmt.md)
 
-* Which sensors and environments can be connected to the platform and how - see the chapter:<br/>
+* Which sensors and environments can be connected to the platform and how - see the article:<br/>
   [**Extension Modules**](./extension-modules/index.md)
 
-* What ready-made firmware applications are available (with devices in stock) - see the chapter:<br/>
+* What ready-made firmware applications are available (with devices in stock) - see the article:<br/>
   [**Catalog Applications**](./catalog-applications/index.md)
 
-* For the options to upload device firmware - see the chapter:<br/>
+* For the options to upload device firmware - see the article:<br/>
   [**Firmware Flashing**](./firmware-flashing/index.md)
 
-* How to create or modify firmware application - see the chapter:<br/>
+* How to create or modify firmware application - see the article:<br/>
   [**Firmware SDK**](category/firmware-sdk)
 
-* On tool ecosystem for platform developers - see the chapter:<br/>
+* On tool ecosystem for platform developers - see the article:<br/>
   [**Developer Tools**](category/developer-tools)
 
 <!--
 
-TODO Enable these chapters
+TODO Enable these articles
 
-* How data is processed and sent from the platform to the Internet - see the chapter:<br/>
+* How data is processed and sent from the platform to the Internet - see the article:<br/>
   **IoT Connectivity**
 
-* How the platform handles data security - see the chapter:<br/>
+* How the platform handles data security - see the article:<br/>
   **Platform Security**
 
-* How to integrate platform data with other systems - see the chapter:<br/>
+* How to integrate platform data with other systems - see the article:<br/>
   **Cloud Integrations**
 
-* How to customize the platform and its behavior for your projects - see the chapter:<br/>
+* How to customize the platform and its behavior for your projects - see the article:<br/>
   **Customization**
 
 -->
 
-* For a complete reference on the product ordering codes - see the chapter:<br/>
+* For a complete reference on the product ordering codes - see the article:<br/>
   [**Ordering Codes**](./ordering-codes.md)
 
-* To see the complete reference of the product certification - see the chapter:<br/>
+* To see the complete reference of the product certification - see the article:<br/>
   [**Product Certification**](./product-certification.md)

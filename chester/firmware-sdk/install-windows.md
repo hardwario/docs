@@ -6,11 +6,11 @@ import Image from '@theme/IdealImage';
 
 # Installation on Windows
 
-The following chapter will guide you through the **CHESTER SDK** installation on **Windows**. This guide was tested on **Windows versions 10 and 11**.
+The following article will guide you through the **CHESTER SDK** installation on **Windows**. This guide was tested on **Windows versions 10 and 11**.
 
 :::caution
 
-Before you begin, make sure you comply with the chapter [Requirements](./requirements.md).
+Before you begin, make sure you comply with the article [**Requirements**](./requirements.md).
 
 :::
 

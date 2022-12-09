@@ -6,7 +6,7 @@ import Image from '@theme/IdealImage';
 
 # Application over Bluetooth
 
-In this chapter, you will find out how to use your smartphone to flash application firmware in CHESTER via Bluetooth.
+In this article, you will learn how to use your smartphone to flash application firmware in CHESTER via Bluetooth.
 
 :::caution
 

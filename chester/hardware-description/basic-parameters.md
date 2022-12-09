@@ -6,10 +6,10 @@ import Image from '@theme/IdealImage';
 
 # Basic Parameters
 
-This chapter provides basic parameters of the CHESTER platform:
+This article provides basic parameters of the CHESTER platform:
 
 | Name                           | Value                      | Remark                                                        |
-|:-------------------------------|:---------------------------|:--------------------------------------------------------------|
+| :----------------------------- | :------------------------- | :------------------------------------------------------------ |
 | Operating voltage range        | 2.0 to 5.3 V               | For mainboard only - can be increased using extension modules |
 | Typical idle current           | 100 μA                     | Without any extension module and peripheral installed         |
 | Extra current for BLE          | 50 μA                      | 1-second advertising interval                                 |

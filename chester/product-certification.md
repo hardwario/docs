@@ -6,7 +6,7 @@ import Image from '@theme/IdealImage';
 
 # Product Certification
 
-This chapter provides information on the available **CHESTER** product certification.
+This article provides information on the available **CHESTER** product certification.
 
 ## CE (RED) Certification
 

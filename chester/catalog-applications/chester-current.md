@@ -6,11 +6,11 @@ import Image from '@theme/IdealImage';
 
 # CHESTER Current
 
-This chapter describes the core functionality, hardware description, default configuration, example JSON message, and channel calibration of the catalog application **CHESTER Current**.
+This article describes the core functionality, hardware description, default configuration, example JSON message, and channel calibration of the catalog application **CHESTER Current**.
 
 :::caution
 
-Some of the basics are not provided, as they are common for all CHESTER catalog applications. For example, see the chapter [**Platform Management**](../platform-management/index.md) on how to work with the interactive console.
+Some of the basics are not provided, as they are common for all CHESTER catalog applications. For example, see the article [**Platform Management**](../platform-management/index.md) on how to work with the interactive console.
 
 :::
 

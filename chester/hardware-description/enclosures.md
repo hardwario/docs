@@ -17,6 +17,6 @@ It can be mounted using:
 
 :::tip
 
-You can also place the CHESTER device in an alternative enclosure. HARDWARIO produces carrier boards for larger housings - those can bring the benefit of bigger battery packs and other electrical interfaces. See the chapter **Power Management**.
+You can also place the CHESTER device in an alternative enclosure. HARDWARIO produces carrier boards for larger housings - those can bring the benefit of bigger battery packs and other electrical interfaces. See the article [**Power Management**](../power-mgmt.md).
 
 :::

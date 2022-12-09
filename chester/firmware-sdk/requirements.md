@@ -6,7 +6,7 @@ import Image from '@theme/IdealImage';
 
 # Requirements
 
-This chapter defines the requirements if you want to start development with the CHESTER SDK.
+This **article** defines the requirements if you want to start development with the CHESTER SDK.
 
 ## Hardware Setup
 

@@ -6,7 +6,7 @@ import Image from '@theme/IdealImage';
 
 # How to: I²C Bus
 
-This chapter will demonstrate how to interface I²C target devices (CHESTER is I²C controller on the bus).
+This article will demonstrate how to interface I²C target devices (CHESTER is I²C controller on the bus).
 
 :::caution
 
