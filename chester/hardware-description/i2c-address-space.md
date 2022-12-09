@@ -6,7 +6,7 @@ import Image from '@theme/IdealImage';
 
 # I2C Address Space
 
-This chapter provides an overview of the 7-bit address allocation on the I²C bus.
+This article provides an overview of the 7-bit address allocation on the I²C bus.
 
 :::info
 
@@ -17,7 +17,7 @@ Typically, you will not need to search for the I²C addresses while working with
 ## Allocation Table
 
 | Block          | Address | Device         | Remark                             |
-|:---------------|:-------:|:---------------|:-----------------------------------|
+| :------------- | :-----: | :------------- | :--------------------------------- |
 | CHESTER-Z      | `0x10`  | STM32L0        |                                    |
 | CHESTER-S1     | `0x11`  | STM32L0        |                                    |
 | CHESTER-M      | `0x18`  | DS2484         |                                    |

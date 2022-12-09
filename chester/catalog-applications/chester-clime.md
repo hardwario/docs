@@ -6,11 +6,11 @@ import Image from '@theme/IdealImage';
 
 # CHESTER Clime
 
-This chapter describes the core functionality, hardware description, and example **JSON** message of the catalog application **CHESTER Clime**.
+This article describes the core functionality, hardware description, and example **JSON** message of the catalog application **CHESTER Clime**.
 
 :::caution
 
-Some of the basics are not provided, as they are common for all **CHESTER** catalog applications. For example, see the chapter [**Platform Management**](category/platform-management/) on how to work with the interactive console.
+Some of the basics are not provided, as they are common for all **CHESTER** catalog applications. For example, see the article [**Platform Management**](category/platform-management/) on how to work with the interactive console.
 
 :::
 

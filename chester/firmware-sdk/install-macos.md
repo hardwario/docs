@@ -6,11 +6,11 @@ import Image from '@theme/IdealImage';
 
 # Installation on macOS
 
-The following chapter will guide you through the **CHESTER SDK** installation on **macOS**. This guide was tested on versions **macOS 12 (Monterey)** and **macOS 13 (Ventura)**.
+The following article will guide you through the **CHESTER SDK** installation on **macOS**. This guide was tested on versions **macOS 12 (Monterey)** and **macOS 13 (Ventura)**.
 
 :::caution
 
-Before you begin, make sure you comply with the chapter [Requirements](./requirements.md).
+Before you begin, make sure you comply with the article [Requirements](./requirements.md).
 
 :::
 

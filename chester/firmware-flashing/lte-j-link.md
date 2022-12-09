@@ -8,7 +8,7 @@ import TabItem from '@theme/TabItem';
 
 # LTE Modem over J-Link
 
-This chapter describes how to flash the LTE modem firmware in **CHESTER** using **SEGGER J-Link**.
+This article describes how to flash the LTE modem firmware in **CHESTER** using **SEGGER J-Link**.
 
 ## Requirements
 

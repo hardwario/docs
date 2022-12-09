@@ -6,7 +6,7 @@ import Image from '@theme/IdealImage';
 
 # Ordering Codes
 
-This chapter defines all possible ordering codes for the CHESTER ecosystem. The order specifications must be fully compliant with the part numbers stated below.
+This article defines all possible ordering codes for the CHESTER ecosystem. The order specifications must be fully compliant with the part numbers stated below.
 
 :::tip
 

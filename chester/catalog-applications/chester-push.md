@@ -6,11 +6,11 @@ import Image from '@theme/IdealImage';
 
 # CHESTER Push
 
-This chapter describes the core functionality, hardware description, and example **JSON** message of the catalog application **CHESTER Push**.
+This article describes the core functionality, hardware description, and example **JSON** message of the catalog application **CHESTER Push**.
 
 :::caution
 
-Some of the basics are not provided, as they are common for all **CHESTER** catalog applications. For example, see the chapter [**Platform Management**](../platform-management/index.md) on how to work with the interactive console.
+Some of the basics are not provided, as they are common for all **CHESTER** catalog applications. For example, see the article [**Platform Management**](../platform-management/index.md) on how to work with the interactive console.
 
 :::
 

@@ -6,11 +6,11 @@ import Image from '@theme/IdealImage';
 
 # CHESTER Input
 
-This chapter describes the core functionality, hardware description, default configuration, and example **JSON** messages for the catalog application **CHESTER Input**.
+This article describes the core functionality, hardware description, default configuration, and example **JSON** messages for the catalog application **CHESTER Input**.
 
 :::caution
 
-Some basics are not provided, as they are common for all the **CHESTER** catalog applications. For example, see the chapter [**Platform Management**](../platform-management/index.md) on how to work with the interactive console.
+Some basics are not provided, as they are common for all the **CHESTER** catalog applications. For example, see the article [**Platform Management**](../platform-management/index.md) on how to work with the interactive console.
 
 :::
 
@@ -27,7 +27,7 @@ The application **CHESTER Input** is used to measure and observe analog and digi
 | Voltage  | CH3         | A5           | Analog - voltage  | 0 to 28 V       | Various voltage transmitters          |
 | Current  | CH4         | A7           | Analog - current  | 0 to 24 mA      | Various current transmitters          |
 
-All these inputs and their options are explained in more detail in the chapter [**Input Parameters and Behavior**](#input-parameters-and-behavior),
+All these inputs and their options are explained in more detail in the article [**Input Parameters and Behavior**](#input-parameters-and-behavior),
 
 ## Hardware Description
 

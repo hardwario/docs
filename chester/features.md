@@ -6,7 +6,7 @@ import Image from '@theme/IdealImage';
 
 # Features
 
-This chapter describes CHESTER platform features.
+This article describes CHESTER platform features.
 
 * LPWAN connectivity:
 

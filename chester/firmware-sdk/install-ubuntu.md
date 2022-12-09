@@ -6,11 +6,11 @@ import Image from '@theme/IdealImage';
 
 # Installation on Ubuntu
 
-The following chapter will guide you through the **CHESTER SDK** installation on **Ubuntu**. It has been tested on versions **Ubuntu 20.04 LTS** and **Ubuntu 22.04 LTS**.
+The following article will guide you through the **CHESTER SDK** installation on **Ubuntu**. It has been tested on versions **Ubuntu 20.04 LTS** and **Ubuntu 22.04 LTS**.
 
 :::caution
 
-Before you begin, make sure you comply with the chapter [Requirements](./requirements.md).
+Before you begin, make sure you comply with the article [**Requirements**](./requirements.md).
 
 :::
 

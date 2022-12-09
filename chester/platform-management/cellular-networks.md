@@ -36,7 +36,7 @@ For plastic SIM cards, we only support **Nano-SIM** form factor (4FF). Alternati
 
 ## Network Settings
 
-This chapter provides settings reference for the tested networks:
+This article provides settings reference for the tested networks:
 
 :::caution
 
@@ -45,7 +45,7 @@ The table below applies to the SIM cards provided by **HARDWARIO**. We cannot gu
 :::
 
 | Country        | Technology | Carrier  | PLMN ID  | APN                | Remark           |
-|:---------------|:-----------|:---------|:---------|:-------------------|:-----------------|
+| :------------- | :--------- | :------- | :------- | :----------------- | :--------------- |
 | <Link1/>       | LTE-M      | Onomondo | -        | `onomondo`         |                  |
 | <Link2/>       | NB-IoT     | Onomondo | -        | `onomondo`         |                  |
 | Australia      | NB-IoT     | Vodafone | `50503`  | `hardwario.com`    |                  |
