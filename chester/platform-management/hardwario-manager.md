@@ -8,7 +8,7 @@ import TabItem from '@theme/TabItem';
 
 # HARDWARIO Manager
 
-This article will provide with informations on how to manage **CHESTER** devices with **HARDWARIO Manager** application.
+This article will provide information on how to manage **CHESTER** devices with **HARDWARIO Manager** application.
 
 ## App Installation
 
@@ -16,20 +16,20 @@ This article will provide with informations on how to manage **CHESTER** devices
 
 <TabItem value="android" label="Android" default>
 
-You can download app from [here](https://play.google.com/store/apps/details?id=com.hardwario.manager)
+You can download the app from [here](https://play.google.com/store/apps/details?id=com.hardwario.manager)
 
 </TabItem>
 
 <TabItem value="ios" label="iOS">
 
 <!-- You can download app from [here](https://play.google.com/store/apps/details?id=com.hardwario.manager) -->
-Support for iOS will be add soon. 
+Support for iOS will be added soon.
 
 </TabItem>
 
 </Tabs>
 
-When you open **HARDWARIO Manager**, you will see **SCAN LIST** page. Here you will see near by devices, which use Bluetooth enabled applications. 
+When you open **HARDWARIO Manager**, you will see the **SCAN LIST** page. Here you will see nearby devices, which use Bluetooth-enabled applications.
 
 <div class="container">
   <div class="row">
@@ -44,10 +44,10 @@ When you open **HARDWARIO Manager**, you will see **SCAN LIST** page. Here you w
 
 ## Device Pairing
 
-In order to manage you **CHESTER** device, you have to connect to it via Bluetooth. Every device have **unique** pairing pass key, which you can obtain if you scan QR on the back side of your device. 
+To manage your **CHESTER** device, you have to connect to it via Bluetooth. Every device has a **unique** pairing passkey, which you can obtain if you scan the QR on the back side of your device.
 
 :::caution
-You can not use build-in QR code reader in **HARDWARIO Manager** app. 
+You can't use the built-in QR code reader in **HARDWARIO Manager** app.
 :::
 
 
@@ -66,18 +66,18 @@ You can not use build-in QR code reader in **HARDWARIO Manager** app.
 
 :::tip
 
-If the firmware appliacation is supported by **HARDWARIO MANAGER**, the **OPEN APPLICATiON** button appears in the bottom of the information page.
+If the firmware application is supported by **HARDWARIO MANAGER**, the **OPEN APPLICATiON** button appears at the bottom of the information page.
 
 :::
 
 ## Command Terminal
 
-Purpose of the **Command Terminal** is to easily make changes in settings of your app or find out what setting is applied. 
+The purpose of the **Command Terminal** is to easily make changes in the settings of your app or find out what setting is applied.
 
-- You have to type a command (for example here it is **info** command) and send it by black arrow **(1)** 
-- Console will return this command to confirm what was send **(2)**
-- Console will return wanted information or it will set certain value **(3)**.
-- You can select already used command in **Command history (4)**.  
+- You have to type a command (for example here it is **info** command) and send it by black arrow **(1)**
+- The console will return this command to confirm what was sent **(2)**
+- The console will return wanted information or it will set a certain value **(3)**.
+- You can select an already used command in **Command history (4)**.
 
 <div class="container">
   <div class="row">
@@ -92,15 +92,15 @@ Purpose of the **Command Terminal** is to easily make changes in settings of you
 
 :::tip
 
-Anytime when you feel lost, just type **help** command. 
+Anytime when you feel lost, just type the **help** command.
 
 :::
 
 ## Firmware Update
 
-You can update your **CHESTER** device via this page. You can find pre-build apps for catalog application [here](./catalog-applications#application-firmware) or you will receive link to your custom build firmware via e-mail. 
+You can update your **CHESTER** device via this page. You can find pre-built apps for catalog applications [here](./catalog-applications#application-firmware) or you will receive a link to your custom build firmware via e-mail.
 
-Click at **SCAN QR CODE** to get link to firmware **(1)**. When you do so and you scan valid QR code, you gen information about firmware **(2)**.  If this information is OK, you can start flashing by pressing **UPDATE FIRMWARE (3)**. You can click at **START OVER**, if you want to update to different firmware **(4)**. 
+Click on **SCAN QR CODE** to get the link to firmware **(1)**. When you do so and scan a valid QR code, you get information about firmware **(2)**. If this information is OK, you can start flashing by pressing **UPDATE FIRMWARE (3)**. You can click at **START OVER**, if you want to update to different firmware **(4)**.
 
 <div class="container">
   <div class="row">
@@ -114,7 +114,7 @@ Click at **SCAN QR CODE** to get link to firmware **(1)**. When you do so and yo
 
 ## Device Reboot
 
-This screen will let you remotely restart your device. 
+This screen will let you remotely restart your device.
 
 <div class="container">
   <div class="row">
