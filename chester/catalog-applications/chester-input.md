@@ -54,9 +54,9 @@ The extension module **CHESTER-X0** is installed in the left slot **A**, so you 
 
 The **trigger** input can be connected to a PLC/sensor output (NPN/PNP), push button, switch, relay, etc. The behavior of the **trigger** input is configurable.
 
-* When the input changes, the timestamp of the change event is stored altogether with the **active**/**inactive** state, this information is buffered and sent once a configurable delay expires (parameter `trigger-report-delay`).
+* When the input changes, the timestamp of the change event is stored altogether with the **active**/**inactive** state, this information is buffered, and the buffer of the events is sent (at the latest) with the regular report (parameter `interval-report`).
 
-* Optionally, input changes to the **active** or **inactive** states can be reported **immediately** or with a configurable **delay** to allow capturing multiple consequent input changes.
+* Optionally, input changes to the **active** (parameter `app config trigger-report-active`) or **inactive** (parameter `app config trigger-report-inactive`) states can be reported **immediately** or with a configurable **delay** (parameter `trigger-report-delay`) to allow capturing multiple consequent input changes.
 
 * Both **NPN** and **PNP** input logic types are supported (parameter `trigger-input-type`).
 
@@ -66,7 +66,7 @@ The **trigger** input can be connected to a PLC/sensor output (NPN/PNP), push bu
 
 ### Counter
 
-The **counter** input can be connected to a PLC/sensor output (NPN/PNP), push button, switch, relay, etc. This input counts total number of pulses in time.
+The **counter** input can be connected to a PLC/sensor output (NPN/PNP), push button, switch, relay, etc. This input counts the total number of pulses in time.
 
 * The counter value is aggregated periodically (parameter `counter-interval-aggreg`), and the buffer of aggregated measurements is reported in a configurable interval (parameter `interval-report`).
 
@@ -109,21 +109,23 @@ The optional hygrometer in the **CHESTER Input** application represents an exter
 This is the default configuration (printed using the `app config show` command):
 
 ```
+app config interval-report 1800
+app config backup-report-connected false
+app config backup-report-disconnected false
 app config analog-interval-sample 60
 app config analog-interval-aggreg 300
-app config interval-report 1800
 app config trigger-input-type npn
 app config trigger-duration-active 100
 app config trigger-duration-inactive 100
 app config trigger-cooldown-time 10
 app config trigger-report-active false
 app config trigger-report-inactive false
-app config trigger-report-rate 10
+app config trigger-report-rate 30
 app config trigger-report-delay 5
 app config counter-interval-aggreg 300
 app config counter-input-type npn
-app config counter-active-duration 2
-app config counter-inactive-duration 2
+app config counter-duration-active 2
+app config counter-duration-inactive 2
 app config counter-cooldown-time 10
 app config hygro-interval-sample 60
 app config hygro-interval-aggreg 300
@@ -142,6 +144,14 @@ Use this command to set **report interval** (in seconds):
 ```
 app config interval-report <value>
 ```
+
+Use these commands to enable/disable reporting of the backup module power input connect/disconnect events:
+
+```
+app config backup-report-connected false
+app config backup-report-disconnected false
+```
+
 
 Use these commands to set the **sample** and **aggregate** intervals (in seconds) for **voltage** / **current** measurements:
 
@@ -191,12 +201,12 @@ This feature is useful in systems where another change may arrive shortly after 
 Use these commands to set the **active** and **inactive** time duration (in milliseconds) for the **trigger** and **counter** digital inputs:
 
 ```
-app config trigger-active-duration <value>
-app config trigger-inactive-duration <value>
+app config trigger-duration-active <value>
+app config trigger-duration-inactive <value>
 app config trigger-cooldown-time <value>
 
-app config counter-active-duration <value>
-app config counter-inactive-duration <value>
+app config counter-duration-active <value>
+app config counter-duration-inactive <value>
 app config counter-cooldown-time <value>
 ```
 
@@ -211,26 +221,40 @@ app config hygro-interval-aggreg <value>
 
 ```json
 {
-  "frame": {
-    "protocol": 1,
-    "sequence": 95,
-    "timestamp": 1668769692
+  "message": {
+    "version": 1,
+    "sequence": 7,
+    "timestamp": 1670580791
   },
   "attribute": {
     "vendor_name": "HARDWARIO",
     "product_name": "CHESTER-M",
     "hw_variant": "CDGLS",
     "hw_revision": "R3.2",
-    "fw_version": "(unset)",
+    "fw_name": "CHESTER Input",
+    "fw_version": "v1.0.0",
     "serial_number": "2159018247"
   },
-  "state": {
-    "uptime": 172497
+  "system": {
+    "uptime": 2058,
+    "voltage_rest": 3.74,
+    "voltage_load": 3.65,
+    "current_load": 36
   },
-  "battery": {
-    "voltage_rest": 3.95,
-    "voltage_load": 3.84,
-    "current_load": 38
+  "backup": {
+    "line_voltage": 24.21,
+    "batt_voltage": 3.41,
+    "state": "connected",
+    "events": [
+      {
+        "timestamp": 1670580549,
+        "type": "disconnected"
+      },
+      {
+        "timestamp": 1670580552,
+        "type": "connected"
+      }
+    ]
   },
   "network": {
     "imei": 351358815178303,
@@ -240,7 +264,7 @@ app config hygro-interval-aggreg <value>
       "ecl": 0,
       "rsrp": -90,
       "rsrq": -8,
-      "snr": 8,
+      "snr": 9,
       "plmn": 23003,
       "cid": 939040,
       "band": 20,
@@ -248,141 +272,81 @@ app config hygro-interval-aggreg <value>
     }
   },
   "thermometer": {
-    "temperature": 22.93
+    "temperature": 23.06
   },
   "accelerometer": {
-    "accel_x": 0.07,
-    "accel_y": 0,
-    "accel_z": 9.8,
+    "acceleration_x": 0.07,
+    "acceleration_y": 0.38,
+    "acceleration_z": 9.88,
     "orientation": 2
   },
-  "event": {
-    "trigger_active": false,
-    "trigger_inactive": false,
-    "line_present": false,
-    "line_not_present": false
-  },
   "trigger": {
-    "value": true,
-    "measurements": [
+    "state": "inactive",
+    "events": [
       {
-        "timestamp": 1668768211,
-        "is_active": false
+        "timestamp": 1670580550,
+        "type": "activated"
       },
       {
-        "timestamp": 1668768215,
-        "is_active": true
+        "timestamp": 1670580553,
+        "type": "deactivated"
       },
       {
-        "timestamp": 1668768217,
-        "is_active": false
+        "timestamp": 1670580631,
+        "type": "activated"
       },
       {
-        "timestamp": 1668768220,
-        "is_active": true
+        "timestamp": 1670580634,
+        "type": "deactivated"
       }
     ]
   },
   "counter": {
-    "value": 137,
+    "value": 12586,
     "measurements": [
       {
-        "timestamp": 1668768211,
-        "value": 12
+        "timestamp": 1670580548,
+        "value": 12526
       },
       {
-        "timestamp": 1668768511,
-        "value": 50
-      },
-      {
-        "timestamp": 1668768811,
-        "value": 73
-      },
-      {
-        "timestamp": 1668769111,
-        "value": 132
-      },
-      {
-        "timestamp": 1668769411,
-        "value": 135
+        "timestamp": 1670580698,
+        "value": 12583
       }
     ]
   },
   "voltage": {
     "measurements": [
       {
-        "timestamp": 1668768211,
-        "min": 9.75,
-        "max": 9.85,
-        "avg": 9.82,
-        "mdn": 9.84
+        "timestamp": 1670580548,
+        "min": 11.27,
+        "max": 11.35,
+        "avg": 11.31,
+        "mdn": 11.35
       },
       {
-        "timestamp": 1668768511,
-        "min": 9.83,
-        "max": 9.84,
-        "avg": 9.83,
-        "mdn": 9.83
-      },
-      {
-        "timestamp": 1668768811,
-        "min": 9.83,
-        "max": 9.84,
-        "avg": 9.83,
-        "mdn": 9.83
-      },
-      {
-        "timestamp": 1668769111,
-        "min": 9.76,
-        "max": 9.84,
-        "avg": 9.81,
-        "mdn": 9.82
-      },
-      {
-        "timestamp": 1668769411,
-        "min": 9.75,
-        "max": 9.85,
-        "avg": 9.82,
-        "mdn": 9.84
+        "timestamp": 1670580698,
+        "min": 11.26,
+        "max": 11.35,
+        "avg": 11.29,
+        "mdn": 11.27
       }
     ]
   },
   "current": {
     "measurements": [
       {
-        "timestamp": 1668768211,
-        "min": 0,
-        "max": 20.89,
-        "avg": 6.42,
-        "mdn": 8.17
+        "timestamp": 1670580548,
+        "min": 10.55,
+        "max": 10.91,
+        "avg": 10.73,
+        "mdn": 10.91
       },
       {
-        "timestamp": 1668768511,
-        "min": 8.11,
-        "max": 8.57,
-        "avg": 8.44,
-        "mdn": 8.52
-      },
-      {
-        "timestamp": 1668768811,
-        "min": 8.43,
-        "max": 8.57,
-        "avg": 8.49,
-        "mdn": 8.48
-      },
-      {
-        "timestamp": 1668769111,
-        "min": 8.11,
-        "max": 8.48,
-        "avg": 8.38,
-        "mdn": 8.43
-      },
-      {
-        "timestamp": 1668769411,
-        "min": 8.11,
-        "max": 8.57,
-        "avg": 8.44,
-        "mdn": 8.52
+        "timestamp": 1670580698,
+        "min": 10.51,
+        "max": 10.91,
+        "avg": 10.66,
+        "mdn": 10.55
       }
     ]
   },
@@ -390,86 +354,39 @@ app config hygro-interval-aggreg <value>
     "temperature": {
       "measurements": [
         {
-          "timestamp": 1668768211,
-          "min": 22.03,
-          "max": 22.28,
-          "avg": 22.14,
-          "mdn": 22.1
+          "timestamp": 1670580548,
+          "min": 22.99,
+          "max": 23.02,
+          "avg": 23.01,
+          "mdn": 23.02
         },
         {
-          "timestamp": 1668768511,
-          "min": 22.38,
-          "max": 22.5,
-          "avg": 22.43,
-          "mdn": 22.41
-        },
-        {
-          "timestamp": 1668768811,
-          "min": 22.61,
-          "max": 22.75,
-          "avg": 22.68,
-          "mdn": 22.68
-        },
-        {
-          "timestamp": 1668769111,
-          "min": 22.78,
-          "max": 22.86,
-          "avg": 22.82,
-          "mdn": 22.82
-        },
-        {
-          "timestamp": 1668769411,
-          "min": 22.55,
-          "max": 22.74,
-          "avg": 22.64,
-          "mdn": 22.65
+          "timestamp": 1670580698,
+          "min": 23.02,
+          "max": 23.08,
+          "avg": 23.05,
+          "mdn": 23.06
         }
       ]
     },
     "humidity": {
       "measurements": [
         {
-          "timestamp": 1668768211,
-          "min": 58.82,
-          "max": 60.23,
-          "avg": 59.73,
-          "mdn": 59.99
+          "timestamp": 1670580548,
+          "min": 49.66,
+          "max": 49.74,
+          "avg": 49.7,
+          "mdn": 49.74
         },
         {
-          "timestamp": 1668768511,
-          "min": 58.79,
-          "max": 59.41,
-          "avg": 59.26,
-          "mdn": 59.36
-        },
-        {
-          "timestamp": 1668768811,
-          "min": 57.93,
-          "max": 58.61,
-          "avg": 58.23,
-          "mdn": 58.09
-        },
-        {
-          "timestamp": 1668769111,
-          "min": 56.91,
-          "max": 57.95,
-          "avg": 57.53,
-          "mdn": 57.63
-        },
-        {
-          "timestamp": 1668769411,
-          "min": 56.86,
-          "max": 59.33,
-          "avg": 57.85,
-          "mdn": 57.83
+          "timestamp": 1670580698,
+          "min": 49.62,
+          "max": 50.07,
+          "avg": 49.84,
+          "mdn": 49.82
         }
       ]
     }
-  },
-  "backup": {
-    "line_present": true,
-    "line_voltage": 12.7,
-    "batt_voltage": 3.38
   }
 }
 ```
