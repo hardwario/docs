@@ -112,8 +112,6 @@ This is the default configuration (printed using the `app config show` command):
 app config interval-report 1800
 app config backup-report-connected false
 app config backup-report-disconnected false
-app config analog-interval-sample 60
-app config analog-interval-aggreg 300
 app config trigger-input-type npn
 app config trigger-duration-active 100
 app config trigger-duration-inactive 100
@@ -127,6 +125,8 @@ app config counter-input-type npn
 app config counter-duration-active 2
 app config counter-duration-inactive 2
 app config counter-cooldown-time 10
+app config analog-interval-sample 60
+app config analog-interval-aggreg 300
 app config hygro-interval-sample 60
 app config hygro-interval-aggreg 300
 ```
@@ -150,14 +150,6 @@ Use these commands to enable/disable reporting of the backup module power input 
 ```
 app config backup-report-connected false
 app config backup-report-disconnected false
-```
-
-
-Use these commands to set the **sample** and **aggregate** intervals (in seconds) for **voltage** / **current** measurements:
-
-```
-app config analog-interval-sample <value>
-app config analog-interval-aggreg <value>
 ```
 
 Use these commands to set the input type for **trigger** and **counter** inputs. The valid values are `npn` or `pnp`:
@@ -208,6 +200,13 @@ app config trigger-cooldown-time <value>
 app config counter-duration-active <value>
 app config counter-duration-inactive <value>
 app config counter-cooldown-time <value>
+```
+
+Use these commands to set the **sample** and **aggregate** intervals (in seconds) for **voltage** / **current** measurements:
+
+```
+app config analog-interval-sample <value>
+app config analog-interval-aggreg <value>
 ```
 
 Use these commands to set the **sample** and **aggregate** intervals (in seconds) for the optional **hygrometer** (the accessory **CHESTER-S2**):
