@@ -56,13 +56,13 @@ The **trigger** input can be connected to a PLC/sensor output (NPN/PNP), push bu
 
 * When the input changes, the timestamp of the change event is stored altogether with the **active**/**inactive** state, this information is buffered, and the buffer of the events is sent (at the latest) with the regular report (parameter `interval-report`).
 
-* Optionally, input changes to the **active** (parameter `app config trigger-report-active`) or **inactive** (parameter `app config trigger-report-inactive`) states can be reported **immediately** or with a configurable **delay** (parameter `trigger-report-delay`) to allow capturing multiple consequent input changes.
+* Optionally, input changes to the **active** (parameter `app config trigger-report-active`) or **inactive** (parameter `app config trigger-report-inactive`) states can be reported **immediately** or with a configurable **delay** (parameter `event-report-delay`) to allow capturing multiple consequent input changes.
 
 * Both **NPN** and **PNP** input logic types are supported (parameter `trigger-input-type`).
 
 * The minimum level duration is configured separately for **active** (parameter `trigger-duration-active`) and **inactive** (parameter `trigger-duration-inactive`) states.
 
-* The maximum number of reports per hour is configurable (parameter `trigger-report-rate`). The event throttling limits communication bandwidth and preserves the battery lifespan.
+* The maximum number of reports per hour is configurable (parameter `event-report-rate`). The event throttling limits communication bandwidth and preserves the battery lifespan.
 
 ### Counter
 
@@ -94,6 +94,18 @@ This input measures the analog current in the range from **0-24 mA** (overlaps t
 
 * Each **measurement** has an associated timestamp. The buffer **measurements** are transferred as time-series data regularly (parameter `interval-report`).
 
+### Backup
+
+**CHESTER Input Z** (equipped with **CHESTER-Z**) can also report information on the backup battery and external DC power state.
+
+* The current **battery voltage** and **external DC voltage** are sent in every report.
+
+* When the DC power input changes, the timestamp of the change event is stored altogether with the **connected**/**disconnected** state, this information is buffered, and the buffer of the events is sent (at the latest) with the regular report (parameter `interval-report`).
+
+* Optionally, DC power input changes to the **connected** (parameter `app config backup-report-connected`) or **disconnected** (parameter `app config backup-report-disconnected`) states can be reported **immediately** or with a configurable **delay** (parameter `event-report-delay`) to allow capturing multiple consequent input changes.
+
+* The maximum number of reports per hour is configurable (parameter `event-report-rate`). The event throttling limits communication bandwidth and preserves the battery lifespan.
+
 ### Hygrometer
 
 The optional hygrometer in the **CHESTER Input** application represents an external temperature and humidity sensor.
@@ -110,6 +122,8 @@ This is the default configuration (printed using the `app config show` command):
 
 ```
 app config interval-report 1800
+app config event-report-delay 5
+app config event-report-rate 30
 app config backup-report-connected false
 app config backup-report-disconnected false
 app config trigger-input-type npn
@@ -118,8 +132,6 @@ app config trigger-duration-inactive 100
 app config trigger-cooldown-time 10
 app config trigger-report-active false
 app config trigger-report-inactive false
-app config trigger-report-rate 30
-app config trigger-report-delay 5
 app config counter-interval-aggreg 300
 app config counter-input-type npn
 app config counter-duration-active 2
@@ -145,6 +157,30 @@ Use this command to set **report interval** (in seconds):
 app config interval-report <value>
 ```
 
+Use this command to configure a short delay (in seconds) between the **trigger** or **backup** event and its reporting:
+
+```
+app config event-report-delay <value>
+```
+
+:::tip
+
+This feature is useful in systems where another change may arrive shortly after the first one.
+
+:::
+
+Use this command to limit the number of asynchronous **trigger** or **backup** event reports in a one-hour window:
+
+```
+app config event-report-rate <value>
+```
+
+:::tip
+
+This feature helps to conserve power in the battery-operated device and optimizes the amount of transferred data. The regular (periodic) reports set by the parameter `interval-report` are not counted to this limit.
+
+:::
+
 Use these commands to enable/disable reporting of the backup module power input connect/disconnect events:
 
 ```
@@ -165,30 +201,6 @@ Use these commands to enable/disable **trigger** input to immediately report a c
 app config trigger-report-active <true/false>
 app config trigger-report-inactive <true/false>
 ```
-
-Use this command to limit the number of asynchronous reports in a one-hour window:
-
-```
-app config trigger-report-rate <value>
-```
-
-:::tip
-
-This feature helps to conserve power in the battery-operated device and optimizes the amount of transferred data. The regular (periodic) reports set by the parameter `interval-report` are not counted to this limit.
-
-:::
-
-Use this command to configure a short delay (in seconds) between the **trigger** event and its reporting:
-
-```
-app config trigger-report-delay <value>
-```
-
-:::tip
-
-This feature is useful in systems where another change may arrive shortly after the first one.
-
-:::
 
 Use these commands to set the **active** and **inactive** time duration (in milliseconds) for the **trigger** and **counter** digital inputs:
 
