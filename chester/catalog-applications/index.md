@@ -44,8 +44,8 @@ Notice there are often more firmware variations for many of the **catalog applic
 | **CHESTER Push FM**   | [**v1.4.0**](https://firmware.hardwario.com/chester/beec735261a149dd8dbeb3bbdae956d4) | `beec735261a149dd8dbeb3bbdae956d4` | 2022-11-26 |                                |
 | **CHESTER Counter**   | [**v1.1.0**](https://firmware.hardwario.com/chester/02dad4783b58446988f2391a16cb6820) | `02dad4783b58446988f2391a16cb6820` | 2022-11-26 |                                |
 | **CHESTER Counter Z** | [**v1.1.0**](https://firmware.hardwario.com/chester/95d7c986567142d086ecece1e7074d20) | `95d7c986567142d086ecece1e7074d20` | 2022-11-26 | With support for **CHESTER-Z** |
-| **CHESTER Input**     | [**v1.0.0**](https://firmware.hardwario.com/chester/0d9d69d80a5e4cc9b56d5e58f5d16b0d) | `0d9d69d80a5e4cc9b56d5e58f5d16b0d` | 2022-12-09 |                                |
-| **CHESTER Input Z**   | [**v1.0.0**](https://firmware.hardwario.com/chester/aa3153e943dc4366a619dcc0959e31bc) | `aa3153e943dc4366a619dcc0959e31bc` | 2022-12-09 | With support for **CHESTER-Z** |
+| **CHESTER Input**     | [**v1.1.0**](https://firmware.hardwario.com/chester/955c3b0d0e094c129f4ddc07e5e7c8ce) | `955c3b0d0e094c129f4ddc07e5e7c8ce` | 2022-12-13 |                                |
+| **CHESTER Input Z**   | [**v1.1.0**](https://firmware.hardwario.com/chester/000a44d94a374b1eba0a0bdeee4d4981) | `000a44d94a374b1eba0a0bdeee4d4981` | 2022-12-13 | With support for **CHESTER-Z** |
 | **CHESTER Current**   | [**v1.5.1**](https://firmware.hardwario.com/chester/c964a3294a29474283b9b03e497c752a) | `c964a3294a29474283b9b03e497c752a` | 2022-11-26 |                                |
 | **CHESTER Current Z** | [**v1.5.1**](https://firmware.hardwario.com/chester/af84330b396d4048bf4a23041e5ff43f) | `af84330b396d4048bf4a23041e5ff43f` | 2022-11-26 | With support for **CHESTER-Z** |
 | **CHESTER Scale**     | [**v1.5.0**](https://firmware.hardwario.com/chester/94b04b019756497280335e99b228fa91) | `94b04b019756497280335e99b228fa91` | 2022-11-26 |                                |
