@@ -37,9 +37,9 @@ Notice there are often more firmware variations for many of the **catalog applic
 
 | Application name      | Version                                                                               |             Identifier             | Build date | Remark                         |
 | :-------------------- | :------------------------------------------------------------------------------------ | :--------------------------------: | :--------: | :----------------------------- |
-| **CHESTER Clime**     | [**v1.7.0**](https://firmware.hardwario.com/chester/1d9e49d36e0a4a0188832bd4725efdb9) | `1d9e49d36e0a4a0188832bd4725efdb9` | 2022-11-26 |                                |
-| **CHESTER Clime Z**   | [**v1.7.0**](https://firmware.hardwario.com/chester/52574d1e40af4596a8d72e8d61dcd55f) | `52574d1e40af4596a8d72e8d61dcd55f` | 2022-11-26 | With support for **CHESTER-Z** |
-| **CHESTER Clime IAQ** | [**v1.7.0**](https://firmware.hardwario.com/chester/753ca1f7e8c844c2bca23fec82957cfb) | `753ca1f7e8c844c2bca23fec82957cfb` | 2022-11-26 |                                |
+| **CHESTER Clime**     | [**v1.7.1**](https://firmware.hardwario.com/chester/38bba48a921c47539e3150b3bfe42296) | `38bba48a921c47539e3150b3bfe42296` | 2022-12-14 |                                |
+| **CHESTER Clime Z**   | [**v1.7.1**](https://firmware.hardwario.com/chester/fe96eefc1d8a414e8d6511cf09c11c5f) | `fe96eefc1d8a414e8d6511cf09c11c5f` | 2022-12-14 | With support for **CHESTER-Z** |
+| **CHESTER Clime IAQ** | [**v1.7.1**](https://firmware.hardwario.com/chester/142e57dd5cf84aed818e46910c484526) | `142e57dd5cf84aed818e46910c484526` | 2022-12-14 |                                |
 | **CHESTER Push**      | [**v1.4.0**](https://firmware.hardwario.com/chester/0153468227a7401bb197722059d4343c) | `0153468227a7401bb197722059d4343c` | 2022-11-26 |                                |
 | **CHESTER Push FM**   | [**v1.4.0**](https://firmware.hardwario.com/chester/beec735261a149dd8dbeb3bbdae956d4) | `beec735261a149dd8dbeb3bbdae956d4` | 2022-11-26 |                                |
 | **CHESTER Counter**   | [**v1.1.0**](https://firmware.hardwario.com/chester/02dad4783b58446988f2391a16cb6820) | `02dad4783b58446988f2391a16cb6820` | 2022-11-26 |                                |
