@@ -30,8 +30,8 @@ For the final firmware build, you would like to build a firmware with the name a
 1. Clean previous build with `rm build/ -rf`.
 
 2. Add environment variables `FW_NAME` and `FW_VERSION` to the build command:
-     - Linux and macOS: `FW_NAME=hio-chester-clime FW_VERSION=v1.5.0 west build`.
-     - Windows: Call these three commands: `set FW_NAME=hio-chester-clime`, `set FW_VERSION=v1.5.0` then `west build`.
+     - Linux and macOS: `FW_NAME="CHESTER Input Z" FW_VERSION=v1.5.0 west build`.
+     - Windows: Call these three commands: `set FW_NAME="CHESTER Input Z"`, `set FW_VERSION=v1.5.0`, then `west build`.
 
 :::tip
 
@@ -41,13 +41,19 @@ HARDWARIO uses [Semantic Versioning](https://semver.org/). Please note that also
 
 Now you can distribute the binary or ZIP file for **DFU update**. Or you can upload it to the **HARDWARIO Cloud**. Please see the next chapter.
 
+:::tip
+
+You can also hardcode the firmware name and version in your project. You can add `list(APPEND TOOLCHAIN_C_FLAGS -DFW_VERSION=v1.1.0)` to your `CMakeLists.txt` project file.
+
+:::
+
 ## Firmware upload
 
 You can also use **HARDWARIO CLI** upload function, so the firmware is uploaded to your **HARDWARIO Cloud** account, and you can share firmware with your customers with a **QR Code**, **URL**, or by **e-mail**.
 
 :::tip
 
-You need to have your **HARDWARIO Cloud** secret token in the environment variable `HARDWARIO_CLOUD_TOKEN`, or you must supply your secret token in the `--token` parameter. This parameter needs to be placed exactly between the `fw` and `list` parameters.
+You must have your **HARDWARIO Cloud** secret token in the environment variable `HARDWARIO_CLOUD_TOKEN`, or you must supply your secret token in the `--token` parameter. This parameter needs to be placed exactly between the `fw` and `list` parameters.
 
 :::
 
@@ -55,6 +61,6 @@ When your firmware is deployed, just call from the same project folder:
 
 `hardwario chester app fw upload`
 
-And the tools ask you for the firmware name and version. Please type the same values you filled in the previous **Deploy** chapter.
+And the tools ask you for the firmware name and version. For deployment, we use firmware names in the format `hio-chester-input-z`. The firmware version is the same, including the **v**** letter, e.g., `v1.5.0`.
 
 Then you receive an email containing **links to the firmware** and **QR Code**, which can be scanned in **HADRWARIO Manager** phone application for firmware upgrade.
