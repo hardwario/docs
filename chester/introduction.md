@@ -32,15 +32,15 @@ This documentation helps users and gateway integrators to navigate these essenti
 * On tool ecosystem for platform developers - see the article:<br/>
   [**Developer Tools**](category/developer-tools)
 
+* How the platform handles data security - see the article:<br/>
+  [**Platform Security**](./platform-security/index.md)
+
 <!--
 
 TODO Enable these articles
 
 * How data is processed and sent from the platform to the Internet - see the article:<br/>
   **IoT Connectivity**
-
-* How the platform handles data security - see the article:<br/>
-  **Platform Security**
 
 * How to integrate platform data with other systems - see the article:<br/>
   **Cloud Integrations**

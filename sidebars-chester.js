@@ -113,6 +113,17 @@ const sidebars = {
         'firmware-sdk/how-to-kconfig',
       ],
     },
+    {
+      type: 'category',
+      label: 'Platform Security',
+      link: {
+        type: 'doc',
+        id: 'platform-security/index',
+      },
+      collapsed: false,
+      items: [
+      ],
+    },
     'ordering-codes',
     'product-certification',
   ],
