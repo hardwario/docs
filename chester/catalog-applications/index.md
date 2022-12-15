@@ -16,14 +16,16 @@ The **catalog applications** also serve as a great starting point for your own f
 
 The table below provides an overview of the available **catalog applications**:
 
-| Application name                            | Application goal                                                      | Low-power | Outdoor |  LTE  |          LoRaWAN          |
-| :------------------------------------------ | :-------------------------------------------------------------------- | :-------: | :-----: | :---: | :-----------------------: |
-| [**CHESTER Clime**](./chester-clime.md)     | Temperature and humidity sensing, IAQ monitoring, DS18B20 transmitter |     ✅     |    ✅    |   ✅   | <small>on request</small> |
-| [**CHESTER Push**](./chester-push.md)       | Event alerting on 4x push button with optical and acoustic feedback   |     ❓     |    ❌    |   ✅   | <small>on request</small> |
-| **CHESTER Counter**                         | Pulse counting from energy meters using NPN/dry contact (4 channels)  |     ✅     |    ✅    |   ✅   | <small>on request</small> |
-| [**CHESTER Input**](./chester-input.md)     | Transmitter for NPN/PNP/dry contact/0-10 V/4-20 mA (4 channels)       |     ❓     |    ❌    |   ✅   | <small>on request</small> |
-| [**CHESTER Current**](./chester-current.md) | Non-invasive consumption sensing for AC/DC currents (4 channels)      |     ✅     |    ❌    |   ✅   | <small>on request</small> |
-| **CHESTER Scale**                           | Ultra-precise weight scale monitoring using load cells (2 channels)   |     ✅     |    ✅    |   ✅   | <small>on request</small> |
+| Application name                            | Application goal                                                      | Application features                                           |
+| :------------------------------------------ | :-------------------------------------------------------------------- | :------------------------------------------------------------- |
+| [**CHESTER Clime**](./chester-clime.md)     | Temperature and humidity sensing, IAQ monitoring, DS18B20 transmitter | ✅ Low-power <br />✅ Outdoor<br />✅ LTE<br />LoRaWAN on request |
+| [**CHESTER Push**](./chester-push.md)       | Event alerting on 4x push button with optical and acoustic feedback   | ✅ Low-power*<br />❌ Outdoor<br />✅ LTE<br />LoRaWAN on request |
+| **CHESTER Counter**                         | Pulse counting from energy meters using NPN/dry contact (4 channels)  | ✅ Low-power <br />✅ Outdoor<br />✅ LTE<br />LoRaWAN on request |
+| [**CHESTER Input**](./chester-input.md)     | Transmitter for NPN/PNP/dry contact/0-10 V/4-20 mA (4 channels)       | ✅ Low-power*<br />❌ Outdoor<br />✅ LTE<br />LoRaWAN on request |
+| [**CHESTER Current**](./chester-current.md) | Non-invasive consumption sensing for AC/DC currents (4 channels)      | ✅ Low-power <br />❌ Outdoor<br />✅ LTE<br />LoRaWAN on request |
+| **CHESTER Scale**                           | Ultra-precise weight scale monitoring using load cells (2 channels)   | ✅ Low-power <br />✅ Outdoor<br />✅ LTE<br />LoRaWAN on request |
+
+\* Some hardware or firmware variants need an external power supply.
 
 ## Application Firmware
 
