@@ -31,7 +31,7 @@ For the final firmware build, you would like to build a firmware with the name a
 
 2. Add environment variables `FW_NAME` and `FW_VERSION` to the build command:
      - Linux and macOS: `FW_NAME="CHESTER Input Z" FW_VERSION=v1.5.0 west build`.
-     - Windows: Call these three commands: `set FW_NAME="CHESTER Input Z"`, `set FW_VERSION=v1.5.0`, then `west build`.
+     - Windows: `cmd /C "set FW_NAME=CHESTER Input Z && set FW_VERSION=v1.5.0 && west build"`.
 
 :::tip
 
@@ -43,7 +43,12 @@ Now you can distribute the binary or ZIP file for **DFU update**. Or you can upl
 
 :::tip
 
-You can also hardcode the firmware name and version in your project. You can add `list(APPEND TOOLCHAIN_C_FLAGS -DFW_VERSION=v1.1.0)` to your `CMakeLists.txt` project file.
+You can also hardcode the firmware name and version in your project. You can add these lines to your `CMakeLists.txt` project file:
+
+```
+add_definitions("-DFW_NAME=CHESTER Clime")
+add_definitions("-DFW_VERSION=v1.1.0")
+```
 
 :::
 
@@ -61,6 +66,6 @@ When your firmware is deployed, just call from the same project folder:
 
 `hardwario chester app fw upload`
 
-And the tools ask you for the firmware name and version. For deployment, we use firmware names in the format `hio-chester-input-z`. The firmware version is the same, including the **v**** letter, e.g., `v1.5.0`.
+And the tools ask you for the firmware name and version. For deployment, we use firmware names in the format `hio-chester-input-z`. The firmware version is the same, including the **v** letter, e.g., `v1.5.0`.
 
 Then you receive an email containing **links to the firmware** and **QR Code**, which can be scanned in **HADRWARIO Manager** phone application for firmware upgrade.
