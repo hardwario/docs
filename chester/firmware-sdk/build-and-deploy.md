@@ -46,8 +46,8 @@ Now you can distribute the binary or ZIP file for **DFU update**. Or you can upl
 You can also hardcode the firmware name and version in your project. You can add these lines to your `CMakeLists.txt` project file:
 
 ```
-add_definitions("-DFW_NAME=CHESTER Clime")
-add_definitions("-DFW_VERSION=v1.1.0")
+set(ENV{FW_NAME} "CHESTER Input Z")
+set(ENV{FW_VERSION} "v1.5.0")
 ```
 
 :::
@@ -62,10 +62,8 @@ You must have your **HARDWARIO Cloud** secret token in the environment variable 
 
 :::
 
-When your firmware is deployed, just call from the same project folder:
+When your firmware is built, just call from the same project folder:
 
-`hardwario chester app fw upload`
-
-And the tools ask you for the firmware name and version. For deployment, we use firmware names in the format `hio-chester-input-z`. The firmware version is the same, including the **v** letter, e.g., `v1.5.0`.
+`hardwario chester app fw upload --name="hio-chester-input-z" --version="v1.5.0"`
 
 Then you receive an email containing **links to the firmware** and **QR Code**, which can be scanned in **HADRWARIO Manager** phone application for firmware upgrade.
