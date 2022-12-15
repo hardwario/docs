@@ -36,6 +36,8 @@ The hardware of this application consists of the following ordering codes:
 
 See [**Ordering Codes**](../ordering-codes.md) for more details.
 
+Firmware build shield options: `ctr_lte ctr_s2`
+
 ### CHESTER Clime Z
 
 The catalog application **CHESTER Clime Z** measures:
@@ -50,6 +52,8 @@ The hardware of this application consists of the following ordering codes:
 * `CHESTER-E1-LP` - Enclosure with SMA pigtail
 
 See [**Ordering Codes**](../ordering-codes.md) for more details.
+
+Firmware build shield options: `ctr_lte ctr_s2 ctr_z`
 
 ### CHESTER Clime IAQ
 
@@ -71,6 +75,8 @@ The hardware of this application consists of the following ordering codes:
 
 See [**Ordering Codes**](../ordering-codes.md) for more details.
 
+Firmware build shield options: `ctr_lte ctr_s1`
+
 ### CHESTER Clime 1W
 
 The catalog application **CHESTER Clime 1W** supports multiple external DS18B20 1-Wire temperature sensors.
@@ -81,6 +87,8 @@ The hardware of this application consists of the following ordering codes:
 * `CHESTER-E8-LP` - Enclosure with 8 cable glands
 
 See [**Ordering Codes**](../ordering-codes.md) for more details.
+
+Firmware build shield options: `ctr_lte ctr_ds18b20`
 
 ## Measurement and behavior
 
@@ -132,6 +140,9 @@ Command to set **report interval** in seconds:
 app config interval-report <30-86400>
 ```
 
+## Firmware
+
+The latest firmware is available in Catalog Applications [Firmware chapter](index.md#application-firmware).
 
 ## Example JSON Message
 

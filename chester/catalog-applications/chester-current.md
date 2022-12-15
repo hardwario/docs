@@ -150,6 +150,10 @@ Command to set **calibration point Y1** (output) on the channel `n` (index 1-4):
 app config channel-calib-y1 <n> <value>
 ```
 
+## Firmware
+
+The latest firmware is available in Catalog Applications [Firmware chapter](index.md#application-firmware).
+
 ## Example JSON Message
 
 

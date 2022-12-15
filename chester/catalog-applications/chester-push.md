@@ -89,6 +89,10 @@ Command to set **report interval** in seconds:
 app config report-interval <30-86400>
 ```
 
+## Firmware
+
+The latest firmware is available in Catalog Applications [Firmware chapter](index.md#application-firmware).
+
 ## Example JSON Message
 
 ```json

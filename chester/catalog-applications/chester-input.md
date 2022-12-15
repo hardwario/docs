@@ -31,19 +31,37 @@ All these inputs and their options are explained in more detail in the article [
 
 ## Hardware Description
 
+**CHESTER Input** can be ordered in one of these two variants:
+
+### CHESTER Input
+
 The catalog **CHESTER Input** hardware consists of the following ordering codes:
 
-* `CHESTER-M-CGLS`
+* `CHESTER-M-CGLS` - Standard mainboard
 
-* `CHESTER-X0B:A`
+* `CHESTER-X0B:A` - 4x Input
 
-* `CHESTER-Z`
+* `CHESTER-Z` - Backup
 
-<!-- * `CHESTER-E2-LP` - TODO holes for 4 cables? -->
+See [**Ordering Codes**](../ordering-codes.md) for more details.
 
-### Variant CHESTER Input TH
+Firmware build shield options: `ctr_lte ctr_x0_a ctr_z`
 
-* `CHESTER-S2` with external temperature and hygrometer
+### CHESTER Input TH
+
+**CHESTER Input** with external temperature and hygrometer.
+
+* `CHESTER-M-CGLS` - Standard mainboard
+
+* `CHESTER-X0B:A` - 4x Input
+
+* `CHESTER-Z` - Backup
+
+* `CHESTER-S2` - External Hygrometer
+
+See [**Ordering Codes**](../ordering-codes.md) for more details.
+
+Firmware build shield options: `ctr_lte ctr_x0_a ctr_z ctr_s2`
 
 ## Input Parameters and Behavior
 
@@ -227,6 +245,10 @@ Use these commands to set the **sample** and **aggregate** intervals (in seconds
 app config hygro-interval-sample <value>
 app config hygro-interval-aggreg <value>
 ```
+
+## Firmware
+
+The latest firmware is available in Catalog Applications [Firmware chapter](index.md#application-firmware).
 
 ## Example JSON Message
 
