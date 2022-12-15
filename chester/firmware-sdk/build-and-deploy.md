@@ -27,7 +27,7 @@ This article will explain how to build, deploy and upload an application firmwar
 
 For the final firmware build, you would like to build a firmware with the name and version in it. The firmware version and name will be visible in the **HADRWARIO Manager** application and the device's shell when you type `info show` command. The firmware version is also sent in the NB-IoT packet.
 
-1. Clean previous build with `rm build/ -rf`.
+1. Clean previous build with `rm -rf build/`.
 
 2. Add environment variables `FW_NAME` and `FW_VERSION` to the build command:
      - Linux and macOS: `FW_NAME="CHESTER Input Z" FW_VERSION=v1.5.0 west build`.
