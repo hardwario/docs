@@ -38,6 +38,18 @@ The next report interval is calculated at the beginning of the transmission cycl
 
 **CHESTER Current** can be ordered in one of these two variants:
 
+### CHESTER Current
+
+The catalog **CHESTER Current** hardware consists of the following ordering codes:
+
+* `CHESTER-M-CGLS` - Standard mainboard
+* `CHESTER-K-C1-C2-C3-C4` - 4x Diff. Input + 5 V Boost
+* `CHESTER-E2-LP` - Enclosure with SMA pigtail
+
+See [**Ordering Codes**](../ordering-codes.md) for more details.
+
+Firmware build shield options: `ctr_k ctr_lte`
+
 ### CHESTER Current Z
 
 The catalog **CHESTER Current Z** hardware consists of the following ordering codes:
@@ -47,15 +59,9 @@ The catalog **CHESTER Current Z** hardware consists of the following ordering co
 * `CHESTER-Z` - Backup
 * `CHESTER-E2-LP` - Enclosure with SMA pigtail
 
-### CHESTER Current
+See [**Ordering Codes**](../ordering-codes.md) for more details.
 
-Upon request, it is possible to order a **CHESTER Current** variant without the **CHESTER-Z** module, and with the battery holder for the **LiSoCl₂** primary cell on the mainboard. When configured properly, the **CHESTER Current** application can operate from the primary cell for several years.
-
-The catalog **CHESTER Current** hardware consists of the following ordering codes:
-
-* `CHESTER-M-CGLS` - Standard mainboard
-* `CHESTER-K-C1-C2-C3-C4` - 4x Diff. Input + 5 V Boost
-* `CHESTER-E2-LP` - Enclosure with SMA pigtail
+Firmware build shield options: `ctr_k ctr_lte ctr_z`
 
 ### Probes
 
