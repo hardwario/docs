@@ -36,6 +36,21 @@ The hardware of this application consists of the following ordering codes:
 
 See [**Ordering Codes**](../ordering-codes.md) for more details.
 
+### CHESTER Clime Z
+
+The catalog application **CHESTER Clime Z** measures:
+- Temperature
+- Humidity
+
+The hardware of this application consists of the following ordering codes:
+
+* `CHESTER-M-BCGLS` - Standard mainboard
+* `CHESTER-Z` - Backup
+* `CHESTER-S2` - External hygrometer
+* `CHESTER-E1-LP` - Enclosure with SMA pigtail
+
+See [**Ordering Codes**](../ordering-codes.md) for more details.
+
 ### CHESTER Clime IAQ
 
 The catalog application **CHESTER Clime IAQ** measures:
