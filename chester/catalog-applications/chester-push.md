@@ -58,7 +58,6 @@ The catalog application **CHESTER Push** hardware consists of the following orde
 * `CHESTER-Z-F` - Four push buttons (see [**Ordering Codes**](../ordering-codes.md#chester-z) for more variants)
 * `CHESTER-E2-LP` - Enclosure with light pipe and SMA antenna pigtail
 
-
 ## Enclosure Template
 
 You can use a [**front cover template**](pathname:///download/hio-enclosure-4push-130x175-cmyk.pdf) for your custom enclosure design.

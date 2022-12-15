@@ -41,13 +41,25 @@ The catalog **CHESTER Input** hardware consists of the following ordering codes:
 
 * `CHESTER-X0B:A` - 4x Input
 
+See [**Ordering Codes**](../ordering-codes.md) for more details.
+
+Firmware build shield options: `ctr_lte ctr_x0_a`
+
+### CHESTER Input Z
+
+The catalog **CHESTER Input** hardware consists of the following ordering codes:
+
+* `CHESTER-M-CGLS` - Standard mainboard
+
+* `CHESTER-X0B:A` - 4x Input
+
 * `CHESTER-Z` - Backup
 
 See [**Ordering Codes**](../ordering-codes.md) for more details.
 
 Firmware build shield options: `ctr_lte ctr_x0_a ctr_z`
 
-### CHESTER Input TH
+### CHESTER Input Z TH
 
 **CHESTER Input** with external temperature and hygrometer.
 

@@ -36,12 +36,28 @@ The next report interval is calculated at the beginning of the transmission cycl
 
 ## Hardware Description
 
+**CHESTER Current** can be ordered in one of these two variants:
+
+### CHESTER Current Z
+
+The catalog **CHESTER Current Z** hardware consists of the following ordering codes:
+
+* `CHESTER-M-CGLS` - Standard mainboard
+* `CHESTER-K-C1-C2-C3-C4` - 4x Diff. Input + 5 V Boost
+* `CHESTER-Z` - Backup
+* `CHESTER-E2-LP` - Enclosure with SMA pigtail
+
+### CHESTER Current
+
+Upon request, it is possible to order a **CHESTER Current** variant without the **CHESTER-Z** module, and with the battery holder for the **LiSoCl₂** primary cell on the mainboard. When configured properly, the **CHESTER Current** application can operate from the primary cell for several years.
+
 The catalog **CHESTER Current** hardware consists of the following ordering codes:
 
-* `CHESTER-M-CGLS`
-* `CHESTER-K-C1-C2-C3-C4`
-* `CHESTER-Z`
-* `CHESTER-E2-LP`
+* `CHESTER-M-CGLS` - Standard mainboard
+* `CHESTER-K-C1-C2-C3-C4` - 4x Diff. Input + 5 V Boost
+* `CHESTER-E2-LP` - Enclosure with SMA pigtail
+
+### Probes
 
 You can choose up to 4 current probes with the following current ranges:
 
@@ -54,12 +70,6 @@ You can choose up to 4 current probes with the following current ranges:
 :::caution
 
 The current range is specified for the DC. If you design your system for the AC, you have to multiply the maximum expected AC by the coefficient of `1.42` (square root of two) to see if the current probe fits within the limit.
-
-:::
-
-:::info
-
-Upon request, it is possible to order a **CHESTER Current** variant without the **CHESTER-Z** module, and with the battery holder for the **LiSoCl₂** primary cell on the mainboard. When configured properly, the **CHESTER Current** application can operate from the primary cell for several years.
 
 :::
 
