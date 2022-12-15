@@ -109,6 +109,7 @@ const sidebars = {
         'firmware-sdk/install-macos',
         'firmware-sdk/install-windows',
         'firmware-sdk/build-and-deploy',
+        'firmware-sdk/app-customization',
         'firmware-sdk/how-to-i2c-bus',
         'firmware-sdk/how-to-kconfig',
       ],
