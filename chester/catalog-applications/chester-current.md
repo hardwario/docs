@@ -34,7 +34,7 @@ The next report interval is calculated at the beginning of the transmission cycl
 
 :::
 
-## Hardware Description
+## Application Variants
 
 **CHESTER Current** can be ordered in one of these two variants:
 
@@ -56,7 +56,7 @@ The catalog **CHESTER Current Z** hardware consists of the following ordering co
 
 * `CHESTER-M-CGLS` - Standard mainboard
 * `CHESTER-K-C1-C2-C3-C4` - 4x Diff. Input + 5 V Boost
-* `CHESTER-Z` - Backup
+* `CHESTER-Z` - Backup module
 * `CHESTER-E2-LP` - Enclosure with SMA pigtail
 
 See [**Ordering Codes**](../ordering-codes.md) for more details.

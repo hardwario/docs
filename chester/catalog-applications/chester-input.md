@@ -22,14 +22,14 @@ The application **CHESTER Input** is used to measure and observe analog and digi
 
 | **Type** | **Channel** | **Terminal** | **Input type**    | **Input range** | **Typical use-case**                  |
 | :------- | :---------- | :----------- | :---------------- | :-------------- | :------------------------------------ |
-| Trigger  | CH1         | A2           | Digital - NPN/PNP | 0 to 28 V       | Switch, button, relay, etc.           |
+| Trigger  | CH1         | A2           | Digital - NPN/PNP | 0 to 28 V       | Switch, button, relay, PLC sensor     |
 | Counter  | CH2         | A4           | Digital - NPN/PNP | 0 to 28 V       | Energy meter pulse outputs (e.g., S0) |
 | Voltage  | CH3         | A5           | Analog - voltage  | 0 to 28 V       | Various voltage transmitters          |
 | Current  | CH4         | A7           | Analog - current  | 0 to 24 mA      | Various current transmitters          |
 
-All these inputs and their options are explained in more detail in the article [**Input Parameters and Behavior**](#input-parameters-and-behavior),
+All these inputs and their options are explained in more detail in the article [**Input Parameters and Behavior**](#input-parameters-and-behavior).
 
-## Hardware Description
+## Application Variants
 
 **CHESTER Input** can be ordered in one of these variants:
 
@@ -37,9 +37,9 @@ All these inputs and their options are explained in more detail in the article [
 
 The catalog **CHESTER Input** hardware consists of the following ordering codes:
 
-* `CHESTER-M-CGLS` - Standard mainboard
+* `CHESTER-M-BCGLS` - Standard mainboard
 
-* `CHESTER-X0B:A` - 4x Input
+* `CHESTER-X0B:A` - Input module (4 channels)
 
 See [**Ordering Codes**](../ordering-codes.md) for more details.
 
@@ -47,29 +47,29 @@ Firmware build shield options: `ctr_lte ctr_x0_a`
 
 ### CHESTER Input Z
 
-The catalog **CHESTER Input** hardware consists of the following ordering codes:
+The catalog **CHESTER Input Z** hardware consists of the following ordering codes:
 
 * `CHESTER-M-CGLS` - Standard mainboard
 
-* `CHESTER-X0B:A` - 4x Input
+* `CHESTER-X0B:A` - Input module (4 channels)
 
-* `CHESTER-Z` - Backup
+* `CHESTER-Z` - Backup module
 
 See [**Ordering Codes**](../ordering-codes.md) for more details.
 
 Firmware build shield options: `ctr_lte ctr_x0_a ctr_z`
 
-### CHESTER Input Z TH
+### CHESTER Input ZH
 
-**CHESTER Input** with external temperature and hygrometer.
+**CHESTER Input ZH** with external temperature and hygrometer.
 
 * `CHESTER-M-CGLS` - Standard mainboard
 
-* `CHESTER-X0B:A` - 4x Input
+* `CHESTER-X0B:A` - Input module (4 channels)
 
-* `CHESTER-Z` - Backup
+* `CHESTER-Z` - Backup module
 
-* `CHESTER-S2` - External Hygrometer
+* `CHESTER-S2` - External hygrometer
 
 See [**Ordering Codes**](../ordering-codes.md) for more details.
 
@@ -86,7 +86,7 @@ The **trigger** input can be connected to a PLC/sensor output (NPN/PNP), push bu
 
 * When the input changes, the timestamp of the change event is stored altogether with the **active**/**inactive** state, this information is buffered, and the buffer of the events is sent (at the latest) with the regular report (parameter `interval-report`).
 
-* Optionally, input changes to the **active** (parameter `app config trigger-report-active`) or **inactive** (parameter `app config trigger-report-inactive`) states can be reported **immediately** or with a configurable **delay** (parameter `event-report-delay`) to allow capturing multiple consequent input changes.
+* Optionally, input changes to the **active** (parameter `trigger-report-active`) or **inactive** (parameter `trigger-report-inactive`) states can be reported **immediately** or with a configurable **delay** (parameter `event-report-delay`) to allow capturing multiple consequent input changes.
 
 * Both **NPN** and **PNP** input logic types are supported (parameter `trigger-input-type`).
 
@@ -132,7 +132,7 @@ This input measures the analog current in the range from **0-24 mA** (overlaps t
 
 * When the DC power input changes, the timestamp of the change event is stored altogether with the **connected**/**disconnected** state, this information is buffered, and the buffer of the events is sent (at the latest) with the regular report (parameter `interval-report`).
 
-* Optionally, DC power input changes to the **connected** (parameter `app config backup-report-connected`) or **disconnected** (parameter `app config backup-report-disconnected`) states can be reported **immediately** or with a configurable **delay** (parameter `event-report-delay`) to allow capturing multiple consequent input changes.
+* Optionally, DC power input changes to the **connected** (parameter `backup-report-connected`) or **disconnected** (parameter `backup-report-disconnected`) states can be reported **immediately** or with a configurable **delay** (parameter `event-report-delay`) to allow capturing multiple consequent input changes.
 
 * The maximum number of reports per hour is configurable (parameter `event-report-rate`). The event throttling limits communication bandwidth and preserves the battery lifespan.
 

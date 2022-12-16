@@ -18,7 +18,7 @@ Some of the basics are not provided, as they are common for all **CHESTER** cata
 
 **CHESTER Clime** is an environmental sensor that samples, aggregates, and sends measured variables.
 
-## Hardware Description
+## Application Variants
 
 **CHESTER Clime** can be ordered in one of these three variants:
 
@@ -47,7 +47,7 @@ The catalog application **CHESTER Clime Z** measures:
 The hardware of this application consists of the following ordering codes:
 
 * `CHESTER-M-BCGLS` - Standard mainboard
-* `CHESTER-Z` - Backup
+* `CHESTER-Z` - Backup module
 * `CHESTER-S2` - External hygrometer
 * `CHESTER-E1-LP` - Enclosure with SMA pigtail
 
