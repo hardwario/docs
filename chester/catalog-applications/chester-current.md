@@ -36,7 +36,7 @@ The next report interval is calculated at the beginning of the transmission cycl
 
 ## Application Variants
 
-**CHESTER Current** can be ordered in one of these two variants:
+**CHESTER Current** can be ordered in one of these variants:
 
 ### CHESTER Current
 

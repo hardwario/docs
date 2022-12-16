@@ -20,7 +20,7 @@ Some of the basics are not provided, as they are common for all **CHESTER** cata
 
 ## Application Variants
 
-**CHESTER Clime** can be ordered in one of these three variants:
+**CHESTER Clime** can be ordered in one of these variants:
 
 ### CHESTER Clime
 
