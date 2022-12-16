@@ -31,7 +31,7 @@ All these inputs and their options are explained in more detail in the article [
 
 ## Hardware Description
 
-**CHESTER Input** can be ordered in one of these two variants:
+**CHESTER Input** can be ordered in one of these variants:
 
 ### CHESTER Input
 
