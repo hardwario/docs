@@ -30,7 +30,7 @@ For the final firmware build, you would like to build a firmware with the name a
 1. Clean previous build with `rm -rf build/`.
 
 2. Add environment variables `FW_NAME` and `FW_VERSION` to the build command:
-     - Linux and macOS: `FW_NAME="CHESTER Input Z" FW_VERSION=v1.5.0 west build`.
+     - Linux and macOS: `FW_NAME="CHESTER Input Z" FW_VERSION="v1.5.0" west build`.
      - Windows: `cmd /C "set FW_NAME=CHESTER Input Z && set FW_VERSION=v1.5.0 && west build"`.
 
 :::tip
