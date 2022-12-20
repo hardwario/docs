@@ -16,16 +16,20 @@ This chapter focuses on the HARDWARIO TOWER Visual Studio Code extension, you wi
 
 ## Installation
 
-To install the extension you will have to download the latest release from [**GitHub Releases**](https://github.com/hardwario/hardwario-tower-vscode-extension/releases).
+To install the extension just open your **Visual Studio Code** and go to the extension tab on the left side panel, type `HARDWARIO TOWER` into the search bar and click **Install** next to the first extension available.
 
-To install the downloaded .vsix extension file just go to the **Extensions Tab**, click the **three dots** and **Install from VSIX...**
+:::tip
+
+After a while, the extension should be installed and ready to use.
+
+:::
 
 <div class="container">
   <div class="row">
-    <div class="col col--8">
+    <div class="col col--6">
       <div><Image img={require('./extension-install-guide.png')}/></div>
     </div>
-    <div class="col col--2">
+    <div class="col col--4">
     </div>
   </div>
 </div>
