@@ -16,9 +16,15 @@ Before you begin, make sure you comply with the article [Requirements](./require
 
 ## Installation Steps
 
-The installation steps are split into multiple sections. At the end, you will be able to build the `blinky` sample from the **CHESTER SDK**.
+The installation steps are split into multiple sections. In the end, you will be able to build the `blinky` sample from the **CHESTER SDK**.
 
-### Install Packages
+### Install Package Manager
+
+:::tip
+
+You can skip this step if you already have **Homebrew** installed on your system.
+
+:::
 
 1. Open the **Terminal** application.
 
@@ -28,11 +34,19 @@ The installation steps are split into multiple sections. At the end, you will be
    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
    ```
 
-1. Install the following **Homebrew** packages:
+1. Reboot the system:
 
    ```
-   brew install cmake ninja gperf python3 ccache qemu dtc wget
+   sudo reboot
    ```
+
+### Install Packages
+
+Install the following **Homebrew** packages:
+
+```
+brew install cmake ninja gperf python3 ccache qemu dtc wget libmagic
+```
 
 ### Install Toolchain
 
@@ -47,19 +61,19 @@ The installation steps are split into multiple sections. At the end, you will be
    If you have the **Intel processor**, use this command:
 
    ```
-   wget -c https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v0.14.1/zephyr-sdk-0.14.1_macos-x86_64.tar.gz -O - | tar -xz --directory $HOME/.local/opt
+   wget -c https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v0.15.1/zephyr-sdk-0.15.1_macos-x86_64.tar.gz -O - | tar -xz --directory $HOME/.local/opt
    ```
 
    If you have the **ARM processor**, use this command:
 
    ```
-   wget -c https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v0.14.1/zephyr-sdk-0.14.1_macos-aarch64.tar.gz -O - | tar -xz --directory $HOME/.local/opt
+   wget -c https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v0.15.1/zephyr-sdk-0.15.1_macos-aarch64.tar.gz -O - | tar -xz --directory $HOME/.local/opt
    ```
 
 1. Run the **Zephyr SDK** bundle setup script:
 
    ```
-   $HOME/.local/opt/zephyr-sdk-0.14.1/setup.sh
+   $HOME/.local/opt/zephyr-sdk-0.15.1/setup.sh
    ```
 
 ## Create Application

@@ -6,7 +6,7 @@ import Image from '@theme/IdealImage';
 
 # Installation on Ubuntu
 
-The following article will guide you through the **CHESTER SDK** installation on **Ubuntu**. It has been tested on versions **Ubuntu 20.04 LTS** and **Ubuntu 22.04 LTS**.
+The following article will guide you through the **CHESTER SDK** installation on **Ubuntu**. It has been tested on versions **Ubuntu 22.04 LTS**.
 
 :::caution
 
@@ -16,7 +16,29 @@ Before you begin, make sure you comply with the article [**Requirements**](./req
 
 ## Installation Steps
 
-The installation steps are split into multiple sections. At the end, you will be able to build the `blinky` sample from the **CHESTER SDK**.
+The installation steps are split into multiple sections. In the end, you will be able to build the `blinky` sample from the **CHESTER SDK**.
+
+### Update Your System
+
+1. Open the **Terminal** application.
+
+1. Update the package lists:
+
+   ```
+   sudo apt update
+   ```
+
+1. Upgrade the packages:
+
+   ```
+   sudo apt upgrade
+   ```
+
+1. Reboot the system:
+
+   ```
+   sudo reboot
+   ```
 
 ### Set Up Device Rules
 
@@ -34,19 +56,19 @@ The installation steps are split into multiple sections. At the end, you will be
    sudo dpkg -i nrf-udev_1.0.1-all.deb
    ```
 
-### Install Packages
-
 1. Remove the package with the **udev** rules:
 
    ```
    rm nrf-udev_1.0.1-all.deb
    ```
 
-1. Install the following **APT** packages:
+### Install Packages
 
-   ```
-   sudo apt install --no-install-recommends git cmake ninja-build gperf ccache dfu-util device-tree-compiler wget python3-dev python3-pip python3-setuptools python3-tk python3-wheel xz-utils file make gcc gcc-multilib g++-multilib libsdl2-dev
-   ```
+Install the following **APT** packages:
+
+```
+sudo apt install --no-install-recommends git cmake ninja-build gperf ccache dfu-util device-tree-compiler wget python3-dev python3-pip python3-setuptools python3-tk python3-wheel xz-utils file make gcc gcc-multilib g++-multilib libsdl2-dev libmagic1
+```
 
 ### Install Toolchain
 
@@ -59,13 +81,13 @@ The installation steps are split into multiple sections. At the end, you will be
 1. Download and unpack the toolchain:
 
    ```
-   wget -c https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v0.14.1/zephyr-sdk-0.14.1_linux-x86_64.tar.gz -O - | tar -xz --directory $HOME/.local/opt
+   wget -c https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v0.15.1/zephyr-sdk-0.15.1_linux-x86_64.tar.gz -O - | tar -xz --directory $HOME/.local/opt
    ```
 
 1. Run the **Zephyr SDK** bundle setup script:
 
    ```
-   $HOME/.local/opt/zephyr-sdk-0.14.1/setup.sh
+   $HOME/.local/opt/zephyr-sdk-0.15.1/setup.sh
    ```
 
 ## Create Application

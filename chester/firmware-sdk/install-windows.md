@@ -16,7 +16,7 @@ Before you begin, make sure you comply with the article [**Requirements**](./req
 
 ## Installation Steps
 
-The installation steps are split into multiple sections. At the end, you will be able to build the `blinky` sample from the **CHESTER SDK**.
+The installation steps are split into multiple sections. In the end, you will be able to build the `blinky` sample from the **CHESTER SDK**.
 
 ### Install Python
 
@@ -26,7 +26,7 @@ You can skip this step if you already have **Python** installed on your system.
 
 :::
 
-Install the latest stable **Python** release from the [official Python site](https://www.python.org/downloads/windows/).
+Install the latest stable **Python** release from the [**official Python site**](https://www.python.org/downloads/windows/).
 
 :::caution
 
@@ -34,7 +34,7 @@ In the **Python** installer, enable the checkbox `Add Python 3.x to PATH`.
 
 :::
 
-### Install Chocolatey
+### Install Package Manager
 
 :::tip
 
@@ -129,19 +129,19 @@ You can skip this step if you already have **Chocolatey** installed on your syst
 1. Download the toolchain:
 
    ```
-   wget https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v0.14.1/zephyr-sdk-0.14.1_windows-x86_64.zip
+   wget https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v0.15.1/zephyr-sdk-0.15.1_windows-x86_64.zip
    ```
 
 1. Unzip the toolchain:
 
    ```
-   unzip zephyr-sdk-0.14.1_windows-x86_64.zip
+   unzip zephyr-sdk-0.15.1_windows-x86_64.zip
    ```
 
 1. Go to the toolchain directory:
 
    ```
-   cd zephyr-sdk-0.14.1
+   cd zephyr-sdk-0.15.1
    ```
 
 1. Run the **Zephyr SDK** bundle setup script:
