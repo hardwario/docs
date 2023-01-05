@@ -62,6 +62,18 @@ The catalog application **CHESTER Push** hardware consists of the following orde
 
 You can use a [**front cover template**](pathname:///download/hio-enclosure-4push-130x175-cmyk.pdf) for your custom enclosure design.
 
+## Default Configuration
+
+This is the default configuration (printed using the `app config show` command):
+
+```
+app config interval-report 1800
+app config event-report-delay 1
+app config event-report-rate 60
+app config backup-report-connected false
+app config backup-report-disconnected false
+```
+
 ## Specific Commands
 
 :::info
@@ -70,22 +82,35 @@ You can easily explore the whole command tree structure - start with the `help` 
 
 :::
 
-:::caution
+Use this command to set **report interval** (in seconds):
 
-To apply a new configuration, you need to call `config save`, which applies the new configuration parameters and reboots the device.
+```
+app config interval-report <value>
+```
+
+Use this command to configure a short delay (in seconds) between the **button** or **backup** event and its reporting:
+
+```
+app config event-report-delay <value>
+```
+
+Use this command to limit the number of asynchronous **button** or **backup** event reports in a one-hour window:
+
+```
+app config event-report-rate <value>
+```
+
+:::tip
+
+This feature helps to conserve power in the battery-operated device and optimizes the amount of transferred data. The regular (periodic) reports set by the parameter `interval-report` are not counted to this limit.
 
 :::
 
-Command to set **measurement interval** in seconds:
+Use these commands to enable/disable reporting of the backup module power input connect/disconnect events:
 
 ```
-app config measurement-interval <5-3600>
-```
-
-Command to set **report interval** in seconds:
-
-```
-app config report-interval <30-86400>
+app config backup-report-connected false
+app config backup-report-disconnected false
 ```
 
 ## Firmware
@@ -96,45 +121,48 @@ The latest firmware is available in Catalog Applications [Firmware chapter](inde
 
 ```json
 {
-  "frame": {
-    "protocol": 1,
-    "sequence": 15,
-    "timestamp": 1668090990
+  "message": {
+    "version": 1,
+    "sequence": 1,
+    "timestamp": 1672910024
   },
   "attribute": {
     "vendor_name": "HARDWARIO",
     "product_name": "CHESTER-M",
-    "hw_variant": "CGLS",
+    "hw_variant": "CDGLS",
     "hw_revision": "R3.2",
-    "fw_version": "v1.1.0",
-    "serial_number": "2159018995"
+    "fw_name": "CHESTER Push",
+    "fw_version": "v1.4.0",
+    "serial_number": "2159018247"
   },
-  "state": {
-    "uptime": 14687
-  },
-  "battery": {
-    "voltage_rest": 4.59,
-    "voltage_load": 4.57,
-    "current_load": 45
+  "system": {
+    "uptime": 173,
+    "voltage_rest": 3.96,
+    "voltage_load": 3.86,
+    "current_load": 38
   },
   "backup": {
-    "voltage": 3.17
-  },
-  "line": {
-    "present": true,
-    "voltage": 19.47
+    "line_voltage": 0.01,
+    "batt_voltage": 3.43,
+    "state": "disconnected",
+    "events": [
+      {
+        "timestamp": 1672910010,
+        "type": "disconnected"
+      }
+    ]
   },
   "network": {
-    "imei": 351358815180036,
-    "imsi": 901288910018805,
+    "imei": 351358815178303,
+    "imsi": 901288003957939,
     "parameter": {
-      "eest": 8,
+      "eest": 7,
       "ecl": 0,
-      "rsrp": -72,
-      "rsrq": -7,
-      "snr": 14,
+      "rsrp": -87,
+      "rsrq": -6,
+      "snr": 13,
       "plmn": 23003,
-      "cid": 1467937,
+      "cid": 939040,
       "band": 20,
       "earfcn": 6447
     }
@@ -143,32 +171,45 @@ The latest firmware is available in Catalog Applications [Firmware chapter](inde
     "temperature": 21.56
   },
   "accelerometer": {
-    "acceleration_x": -9.35,
-    "acceleration_y": -0.23,
-    "acceleration_z": -0.16,
-    "orientation": 1
+    "acceleration_x": -0.31,
+    "acceleration_y": 0.15,
+    "acceleration_z": 9.88,
+    "orientation": 2
   },
-  "button": {
-    "button_x_click_event": false,
-    "button_1_click_event": false,
-    "button_2_click_event": false,
-    "button_3_click_event": false,
-    "button_4_click_event": false,
-    "button_x_hold_event": false,
-    "button_1_hold_event": false,
-    "button_2_hold_event": false,
-    "button_3_hold_event": false,
-    "button_4_hold_event": false,
-    "button_x_click_count": 0,
-    "button_1_click_count": 1,
-    "button_2_click_count": 2,
-    "button_3_click_count": 1,
-    "button_4_click_count": 1,
-    "button_x_hold_count": 0,
-    "button_1_hold_count": 0,
-    "button_2_hold_count": 0,
-    "button_3_hold_count": 0,
-    "button_4_hold_count": 0
+  "button_x": {
+    "count_click": 0,
+    "count_hold": 0,
+    "events": []
+  },
+  "button_1": {
+    "count_click": 3,
+    "count_hold": 1,
+    "events": [
+      {
+        "timestamp": 1672910020,
+        "type": "held"
+      }
+    ]
+  },
+  "button_2": {
+    "count_click": 12,
+    "count_hold": 0,
+    "events": [
+      {
+        "timestamp": 1672910023,
+        "type": "clicked"
+      }
+    ]
+  },
+  "button_3": {
+    "count_click": 0,
+    "count_hold": 0,
+    "events": []
+  },
+  "button_4": {
+    "count_click": 0,
+    "count_hold": 0,
+    "events": []
   }
 }
 ```
