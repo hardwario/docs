@@ -93,7 +93,7 @@ Firmware build shield options: `ctr_lte ctr_ds18b20`
 ## Measurement and behavior
 
 - All sensors are **sampled** with a configurable period (parameter `interval-sample`).
-- Samples are then **aggregated** in the configurable interval. Minimum, maximum, average, and median are computed from buffered samples for each sensor (parameter `interval-aggregate`).
+- Samples are then **aggregated** in the configurable interval. Minimum, maximum, average, and median are computed from buffered samples for each sensor (parameter `interval-aggreg`).
 - Each aggregated values have its timestamps and are sent in a batch in a report interval period (parameter `interval-report`).
 
 When equipped with **CHESTER-S1**. The device also has a push button. When the button is pressed, the blue LED turns on for a second. Also, the **beep sound** is played from the integrated acoustic buzzer for audible confirmation of the push button press.
@@ -104,7 +104,7 @@ This is the default configuration (printed using the `app config show` command):
 
 ```
 app config interval-sample 60
-app config interval-aggregate 300
+app config interval-aggreg 300
 app config interval-report 1800
 ```
 
@@ -131,7 +131,7 @@ app config interval-sample <1-86400>
 Command to set **aggregate interval** in seconds:
 
 ```
-app config interval-aggregate <1-86400>
+app config interval-aggreg <1-86400>
 ```
 
 Command to set **report interval** in seconds:
@@ -156,9 +156,9 @@ In each structure with the current configuration, there are six aggregated value
 
 ```json
 {
-  "frame": {
-    "protocol": 1,
-    "sequence": 381,
+  "message": {
+    "version": 1,
+    "sequence": 0,
     "timestamp": 1668859482
   },
   "attribute": {
@@ -166,13 +166,12 @@ In each structure with the current configuration, there are six aggregated value
     "product_name": "CHESTER-M",
     "hw_variant": "CGLS",
     "hw_revision": "R3.2",
-    "fw_version": "(unset)",
+    "fw_name": "CHESTER Clime",
+    "fw_version": "v1.4.0",
     "serial_number": "2159018267"
   },
-  "state": {
-    "uptime": 680967
-  },
-  "battery": {
+  "system": {
+    "uptime": 680967,
     "voltage_rest": 3.7,
     "voltage_load": 3.66,
     "current_load": 36
@@ -181,24 +180,24 @@ In each structure with the current configuration, there are six aggregated value
     "imei": 351358815180770,
     "imsi": 901288910018982,
     "parameter": {
-      "eest": null,
-      "ecl": null,
-      "rsrp": null,
-      "rsrq": null,
-      "snr": null,
-      "plmn": null,
-      "cid": null,
-      "band": null,
-      "earfcn": null
+      "eest": 7,
+      "ecl": 0,
+      "rsrp": -90,
+      "rsrq": -8,
+      "snr": 9,
+      "plmn": 23003,
+      "cid": 939040,
+      "band": 20,
+      "earfcn": 6447
     }
   },
   "thermometer": {
     "temperature": 22.18
   },
   "accelerometer": {
-    "accel_x": 0.07,
-    "accel_y": -0.16,
-    "accel_z": 9.65,
+    "acceleration_x": 0.07,
+    "acceleration_y": -0.16,
+    "acceleration_z": 9.65,
     "orientation": 2
   },
   "iaq_sensor": {
