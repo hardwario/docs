@@ -118,6 +118,24 @@ Next, the runner will install **HARDWARIO** python packages that are needed for 
 
 The next step is to prepare the `west.yml` file for CI by replacing the normal data with GitHub Access Token.
 
+For this step to work properly, your `west.yml` file should look something like this:
+
+```
+manifest:
+  version: "0.12"
+  remotes:
+    - name: hardwario
+      url-base: git@github.com:USERNAME_OR_ORGANIZATION
+  projects:
+    - name: YOUR_SDK_REPOSITORY_NAME.git
+      remote: hardwario
+      revision: main
+      path: chester
+      import: true
+  self:
+    path: application
+```
+
 You will need to create a secret the same way as you did with the `HARDWARIO_CLOUD_TOKEN`. This time the secret will have name `CI_TOKEN`.
 You will have to [**create the Access Token**](https://docs.github.com/en/enterprise-server@3.4/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#creating-a-personal-access-token). After you create it, just copy and paste it into the `CI_TOKEN` secret.
 
