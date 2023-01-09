@@ -10,7 +10,7 @@ This article describes the core functionality, hardware description, default con
 
 :::caution
 
-Some of the basics are not provided, as they are common for all CHESTER catalog applications. For example, see the article [**Platform Management**](../platform-management/index.md) on how to work with the interactive console.
+Some of the basics are not provided, as they are common for all CHESTER catalog applications. For example, see the article [**Platform Management**](category/platform-management/) on how to work with the interactive console.
 
 :::
 
@@ -25,14 +25,6 @@ The current probes require a 5 V power supply (generated using the boost convert
 :::
 
 Apart from the current measurements, the device can be configured (on demand) to measure up to 4 voltage channels (in single-ended mode). It can combine both current and voltage measurements (the total number of channels never exceeds number 4).
-
-The measurements are taken regularly as specified by the `measurement-interval` parameter. The measurements are stored in the measurement buffer and sent when the report interval expires (set by the `report-interval` parameter).
-
-:::caution
-
-The next report interval is calculated at the beginning of the transmission cycle as the `report-interval` parameter (specified in seconds) ±20 % spread. This spread is intentionally random to avoid transmission aliasing for multiple devices operating in the same place (and e.g. powered from a local DC line). If such a spread was not implemented, the device transmission could synchronously overlap.
-
-:::
 
 ## Application Variants
 
@@ -63,6 +55,20 @@ See [**Ordering Codes**](../ordering-codes.md) for more details.
 
 Firmware build shield options: `ctr_k ctr_lte ctr_z`
 
+### CHESTER Current 1W
+
+The catalog application **CHESTER Current 1W** supports multiple external DS18B20 1-Wire temperature sensors.
+
+The hardware of this application consists of the following ordering codes:
+
+* `CHESTER-M-CGLS` - Standard mainboard
+* `CHESTER-K-C1-C2-C3-C4` - 4x Diff. Input + 5 V Boost
+* `CHESTER-E2-LP` - Enclosure with SMA pigtail
+
+See [**Ordering Codes**](../ordering-codes.md) for more details.
+
+Firmware build shield options: `ctr_ds18b20 ctr_k ctr_lte`
+
 ### Probes
 
 You can choose up to 4 current probes with the following current ranges:
@@ -79,11 +85,50 @@ The current range is specified for the DC. If you design your system for the AC,
 
 :::
 
+## Application Behavior
+
+For the wiring diagram to **CHESTER Current**, please follow the [**terminal block description**](../extension-modules/chester-k1.md) of the **CHESTER-K1** extension module.
+The extension module **CHESTER-K1** use both slots **A** and **B**. So you use the corresponding terminals **A1** to **A8** and **B1** to **B8**.
+
+### Analog
+
+* The analog readings are sampled periodically (parameter `channel-interval-sample`). These readings are stored as a **buffer of samples**.
+
+* The collected samples are **aggregated** periodically (parameter `channel-interval-aggreg`). The minimum, maximum, average, and median aggregates are computed from the buffered samples. These aggregated results are referred to as **measurements**.
+
+* Each **measurement** has an associated timestamp. The buffer **measurements** are transferred as time-series data regularly (parameter `interval-report`).
+
+
+### Backup
+
+**CHESTER Current Z** (equipped with **CHESTER-Z**) can also report information on the backup battery and external DC power state.
+
+* The current **battery voltage** and **external DC voltage** are sent in every report.
+
+* When the DC power input changes, the timestamp of the change event is stored altogether with the **connected**/**disconnected** state, this information is buffered, and the buffer of the events is sent (at the latest) with the regular report (parameter `interval-report`).
+
+* Optionally, DC power input changes to the **connected** (parameter `backup-report-connected`) or **disconnected** (parameter `backup-report-disconnected`) states can be reported **immediately** or with a configurable **delay** (parameter `event-report-delay`) to allow capturing multiple consequent input changes.
+
+* The maximum number of reports per hour is configurable (parameter `event-report-rate`). The event throttling limits communication bandwidth and preserves the battery lifespan.
+
+:::caution
+
+The next report interval is calculated at the beginning of the transmission cycle as the `interval-report` parameter (specified in seconds) ±20 % spread. This spread is intentionally random to avoid transmission aliasing for multiple devices operating in the same place (e.g., powered from a local DC line). If such a spread was not implemented, the device transmission could synchronously overlap.
+
+:::
+
 ## Default Configuration
 
 This is the default configuration (printed using the `app config show` command):
 
 ```
+app config interval-report 900
+app config event-report-delay 1
+app config event-report-rate 30
+app config backup-report-connected true
+app config backup-report-disconnected true
+app config channel-interval-sample 60
+app config channel-interval-aggreg 300
 app config channel-active 1 false
 app config channel-active 2 false
 app config channel-active 3 false
@@ -108,6 +153,8 @@ app config channel-calib-y1 1 0
 app config channel-calib-y1 2 0
 app config channel-calib-y1 3 0
 app config channel-calib-y1 4 0
+app config w1-therm-interval-sample 60
+app config w1-therm-interval-aggreg 300
 ```
 
 ## Specific Commands
@@ -118,28 +165,73 @@ You can easily explore the whole command tree structure - start with the `help` 
 
 :::
 
-Command to **trigger measurement** immediately (and store the result in the buffer of measurements):
+### Commands
+
+Command to **trigger sample** immediately (and store the result in the sample buffer):
 
 ```
-measure
+sample
 ```
 
-Command to **send data** immediately (and flush the buffer of measurements):
+Command to **send data** immediately (and flush the aggregated measurements):
 
 ```
 send
 ```
 
+### Reporting
+
+Use this command to set **report interval** (in seconds):
+
+```
+app config interval-report <value>
+```
+
+### Backup
+
+Use this command to configure a short delay (in seconds) between the **backup** event and its reporting:
+
+```
+app config event-report-delay <value>
+```
+
+:::tip
+
+This feature is useful in systems where another change may arrive shortly after the first one.
+
+:::
+
+Use this command to limit the number of asynchronous **backup** event reports in a one-hour window:
+
+```
+app config event-report-rate <value>
+```
+
+:::tip
+
+This feature helps to conserve power in the battery-operated device and optimizes the amount of transferred data. The regular (periodic) reports set by the parameter `interval-report` are not counted to this limit.
+
+:::
+
+Use these commands to enable/disable reporting of the backup module power input connect/disconnect events:
+
+```
+app config backup-report-connected <true/false>
+app config backup-report-disconnected <true/false>
+```
+
+### Analog Channels
+
 Command to **enable/disable** channel `n` (index 1-4):
 
 ```
-app config channel-active <n> <{false|true}>
+app config channel-active <n> <true/false>
 ```
 
 Command to switch between **single-ended/differential** modes on the channel `n` (index 1-4):
 
 ```
-app config channel-differential <n> <{false|true}>
+app config channel-differential <n> <true/false>
 ```
 
 Command to set **calibration point X0** (input) on the channel `n` (index 1-4):
@@ -166,6 +258,20 @@ Command to set **calibration point Y1** (output) on the channel `n` (index 1-4):
 app config channel-calib-y1 <n> <value>
 ```
 
+### 1-Wire Thermometer
+
+Command to set **1-Wire thermometer sample interval** in seconds:
+
+```
+app config w1-therm-interval-sample <1-86400>
+```
+
+Command to set **1-Wire thermometer aggregate interval** in seconds:
+
+```
+app config w1-therm-interval-aggreg <1-86400>
+```
+
 ## Firmware
 
 The latest firmware is available in Catalog Applications [Firmware chapter](index.md#application-firmware).
@@ -175,73 +281,262 @@ The latest firmware is available in Catalog Applications [Firmware chapter](inde
 
 ```json
 {
-  "frame": {
-    "protocol": 1,
+  "message": {
+    "version": 1,
     "sequence": 1,
-    "timestamp": 1659967456
+    "timestamp": 1673272805
   },
   "attribute": {
     "vendor_name": "HARDWARIO",
     "product_name": "CHESTER-M",
-    "hw_variant": "CGV",
+    "hw_variant": "CDGLS",
     "hw_revision": "R3.2",
-    "fw_version": "v1.0.0",
-    "serial_number": "2159018442"
+    "fw_name": "CHESTER Current",
+    "fw_version": "v1.5.0",
+    "serial_number": "2159018247"
   },
-  "state": {
-    "uptime": 276
-  },
-  "battery": {
-    "voltage_rest": 4.7,
-    "voltage_load": 4.65,
+  "system": {
+    "uptime": 131,
+    "voltage_rest": 4.73,
+    "voltage_load": 4.67,
     "current_load": 46
   },
+  "backup": {
+    "line_voltage": 9.51,
+    "batt_voltage": 3.45,
+    "state": "connected",
+    "events": []
+  },
   "network": {
-    "imei": 351358815499600,
-    "imsi": 901288910015788,
+    "imei": 351358815178303,
+    "imsi": 901288003957939,
     "parameter": {
       "eest": 7,
       "ecl": 0,
-      "rsrp": -82,
-      "rsrq": -5,
-      "snr": 11,
+      "rsrp": -87,
+      "rsrq": -4,
+      "snr": 16,
       "plmn": 23003,
-      "cid": 1011233,
+      "cid": 939040,
       "band": 20,
       "earfcn": 6447
     }
   },
   "thermometer": {
-    "temperature": 27
+    "temperature": 22.68
   },
   "accelerometer": {
-    "acceleration_x": 0,
-    "acceleration_y": -0.16,
-    "acceleration_z": 9.27,
+    "acceleration_x": -0.16,
+    "acceleration_y": 0.07,
+    "acceleration_z": 9.88,
     "orientation": 2
   },
-  "measurements": [
+  "analog_channels": [
     {
-      "timestamp": 1659967264,
-      "channel_1_avg": -1232,
-      "channel_1_rms": 7545,
-      "channel_2_avg": 199411,
-      "channel_2_rms": 199504,
-      "channel_3_avg": 2463,
-      "channel_3_rms": 7338,
-      "channel_4_avg": null,
-      "channel_4_rms": null
+      "channel": 1,
+      "measurements": [
+        {
+          "timestamp": 1673272718,
+          "mean_min": 1037,
+          "mean_max": 1039,
+          "mean_avg": 1038,
+          "mean_mdn": 1038,
+          "rms_min": 1037,
+          "rms_max": 1039,
+          "rms_avg": 1038,
+          "rms_mdn": 1038
+        },
+        {
+          "timestamp": 1673272748,
+          "mean_min": 1038,
+          "mean_max": 1038,
+          "mean_avg": 1038,
+          "mean_mdn": 1038,
+          "rms_min": 1038,
+          "rms_max": 1038,
+          "rms_avg": 1038,
+          "rms_mdn": 1038
+        },
+        {
+          "timestamp": 1673272778,
+          "mean_min": 1038,
+          "mean_max": 1038,
+          "mean_avg": 1038,
+          "mean_mdn": 1038,
+          "rms_min": 1038,
+          "rms_max": 1038,
+          "rms_avg": 1038,
+          "rms_mdn": 1038
+        }
+      ]
     },
     {
-      "timestamp": 1659967324,
-      "channel_1_avg": -2104,
-      "channel_1_rms": 7756,
-      "channel_2_avg": 199277,
-      "channel_2_rms": 199378,
-      "channel_3_avg": 1827,
-      "channel_3_rms": 7579,
-      "channel_4_avg": null,
-      "channel_4_rms": null
+      "channel": 2,
+      "measurements": [
+        {
+          "timestamp": 1673272718,
+          "mean_min": 0,
+          "mean_max": 0,
+          "mean_avg": 0,
+          "mean_mdn": 0,
+          "rms_min": 0,
+          "rms_max": 0,
+          "rms_avg": 0,
+          "rms_mdn": 0
+        },
+        {
+          "timestamp": 1673272748,
+          "mean_min": 0,
+          "mean_max": 0,
+          "mean_avg": 0,
+          "mean_mdn": 0,
+          "rms_min": 0,
+          "rms_max": 0,
+          "rms_avg": 0,
+          "rms_mdn": 0
+        },
+        {
+          "timestamp": 1673272778,
+          "mean_min": 0,
+          "mean_max": 0,
+          "mean_avg": 0,
+          "mean_mdn": 0,
+          "rms_min": 0,
+          "rms_max": 0,
+          "rms_avg": 0,
+          "rms_mdn": 0
+        }
+      ]
+    },
+    {
+      "channel": 3,
+      "measurements": [
+        {
+          "timestamp": 1673272718,
+          "mean_min": -8,
+          "mean_max": -7,
+          "mean_avg": -8,
+          "mean_mdn": -8,
+          "rms_min": 8,
+          "rms_max": 8,
+          "rms_avg": 8,
+          "rms_mdn": 8
+        },
+        {
+          "timestamp": 1673272748,
+          "mean_min": -8,
+          "mean_max": -8,
+          "mean_avg": -8,
+          "mean_mdn": -8,
+          "rms_min": 8,
+          "rms_max": 9,
+          "rms_avg": 8,
+          "rms_mdn": 8
+        },
+        {
+          "timestamp": 1673272778,
+          "mean_min": -8,
+          "mean_max": -8,
+          "mean_avg": -8,
+          "mean_mdn": -8,
+          "rms_min": 9,
+          "rms_max": 9,
+          "rms_avg": 9,
+          "rms_mdn": 9
+        }
+      ]
+    },
+    {
+      "channel": 4,
+      "measurements": [
+        {
+          "timestamp": 1673272718,
+          "mean_min": 4,
+          "mean_max": 5,
+          "mean_avg": 4,
+          "mean_mdn": 4,
+          "rms_min": 5,
+          "rms_max": 5,
+          "rms_avg": 5,
+          "rms_mdn": 5
+        },
+        {
+          "timestamp": 1673272748,
+          "mean_min": 4,
+          "mean_max": 4,
+          "mean_avg": 4,
+          "mean_mdn": 4,
+          "rms_min": 5,
+          "rms_max": 5,
+          "rms_avg": 5,
+          "rms_mdn": 5
+        },
+        {
+          "timestamp": 1673272778,
+          "mean_min": 4,
+          "mean_max": 4,
+          "mean_avg": 4,
+          "mean_mdn": 4,
+          "rms_min": 5,
+          "rms_max": 5,
+          "rms_avg": 5,
+          "rms_mdn": 5
+        }
+      ]
+    }
+  ],
+  "w1_thermometers": [
+    {
+      "serial_number": 170783697,
+      "measurements": [
+        {
+          "timestamp": 1673272718,
+          "min": 21.25,
+          "max": 21.25,
+          "avg": 21.25,
+          "mdn": 21.25
+        },
+        {
+          "timestamp": 1673272748,
+          "min": 21.25,
+          "max": 21.31,
+          "avg": 21.27,
+          "mdn": 21.25
+        },
+        {
+          "timestamp": 1673272778,
+          "min": 21.25,
+          "max": 21.25,
+          "avg": 21.25,
+          "mdn": 21.25
+        }
+      ]
+    },
+    {
+      "serial_number": 170787196,
+      "measurements": [
+        {
+          "timestamp": 1673272718,
+          "min": 21.43,
+          "max": 21.43,
+          "avg": 21.43,
+          "mdn": 21.43
+        },
+        {
+          "timestamp": 1673272748,
+          "min": 21.43,
+          "max": 21.43,
+          "avg": 21.43,
+          "mdn": 21.43
+        },
+        {
+          "timestamp": 1673272778,
+          "min": 21.43,
+          "max": 21.43,
+          "avg": 21.43,
+          "mdn": 21.43
+        }
+      ]
     }
   ]
 }
@@ -275,7 +570,7 @@ In **HARDWARIO**, we have a calibration kit for **CHESTER Current** made of seve
 
    :::tip
 
-   Use the `measure` command to trigger the measurement.
+   Use the `sample` command to trigger the measurement.
 
    :::
 
