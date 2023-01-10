@@ -1,6 +1,6 @@
 ---
 slug: /chester-x2
-title: CHESTER-X2 (Serial comm.)
+title: CHESTER-X2 (Serial comm)
 ---
 import Image from '@theme/IdealImage';
 

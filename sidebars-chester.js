@@ -42,6 +42,7 @@ const sidebars = {
       collapsed: false,
       items: [
         'extension-modules/chester-x0',
+        'extension-modules/chester-x1',
         'extension-modules/chester-x2',
         'extension-modules/chester-x3',
         'extension-modules/chester-x4',
@@ -49,6 +50,8 @@ const sidebars = {
         'extension-modules/chester-x7',
         'extension-modules/chester-x8',
         'extension-modules/chester-x9',
+        'extension-modules/chester-x10',
+        'extension-modules/chester-k1',
       ],
     },
     {
