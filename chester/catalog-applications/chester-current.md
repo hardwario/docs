@@ -10,6 +10,12 @@ This article describes the core functionality, hardware description, default con
 
 :::caution
 
+When upgrading firmware from v1.5.2 or older to version v1.6.0 and newer - it is necessary to [backup channel configuration and calibration coefficients](chester-current.md#calibration-backup).
+
+:::
+
+:::caution
+
 Some of the basics are not provided, as they are common for all CHESTER catalog applications. For example, see the article [**Platform Management**](category/platform-management/) on how to work with the interactive console.
 
 :::
@@ -116,6 +122,18 @@ The extension module **CHESTER-K1** use both slots **A** and **B**. So you use t
 The next report interval is calculated at the beginning of the transmission cycle as the `interval-report` parameter (specified in seconds) ±20 % spread. This spread is intentionally random to avoid transmission aliasing for multiple devices operating in the same place (e.g., powered from a local DC line). If such a spread was not implemented, the device transmission could synchronously overlap.
 
 :::
+
+
+## Calibration backup
+
+When upgrading firmware from **v1.5.2 or older** to version **v1.6.0 and newer** - it is necessary to backup channel configuration and **mainly the current transformers calibration coefficients**.
+
+In case you forget to back up the data - they are not lost. However, you need to temporarily downgrade to older firmware ([**v1.5.2**](https://firmware.hardwario.com/chester/e14139b4135d41ddb8fae87c8a5b6748)) that can read old configuration, copy values and apply the same values after the firmware is updated.
+
+In the old firmware type `app config show` to the console. Then you need to copy all items starting with `channel-`. If you use **HARDWARIO CLI** you can highlight those lines with a mouse and copy text to your clipboard or text editor.
+
+After updating to newer firmware, paste the same lines to the console. If you use **HARDWARIO CLI** you can paste all the lines together to the input line and press enter. All commands will be applied. Check that the channels are configured correctly by typing `app config show`. You also might want to reconfigure different intervals, since firmware v1.6.0+ has new `interval-sample` and `channel-interval-aggreg` parameters. Do not forget to apply changes by typing `config save`.
+
 
 ## Default Configuration
 
@@ -273,6 +291,12 @@ app config w1-therm-interval-aggreg <1-86400>
 ```
 
 ## Firmware
+
+:::caution
+
+When upgrading firmware from v1.5.2 or older to version v1.6.0 and newer - it is necessary to [backup channel configuration and calibration coefficients](chester-current.md#calibration-backup).
+
+:::
 
 The latest firmware is available in Catalog Applications [Firmware chapter](index.md#application-firmware).
 
@@ -543,6 +567,12 @@ The latest firmware is available in Catalog Applications [Firmware chapter](inde
 ```
 
 ## Channel Calibration
+
+:::caution
+
+When upgrading firmware from v1.5.2 or older to version v1.6.0 and newer - it is necessary to [backup channel configuration and calibration coefficients](chester-current.md#calibration-backup).
+
+:::
 
 :::caution
 
