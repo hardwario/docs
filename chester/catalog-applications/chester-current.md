@@ -124,7 +124,7 @@ The next report interval is calculated at the beginning of the transmission cycl
 :::
 
 
-## Calibration backup
+## Calibration Backup
 
 When upgrading firmware from **v1.5.2 or older** to version **v1.6.0 and newer** - it is necessary to backup channel configuration and **mainly the current transformers calibration coefficients**.
 
