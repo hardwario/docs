@@ -4,7 +4,7 @@ title: Github Actions CI
 ---
 import Image from '@theme/IdealImage';
 
-# Github Actions CI
+# GitHub Actions CI
 
 :::info
 
@@ -30,15 +30,23 @@ After you create your repository you will get a set of commands to execute so yo
 
 ```
 git init
-git add .
 git add -A
 git commit -m "first commit"
 git branch -M main
-git remote add origin {YOUR REPOSITORY URL}
+git remote add origin YOUR_REPOSITORY_URL
 git push -u origin main
 ```
 
-You will need to do this for **Skeleton App** and for **SDK** too
+:::important
+
+You will need to do this for **Skeleton App** and for **SDK** too.
+
+**Skeleton app** repository can be named however you like.
+
+For **SDK**, you will have to name the repository so it is the same as for the name in the `west.yml` file located in the **Skeleton app** repository.
+The full path to the **SDK** repository name in the `west.yml` is `manifest.projects.name`.
+
+:::
 
 ## Workflow File
 
@@ -52,7 +60,7 @@ We will go over each part of the workflow file. You can find the complete file a
 
 ### Beginning of the File
 
-First part of the file is just so you can specify when the workflow should run.
+The first part of the file is just so you can specify when the workflow should run.
 
 This example will run on **Push to the main branch** and on **Published Release**.
 
@@ -70,11 +78,11 @@ on:
 
 ### Setup Env
 
-We will use **hardwario console** to upload the final firmware to cloud so it can be send to you via email. Fort this you will need to setup **HARDWARIO Cloud Token**.
+We will use **hardwario console** to upload the final firmware to the cloud so it can be sent to you via email. For this, you will need to set up **HARDWARIO Cloud Token**.
 
 To get your Token go to [**HARDWARIO Cloud**](https://hardwario.cloud/#/login), log in and in the side menu select **Profile**. You should see **API token**, click **Copy** next to it and go back to GitHub Repository.
 
-Back in the repository go to **Settings**. In the side menu click on **Secrets** and the **Actions**. Create **New Repository Secret**, name it `HARDWARIO_CLOUD_TOKEN` and paste your **Cloud API Token** as the **Secret**.
+Back in the repository go to **Settings**. In the side menu click on **Secrets and variables** and then **Actions**. Create **New Repository Secret**, name it `HARDWARIO_CLOUD_TOKEN` and paste your **Cloud API Token** as the **Secret**.
 
 ```
 env:
@@ -89,7 +97,7 @@ This part is focusing on the job itself (what will be done in the workflow).
 
 :::
 
-First we will name the job and set the runner to `ubuntu-latest` and container to the `hardwario/nrf-connect-sdk-build:v2.2.0-6`. This setup ensures that you have all the needed tools for the compilation of the firmware.
+First, we will name the job and set the runner to `ubuntu-latest` and the container to the `hardwario/nrf-connect-sdk-build:v2.2.0-6`. This setup ensures that you have all the needed tools for the compilation of the firmware.
 
 ```
 jobs:
@@ -100,20 +108,19 @@ jobs:
     steps:
 ```
 
-The checkout step ensures that your repository is cloned onto the runner machine. It will be cloned into the `application` folder, so be mindful of that when working with the application you first have to switch into the folder with `cd application`.
+The checkout step ensures that your repository is cloned onto the runner machine. It will be cloned into the `vendor` folder, so be mindful that when working with the original folder you first have to switch to the folder `vendor`.
 
 ```
     - uses: actions/checkout@v3
       with:
-        path: application
+        path: vendor
 ```
 
-Next, the runner will install **HARDWARIO** python packages that are needed for the firmware upload to the cloud.
+Next, the runner will install **HARDWARIO** python package that is needed for the firmware upload to the cloud.
 
 ```
-    - name: Install hardwario packages
-      run: |
-        pip install hardwario hardwario-chester hardwario-cloud hardwario-common
+    - name: Install HARDWARIO package
+      run: pip install hardwario
 ```
 
 The next step is to prepare the `west.yml` file for CI by replacing the normal data with GitHub Access Token.
@@ -136,37 +143,39 @@ manifest:
     path: application
 ```
 
-You will need to create a secret the same way as you did with the `HARDWARIO_CLOUD_TOKEN`. This time the secret will have name `CI_TOKEN`.
+You will need to create a secret the same way as you did with the [`HARDWARIO_CLOUD_TOKEN`](#setup-env). This time the secret will have the name `CI_TOKEN`.
 You will have to [**create the Access Token**](https://docs.github.com/en/enterprise-server@3.4/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#creating-a-personal-access-token). After you create it, just copy and paste it into the `CI_TOKEN` secret.
 
 The last thing you need to do in this step is to replace the `USERNAME_OR_ORGANIZATION` with the name of the **organization** or **user** that is an **owner of both repositories** (Skeleton and SDK).
 
 ```
-    - name: Patch west.yml File
+    - name: Patch west.yml file
       run: |
-        sed -r -i'' "s/git@github.com:USERNAME_OR_ORGANIZATION/https:\/\/${{secrets.CI_TOKEN}}@github.com\/USERNAME_OR_ORGANIZATION/g" application/west.yml
-        cat application/west.yml
+        sed -r -i'' "s/git@github.com:USERNAME_OR_ORGANIZATION/https:\/\/${{secrets.CI_TOKEN}}@github.com\/USERNAME_OR_ORGANIZATION/g" vendor/west.yml
+        cat vendor/west.yml
 ```
 
-Next steps takes care of configuring west as set up in the previous step and setting the development board to **Chester**.
+The next steps take care of configuring west as set up in the previous step and setting the development board to **Chester**.
 
 ```
     - name: Configure West
       run: |
-        cd application
-        west init -l --mf west.yml .
+        west init -l --mf west.yml vendor
         west update
         west config build.board chester_nrf52840
 ```
 
-Finally, this step will build the application and create the final firmware
+Finally, this step will build the application and create the final firmware with the firmware name set to the name of repository and version to the release tag name
 
 ```
-    - name: Build Application
-      run: cd application ; west build
+    - name: Build application
+      env:
+        FW_NAME: ${{ github.event.repository.name }}
+        FW_VERSION: ${{ github.event.release.tag_name }}
+      run: west build -d vendor/application/build vendor/application
 ```
 
-The last two steps are almost the same. The first one is executed when the **release of the application is made**. This will add the tag name as the firmware version.
+The last step is executed when the **release of the application is made**. This will add the tag name as the firmware version.
 
 :::warning
 
@@ -177,13 +186,11 @@ The tag name needs to be in the format `vMAJOR.MINOR.PATCH` for example `v1.0.0`
 The second one is executed every time some changes are pushed into the repository. This firmware will always have the version set to `v0.0.1`.
 
 ```
-    - name: Export Application
+    - name: Upload application
       if: ${{ github.event_name == 'release' }}
-      run: cd application ; hardwario chester app fw upload --name "${{ github.event.repository.name }}" --version "${{ github.event.release.tag_name }}"
-
-    - name: Export Application
-      if: ${{ github.event_name != 'release' }}
-      run: cd application ; hardwario chester app fw upload --name "${{ github.event.repository.name }}" --version "v0.0.1"
+      run: |
+        cd vendor/application/build
+        hardwario chester app fw upload --name ${{ github.event.repository.name }} --version ${{ github.event.release.tag_name }}
 ```
 
 :::info
@@ -191,6 +198,18 @@ The second one is executed every time some changes are pushed into the repositor
 You can also add some additional steps in between the steps mentioned above.
 
 If you need to install something with `apt install` you need to run `apt update` first.
+
+:::
+
+## Accessing firmware
+
+After you implement the workflow file you will get an email with compiled firmware every time you push something to **main** branch.
+
+In this email, you will find information on how to flash your compiled firmware into your **Chester**.
+
+:::tip
+
+If you need more information on how to flash firmware into **Chester** you can visit [**Firmware Flashing**](../firmware-flashing/index.md) chapter
 
 :::
 
@@ -219,34 +238,32 @@ jobs:
     steps:
     - uses: actions/checkout@v3
       with:
-        path: application
+        path: vendor
 
-    - name: Install hardwario packages
-      run: |
-        pip install hardwario hardwario-chester hardwario-cloud hardwario-common
+    - name: Install HARDWARIO package
+      run: pip install hardwario
 
-    - name: Patch west.yml File
+    - name: Patch west.yml file
       run: |
-        sed -r -i'' "s/git@github.com:YOUR_USERNAME/https:\/\/${{secrets.CI_TOKEN}}@github.com\/YOUR_USER/g" application/west.yml
-        cat application/west.yml
+        sed -r -i'' "s/git@github.com:USERNAME_OR_ORGANIZATION/https:\/\/${{secrets.CI_TOKEN}}@github.com\/USERNAME_OR_ORGANIZATION/g" vendor/west.yml
+        cat vendor/west.yml
 
     - name: Configure West
       run: |
-        cd application
-        west init -l --mf west.yml .
+        west init -l --mf west.yml vendor
         west update
         west config build.board chester_nrf52840
 
-    - name: Build Application
-      run: cd application ; west build
+    - name: Build application
+      env:
+        FW_NAME: ${{ github.event.repository.name }}
+        FW_VERSION: ${{ github.event.release.tag_name }}
+      run: west build -d vendor/application/build vendor/application
 
-    - name: Export Application
+    - name: Upload application
       if: ${{ github.event_name == 'release' }}
-      run: cd application ; hardwario chester app fw upload --name "${{ github.event.repository.name }}" --version "${{ github.event.release.tag_name }}"
-
-    - name: Export Application
-      if: ${{ github.event_name != 'release' }}
-      run: cd application ; hardwario chester app fw upload --name "${{ github.event.repository.name }}" --version "v0.0.1"
+      working-directory: vendor/application
+      run: hardwario chester app fw upload --name ${{ github.event.repository.name }} --version ${{ github.event.release.tag_name }}
 
 ```
 
