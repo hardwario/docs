@@ -90,7 +90,7 @@ See [**Ordering Codes**](../ordering-codes.md) for more details.
 
 Firmware build shield options: `ctr_lte ctr_ds18b20`
 
-## Measurement and behavior
+## Measurement and Behavior
 
 - All sensors are **sampled** with a configurable period (parameter `interval-sample`).
 - Samples are then **aggregated** in the configurable interval. Minimum, maximum, average, and median are computed from buffered samples for each sensor (parameter `interval-aggreg`).
@@ -98,7 +98,7 @@ Firmware build shield options: `ctr_lte ctr_ds18b20`
 
 When equipped with **CHESTER-S1**. The device also has a push button. When the button is pressed, the blue LED turns on for a second. Also, the **beep sound** is played from the integrated acoustic buzzer for audible confirmation of the push button press.
 
-## Default configuration
+## Default Configuration
 
 This is the default configuration (printed using the `app config show` command):
 
