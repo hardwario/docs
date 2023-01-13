@@ -26,7 +26,7 @@ The application primarily targets non-invasive current measuring using the so-ca
 
 :::tip
 
-The current probes require a 5 V power supply (generated using the boost converter on **CHESTER-K**) during the measurement cycle. The boost converter and the power rails to each channel are software-controlled, so **CHESTER Current** can operate as a low-power device powered by the battery. Of course, the measurement interval plays a key role in the battery lifespan.
+The current probes require a 5 V power supply (generated using the boost converter on **CHESTER-K1**) during the measurement cycle. The boost converter and the power rails to each channel are software-controlled, so **CHESTER Current** can operate as a low-power device powered by the battery. Of course, the measurement interval plays a key role in the battery lifespan.
 
 :::
 
@@ -41,25 +41,25 @@ Apart from the current measurements, the device can be configured (on demand) to
 The catalog **CHESTER Current** hardware consists of the following ordering codes:
 
 * `CHESTER-M-CGLS` - Standard mainboard
-* `CHESTER-K-C1-C2-C3-C4` - 4x Diff. Input + 5 V Boost
+* `CHESTER-K1-C1-C2-C3-C4` - 4x Diff. Input + 5 V Boost
 * `CHESTER-E2-LP` - Enclosure with SMA pigtail
 
 See [**Ordering Codes**](../ordering-codes.md) for more details.
 
-Firmware build shield options: `ctr_k ctr_lte`
+Firmware build shield options: `ctr_k1 ctr_lte`
 
 ### CHESTER Current Z
 
 The catalog **CHESTER Current Z** hardware consists of the following ordering codes:
 
 * `CHESTER-M-CGLS` - Standard mainboard
-* `CHESTER-K-C1-C2-C3-C4` - 4x Diff. Input + 5 V Boost
+* `CHESTER-K1-C1-C2-C3-C4` - 4x Diff. Input + 5 V Boost
 * `CHESTER-Z` - Backup module
 * `CHESTER-E2-LP` - Enclosure with SMA pigtail
 
 See [**Ordering Codes**](../ordering-codes.md) for more details.
 
-Firmware build shield options: `ctr_k ctr_lte ctr_z`
+Firmware build shield options: `ctr_k1 ctr_lte ctr_z`
 
 ### CHESTER Current 1W
 
@@ -68,12 +68,12 @@ The catalog application **CHESTER Current 1W** supports multiple external DS18B2
 The hardware of this application consists of the following ordering codes:
 
 * `CHESTER-M-CGLS` - Standard mainboard
-* `CHESTER-K-C1-C2-C3-C4` - 4x Diff. Input + 5 V Boost
+* `CHESTER-K1-C1-C2-C3-C4` - 4x Diff. Input + 5 V Boost
 * `CHESTER-E2-LP` - Enclosure with SMA pigtail
 
 See [**Ordering Codes**](../ordering-codes.md) for more details.
 
-Firmware build shield options: `ctr_ds18b20 ctr_k ctr_lte`
+Firmware build shield options: `ctr_ds18b20 ctr_k1 ctr_lte`
 
 ### Probes
 
