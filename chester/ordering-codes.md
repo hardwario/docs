@@ -157,9 +157,9 @@ An acoustic beeper is installed only if any of the pushbuttons are present.
 
 ## Backside Modules
 
-### CHESTER-K: 4x Diff. Input + 5 V Boost {#chester-k}
+### CHESTER-K1: 4x Diff. Input + 5 V Boost {#chester-k1}
 
-**Format:** `CHESTER-K-[1{C|V}]-[2{C|V}]-[3{C|V}]-[4{C|V}]`
+**Format:** `CHESTER-K1-[1{C|V}]-[2{C|V}]-[3{C|V}]-[4{C|V}]`
 
 :::caution
 
@@ -180,13 +180,13 @@ This expansion module occupies both backside slots "A" and "B".
 
 **Available parts:**
 
-| Ordering Code           |
-| :---------------------- |
-| `CHESTER-K-1C-2C-3C-4C` |
-| `CHESTER-K-1C-2C-3C-4V` |
-| `CHESTER-K-1C-2C-3V-4V` |
-| `CHESTER-K-1C-2V-3V-4V` |
-| `CHESTER-K-1V-2V-3V-4V` |
+| Ordering Code            |
+| :----------------------- |
+| `CHESTER-K1-1C-2C-3C-4C` |
+| `CHESTER-K1-1C-2C-3C-4V` |
+| `CHESTER-K1-1C-2C-3V-4V` |
+| `CHESTER-K1-1C-2V-3V-4V` |
+| `CHESTER-K1-1V-2V-3V-4V` |
 
 ### CHESTER-X0A: 4x Input w/ 5 V Boost {#chester-x0a}
 

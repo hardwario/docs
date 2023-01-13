@@ -30,7 +30,7 @@ Typically, you will not need to search for the I²C addresses while working with
 | CHESTER-A      | `0x3a`  | TCA9534A       |                                    |
 | CHESTER-G      | `0x3b`  | TCA9534A       |                                    |
 | CHESTER-G      | `0x3c`  | TCA9534A       |                                    |
-| CHESTER-K      | `0x3d`  | TCA9534A       |                                    |
+| CHESTER-K1     | `0x3d`  | TCA9534A       |                                    |
 | CHESTER-C1     | `0x3e`  | TCA9534A       |                                    |
 | CHESTER-B1     | `0x3e`  | TCA9534A       |                                    |
 | CHESTER-B1     | `0x3f`  | TCA9534A       |                                    |

@@ -27,7 +27,7 @@ On the CHESTER DevKit variant, it is possible to install extension modules desig
 ## Backside Modules
 
 | Module Name | Module Description                                                                                                                                                |
-|-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | CHESTER-X0A | Up to 4 digital and analog inputs and outputs, 4-20 mA current loop channels, 0-10 V voltage inputs, dry contact, NPN or PNP input, including 5V boost converter. |
 | CHESTER-X0B | Up to 4 digital and analog inputs and outputs, 4-20 mA current loop channels, 0-10 V voltage inputs, dry contact, NPN or PNP input, without 5V boost converter.   |
 | CHESTER-X1  | Up to eight 1-Wire channels (e.g. for Dallas DS18B20 digital temperature sensors)                                                                                 |
@@ -42,12 +42,12 @@ On the CHESTER DevKit variant, it is possible to install extension modules desig
 | CHESTER-X8  | Ultra-precise accelerometer                                                                                                                                       |
 | CHESTER-X9  | 4-channel output module with smart protected switch for controlling relays and solenoids                                                                          |
 | CHESTER-X10 | DC/DC converter + Li-Po charger providing power from an external 6-30 VDC line (features input voltage measurement)                                               |
-| CHESTER-K   | 4-channel differential input converter with software-controlled 5V boost converter for current probes and other industrial sensors                                |
+| CHESTER-K1  | 4-channel differential input converter with software-controlled 5V boost converter for current probes and other industrial sensors                                |
 
 ## Cover Modules
 
 | Module Name  | Module Description                                                                                                                                       |
-|--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | CHESTER-A1   | AC/DC converter for 110/230 V power supply                                                                                                               |
 | CHESTER-A1A  | AC/DC converter for 110/230 V power supply with two 230V/16A power relays                                                                                |
 | CHESTER-G1   | 8-channel galvanically isolated input module with isolated DC/DC power supply                                                                            |
@@ -64,7 +64,7 @@ These carrier boards require a larger enclosure.
 :::
 
 | Module Name  | Module Description                                                                                                                                                     |
-|--------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | CHESTER-B1   | Battery holders for up to either 6x D-cell or 8x C-cell sized batteries + off-mainboard LED                                                                            |
 | CHESTER-B1-W | Battery holders for up to either 6x D-cell or 8x C-cell sized batteries + off-mainboard LED + wireless M-Bus (wM-Bus)                                                  |
 | CHESTER-C1   | Interface board with DC/DC converter, 2x power relay, 1-Wire terminals, 4x digital/analog inputs, and RS-485 interfaces + battery holder for 4x C-cell sized batteries |
