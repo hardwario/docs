@@ -8,7 +8,7 @@ import TabItem from '@theme/TabItem';
 
 # SEGGER J-Link
 
-This article provides information on **SEGGER J-Link** debugger tool. 
+This article provides information on **SEGGER J-Link** debugger tool.
 
 ## Requirements
 
@@ -74,7 +74,7 @@ You will need the following hardware and software tools:
 
 * Python application bundle **HARDWARIO Command Line Tools**
 
-## Instalation 
+## Instalation
 
 You can install **HARDWARIO Command Line Tools** with these steps:
 
@@ -83,7 +83,7 @@ You can install **HARDWARIO Command Line Tools** with these steps:
    * Download [**64-bit Intel/AMD installer**](https://www.segger.com/downloads/jlink/JLink_Windows_x86_64.exe)
 
    * Download [**32-bit Intel/AMD installer**](https://www.segger.com/downloads/jlink/JLink_Windows.exe)
-   
+
    * Download [**64-bit ARM installer**](https://www.segger.com/downloads/jlink/JLink_Windows_arm64.exe)
 
    :::caution
@@ -132,7 +132,7 @@ You can install **HARDWARIO Command Line Tools** with these steps:
    hardwario.common v1.7.2
    hardwario.hardwario v1.3.1
    ```
-## **SEGGER J-Link to APP port connection**
+## SEGGER J-Link to APP Port Connection
 
 <div class="container">
     <div class="row">
@@ -143,9 +143,9 @@ You can install **HARDWARIO Command Line Tools** with these steps:
     </div>
   </div>
 </div>
-<br /> 
+<br />
 
-## **SEGGER J-Link to LTE port connection**
+## SEGGER J-Link to LTE Port Connection
 
 <div class="container">
     <div class="row">
@@ -156,9 +156,9 @@ You can install **HARDWARIO Command Line Tools** with these steps:
     </div>
   </div>
 </div>
-<br /> 
+<br />
 
-## **SEGGER J-Link to LRW port connection**
+## SEGGER J-Link to LRW Port Connection
 
 <div class="container">
     <div class="row">
@@ -169,4 +169,4 @@ You can install **HARDWARIO Command Line Tools** with these steps:
     </div>
   </div>
 </div>
-<br /> 
+<br />

@@ -52,7 +52,7 @@ set(ENV{FW_VERSION} "v1.5.0")
 
 :::
 
-## Firmware upload
+## Firmware Upload
 
 You can also use **HARDWARIO CLI** upload function, so the firmware is uploaded to your **HARDWARIO Cloud** account, and you can share firmware with your customers with a **QR Code**, **URL**, or by **e-mail**.
 
