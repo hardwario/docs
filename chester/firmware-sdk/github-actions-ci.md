@@ -14,17 +14,12 @@ This chapter focuses on creating and understanding Github Actions Workflow for y
 
 ## Requesting Access to Skeleton Application and SDK
 
-You will need access to our **Application Skeleton** and **Chester SDK** and download both of these. For this please [**Contact us**](https://www.hardwario.com/contact/).
+You will need access to our **Application Skeleton** and **Chester SDK** and download the **Skeleton**. For this please [**Contact us**](https://www.hardwario.com/contact/).
 
 ## Creating a GitHub Repository
 
-To begin with your application development you will need your own [**Private Repository on GitHub.**](https://github.com/new)
+To begin with your application development you will need your own [**Repository on GitHub.**](https://github.com/new)
 
-:::warning
-
-Your repository must be **Private**
-
-:::
 
 After you create your repository you will get a set of commands to execute so your repository is correctly set up. It will look something like this: (You just need to replace the URL)
 
@@ -36,17 +31,6 @@ git branch -M main
 git remote add origin YOUR_REPOSITORY_URL
 git push -u origin main
 ```
-
-:::important
-
-You will need to do this for **Skeleton App** and for **SDK** too.
-
-**Skeleton app** repository can be named however you like.
-
-For **SDK**, you will have to name the repository so it is the same as for the name in the `west.yml` file located in the **Skeleton app** repository.
-The full path to the **SDK** repository name in the `west.yml` is `manifest.projects.name`.
-
-:::
 
 ## Workflow File
 
@@ -78,11 +62,17 @@ on:
 
 ### Setup Env
 
-We will use **hardwario console** to upload the final firmware to the cloud so it can be sent to you via email. For this, you will need to set up **HARDWARIO Cloud Token**.
+We will use **hardwario console** to upload the final firmware to the cloud so it can be sent to you via email. For this, you will need to set up **HARDWARIO Cloud Token**. You will also need to generate SSH keys and add them to your GitLab and GitHub.
 
+#### HARDWARIO Cloud Token
 To get your Token go to [**HARDWARIO Cloud**](https://hardwario.cloud/#/login), log in and in the side menu select **Profile**. You should see **API token**, click **Copy** next to it and go back to GitHub Repository.
 
-Back in the repository go to **Settings**. In the side menu click on **Secrets and variables** and then **Actions**. Create **New Repository Secret**, name it `HARDWARIO_CLOUD_TOKEN` and paste your **Cloud API Token** as the **Secret**.
+Back in the repository go to **Settings**. In the side menu, click on **Secrets and variables** and then **Actions**. Create **New Repository Secret**, name it `HARDWARIO_CLOUD_TOKEN` and paste your **Cloud API Token** as the **Secret**.
+
+#### SSH Key
+
+#### SSH Known Hosts
+
 
 ```
 env:
@@ -116,6 +106,17 @@ The checkout step ensures that your repository is cloned onto the runner machine
         path: vendor
 ```
 
+We need to setup SSH key for CI to be able to access the SDK repository on HARDWARIO GitLab. We will
+
+```
+    - name: Install SSH key
+      uses: shimataro/ssh-key-action@v2
+      with:
+        key: ${{ secrets.SSH_KEY }}
+        name: id_rsa
+        known_hosts: ${{ secrets.KNOWN_HOSTS }}
+```
+
 Next, the runner will install **HARDWARIO** python package that is needed for the firmware upload to the cloud.
 
 ```
@@ -123,46 +124,14 @@ Next, the runner will install **HARDWARIO** python package that is needed for th
       run: pip install hardwario
 ```
 
-The next step is to prepare the `west.yml` file for CI by replacing the normal data with GitHub Access Token.
-
-For this step to work properly, your `west.yml` file should look something like this:
+The next steps take care of initializing West and updating it to the latest version.
 
 ```
-manifest:
-  version: "0.12"
-  remotes:
-    - name: hardwario
-      url-base: git@github.com:USERNAME_OR_ORGANIZATION
-  projects:
-    - name: YOUR_SDK_REPOSITORY_NAME.git
-      remote: hardwario
-      revision: main
-      path: chester
-      import: true
-  self:
-    path: application
-```
+    - name: Initialize West workspace
+      run: west init -l --mf west.yml vendor
 
-You will need to create a secret the same way as you did with the [`HARDWARIO_CLOUD_TOKEN`](#setup-env). This time the secret will have the name `CI_TOKEN`.
-You will have to [**create the Access Token**](https://docs.github.com/en/enterprise-server@3.4/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#creating-a-personal-access-token). After you create it, just copy and paste it into the `CI_TOKEN` secret.
-
-The last thing you need to do in this step is to replace the `USERNAME_OR_ORGANIZATION` with the name of the **organization** or **user** that is an **owner of both repositories** (Skeleton and SDK).
-
-```
-    - name: Patch west.yml file
-      run: |
-        sed -r -i'' "s/git@github.com:USERNAME_OR_ORGANIZATION/https:\/\/${{secrets.CI_TOKEN}}@github.com\/USERNAME_OR_ORGANIZATION/g" vendor/west.yml
-        cat vendor/west.yml
-```
-
-The next steps take care of configuring west as set up in the previous step and setting the development board to **Chester**.
-
-```
-    - name: Configure West
-      run: |
-        west init -l --mf west.yml vendor
-        west update
-        west config build.board chester_nrf52840
+    - name: Synchronize West workspace
+      run: west update
 ```
 
 Finally, this step will build the application and create the final firmware with the firmware name set to the name of repository and version to the release tag name
@@ -183,14 +152,11 @@ The tag name needs to be in the format `vMAJOR.MINOR.PATCH` for example `v1.0.0`
 
 :::
 
-The second one is executed every time some changes are pushed into the repository. This firmware will always have the version set to `v0.0.1`.
-
 ```
     - name: Upload application
       if: ${{ github.event_name == 'release' }}
-      run: |
-        cd vendor/application/build
-        hardwario chester app fw upload --name ${{ github.event.repository.name }} --version ${{ github.event.release.tag_name }}
+      working-directory: vendor/application
+      run: hardwario chester app fw upload --name ${{ github.event.repository.name }} --version ${{ github.event.release.tag_name }}
 ```
 
 :::info
@@ -240,30 +206,31 @@ jobs:
       with:
         path: vendor
 
+    - name: Install SSH key
+      uses: shimataro/ssh-key-action@v2
+      with:
+        key: ${{ secrets.SSH_KEY }}
+        name: id_rsa
+        known_hosts: ${{ secrets.KNOWN_HOSTS }}
+
     - name: Install HARDWARIO package
       run: pip install hardwario
 
-    - name: Patch west.yml file
-      run: |
-        sed -r -i'' "s/git@github.com:USERNAME_OR_ORGANIZATION/https:\/\/${{secrets.CI_TOKEN}}@github.com\/USERNAME_OR_ORGANIZATION/g" vendor/west.yml
-        cat vendor/west.yml
+    - name: Initialize West workspace
+      run: west init -l --mf west.yml vendor
 
-    - name: Configure West
-      run: |
-        west init -l --mf west.yml vendor
-        west update
-        west config build.board chester_nrf52840
+    - name: Synchronize West workspace
+      run: west update
 
     - name: Build application
       env:
         FW_NAME: ${{ github.event.repository.name }}
         FW_VERSION: ${{ github.event.release.tag_name }}
-      run: west build -d vendor/application/build vendor/application
+      run: west build -b chester_nrf52840 -d vendor/application/build vendor/application
 
     - name: Upload application
       if: ${{ github.event_name == 'release' }}
       working-directory: vendor/application
       run: hardwario chester app fw upload --name ${{ github.event.repository.name }} --version ${{ github.event.release.tag_name }}
-
 ```
 
