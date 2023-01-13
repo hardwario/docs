@@ -8,7 +8,7 @@ import Image from '@theme/IdealImage';
 
 This article describes the core functionality, hardware description, default configuration, example JSON message, and channel calibration of the catalog application **CHESTER Current**.
 
-:::caution
+:::danger
 
 When upgrading firmware from v1.5.2 or older to version v1.6.0 and newer - it is necessary to [backup channel configuration and calibration coefficients](chester-current.md#calibration-backup).
 
@@ -292,7 +292,7 @@ app config w1-therm-interval-aggreg <1-86400>
 
 ## Firmware
 
-:::caution
+:::danger
 
 When upgrading firmware from v1.5.2 or older to version v1.6.0 and newer - it is necessary to [backup channel configuration and calibration coefficients](chester-current.md#calibration-backup).
 
@@ -568,7 +568,7 @@ The latest firmware is available in Catalog Applications [Firmware chapter](inde
 
 ## Channel Calibration
 
-:::caution
+:::danger
 
 When upgrading firmware from v1.5.2 or older to version v1.6.0 and newer - it is necessary to [backup channel configuration and calibration coefficients](chester-current.md#calibration-backup).
 
