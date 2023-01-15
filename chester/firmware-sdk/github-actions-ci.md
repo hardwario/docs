@@ -94,11 +94,17 @@ You will be prompted to select password but leave it empty as CI can't use it la
 
 There should be two files created in the location that you set while creating the key. One should be without a file extension, which is your private key, and the second one should have an extension `.pub`, which is your public key.
 
+:::tip
+
+If you pressed enter for every prompt after running the command above, the files should be named `id_rsa`(private key) and `id_rsa.pub`(public key)
+
+:::
+
 Open the file without the extension in your preferred text editor or use `cat` command if you have it (the file should start with `-----BEGIN OPENSSH PRIVATE KEY-----`). Go to the GitHub Actions secrets, same [**as in the previous step with HARDWARIO Cloud Token**](#hardwario-cloud-token) and create a new secret named `SSH_KEY`. Paste the contents of the file as the secret value and click **Add Secret**.
 
 You can also add another secret named `SSH_HOST` with the value of `https://gitlab.hardwario.com`.
 
-Finally, go to [our GitLab](https://gitlab.hardwario.com) and log in. In the top right corner click on your **Profile** and select **Preferneces**. In the **Side Menu** select **SSH Keys** and paste the contents of the second generated file, the one with the extension `.pub` into the **Key field** (the file should start with something like `ssh-rsa`). You can name it however you want, set an expiration date and click **Add key**.
+Finally, go to [**our GitLab**](https://gitlab.hardwario.com) and log in. In the top right corner click on your **Profile** and select **Preferneces**. In the **Side Menu** select **SSH Keys** and paste the contents of the second generated file, the one with the extension `.pub` into the **Key field** (the file should start with something like `ssh-rsa`). You can name it however you want, set an expiration date and click **Add key**.
 
 #### SSH Known Hosts
 
