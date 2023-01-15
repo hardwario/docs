@@ -69,15 +69,48 @@ To get your Token go to [**HARDWARIO Cloud**](https://hardwario.cloud/#/login), 
 
 Back in the repository go to **Settings**. In the side menu, click on **Secrets and variables** and then **Actions**. Create **New Repository Secret**, name it `HARDWARIO_CLOUD_TOKEN` and paste your **Cloud API Token** as the **Secret**.
 
-#### SSH Key
-
-#### SSH Known Hosts
-
+Add this to your workflow file
 
 ```
 env:
   HARDWARIO_CLOUD_TOKEN: ${{ secrets.HARDWARIO_CLOUD_TOKEN }}
 ```
+
+#### SSH Key
+
+This key will be used to access SDK repository on our GitLab
+
+You need to generate the key by running the following command in your terminal
+
+```
+ssh-keygen -t rsa -b 4096 -C "CI_TOKEN"
+```
+
+:::important
+
+You will be prompted to select password but leave it empty as CI can't use it later
+
+:::
+
+There should be two files created in the location that you set while creating the key. One should be without a file extension, which is your private key, and the second one should have an extension `.pub`, which is your public key.
+
+Open the file without the extension in your preferred text editor or use `cat` command if you have it (the file should start with `-----BEGIN OPENSSH PRIVATE KEY-----`). Go to the GitHub Actions secrets, same [**as in the previous step with HARDWARIO Cloud Token**](#hardwario-cloud-token) and create a new secret named `SSH_KEY`. Paste the contents of the file as the secret value and click **Add Secret**.
+
+You can also add another secret named `SSH_HOST` with the value of `https://gitlab.hardwario.com`.
+
+Finally, go to [our GitLab](https://gitlab.hardwario.com) and log in. In the top right corner click on your **Profile** and select **Preferneces**. In the **Side Menu** select **SSH Keys** and paste the contents of the second generated file, the one with the extension `.pub` into the **Key field** (the file should start with something like `ssh-rsa`). You can name it however you want, set an expiration date and click **Add key**.
+
+#### SSH Known Hosts
+
+The last secret that you have to add is `KNOWN_HOSTS`.
+
+You will need to run another command in your terminal
+
+```
+ssh-keyscan gitlab.hardwario.com
+```
+
+Paste everything that you get from that command as the secret value and click **Add Secret**.
 
 ### CI Job
 
@@ -106,7 +139,7 @@ The checkout step ensures that your repository is cloned onto the runner machine
         path: vendor
 ```
 
-We need to setup SSH key for CI to be able to access the SDK repository on HARDWARIO GitLab. We will
+We need to setup SSH key for CI to be able to access the SDK repository on HARDWARIO GitLab. We will use the secrets that you created in the [**Setup Env**](#setup-env) step
 
 ```
     - name: Install SSH key
@@ -134,14 +167,14 @@ The next steps take care of initializing West and updating it to the latest vers
       run: west update
 ```
 
-Finally, this step will build the application and create the final firmware with the firmware name set to the name of repository and version to the release tag name
+Finally, this step will build the application and create the final firmware with the firmware name set to the name of repository and version to the release tag name.
 
 ```
     - name: Build application
       env:
         FW_NAME: ${{ github.event.repository.name }}
         FW_VERSION: ${{ github.event.release.tag_name }}
-      run: west build -d vendor/application/build vendor/application
+      run: west build -b chester_nrf52840 -d vendor/application/build vendor/application
 ```
 
 The last step is executed when the **release of the application is made**. This will add the tag name as the firmware version.
