@@ -16,19 +16,41 @@ This article describes the CHESTER-X0 extension module. Two variant of the CHEST
 
 CHESTER-X0B provides 4 independent GPIO channels, CHESTER-X0A includes also 5V boost converter. Each channel can be used for these applications:
 
-* Digital and analog input and output
-* 0-10 V voltage input
-* 4-20 mA current loop
+* Digital input and output
+* Analog input and output
+* Voltage input 0-10 V
+* Current loop 4-20 mA
 * Dry contact input
 * NPN and PNP input
 
 Depending on the application these configuration options are available for each channel:
 
-* Enable pull-up resistor 330 kΩ
-* Enable pull-down resistor 249 Ω
-* Enable voltage divider 1:10 (100 kΩ, 10 kΩ)
-* Enable 5V boost converter (CHESTER-X0A only)
-  
+* Enable pull-up resistor 330 kΩ (PUX)
+* Enable pull-down resistor 249 Ω (CLX)
+* Enable voltage divider 1:10 100 kΩ x 10 kΩ (PDX)
+* Enable 5V boost converter (CHESTER-X0A only) (ONX)
+
+## Channel Block Diagram
+
+This picture show the electric circuit of each channel:
+
+<Image img={require('./sc-chester-x0.png')} />
+
+## Configuration Table
+
+The configuration depends on the applicatioon:
+
+| Application:         | PUx | CLx | PDx |
+| -------------------- | --- | --- | --- |
+| Analog input 0-10V   | ❌   | ✅   | ❌   |
+| Analog output 0-VDD  | ❌   | ❌   | ❌   |
+| Digital input        | ❌   | ?   | ❌   |
+| Digital output       | ❌   | ❌   | ❌   |
+| Current loop 4-20 mA | ❌   | ✅   | ✅   |
+| Dry contact          | ✅   | ❌   | ❌   |
+| NPN input            | ✅   | ❌   | ❌   |
+| PNP input            | ❌   | ❌   | ✅   |
+
 ## Pin Configuration Diagram
 
 <Image img={require('./tb-chester-x0.png')} />
@@ -46,46 +68,4 @@ Depending on the application these configuration options are available for each 
 | 7        | CH4         | Channel 4                |
 | 8        | +V          | System positive rail (*) |
 
-(*)Note: The system positive rail voltage depends on CHESTER power supply option.
-
-## Analog Outpup Configuration
-
-* Disable pull-up resistor 330 kΩ
-* Disable pull-down resistor 249 Ω
-* Disable voltage divider 1:10 (100 kΩ, 10 kΩ)
-* Disable 5V boost converter (CHESTER-X0A only)
-
-## Analog Input Configuration
-
-* Disable pull-up resistor 330 kΩ
-* Disable pull-down resistor 249 Ω
-* Disable voltage divider 1:10 (100 kΩ, 10 kΩ)
-* Disable 5V boost converter (CHESTER-X0A only)
-
-## Current Loop 4-20 mA Configuration
-
-* Disable pull-up resistor 330 kΩ
-* Enable pull-down resistor 249 Ω
-* Enable voltage divider 1:10 (100 kΩ, 10 kΩ)
-* Disable 5V boost converter (CHESTER-X0A only)
-
-## Dry Contact Configuration
-
-* Enable pull-up resistor 330 kΩ
-* Disable pull-down resistor 249 Ω
-* Disable voltage divider 1:10 (100 kΩ, 10 kΩ)
-* Disable 5V boost converter (CHESTER-X0A only)
-
-## NPN Input Configuration
-
-* Enable pull-up resistor 330 kΩ
-* Disable pull-down resistor 249 Ω
-* Disable voltage divider 1:10 (100 kΩ, 10 kΩ)
-* Disable 5V boost converter (CHESTER-X0A only)
-
-## PNP Input Configuration
-
-* Disable pull-up resistor 330 kΩ
-* Disable pull-down resistor 249 Ω
-* Enable voltage divider 1:10 (100 kΩ, 10 kΩ)
-* Disable 5V boost converter (CHESTER-X0A only)
+*Note: The system positive rail voltage depends on CHESTER power supply option.
