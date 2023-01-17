@@ -18,20 +18,19 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Hardware Description',
+      label: 'Catalog Applications',
       link: {
-        type: 'generated-index',
+        type: 'doc',
+        id: 'catalog-applications/index',
       },
-      collapsed: true,
+      collapsed: false,
       items: [
-        'hardware-description/basic-parameters',
-        'hardware-description/block-diagram',
-        'hardware-description/connector-description',
-        'hardware-description/i2c-address-space',
-        'hardware-description/enclosures',
+        'catalog-applications/chester-clime',
+        'catalog-applications/chester-current',
+        'catalog-applications/chester-input',
+        'catalog-applications/chester-push'
       ],
     },
-    'power-mgmt',
     {
       type: 'category',
       label: 'Extension Modules',
@@ -56,19 +55,20 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Catalog Applications',
+      label: 'Hardware Description',
       link: {
-        type: 'doc',
-        id: 'catalog-applications/index',
+        type: 'generated-index',
       },
       collapsed: true,
       items: [
-        'catalog-applications/chester-clime',
-        'catalog-applications/chester-current',
-        'catalog-applications/chester-input',
-        'catalog-applications/chester-push'
+        'hardware-description/basic-parameters',
+        'hardware-description/block-diagram',
+        'hardware-description/connector-description',
+        'hardware-description/i2c-address-space',
+        'hardware-description/enclosures',
       ],
     },
+    'power-mgmt',
     {
       type: 'category',
       label: 'Firmware Flashing',

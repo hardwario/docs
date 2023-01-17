@@ -11,17 +11,17 @@ This documentation helps users and gateway integrators to navigate these essenti
 * How to configure and manage the platform - see the article:<br/>
   [**Platform Management**](./platform-management/index.md)
 
+* What ready-made firmware applications are available (with devices in stock) - see the article:<br/>
+  [**Catalog Applications**](./catalog-applications/index.md)
+
+* Which sensors and environments can be connected to the platform and how - see the article:<br/>
+  [**Extension Modules**](./extension-modules/index.md)
+
 * What are the main parts and parameters of the **CHESTER** platform - see the article:<br/>
   [**Hardware Description**](category/hardware-description)
 
 * What are the platform's powering options - see the article:<br/>
   [**Power Management**](./power-mgmt.md)
-
-* Which sensors and environments can be connected to the platform and how - see the article:<br/>
-  [**Extension Modules**](./extension-modules/index.md)
-
-* What ready-made firmware applications are available (with devices in stock) - see the article:<br/>
-  [**Catalog Applications**](./catalog-applications/index.md)
 
 * For the options to upload device firmware - see the article:<br/>
   [**Firmware Flashing**](./firmware-flashing/index.md)
