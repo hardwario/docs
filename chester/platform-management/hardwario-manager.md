@@ -16,14 +16,13 @@ This article will provide information on how to manage **CHESTER** devices with 
 
 <TabItem value="android" label="Android" default>
 
-You can download the app from [here](https://play.google.com/store/apps/details?id=com.hardwario.manager)
+Download the Android [HARDWARIO Manager](https://play.google.com/store/apps/details?id=com.hardwario.manager) app.
 
 </TabItem>
 
 <TabItem value="ios" label="iOS">
 
-<!-- You can download app from [here](https://play.google.com/store/apps/details?id=com.hardwario.manager) -->
-Support for iOS will be added soon.
+Download the iOS [HARDWARIO Manager](https://apps.apple.com/cz/app/hardwario-manager/id6444803082) app.
 
 </TabItem>
 
