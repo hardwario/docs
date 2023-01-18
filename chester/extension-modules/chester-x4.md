@@ -6,4 +6,30 @@ import Image from '@theme/IdealImage';
 
 # CHESTER-X4
 
+This article describes the CHESTER-X4
+
+## Module Drawing
+
+<Image img={require('./pc-chester-x4.png')} />
+
+## Module Overview
+CHESTER-X4 implements stepdown DC/DC converter providing power from an external 6-28 VDC line (VIN). It allows also the input voltage measaurement. This module has also 4 P-MOS switchis allowing to control independent loads from VIN voltage input.
+
+## CHESTER Pin Configuration Diagram
+
 <Image img={require('./tb-chester-x4.png')} />
+
+## Pin Configuration and Functions
+
+| Position | Signal Name | Signal Description                    |
+| -------- | ----------- | ------------------------------------- |
+| 1        | GND         | System ground signal                  |
+| 2        | CH1         | Channel 1 voltage output switch       |
+| 3        | CH2         | Channel 2 voltage output switch       |
+| 4        | CH3         | Channel 3 voltage output switch       |
+| 5        | CH4         | Channel 3 voltage output switch       |
+| 6        | GND         | System ground signal                  |
+| 7        | GND         | System ground signal                  |
+| 8        | VIN         | DC power supply voltage input (6-28V) |
+
+*Note: The system positive rail voltage depends on CHESTER power supply option.
