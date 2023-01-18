@@ -10,6 +10,12 @@ import TabItem from '@theme/TabItem';
 
 This article will provide information on how to manage **CHESTER** devices with **HARDWARIO Manager** application.
 
+**HADRWARIO Manager** mobile app allows you to:
+
+- Show device information
+- Configure the device over the terminal
+- Update device firmware
+
 ## App Installation
 
 <Tabs groupId="mobile-platform">
@@ -28,7 +34,11 @@ Download the iOS [HARDWARIO Manager](https://apps.apple.com/cz/app/hardwario-man
 
 </Tabs>
 
+## Scan List
+
 When you open **HARDWARIO Manager**, you will see the **SCAN LIST** page. Here you will see nearby devices, which use Bluetooth-enabled applications.
+
+Choose a device from the list to connect, or use a **QR code** button in the top right corner. This **QR code** feature can be used only if you already know the **BLE passkey** or your device is already paired with the phone. Otherwise, follow instructions from the next [Device Pairing](#device-pairing) chapter.
 
 <div class="container">
   <div class="row">
@@ -43,14 +53,19 @@ When you open **HARDWARIO Manager**, you will see the **SCAN LIST** page. Here y
 
 ## Device Pairing
 
-To manage your **CHESTER** device, you have to connect to it via Bluetooth. Every device has a **unique** pairing passkey, which you can obtain if you scan the QR on the back side of your device.
+To manage your **CHESTER** device, you have to connect to it via Bluetooth. Every device has a **unique** pairing passkey, which you can obtain if you scan the QR on the back side of your device. Use your favorite QR scan app or camera app to read **QR code** on the back of the **CHESTER** device. This **QR code** will open a webpage that contains the **BLE passkey**, which you need to pair with your phone.
 
 :::caution
 You can't use the built-in QR code reader in **HARDWARIO Manager** app.
 :::
 
+## App Menu
 
-## General Information
+When you connect to **CHESTER**, you can use a menu to browse the following categories
+
+### Show Information
+
+This page shows basic information about hardware version, variant, firmware version and device uptime.
 
 <div class="container">
   <div class="row">
@@ -65,11 +80,11 @@ You can't use the built-in QR code reader in **HARDWARIO Manager** app.
 
 :::tip
 
-If the firmware application is supported by **HARDWARIO MANAGER**, the **OPEN APPLICATiON** button appears at the bottom of the information page.
+If the firmware application is supported by **HARDWARIO MANAGER**, the **OPEN APPLICATION** button appears at the bottom of the information page.
 
 :::
 
-## Command Terminal
+### Command Terminal
 
 The purpose of the **Command Terminal** is to easily make changes in the settings of your app or find out what setting is applied.
 
@@ -95,7 +110,7 @@ Anytime when you feel lost, just type the **help** command.
 
 :::
 
-## Firmware Update
+### Firmware Update
 
 You can update your **CHESTER** device via this page. You can find pre-built apps for catalog applications [here](./catalog-applications#application-firmware) or you will receive a link to your custom build firmware via e-mail.
 
@@ -111,7 +126,7 @@ Click on **SCAN QR CODE** to get the link to firmware **(1)**. When you do so an
   </div>
 </div>
 
-## Device Reboot
+### Device Reboot
 
 This screen will let you remotely restart your device.
 
