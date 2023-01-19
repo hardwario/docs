@@ -13,21 +13,42 @@ HARDWARIO command line tool allows you to:
 - Access **Product Information Block** (PIB) in UICR flash memory that contains **HARDWARIO Serial Number** (HSN) and other parameters
 - Update modem firmware (NRF9160)
 
-## Setup
+## Install Python
 
-**HARDWARIO CLI** is a **Python 3** tool. Please follow the steps below based on your operating system.
+**HARDWARIO CLI** is a **Python 3** tool. Please install Python by following the steps below based on your operating system.
 
-### Ubuntu
+- **Ubuntu** - Python 3 should already be installed on your OS.
 
-Python 3 should already be installed on your OS.
+- **macOS** - Follow the [Install Packages](firmware-sdk/../../firmware-sdk/install-macos.md#install-package-manager) chapter to install Homebrew. Then run `brew install python3`.
 
-### macOS
+- **Windows** - Follow the [Install Python](firmware-sdk/../../firmware-sdk/install-windows.md#install-python) chapter.
 
-Follow the [Install Packages](firmware-sdk/../../firmware-sdk/install-macos.md#install-package-manager) chapter to install Homebrew. Then run `brew install python3`.
+## Install HARDWARIO CLI
 
-### Windows
+:::caution
 
-Follow the [Install Python](firmware-sdk/../../firmware-sdk/install-windows.md#install-python) chapter.
+We strongly suggest using Python virtual environment as explained in Installation articles for [Ubuntu](../firmware-sdk/install-ubuntu.md), [macOS](../firmware-sdk/install-macos.md) and [Windows](../firmware-sdk/install-windows.md). This helps to prevent conflicts with the dependencies of another package.
+
+However, if you use/install Python only for HARDWARIO CLI, there should not be any Python package conflicts.
+:::
+
+Install HARDWARIO CLI by typing the following command in your terminal:
+
+```
+pip install hardwario
+```
+
+After installation, try to run the following:
+
+```hardwario --version```
+
+you should get a similar response:
+
+```
+hardwario.chester v1.23.0
+hardwario.cloud v1.4.1
+hardwario.common v1.7.2
+```
 
 ## APP/BLE Application Firmware
 
