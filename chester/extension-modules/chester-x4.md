@@ -13,7 +13,7 @@ This article describes the CHESTER-X4
 <Image img={require('./pc-chester-x4.png')} />
 
 ## Module Overview
-CHESTER-X4 implements stepdown DC/DC converter providing power from an external 6-28 VDC line (VIN). It allows also the input voltage measaurement. This module has also 4 P-MOS switchis allowing to control independent loads from VIN voltage input.
+CHESTER-X4 implements stepdown DC/DC converter providing power from an external 6-28 VDC line (VIN). It allows also the input voltage measaurement. This module has also 4 P-MOS switchis allowing to supply independent loads from VIN voltage input.
 
 ## CHESTER Pin Configuration Diagram
 
