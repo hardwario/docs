@@ -37,8 +37,8 @@ CHESTER-X3C provides 2 inputs for load-cell (strain gauge) that can be used for 
 | 3        | CH1B        | Channel 1: sensor input B          |
 | 4        | CH1M        | Channel 1: sensor neagative supply |
 | 5        | CH2P        | Channel 2: sensor positive supply  |
-| 6        | CH2A        | Channel 2: input A                 |
-| 7        | CH2B        | Channel 2: input B                 |
+| 6        | CH2A        | Channel 2: sensor input A          |
+| 7        | CH2B        | Channel 2: sensor input B          |
 | 8        | CH2M        | Channel 2: sensor neagative supply |
 
 *Note: The system positive rail voltage depends on CHESTER power supply option.
