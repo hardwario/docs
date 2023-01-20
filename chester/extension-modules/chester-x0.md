@@ -51,7 +51,7 @@ The configuration depends on the applicatioon:
 | NPN input            | ✅   | ❌   | ❌   |
 | PNP input            | ❌   | ❌   | ✅   |
 
-## Pin Configuration Diagram
+## CHESTER Pin Configuration Diagram
 
 <Image img={require('./tb-chester-x0.png')} />
 

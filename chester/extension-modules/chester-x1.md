@@ -16,7 +16,7 @@ This article describes the CHESTER-X1 extension module.
 
 CHESTER-X1 provides 8 independent 1-Wire channels allowing to connect digital  sensors ( e.g. Dallas DS18B20) or any othe 1-Wire peripheries. The module implements Maxim DS2482S-800+ interface and also 5V boost converter to support 5V 1-Wire peripheries.
 
-## Pin Configuration Diagram
+## CHESTER Pin Configuration Diagram
 
 <Image img={require('./tb-chester-x1.png')} />
 

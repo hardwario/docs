@@ -6,7 +6,7 @@ import Image from '@theme/IdealImage';
 
 # CHESTER-X4
 
-This article describes the CHESTER-X4
+This article describes the CHESTER-X4 extension module.
 
 ## Module Drawing
 
@@ -31,5 +31,3 @@ CHESTER-X4 implements stepdown DC/DC converter providing power from an external 
 | 6        | GND         | System ground signal                  |
 | 7        | GND         | System ground signal                  |
 | 8        | VIN         | DC power supply voltage input (6-28V) |
-
-*Note: The system positive rail voltage depends on CHESTER power supply option.
