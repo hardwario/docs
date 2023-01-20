@@ -90,6 +90,20 @@ See [**Ordering Codes**](../ordering-codes.md) for more details.
 
 Firmware build shield options: `ctr_lte ctr_ds18b20`
 
+### CHESTER Clime RTD
+
+The catalog application **CHESTER Clime RTD** supports two external Pt1000 4-wire temperature sensors.
+
+The hardware of this application consists of the following ordering codes:
+
+* `CHESTER-M-BCGLS` - Standard mainboard
+* `CHESTER-X3A:A` - 2x Pt100/Pt1000 interface
+* `CHESTER-E7-LP` - Enclosure with SMA pigtail
+
+See [**Ordering Codes**](../ordering-codes.md) for more details.
+
+Firmware build shield options: `ctr_lte ctr_rtd_a`
+
 ## Measurement and Behavior
 
 - All sensors are **sampled** with a configurable period (parameter `interval-sample`).
@@ -151,6 +165,7 @@ In this example **JSON** you can see data from all three variants
 - **CHESTER Clime** has its own `hygrometer` structure.
 - **CHESTER Clime IAQ**  has its own `iaq_sensor` structure.
 - **CHESTER Clime 1W** has its own `w1_thermometers` structure.
+- **CHESTER Clime RTD** has its own `rtd_thermometers` structure.
 
 In each structure with the current configuration, there are six aggregated values. Each aggregated value has its timestamp and is computed from multiple samples, and `min`, `max`, `avg`, and `mdn` values are calculated.
 
@@ -631,6 +646,102 @@ In each structure with the current configuration, there are six aggregated value
   "w1_thermometers": [
     {
       "serial_number": 170787196,
+      "measurements": [
+        {
+          "timestamp": 1668857742,
+          "min": 22.18,
+          "max": 22.25,
+          "avg": 22.23,
+          "mdn": 22.25
+        },
+        {
+          "timestamp": 1668858042,
+          "min": 22.18,
+          "max": 22.18,
+          "avg": 22.18,
+          "mdn": 22.18
+        },
+        {
+          "timestamp": 1668858342,
+          "min": 22.18,
+          "max": 22.18,
+          "avg": 22.18,
+          "mdn": 22.18
+        },
+        {
+          "timestamp": 1668858642,
+          "min": 22.12,
+          "max": 22.18,
+          "avg": 22.17,
+          "mdn": 22.18
+        },
+        {
+          "timestamp": 1668858942,
+          "min": 22.18,
+          "max": 22.18,
+          "avg": 22.18,
+          "mdn": 22.18
+        },
+        {
+          "timestamp": 1668859242,
+          "min": 22.18,
+          "max": 22.18,
+          "avg": 22.18,
+          "mdn": 22.18
+        }
+      ]
+    }
+  ],
+    "rtd_thermometers": [
+    {
+      "channel": 1,
+      "measurements": [
+        {
+          "timestamp": 1668857742,
+          "min": 22.18,
+          "max": 22.25,
+          "avg": 22.23,
+          "mdn": 22.25
+        },
+        {
+          "timestamp": 1668858042,
+          "min": 22.18,
+          "max": 22.18,
+          "avg": 22.18,
+          "mdn": 22.18
+        },
+        {
+          "timestamp": 1668858342,
+          "min": 22.18,
+          "max": 22.18,
+          "avg": 22.18,
+          "mdn": 22.18
+        },
+        {
+          "timestamp": 1668858642,
+          "min": 22.12,
+          "max": 22.18,
+          "avg": 22.17,
+          "mdn": 22.18
+        },
+        {
+          "timestamp": 1668858942,
+          "min": 22.18,
+          "max": 22.18,
+          "avg": 22.18,
+          "mdn": 22.18
+        },
+        {
+          "timestamp": 1668859242,
+          "min": 22.18,
+          "max": 22.18,
+          "avg": 22.18,
+          "mdn": 22.18
+        }
+      ]
+    },
+    {
+      "channel": 2,
       "measurements": [
         {
           "timestamp": 1668857742,
