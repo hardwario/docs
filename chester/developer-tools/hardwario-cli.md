@@ -30,6 +30,7 @@ HARDWARIO command line tool allows you to:
 We strongly suggest using Python virtual environment as explained in Installation articles for [Ubuntu](../firmware-sdk/install-ubuntu.md), [macOS](../firmware-sdk/install-macos.md) and [Windows](../firmware-sdk/install-windows.md). This helps to prevent conflicts with the dependencies of another package.
 
 However, if you use/install Python only for HARDWARIO CLI, there should not be any Python package conflicts.
+
 :::
 
 Install HARDWARIO CLI by typing the following command in your terminal:
@@ -40,7 +41,9 @@ pip install hardwario
 
 After installation, try to run the following:
 
-```hardwario --version```
+```
+hardwario --version
+```
 
 you should get a similar response:
 
@@ -52,7 +55,7 @@ hardwario.common v1.7.2
 
 ## APP/BLE Application Firmware
 
-Connect J-Link to the **APP SWD Port**.
+Connect J-Link to the [APP SWD Port](segger-j-link.md#segger-j-link-to-app-port-connection).
 
 In this chapter, we use the `hardwario chester app` commands. If you type the previous command, the tool will show you all the possible commands so you can explore the options.
 
@@ -67,7 +70,7 @@ Use the command `hardwario chester app flash <parameter>` to flash the firmware.
 The `<parameter>` can be:
 
 - A **BIN** or **HEX** file.
-- A unique ID that was sent to you by email or from our **Catalog Application** firmwares. It has this format `34677881d57f4b0eb85507f176627bee`.
+- A unique ID that was sent to you by email or from our [Catalog Application firmwares](../catalog-applications/index.md#application-firmware). It has this format `34677881d57f4b0eb85507f176627bee`.
 
 ### Processor Reset
 
@@ -93,7 +96,7 @@ You can also use the `write` command in case you delete the PIB by mistake. The 
 
 ## LTE Modem Firmware
 
-Connect J-Link to the **LTE SWD Port**.
+Connect J-Link to the [LTE SWD Port](segger-j-link.md#segger-j-link-to-lte-port-connection).
 
 ### Image Flashing
 
