@@ -1,5 +1,5 @@
 ---
-slug: /connector-description
+slug: connector-description
 title: Connector Description
 ---
 import Image from '@theme/IdealImage';
@@ -29,7 +29,7 @@ The following table lists the signals in the left-to-right order when you flip t
 :::
 
 | Position | Signal Name | Signal Description     | Connection on nRF52840 |
-|:--------:|:-----------:|:-----------------------|:----------------------:|
+| :------: | :---------: | :--------------------- | :--------------------: |
 |    1     |    `+V`     | System positive rail   |           -            |
 |    2     |   `GP3A`    | General purpose I/O    |      `P0.31/AIN7`      |
 |    3     |   `GP2A`    | General purpose I/O    |      `P0.02/AIN0`      |
@@ -49,7 +49,7 @@ The following table lists the signals in the left-to-right order when you flip t
 :::
 
 | Position | Signal Name | Signal Description     | Connection on nRF52840 |
-|:--------:|:-----------:|:-----------------------|:----------------------:|
+| :------: | :---------: | :--------------------- | :--------------------: |
 |    1     |    `+V`     | System positive rail   |           -            |
 |    2     |   `GP3B`    | General purpose I/O    |      `P0.05/AIN3`      |
 |    3     |   `GP2B`    | General purpose I/O    |      `P0.04/AIN2`      |

@@ -1,5 +1,5 @@
 ---
-slug: /hardwario-manager
+slug: hardwario-manager
 title: HARDWARIO Manager
 ---
 import Image from '@theme/IdealImage';
@@ -56,7 +56,7 @@ Choose a device from the list to connect, or use a **QR code** button in the top
 To manage your **CHESTER** device, you have to connect to it via Bluetooth. Every device has a **unique** pairing passkey, which you can obtain if you scan the QR on the back side of your device. Use your favorite QR scan app or camera app to read **QR code** on the back of the **CHESTER** device. This **QR code** will open a webpage that contains the **BLE passkey**, which you need to pair with your phone.
 
 :::caution
-You can't use the built-in QR code reader in **HARDWARIO Manager** app.
+You can't use the built-in QR code reader in **HARDWARIO Manager** app to get the BLE passkey. Use your favorite QR scan app or camera app to read **QR code** to get the BLE passkey to pair your device.
 :::
 
 ## App Menu
@@ -112,7 +112,7 @@ Anytime when you feel lost, just type the **help** command.
 
 ### Firmware Update
 
-You can update your **CHESTER** device via this page. You can find pre-built apps for catalog applications [here](./catalog-applications#application-firmware) or you will receive a link to your custom build firmware via e-mail.
+You can update your **CHESTER** device via this page. You can find [**pre-built binaries**](../catalog-applications/index.md#application-firmware) for catalog applications, or you will receive a link to your custom build firmware via e-mail.
 
 Click on **SCAN QR CODE** to get the link to firmware **(1)**. When you do so and scan a valid QR code, you get information about firmware **(2)**. If this information is OK, you can start flashing by pressing **UPDATE FIRMWARE (3)**. You can click at **START OVER**, if you want to update to different firmware **(4)**.
 

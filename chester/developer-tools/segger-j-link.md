@@ -1,5 +1,5 @@
 ---
-slug: /segger-j-link
+slug: segger-j-link
 title: SEGGER J-Link
 ---
 import Image from '@theme/IdealImage';
@@ -88,7 +88,7 @@ You can install **HARDWARIO Command Line Tools** with these steps:
 
    :::caution
 
-   If you encounter **_An error was reported by NRFJPROG DLL: -101 JLINKARM_DLL_COULD_NOT_BE_OPENED_** please visit [this](./installation-on-ubuntu#set-up-device-rules) page.
+   If you encounter **_An error was reported by NRFJPROG DLL: -101 JLINKARM_DLL_COULD_NOT_BE_OPENED_** please visit [this](../firmware-sdk/installation-on-ubuntu#set-up-device-rules) page.
 
    :::
 

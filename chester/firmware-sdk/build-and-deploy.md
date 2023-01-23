@@ -1,5 +1,5 @@
 ---
-slug: /build-and-deploy
+slug: build-and-deploy
 title: Build and Deploy
 ---
 import Image from '@theme/IdealImage';

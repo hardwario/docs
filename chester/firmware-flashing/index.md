@@ -1,5 +1,5 @@
 ---
-slug: /firmware-flashing
+slug: firmware-flashing
 title: Firmware Flashing
 ---
 import Image from '@theme/IdealImage';
@@ -16,7 +16,7 @@ On the CHESTER mainboard, there are several devices with user-upgradeable firmwa
 
 1. Application + Bluetooth module
 
-   The application module is located in the top left corner of the mainboard. The module encapsulates SoC (System-on-Chip) from Nordic Semiconductor - type nRF52840. This SoC provides 1 MB of flash memory and 256 kB of RAM. Apart from the main application functionality, this SoC hosts Bluetooth radio. Flashing can be done either [using J-Link](./app-j-link.md) through SWD connector labeled as `APP` (or `BLE` on hardware revision R3.2 and earlier) or [via Bluetooth](./app-bluetooth.md) if the running application supports that.
+   The application module is located in the top left corner of the mainboard. The module encapsulates SoC (System-on-Chip) from Nordic Semiconductor - type nRF52840. This SoC provides 1 MB of flash memory and 256 kB of RAM. Apart from the main application functionality, this SoC hosts Bluetooth radio. Flashing can be done either [using J-Link](./application-over-j-link.md) through SWD connector labeled as `APP` (or `BLE` on hardware revision R3.2 and earlier) or [via Bluetooth](application-over-bluetooth.md) if the running application supports that.
 
 1. Cellular IoT (NB-IoT + LTE-M) modem
 

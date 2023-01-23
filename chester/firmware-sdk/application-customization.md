@@ -1,5 +1,5 @@
 ---
-slug: /application-customization
+slug: application-customization
 title: Application Customization
 ---
 import Image from '@theme/IdealImage';
@@ -20,7 +20,7 @@ If your change is generic enough and you believe anybody could benefit from it, 
 
 This flow is based on cloning the **Git** repository and creating your own **Git** branch from the `main` branch (the local `main` branch will be synchronized with the `main` branch from the **CHESTER SDK** remote server).
 
-Below is the minimized set of commands that is extracted from the **CHESTER SDK** installation procedure on [**Ubuntu**](./install-ubuntu.md). The only difference is that we do **NOT** use the `skeleton` **Git** repository as a starting point, but we rather use the **CHESTER SDK** itself as the root repository.
+Below is the minimized set of commands that is extracted from the **CHESTER SDK** installation procedure on [**Ubuntu**](./installation-on-ubuntu.md). The only difference is that we do **NOT** use the `skeleton` **Git** repository as a starting point, but we rather use the **CHESTER SDK** itself as the root repository.
 
 1. Setup the **West** workspace with **CHESTER SDK**:
 
