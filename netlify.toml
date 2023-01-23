@@ -627,3 +627,51 @@
   to = "https://docs.hardwario.com/tower"
   status = 301
   force = true
+
+[[redirects]]
+  from = "https://docs.hardwario.com/chester/chester-x0"
+  to = "https://docs.hardwario.com/chester/extension-modules/chester-x0"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://docs.hardwario.com/chester/chester-x1"
+  to = "https://docs.hardwario.com/chester/extension-modules/chester-x1"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://docs.hardwario.com/chester/chester-x2"
+  to = "https://docs.hardwario.com/chester/extension-modules/chester-x2"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://docs.hardwario.com/chester/chester-x3"
+  to = "https://docs.hardwario.com/chester/extension-modules/chester-x3"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://docs.hardwario.com/chester/chester-x4"
+  to = "https://docs.hardwario.com/chester/extension-modules/chester-x4"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://docs.hardwario.com/chester/chester-x6"
+  to = "https://docs.hardwario.com/chester/extension-modules/chester-x6"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://docs.hardwario.com/chester/chester-x7"
+  to = "https://docs.hardwario.com/chester/extension-modules/chester-x7"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://docs.hardwario.com/chester/hardwario-cli"
+  to = "https://docs.hardwario.com/chester/developer-tools/hardwario-cli"
+  status = 301
+  force = true
