@@ -93,7 +93,7 @@ const sidebars = {
       },
       collapsed: false,
       items: [
-        'developer-tools/hardwario-cli',
+        'developer-tools/command-line-tools',
         'developer-tools/segger-j-link',
         'developer-tools/power-profiler-kit-ii'
       ],

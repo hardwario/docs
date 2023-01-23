@@ -1,10 +1,10 @@
 ---
-slug: hardwario-cli
-title: HARDWARIO CLI
+slug: command-line-tools
+title: Command Line Tools
 ---
 import Image from '@theme/IdealImage';
 
-# HARDWARIO CLI
+# HARDWARIO Command Line Tools
 
 HARDWARIO command line tool allows you to:
 
