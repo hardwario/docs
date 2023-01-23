@@ -1,5 +1,5 @@
 ---
-slug: /application-over-bluetooth
+slug: application-over-bluetooth
 title: Application over Bluetooth
 ---
 import Image from '@theme/IdealImage';
@@ -10,7 +10,7 @@ In this article, you will learn how to use your smartphone to flash application 
 
 :::caution
 
-This method requires a functional Bluetooth-enabled application already running on the CHESTER device. If you cannot see CHESTER in the list of Bluetooth devices, you have to use the [J-Link method](./app-j-link.md).
+This method requires a functional Bluetooth-enabled application already running on the CHESTER device. If you cannot see CHESTER in the list of Bluetooth devices, you have to use the [J-Link method](./application-over-j-link.md).
 
 :::
 

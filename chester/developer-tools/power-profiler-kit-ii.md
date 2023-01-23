@@ -1,5 +1,5 @@
 ---
-slug: /power-profiler-kit-ii
+slug: power-profiler-kit-ii
 title: Power Profiler Kit II
 ---
 import Image from '@theme/IdealImage';
@@ -26,7 +26,7 @@ You can download installation package for your operating system [here](https://w
 
 <Tabs groupId="operating-system">
 <TabItem value="windows" label="Windows" default>
-Run installator and install application. 
+Run installator and install application.
 
 </TabItem>
 <TabItem value="linux" label="Linux">
@@ -43,7 +43,7 @@ Application is in .AppImage format so you must make it executable. To do so you 
 </Tabs>
 <br />
 
-Because **nRF Connect for Desktop** is multitool application, you have to install support for **PPK2**. 
+Because **nRF Connect for Desktop** is multitool application, you have to install support for **PPK2**.
 
 <div class="container">
     <div class="row">
@@ -56,7 +56,7 @@ Because **nRF Connect for Desktop** is multitool application, you have to instal
 </div>
 <br />
 
-You should see **Power Profiler** at the top of the apps, when is installation complete. You will start application by clicking at **Open** button. 
+You should see **Power Profiler** at the top of the apps, when is installation complete. You will start application by clicking at **Open** button.
 
 <div class="container">
     <div class="row">
@@ -80,24 +80,24 @@ After clicking at **Open** button, you should see window similir to this one:
     </div>
   </div>
 </div>
-<br /> 
+<br />
 
 ## Basic Usage
 
 You will need the following hardware to connect **CHESTER** device to **PPK2**:
 
 - **CHESTER** device
-- **Power Profiler Kit II** 
+- **Power Profiler Kit II**
 - micro USB cable
 - power cable from **PPK2** to **CHESTER** device (comes with **PPK2** if you buy it from **HARDWARIO**)
 
-Please connect power cable from **PPK2** to **CHESTER** device. 
+Please connect power cable from **PPK2** to **CHESTER** device.
 
 :::caution
 
-Please make sure that power cable is in **PPK2** connected same way as on the picture! 
+Please make sure that power cable is in **PPK2** connected same way as on the picture!
 
-::: 
+:::
 
 <div class="container">
     <div class="row">
@@ -110,9 +110,9 @@ Please make sure that power cable is in **PPK2** connected same way as on the pi
 </div>
 <br />
 
-Now, you have to connect to your **PPK2**. Plug micro USB end of the cable to the **USB DATA/POWER** port at **PPK2** and other end to your computer. **PPK2** should be now **pulsing with green light**. 
+Now, you have to connect to your **PPK2**. Plug micro USB end of the cable to the **USB DATA/POWER** port at **PPK2** and other end to your computer. **PPK2** should be now **pulsing with green light**.
 
-Then you have to select your **PPK2** in **nRF Connect for Desktop**. 
+Then you have to select your **PPK2** in **nRF Connect for Desktop**.
 
 
 <Image img={require('./nrf_connect_select_device.png')}/>
@@ -127,7 +127,7 @@ Click to **SELECT DEVICE** and choose your **PPK2** device.
 
 **PPK2** should be now either **red** (**Source** meter mode) or **blue** (**Ampere** meter mode).
 
-To start capturing some data, you have to: 
+To start capturing some data, you have to:
 
 1. Select mode in which you want to operate.
 
@@ -137,7 +137,7 @@ To start capturing some data, you have to:
 
 1. Start capturing your data
 
-1. To look at data in certain time, you can either **zoom in** with your mouse/trackpad or you can click at **Live view** switch to see data at current time. 
+1. To look at data in certain time, you can either **zoom in** with your mouse/trackpad or you can click at **Live view** switch to see data at current time.
 
 <div class="container">
     <div class="row">
@@ -150,7 +150,7 @@ To start capturing some data, you have to:
 </div>
 <br />
 
-When you click **Start** to capture data, your **PPK2** will start pulsing in color of your mode and you will see measurements in your app. 
+When you click **Start** to capture data, your **PPK2** will start pulsing in color of your mode and you will see measurements in your app.
 
 <div class="container">
     <div class="row">

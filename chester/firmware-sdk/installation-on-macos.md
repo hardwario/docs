@@ -1,16 +1,16 @@
 ---
-slug: /installation-on-ubuntu
-title: Installation on Ubuntu
+slug: installation-on-macos
+title: Installation on macOS
 ---
 import Image from '@theme/IdealImage';
 
-# Installation on Ubuntu
+# Installation on macOS
 
-The following article will guide you through the **CHESTER SDK** installation on **Ubuntu**. It has been tested on versions **Ubuntu 22.04 LTS**.
+The following article will guide you through the **CHESTER SDK** installation on **macOS**. This guide was tested on versions **macOS 12 (Monterey)** and **macOS 13 (Ventura)**.
 
 :::caution
 
-Before you begin, make sure you comply with the article [**Requirements**](./requirements.md).
+Before you begin, make sure you comply with the article [Requirements](./requirements.md).
 
 :::
 
@@ -18,20 +18,20 @@ Before you begin, make sure you comply with the article [**Requirements**](./req
 
 The installation steps are split into multiple sections. In the end, you will be able to build the `blinky` sample from the **CHESTER SDK**.
 
-### Update Your System
+### Install Package Manager
+
+:::tip
+
+You can skip this step if you already have **Homebrew** installed on your system.
+
+:::
 
 1. Open the **Terminal** application.
 
-1. Update the package lists:
+1. Install the **Homebrew** package manager (if not already installed in your system):
 
    ```
-   sudo apt update
-   ```
-
-1. Upgrade the packages:
-
-   ```
-   sudo apt upgrade
+   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
    ```
 
 1. Reboot the system:
@@ -40,40 +40,12 @@ The installation steps are split into multiple sections. In the end, you will be
    sudo reboot
    ```
 
-### Set Up Device Rules
-
-1. Open the **Terminal** application.
-
-1. Get the package with the **udev** rules:
-
-   ```
-   wget https://github.com/NordicSemiconductor/nrf-udev/releases/download/v1.0.1/nrf-udev_1.0.1-all.deb
-   ```
-
-1. Install the package with the **udev** rules:
-
-   ```
-   sudo dpkg -i nrf-udev_1.0.1-all.deb
-   ```
-
-1. Remove the package with the **udev** rules:
-
-   ```
-   rm nrf-udev_1.0.1-all.deb
-   ```
-
 ### Install Packages
 
-Install the following **APT** packages:
+Install the following **Homebrew** packages:
 
 ```
-sudo apt install --no-install-recommends git cmake ninja-build gperf ccache dfu-util device-tree-compiler wget python3-dev python3-pip python3-setuptools python3-tk python3-wheel xz-utils file make gcc gcc-multilib g++-multilib libsdl2-dev libmagic1
-```
-
-Install the **python3-venv** package:
-
-```
-sudo apt install python3-venv
+brew install cmake ninja gperf python3 ccache qemu dtc wget libmagic
 ```
 
 ### Install Toolchain
@@ -86,8 +58,16 @@ sudo apt install python3-venv
 
 1. Download and unpack the toolchain:
 
+   If you have the **Intel processor**, use this command:
+
    ```
-   wget -c https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v0.15.1/zephyr-sdk-0.15.1_linux-x86_64.tar.gz -O - | tar -xz --directory $HOME/.local/opt
+   wget -c https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v0.15.1/zephyr-sdk-0.15.1_macos-x86_64.tar.gz -O - | tar -xz --directory $HOME/.local/opt
+   ```
+
+   If you have the **ARM processor**, use this command:
+
+   ```
+   wget -c https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v0.15.1/zephyr-sdk-0.15.1_macos-aarch64.tar.gz -O - | tar -xz --directory $HOME/.local/opt
    ```
 
 1. Run the **Zephyr SDK** bundle setup script:

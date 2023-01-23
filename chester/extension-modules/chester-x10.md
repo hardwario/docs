@@ -1,5 +1,5 @@
 ---
-slug: /chester-x10
+slug: chester-x10
 title: CHESTER-X10 (Li-Po charger)
 ---
 import Image from '@theme/IdealImage';

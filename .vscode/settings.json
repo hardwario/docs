@@ -71,5 +71,10 @@
         "utput",
         "vsix",
         "ZZABZ"
-    ]
+    ],
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#0B3333",
+        "titleBar.activeBackground": "#0F4747",
+        "titleBar.activeForeground": "#F4FDFD"
+    }
 }

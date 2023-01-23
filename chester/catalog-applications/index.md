@@ -1,5 +1,5 @@
 ---
-slug: /catalog-applications
+slug: catalog-applications
 title: Catalog Applications
 ---
 import Image from '@theme/IdealImage';
@@ -31,7 +31,7 @@ The table below provides an overview of the available **catalog applications**:
 
 The table below provides an overview of the available application firmware builds for **catalog applications**.
 
-To flash the firmware use [**HARDWARIO Manager**](../platform-management/hardwario-manager.md) app on your phone or follow the steps in the [**Firmware Flashing**](firmware-flashing) article.
+To flash the firmware use [**HARDWARIO Manager**](../platform-management/hardwario-manager.md) app on your phone or follow the steps in the [**Firmware Flashing**](../firmware-flashing/index.md) article.
 
 :::tip
 

@@ -1,5 +1,5 @@
 ---
-slug: /chester-x4
+slug: chester-x4
 title: CHESTER-X4 (Step-down)
 ---
 import Image from '@theme/IdealImage';

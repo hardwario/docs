@@ -1,5 +1,5 @@
 ---
-slug: /chester-k1
+slug: chester-k1
 title: CHESTER-K1 (4-ch diff input)
 ---
 import Image from '@theme/IdealImage';

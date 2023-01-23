@@ -1,5 +1,5 @@
 ---
-slug: /platform-security
+slug: platform-security
 title: Platform Security
 ---
 import Image from '@theme/IdealImage';

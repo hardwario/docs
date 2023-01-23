@@ -1,5 +1,5 @@
 ---
-slug: /chester-x9
+slug: chester-x9
 title: CHESTER-X9 (4-ch output)
 ---
 import Image from '@theme/IdealImage';

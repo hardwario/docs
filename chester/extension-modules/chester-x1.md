@@ -1,5 +1,5 @@
 ---
-slug: /chester-x1
+slug: chester-x1
 title: CHESTER-X1 (8-ch 1-Wire)
 ---
 import Image from '@theme/IdealImage';
