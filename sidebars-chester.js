@@ -10,7 +10,7 @@ const sidebars = {
       link: {
         type: 'generated-index',
       },
-      collapsed: false,
+      collapsed: true,
       items: [
         'platform-management/hardwario-manager',
         'platform-management/cellular-networks',
@@ -23,7 +23,7 @@ const sidebars = {
         type: 'doc',
         id: 'catalog-applications/index',
       },
-      collapsed: false,
+      collapsed: true,
       items: [
         'catalog-applications/chester-clime',
         'catalog-applications/chester-current',
@@ -38,7 +38,7 @@ const sidebars = {
         type: 'doc',
         id: 'extension-modules/index',
       },
-      collapsed: false,
+      collapsed: true,
       items: [
         'extension-modules/chester-x0',
         'extension-modules/chester-x1',
@@ -76,7 +76,7 @@ const sidebars = {
         type: 'doc',
         id: 'firmware-flashing/index',
       },
-      collapsed: false,
+      collapsed: true,
       items: [
         'firmware-flashing/application-over-j-link',
         'firmware-flashing/application-over-bluetooth',
@@ -91,7 +91,7 @@ const sidebars = {
       link: {
         type: 'generated-index',
       },
-      collapsed: false,
+      collapsed: true,
       items: [
         'developer-tools/command-line-tools',
         'developer-tools/segger-j-link',
@@ -124,7 +124,7 @@ const sidebars = {
         type: 'doc',
         id: 'platform-security/index',
       },
-      collapsed: false,
+      collapsed: true,
       items: [
       ],
     },
