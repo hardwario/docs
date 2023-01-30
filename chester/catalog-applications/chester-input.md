@@ -8,6 +8,12 @@ import Image from '@theme/IdealImage';
 
 This article describes the core functionality, hardware description, default configuration, and example **JSON** messages for the catalog application **CHESTER Input**.
 
+:::danger
+
+When upgrading firmware from **v1.x.x** to version **v2.0.0 and newer** - it is necessary to [**backup configuration**](index.md#configuration-backup).
+
+:::
+
 :::caution
 
 Some basics are not provided, as they are common for all the **CHESTER** catalog applications. For example, see the article [**Platform Management**](../platform-management/index.md) on how to work with the interactive console.
@@ -259,6 +265,12 @@ app config hygro-interval-aggreg <value>
 ```
 
 ## Firmware
+
+:::danger
+
+When upgrading firmware from **v1.x.x** to version **v2.0.0 and newer** - it is necessary to [**backup configuration**](index.md#configuration-backup).
+
+:::
 
 The latest firmware is available in Catalog Applications [Firmware chapter](index.md#application-firmware).
 
