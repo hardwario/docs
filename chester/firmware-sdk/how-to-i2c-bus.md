@@ -84,6 +84,25 @@ static int write(uint8_t devaddr, uint8_t regaddr, uint8_t regval)
 }
 ```
 
+## I²C Scan {#i2c-scan}
+
+You can use a shell command `i2c scan i2c@40003000` to do an I²C bus scan.
+
+```
+     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+00:             -- -- -- -- -- -- -- -- -- -- -- --
+10: 10 -- -- -- -- -- -- -- -- 19 -- -- -- -- -- --
+20: 20 -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- 48 -- -- 4b -- -- -- --
+50: -- 51 -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- --
+6 devices found on i2c@40003000
+```
+
+The addresses of I2C sensors are in the [I²C Address Space](../hardware-description/i2c-address-space.md) article.
+
 ## References
 
 If you need more details on the Zephyr I²C API, see the Zephyr API documentation:
