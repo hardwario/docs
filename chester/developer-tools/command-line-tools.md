@@ -114,6 +114,81 @@ Use the command `hardwario chester lte flash firmware.zip` to flash the modem fi
 
 ### Processor Reset
 
+## Cloud Codec Commands
+
+:::caution
+
+Currently, you have to update the codec manually when you update the CHESTER firmware. In the future CHESTER will send the codec itself.
+
+:::
+
+When you assign your device to the **HARDWARIO Cloud** group, you have to assign a codec to the group, so the Cloud knows how to interpret received binary data and convert them to the **JSON**. Codec could also be assigned to a specific device, but we suggest assigning them to the whole group. Only then new devices will use the same codec automatically.
+
+:::tip
+
+If you develop your own firmware and change the codec **YAML** file. You can generate `msg_key.h` header file with keys from your **YAML** file by typing this from your application folder `../../scripts/gen-msg-key.py codec/cbor-decoder.yaml src/msg_key.h`
+
+:::
+
+Working with codecs needs your **API token** to be set in the command itself or in your environment. You get your **API toekn** in **HARDWARIO Cloud** profile.
+
+```
+hardwario cloud --token <your_token> commands...
+```
+
+Or set command line environment variable
+
+```
+export HARDWARIO_CLOUD_TOKEN=<your_token>
+```
+
+By typing `hardwario cloud` the tool shows you all possible commands, so you can explore more functions.
+
+
+```
+Usage: hardwario cloud codec [OPTIONS] COMMAND [ARGS]...
+
+  Codec commands.
+
+Options:
+  --help  Show this message and exit.
+
+Commands:
+  attach  Attach codec to group or device.
+  author  Autor commands.
+  create  Create new codec.
+  delete  Delete codec.
+  list    List of codec.
+  show    Show codec detail.
+  upload  Upload codec.
+```
+
+### Create a Codec
+
+```
+hardwario cloud codec create --name chester-input-z
+```
+
+The cloud will reply to you with a **codec ID**. Please save it somewhere; we will need it in the next commands.
+
+### Attach a Codec
+
+We attach the newly created **codec** to the **group**. Go to the **HARDWARIO Cloud** group and copy the **group ID** from the **URL** or from the **group detail page**.
+
+```
+hardwario cloud codec attach --id <codec-id> --group-id <group-id>
+```
+
+### Upload a Codec
+
+The final step is uploading the codec.
+
+```
+hardwario cloud codec upload --id <codec-id> --decoder-type cbor --decoder codec/cbor-decoder.yaml
+```
+
+In case you update your **YAML** file and regenerate the `msg_key.h`, all you need to do is **repeat only this step again**.
+
 ## Command Aliases
 
 If you develop and iterate quite frequently, you might find these command aliases useful. Add them to your terminal init script.
