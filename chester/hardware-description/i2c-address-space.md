@@ -4,9 +4,11 @@ title: I²C Address Space
 ---
 import Image from '@theme/IdealImage';
 
-# I2C Address Space
+# I²C Address Space
 
 This article provides an overview of the 7-bit address allocation on the I²C bus.
+
+To check all the I²C addresses of sensors on your CHESTER, you can use the [I²C scan](../firmware-sdk/how-to-i2c-bus.md#i2c-scan) shell command.
 
 :::info
 
