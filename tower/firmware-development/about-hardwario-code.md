@@ -50,6 +50,12 @@ There is a version available for each major operating system. Installation sligh
 - Wait for the **HARDWARIO Code** to open
 - You should see HARDWARIO Logo on the side panel and the **HARDWARIO Code** at the top of the window
 
+:::info
+
+You might need to install an additional library with `sudo apt-get install libncurses*` (for JLink debugging).
+
+:::
+
 :::caution
 
 If you don’t have a **git** installed on your system, you will have to [**install it**](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) for the extension to work fully.
