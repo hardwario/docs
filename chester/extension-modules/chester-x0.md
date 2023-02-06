@@ -38,7 +38,7 @@ This picture show the electric circuit of each channel:
 
 ## Configuration Table
 
-The configuration depends on the applicatioon:
+The configuration depends on the application:
 
 | Application:         | PUx | CLx | PDx |
 | -------------------- | --- | --- | --- |

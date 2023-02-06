@@ -13,7 +13,7 @@ This article describes the CHESTER-X6 extension module.
 <Image img={require('./pc-chester-x6.png')} />
 
 ## Module Overview
-The CHESTER-X6 provides interface for HARDWARIO S-Wire protocol targetting low-power peripherals using 3 wire connection (+5V, GND, DATA). It implements also 5V boost converter and 5V power suply output.
+The CHESTER-X6 provides interface for HARDWARIO S-Wire protocol targeting low-power peripherals using 3 wire connection (+5V, GND, DATA). It implements also 5V boost converter and 5V power supply output.
 
 ## CHESTER Pin Configuration Diagram
 
