@@ -8,10 +8,10 @@ import Image from '@theme/IdealImage';
 
 HARDWARIO command line tool allows you to:
 
-- **Flash APP/BLE** application firmware (NRF52)
+- **Flash APP/BLE** application firmware (nRF52)
 - Show interactive terminal for **configuration** and **debugging**
 - Access **Product Information Block** (PIB) in UICR flash memory that contains **HARDWARIO Serial Number** (HSN) and other parameters
-- Update modem firmware (NRF9160)
+- Update modem firmware (nRF9160)
 
 ## Install Python
 
