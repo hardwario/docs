@@ -670,6 +670,12 @@
   force = true
 
 [[redirects]]
+  from = "https://docs.hardwario.com/chester/extension-modules"
+  to = "https://docs.hardwario.com/chester/extension-modules/extension-modules"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "https://docs.hardwario.com/chester/chester-x3"
   to = "https://docs.hardwario.com/chester/extension-modules/chester-x3"
   status = 301
