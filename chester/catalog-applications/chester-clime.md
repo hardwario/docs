@@ -96,6 +96,20 @@ See [**Ordering Codes**](../ordering-codes.md) for more details.
 
 Firmware build shield options: `ctr_lte ctr_ds18b20`
 
+### CHESTER Clime 1WH
+
+The catalog application **CHESTER Clime 1WH** supports **CHESTER-S2** + multiple external DS18B20 1-Wire temperature sensors.
+
+The hardware of this application consists of the following ordering codes:
+
+* `CHESTER-M-BCGLS` - Standard mainboard
+* `CHESTER-S2` - External hygrometer
+* `CHESTER-E8-LP` - Enclosure with 8 cable glands
+
+See [**Ordering Codes**](../ordering-codes.md) for more details.
+
+Firmware build shield options: `ctr_lte ctr_ds18b20 ctr_s2`
+
 ### CHESTER Clime RTD
 
 The catalog application **CHESTER Clime RTD** supports two external Pt1000 4-wire temperature sensors.
