@@ -98,17 +98,17 @@ Follow these steps to flash the LoRaWAN modem firmware in the CHESTER device:
 
    :::caution
 
-   One of the wires on the flat cable between J-Link and CHESTER has red color. This red color denotes a **signal number 1**. This red-colored signal has to be oriented toward the black dot located next to the SWD connector on CHESTER mainboard. The same rule with the cable applies at the side of **SEGGER J-Link**.
+   One of the wires on the flat cable between J-Link and CHESTER has red color. This red color denotes **signal number 1**. This red-colored signal has to be oriented toward the black dot located next to the SWD connector on the CHESTER mainboard. The same rule with the cable applies at the side of **SEGGER J-Link**.
 
    :::
 
-1. Connect the other side of the 10-pin flat cable to SEGGER J-Link adapter board (and plug the adapter board to SEGGER J-Link device).
+1. Connect the other side of the 10-pin flat cable to the SEGGER J-Link adapter board (and plug the adapter board into the SEGGER J-Link device).
 
-1. Connect Micro-USB cable to SEGGER J-Link and your computer.
+1. Connect the Micro-USB cable to SEGGER J-Link and your computer.
 
 1. Connect the **Micro-USB** cable to your computer and **SEGGER J-Link**.
 
-1. Download the **LoRaWAN Modem** firmware package [**v1.4.0**](/download/hio-chester-lrw-v1.2.4.zip).
+1. Download the **LoRaWAN Modem** firmware package [**v1.2.6**](pathname:///download/hio-chester-lrw-v1.2.6.zip).
 
 1. Unzip the downloaded package.
 
