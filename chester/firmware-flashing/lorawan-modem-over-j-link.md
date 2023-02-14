@@ -147,3 +147,11 @@ Follow these steps to flash the LoRaWAN modem firmware in the CHESTER device:
 1. You should get a message about the successful operation.
 
 1. Disconnect **SEGGER J-Link** from the **SWD** connector.
+
+1. Power-cycle the CHESTER device.
+
+   :::danger
+
+   Skipping the power-cycling step may result in an undefined LoRaWAN modem operation.
+
+   :::
