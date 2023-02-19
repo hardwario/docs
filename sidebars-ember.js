@@ -4,6 +4,10 @@
 const sidebars = {
   docs: [
     'introduction',
+    'hardware-description',
+    'hotspot-configuration',
+    'cloud-service',
+    'ordering-codes',
   ],
 };
 
