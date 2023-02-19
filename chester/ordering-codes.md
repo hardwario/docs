@@ -6,11 +6,11 @@ import Image from '@theme/IdealImage';
 
 # Ordering Codes
 
-This article defines all possible ordering codes for the CHESTER ecosystem. The order specifications must be fully compliant with the part numbers stated below.
+This article defines all possible ordering codes for the **CHESTER** ecosystem. The order specifications must be fully compliant with the part numbers stated below.
 
 :::tip
 
-Each product lists available parts, i.e. which parts are standard and usually immediately available. If you need a specific combination, talk to us for availability and MOQ (minimum order quantity) conditions.
+Each product lists available parts, i.e. which parts are standard and usually immediately available. If you need a specific combination, talk to us for availability and **MOQ** (Minimum Order Quantity) conditions.
 
 :::
 
