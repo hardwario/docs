@@ -142,6 +142,24 @@ app config interval-aggreg 300
 app config interval-report 1800
 ```
 
+Default configuration for hygrometer alarms:
+
+```
+app config hygro-t-alarm-hi-report false
+app config hygro-t-alarm-lo-report false
+app config hygro-t-alarm-hi-thr 0.0
+app config hygro-t-alarm-hi-hst 0.0
+app config hygro-t-alarm-lo-thr 0.0
+app config hygro-t-alarm-lo-hst 0.0
+```
+
+When equipped with **backup** (CHESTER-Z) or **hygrometer** (CHESTER-S2):
+
+```
+app config event-report-delay 1
+app config event-report-rate 30
+```
+
 ## Specific Commands
 
 :::info
@@ -174,6 +192,39 @@ Command to set **report interval** in seconds:
 app config interval-report <30-86400>
 ```
 
+Command to enable hygrometer high/low temperature **alarm reports**:
+
+```
+app config hygro-t-alarm-hi-report false
+app config hygro-t-alarm-lo-report false
+```
+
+Command to set hygrometer high/low temperature **thresholds** in **°C**:
+
+```
+app config hygro-t-alarm-hi-thr <-40.0..125.0>
+app config hygro-t-alarm-lo-thr <-40.0..125.0>
+```
+
+Command to set hygrometer high/low temperature **hysteresis** in **°C**:
+
+```
+app config hygro-t-alarm-hi-hst <0.0..100.0>
+app config hygro-t-alarm-lo-hst <0.0..100.0>
+```
+
+Command to set the **delay between the event and report** in seconds (temperature alarm, backup state change):
+
+```
+app config event-report-delay <1-86400>
+```
+
+Command to set the **report rate** in reports per hour (just for event reports, periodic reports are not counter to this limit):
+
+```
+app config event-report-rate <1-3600>
+```
+
 ## Firmware
 
 :::danger
@@ -192,6 +243,12 @@ In this example **JSON** you can see data from all three variants
 - **CHESTER Clime IAQ**  has its own `iaq_sensor` structure.
 - **CHESTER Clime 1W** has its own `w1_thermometers` structure.
 - **CHESTER Clime RTD** has its own `rtd_thermometers` structure.
+
+Hygrometer **events** are:
+* `alarm_hi_activated`
+* `alarm_hi_deactivated`
+* `alarm_lo_activated`
+* `alarm_lo_deactivated`
 
 In each structure with the current configuration, there are six aggregated values. Each aggregated value has its timestamp and is computed from multiple samples, and `min`, `max`, `avg`, and `mdn` values are calculated.
 
@@ -577,6 +634,13 @@ In each structure with the current configuration, there are six aggregated value
   },
   "hygrometer": {
     "temperature": {
+      "events": [
+        {
+          "timestamp": 1668858343,
+          "type": "alarm_lo_deactivated",
+          "value": 20.94
+        }
+      ],
       "measurements": [
         {
           "timestamp": 1668857742,
