@@ -118,6 +118,7 @@ const sidebars = {
         'firmware-sdk/application-customization',
         'firmware-sdk/how-to-i2c-bus',
         'firmware-sdk/how-to-kconfig',
+        'firmware-sdk/licenses',
       ],
     },
     {
