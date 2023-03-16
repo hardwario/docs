@@ -29,7 +29,7 @@ There is a version available for each major operating system. Installation sligh
 <Tabs groupId="operating-system">
 <TabItem value="windows" label="Windows" default>
 
-- Download the [**HARDWARIO Code installer for windows**](https://drive.google.com/drive/u/3/folders/1gC91vzSR0O1RONRX6LMJ8_ug1_UOikpt)
+- Download the [**HARDWARIO Code installer for windows**](https://github.com/hardwario/hardwario-code/releases)
 - Complete the installer
   :::info
 
@@ -43,7 +43,7 @@ There is a version available for each major operating system. Installation sligh
 </TabItem>
 <TabItem value="linux" label="Linux">
 
-- Download [**HARDWARIO Code**](https://drive.google.com/drive/u/3/folders/1gC91vzSR0O1RONRX6LMJ8_ug1_UOikpt)
+- Download [**HARDWARIO Code**](https://github.com/hardwario/hardwario-code/releases)
 - Unpack the archive wherever you want
 - If you want to have a **shortcut available** and some **additional drivers installed** you can run the `install.sh` script from the unpacked folder
 - Run the **code** binary from the terminal or find **HARDWARIO Code** with your search bar
@@ -65,7 +65,8 @@ If you don’t have a **git** installed on your system, you will have to [**inst
 </TabItem>
 <TabItem value="macOS" label="macOS">
 
-- Download the [**HARDWARIO Code installation package**](https://drive.google.com/drive/u/3/folders/1gC91vzSR0O1RONRX6LMJ8_ug1_UOikpt) for macOS
+- Download the [**HARDWARIO Code installation package**](https://github.com/hardwario/hardwario-code/releases) for macOS
+  - You need to select the correct version for your architecture
 - Run the installer by double clicking it
 - Follow the installer instruction
 - You should see a **hardwario-code** folder in your user’s ~/Applications folder
