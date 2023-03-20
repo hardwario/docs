@@ -250,6 +250,15 @@ app config counter-duration-inactive <value>
 app config counter-cooldown-time <value>
 ```
 
+:::info
+
+- The parameter `duration-active` sets the millisecond delay between the input signal changes to an active level (based on `npn` or `pnp` configuration) and when CHESTER reacts to this change. This could be used to filter (debounce) input signal in case the input signal is connected to a "electrically noisy" mechanical switch or relay. It could also be used if the CHESTER has to react to longer pulses than the set duration.
+- The parameter `duration-inactive` is the same as for the `duration-active` above, except it sets the time for the opposite edge.
+- The parameter `cooldown-time` is a delay protecting CHESTER from too many incoming interrupt events. If a too-fast signal (>10 kHz) is connected, the interrupt handler could consume all the processor time, stopping the execution of other threads. This parameter sets a small delay between executing the interrupt handler again. A default value of 10 ms could be used here.
+
+
+:::
+
 Use these commands to set the **sample** and **aggregate** intervals (in seconds) for **voltage** / **current** measurements:
 
 ```
