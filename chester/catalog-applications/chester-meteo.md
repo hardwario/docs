@@ -18,10 +18,6 @@ Some of the basics are not provided, as they are common for all **CHESTER** cata
 
 **CHESTER Meteo** is a wind and environmental sensor that samples, aggregates, and sends measured variables.
 
-## Application Variants
-
-### CHESTER Meteo
-
 The catalog application **CHESTER Meteo** measures:
 - Wind speed (m/s)
 - Wind direction (0-360°)
@@ -29,6 +25,12 @@ The catalog application **CHESTER Meteo** measures:
 - Atmospheric pressure (Pa)
 - Temperature (°C)
 - Humidity (%RH)
+
+## Application Variants
+
+**CHESTER Meteo** can be ordered in one of these variants:
+
+### CHESTER Meteo
 
 The hardware of this application consists of the following ordering codes:
 
@@ -40,7 +42,22 @@ The hardware of this application consists of the following ordering codes:
 
 See [**Ordering Codes**](../ordering-codes.md) for more details.
 
-Firmware build shield options: `ctr_lte ctr_barometer_tag ctr_s2 ctr_x0_a`
+Firmware build shield options: `ctr_barometer_tag ctr_ds18b20 ctr_lte ctr_s2 ctr_meteo_a ctr_soil_sensor`
+
+### CHESTER Meteo Z
+
+The hardware of this application consists of the following ordering codes:
+
+* `CHESTER-M-BCGLS` - Standard mainboard
+* `CHESTER-X0B:A` - Input module (4 channels)
+* `CHESTER-Z` - Backup module
+* `CHESTER-S2` - External hygrometer
+* External barometer
+* `CHESTER-E1-LP` - Enclosure with SMA pigtail
+
+See [**Ordering Codes**](../ordering-codes.md) for more details.
+
+Firmware build shield options: `ctr_barometer_tag ctr_ds18b20 ctr_lte ctr_s2 ctr_meteo_a ctr_soil_sensor ctr_z`
 
 ## Measurement and Behavior
 
@@ -129,6 +146,21 @@ Pressure is in **pascals**.
     "voltage_rest": 3.6,
     "voltage_load": 3.56,
     "current_load": 35
+  },
+  "backup": {
+    "line_voltage": 24.21,
+    "batt_voltage": 3.41,
+    "state": "connected",
+    "events": [
+      {
+        "timestamp": 1675784338,
+        "type": "disconnected"
+      },
+      {
+        "timestamp": 1675784518,
+        "type": "connected"
+      }
+    ]
   },
   "network": {
     "imei": 351358815180770,
@@ -243,8 +275,7 @@ Pressure is in **pascals**.
       ]
     }
   },
-  "barometer":
-  {
+  "barometer": {
     "pressure": {
       "measurements": [
         {
@@ -285,7 +316,6 @@ Pressure is in **pascals**.
       ]
     },
   },
-
   "hygrometer": {
     "temperature": {
       "measurements": [
@@ -365,6 +395,131 @@ Pressure is in **pascals**.
         }
       ]
     }
-  }
+  },
+  "w1_thermometers": [
+    {
+      "serial_number": 170694685,
+      "measurements": [
+        {
+          "timestamp": 1675784338,
+          "min": 21.93,
+          "max": 22.06,
+          "avg": 22,
+          "mdn": 22
+        },
+        {
+          "timestamp": 1675784398,
+          "min": 22.12,
+          "max": 22.18,
+          "avg": 22.13,
+          "mdn": 22.12
+        },
+        {
+          "timestamp": 1675784458,
+          "min": 22.12,
+          "max": 22.12,
+          "avg": 22.12,
+          "mdn": 22.12
+        },
+        {
+          "timestamp": 1675784518,
+          "min": 22.12,
+          "max": 22.12,
+          "avg": 22.12,
+          "mdn": 22.12
+        },
+        {
+          "timestamp": 1675784578,
+          "min": 22.12,
+          "max": 22.12,
+          "avg": 22.12,
+          "mdn": 22.12
+        }
+      ]
+    }
+  ],
+  "soil_sensors": [
+    {
+      "serial_number": 203181,
+      "temperature": {
+        "measurements": [
+          {
+            "timestamp": 1675784338,
+            "min": 22,
+            "max": 22.06,
+            "avg": 22.03,
+            "mdn": 22.06
+          },
+          {
+            "timestamp": 1675784398,
+            "min": 22.06,
+            "max": 22.12,
+            "avg": 22.07,
+            "mdn": 22.06
+          },
+          {
+            "timestamp": 1675784458,
+            "min": 22.06,
+            "max": 22.12,
+            "avg": 22.07,
+            "mdn": 22.06
+          },
+          {
+            "timestamp": 1675784518,
+            "min": 22,
+            "max": 22.06,
+            "avg": 22.03,
+            "mdn": 22.06
+          },
+          {
+            "timestamp": 1675784578,
+            "min": 22,
+            "max": 22.06,
+            "avg": 22.03,
+            "mdn": 22.06
+          }
+        ]
+      },
+      "moisture": {
+        "measurements": [
+          {
+            "timestamp": 1675784338,
+            "min": 6256,
+            "max": 6288,
+            "avg": 6272,
+            "mdn": 6272
+          },
+          {
+            "timestamp": 1675784398,
+            "min": 6272,
+            "max": 6288,
+            "avg": 6278,
+            "mdn": 6272
+          },
+          {
+            "timestamp": 1675784458,
+            "min": 6272,
+            "max": 6304,
+            "avg": 6280,
+            "mdn": 6272
+          },
+          {
+            "timestamp": 1675784518,
+            "min": 6256,
+            "max": 6304,
+            "avg": 6268,
+            "mdn": 6272
+          },
+          {
+            "timestamp": 1675784578,
+            "min": 6256,
+            "max": 6304,
+            "avg": 6268,
+            "mdn": 6272
+          }
+        ]
+      }
+    }
+  ]
 }
 ```
