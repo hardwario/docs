@@ -61,7 +61,10 @@ When upgrading firmware from **v1.x.x** to version **v2.0.0 and newer** - it is 
 | [**CHESTER Current 1W**](chester-current.md#chester-current-1w) | [**v2.0.0**](https://firmware.hardwario.com/chester/4e6bb4f139464c7c89237faefb1b440d) [⚠️](#configuration-backup "Configuration backup") | <small>`4e6bb4f139464c7c89237faefb1b440d`</small> | 2023-01-25 |                                        |
 | **CHESTER Scale**                                               | [**v2.0.0**](https://firmware.hardwario.com/chester/07dc674f5fa14f5ebb496cfb620793e6) [⚠️](#configuration-backup "Configuration backup") | <small>`07dc674f5fa14f5ebb496cfb620793e6`</small> | 2023-01-25 |                                        |
 | **CHESTER Scale Z**                                             | [**v2.0.0**](https://firmware.hardwario.com/chester/2470ffa39afb42b98bea7c4ca366c63e) [⚠️](#configuration-backup "Configuration backup") | <small>`2470ffa39afb42b98bea7c4ca366c63e`</small> | 2023-01-25 | Support for **CHESTER-Z**              |
-| [**CHESTER Meteo**](chester-meteo.md)                           |                                                                                                                                         |                                                   |            |                                        |
+| [**CHESTER Meteo**](chester-meteo.md#chester-meteo-1)           | [**v2.0.0**](https://firmware.hardwario.com/chester/9a82fe63bae9437ead0d7f6749fa0df8) [⚠️](#configuration-backup "Configuration backup") | <small>`9a82fe63bae9437ead0d7f6749fa0df8`</small> | 2023-03-21 |                                        |
+| [**CHESTER Meteo Z**](chester-meteo.md#chester-meteo-z)         | [**v2.0.0**](https://firmware.hardwario.com/chester/96267db2388349869f12e411007d831c) [⚠️](#configuration-backup "Configuration backup") | <small>`96267db2388349869f12e411007d831c`</small> | 2023-03-21 | Support for **CHESTER-Z**              |
+
+
 
 ## Configuration backup v1.x.x → v2.x.x {#configuration-backup}
 
