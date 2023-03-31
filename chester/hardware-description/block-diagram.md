@@ -5,3 +5,7 @@ title: Block Diagram
 import Image from '@theme/IdealImage';
 
 # Block Diagram
+
+![](block-diagram.png)
+
+
