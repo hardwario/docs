@@ -15,7 +15,7 @@ To work with this tool you need to [**download an experimental HARDWARIO Playgro
 
 :::info
 
-This tool is still in development and can break sometimes. In that case, you can contact us on [**GitHub**](https://github.com/hardwario/hardwario-blockly/issues) or directly at [**ask@hardwario.com**](ask@hardwario.com).
+This tool is still in development and can break sometimes. In that case, you can contact us on [**GitHub**](https://github.com/hardwario/hardwario-blockly/issues) or directly at **ask@hardwario.com**.
 
 You can probably fix the issue on hand just by **restarting Playground**.
 
