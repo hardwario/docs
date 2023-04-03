@@ -11,7 +11,7 @@ import TabItem from '@theme/TabItem';
 
 This tool is still in development and can break sometimes. In that case, you can contact us on [**GitHub**](https://github.com/hardwario/hardwario-blockly/issues) or directly at [**ask@hardwario.com**](ask@hardwario.com).
 
-You can probably fix that just by **restarting Playground**.
+You can probably fix the issue on hand just by **restarting Playground**.
 
 :::
 
@@ -21,7 +21,7 @@ We used [**Google Blockly**](https://developers.google.com/blockly) to create ou
 
 This is the main feature of this tool. It provides an environment for programming with colorful blocks without the need to write a single line of code.
 
-This is a Low-code/No-code environment which means that you don't need to know how to write code to make it work.
+This is a **Low-code/No-code environment** which means that you don't need to know how to write code to make it work.
 
 It is designed to make firmware creation fast and easy for users on any level of knowledge.
 
@@ -29,12 +29,58 @@ It is designed to make firmware creation fast and easy for users on any level of
 
 ### Examples
 
+If you are interested in how to work with this environment or just what our firmware looks like, we prepared some examples from the easier ones to the more complicated ones. Thanks to this you should be able to start with blockly right away.
+
+:::caution
+
+There is a difference between a classic project and an example. You can't save an example, so if you are interested in changing some examples you should click on **Project From Example**. It will reopen the example as a project and you can do anything you want with it.
+
+:::
 
 ### Project Structure
 
+Working with blockly is pretty straightforward but we had to make some changes.
+
+This image shows a basic project in HARDWARIO Blockly, here we will go over some important elements.
+
+<Image img={require('./blockly-showcase.png')}/>
+
+#### Workspace
+
+Most of the screen. This is where you will place all your blocks that will represent your firmware.
+
+The first block that you drag into this space should always be the block in **Initialization** category with the text **Application Initialization**. This serves as a starting point for your application.
+
+We tried to make it simpler for the user to work with the environment. There is some automatization in place, like disabling not initialized blocks, disabling orphan blocks, deleting initialization duplicates, etc.
+
+#### Toolbox
+
+On the left side of the screen. This has all the categories available for you and in those categories the blocks themselves.
+
+We made it a little bit simpler by showing only those categories that are initialized. So if you don't see some category in the toolbox, go into the **Initialization** category and initialize it with the use of an appropriate block.
+
+#### Bottom Panel
+
+At the bottom of the page. This is where you can find some additional controls for blockly.
+
+Buttons at the bottom panel:
+
+- **Compile And Flash** - This will [**run the compilation and then switch to the firmware tab**](#compiling-and-flashing) to allow you to flash the created firmware to your device.
+- **Save Workspace** - This will save the current workspace. Autosave is enabled by default.
+- **Export Workspace** - You can export the workspace in **.xml** format so you can distribute it or **import** it later.
+- **Import Workspace** - Here you can import the workspace in **.xml** format.
+- **Show/Hide Code** - This will **show/hide code** so you can see the **generated code in C language**.
+- **Return Home** - This will return you to the homepage.
+
+:::note
+
+To make your project work you have to add the **Application Initialization** block to the workspace
+
+:::
+
 ### Live Code Generation
 
-This tool provides the possibility to show live-generated C code that is identical to the blocks in the workspace.
+This tool provides the possibility to **show live-generated C code** that is identical to the blocks in the workspace.
 
 Thanks to this, you can create some basic firmware with the use of blocks, then take the code and finalize it in the [**HARDWARIO Code**](../firmware-development/about-hardwario-code.md).
 
@@ -56,12 +102,15 @@ More about flashing in the [**Firmware Flashing chapter**](./firmware-flashing.m
 
 :::
 
-## Other Features
+## Other Features (ADVANCED)
+
+:::tip
+
+This is an advanced part of this tool. You don't need to use it at all but if you are interested in creating your categories and custom blocks that you can then use in the **HARDWARIO Blockly**.
+
+:::
 
 ### Portability
-
-If you want to distribute your projects or created blocks you can just copy the user folder from your filesystem, compress it to for example zip file and send it.
-On the other side, the user can just unzip it to their user folder and then reload Blockly in Playground.
 
 :::info
 
@@ -69,13 +118,10 @@ To open your user folder, click on **Open Projects Folder** in Blockly index or 
 
 :::
 
+If you want to distribute your projects or created blocks you can just copy the user folder from your filesystem, compress it to for example zip file and send it.
+On the other side, the user can just unzip it to their user folder and then reload Blockly in Playground.
+
 ### Blocks Generation
-
-:::info
-
-This is an advanced part of this tool. You don't need to use it at all but if you are interested in creating your categories and custom blocks that you can then use in the **HARDWARIO Blockly**.
-
-:::
 
 To access this feature click on the **Go to Blocks Creator** button at the Blockly index.
 
@@ -89,7 +135,7 @@ You need to add categories to put your custom blocks into them. You can also use
 
 Here is an example of how to add some basic categories. You can add a category without any other configurations or you can add color to the category (in RGB format).
 
-This example will add category **Ultrasound Sensor** with black color (default color) and category **External Temperature Sensor** with color "#CF0514".
+This example will add the category **Ultrasound Sensor**** with black color (default color) and category **External Temperature Sensor** with color "#CF0514".
 
 :::
 
@@ -110,7 +156,7 @@ This example will add category **Ultrasound Sensor** with black color (default c
 
 #### Blocks
 
-You can add your custom blocks with the use of Blocks Creator.
+You can add your custom blocks with the use of **Blocks Creator**.
 
 :::info
 
