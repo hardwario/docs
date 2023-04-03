@@ -7,6 +7,12 @@ import Image from '@theme/IdealImage';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
+:::caution
+
+To work with this tool you need to [**download an experimental HARDWARIO Playground**](https://github.com/SmejkalJakub/hardwario-playground/releases)
+
+:::
+
 :::info
 
 This tool is still in development and can break sometimes. In that case, you can contact us on [**GitHub**](https://github.com/hardwario/hardwario-blockly/issues) or directly at [**ask@hardwario.com**](ask@hardwario.com).
