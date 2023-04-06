@@ -28,7 +28,7 @@ A schematic diagram is useful if you program low-level hardware-related code or 
 ## Terminals
 ![](hio-chester-m-6.png)
 
-# Nets
+## Nets
 ![](hio-chester-m-7.png)
 
 
