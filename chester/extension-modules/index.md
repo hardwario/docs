@@ -26,23 +26,23 @@ On the CHESTER DevKit variant, it is possible to install extension modules desig
 
 ## Backside Modules
 
-| Module Name | Module Description                                                                                                                                                |
-| ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| CHESTER-X0A | Up to 4 digital and analog inputs and outputs, 4-20 mA current loop channels, 0-10 V voltage inputs, dry contact, NPN or PNP input, including 5V boost converter. |
-| CHESTER-X0B | Up to 4 digital and analog inputs and outputs, 4-20 mA current loop channels, 0-10 V voltage inputs, dry contact, NPN or PNP input, without 5V boost converter.   |
-| CHESTER-X1  | Up to eight 1-Wire channels (e.g. for Dallas DS18B20 digital temperature sensors)                                                                                 |
-| CHESTER-X2  | Both TTL/UART and RS-485 interface (e.g., for Modbus communication)                                                                                               |
-| CHESTER-X3A | Up to 2 RTD (resistive temperature devices) sensors, such as Pt 100 and Pt 1000                                                                                   |
-| CHESTER-X3B | Up to 2 thermocouple channels (type B/C/E/J/K/N/R/S/T)                                                                                                            |
-| CHESTER-X3C | Up to 2 load-cell (strain gauge) channels that can be used for weight measurements                                                                                |
-| CHESTER-X4  | DC/DC converter providing power from an external 6-28 VDC line (features input voltage measurement)                                                               |
-| CHESTER-X5  | Differential analog input for +/- 30 V voltage measurement                                                                                                        |
-| CHESTER-X6  | Interface module for our in-house S-Wire protocol targetting low-power peripherals                                                                                |
-| CHESTER-X7  | 1-channel differential input converter with software-controlled 5V boost converter for current probes and other industrial sensors                                |
-| CHESTER-X8  | Ultra-precise accelerometer                                                                                                                                       |
-| CHESTER-X9  | 4-channel output module with smart protected switch for controlling relays and solenoids                                                                          |
-| CHESTER-X10 | DC/DC converter + Li-Po charger providing power from an external 6-30 VDC line (features input voltage measurement)                                               |
-| CHESTER-K1  | 4-channel differential input converter with software-controlled 5V boost converter for current probes and other industrial sensors                                |
+| Module Name                       | Module Description                                                                                                                                                |
+| --------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [**CHESTER-X0A**](chester-x0.md)  | Up to 4 digital and analog inputs and outputs, 4-20 mA current loop channels, 0-10 V voltage inputs, dry contact, NPN or PNP input, including 5V boost converter. |
+| [**CHESTER-X0B**](chester-x0.md)  | Up to 4 digital and analog inputs and outputs, 4-20 mA current loop channels, 0-10 V voltage inputs, dry contact, NPN or PNP input, without 5V boost converter.   |
+| [**CHESTER-X1**](chester-x1.md)   | Up to eight 1-Wire channels (e.g. for Dallas DS18B20 digital temperature sensors)                                                                                 |
+| [**CHESTER-X2**](chester-x2.md)   | Both TTL/UART and RS-485 interface (e.g., for Modbus communication)                                                                                               |
+| [**CHESTER-X3A**](chester-x3.md)  | Up to 2 RTD (resistive temperature devices) sensors, such as Pt 100 and Pt 1000                                                                                   |
+| [**CHESTER-X3B**](chester-x3.md)  | Up to 2 thermocouple channels (type B/C/E/J/K/N/R/S/T)                                                                                                            |
+| [**CHESTER-X3C**](chester-x3.md)  | Up to 2 load-cell (strain gauge) channels that can be used for weight measurements                                                                                |
+| [**CHESTER-X4**](chester-x4.md)   | DC/DC converter providing power from an external 6-28 VDC line (features input voltage measurement)                                                               |
+| **CHESTER-X5**                    | Differential analog input for +/- 30 V voltage measurement                                                                                                        |
+| [**CHESTER-X6**](chester-x6.md)   | Interface module for our in-house S-Wire protocol targetting low-power peripherals                                                                                |
+| [**CHESTER-X7**](chester-x7.md)   | 1-channel differential input converter with software-controlled 5V boost converter for current probes and other industrial sensors                                |
+| [**CHESTER-X8**](chester-x8.md)   | Ultra-precise accelerometer                                                                                                                                       |
+| [**CHESTER-X9**](chester-x9.md)   | 4-channel output module with smart protected switch for controlling relays and solenoids                                                                          |
+| [**CHESTER-X10**](chester-x10.md) | DC/DC converter + Li-Po charger providing power from an external 6-30 VDC line (features input voltage measurement)                                               |
+| [**CHESTER-K1**](chester-k1.md)   | 4-channel differential input converter with software-controlled 5V boost converter for current probes and other industrial sensors                                |
 
 ## Cover Modules
 
