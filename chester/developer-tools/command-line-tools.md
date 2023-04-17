@@ -6,6 +6,12 @@ import Image from '@theme/IdealImage';
 
 # HARDWARIO Command Line Tools
 
+:::caution
+
+You do not need to install this separately if you use **Firmware SDK**. This tool is installed automatically when you follow **[Firmware SDK](../category/firmware-sdk/) > Installation on ...** articles.
+
+:::
+
 HARDWARIO command line tool allows you to:
 
 - **Flash APP/BLE** application firmware (nRF52)
