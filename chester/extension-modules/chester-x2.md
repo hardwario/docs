@@ -14,7 +14,7 @@ This article describes the CHESTER-X2 extension module.
 
 ## Module Overview
 
-CHESTER-X1 provides TTL/UART interface and RS-485 interface (e.g., for Modbus communication).
+CHESTER-X2 provides TTL/UART interface and RS-485 interface (e.g., for Modbus communication).
 
 ## CHESTER Pin Configuration Diagram
 
