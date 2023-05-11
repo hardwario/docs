@@ -49,29 +49,26 @@ The extension will warn you that you are missing some of those and provide you w
 
 - [**CMake**](https://cmake.org/install/)
 - [**Ninja**](https://github.com/ninja-build/ninja/releases)
-- [**arm-none-eabi-gcc**](https://mynewt.apache.org/latest/get_started/native_install/cross_tools.html#installing-the-arm-toolchain-for-windows)
+- [**arm-none-eabi-gcc 12.2 or newer**](https://developer.arm.com/downloads/-/arm-gnu-toolchain-downloads)
 - [**git**](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 - **Linux commands**
   - You have to install git to your machine and then add the `\usr\bin\` folder to PATH. The folder path should look something like `C:\Program Files\Git\usr\bin\`
-- [**make**](https://www.technewstoday.com/install-and-use-make-in-windows/) (**LEGACY**)
 
 </TabItem>
 <TabItem value="linux" label="Linux">
 
 - [**CMake**](https://cmake.org/install/)
 - [**Ninja**](https://github.com/ninja-build/ninja/releases)
-- [**arm-none-eabi-gcc**](https://mynewt.apache.org/latest/get_started/native_install/cross_tools.html#installing-the-arm-toolchain-for-linux)
+- [**arm-none-eabi-gcc 12.2 or newer**](https://developer.arm.com/downloads/-/arm-gnu-toolchain-downloads)
 - [**git**](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-- [**make**](https://linuxhint.com/install-make-ubuntu/) (**LEGACY**)
 
 </TabItem>
 <TabItem value="macOS" label="macOS">
 
 - [**CMake**](https://cmake.org/install/)
 - [**Ninja**](https://github.com/ninja-build/ninja/releases)
-- [**arm-none-eabi-gcc**](https://mynewt.apache.org/latest/get_started/native_install/cross_tools.html#installing-the-arm-toolchain-for-mac-os-x)
+- [**arm-none-eabi-gcc 12.2 or newer**](https://developer.arm.com/downloads/-/arm-gnu-toolchain-downloads)
 - [**git**](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-- [**make**](https://formulae.brew.sh/formula/make) (**LEGACY**)
 
 </TabItem>
 </Tabs>

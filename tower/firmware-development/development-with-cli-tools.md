@@ -36,7 +36,7 @@ All of these have to be in **PATH**.
 - [**bcf**](../command-line-tools/firmware-tool.md)
 - [**CMake**](https://cmake.org/install/)
 - [**Ninja**](https://github.com/ninja-build/ninja/releases)
-- [**arm-none-eabi-gcc**](https://mynewt.apache.org/latest/get_started/native_install/cross_tools.html#installing-the-arm-toolchain-for-windows)
+- [**arm-none-eabi-gcc 12.2 or newer**](https://developer.arm.com/downloads/-/arm-gnu-toolchain-downloads)
 - [**make**](https://www.technewstoday.com/install-and-use-make-in-windows/) (**LEGACY**)
 
 </TabItem>
@@ -45,7 +45,7 @@ All of these have to be in **PATH**.
 - [**bcf**](../command-line-tools/firmware-tool.md)
 - [**CMake**](https://cmake.org/install/)
 - [**Ninja**](https://github.com/ninja-build/ninja/releases)
-- [**arm-none-eabi-gcc**](https://mynewt.apache.org/latest/get_started/native_install/cross_tools.html#installing-the-arm-toolchain-for-linux)
+- [**arm-none-eabi-gcc 12.2 or newer**](https://developer.arm.com/downloads/-/arm-gnu-toolchain-downloads)
 - [**make**](https://linuxhint.com/install-make-ubuntu/) (**LEGACY**)
 
 </TabItem>
@@ -54,7 +54,7 @@ All of these have to be in **PATH**.
 - [**bcf**](../command-line-tools/firmware-tool.md)
 - [**CMake**](https://cmake.org/install/)
 - [**Ninja**](https://github.com/ninja-build/ninja/releases)
-- [**arm-none-eabi-gcc**](https://mynewt.apache.org/latest/get_started/native_install/cross_tools.html#installing-the-arm-toolchain-for-mac-os-x)
+- [**arm-none-eabi-gcc 12.2 or newer**](https://developer.arm.com/downloads/-/arm-gnu-toolchain-downloads)
 - [**make**](https://formulae.brew.sh/formula/make) (**LEGACY**)
 
 </TabItem>
