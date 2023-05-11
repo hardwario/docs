@@ -417,6 +417,32 @@ Only a single instance of this module can be installed on CHESTER-M.
 | `CHESTER-X10:A` |
 | `CHESTER-X10:B` |
 
+## Enclosures
+
+For more details and drawings, see [Enclosures](hardware-description/enclosures.md#list-of-enclosures) article.
+
+| Ordering Code | Application                    | Note    |
+| ------------- | ------------------------------ | ------- |
+| CHESTER-E1-P  | CHESTER Clime                  |         |
+| CHESTER-E2-P  | CHESTER Counter                |         |
+| CHESTER-E3-P  | CHESTER Input/Current          |         |
+| CHESTER-E4-FP | CHESTER Push                   |         |
+| CHESTER-E5-P  | CHESTER Scale                  |         |
+| CHESTER-E6-P  | CHESTER Scan, Signal and Track |         |
+| CHESTER-E7-P  | CHESTER Clime IAQ              | S1      |
+| CHESTER-E8-P  | CHESTER Input 8x               |         |
+| CHESTER-E9-P  | CHESTER Input 8x + DC          |         |
+| CHESTER-E10-P | CHESTER Meteo                  |         |
+| CHESTER-E11-P | CHESTER + D1                   | Display |
+| CHESTER-E12-P |                                |         |
+| CHESTER-E13-P |                                |         |
+| CHESTER-E14-P |                                |         |
+| CHESTER-E15-P |                                |         |
+| CHESTER-E16-P |                                |         |
+| CHESTER-E17-P | CHESTER with C1 (Ekoterm)      |         |
+| CHESTER-E18-P | CHESTER with C2 (Axilera)      |         |
+| CHESTER-E19-P | CHESTER with B1 (wM-BUS)       |         |
+
 ## Other Accessories
 
 ### CHESTER-S2: External Hygrometer {#chester-s2}

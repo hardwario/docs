@@ -33,6 +33,7 @@ const sidebars = {
         'desktop-programming/mqtt-messages-management',
         'desktop-programming/node-red-programming',
         'desktop-programming/data-visualization',
+        'desktop-programming/hardwario-blockly',
         'desktop-programming/firmware-flashing',
       ],
     },

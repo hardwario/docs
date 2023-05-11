@@ -248,7 +248,7 @@ You can skip this step if you already have **Chocolatey** installed on your syst
    pip install -r chester/scripts/requirements.txt
    ```
 
-## Test Build
+## Test Build and Flash
 
 1. Go to the `blinky` sample directory:
 
@@ -270,3 +270,9 @@ You can skip this step if you already have **Chocolatey** installed on your syst
             SRAM:       60576 B       256 KB     23.11%
         IDT_LIST:          0 GB         2 KB      0.00%
    ```
+
+1. If your CHESTER APP/BLE is [**connected**](../developer-tools/segger-j-link.md#segger-j-link-to-app-port-connection) with J-Link. [**Drivers**](../developer-tools/segger-j-link) are installed and [**power is on**](../developer-tools/power-profiler-kit-ii.md#basic-usage), you can flash compiled blinky code by typing
+
+  ```
+  west flash
+  ```

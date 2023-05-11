@@ -36,6 +36,8 @@ Typically, you will not need to search for the I²C addresses while working with
 | CHESTER-C1     | `0x3e`  | TCA9534A        |                                    |
 | CHESTER-B1     | `0x3e`  | TCA9534A        |                                    |
 | CHESTER-B1     | `0x3f`  | TCA9534A        |                                    |
+| CHESTER-X5     | `0x40`  | ADS122C04       | Address in slot A                  |
+| CHESTER-X5     | `0x41`  | ADS122C04       | Address in slot B                  |
 | CHESTER-M      | `0x42`  | CAM-M8Q         |                                    |
 | CHESTER-M      | `0x44`  | SHT30           | Not populated by default           |
 | CHESTER-S2     | `0x45`  | SHT30           | External sensor                    |
@@ -45,7 +47,7 @@ Typically, you will not need to search for the I²C addresses while working with
 | CHESTER-X4     | `0x49`  | TLA2021         |                                    |
 | CHESTER-X3     | `0x4a`  | ADS122C04 - CH1 | Address in slot B                  |
 | CHESTER-M      | `0x4b`  | TLA2021         |                                    |
-| CHESTER-R1     | `0x4c`  | SC16IS740       |                                    |
+| CHESTER-V1     | `0x4c`  | SC16IS740       |                                    |
 | CHESTER-X6     | `0x4d`  | SC16IS740       |                                    |
 | CHESTER-B1     | `0x4e`  | SC16IS740       |                                    |
 | CHESTER-X3     | `0x4f`  | ADS122C04 - CH2 | Address in slot B                  |
