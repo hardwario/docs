@@ -46,6 +46,7 @@ const sidebars = {
         'extension-modules/chester-x2',
         'extension-modules/chester-x3',
         'extension-modules/chester-x4',
+        'extension-modules/chester-x5',
         'extension-modules/chester-x6',
         'extension-modules/chester-x7',
         'extension-modules/chester-x8',
