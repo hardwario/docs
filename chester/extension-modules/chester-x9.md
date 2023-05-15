@@ -8,10 +8,6 @@ import Image from '@theme/IdealImage';
 
 This article describes the CHESTER-X9 extension module.
 
-## Module Drawing
-
-<Image img={require('./pc-chester-x9.png')} />
-
 ## Module Overview
 
 CHESTER-X9 provides 4 low side switches witch current limit capable to control the load from an external voltage source.
@@ -26,11 +22,11 @@ CHESTER-X9 provides 4 low side switches witch current limit capable to control t
 
 The load have to be connected between external voltage source and the low side switch output (channel 1-4) according to the diagram:
 
-<Image img={require('./sc-chester-x9.png')} />
+![](sc-chester-x9.png)
 
 ## CHESTER Pin Configuration Diagram
 
-<Image img={require('./tb-chester-x9.png')} />
+![](tb-chester-x9.png)
 
 ## Pin Configuration and Functions
 
@@ -44,3 +40,7 @@ The load have to be connected between external voltage source and the low side s
 | 6        | CH3         | Channel 1 switch output |
 | 7        | GND         | System ground signal    |
 | 8        | CH4         | Channel 1 switch output |
+
+## Module Drawing
+
+![](pc-chester-x9.png)

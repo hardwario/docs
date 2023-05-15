@@ -8,17 +8,13 @@ import Image from '@theme/IdealImage';
 
 This article describes the CHESTER-X1 extension module.
 
-## Module Drawing
-
-<Image img={require('./pc-chester-x1.png')} />
-
 ## Module Overview
 
 CHESTER-X1 provides 8 independent 1-Wire channels allowing to connect digital  sensors ( e.g. Dallas DS18B20) or any other 1-Wire peripheries. The module implements Maxim DS2482S-800+ interface and also 5V boost converter to support 5V 1-Wire peripheries.
 
 ## CHESTER Pin Configuration Diagram
 
-<Image img={require('./tb-chester-x1.png')} />
+![](tb-chester-x1.png)
 
 ## Pin Configuration and Functions
 
@@ -37,4 +33,8 @@ CHESTER-X1 provides 8 independent 1-Wire channels allowing to connect digital  s
 
 CHESTER-X1 supports connection using parasitic powering method. In that case only 2 wires are necessary. In the parasitic mode 5.0V power supply is used. Standard 3 wire connection powering from VDD supports only 3.0V peripheries. This figure shows parasitic and standard powering method:
 
-<Image img={require('./sc-chester-x1.png')} />
+![](sc-chester-x1.png)
+
+## Module Drawing
+
+![](pc-chester-x1.png)

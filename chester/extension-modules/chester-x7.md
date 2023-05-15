@@ -8,16 +8,12 @@ import Image from '@theme/IdealImage';
 
 This article describes the CHESTER-X7 extension module.
 
-## Module Drawing
-
-<Image img={require('./pc-chester-x7.png')} />
-
 ## Module Overview
 The CHESTER-X7 provides one differential input for current probes or other industrial sensors and one single ended voltage input up to 28 V. The module implements also 5V boost converter allows powering the current probes.
 
 ## CHESTER Pin Configuration Diagram
 
-<Image img={require('./tb-chester-x7.png')} />
+![](tb-chester-x7.png)
 
 ## Pin Configuration and Functions
 
@@ -33,3 +29,7 @@ The CHESTER-X7 provides one differential input for current probes or other indus
 | 8        | VOUT        | 5.0 V power supply output   |
 
 *Note: The system positive rail voltage depends on CHESTER power supply option.
+
+## Module Drawing
+
+![](pc-chester-x7.png)

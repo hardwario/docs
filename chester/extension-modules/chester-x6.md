@@ -8,16 +8,12 @@ import Image from '@theme/IdealImage';
 
 This article describes the CHESTER-X6 extension module.
 
-## Module Drawing
-
-<Image img={require('./pc-chester-x6.png')} />
-
 ## Module Overview
 The CHESTER-X6 provides interface for HARDWARIO S-Wire protocol targeting low-power peripherals using 3 wire connection (+5V, GND, DATA). It implements also 5V boost converter and 5V power supply output.
 
 ## CHESTER Pin Configuration Diagram
 
-<Image img={require('./tb-chester-x6.png')} />
+![](tb-chester-x6.png)
 
 ## Pin Configuration and Functions
 
@@ -33,3 +29,7 @@ The CHESTER-X6 provides interface for HARDWARIO S-Wire protocol targeting low-po
 | 8        | +V          | System positive rail (*)  |
 
 *Note: The system positive rail voltage depends on CHESTER power supply option.
+
+## Module Drawing
+
+![](pc-chester-x6.png)
