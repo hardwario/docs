@@ -8,10 +8,6 @@ import Image from '@theme/IdealImage';
 
 This article describes the CHESTER-X0 extension module. Two variant of the CHESTER-X0 module are available: CHESTER-X0A (including 5.0V boost converter) and CHESTER-X0B (without 5.0V boost converter).
 
-## Module Drawing
-
-<Image img={require('./pc-chester-x0.png')} />
-
 ## Module Overview
 
 CHESTER-X0B provides 4 independent GPIO channels, CHESTER-X0A includes also 5V boost converter. Each channel can be used for these applications:
@@ -34,7 +30,7 @@ Depending on the application these configuration options are available for each 
 
 This picture show the electric circuit of each channel:
 
-<Image img={require('./sc-chester-x0.png')} />
+![](sc-chester-x0.png)
 
 ## Configuration Table
 
@@ -53,7 +49,7 @@ The configuration depends on the application:
 
 ## CHESTER Pin Configuration Diagram
 
-<Image img={require('./tb-chester-x0.png')} />
+![](tb-chester-x0.png)
 
 ## Pin Configuration and Functions
 
@@ -69,3 +65,7 @@ The configuration depends on the application:
 | 8        | +V          | System positive rail (*) |
 
 *Note: The system positive rail voltage depends on CHESTER power supply option.
+
+## Module Drawing
+
+![](pc-chester-x0.png)

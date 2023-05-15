@@ -8,17 +8,13 @@ import Image from '@theme/IdealImage';
 
 This article describes the CHESTER-X2 extension module.
 
-## Module Drawing
-
-<Image img={require('./pc-chester-x2.png')} />
-
 ## Module Overview
 
 CHESTER-X2 provides TTL/UART interface and RS-485 interface (e.g., for Modbus communication).
 
 ## CHESTER Pin Configuration Diagram
 
-<Image img={require('./tb-chester-x2.png')} />
+![](tb-chester-x2.png)
 
 ## Pin Configuration and Functions
 
@@ -34,3 +30,7 @@ CHESTER-X2 provides TTL/UART interface and RS-485 interface (e.g., for Modbus co
 | 8        | +V          | System positive rail (*) |
 
 *Note: The system positive rail voltage depends on CHESTER power supply option.
+
+## Module Drawing
+
+![](pc-chester-x2.png)

@@ -6,16 +6,13 @@ import Image from '@theme/IdealImage';
 
 # CHESTER-X8
 This article describes the CHESTER-X8 extension module.
-## Module Drawing
-
-<Image img={require('./pc-chester-x8.png')} />
 
 ## Module Overview
 CHESTER-X8 implements precise low zero g offset 3-axis accelerometer ADXL355 providing the resolution up to 3.9 μg/LSB and measurement range ±2g, ±4g, ±8g.
 
 ## CHESTER Pin Configuration Diagram
 
-<Image img={require('./tb-chester-x8.png')} />
+![](tb-chester-x8.png)
 
 ## Pin Configuration and Functions
 
@@ -31,3 +28,7 @@ CHESTER-X8 implements precise low zero g offset 3-axis accelerometer ADXL355 pro
 | 8        | +V          | System positive rail (*)       |
 
 *Note: The system positive rail voltage depends on CHESTER power supply option.
+
+## Module Drawing
+
+![](pc-chester-x8.png)

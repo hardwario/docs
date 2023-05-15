@@ -7,10 +7,6 @@ import Image from '@theme/IdealImage';
 # CHESTER-X10
 This article describes the CHESTER-10 extension module.
 
-## Module Drawing
-
-<Image img={require('./pc-chester-x10.png')} />
-
 ## Module Overview
 
 CHESTER-X10 is a backup power supply module for CHESTER. The primary power input is an external 6-28 VDC line (VIN). The module provides also charging the single cell Li-Pol battery. Charging current is set to 450 mA. The module comes with protected single cell Li-Pol battery 3.7V 2000 mAh. Integrated ADC convertor allows to measure the input voltage (VIN / GND) and the battery voltage (BAT+ / BAT-).
@@ -30,7 +26,7 @@ CHESTER-X10 is a backup power supply module for CHESTER. The primary power input
 
 ## CHESTER Pin Configuration Diagram
 
-<Image img={require('./tb-chester-x10.png')} />
+![](tb-chester-x10.png)
 
 ## Pin Configuration and Functions
 
@@ -46,3 +42,7 @@ CHESTER-X10 is a backup power supply module for CHESTER. The primary power input
 | 8        | VIN         | DC power supply voltage input (5-28V) |
 
 *Note: Use only a single cell 3.7V Li-Pol (or Li-Ion) battery with integrated protection circuit. Do not short circuit the battery!
+
+## Module Drawing
+
+![](pc-chester-x10.png)
