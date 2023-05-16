@@ -114,6 +114,7 @@ const sidebars = {
         'firmware-sdk/installation-on-ubuntu',
         'firmware-sdk/installation-on-macos',
         'firmware-sdk/installation-on-windows',
+        'firmware-sdk/installation-in-virtualbox',
         'firmware-sdk/build-and-deploy',
         'firmware-sdk/applications',
         'firmware-sdk/samples',
