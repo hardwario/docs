@@ -20,14 +20,14 @@ CHESTER-X5 implements two **isolated** voltage inputs. Each can measure voltage 
 
 | Position | Signal Name | Signal Description           |
 | -------- | ----------- | ---------------------------- |
-| 1        | nc          | Reserved                     |
+| 1        | DNC         | Reserved                     |
 | 2        | INP1        | Channel 1 **positive** input |
-| 3        | INM1        | Channel 1 negative input     |
-| 4        | nc          | Reserved                     |
-| 5        | nc          | Reserved                     |
-| 6        | INM2        | Channel 2 negative input     |
+| 3        | INM1        | Channel 1 **negative** input |
+| 4        | DNC         | Reserved                     |
+| 5        | DNC         | Reserved                     |
+| 6        | INM2        | Channel 2 **negative** input |
 | 7        | INP2        | Channel 2 **positive** input |
-| 8        | nc          | Reserved                     |
+| 8        | DNC         | Reserved                     |
 
 ## Module Drawing
 
