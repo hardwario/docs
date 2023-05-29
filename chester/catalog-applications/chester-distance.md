@@ -57,41 +57,9 @@ See [**Ordering Codes**](../ordering-codes.md) for more details.
 
 Firmware build shield options: `ctr_lte ctr_mb7066_a ctr_z`
 
-### CHESTER Distance 1W
-
-The catalog application **CHESTER Distance 1W** supports multiple external
-DS18B20 1-Wire temperature sensor.
-
-The hardware of this application consists of the following ordering codes:
-
-* `CHESTER-M-CGLS` - Standard mainboard
-
-* `CHESTER-X0A:A` - Input module (4 channels)
-
-See [**Ordering Codes**](../ordering-codes.md) for more details.
-
-Firmware build shield options: `ctr_lte ctr_mb7066_a ctr_ts18b20`
-
-### CHESTER Distance 1WH
-
-The catalog application **CHESTER Distance 1WH** supports **CHESTER_S2** +
-multiple external DS18B20 1-Wire temperature sensor.
-
-The hardware of this application consists of the following ordering codes:
-
-* `CHESTER-M-CGLS` - Standard mainboard
-
-* `CHESTER-X0A:A` - Input module (4 channels)
-
-* `CHESTER-S2` - External hygrometer
-
-See [**Ordering Codes**](../ordering-codes.md) for more details.
-
-Firmware build shield options: `ctr_lte ctr_mb7066_a ctr_ts18b20 ctr_s2`
-
 ## Measurement and Behavior
 
-- The distance is **sampled** with a configurable period (parameter
+- All sensors are **sampled** with a configurable period (parameter
   `interval-sample`).
 - Samples are then **aggregated** in the configurable interval. Minimum,
   maximum, average, and median are computed from buffered samples for each
