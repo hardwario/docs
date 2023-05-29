@@ -1,13 +1,13 @@
 ---
-slug: chester-distance
-title: CHESTER Distance
+slug: chester-range
+title: CHESTER Range
 ---
 import Image from '@theme/IdealImage';
 
-# CHESTER Distance
+# CHESTER Range
 
 This article describes the core functionality, hardware description, and
-example **JSON** message of the catalog application **CHESTER Distance**.
+example **JSON** message of the catalog application **CHESTER Range**.
 
 :::caution
 
@@ -20,18 +20,18 @@ interactive console.
 
 ## Application Overview
 
-**CHESTER Distance** measures distance using the [MaxBotix
+**CHESTER Range** measures distance using the [MaxBotix
 MB7066](https://shop.hardwario.com/ultrasonic-sensor/) ultrasonic sensor. It
 can also measure temperature using the DS18B20 one-wire sensor and humidity
 using CHESTER S2.
 
 ## Application Variants
 
-**CHESTER Distance** can be ordered in one of these variants:
+**CHESTER Range** can be ordered in one of these variants:
 
-### CHESTER Distance
+### CHESTER Range
 
-The catalog **CHESTER Distance** hardware consists of the following ordering
+The catalog **CHESTER Range** hardware consists of the following ordering
 codes:
 
 * `CHESTER-M-CGLS` - Standard mainboard
@@ -42,9 +42,9 @@ See [**Ordering Codes**](../ordering-codes.md) for more details.
 
 Firmware build shield options: `ctr_lte ctr_mb7066_a`
 
-### CHESTER Distance Z
+### CHESTER Range Z
 
-The catalog **CHESTER Distance Z** hardware consists of the following ordering
+The catalog **CHESTER Range Z** hardware consists of the following ordering
 codes:
 
 * `CHESTER-M-CGLS` - Standard mainboard
