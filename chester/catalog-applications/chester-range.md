@@ -6,24 +6,17 @@ import Image from '@theme/IdealImage';
 
 # CHESTER Range
 
-This article describes the core functionality, hardware description, and
-example **JSON** message of the catalog application **CHESTER Range**.
+This article describes the core functionality, hardware description, and example **JSON** message of the catalog application **CHESTER Range**.
 
 :::caution
 
-Some of the basics are not provided, as they are common for all **CHESTER**
-catalog applications. For example, see the article [**Platform
-Management**](../category/platform-management) on how to work with the
-interactive console.
+Some of the basics are not provided, as they are common for all **CHESTER** catalog applications. For example, see the article [**Platform Management**](../category/platform-management) on how to work with the interactive console.
 
 :::
 
 ## Application Overview
 
-**CHESTER Range** measures distance using the [MaxBotix
-MB7066](https://shop.hardwario.com/ultrasonic-sensor/) ultrasonic sensor. It
-can also measure temperature using the DS18B20 one-wire sensor and humidity
-using CHESTER S2.
+**CHESTER Range** measures distance using the [MaxBotix MB7066](https://shop.hardwario.com/ultrasonic-sensor/) ultrasonic sensor. It can also measure temperature using the DS18B20 one-wire sensor and humidity using **CHESTER-S2**.
 
 ## Application Variants
 
@@ -31,8 +24,7 @@ using CHESTER S2.
 
 ### CHESTER Range
 
-The catalog **CHESTER Range** hardware consists of the following ordering
-codes:
+The catalog **CHESTER Range** hardware consists of the following ordering codes:
 
 * `CHESTER-M-CGLS` - Standard mainboard
 
@@ -44,8 +36,7 @@ Firmware build shield options: `ctr_lte ctr_mb7066_a`
 
 ### CHESTER Range Z
 
-The catalog **CHESTER Range Z** hardware consists of the following ordering
-codes:
+The catalog **CHESTER Range Z** hardware consists of the following ordering codes:
 
 * `CHESTER-M-CGLS` - Standard mainboard
 
@@ -59,13 +50,9 @@ Firmware build shield options: `ctr_lte ctr_mb7066_a ctr_z`
 
 ## Measurement and Behavior
 
-- All sensors are **sampled** with a configurable period (parameter
-  `interval-sample`).
-- Samples are then **aggregated** in the configurable interval. Minimum,
-  maximum, average, and median are computed from buffered samples for each
-  sensor (parameter `interval-aggreg`).
-- Each aggregated values have its timestamps and are sent in a batch in a
-  report interval period (parameter `interval-report`).
+- All sensors are **sampled** with a configurable period (parameter `interval-sample`).
+- Samples are then **aggregated** in the configurable interval. Minimum, maximum, average, and median are computed from buffered samples for each sensor (parameter `interval-aggreg`).
+- Each aggregated values have its timestamps and are sent in a batch in a report interval period (parameter `interval-report`).
 
 ## Default Configuration
 
@@ -81,15 +68,13 @@ app config interval-report 1800
 
 :::info
 
-You can easily explore the whole command tree structure - start with the `help`
-command.
+You can easily explore the whole command tree structure - start with the `help` command.
 
 :::
 
 :::caution
 
-To apply a new configuration, you need to call `config save`, which applies the
-new configuration parameters and reboots the device.
+To apply a new configuration, you need to call `config save`, which applies the new configuration parameters and reboots the device.
 
 :::
 
@@ -117,15 +102,13 @@ aggreg
 
 ## Firmware
 
-The latest firmware is available in Catalog Applications [Firmware
-chapter](index.md#application-firmware).
+The latest firmware is available in Catalog Applications [Firmware chapter](index.md#application-firmware).
 
 ## Example JSON Message
 
 In this example **JSON** you can see data from all three variants
 
-Every available sensor has one aggrevated measurement, which contains the
-minimum, maximum, average and median value.
+Every available sensor has one aggrevated measurement, which contains the minimum, maximum, average and median value.
 
 ```json
 {
