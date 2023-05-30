@@ -207,7 +207,7 @@ Every available sensor has one aggrevated measurement, which contains the minimu
       ]
     }
   ],
-  "sonar": {
+  "ultrasonic_ranger": {
     "distance": {
       "measurements": [
         {
