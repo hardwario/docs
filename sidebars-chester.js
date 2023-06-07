@@ -29,7 +29,8 @@ const sidebars = {
         'catalog-applications/chester-current',
         'catalog-applications/chester-input',
         'catalog-applications/chester-push',
-        'catalog-applications/chester-meteo'
+        'catalog-applications/chester-meteo',
+        'catalog-applications/chester-range'
       ],
     },
     {
