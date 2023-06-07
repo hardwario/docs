@@ -156,6 +156,19 @@ Every available sensor has one aggrevated measurement, which contains the minimu
     "acceleration_z": 9.65,
     "orientation": 2
   },
+  "ultrasonic_ranger": {
+    "distance": {
+      "measurements": [
+        {
+          "timestamp": 1685093569,
+          "min": 2.004,
+          "max": 2.009,
+          "avg": 2.008,
+          "mdn": 2.008
+        }
+      ]
+    }
+  },
   "hygrometer": {
     "temperature": {
       "events": [],
@@ -206,19 +219,6 @@ Every available sensor has one aggrevated measurement, which contains the minimu
         }
       ]
     }
-  ],
-  "ultrasonic_ranger": {
-    "distance": {
-      "measurements": [
-        {
-          "timestamp": 1685093569,
-          "min": 2.004,
-          "max": 2.009,
-          "avg": 2.008,
-          "mdn": 2.008
-        }
-      ]
-    }
-  }
+  ]
 }
 ```
