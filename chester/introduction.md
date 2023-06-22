@@ -9,7 +9,7 @@ import Image from '@theme/IdealImage';
 This documentation helps users and gateway integrators to navigate these essential areas:
 
 * How to configure and manage the platform - see the article:<br/>
-  [**Platform Management**](category/platform-management)
+  [**Platform Management**](category/platform-connectivity)
 
 * What ready-made firmware applications are available (with devices in stock) - see the article:<br/>
   [**Catalog Applications**](catalog-applications/index.md)

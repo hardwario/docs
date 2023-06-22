@@ -8,9 +8,7 @@ import TabItem from '@theme/TabItem';
 
 # HARDWARIO Manager
 
-This article will provide information on how to manage **CHESTER** devices with **HARDWARIO Manager** application.
-
-**HADRWARIO Manager** mobile app allows you to:
+**HADRWARIO Manager** mobile app allows you via **Bluetooth Low Energy** to:
 
 - Show device information
 - Configure the device over the terminal
@@ -93,12 +91,13 @@ The purpose of the **Command Terminal** is to easily make changes in the setting
 - The console will return wanted information or it will set a certain value **(3)**.
 - You can select an already used command in **Command history (4)**.
 
+
 <div class="container">
   <div class="row">
-    <div class="col col--6">
+    <div class="col col--5">
       <div><Image img={require('./manager_console.png')} /></div>
     </div>
-    <div class="col col--10">
+    <div class="col col--8">
     </div>
   </div>
 </div>

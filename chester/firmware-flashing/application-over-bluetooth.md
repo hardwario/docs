@@ -6,7 +6,7 @@ import Image from '@theme/IdealImage';
 
 # Application over Bluetooth
 
-Please use [HARDWARIO Manager](../platform-management/hardwario-manager.md) phone app and follow a [Firmware Update](../platform-management/hardwario-manager.md#firmware-update) chapter.
+Please use [HARDWARIO Manager](../platform-connectivity/hardwario-manager.md) phone app and follow a [Firmware Update](../platform-connectivity/hardwario-manager.md#firmware-update) chapter.
 
 :::caution
 

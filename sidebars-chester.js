@@ -6,14 +6,17 @@ const sidebars = {
     'introduction',
     {
       type: 'category',
-      label: 'Platform Management',
+      label: 'Platform Connectivity',
       link: {
         type: 'generated-index',
       },
       collapsed: true,
       items: [
-        'platform-management/hardwario-manager',
-        'platform-management/cellular-networks',
+        'platform-connectivity/hardwario-manager',
+        'platform-connectivity/cellular-networks',
+        'platform-connectivity/bluetooth-low-energy',
+        'platform-connectivity/lorawan-radio',
+        'platform-connectivity/satellite-connectivity',
       ],
     },
     {

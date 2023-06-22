@@ -16,7 +16,7 @@ When upgrading firmware from **v1.x.x** to version **v2.0.0 and newer** - it is 
 
 :::caution
 
-Some of the basics are not provided, as they are common for all **CHESTER** catalog applications. For example, see the article [**Platform Management**](../category/platform-management) on how to work with the interactive console.
+Some of the basics are not provided, as they are common for all **CHESTER** catalog applications. For example, see the article [**Platform Management**](../category/platform-connectivity) on how to work with the interactive console.
 
 :::
 
