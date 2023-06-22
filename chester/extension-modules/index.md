@@ -26,6 +26,38 @@ On the CHESTER DevKit variant, it is possible to install extension modules desig
 
 ## Backside Modules
 
+Backside modules (red modules in the picture below) further extend CHESTER functionality with more interfaces.
+This extension is modular also in CHESTER-SDK development where each module has its own ZephyrRTOS driver for easy integration.
+
+<div class="container">
+  <div class="row">
+    <div class="col col--5">
+      <div><Image img={require('./explode-view.png')} /></div>
+    </div>
+    <div class="col col--8">
+    </div>
+  </div>
+</div>
+<br />
+
+Placing **X** module in the left **"A"** slot connects its signals to the two left terminal blocks **TB1** and **TB2** (see the blue square in the picture below).
+Both left terminal blocks **TB1** and **TB2** are wired together in parallel so you can more easily connect multiple sensors to the same signal/power.
+
+The same applies to the right **"B"** slot and terminals **TB5** and **TB6** (see the green square in the picture below).
+
+When CHESTER is mounted in the enclosure, you can check the module **"X_"** number and hardware revision **"R1.0"** through the small holes when the battery is removed (see the two orange circles in the image below).
+
+<div class="container">
+  <div class="row">
+    <div class="col col--5">
+      <div><Image img={require('./documentation-top.png')} /></div>
+    </div>
+    <div class="col col--8">
+    </div>
+  </div>
+</div>
+<br />
+
 | Module Name                       | Module Description                                                                                                                                                |
 | --------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [**CHESTER-X0A**](chester-x0.md)  | Up to 4 digital and analog inputs and outputs, 4-20 mA current loop channels, 0-10 V voltage inputs, dry contact, NPN or PNP input, including 5V boost converter. |
