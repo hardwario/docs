@@ -10,7 +10,7 @@ This article describes the core functionality, hardware description, and example
 
 :::caution
 
-Some of the basics are not provided, as they are common for all **CHESTER** catalog applications. For example, see the article [**Platform Management**](../category/platform-management) on how to work with the interactive console.
+Some of the basics are not provided, as they are common for all **CHESTER** catalog applications. For example, see the article [**Platform Management**](../category/platform-connectivity) on how to work with the interactive console.
 
 :::
 
