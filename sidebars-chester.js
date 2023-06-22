@@ -67,6 +67,7 @@ const sidebars = {
         'hardware-description/basic-parameters',
         'hardware-description/block-diagram',
         'hardware-description/schematic-diagram',
+        'hardware-description/layout-placement',
         'hardware-description/connector-description',
         'hardware-description/i2c-address-space',
         'hardware-description/enclosures',
