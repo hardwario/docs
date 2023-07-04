@@ -8,6 +8,8 @@ CHESTER-M mainboard contains also LoRaWAN radio. [Catalog applications](catalog-
 
 CHESTER is using **CMWX1ZZABZ-078** module from **Murata**. This module has manufacturer firmware that takes care of all the LoRaWAN communication. It is also possible to flash our own [lora-modem](https://github.com/hardwario/lora-modem) open-source firmware, which is backward-compatible with the manufacturer's, but also adds more functionality and higer LoRaWAN version support. It is also [very well documented](https://github.com/hardwario/lora-modem/wiki/AT-Command-Interface), however this AT communication is handled by CHESTER so all you need is to set-up keys as explained below.
 
+The standard **CMWX1ZZABZ-078** module from **Murata** uses LoRaWAN standard 1.0.2 release B.
+
 ## EMBER LoRaWAN Gateway
 
 We also offer **LoRaWAN gateway EMBER** ([EMBER docs](../../ember), [EMBER e-shop](https://shop.hardwario.com/ember/)). This gateway can manage LoRaWAN communication with CHESTER and network software could be running in our HARDWARIO Cloud, or completely in your infrastructure. LoRaWAN network is very flexible, reliable with long range and we use it in big factories or large open areas.
@@ -121,7 +123,7 @@ Note, that lower data rate means a lower payload that can reach [as low as 51 by
 
 To correctly decode RAW binary data you have to use a decoder that outputs values with JSON.
 
-HARDWARIO is using decoders which can be use in CHIRPSTACK or in Node-RED. Let's take a look for example at CHESTER Clime [codec](https://github.com/hardwario/chester-sdk/tree/main/applications/clime/codec) folder.
+HARDWARIO is using decoders that can be used in CHIRPSTACK or Node-RED. Let's take a look for example at CHESTER Clime [codec](https://github.com/hardwario/chester-sdk/tree/main/applications/clime/codec) folder.
 
 It contains files:
 
@@ -134,7 +136,8 @@ You can set the decoder in Device-profile in the **Codec** tab.
 
 ### Node-RED Decoder
 
-For Node-RED we use connecting directly to the CHIRPSTACK MQTT broker with a MQTT out node that has set MQTT topic to `application/<application-id>/device/+/event/up`.
+For Node-RED we use connecting directly to the CHIRPSTACK MQTT broker with a MQTT out node that has set the MQTT topic to `application/<application-id>/device/+/event/up`.
+
 Replace the `<application-id>` with your application ID. In older CHIRPSTACK it is a **0..n number**, in newer versions it is a **unique ID**.
 
 ## Troubleshooting
