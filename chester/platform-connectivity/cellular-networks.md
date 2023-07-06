@@ -120,3 +120,16 @@ lte config autoconn true
 lte config apn onomondo
 lte config addr 165.227.146.193
 ```
+
+## Slovak Telekom NB-IoT Configuration
+
+This is the reference LTE settings when using **CHESTER** with the **Slovak Telekom** SIM card:
+
+```
+lte config lte-m-mode false
+lte config nb-iot-mode true
+lte config autoconn false
+lte config apn nbiot.telekom.sk
+lte config plmnid 23102
+lte config addr 165.227.146.193
+```
