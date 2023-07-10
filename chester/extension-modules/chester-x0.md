@@ -14,7 +14,7 @@ CHESTER-X0B provides 4 independent GPIO channels, CHESTER-X0A includes also 5V b
 
 * Digital input and output
 * Analog input and output
-* Voltage input 0-10 V
+* Voltage input 0-26 V
 * Current loop 4-20 mA
 * Dry contact input
 * NPN and PNP input
