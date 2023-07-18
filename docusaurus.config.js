@@ -88,6 +88,7 @@ const config = {
         logo: {
           alt: 'HARDWARIO Logo',
           src: 'img/logo.svg',
+          srcDark: 'img/logo-dark.svg',
         },
         items: [
           {
