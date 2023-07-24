@@ -133,3 +133,59 @@ lte config apn nbiot.telekom.sk
 lte config plmnid 23102
 lte config addr 165.227.146.193
 ```
+
+## List Available Networks
+
+You can use CHESTER to scan for networks it can see. This is mainly for troubleshooting purposes.
+you have to use J-Link RTT connection with [HARDWARIO CLI](../developer-tools/command-line-tools.md), this doesn't work with a BLE connection.
+
+Open HARDWARIO CLI console by typing `hardwario chester app console`
+
+```
+lte config test true
+config save
+
+lte test uart enable
+lte test wakeup
+lte test cmd at\%xsystemmode=1,1,0,0
+lte test cmd at+cfun=1
+lte test cmd at\%cops=?
+
+<wait for %COPS response>
+
+lte config test false
+config save
+```
+
+:::warning
+
+Don't forget to disable modem test mode after you get the `%COPS` response so CHESTER can work properly again.
+
+```
+lte config test false
+config save
+```
+
+:::
+
+Response will be in application log during several minutes (e.g. ~3 minutes with usual bandlock for Bands 2, 4, 5, 8, 12, 20, 28) in the form like:
+
+`%COPS: (2,"","","26201",7),(1,"","","26202",7)`
+
+**Output explanation:**
+
+`%COPS: [(<stat>,long alphanumeric <oper>,short alphanumeric <oper>,numeric <oper>[,<AcT>])]`
+
+`<stat>`
+- 0 – Unknown
+- 1 – Available
+- 2 – Current
+- 3 – Forbidden
+
+`<oper>`
+- PLMNID of operator
+
+`<AcT>`
+- 7 – LTE-M
+- 9 – NB-IoT
+
