@@ -29,6 +29,18 @@ The table below provides an overview of the available **catalog applications**:
 
 \* The specific hardware or firmware variants may need an external power supply.
 
+## Button behaviour
+
+Applications define actions for the mainboard button. The actions are chosen based on the number of consecutive presses of the button. Before an action is executed, **CHESTER** will blink the orange LED *N* times, indicating the amount of presses. The actions are:
+
+|  Number of presses  |  Action                                     |
+| ------------------: | :------------------------------------------ |
+| 1                   | Send data immediately                       |
+| 2                   | Sample data immediately                     |
+| 3                   | Sample, aggregate and send data immediately |
+| 4                   | Reboot the device                           |
+| 5                   | Turn on the load LED for 2 minutes          |
+
 ## Application Firmware
 
 The table below provides an overview of the available application firmware builds for **catalog applications**.
@@ -64,8 +76,6 @@ When upgrading firmware from **v1.x.x** to version **v2.0.0 and newer** - it is 
 | **CHESTER Scale Z**                                             | [**v2.2.1**](https://firmware.hardwario.com/chester/decfe521ad884a469c08576ffa6eb1f5) [⚠️](#configuration-backup "Configuration backup") | <small>`decfe521ad884a469c08576ffa6eb1f5`</small> | 2023-05-12 | Support for **CHESTER-Z**              |
 | [**CHESTER Meteo**](chester-meteo.md#chester-meteo-1)           | [**v2.2.1**](https://firmware.hardwario.com/chester/0bada0931aa84a71bcdca28927b66fff) [⚠️](#configuration-backup "Configuration backup") | <small>`0bada0931aa84a71bcdca28927b66fff`</small> | 2023-05-12 |                                        |
 | [**CHESTER Meteo Z**](chester-meteo.md#chester-meteo-z)         | [**v2.2.1**](https://firmware.hardwario.com/chester/707ac04aa61f4efc99570c10bc860ae5) [⚠️](#configuration-backup "Configuration backup") | <small>`707ac04aa61f4efc99570c10bc860ae5`</small> | 2023-05-12 | Support for **CHESTER-Z**              |
-
-
 
 ## Configuration backup v1.x.x → v2.x.x {#configuration-backup}
 
