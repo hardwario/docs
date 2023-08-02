@@ -29,7 +29,7 @@ The table below provides an overview of the available **catalog applications**:
 
 \* The specific hardware or firmware variants may need an external power supply.
 
-The common functionality of the **catalog applications** is documented [here](catalog-applications.md).
+The common functionality of the **catalog applications** is documented [here](common-functionality.md).
 
 ## Application Firmware
 
