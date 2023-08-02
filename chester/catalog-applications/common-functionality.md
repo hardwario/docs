@@ -8,7 +8,7 @@ import Image from '@theme/IdealImage';
 
 The **catalog applications** share common functionality. For example the button behaviour or the way settings are handled.
 
-## Button behaviour
+## Button Behaviour
 
 Applications define actions for the mainboard button. The actions are chosen based on the number of consecutive presses of the button. Before an action is executed, **CHESTER** will blink the orange LED *N* times, indicating the amount of consecutive presses. The actions are:
 
@@ -20,7 +20,7 @@ Applications define actions for the mainboard button. The actions are chosen bas
 | 4                   | Reboot the device                           |
 | 5                   | Turn on the load LED for 2 minutes          |
 
-## LED behaviour
+## LED Behaviour
 
 When **CHESTER** is powered on, the LED will be lit red until the application is initialized. Then **CHESTER** will blink the green LED every five seconds to indicate the app is running.
 
@@ -44,7 +44,7 @@ config save
 
 This will apply the changes and restart the application. After the restart, you can verify the settings changed using the `app config show` command.
 
-## Shell commands
+## Shell Commands
 
 Apart from the commands mentioned above, the shell offers many more commands. They can be listed using the `help` command.
 
