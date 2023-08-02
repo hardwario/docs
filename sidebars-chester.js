@@ -28,6 +28,7 @@ const sidebars = {
       },
       collapsed: true,
       items: [
+        'catalog-applications/common-functionality',
         'catalog-applications/chester-clime',
         'catalog-applications/chester-current',
         'catalog-applications/chester-counter',

@@ -10,7 +10,7 @@ This article describes the core functionality, hardware description, and example
 
 :::danger
 
-When upgrading firmware from **v1.x.x** to version **v2.0.0 and newer** - it is necessary to [**backup configuration**](index.md#configuration-backup).
+When upgrading firmware from **v1.x.x** to version **v2.0.0 and newer** - it is necessary to [**backup configuration**](common-functionality.md#configuration-backup).
 
 :::
 
@@ -229,7 +229,7 @@ app config event-report-rate <1-3600>
 
 :::danger
 
-When upgrading firmware from **v1.x.x** to version **v2.0.0 and newer** - it is necessary to [**backup configuration**](index.md#configuration-backup).
+When upgrading firmware from **v1.x.x** to version **v2.0.0 and newer** - it is necessary to [**backup configuration**](common-functionality.md#configuration-backup).
 
 :::
 
