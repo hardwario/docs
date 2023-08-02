@@ -10,7 +10,7 @@ This article describes the core functionality, hardware description, default con
 
 :::danger
 
-When upgrading firmware from **v1.x.x** to version **v2.0.0 and newer** - it is necessary to [**backup configuration**](index.md#configuration-backup).
+When upgrading firmware from **v1.x.x** to version **v2.0.0 and newer** - it is necessary to [**backup configuration**](common-functionality.md#configuration-backup).
 
 :::
 
@@ -277,7 +277,7 @@ app config hygro-interval-aggreg <value>
 
 :::danger
 
-When upgrading firmware from **v1.x.x** to version **v2.0.0 and newer** - it is necessary to [**backup configuration**](index.md#configuration-backup).
+When upgrading firmware from **v1.x.x** to version **v2.0.0 and newer** - it is necessary to [**backup configuration**](common-functionality.md#configuration-backup).
 
 :::
 

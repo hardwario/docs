@@ -10,7 +10,7 @@ This article describes the core functionality, hardware description, default con
 
 :::danger
 
-When upgrading firmware from **v1.x.x** to version **v2.0.0 and newer** - it is necessary to [**backup configuration**](index.md#configuration-backup). In the case of using **CHESTER Current** also calibration data.
+When upgrading firmware from **v1.x.x** to version **v2.0.0 and newer** - it is necessary to [**backup configuration**](common-functionality.md#configuration-backup). In the case of using **CHESTER Current** also calibration data.
 
 :::
 
@@ -282,7 +282,7 @@ app config w1-therm-interval-aggreg <1-86400>
 
 :::danger
 
-When upgrading firmware from **v1.x.x** to version **v2.0.0 and newer** - it is necessary to [**backup configuration**](index.md#configuration-backup). In the case of using **CHESTER Current** also calibration data.
+When upgrading firmware from **v1.x.x** to version **v2.0.0 and newer** - it is necessary to [**backup configuration**](common-functionality.md#configuration-backup). In the case of using **CHESTER Current** also calibration data.
 
 :::
 
@@ -558,7 +558,7 @@ The latest firmware is available in Catalog Applications [Firmware chapter](inde
 
 :::danger
 
-When upgrading firmware from **v1.x.x** to version **v2.0.0 and newer** - it is necessary to [**backup configuration**](index.md#configuration-backup). In the case of using **CHESTER Current** also calibration data.
+When upgrading firmware from **v1.x.x** to version **v2.0.0 and newer** - it is necessary to [**backup configuration**](common-functionality.md#configuration-backup). In the case of using **CHESTER Current** also calibration data.
 
 :::
 

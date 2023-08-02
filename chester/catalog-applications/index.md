@@ -29,6 +29,8 @@ The table below provides an overview of the available **catalog applications**:
 
 \* The specific hardware or firmware variants may need an external power supply.
 
+The common functionality of the **catalog applications** is documented [here](common-functionality.md).
+
 ## Application Firmware
 
 The table below provides an overview of the available application firmware builds for **catalog applications**.
@@ -65,14 +67,3 @@ When upgrading firmware from **v1.x.x** to version **v2.0.0 and newer** - it is 
 | [**CHESTER Meteo**](chester-meteo.md#chester-meteo-1)           | [**v2.2.1**](https://firmware.hardwario.com/chester/0bada0931aa84a71bcdca28927b66fff) [⚠️](#configuration-backup "Configuration backup") | <small>`0bada0931aa84a71bcdca28927b66fff`</small> | 2023-05-12 |                                        |
 | [**CHESTER Meteo Z**](chester-meteo.md#chester-meteo-z)         | [**v2.2.1**](https://firmware.hardwario.com/chester/707ac04aa61f4efc99570c10bc860ae5) [⚠️](#configuration-backup "Configuration backup") | <small>`707ac04aa61f4efc99570c10bc860ae5`</small> | 2023-05-12 | Support for **CHESTER-Z**              |
 
-
-
-## Configuration backup v1.x.x → v2.x.x {#configuration-backup}
-
-When upgrading an older **v1.x.x** firmware to **v2.x.x** - it is necessary to backup application configuration. The most important is this step in **CHESTER Current** application, where in configuration there are the **current transformers calibration coefficients**.
-
-In case you forget to back up the data - they are not lost unless you executed `config save` command in newer firmware. However, you need to temporarily downgrade to [older firmware](https://github.com/hardwario/docs/blob/33661ca486dda9e6883d3a82edf0128ab32173d2/chester/catalog-applications/index.md#application-firmware) that can read the old configuration and apply the same configuration after the firmware is updated.
-
-In the old firmware type `app config show` to the console. Then you need to copy all configuration items. If you use **HARDWARIO Manager** phone app or **HARDWARIO CLI** on your computer, you can highlight and copy current configuration text to your clipboard or text editor.
-
-After updating to a newer firmware, paste the same lines to the console. If you use **HARDWARIO Manager** phone app or **HARDWARIO CLI** on your computer, you can paste all the lines together to the input line and press enter. All commands will be applied one by one. Check that configuration was applied correctly by typing `app config show`. Do not forget to apply changes by typing `config save`.
