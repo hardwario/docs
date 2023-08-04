@@ -6,6 +6,10 @@ import Image from '@theme/IdealImage';
 
 # Connector Description
 
+## Terminal Blocks Description
+
+## Terminal Block Solder Bridges
+
 ## Backside Module
 
 This section provides information on signal mapping for the two backside slots (A and B) on the **CHESTER** mainboard.
