@@ -118,7 +118,7 @@ The hardware of this application consists of the following ordering codes:
 
 * `CHESTER-M-BCGLS` - Standard mainboard
 * `CHESTER-X3A:A` - 2x Pt100/Pt1000 interface
-* `CHESTER-E7-LP` - Enclosure with SMA pigtail
+* `CHESTER-E5-LP` - Enclosure with SMA pigtail and 2 cable glands
 
 See [**Ordering Codes**](../ordering-codes.md) for more details.
 
