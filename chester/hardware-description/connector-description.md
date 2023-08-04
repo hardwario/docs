@@ -6,6 +6,44 @@ import Image from '@theme/IdealImage';
 
 # Connector Description
 
+## Terminal Blocks Description
+
+The terminal block signals are defined by placing extension **X** modules on the backside of the CHESTER mainboard.
+You can find more information in the [Backside Modules](../extension-modules/index.md#backside-modules) chapter.
+
+## Terminal Block Solder Bridges
+
+When there are no extension modules in slot A or B, the 8-pin terminal blocks can be configured using solder bridges.
+
+Terminal block pins can have these signals based on solder bridges:
+
+- Terminals **A1-A8** and **B1-B8** can be connected to the GND.
+- Terminals **A6, A3, B6, B3** can be connected to VDD
+- Terminals **A5, A2, B5, B2** can be connected to DQ (1-Wire Bus).
+
+### 1-Wire extension
+
+This picture shows how to extend the 1-Wire bus to 8-pin terminal blocks A and B:
+
+![](solder-bridges.png)
+
+This picture shows the terminal blocks connection:
+
+![](terminal-blocks.png)
+
+This table shows the connection of 1-Wire to terminal blocks and JST 8-pin connectors::
+
+| Terminal BLOCK Position | Signal Name | Signal Description   |
+| :---------------------: | :---------: | :------------------- |
+|        A1 or B1         |    `GND`    | System ground signal |
+|        A2 or B2         |    `DQ`     | 1-Wire Data          |
+|        A3 or B3         |    `VDD`    | General purpose I/O  |
+|        A4 or B4         |    `GND`    | System ground signal |
+|        A5 or B5         |    `DQ`     | 1-Wire Data          |
+|        A6 or B6         |    `VDD`    | General purpose I/O  |
+|        A7 or B7         | `NC or GND` | Not connected or GND |
+|        A8 or B8         | `NC or GND` | Not connected or GND |
+
 ## Backside Module
 
 This section provides information on signal mapping for the two backside slots (A and B) on the **CHESTER** mainboard.
