@@ -18,22 +18,6 @@ Before you begin, make sure you comply with the article [**Requirements**](./req
 
 The installation steps are split into multiple sections. In the end, you will be able to build the `blinky` sample from the **CHESTER SDK**.
 
-### Install Python
-
-:::tip
-
-You can skip this step if you already have **Python** installed on your system.
-
-:::
-
-Install the latest stable **Python** release from the [**official Python site**](https://www.python.org/downloads/windows/).
-
-:::caution
-
-In the **Python** installer, enable the checkbox `Add Python 3.x to PATH`.
-
-:::
-
 ### Install Package Manager
 
 :::tip
@@ -111,7 +95,7 @@ You can skip this step if you already have **Chocolatey** installed on your syst
 1. Install the remaining packages:
 
    ```
-   choco install ninja gperf git dtc-msys2 wget unzip
+   choco install ninja gperf git dtc-msys2 wget 7zip
    ```
 
 1. Close the **Windows Powershell** application.
@@ -129,25 +113,25 @@ You can skip this step if you already have **Chocolatey** installed on your syst
 1. Download the toolchain:
 
    ```
-   wget https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v0.15.1/zephyr-sdk-0.15.1_windows-x86_64.zip
+   wget https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v0.16.0/zephyr-sdk-0.16.0_windows-x86_64.7z
    ```
 
 1. Unzip the toolchain:
 
    ```
-   unzip zephyr-sdk-0.15.1_windows-x86_64.zip
+   7z x zephyr-sdk-0.16.0_windows-x86_64.zip
    ```
 
 1. Go to the toolchain directory:
 
    ```
-   cd zephyr-sdk-0.15.1
+   cd zephyr-sdk-0.16.0
    ```
 
 1. Run the **Zephyr SDK** bundle setup script:
 
    ```
-   .\setup.cmd
+   setup.cmd
    ```
 
    :::tip
@@ -179,18 +163,18 @@ You can skip this step if you already have **Chocolatey** installed on your syst
 1. Initialize the **Python** virtual environment:
 
    ```
-   python -m venv venv
+   python -m venv .venv
    ```
 
 1. Activate the **Python** virtual environment:
 
    ```
-   venv/Scripts/Activate.ps1
+   .venv/Scripts/Activate.ps1
    ```
 
    :::caution
 
-   When you close the shell (or your text editor with the integrated terminal), you must reactivate the virtual Python environment. Call this command (used in the procedure above): `venv/Scripts/Activate.ps1`. In the future, you may have various **West** workspaces with different versions of the **Python** packages, and thanks to the virtual environment concept, these will not suffer from version conflicts.
+   When you close the shell (or your text editor with the integrated terminal), you must reactivate the virtual Python environment. Call this command (used in the procedure above): `.venv/Scripts/Activate.ps1`. In the future, you may have various **West** workspaces with different versions of the **Python** packages, and thanks to the virtual environment concept, these will not suffer from version conflicts.
 
    :::
 
@@ -209,7 +193,7 @@ You can skip this step if you already have **Chocolatey** installed on your syst
 1. Initialize the **West** workspace where you want to start your project:
 
    ```
-   west init -m git@gitlab.hardwario.com:chester/skeleton.git --manifest-rev main
+   west init -m https://github.com/hardwario/chester-skeleton.git --manifest-rev main
    ```
 
 1. Set the default board to **CHESTER (nRF52840)**:
@@ -273,6 +257,6 @@ You can skip this step if you already have **Chocolatey** installed on your syst
 
 1. If your CHESTER APP/BLE is [**connected**](../developer-tools/segger-j-link.md#segger-j-link-to-app-port-connection) with J-Link. [**Drivers**](../developer-tools/segger-j-link) are installed and [**power is on**](../developer-tools/power-profiler-kit-ii.md#basic-usage), you can flash compiled blinky code by typing
 
-  ```
-  west flash
-  ```
+   ```
+   west flash
+   ```
