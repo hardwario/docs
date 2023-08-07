@@ -45,6 +45,14 @@ You can also place the CHESTER device in an alternative enclosure. HARDWARIO pro
 | [CHESTER-E18-P](#chester-e18-p) | CHESTER with C2 (Axilera)      |                                                                                                     | 200x280x65mm |         |
 | [CHESTER-E19-P](#chester-e19-p) | CHESTER with B1 (wM-BUS)       |                                                                                                     | 200x280x65mm |         |
 
+## Ordering Codes
+
+Suffix explanation:
+
+- `-L` Light color enclosure
+- `-P` SMA Pigtail for optional external LTE antenna
+- `-F` Is a code for buttons in the E4 top cover enclosure. See its usage in [CHESTER-Z Ordering Codes](../ordering-codes.md#chester-z) (`1`-`F` or `X`).
+
 ### CHESTER-E1-P
 
 ![](enclosures/chester-e1-p-hwe017-bottom-base.pdf-1.png)
