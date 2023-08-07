@@ -23,7 +23,10 @@ Terminal block pins can have these signals based on solder bridges:
 
 ### 1-Wire extension
 
-This picture shows how to extend the 1-Wire bus to 8-pin terminal blocks A and B:
+This picture shows how to extend the 1-Wire bus to 8-pin terminal blocks A and B. Solder the highlighted solder bridges so the 1-Wire signals from the 1-Wire terminal
+block are duplicated to the 8-pin terminal blocks.
+
+Please note that the **solder bridges** are on the bottom side of the PCB. So in the picture below the blue solder bridge rectangles **on the right** of the PCB actually connects signals **to the left** 8-pin terminal blocks TB1 and TB2 when looked at the front of the PCB.
 
 ![](solder-bridges.png)
 
@@ -37,10 +40,10 @@ This table shows the connection of 1-Wire to terminal blocks and JST 8-pin conne
 | :---------------------: | :---------: | :------------------- |
 |        A1 or B1         |    `GND`    | System ground signal |
 |        A2 or B2         |    `DQ`     | 1-Wire Data          |
-|        A3 or B3         |    `VDD`    | General purpose I/O  |
+|        A3 or B3         |    `VDD`    | Power                |
 |        A4 or B4         |    `GND`    | System ground signal |
 |        A5 or B5         |    `DQ`     | 1-Wire Data          |
-|        A6 or B6         |    `VDD`    | General purpose I/O  |
+|        A6 or B6         |    `VDD`    | Power                |
 |        A7 or B7         | `NC or GND` | Not connected or GND |
 |        A8 or B8         | `NC or GND` | Not connected or GND |
 
