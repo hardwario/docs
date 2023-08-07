@@ -123,7 +123,7 @@ brew install cmake ninja gperf python3 ccache qemu dtc wget libmagic
 1. Initialize the **West** workspace where you want to start your project:
 
    ```
-   west init -m git@gitlab.hardwario.com:chester/skeleton.git --manifest-rev main
+   west init -m https://github.com/hardwario/chester-skeleton.git --manifest-rev main
    ```
 
 1. Set the default board to **CHESTER (nRF52840)**:
