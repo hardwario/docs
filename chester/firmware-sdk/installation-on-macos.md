@@ -58,22 +58,22 @@ brew install cmake ninja gperf python3 ccache qemu dtc wget libmagic
 
 1. Download and unpack the toolchain:
 
-   If you have the **Intel processor**, use this command:
-
-   ```
-   wget -c https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v0.15.1/zephyr-sdk-0.15.1_macos-x86_64.tar.gz -O - | tar -xz --directory $HOME/.local/opt
-   ```
-
    If you have the **ARM processor**, use this command:
 
    ```
-   wget -c https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v0.15.1/zephyr-sdk-0.15.1_macos-aarch64.tar.gz -O - | tar -xz --directory $HOME/.local/opt
+   wget -c https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v0.16.0/zephyr-sdk-0.16.0_macos-aarch64.tar.xz -O - | xz -d -c - | tar xv -C $HOME/.local/opt
+   ```
+
+   If you have the **Intel processor**, use this command:
+
+   ```
+   wget -c https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v0.16.0/zephyr-sdk-0.16.0_macos-x86_64.tar.xz -O - | xz -d -c - | tar xv -C $HOME/.local/opt
    ```
 
 1. Run the **Zephyr SDK** bundle setup script:
 
    ```
-   $HOME/.local/opt/zephyr-sdk-0.15.1/setup.sh
+   $HOME/.local/opt/zephyr-sdk-0.16.0/setup.sh
    ```
 
 ## Create Application
@@ -187,6 +187,6 @@ brew install cmake ninja gperf python3 ccache qemu dtc wget libmagic
 
 1. If your CHESTER APP/BLE is [**connected**](../developer-tools/segger-j-link.md#segger-j-link-to-app-port-connection) with J-Link. [**Drivers**](../developer-tools/segger-j-link) are installed and [**power is on**](../developer-tools/power-profiler-kit-ii.md#basic-usage), you can flash compiled blinky code by typing
 
-  ```
-  west flash
-  ```
+   ```
+   west flash
+   ```
