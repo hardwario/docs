@@ -113,18 +113,18 @@ sudo apt install python3-venv
 1. Initialize the **Python** virtual environment:
 
    ```
-   python3 -m venv venv
+   python3 -m venv .venv
    ```
 
 1. Activate the **Python** virtual environment:
 
    ```
-   source venv/bin/activate
+   source .venv/bin/activate
    ```
 
    :::caution
 
-   When you close the shell (or your text editor with the integrated terminal), you must reactivate the virtual Python environment. Call this command (used in the procedure above): `source venv/bin/activate`. In the future, you may have various **West** workspaces with different versions of the **Python** packages, and thanks to the virtual environment concept, these will not suffer from version conflicts.
+   When you close the shell (or your text editor with the integrated terminal), you must reactivate the virtual Python environment. Call this command (used in the procedure above): `source .venv/bin/activate`. In the future, you may have various **West** workspaces with different versions of the **Python** packages, and thanks to the virtual environment concept, these will not suffer from version conflicts.
 
    :::
 
