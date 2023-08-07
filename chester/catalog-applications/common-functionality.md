@@ -12,13 +12,13 @@ The **catalog applications** share common functionality. For example the button 
 
 Applications define actions for the mainboard button. The actions are chosen based on the number of consecutive presses of the button. Before an action is executed, **CHESTER** will blink the orange LED *N* times, indicating the amount of consecutive presses. The actions are:
 
-|  Number of presses  |  Action                                     |
-| ------------------: | :------------------------------------------ |
-| 1                   | Send data immediately                       |
-| 2                   | Sample data immediately                     |
-| 3                   | Sample, aggregate and send data immediately |
-| 4                   | Reboot the device                           |
-| 5                   | Turn on the load LED for 2 minutes          |
+| Number of presses | Action                                      |
+| :---------------: | :------------------------------------------ |
+|         1         | Send data immediately                       |
+|         2         | Sample data immediately                     |
+|         3         | Sample, aggregate and send data immediately |
+|         4         | Reboot the device                           |
+|         5         | Turn on the load LED for 2 minutes          |
 
 ## LED Behaviour
 
@@ -43,6 +43,16 @@ config save
 ```
 
 This will apply the changes and restart the application. After the restart, you can verify the settings changed using the `app config show` command.
+
+## Report Interval Jitter
+
+The periodic sending of data with `interval-report` has intentional jitter. This is used in case lot of CHESTERs are placed near each other, so they don't transmit at the same time if they have set the same interval. This jitter is random in the range of ±20 % of `interval-report`.
+
+For example, if `interval-report` is set to 100 seconds, you can receive periodic data where two messages have a time difference from 80 (-20%) to 120 (+20%) seconds.
+
+In applications where there are multiple aggregated values, this jitter has a side-effect that sometimes you can see fewer or more aggregated values than expected. The missing values are not lost, they will be sent correctly in the next message.
+
+This jitter is not applied to **events** like button presses or input changes. They report immediately.
 
 ## Shell Commands
 
