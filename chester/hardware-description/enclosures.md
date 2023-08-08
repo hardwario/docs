@@ -50,8 +50,9 @@ You can also place the CHESTER device in an alternative enclosure. HARDWARIO pro
 Suffix explanation:
 
 - `-L` Light color enclosure
-- `-P` SMA Pigtail for optional external LTE antenna
-- `-F` Is a code for buttons in the E4 top cover enclosure. See its usage in [CHESTER-Z Ordering Codes](../ordering-codes.md#chester-z) (`1`-`F` or `X`).
+- `-D` Dark color enclosure
+- `-H` UV-printed HARDWARIO logo
+- `-P` External antenna u.FL/SMA pigtail
 
 ### CHESTER-E1-P
 
@@ -69,6 +70,11 @@ Suffix explanation:
 ![](enclosures/chester-e3-p-hwe019-top-cover.pdf-1.png)
 
 ### CHESTER-E4-FP
+
+- `-F` Four push buttons on the left side of the enclosure
+- `-X` One push button in the center of the enclosure
+
+See `1`-`F` or `X` explanation in [CHESTER-Z Ordering Codes](../ordering-codes.md#chester-z).
 
 ![](enclosures/chester-e4-fp-hwe020-bottom-base.pdf-1.png)
 ![](enclosures/chester-e4-fp-hwe020-top-cover.pdf-1.png)
