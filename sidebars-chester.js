@@ -104,6 +104,7 @@ const sidebars = {
       collapsed: true,
       items: [
         'developer-tools/command-line-tools',
+        'developer-tools/hardwario-monitor',
         'developer-tools/segger-j-link',
         'developer-tools/power-profiler-kit-ii'
       ],
