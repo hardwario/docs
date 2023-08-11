@@ -8,6 +8,19 @@ import Image from '@theme/IdealImage';
 
 The **catalog applications** share common functionality. For example the button behaviour or the way settings are handled.
 
+## Network Mode Configuration
+
+Starting from firmware **v2.3.0** the catalog applications are built with NB-IoT/LTE and LoRaWAN functionality in a single firmware. You need to set the mode
+not only for new devices but also **when you are upgrading older firmware**.
+
+The default functionality is that a device **does not use any radio** (mode `none`) and you need to set configuration parameter **mode**.
+
+- `app config mode lte` for NB-IoT/LTE network
+- `app config mode lrw` for LoRaWAN network
+
+Then apply changes by typing `config save`. The device will reboot and use the correct network.
+
+
 ## Button Behaviour
 
 Applications define actions for the mainboard button. The actions are chosen based on the number of consecutive presses of the button. Before an action is executed, **CHESTER** will blink the orange LED *N* times, indicating the amount of consecutive presses. The actions are:

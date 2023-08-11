@@ -39,9 +39,17 @@ The table below provides an overview of the available application firmware build
 
 To flash the firmware use [**HARDWARIO Manager**](../platform-connectivity/hardwario-manager.md) app on your phone or follow the steps in the [**Firmware Flashing**](../firmware-flashing/index.md) article.
 
-:::danger
+:::info
 
-When upgrading firmware from **v1.x.x** to version **v2.0.0 and newer** - it is necessary to [**backup configuration**](#configuration-backup). In the case of using **CHESTER Current** also calibration data.
+Starting from firmware **v2.3.0** the catalog applications are built with NB-IoT/LTE and LoRaWAN functionality in a single firmware. You need to set the mode
+not only for new devices but also **when you are upgrading older firmware**.
+
+The default functionality is that a device **does not use any radio** (mode `none`) and you need to set configuration parameter **mode**.
+
+- `app config mode lte` for NB-IoT/LTE network
+- `app config mode lrw` for LoRaWAN network
+
+Then apply changes by typing `config save`. The device will reboot and use the correct network.
 
 :::
 
