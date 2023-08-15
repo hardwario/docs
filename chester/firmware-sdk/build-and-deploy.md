@@ -43,11 +43,13 @@ Now you can distribute the binary or ZIP file for **DFU update**. Or you can upl
 
 :::tip
 
-You can also hardcode the firmware name and version in your project. You can add these lines to your `CMakeLists.txt` project file:
+You can also hardcode the firmware name and version in your project. You can add these lines before the `project` command to your `CMakeLists.txt` project file:
 
 ```
 set(ENV{FW_NAME} "CHESTER Input Z")
 set(ENV{FW_VERSION} "v1.5.0")
+
+project(input)
 ```
 
 :::
