@@ -119,7 +119,7 @@ You can skip this step if you already have **Chocolatey** installed on your syst
 1. Unzip the toolchain:
 
    ```
-   7z x zephyr-sdk-0.16.0_windows-x86_64.zip
+   7z x zephyr-sdk-0.16.0_windows-x86_64.7z
    ```
 
 1. Go to the toolchain directory:
