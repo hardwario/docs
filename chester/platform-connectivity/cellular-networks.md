@@ -121,6 +121,19 @@ lte config apn onomondo
 lte config addr 165.227.146.193
 ```
 
+## Vodafone Czech Republic NB-IoT Configuration
+
+This is the reference LTE settings when using **CHESTER** with the **Vodafone Czech Republic** SIM card:
+
+```
+lte config lte-m-mode false
+lte config nb-iot-mode true
+lte config autoconn false
+lte config apn hardwario.com
+lte config plmnid 23003
+lte config addr 192.168.168.1
+```
+
 ## Slovak Telekom NB-IoT Configuration
 
 This is the reference LTE settings when using **CHESTER** with the **Slovak Telekom** SIM card:
