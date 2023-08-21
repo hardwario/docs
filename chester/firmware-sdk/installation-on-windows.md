@@ -154,6 +154,12 @@ You can skip this step if you already have **Chocolatey** installed on your syst
 
    :::
 
+   :::danger
+
+   On the Windows platform, you must use the directory path without any spaces. Also, keep only ASCII letters/digits in the path. Otherwise, you may encounter issues with the toolchain.
+
+   :::
+
 1. Switch to your application directory:
 
    ```
@@ -169,7 +175,7 @@ You can skip this step if you already have **Chocolatey** installed on your syst
 1. Activate the **Python** virtual environment:
 
    ```
-   .venv/Scripts/Activate.ps1
+   .\venv\Scripts\Activate.ps1
    ```
 
    :::caution
@@ -181,7 +187,7 @@ You can skip this step if you already have **Chocolatey** installed on your syst
 1. Upgrade the **pip** package:
 
    ```
-   pip install --upgrade pip
+   python -m pip install --upgrade pip
    ```
 
 1. Install the **West** tool:
