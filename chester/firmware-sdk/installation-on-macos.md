@@ -162,6 +162,12 @@ brew install cmake ninja gperf python3 ccache qemu dtc wget libmagic
    pip install -r chester/scripts/requirements.txt
    ```
 
+   :::caution
+
+   At the end of the installation process, you will see this "error" message: `ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts. pyocd 0.35.1 requires pylink-square<2.0,>=1.0, but you have pylink-square 0.12.0 which is incompatible.`. It can be considered as a warning only, and it is safe to ignore it.
+
+   :::
+
 ## Test Build and Flash
 
 1. Go to the `blinky` sample directory:
