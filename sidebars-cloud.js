@@ -4,6 +4,7 @@
 const sidebars = {
   docs: [
     'introduction',
+    'overview',
   ],
 };
 
