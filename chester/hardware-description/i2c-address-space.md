@@ -45,6 +45,7 @@ Typically, you will not need to search for the I²C addresses while working with
 | CHESTER-X3     | `0x47`  | ADS122C04 - CH2 | Address in slot A                  |
 | CHESTER-M      | `0x48`  | TMP112          |                                    |
 | CHESTER-X4     | `0x49`  | TLA2021         |                                    |
+| CHESTER-X10    | `0x49`  | TLA2024         |                                    |
 | CHESTER-X3     | `0x4a`  | ADS122C04 - CH1 | Address in slot B                  |
 | CHESTER-M      | `0x4b`  | TLA2021         |                                    |
 | CHESTER-V1     | `0x4c`  | SC16IS740       |                                    |
