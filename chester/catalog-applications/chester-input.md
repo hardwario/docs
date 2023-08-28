@@ -49,7 +49,7 @@ The catalog **CHESTER Input** hardware consists of the following ordering codes:
 
 See [**Ordering Codes**](../ordering-codes.md) for more details.
 
-Firmware build shield options: `ctr_lte ctr_x0_a`
+Firmware build shield options: `ctr_ds18b20 ctr_lte ctr_x0_a`
 
 ### CHESTER Input Z
 
@@ -63,7 +63,7 @@ The catalog **CHESTER Input Z** hardware consists of the following ordering code
 
 See [**Ordering Codes**](../ordering-codes.md) for more details.
 
-Firmware build shield options: `ctr_lte ctr_x0_a ctr_z`
+Firmware build shield options: `ctr_ds18b20 ctr_lte ctr_x0_a ctr_z`
 
 ### CHESTER Input ZH
 
@@ -79,7 +79,7 @@ Firmware build shield options: `ctr_lte ctr_x0_a ctr_z`
 
 See [**Ordering Codes**](../ordering-codes.md) for more details.
 
-Firmware build shield options: `ctr_lte ctr_x0_a ctr_z ctr_s2`
+Firmware build shield options: `ctr_ds18b20 ctr_lte ctr_x0_a ctr_z ctr_s2`
 
 ## Input Parameters and Behavior
 
