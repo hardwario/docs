@@ -81,7 +81,7 @@ You can choose up to 4 current probes with the following current ranges:
 
 * Maximum current **10 A**
 * Maximum current **100 A**
-* Maximum current **500 A**
+* Maximum current **300 A**
 * Maximum current **1.000 A**
 * Maximum current **1.500 A**
 
