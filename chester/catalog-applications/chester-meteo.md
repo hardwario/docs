@@ -113,6 +113,12 @@ Command to set **report interval** in seconds:
 app config interval-report <30-86400>
 ```
 
+Command to read **current values** for **testing purposes**:
+
+```
+meteo read ctr_meteo_a
+```
+
 ## Firmware
 
 The latest firmware is available in Catalog Applications [Firmware chapter](index.md#application-firmware).
