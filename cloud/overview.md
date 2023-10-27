@@ -6,7 +6,7 @@ import Image from '@theme/IdealImage';
 
 # CLOUD Overview
 
-**HARDWARIO Cloud** allows users to manage it's devices.
+[**HARDWARIO Cloud**](https://hardwario.cloud) allows users to manage it's devices.
 
 **HARDWARIO Cloud** has this structure:
 
