@@ -11,7 +11,9 @@ Thanks to this, even low-power battery devices can be controlled and configured 
 - [**Web interface**](https://prod.hardwario.cloud/)
 - [**API**](https://api.prod.hardwario.cloud/v2/documentation/index.html)
 
-Cloud v2 improves the device's codecs. In Cloud v1 codecs had to be set manually, in v2 codecs are directly in the device's firmware and they are uploaded automatically.
+**Cloud v2** improves the device's codecs. In Cloud v1 codecs had to be set manually, in v2 codecs are directly in the device's firmware and they are uploaded automatically.
+
+**Cloud v2** together with the **LTE v2** subsystem in CHESTER also adds automatic packet fragmentation (supports packets with many kilobytes of payload), receive acknowledgment with retransmission and messages are SHA-256 signed.
 
 ## Cloud v2 structure
 
