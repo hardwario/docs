@@ -15,6 +15,12 @@ Thanks to this, even low-power battery devices can be controlled and configured 
 
 **Cloud v2** together with the **LTE v2** subsystem in CHESTER also adds automatic packet fragmentation (supports packets with many kilobytes of payload), receive acknowledgment with retransmission and messages are SHA-256 signed.
 
+:::info
+
+For information how to use or upgrade CHESTER code to use LTE v2. You can read this [How To: LTE v2](../../chester/firmware-sdk/how-to-lte-v2) article.
+
+:::
+
 ## Cloud v2 structure
 
 All your devices are placed in a **Space**. You can self-provision devices to your or other spaces.
