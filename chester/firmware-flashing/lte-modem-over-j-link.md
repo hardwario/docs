@@ -159,7 +159,7 @@ Follow these steps to flash the LTE modem firmware in the **CHESTER** device:
 
 1. Open the **CHESTER** enclosure (6 screws from the bottom side).
 
-1. Connect the 10-pin flat cable to the connector labeled `APP` (or `BLE` on hardware revision R3.2 and earlier).
+1. Connect the 10-pin flat cable to the [connector labeled `APP`](../developer-tools/segger-j-link.md#segger-j-link-to-app-port-connection) (or `BLE` on hardware revision R3.2 and earlier).
 
    :::caution
 
@@ -187,7 +187,7 @@ Follow these steps to flash the LTE modem firmware in the **CHESTER** device:
 
    :::
 
-1. Connect the 10-pin flat cable to the connector labeled `LTE`.
+1. Connect the 10-pin flat cable to the [connector labeled `LTE`](../developer-tools/segger-j-link.md#segger-j-link-to-lte-port-connection).
 
    :::caution
 
@@ -197,13 +197,21 @@ Follow these steps to flash the LTE modem firmware in the **CHESTER** device:
 
 1. Download the **LTE modem** firmware package [**v1.3.0**](pathname:///download/hio-chester-lte-v1.3.0.zip).
 
+   :::info
+
+   If you are upgrading your CHESTER to the **LTEv2** communication stack, you need to download and flash [**v1.6.0**](pathname:///download/hio-chester-lte-v1.6.0.zip) or higher.
+
+   This newer LTE firmware is not backward compatible with **LTEv1** catalog apps and you have to flash to the **APP/BLE MCU** only the **LTEv2** application like [Demo](../firmware-sdk/how-to-lte-v2.md#demo) or [CHESTER Control](../firmware-sdk/how-to-lte-v2.md#chester-control).
+
+   :::
+
 1. Run this command to flash the LTE modem firmware:
 
    ```
    hardwario chester lte flash hio-chester-lte-v1.3.0.zip
    ```
 
-1. Connect the 10-pin flat cable to the connector labeled `APP` (or `BLE` on hardware revision R3.2 and earlier).
+1. Connect the 10-pin flat cable to the [connector labeled `APP`](../developer-tools/segger-j-link.md#segger-j-link-to-app-port-connection) (or `BLE` on hardware revision R3.2 and earlier).
 
    :::caution
 
