@@ -61,19 +61,19 @@ brew install cmake ninja gperf python3 ccache qemu dtc wget libmagic
    If you have the **ARM processor**, use this command:
 
    ```
-   wget -c https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v0.16.0/zephyr-sdk-0.16.0_macos-aarch64.tar.xz -O - | xz -d -c - | tar xv -C $HOME/.local/opt
+   wget -c https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v0.16.1/zephyr-sdk-0.16.1_macos-aarch64.tar.xz -O - | xz -d -c - | tar xv -C $HOME/.local/opt
    ```
 
    If you have the **Intel processor**, use this command:
 
    ```
-   wget -c https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v0.16.0/zephyr-sdk-0.16.0_macos-x86_64.tar.xz -O - | xz -d -c - | tar xv -C $HOME/.local/opt
+   wget -c https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v0.16.1/zephyr-sdk-0.16.1_macos-x86_64.tar.xz -O - | xz -d -c - | tar xv -C $HOME/.local/opt
    ```
 
 1. Run the **Zephyr SDK** bundle setup script:
 
    ```
-   $HOME/.local/opt/zephyr-sdk-0.16.0/setup.sh
+   $HOME/.local/opt/zephyr-sdk-0.16.1/setup.sh
    ```
 
 ## Create Application
