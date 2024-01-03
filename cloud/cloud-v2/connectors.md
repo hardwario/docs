@@ -59,3 +59,21 @@ Here is the structure of the `job` object.
     }
 }
 ```
+
+### Body as a JSON
+
+If you would like to have `message.body` as a JSON object instead of string, use this connector script:
+
+```js
+function main(job) {
+			return {
+				"url": "https://best.app.ever/new-message",
+				"method" : "POST",
+				"body" : JSON.stringify({
+					"message": JSON.parse(job.message.body),
+					"device": job.device
+				}),
+				"headers" : { "Content-Type" : "application/json" }
+			}
+		}
+```
