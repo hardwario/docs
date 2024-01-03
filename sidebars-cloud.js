@@ -11,7 +11,7 @@ const sidebars = {
         id: 'cloud-v2/index',
       },
       collapsed: true,
-      items: ['cloud-v2/connectors', 'cloud-v2/downlink']
+      items: ['cloud-v2/connectors', 'cloud-v2/downlink', 'cloud-v2/api']
     }
   ],
 };
