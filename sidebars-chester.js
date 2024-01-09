@@ -13,6 +13,7 @@ const sidebars = {
       collapsed: true,
       items: [
         'platform-connectivity/hardwario-manager',
+        'platform-connectivity/hardwario-monitor',
         'platform-connectivity/cellular-networks',
         'platform-connectivity/bluetooth-low-energy',
         'platform-connectivity/lorawan-radio',
@@ -103,9 +104,7 @@ const sidebars = {
       },
       collapsed: true,
       items: [
-        'developer-tools/command-line-tools',
-        'developer-tools/hardwario-monitor',
-        'developer-tools/segger-j-link',
+        'developer-tools/command-line-tools', 'developer-tools/segger-j-link',
         'developer-tools/power-profiler-kit-ii'
       ],
     },
@@ -142,8 +141,7 @@ const sidebars = {
         id: 'platform-security/index',
       },
       collapsed: true,
-      items: [
-      ],
+      items: [],
     },
     'ordering-codes',
     'product-certification',
