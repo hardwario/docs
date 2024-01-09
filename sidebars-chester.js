@@ -76,6 +76,7 @@ const sidebars = {
         'hardware-description/schematic-diagram',
         'hardware-description/layout-placement',
         'hardware-description/connector-description',
+        'hardware-description/chester-u1-module',
         'hardware-description/i2c-address-space',
         'hardware-description/enclosures',
       ],
