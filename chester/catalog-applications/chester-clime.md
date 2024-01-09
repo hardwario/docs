@@ -90,7 +90,7 @@ The catalog application **CHESTER Clime 1W** supports multiple external DS18B20 
 The hardware of this application consists of the following ordering codes:
 
 * `CHESTER-M-BCGLS` - Standard mainboard
-* `CHESTER-E8-LP` - Enclosure with 8 cable glands
+* `CHESTER-E8-LP` - Enclosure with 8 cable glands (RM8L-4S)
 
 See [**Ordering Codes**](../ordering-codes.md) for more details.
 
@@ -104,7 +104,7 @@ The hardware of this application consists of the following ordering codes:
 
 * `CHESTER-M-BCGLS` - Standard mainboard
 * `CHESTER-S2` - External hygrometer
-* `CHESTER-E8-LP` - Enclosure with 8 cable glands
+* `CHESTER-E8-LP` - Enclosure with 8 cable glands (RM8L-4S)
 
 See [**Ordering Codes**](../ordering-codes.md) for more details.
 
@@ -118,7 +118,7 @@ The hardware of this application consists of the following ordering codes:
 
 * `CHESTER-M-BCGLS` - Standard mainboard
 * `CHESTER-X3A:A` - 2x Pt100/Pt1000 interface
-* `CHESTER-E5-LP` - Enclosure with SMA pigtail and 2 cable glands
+* `CHESTER-E13-LP` - Enclosure with SMA pigtail and 2 cable PG7 glands
 
 See [**Ordering Codes**](../ordering-codes.md) for more details.
 
