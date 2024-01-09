@@ -36,7 +36,8 @@ const sidebars = {
         'catalog-applications/chester-input',
         'catalog-applications/chester-push',
         'catalog-applications/chester-meteo',
-        'catalog-applications/chester-range'
+        'catalog-applications/chester-range',
+        'catalog-applications/chester-wm-bus'
       ],
     },
     {
