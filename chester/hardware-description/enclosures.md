@@ -43,7 +43,7 @@ You can also place the CHESTER device in an alternative enclosure. HARDWARIO pro
 | [CHESTER-E16-P](#chester-e16-p) |                                | [PDF, DWG](https://drive.google.com/drive/folders/1W2w6jxQ_UlKVscmqSJ1KXJq_TzT0NKdh?usp=share_link) | 130x175x45mm |         |
 | [CHESTER-E17-P](#chester-e17-p) | CHESTER with C1 (Ekoterm)      | [PDF, DWG](https://drive.google.com/drive/folders/11rrDZNTAP2kITCBA1Y_r4zJ28U3h6vg-?usp=share_link) | 200x280x65mm |         |
 | [CHESTER-E18-P](#chester-e18-p) | CHESTER with C2 (Axilera)      |                                                                                                     | 200x280x65mm |         |
-| [CHESTER-E19-P](#chester-e19-p) | CHESTER with B1 (wM-BUS)       |                                                                                                     | 200x280x65mm |         |
+| [CHESTER-E19-P](#chester-e19-p) | CHESTER with B1 (wM-Bus)       |                                                                                                     | 200x280x65mm |         |
 
 ## Ordering Codes
 

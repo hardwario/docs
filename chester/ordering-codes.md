@@ -442,7 +442,7 @@ For more details and drawings, see [Enclosures](hardware-description/enclosures.
 | CHESTER-E16-P |                                |         |
 | CHESTER-E17-P | CHESTER with C1 (Ekoterm)      |         |
 | CHESTER-E18-P | CHESTER with C2 (Axilera)      |         |
-| CHESTER-E19-P | CHESTER with B1 (wM-BUS)       |         |
+| CHESTER-E19-P | CHESTER with B1 (wM-Bus)       |         |
 
 ## Other Accessories
 

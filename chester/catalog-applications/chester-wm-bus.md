@@ -1,10 +1,10 @@
 ---
 slug: chester-wm-bus
-title: CHESTER wM-BUS
+title: CHESTER wM-Bus
 ---
 import Image from '@theme/IdealImage';
 
-# CHESTER wM-BUS
+# CHESTER wM-Bus
 
 ![](chester-wm-bus.png)
 
@@ -16,9 +16,9 @@ Some of the basics are not provided, as they are common for all **CHESTER** cata
 
 ## Application Overview
 
-**CHESTER wM-BUS** is a **Wireless M-BUS** gateway. This device listens for configured **wM-BUS T1 and C1** devices in specific intervals, aggregates the raw received wM-BUS packets and sends them over the **NB-IoT/LTE-M** network.
+**CHESTER wM-Bus** is a **Wireless M-BUS** gateway. This device listens for configured **wM-Bus T1 and C1** devices in specific intervals, aggregates the raw received wM-Bus packets and sends them over the **NB-IoT/LTE-M** network.
 
-It is used in homes and apartments for measuring the consumption of **heat**, **gas**, **electricity**, **water** and reading **other wM-BUS devices**.
+It is used in homes and apartments for measuring the consumption of **heat**, **gas**, **electricity**, **water** and reading **other wM-Bus devices**.
 
 The device has **two antennas** that can be switched during reception to achieve ideal reception for scanning in **both polarizations**.
 
@@ -26,43 +26,43 @@ The device can be configured to do **periodic**, **daily**, **weekly** or **mont
 
 The device has a sufficiently low power consumption that it can operate from batteries for many years. A version with an external power supply can also be ordered.
 
-CHESTER wM-BUS only receives raw hexadecimal wireless M-BUS packets. The device itself or HARDWARIO Cloud doesn’t decode the wM-BUS sensors data. Each wM-BUS sensor has its own representation of encoded data, or the packets might be encrypted. Decoding of the raw hexadecimal values to meaningful units is up to the customer or integrator.
+CHESTER wM-Bus only receives raw hexadecimal wireless M-BUS packets. The device itself or HARDWARIO Cloud doesn’t decode the wM-Bus sensors data. Each wM-Bus sensor has its own representation of encoded data, or the packets might be encrypted. Decoding of the raw hexadecimal values to meaningful units is up to the customer or integrator.
 
 This device supports the newer **LTEv2** stack and **HARDWARIO Cloud v2**.
 
 ## Application Variants
 
-**CHESTER wM-BUS** can be ordered in one of these variants:
+**CHESTER wM-Bus** can be ordered in one of these variants:
 
-### CHESTER wM-BUS
+### CHESTER wM-Bus
 
 Battery powered with 6 pcs alkaline "D" cells.
 
-The catalog **CHESTER wM-BUS** hardware consists of the following ordering codes:
+The catalog **CHESTER wM-Bus** hardware consists of the following ordering codes:
 
 * `CHESTER-M-CES` - Standard mainboard w/o supercapacitors
 
-* `CHESTER-B1W` - B1 carrier board with wM-BUS radio.
+* `CHESTER-B1W` - B1 carrier board with wM-Bus radio.
 
 See [**Ordering Codes**](../ordering-codes.md) for more details.
 
-### CHESTER wM-BUS DC
+### CHESTER wM-Bus DC
 
 Externally powered 230V DC adapter.
 
-The catalog **CHESTER wM-BUS DC** hardware consists of the following ordering codes:
+The catalog **CHESTER wM-Bus DC** hardware consists of the following ordering codes:
 
 * `CHESTER-M-CS` - Standard mainboard w/ supercapacitors
 
-* `CHESTER-B1W` - B1 carrier board with wM-BUS radio.
+* `CHESTER-B1W` - B1 carrier board with wM-Bus radio.
 
 See [**Ordering Codes**](../ordering-codes.md) for more details.
 
 ## Scanning and Behavior
 
-Addresses of the wM-BUS devices and device mode could be imported and reconfigured over the cloud.
+Addresses of the wM-Bus devices and device mode could be imported and reconfigured over the cloud.
 
-The device has adjustable parameters where it can scan wM-BUS devices periodically, daily, weekly or monthly. The scan time and other parameters can also be set.
+The device has adjustable parameters where it can scan wM-Bus devices periodically, daily, weekly or monthly. The scan time and other parameters can also be set.
 
 ## Default Configuration
 
@@ -82,7 +82,7 @@ app config poll-interval 28800
 app config downlink-wdg-interval 172800
 ```
 
-If you have any wM-BUS addresses configured, you will also see them in the log together with the count of them.
+If you have any wM-Bus addresses configured, you will also see them in the log together with the count of them.
 
 ```
 app config address count 1
@@ -106,7 +106,7 @@ This is not needed if you apply commands in a batch over the cloud.
 
 ### Address List Configuration
 
-This command adds the wM-BUS addresses that device scans and sends later their raw data to the cloud.
+This command adds the wM-Bus addresses that device scans and sends later their raw data to the cloud.
 
 `app config address`
 
@@ -130,7 +130,7 @@ Removing all sensors from the list.
 
 ### Scan Configuration
 
-Scanning indicates the time during which CHESTER captures wM-BUS packets. The scan method is set by the `scan-mode` parameter.
+Scanning indicates the time during which CHESTER captures wM-Bus packets. The scan method is set by the `scan-mode` parameter.
 
 `app config scan-mode <mode>`
 
@@ -160,7 +160,7 @@ The starting month must always be greater than the ending "end" month. The param
 
 `app config scan-hour 12`
 
-It determines the hour at which the scan should start. CHESTER device clocks operate in UTC. The device does not distinguish between time zones or daylight savings time. The correct hour must be considered with some margin if wM-BUS sensors automatically change their clocks to summer/winter time.
+It determines the hour at which the scan should start. CHESTER device clocks operate in UTC. The device does not distinguish between time zones or daylight savings time. The correct hour must be considered with some margin if wM-Bus sensors automatically change their clocks to summer/winter time.
 
 `app config scan-weekday 2`
 
@@ -174,7 +174,7 @@ Specifies the day of the month when scanning 1-28 during the monthly scan
 
 **single** - scan uses only one cycle with one antenna, if it receives data from all devices, it sends data immediately, if not, it sends data after the `scan-timeout` timeout
 
-**dual** - the scan takes place twice, each time with a different antenna. If all devices are not scanned in the first cycle with antenna 1, a second scan with the second antenna is started. Each scan takes a maximum of scan-timeout seconds. The maximum time when the wM-BUS receiver is active is equal to 2x `scan-timeout`.
+**dual** - the scan takes place twice, each time with a different antenna. If all devices are not scanned in the first cycle with antenna 1, a second scan with the second antenna is started. Each scan takes a maximum of scan-timeout seconds. The maximum time when the wM-Bus receiver is active is equal to 2x `scan-timeout`.
 
 ## Firmware
 
@@ -182,9 +182,9 @@ The latest firmware is available in Catalog Applications [Firmware chapter](inde
 
 ## Example JSON Message
 
-In this example **JSON** you can see raw data from two wM-BUS sensors
+In this example **JSON** you can see raw data from two wM-Bus sensors
 
-Each JSON cloud message contains up to 20 wM-BUS packets. If CHESTER is configured for more than 20 devices, then the raw wM-BUS packets are split to multiple JSON messages.
+Each JSON cloud message contains up to 20 wM-Bus packets. If CHESTER is configured for more than 20 devices, then the raw wM-Bus packets are split to multiple JSON messages.
 
 ```json
 {
