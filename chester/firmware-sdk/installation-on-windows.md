@@ -18,6 +18,22 @@ Before you begin, make sure you comply with the article [**Requirements**](./req
 
 The installation steps are split into multiple sections. In the end, you will be able to build the `blinky` sample from the **CHESTER SDK**.
 
+### Install Python
+
+:::tip
+
+You can skip this step if you already have **Python** installed on your system.
+
+:::
+
+Download the latest stable installer from [**this link**](https://www.python.org/downloads/windows/).
+
+:::caution
+
+Ensure the Windows installer can modify the `PATH` variable so the **Python** executable is available from any location.
+
+:::
+
 ### Install Package Manager
 
 :::tip
