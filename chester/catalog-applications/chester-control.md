@@ -18,28 +18,23 @@ Some of the basics are not provided, as they are common for all **CHESTER** cata
 
 **CHESTER Control** is based on [**CHESTER Input**](chester-input.md), but adds dynamic input type reconfiguration and remote control functionality of 4 transistor outputs.
 
-Because CHESTER Control uses [**CHESTER-X0**](../extension-modules/chester-x0.md) input/output module, it is possible to change input behaviour just by the configuration. This way you can assign any of four inputs one of the functionality:
+Because **CHESTER Control** uses [**CHESTER-X0**](../extension-modules/chester-x0.md) input/output module, it is possible to change input behavior just by the configuration. This way you can assign any of four inputs to one of the functionalities:
 
 - trigger (button, door contact)
 - counter (count events, energy meters with S0 output)
 - voltage (measure 0-28 V)
 - current (measure 4-20mA current loop)
 
-## Output Control
+This device only supports the newer **LTEv2** stack and **HARDWARIO Cloud v2**.
 
-Please see the Cloud documentation, specifically [Downlink data](../../cloud/cloud-v2/downlink#data) and [API examples](../../cloud/cloud-v2/downlink#api-examples).
+## Terminal Blocks
 
-You control outputs by sending this JSON to the cloud API endpoint (`https://api.prod.hardwario.cloud/v2/messages`) or in the HARDWARIO Cloud by going to the device's messages and clicking on "Create new downlink message"
+| CHESTER-X0 in left slot A- signals A1 - A8  | CHESTER-X4 in right slot B - signals B1 - B8                                                 |
+| ------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| Use inputs **CH1** to **CH4** and **GND**   | Use **VIN** and **GND** to supply external power.                                            |
+|                                             | Use **CH1** to **CH4** outputs, which supply voltage from **VIN** when the output is enabled |
+| ![](../extension-modules/tb-chester-x0.png) | ![](../extension-modules/tb-chester-x4.png)                                                  |
 
-```
-{
-  "output_1_state": 0,
-  "output_2_state": 0,
-  "output_3_state": 0,
-  "output_4_state": 0
-}
-```
-Device is polling the Cloud in an interval set by `interval-poll` parameter and if new downlink control message is in the Cloud queue, it is send to the device and output or multiple outputs are changed.
 
 
 ## Default Configuration
@@ -84,7 +79,7 @@ To apply a new configuration, you need to call `config save`, which applies the 
 
 :::
 
-Commands are explained in [**CHESTER Input**](chester-input.md#specific-commands) article.
+Commands are explained in the [**CHESTER Input**](chester-input.md#specific-commands) article.
 
 **CHESTER Control** adds these commands to configure the function of each of the four inputs:
 
@@ -94,6 +89,26 @@ app config channel-mode-2 counter
 app config channel-mode-3 voltage
 app config channel-mode-4 current
 ```
+
+## Output Control
+
+Please see the Cloud documentation, specifically [Downlink data](../../cloud/cloud-v2/downlink) and [API examples](../../cloud/cloud-v2/downlink#api-examples).
+
+You control outputs by sending this JSON to the cloud API endpoint (`https://api.prod.hardwario.cloud/v2/messages`) or in the HARDWARIO Cloud by going to the device's messages and clicking on "Create new downlink message"
+
+```
+{
+  "output_1_state": 1,
+  "output_2_state": 1,
+  "output_3_state": 0,
+  "output_4_state": 0
+}
+```
+
+The JSON doesn't have to contain the output state of all four outputs. You send only `output_X_state` for outputs to be changed.
+
+The device is polling the Cloud in an interval set by `interval-poll` parameter and if a new downlink control message is in the Cloud queue, it is sent to the device and output or multiple outputs are changed.
+
 
 ## Example JSON Message
 

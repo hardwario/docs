@@ -10,7 +10,9 @@ In the web interface or over API you can send downlink messages:
 
 - Data
 - Config
-- Commands (in the future)
+- Shell Commands (in the future)
+
+If you would like to send config or data from the web interface. Go to the device messages, in the top right corner click on **Create new downlink message**.
 
 ## Data
 
@@ -23,6 +25,8 @@ You can configure the device the same way as you configure it over BLE or J-Link
 ![](downlink-data.png)
 
 ## API Examples
+
+You can send downlink commands and configuration also over API. Please create an API key first in the HARDWARIO Cloud **Keys** section.
 
 ### Data
 
