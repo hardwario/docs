@@ -191,12 +191,12 @@ You can skip this step if you already have **Chocolatey** installed on your syst
 1. Activate the **Python** virtual environment:
 
    ```
-   .\venv\Scripts\Activate.ps1
+   .\.venv\Scripts\Activate.ps1
    ```
 
    :::caution
 
-   When you close the shell (or your text editor with the integrated terminal), you must reactivate the virtual Python environment. Call this command (used in the procedure above): `.\venv\Scripts\Activate.ps1`. In the future, you may have various **West** workspaces with different versions of the **Python** packages, and thanks to the virtual environment concept, these will not suffer from version conflicts.
+   When you close the shell (or your text editor with the integrated terminal), you must reactivate the virtual Python environment. Call this command (used in the procedure above): `.\.venv\Scripts\Activate.ps1`. In the future, you may have various **West** workspaces with different versions of the **Python** packages, and thanks to the virtual environment concept, these will not suffer from version conflicts.
 
    :::
 
