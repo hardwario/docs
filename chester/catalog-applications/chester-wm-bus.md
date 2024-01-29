@@ -16,7 +16,7 @@ Some of the basics are not provided, as they are common for all **CHESTER** cata
 
 ## Application Overview
 
-**CHESTER wM-Bus** is a **Wireless M-BUS** gateway. This device listens for configured **wM-Bus T1 and C1** devices in specific intervals, aggregates the raw received wM-Bus packets and sends them over the **NB-IoT/LTE-M** network.
+**CHESTER wM-Bus** is a **Wireless M-Bus** gateway. This device listens for configured **wM-Bus T1 and C1** devices in specific intervals, aggregates the raw received wM-Bus packets and sends them over the **NB-IoT/LTE-M** network.
 
 It is used in homes and apartments for measuring the consumption of **heat**, **gas**, **electricity**, **water** and reading **other wM-Bus devices**.
 
