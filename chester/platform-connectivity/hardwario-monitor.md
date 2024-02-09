@@ -20,8 +20,6 @@ Download it on the [**GitHub Releases**](https://github.com/hardwario/hiomonitor
   </div>
 </div>
 
-
-
 After you start the application, you have connection options on **the left side** of the application to connect to the CHESTER using:
 
 ## Console
@@ -42,3 +40,31 @@ and connect to the device again.
 ## Flash
 
 You can flash firmware to the **APP MCU** with the **J-Link**. Just copy the **unique ID** from the released firmware and it will be downloaded and flashed.
+
+## Logs
+
+**HARDWARIO Monitor** logs all the communication on your drive. This is useful if you would like to share complete logs with HARDWARIO in case of some troubleshooting.
+
+It depends on your OS type and OS version where the logs are saved:
+
+### Windows
+```
+C:/Users/<USER>/AppData/Roaming/HARDWARIO/HARDWARIO Monitor/hardwario-monitor-console.log
+C:/ProgramData/HARDWARIO/HARDWARIO Monitor/hardwario-monitor-console.log
+```
+
+### Linux
+
+```
+~/.local/share/HARDWARIO/AppRun.wrapped/hardwario-monitor-console.log
+~/.local/share/HARDWARIO/HARDWARIO Monitor/hardwario-monitor-console.log
+/usr/local/share/HARDWARIO/HARDWARIO Monitor/hardwario-monitor-console.log
+/usr/share/HARDWARIO/HARDWARIO Monitor/hardwario-monitor-console.log
+```
+
+### macOS
+
+```
+~/Library/Application Support/HARDWARIO/HARDWARIO Monitor/hardwario-monitor-console.log
+/Library/Application Support/HARDWARIO/HARDWARIO Monitor/hardwario-monitor-console.log
+```
