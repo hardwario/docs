@@ -39,7 +39,7 @@ and connect to the device again.
 
 ## Flash
 
-You can flash firmware to the **APP MCU** with the **J-Link**. Just copy the **unique ID** from the released firmware and it will be downloaded and flashed.
+You can flash firmware via the **APP** connector on the **CHESTER** mainboard with the **J-Link** USB device. Just copy the **unique ID** from the released firmware and it will be downloaded and flashed.
 
 ## Logs
 
