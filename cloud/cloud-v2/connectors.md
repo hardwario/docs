@@ -80,4 +80,9 @@ function main(job) {
 
 ### Callback Debugging
 
-For testing purposes, you can use one of the free services like [https://requestinspector.com/](https://requestinspector.com/) that creates an HTTP endpoint to test callbacks.
+For testing purposes, you can use one of the free services like [**requestinspector.com**](requestinspector.com) that creates an HTTP endpoint to test callbacks.
+
+Another option is to use services that route public address to your localhost. For example [**ngrok.com**](https://ngrok.com/) where you can create also the fixed address for free.
+
+Also [**tailscale.com**](https://tailscale.com/) is an awesome free service to put all your devices to one private network even behind CG-NAT,
+and one of the functionality is also creatung a tunnel with `serve` or `funnel` commands.
