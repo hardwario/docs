@@ -77,3 +77,7 @@ function main(job) {
 			}
 		}
 ```
+
+### Callback Debugging
+
+For testing purposes, you can use one of the free services like [https://requestinspector.com/](https://requestinspector.com/) that creates an HTTP endpoint to test callbacks.
