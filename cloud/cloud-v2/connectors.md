@@ -80,7 +80,7 @@ function main(job) {
 
 ### Callback Debugging
 
-For testing purposes, you can use one of the free services like [**requestinspector.com**](requestinspector.com) that creates an HTTP endpoint to test callbacks.
+For testing purposes, you can use one of the free services like [**requestinspector.com**](https://requestinspector.com/) that creates an HTTP endpoint to test callbacks.
 
 Another option is to use services that route public address to your localhost. For example [**ngrok.com**](https://ngrok.com/) where you can create also the fixed address for free.
 
