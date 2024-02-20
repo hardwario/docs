@@ -41,7 +41,7 @@ It is used in industrial applications, STEM education, and hobby projects (home 
    [**Step-by-Step Projects**](https://www.hackster.io/hardwario/projects)
 
 1. For detailed information about the TOWER modules and tags, see the chapter:<br/>
-   [**Hardware Modules**](hardware-modules)
+   [**Hardware Modules**](hardware-modules/)
 
 1. To understand hardware layers (not only between the TOWER modules), go to the chapter:<br/>
    [**Hardware Interfaces**](category/hardware-interfaces)
