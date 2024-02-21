@@ -8,7 +8,7 @@ import TabItem from '@theme/TabItem';
 
 # HARDWARIO Manager
 
-**HADRWARIO Manager** mobile app allows you via **Bluetooth Low Energy** to:
+The **HARDWARIO Manager** mobile app allows you via **Bluetooth Low Energy** to:
 
 - Show device information
 - Configure the device over the terminal
