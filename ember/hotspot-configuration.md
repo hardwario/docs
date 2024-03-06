@@ -128,9 +128,30 @@ You can ignore the default **TTN** servers.
 
 :::caution
 
-In case you do not use the EMBER Cloud service, you have to use your LoRaWAN server IP address, and you don't have to configure the VPN tunnels.
+In case you do not use the **EMBER Cloud** service, you have to use your **LoRaWAN** server IP address, and you don't have to configure the VPN tunnels.
 
 :::
+
+## Datacake
+
+**Datacake** is an IoT platform that hosts a **LoRaWAN** server. To connect **EMBER** to **Datacake**, you need to register an account and create a dashboard. To add your your device to the dashboard:
+
+* Add the **Datacake** server to the server list by running the following command on **RouterOS**
+
+```
+/lora servers add address=eu1.datacake-lns.com up-port=1700 name=datacake down-port=1700
+```
+
+* Assign the **Datacake** server to the **LoRa** device
+
+```
+/lora set 0 servers=datacake
+```
+
+* Add the gateway by providing the following details:
+    - A name for the gateway (any name)
+    - The `Gateway EUI` (labeled as `Gateway ID` on RouterOS under `LoRa` > `Devices` > `gateway`)
+    - Frequency (according to the device's location)
 
 ## Securing Access
 
