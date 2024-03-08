@@ -54,6 +54,19 @@ Firmware build shield options: `ctr_lte ctr_mb7066_a ctr_z`
 - Samples are then **aggregated** in the configurable interval. Minimum, maximum, average, and median are computed from buffered samples for each sensor (parameter `interval-aggreg`).
 - Each aggregated values have its timestamps and are sent in a batch in a report interval period (parameter `interval-report`).
 
+## Terminal Blocks
+
+Connect the sensor to the **left terminal block A**
+
+| [**CHESTER-X0**](../extension-modules/chester-x0.md) in left slot A | Maxbotix cable color | Signal |
+| ------------------------------------------------------------------- | -------------------- | ------ |
+| A2 (CH1)                                                            | red                  | Power  |
+| A3 (GND)                                                            | black                | GND    |
+| A3 (CH2)                                                            | yellow               | Pulse  |
+
+![](../extension-modules/tb-chester-x0.png)
+
+
 ## Default Configuration
 
 This is the default configuration (printed using the `app config show` command):
