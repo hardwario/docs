@@ -159,7 +159,7 @@ Follow these steps to flash the LTE modem firmware in the **CHESTER** device:
 
 1. Open the **CHESTER** enclosure (6 screws from the bottom side).
 
-1. Connect the 10-pin flat cable to the [connector labeled `APP`](../developer-tools/segger-j-link.md#segger-j-link-to-app-port-connection) (or `BLE` on hardware revision R3.2 and earlier).
+1. Connect the 10-pin flat cable to the connector labeled [**LTE**](../developer-tools/segger-j-link.md#segger-j-link-to-lte-port-connection).
 
    :::caution
 
