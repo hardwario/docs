@@ -126,6 +126,7 @@ const sidebars = {
         'firmware-sdk/installation-on-windows',
         'firmware-sdk/installation-in-virtualbox',
         'firmware-sdk/build-and-deploy',
+        'firmware-sdk/debug',
         'firmware-sdk/applications',
         'firmware-sdk/samples',
         'firmware-sdk/application-customization',
