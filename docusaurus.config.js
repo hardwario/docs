@@ -13,6 +13,7 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
+  scripts: ['/kicad/kicanvas.js'],
 
   i18n: {
     defaultLocale: 'en',
@@ -78,130 +79,129 @@ const config = {
         disableInDev: false,
       },
     ],
-    require.resolve("docusaurus-plugin-image-zoom"),
+    require.resolve('docusaurus-plugin-image-zoom'),
   ],
 
   themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
-      navbar: {
-        logo: {
-          alt: 'HARDWARIO Logo',
-          src: 'img/logo.svg',
-          srcDark: 'img/logo-dark.svg',
+      /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+      ({
+        navbar: {
+          logo: {
+            alt: 'HARDWARIO Logo',
+            src: 'img/logo.svg',
+            srcDark: 'img/logo-dark.svg',
+          },
+          items: [
+            {
+              to: '/chester/',
+              label: 'CHESTER',
+              position: 'left',
+              activeBaseRegex: `/chester/`,
+            },
+            {
+              to: '/ember/',
+              label: 'EMBER',
+              position: 'left',
+              activeBaseRegex: `/ember/`,
+            },
+            {
+              to: '/tower/',
+              label: 'TOWER',
+              position: 'left',
+              activeBaseRegex: `/tower/`,
+            },
+            {
+              to: '/cloud/',
+              label: 'CLOUD',
+              position: 'left',
+              activeBaseRegex: `/cloud/`,
+            },
+            {
+              href: 'https://github.com/hardwario/docs',
+              label: 'GitHub',
+              position: 'right',
+            },
+          ],
         },
-        items: [
-          {
-            to: '/chester/',
-            label: 'CHESTER',
-            position: 'left',
-            activeBaseRegex: `/chester/`,
-          },
-          {
-            to: '/ember/',
-            label: 'EMBER',
-            position: 'left',
-            activeBaseRegex: `/ember/`,
-          },
-          {
-            to: '/tower/',
-            label: 'TOWER',
-            position: 'left',
-            activeBaseRegex: `/tower/`,
-          },
-          {
-            to: '/cloud/',
-            label: 'CLOUD',
-            position: 'left',
-            activeBaseRegex: `/cloud/`,
-          },
-          {
-            href: 'https://github.com/hardwario/docs',
-            label: 'GitHub',
-            position: 'right',
-          },
-        ],
-      },
-      prism: {
-        theme: require('prism-react-renderer/themes/dracula'),
-      },
-      zoom: {
-        selector: '.markdown :not(em) > img',
-        config: {
-          // options you can specify via https://github.com/francoischalifour/medium-zoom#usage
-          background: {
-            light: 'rgb(255, 255, 255)',
-            dark: 'rgb(50, 50, 50)'
+        prism: {
+          theme: require('prism-react-renderer/themes/dracula'),
+        },
+        zoom: {
+          selector: '.markdown :not(em) > img',
+          config: {
+            // options you can specify via
+            // https://github.com/francoischalifour/medium-zoom#usage
+            background: {light: 'rgb(255, 255, 255)', dark: 'rgb(50, 50, 50)'}
           }
-        }
-      },
-      algolia: {
-        apiKey: "00f3bf4268a994b715822ae701e41326",
-        indexName: "hardwario",
-        appId: "AKRT8SVTPP",
-        contextualSearch: false,
-        placeholder: "search",
-        searchPagePath: false,
-      },
-      footer: {
-        style: 'dark',
-        links: [
-          {
-            title: 'Sites',
-            items: [
-              {
-                label: 'Homepage',
-                to: 'https://hardwario.com',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Forum',
-                href: 'https://forum.hardwario.com',
-              },
-              {
-                label: 'LinkedIn',
-                href: 'https://www.linkedin.com/company/hardwario',
-              },
-              {
-                label: 'Twitter (EN)',
-                href: 'https://twitter.com/hardwario_en',
-              },
-              {
-                label: 'Twitter (CZ)',
-                href: 'https://twitter.com/hardwario_cz',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'GitHub',
-                href: 'https://github.com/hardwario',
-              },
-              {
-                label: 'GitLab',
-                href: 'https://gitlab.hardwario.com',
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} HARDWARIO a.s. Built with Docusaurus.`,
-      },
-      prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
-      },
-      docs: {
-        sidebar: {
-          hideable: true,
         },
-      },
-    }),
+        algolia: {
+          apiKey: '00f3bf4268a994b715822ae701e41326',
+          indexName: 'hardwario',
+          appId: 'AKRT8SVTPP',
+          contextualSearch: false,
+          placeholder: 'search',
+          searchPagePath: false,
+        },
+        footer: {
+          style: 'dark',
+          links: [
+            {
+              title: 'Sites',
+              items: [
+                {
+                  label: 'Homepage',
+                  to: 'https://hardwario.com',
+                },
+              ],
+            },
+            {
+              title: 'Community',
+              items: [
+                {
+                  label: 'Forum',
+                  href: 'https://forum.hardwario.com',
+                },
+                {
+                  label: 'LinkedIn',
+                  href: 'https://www.linkedin.com/company/hardwario',
+                },
+                {
+                  label: 'Twitter (EN)',
+                  href: 'https://twitter.com/hardwario_en',
+                },
+                {
+                  label: 'Twitter (CZ)',
+                  href: 'https://twitter.com/hardwario_cz',
+                },
+              ],
+            },
+            {
+              title: 'More',
+              items: [
+                {
+                  label: 'GitHub',
+                  href: 'https://github.com/hardwario',
+                },
+                {
+                  label: 'GitLab',
+                  href: 'https://gitlab.hardwario.com',
+                },
+              ],
+            },
+          ],
+          copyright: `Copyright © ${
+              new Date().getFullYear()} HARDWARIO a.s. Built with Docusaurus.`,
+        },
+        prism: {
+          theme: lightCodeTheme,
+          darkTheme: darkCodeTheme,
+        },
+        docs: {
+          sidebar: {
+            hideable: true,
+          },
+        },
+      }),
 };
 
 module.exports = config;

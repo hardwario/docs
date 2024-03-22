@@ -65,3 +65,19 @@ One of the carrier boards is **CHESTER-C4**, it contains a slot for two [**exten
 With "D" cell option.
 
 ![CHESTER-C4 top](chester-c4-d-top-white.png)
+
+### Interactive View
+
+Funguje:
+<kicanvas-embed src="/kicad/chester-c4/hio-chester-c4.kicad_sch" controls="full">
+</kicanvas-embed>
+
+Funguje:
+<kicanvas-embed src="/kicad/chester-c4/hio-chester-c4.kicad_pcb" controls="full">
+</kicanvas-embed>
+
+Nefunguje:
+<kicanvas-embed controls="full">
+    <kicanvas-source src="/kicad/chester-c4/hio-chester-c4.kicad_pcb"></kicanvas-source>
+</kicanvas-embed>
+
