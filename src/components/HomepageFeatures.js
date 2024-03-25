@@ -8,7 +8,9 @@ const FeatureList = [
     title: 'CHESTER',
     subtitle: 'Configurable IoT Gateway',
     link: '/chester/',
-    svg: '/img/chester.svg',
+    src: '/img/chester.png',
+    width: 300,
+    height: 200,
     description: (
       <>
         CHESTER is an extensible IoT gateway platform featuring NB-IoT, LTE-M, LoRaWAN, BLE, and GNSS radio technologies.
@@ -19,7 +21,9 @@ const FeatureList = [
     title: 'EMBER',
     subtitle: 'LoRaWAN IoT Hotspot',
     link: '/ember/',
-    svg: '/img/ember.svg',
+    src: '/img/ember.png',
+    width: 267,
+    height: 200,
     description: (
       <>
         EMBER is a RouterBOARD-based waterproof industrial IoT gateway (with LTE card) for LoRaWAN sensors and actuators.
@@ -30,7 +34,9 @@ const FeatureList = [
     title: 'TOWER',
     subtitle: 'Pluggable IoT Platform',
     link: '/tower/',
-    svg: '/img/tower.svg',
+    src: '/img/tower.png',
+    width: 300,
+    height: 200,
     description: (
       <>
         TOWER is an open-source IoT platform for rapid deployment, featuring sub-GHz radio and a very low power consumption.
@@ -41,7 +47,9 @@ const FeatureList = [
     title: 'CLOUD',
     subtitle: 'Middleware IoT Service',
     link: '/cloud/',
-    svg: '/img/cloud.svg',
+    src: '/img/cloud.svg',
+    width: 200,
+    height: 200,
     description: (
       <>
         CLOUD is a device and data management platform providing REST API services for seamless integration for customers.
@@ -50,11 +58,11 @@ const FeatureList = [
   },
 ];
 
-function Feature({ svg, title, subtitle, link, description }) {
+function Feature({ src, width, height, title, subtitle, link, description }) {
   return (
     <div className={clsx('col col--3')}>
       <div className="text--center">
-        <img src = {svg} width = "200" height = "200" />
+        <img src={src} width={width} height={height} />
       </div>
       <div className="text--center padding-horiz--md">
         <h2>{title}</h2>
@@ -68,7 +76,7 @@ function Feature({ svg, title, subtitle, link, description }) {
         </div>
         <p>{description}</p>
       </div>
-    </div>
+    </div >
   );
 }
 
