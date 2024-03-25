@@ -26,12 +26,6 @@ The VCC middle pin is possible to control by software. You can enable 3 V on thi
 
 :::
 
-:::info
-
-The C pin is in default configuration connected also to the ground GND. It is possible to remove zero-ohm resistor R20 and solder it to place R21. This way the C signal is directly connected to P7 and can be used as an extra input.
-
-:::
-
 ## Features
 - Configurable terminal modes:
   - Analog input or output
