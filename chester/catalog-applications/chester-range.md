@@ -62,7 +62,7 @@ Connect the sensor to the **left terminal block A**
 | ------------------------------------------------------------------- | -------------------- | ------ |
 | A2 (CH1)                                                            | red                  | Power  |
 | A3 (GND)                                                            | black                | GND    |
-| A3 (CH2)                                                            | yellow               | Pulse  |
+| A4 (CH2)                                                            | yellow               | Pulse  |
 
 ![](../extension-modules/tb-chester-x0.png)
 
