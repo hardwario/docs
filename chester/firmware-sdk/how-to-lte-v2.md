@@ -28,7 +28,7 @@ Simple example where you need just a CHESTER-M mainboard and you can uplink data
 
 After you [flash LTE modem](#flash-lte-modem-firmware) to `v1.6.0` or higer, you can flash APP/BLE MCU with CHESTER Demo with [HARDWARIO CLI](../developer-tools/command-line-tools.md) by typing:
 
-`hardwario chester app flash 42271f60e2234d40988660b5e9b2b3f2`
+`hardwario chester app flash af637aa1c5b842c18f9b10b070cb0292`
 
 https://gitlab.hardwario.com/chester/sdk/-/tree/lte-v2/applications/demo
 
