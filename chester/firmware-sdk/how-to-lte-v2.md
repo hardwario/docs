@@ -26,7 +26,7 @@ Configuration messages `app config ...` can be send to any device using LTE v2. 
 
 Simple example where you need just a CHESTER-M mainboard and you can uplink data and downlink commands to change LED or change configuration.
 
-After you [flash LTE modem](#flash-lte-modem-firmware) to `v1.6.0` or higer, you can flash APP/BLE MCU with CHESTER Demo with [HARDWARIO CLI](../developer-tools/command-line-tools.md) by typing:
+After you [flash LTE modem](#flash-lte-modem-firmware) to `v1.7.0` or higer, you can flash APP/BLE MCU with CHESTER Demo with [HARDWARIO CLI](../developer-tools/command-line-tools.md) by typing:
 
 `hardwario chester app flash af637aa1c5b842c18f9b10b070cb0292`
 
@@ -36,7 +36,7 @@ https://gitlab.hardwario.com/chester/sdk/-/tree/lte-v2/applications/demo
 
 This is an improved [CHESTER Input](../catalog-applications/chester-input.md) application.
 
-After you [flash LTE modem](#flash-lte-modem-firmware) to `v1.6.0` or higer, you can flash APP/BLE MCU with CHESTER Control with [HARDWARIO CLI](../developer-tools/command-line-tools.md) by typing:
+After you [flash LTE modem](#flash-lte-modem-firmware) to `v1.7.0` or higer, you can flash APP/BLE MCU with CHESTER Control with [HARDWARIO CLI](../developer-tools/command-line-tools.md) by typing:
 
 `hardwario chester app flash a1201384db424cb394b5e9130293f708`
 
@@ -53,9 +53,9 @@ CHESTER Control also contains configuration definitions through macros. So you d
 
 ### Flash LTE Modem Firmware
 
-You need to update the LTE modem to the `v1.6.0` or higher. This firmware is not backward compatible with `v1.3.0` that is only for older LTE v1.
+You need to update the LTE modem to the `v1.7.0` or higher. This firmware is not backward compatible with `v1.3.0` that is only for older LTE v1.
 
-Follow the [LTE Modem over J-Link](../firmware-flashing/lte-modem-over-j-link.md) article and [download firmware v1.6.0](pathname:///download/hio-chester-lte-v1.6.0.zip).
+Follow the [LTE Modem over J-Link](../firmware-flashing/lte-modem-over-j-link.md) article and [download firmware v1.7.0](pathname:///download/hio-chester-lte-v1.7.0.zip).
 
 ### Use `lte-v2` Branch
 
