@@ -12,7 +12,7 @@ To use **CBOR** with **CHESTER** you need to:
 
 - Create a `codec\cbor-decoder.yaml` file in your application folder that describes the JSON attributes.
 - Upload the YAML file to the **HARDWARIO Cloud** using `hardwario cloud` [CLI tool](../developer-tools/command-line-tools.md#cloud-codec-commands).
-- Generate a `msg_key.h` definition header file using `chester/scripts/gen-msg-key.py` script.
+- Header file `msg_key.h` is automatically generated when `west build` is called.
 - Use these definitions in `app_cbor.c` and add the needed data.
 
 :::info
