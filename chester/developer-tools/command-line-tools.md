@@ -132,7 +132,7 @@ When you assign your device to the **HARDWARIO Cloud** group, you have to assign
 
 :::tip
 
-If you develop your own firmware and change the codec **YAML** file. You can generate `msg_key.h` header file with keys from your **YAML** file by typing this from your application folder `../../scripts/gen-msg-key.py codec/cbor-decoder.yaml src/msg_key.h`
+If you develop your own firmware and change the codec **YAML** file. The `msg_key.h` header file is now automatically regenerated when you type `west build`.
 
 :::
 
