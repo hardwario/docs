@@ -72,6 +72,7 @@ The catalog application **CHESTER Clime IAQ** measures:
 - Motion detection with PIR sensor
 
 Also, the application reports **push-button events** and provides **acoustic** and **optical feedback**.
+The **button LED** color also **signalizes CO₂ concentration levels**.
 
 The hardware of this application consists of the following ordering codes:
 
@@ -132,6 +133,8 @@ Firmware build shield options: `ctr_lte ctr_rtd_a`
 
 When equipped with **CHESTER-S1**. The device also has a push button. When the button is pressed, the blue LED turns on for a second. Also, the **beep sound** is played from the integrated acoustic buzzer for audible confirmation of the push button press.
 
+Also, the button on the optional **CHESTER-S1** by its color reports the state of the CO₂ by **green** (levels are ok), **orange** (warning) and **red** (alarm) thresholds. The button blinks shortly every 5 seconds when powered from a battery and it is permanently on when external power on X10 is applied. Threshold **levels** and **hysteresis** are **configurable**.
+
 ## Default Configuration
 
 This is the default configuration (printed using the `app config show` command):
@@ -158,6 +161,21 @@ When equipped with **backup** (CHESTER-Z) or **hygrometer** (CHESTER-S2):
 ```
 app config event-report-delay 1
 app config event-report-rate 30
+```
+
+When equipped with **IAQ** (CHESTER-S1) you can change CO₂ thresholds and hysteresis which are signalized by button LED color:
+
+```
+app config iaq-led-thr-warning 800.0
+app config iaq-led-thr-alarm 1600.0
+app config iaq-led-hst 50.0
+```
+
+When equipped with **backup** (CHESTER-Z) or **external power** (CHESTER-X10), you can immediately report changes of the external power events:
+
+```
+app config backup-report-connected true
+app config backup-report-disconnected true
 ```
 
 ## Specific Commands
@@ -233,7 +251,7 @@ When upgrading firmware from **v1.x.x** to version **v2.0.0 and newer** - it is 
 
 :::
 
-The latest firmware is available in Catalog Applications [Firmware chapter](index.md#application-firmware).
+The latest firmware is available in the Catalog Applications [Firmware chapter](index.md#application-firmware).
 
 ## Example JSON Message
 
@@ -243,6 +261,11 @@ In this example **JSON** you can see data from all three variants
 - **CHESTER Clime IAQ**  has its own `iaq_sensor` structure.
 - **CHESTER Clime 1W** has its own `w1_thermometers` structure.
 - **CHESTER Clime RTD** has its own `rtd_thermometers` structure.
+- **CHESTER Clime** with **backup** option (CHESTER-Z or CHESTER-X10) has `backup` with external and internal voltages, state and events.
+
+Backup **events** are:
+* `connected`
+* `disconnected`
 
 Hygrometer **events** are:
 * `alarm_hi_activated`
@@ -273,6 +296,17 @@ In each structure with the current configuration, there are six aggregated value
     "voltage_rest": 3.7,
     "voltage_load": 3.66,
     "current_load": 36
+  },
+  "backup": {
+      "line_voltage": 24.01,
+      "batt_voltage": 4.09,
+      "state": "connected",
+      "events": [
+          {
+              "timestamp": 1668858942,
+              "type": "connected"
+          }
+      ]
   },
   "network": {
     "imei": 351358815180770,
