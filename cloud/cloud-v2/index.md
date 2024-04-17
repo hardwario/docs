@@ -38,11 +38,3 @@ Tags are useful for organizing similar devices together, or you can create a cal
 ### Labels
 
 Labels are key-value information you can put on every device. Labels are also passed to the callback, so your callback can react to specific labels on that device.
-
-## Connectors
-
-Please see the [**Connectors**](connectors) article.
-
-## API Keys
-
-You can define multiple API keys that allow you to automate all the functions over [**API**](https://api.prod.hardwario.cloud/v2/documentation/index.html)
