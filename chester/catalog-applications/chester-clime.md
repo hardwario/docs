@@ -42,7 +42,7 @@ The hardware of this application consists of the following ordering codes:
 
 See [**Ordering Codes**](../ordering-codes.md) for more details.
 
-Firmware build shield options: `ctr_lte ctr_s2`
+Firmware build shield options: `ctr_lrw ctr_lte ctr_s2`
 
 ### CHESTER Clime Z
 
@@ -59,7 +59,7 @@ The hardware of this application consists of the following ordering codes:
 
 See [**Ordering Codes**](../ordering-codes.md) for more details.
 
-Firmware build shield options: `ctr_lte ctr_s2 ctr_z`
+Firmware build shield options: `ctr_lrw ctr_lte ctr_s2 ctr_z`
 
 ### CHESTER Clime IAQ
 
@@ -78,11 +78,12 @@ The hardware of this application consists of the following ordering codes:
 
 * `CHESTER-M-BCGLS` - Standard mainboard
 * `CHESTER-S1-BCMP` - Integrated multi-sensor
+* `CHESTER-X10` - External power 6-28V with Li-Ion battery
 * `CHESTER-E7-LP` - Enclosure with SMA pigtail
 
 See [**Ordering Codes**](../ordering-codes.md) for more details.
 
-Firmware build shield options: `ctr_lte ctr_s1`
+Firmware build shield options: `ctr_lrw ctr_lte ctr_s1 ctr_x10`
 
 ### CHESTER Clime 1W
 
@@ -95,7 +96,7 @@ The hardware of this application consists of the following ordering codes:
 
 See [**Ordering Codes**](../ordering-codes.md) for more details.
 
-Firmware build shield options: `ctr_lte ctr_ds18b20`
+Firmware build shield options: `ctr_lrw ctr_lte ctr_ds18b20`
 
 ### CHESTER Clime 1WH
 
@@ -109,7 +110,7 @@ The hardware of this application consists of the following ordering codes:
 
 See [**Ordering Codes**](../ordering-codes.md) for more details.
 
-Firmware build shield options: `ctr_lte ctr_ds18b20 ctr_s2`
+Firmware build shield options: `ctr_lrw ctr_lte ctr_ds18b20 ctr_s2`
 
 ### CHESTER Clime RTD
 
@@ -123,7 +124,7 @@ The hardware of this application consists of the following ordering codes:
 
 See [**Ordering Codes**](../ordering-codes.md) for more details.
 
-Firmware build shield options: `ctr_lte ctr_rtd_a`
+Firmware build shield options: `ctr_lrw ctr_lte ctr_rtd_a`
 
 ## Measurement and Behavior
 
