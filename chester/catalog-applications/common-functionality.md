@@ -47,6 +47,14 @@ app config interval-aggreg 300
 app config interval-report 1800
 ```
 
+:::caution
+
+CHESTER sends in default the configuration about 500 bytes of data. If you increase the report interval too much without increasing also aggregation interval,
+the data buffer might be bigger than the UDP MTU and the packet will not be sent. Device then appears like it is not sending or sends only a fraction of packets.
+
+:::
+
+
 You can change configuration using the `app config` command, followed by `config save`. Example:
 
 ```

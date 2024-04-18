@@ -74,6 +74,13 @@ The catalog application **CHESTER Clime IAQ** measures:
 Also, the application reports **push-button events** and provides **acoustic** and **optical feedback**.
 The **button LED** color also **signalizes CO₂ concentration levels**.
 
+:::caution
+
+CHESTER IAQ sends in default the configuration about 800 bytes of data. If you increase the report interval without increasing also aggregation interval,
+the data buffer might be bigger than the UDP MTU and the packet will not be sent. Device then appears like it is not sending or sends only a fraction of packets.
+
+:::
+
 The hardware of this application consists of the following ordering codes:
 
 * `CHESTER-M-BCGLS` - Standard mainboard
@@ -84,6 +91,8 @@ The hardware of this application consists of the following ordering codes:
 See [**Ordering Codes**](../ordering-codes.md) for more details.
 
 Firmware build shield options: `ctr_lrw ctr_lte ctr_s1 ctr_x10`
+
+
 
 ### CHESTER Clime 1W
 
@@ -131,6 +140,13 @@ Firmware build shield options: `ctr_lrw ctr_lte ctr_rtd_a`
 - All sensors are **sampled** with a configurable period (parameter `interval-sample`).
 - Samples are then **aggregated** in the configurable interval. Minimum, maximum, average, and median are computed from buffered samples for each sensor (parameter `interval-aggreg`).
 - Each aggregated values have its timestamps and are sent in a batch in a report interval period (parameter `interval-report`).
+
+:::caution
+
+CHESTER Clime sends in default the configuration about 500 bytes of data. If you increase the report interval without increasing also aggregation interval,
+the data buffer might be bigger than the UDP MTU and the packet will not be sent. Device then appears like it is not sending or sends only a fraction of packets.
+
+:::
 
 When equipped with **CHESTER-S1**. The device also has a push button. When the button is pressed, the blue LED turns on for a second. Also, the **beep sound** is played from the integrated acoustic buzzer for audible confirmation of the push button press.
 
