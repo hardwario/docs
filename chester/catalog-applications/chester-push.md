@@ -28,7 +28,7 @@ The application can differentiate between a short press and a long press. In eac
 
 Each button is also equipped with an **LED indicator** so the operator can see that the press was recognized. Also, the **beep sound** is played from the integrated acoustic buzzer for audible confirmation of the push button press.
 
-The **CHESTER Push** application integrates a **CHESTER-Z-F** extension module with a rechargeable **Li-Ion** battery and DC/DC power supply (input voltage range of 6 VDC to 26 VDC) that can charge the battery and provide a steady power supply for the application. The reported message also provides information about the external power presence, external DC line voltage, and battery voltage. With that extra information, **CHESTER Push** could also be used to monitor power outages.
+The **CHESTER Push** application integrates a **CHESTER-Z1-F** extension module with a rechargeable **Li-Ion** battery and DC/DC power supply (input voltage range of 6 VDC to 26 VDC) that can charge the battery and provide a steady power supply for the application. The reported message also provides information about the external power presence, external DC line voltage, and battery voltage. With that extra information, **CHESTER Push** could also be used to monitor power outages.
 
 **CHESTER Push** also reports temperature and device orientation (using the built-in accelerometer). All these values are provided in every message sent from the device.
 
@@ -61,7 +61,7 @@ The application signals push-button events on LEDs in two different ways and cus
 The catalog application **CHESTER Push** hardware consists of the following ordering codes:
 
 * `CHESTER-M-CGLS` - CHESTER mainboard
-* `CHESTER-Z-F` - Four push buttons (see [**Ordering Codes**](../ordering-codes.md#chester-z) for more variants)
+* `CHESTER-Z1-F` - Four push buttons (see [**Ordering Codes**](../ordering-codes.md#chester-z) for more variants)
 * `CHESTER-E2-LP` - Enclosure with light pipe and SMA antenna pigtail
 
 ## Enclosure Template

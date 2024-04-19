@@ -50,7 +50,7 @@ The hardware of this application consists of the following ordering codes:
 
 * `CHESTER-M-BCGLS` - Standard mainboard
 * `CHESTER-X0B:A` - Input module (4 channels)
-* `CHESTER-Z` - Backup module
+* `CHESTER-Z1` - Backup module
 * `CHESTER-S2` - External hygrometer
 * External barometer
 * `CHESTER-E1-LP` - Enclosure with SMA pigtail

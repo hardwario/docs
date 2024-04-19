@@ -22,7 +22,7 @@ In the SDK subfolder `samples\`, you find many samples explaining working with d
 | chester_x3        | [**CHESTER-X3**](../extension-modules/chester-x3.md) (Precision ADC, RTD, PT1000, strain gauge)              |
 | chester_x4        | [**CHESTER-X4**](../extension-modules/chester-x4.md) Step-down DC/DC with ADC and 4 power outputs            |
 | chester_x7        | [**CHESTER-X7**](../extension-modules/chester-x7.md) Single channel diff input                               |
-| chester_z         | **CHESTER-Z** Rechargeable battery backup module with DC/DC converter and charger                            |
+| chester_z         | **CHESTER-Z1** Rechargeable battery backup module with DC/DC converter and charger                           |
 | ctr_barometer_tag | Barometer Tag support from TOWER Kit                                                                         |
 | ctr_batt          | Measure **CHESTER-M** battery voltage at a rest or load                                                      |
 | ctr_ble           | BLE advertising                                                                                              |

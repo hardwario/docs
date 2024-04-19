@@ -16,11 +16,11 @@ In the text below, we explain what each file in the project does.
 
 | File                               | Description                                                                                 |
 | ---------------------------------- | ------------------------------------------------------------------------------------------- |
-| app_backup.c <br /> app_backup.h   | CHESTER-Z battery back-up functionality                                                     |
+| app_backup.c <br /> app_backup.h   | CHESTER-Z1 battery back-up functionality                                                    |
 | app_cbor.c <br /> app_cbor.h       | Encoding binary data to CBOR, cloud will then do the JSON conversion (LTE only)             |
 | app_config.c <br /> app_config.h   | Configuration options used with shell `app config` command + custom shell commands handlers |
 | app_data.c <br /> app_data.h       | Structures with measured data ready to be send                                              |
-| app_handler.c <br /> app_handler.h | Callback handlers for LTE or CHESTER-Z                                                      |
+| app_handler.c <br /> app_handler.h | Callback handlers for LTE or CHESTER-Z1                                                     |
 | app_init.c <br /> app_init.h       | Application initialization                                                                  |
 | app_power.c <br /> app_power.h     | CHESTER-M internal battery voltage measurement                                              |
 | app_send.c <br /> app_send.h       | LTE/LoRaWAN functions to send the data                                                      |

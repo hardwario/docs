@@ -30,6 +30,6 @@ On the CHESTER mainboard, there are several devices with user-upgradeable firmwa
 
 Apart from the mainboard itself, these are the other devices with the firmware in the CHESTER ecosystem:
 
-1. Extension module CHESTER-Z
+1. Extension module CHESTER-Z1
 
 1. Extension module CHESTER-S1

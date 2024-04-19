@@ -59,7 +59,7 @@ The catalog **CHESTER Input Z** hardware consists of the following ordering code
 
 * `CHESTER-X0B:A` - Input module (4 channels)
 
-* `CHESTER-Z` - Backup module
+* `CHESTER-Z1` - Backup module
 
 See [**Ordering Codes**](../ordering-codes.md) for more details.
 
@@ -73,7 +73,7 @@ Firmware build shield options: `ctr_ds18b20 ctr_lte ctr_x0_a ctr_z`
 
 * `CHESTER-X0B:A` - Input module (4 channels)
 
-* `CHESTER-Z` - Backup module
+* `CHESTER-Z1` - Backup module
 
 * `CHESTER-S2` - External hygrometer
 
@@ -132,7 +132,7 @@ This input measures the analog current in the range from **0-24 mA** (overlaps t
 
 ### Backup
 
-**CHESTER Input Z** (equipped with **CHESTER-Z**) can also report information on the backup battery and external DC power state.
+**CHESTER Input Z** (equipped with **CHESTER-Z1**) can also report information on the backup battery and external DC power state.
 
 * The current **battery voltage** and **external DC voltage** are sent in every report.
 

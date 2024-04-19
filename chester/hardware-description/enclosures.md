@@ -74,7 +74,7 @@ Suffix explanation:
 - `-F` Four push buttons on the left side of the enclosure
 - `-X` One push button in the center of the enclosure
 
-See `1`-`F` or `X` explanation in [CHESTER-Z Ordering Codes](../ordering-codes.md#chester-z).
+See `1`-`F` or `X` explanation in [CHESTER-Z1 Ordering Codes](../ordering-codes.md#chester-z).
 
 ![](enclosures/chester-e4-fp-hwe020-bottom-base.pdf-1.png)
 ![](enclosures/chester-e4-fp-hwe020-top-cover.pdf-1.png)

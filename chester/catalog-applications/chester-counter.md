@@ -48,7 +48,7 @@ The catalog **CHESTER Counter Z** hardware consists of the following ordering co
 
 * `CHESTER-X0B:A` - Input module (4 channels)
 
-* `CHESTER-Z` - Backup module
+* `CHESTER-Z1` - Backup module
 
 See [**Ordering Codes**](../ordering-codes.md) for more details.
 
@@ -56,7 +56,7 @@ Firmware build shield options: `ctr_lte ctr_x0_a ctr_z`
 
 ## Backup
 
-**CHESTER Counter Z** (equipped with **CHESTER-Z**) can also report information on the backup battery and external DC power state.
+**CHESTER Counter Z** (equipped with **CHESTER-Z1**) can also report information on the backup battery and external DC power state.
 
 * The current **battery voltage** and **external DC voltage** are sent in every report.
 

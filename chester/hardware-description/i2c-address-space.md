@@ -20,7 +20,7 @@ Typically, you will not need to search for the I²C addresses while working with
 
 | Block          | Address | Device          | Remark                             |
 | :------------- | :-----: | :-------------- | :--------------------------------- |
-| CHESTER-Z      | `0x10`  | STM32L0         |                                    |
+| CHESTER-Z1     | `0x10`  | STM32L0         |                                    |
 | CHESTER-S1     | `0x11`  | STM32L0         |                                    |
 | CHESTER-M      | `0x18`  | DS2484          |                                    |
 | CHESTER-M      | `0x19`  | LIS2DH12        |                                    |

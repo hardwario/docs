@@ -52,13 +52,13 @@ CHESTER mainboard (CHESTER-M) is provided in 3 variants from the battery holder 
 
    :::tip
 
-   This variant is not very common but it is essential anytime you need the internal primary battery and at the same time any cover module installed in the top part of the enclosure. For example, the extension module CHESTER-Z-F (which features four illuminated push-buttons) with two AA primary batteries forms a robust push-button and indication device suitable for outdoor operation.
+   This variant is not very common but it is essential anytime you need the internal primary battery and at the same time any cover module installed in the top part of the enclosure. For example, the extension module CHESTER-Z1-F (which features four illuminated push-buttons) with two AA primary batteries forms a robust push-button and indication device suitable for outdoor operation.
 
    :::
 
 1. Without any battery holder.
 
-   This variant is applicable when used together with external power sources provided from extension modules such as CHESTER-Z, CHESTER-X4, CHESTER-X10, or carrier board CHESTER-B1.
+   This variant is applicable when used together with external power sources provided from extension modules such as CHESTER-Z1, CHESTER-X4, CHESTER-X10, or carrier board CHESTER-B1.
 
 ## Battery Extension Modules
 
@@ -92,7 +92,7 @@ If you need to use primary (non-rechargeable) cells and more battery capacity th
 
   * Eight battery holders of size "D" for alkaline cells (alkaline-manganese dioxide) with a nominal voltage of 1.5 V and cell capacity of 7,700 mAh. All cells installed will provide total energy of 74 Wh. In this configuration, there are always two cells in series, making three parallel connections. This solution is suitable for projects with a temperature range of -10 to +50 °C. This variant fits in a low-profile enclosure with dimensions of 200 x 280 x 45 mm.
 
-* The CHESTER-Z expansion module with a rechargeable (and replaceable) lithium-ion battery (type 18650) with a nominal voltage of 3.7 V and a capacity of 2,000 mAh. This solution is suitable for projects where mains power (or DC line) is available, but long-term device operation is required in the event of a power failure. Alternatively, you can connect photovoltaic solar panels to the CHESTER-Z input terminals instead of the power adapter or DC line voltage.
+* The CHESTER-Z1 expansion module with a rechargeable (and replaceable) lithium-ion battery (type 18650) with a nominal voltage of 3.7 V and a capacity of 2,000 mAh. This solution is suitable for projects where mains power (or DC line) is available, but long-term device operation is required in the event of a power failure. Alternatively, you can connect photovoltaic solar panels to the CHESTER-Z1 input terminals instead of the power adapter or DC line voltage.
 
   :::caution
 
@@ -112,6 +112,6 @@ The CHESTER device can be powered from a DC line (or power adapter) using these 
 
   CHESTER-X10 is a DC/DC converter with a voltage range of 6 to 28 VDC + lithium-polymer battery charger.
 
-* Cover module CHESTER-Z
+* Cover module CHESTER-Z1
 
-  CHESTER-Z is a DC/DC converter with a voltage range of 6-28 VDC + lithium-ion battery charger.
+  CHESTER-Z1 is a DC/DC converter with a voltage range of 6-28 VDC + lithium-ion battery charger.

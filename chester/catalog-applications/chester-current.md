@@ -54,7 +54,7 @@ The catalog **CHESTER Current Z** hardware consists of the following ordering co
 
 * `CHESTER-M-CGLS` - Standard mainboard
 * `CHESTER-K1-C1-C2-C3-C4` - 4x Diff. Input + 5 V Boost
-* `CHESTER-Z` - Backup module
+* `CHESTER-Z1` - Backup module
 * `CHESTER-E2-LP` - Enclosure with SMA pigtail
 
 See [**Ordering Codes**](../ordering-codes.md) for more details.
@@ -107,7 +107,7 @@ The extension module **CHESTER-K1** use both slots **A** and **B**. So you use t
 
 ### Backup
 
-**CHESTER Current Z** (equipped with **CHESTER-Z**) can also report information on the backup battery and external DC power state.
+**CHESTER Current Z** (equipped with **CHESTER-Z1**) can also report information on the backup battery and external DC power state.
 
 * The current **battery voltage** and **external DC voltage** are sent in every report.
 

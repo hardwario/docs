@@ -53,7 +53,7 @@ The catalog application **CHESTER Clime Z** measures:
 The hardware of this application consists of the following ordering codes:
 
 * `CHESTER-M-BCGLS` - Standard mainboard
-* `CHESTER-Z` - Backup module
+* `CHESTER-Z1` - Backup module
 * `CHESTER-S2` - External hygrometer
 * `CHESTER-E1-LP` - Enclosure with SMA pigtail
 
@@ -173,7 +173,7 @@ app config hygro-t-alarm-lo-thr 0.0
 app config hygro-t-alarm-lo-hst 0.0
 ```
 
-When equipped with **backup** (CHESTER-Z) or **hygrometer** (CHESTER-S2):
+When equipped with **backup** (CHESTER-Z1) or **hygrometer** (CHESTER-S2):
 
 ```
 app config event-report-delay 1
@@ -188,7 +188,7 @@ app config iaq-led-thr-alarm 1600.0
 app config iaq-led-hst 50.0
 ```
 
-When equipped with **backup** (CHESTER-Z) or **external power** (CHESTER-X10), you can immediately report changes of the external power events:
+When equipped with **backup** (CHESTER-Z1) or **external power** (CHESTER-X10), you can immediately report changes of the external power events:
 
 ```
 app config backup-report-connected true
@@ -278,7 +278,7 @@ In this example **JSON** you can see data from all three variants
 - **CHESTER Clime IAQ**  has its own `iaq_sensor` structure.
 - **CHESTER Clime 1W** has its own `w1_thermometers` structure.
 - **CHESTER Clime RTD** has its own `rtd_thermometers` structure.
-- **CHESTER Clime** with **backup** option (CHESTER-Z or CHESTER-X10) has `backup` with external and internal voltages, state and events.
+- **CHESTER Clime** with **backup** option (CHESTER-Z1 or CHESTER-X10) has `backup` with external and internal voltages, state and events.
 
 Backup **events** are:
 * `connected`

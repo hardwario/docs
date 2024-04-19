@@ -42,7 +42,7 @@ The catalog **CHESTER Range Z** hardware consists of the following ordering code
 
 * `CHESTER-X0A:A` - Input module (4 channels)
 
-* `CHESTER-Z` - Backup module
+* `CHESTER-Z1` - Backup module
 
 See [**Ordering Codes**](../ordering-codes.md) for more details.
 

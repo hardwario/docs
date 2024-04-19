@@ -81,7 +81,7 @@ The lux meter and hygrometer are always included. In the case of the "N" version
 | `CHESTER-S1-N`     |
 | `CHESTER-S1-NP`    |
 
-### CHESTER-Z: Backup + Push-buttons {#chester-z}
+### CHESTER-Z1: Backup + Push-buttons {#chester-z}
 
 :::caution
 
@@ -89,7 +89,7 @@ This product connects to the system I²C bus on CHESTER-M via the 7-pin JST conn
 
 :::
 
-**Format:** `CHESTER-Z-[X|1-F]`
+**Format:** `CHESTER-Z1-[X|1-F]`
 
 **Legend:**
 
@@ -110,11 +110,11 @@ An acoustic beeper is installed only if any of the pushbuttons are present.
 
 **Available parts:**
 
-| Ordering Code |
-| :------------ |
-| `CHESTER-Z`   |
-| `CHESTER-Z-F` |
-| `CHESTER-Z-X` |
+| Ordering Code  |
+| :------------- |
+| `CHESTER-Z1`   |
+| `CHESTER-Z1-F` |
+| `CHESTER-Z1-X` |
 
 ## Carrier Boards
 
