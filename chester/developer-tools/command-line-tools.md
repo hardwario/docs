@@ -136,7 +136,7 @@ If you develop your own firmware and change the codec **YAML** file. The `msg_ke
 
 :::
 
-Working with codecs needs your **API token** to be set in the command itself or in your environment. You get your **API toekn** in **HARDWARIO Cloud** profile.
+Working with codecs needs your **API token** to be set in the command itself or in your environment. You get your **API token** in [**HARDWARIO Cloud v1 in your profile**](https://hardwario.cloud/#/profile).
 
 ```
 hardwario cloud --token <your_token> commands...
