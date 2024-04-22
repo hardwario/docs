@@ -109,6 +109,12 @@ Run this command to query the LTE registration state:
 lte state
 ```
 
+You can read the IMSI of the SIM card even when the CHESTER is not attached:
+
+```
+lte imsi
+```
+
 ## Onomondo Configuration
 
 This is the reference LTE settings when using **CHESTER** with the **Onomondo** SIM card:
