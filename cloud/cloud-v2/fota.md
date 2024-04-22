@@ -8,7 +8,7 @@ import Image from '@theme/IdealImage';
 
 You can also update firmware in your CHESTER.
 
-First you need to build and deploy a firmware to our cloud using `hardwario chester app fw upload` command. Please see the [**CHESTER Deploy**](../../chester/firmware-sdk/build-and-deploy#deploy) and [**Firmware Upload**](../../chester/firmware-sdk/build-and-deploy#firmware-upload) chapters.
+First you need to build and deploy a firmware to our cloud using `hardwario chester app fw upload` command. Please see the [**CHESTER Deploy**](/chester/firmware-sdk/build-and-deploy#deploy) and [**Firmware Upload**](/chester/firmware-sdk/build-and-deploy#firmware-upload) chapters.
 
 After you obtain the unique firmware ID like af637aa1c5b842c18f9b10b070cb0292 (newer ones have hyphens), you can click in the device's detail in the **Firmware** tab on the **+ DOWNLOAD FIRMWARE** button and paste the unique value there.
 
