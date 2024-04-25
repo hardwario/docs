@@ -77,6 +77,8 @@ However, this is just to understand the modes. You only need to know which mode 
 
 *Note: The system positive rail voltage depends on CHESTER power supply option.
 
+## Schematics
+
 ## Module Drawing
 
 ![](pc-chester-x0.png)
