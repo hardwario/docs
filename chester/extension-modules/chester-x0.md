@@ -81,17 +81,17 @@ However, this is just to understand the modes. You only need to know which mode 
 
 A schematic diagram is useful if you program low-level hardware-related code or if you're just curious about how the system is designed.
 
-- [Schematic R2.0 (PDF)](chester/extension-modules/schematics/hio-chester-x0-r2.0.pdf)
-- [Interactive PCB connector, part, testpoint and signal browser R3.4](static/download/ibom/hio-chester-x0-r2.0.html)
+- [Schematic R2.0 (PDF)](schematics/hio-chester-x0-r2.0.pdf)
+- [Interactive PCB connector, part, testpoint and signal browser R3.4](pathname:///download/ibom/hio-chester-x0-r2.0.html)
 
 ## U1 & U2
-![](/chester/extension-modules/schematics/hio-chester-x0-r2.0-1.png)
+![](schematics/hio-chester-x0-r2.0-1.png)
 
 ## CHANNEL 1 & 2
-![](/chester/extension-modules/schematics/hio-chester-x0-r2.0-2.png)
+![](schematics/hio-chester-x0-r2.0-2.png)
 
 ## CHANNEL 3 & 4
-![](/chester/extension-modules/schematics/hio-chester-x0-r2.0-3.png)
+![](schematics/hio-chester-x0-r2.0-3.png)
 
 ## Module Drawing
 ![](pc-chester-x0.png)
