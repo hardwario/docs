@@ -6,6 +6,8 @@ import Image from '@theme/IdealImage';
 
 # CHESTER-K1
 
+## CHESTER Pin Configuration Diagram
+
 <Image img={require('./tb-chester-k1.png')} />
 
 <br />
