@@ -41,6 +41,15 @@ The load have to be connected between external voltage source and the low side s
 | 7        | GND         | System ground signal    |
 | 8        | CH4         | Channel 1 switch output |
 
+## Schematic diagram
+
+A schematic diagram is useful if you program low-level hardware-related code or if you're just curious about how the system is designed.
+
+- [Schematic (PDF)](schematics/hio-chester-x9-r1.0.pdf)
+- [Interactive PCB connector, part, testpoint and signal browser](pathname:///download/ibom/hio-chester-x9-r1.0.html)
+
+![](schematics/hio-chester-x9-r1.0-1.png)
+
 ## Module Drawing
 
 ![](pc-chester-x9.png)

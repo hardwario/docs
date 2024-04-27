@@ -43,6 +43,16 @@ CHESTER-X10 is a backup power supply module for CHESTER. The primary power input
 
 *Note: Use only a single cell 3.7V Li-Pol (or Li-Ion) battery with integrated protection circuit. Do not short circuit the battery!
 
+## Schematic diagram
+
+A schematic diagram is useful if you program low-level hardware-related code or if you're just curious about how the system is designed.
+
+- [Schematic (PDF)](schematics/hio-chester-x10-r1.1.pdf)
+- [Interactive PCB connector, part, testpoint and signal browser](pathname:///download/ibom/hio-chester-x10-r1.1.html)
+
+![](schematics/hio-chester-x10-r1.1-1.png)
+![](schematics/hio-chester-x10-r1.1-2.png)
+
 ## Module Drawing
 
 ![](pc-chester-x10.png)

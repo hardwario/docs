@@ -31,6 +31,15 @@ Each of the four outputs has a resetable PTC fuse protection (femtoSMDC005F). Ea
 | 7        | GND         | System ground signal                  |
 | 8        | VIN         | DC power supply voltage input (6-28V) |
 
+## Schematic diagram
+
+A schematic diagram is useful if you program low-level hardware-related code or if you're just curious about how the system is designed.
+
+- [Schematic (PDF)](schematics/hio-chester-x4-r3.1.pdf)
+- [Interactive PCB connector, part, testpoint and signal browser](pathname:///download/ibom/hio-chester-x4-r3.1.html)
+
+![](schematics/hio-chester-x4-r3.1-1.png)
+
 ## Module Drawing
 
 ![](pc-chester-x4.png)

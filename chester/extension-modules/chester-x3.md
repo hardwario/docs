@@ -37,6 +37,15 @@ CHESTER-X3C provides 2 inputs for load-cell (strain gauge) that can be used for 
 | 7        | CH2B        | Channel 2: sensor input B         |
 | 8        | CH2M        | Channel 2: sensor negative supply |
 
+## Schematic diagram
+
+A schematic diagram is useful if you program low-level hardware-related code or if you're just curious about how the system is designed.
+
+- [Schematic (PDF)](schematics/hio-chester-x3-r3.2.pdf)
+- [Interactive PCB connector, part, testpoint and signal browser](pathname:///download/ibom/hio-chester-x3-r3.2.html)
+
+![](schematics/hio-chester-x3-r3.2-1.png)
+
 ## Module Drawing
 
 ![](pc-chester-x3.png)
