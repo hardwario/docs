@@ -35,6 +35,16 @@ CHESTER-X1 supports connection using parasitic powering method. In that case onl
 
 ![](sc-chester-x1.png)
 
+## Schematic diagram
+
+A schematic diagram is useful if you program low-level hardware-related code or if you're just curious about how the system is designed.
+
+- [Schematic (PDF)](schematics/hio-chester-x1-r3.2.pdf)
+- [Interactive PCB connector, part, testpoint and signal browser](pathname:///download/ibom/hio-chester-x1-r3.2.html)
+
+![](schematics/hio-chester-x1-r3.2-1.png)
+![](schematics/hio-chester-x1-r3.2-2.png)
+
 ## Module Drawing
 
 ![](pc-chester-x1.png)

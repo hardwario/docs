@@ -6,6 +6,8 @@ import Image from '@theme/IdealImage';
 
 # CHESTER-K1
 
+## CHESTER Pin Configuration Diagram
+
 <Image img={require('./tb-chester-k1.png')} />
 
 <br />
@@ -20,3 +22,14 @@ The extension module **CHESTER-K1** use both slots **A** and **B**. So you use t
 | INP    | White      |
 | INM    | Yellow     |
 | VOUT   | Red        |
+
+## Schematic diagram
+
+A schematic diagram is useful if you program low-level hardware-related code or if you're just curious about how the system is designed.
+
+- [Schematic (PDF)](schematics/hio-chester-k1-r1.4.pdf)
+- [Interactive PCB connector, part, testpoint and signal browser](pathname:///download/ibom/hio-chester-k1-r1.4.html)
+
+![](schematics/hio-chester-k1-r1.4-1.png)
+![](schematics/hio-chester-k1-r1.4-2.png)
+![](schematics/hio-chester-k1-r1.4-3.png)

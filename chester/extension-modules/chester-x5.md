@@ -29,6 +29,15 @@ CHESTER-X5 implements two **isolated** voltage inputs. Each can measure voltage 
 | 7        | INP2        | Channel 2 **positive** input |
 | 8        | DNC         | Reserved                     |
 
+## Schematic diagram
+
+A schematic diagram is useful if you program low-level hardware-related code or if you're just curious about how the system is designed.
+
+- [Schematic (PDF)](schematics/hio-chester-x5-r2.1.pdf)
+- [Interactive PCB connector, part, testpoint and signal browser](pathname:///download/ibom/hio-chester-x5-r2.1.html)
+
+![](schematics/hio-chester-x5-r2.1-1.png)
+
 ## Module Drawing
 
 ![](pc-chester-x5.png)

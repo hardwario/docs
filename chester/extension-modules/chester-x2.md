@@ -31,6 +31,15 @@ CHESTER-X2 provides TTL/UART interface and RS-485 interface (e.g., for Modbus co
 
 *Note: The system positive rail voltage depends on CHESTER power supply option.
 
+## Schematic diagram
+
+A schematic diagram is useful if you program low-level hardware-related code or if you're just curious about how the system is designed.
+
+- [Schematic (PDF)](schematics/hio-chester-x2-r3.0.pdf)
+- [Interactive PCB connector, part, testpoint and signal browser](pathname:///download/ibom/hio-chester-x2-r3.0.html)
+
+![](schematics/hio-chester-x2-r3.0-1.png)
+
 ## Module Drawing
 
 ![](pc-chester-x2.png)

@@ -77,8 +77,18 @@ However, this is just to understand the modes. You only need to know which mode 
 
 *Note: The system positive rail voltage depends on CHESTER power supply option.
 
-## Module Drawing
+## Schematic diagram
 
+A schematic diagram is useful if you program low-level hardware-related code or if you're just curious about how the system is designed.
+
+- [Schematic (PDF)](schematics/hio-chester-x0-r2.0.pdf)
+- [Interactive PCB connector, part, testpoint and signal browser](pathname:///download/ibom/hio-chester-x0-r2.0.html)
+
+![](schematics/hio-chester-x0-r2.0-1.png)
+![](schematics/hio-chester-x0-r2.0-2.png)
+![](schematics/hio-chester-x0-r2.0-3.png)
+
+## Module Drawing
 ![](pc-chester-x0.png)
 
 ## CHESTER SDK

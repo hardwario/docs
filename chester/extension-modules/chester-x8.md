@@ -29,6 +29,15 @@ CHESTER-X8 implements precise low zero g offset 3-axis accelerometer ADXL355 pro
 
 *Note: The system positive rail voltage depends on CHESTER power supply option.
 
+## Schematic diagram
+
+A schematic diagram is useful if you program low-level hardware-related code or if you're just curious about how the system is designed.
+
+- [Schematic (PDF)](schematics/hio-chester-x8-r1.0.pdf)
+- [Interactive PCB connector, part, testpoint and signal browser](pathname:///download/ibom/hio-chester-x8-r1.0.html)
+
+![](schematics/hio-chester-x8-r1.0-1.png)
+
 ## Module Drawing
 
 ![](pc-chester-x8.png)
