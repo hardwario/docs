@@ -44,8 +44,8 @@ If you already have your Raspberry Pi running with **Raspberry Pi OS** and you j
   - Enable Set hostname: `hub`
   - Enable **SSH**
     - Use password authentication
-  - Set **username** and **password**
-    - You can set up whatever you want but we recommend a different username and strong password. Just make sure to remember it
+  - Set **password**
+    - You can set up whatever password you want but we recommend a strong one. Just make sure to remember it. Please keep the username as **pi** since the image relies on this username.
   - You can also Configure wireless LAN (WiFi) but that is optional if you have a LAN connection
   <div class="container">
     <div class="row">
