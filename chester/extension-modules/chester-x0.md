@@ -31,8 +31,8 @@ _\* CHESTER-M main board has on Ax and Bx terminal block pins TVS protection tha
 Depending on the application these configuration options are available for each channel:
 
 * Enable pull-up resistor 330 kΩ (PUX)
-* Enable pull-down resistor 249 Ω (CLX)
-* Enable voltage divider (gain 1/11) (100 kΩ, 10 kΩ) (PDX)
+* Enable pull-down resistor 249 Ω (PDX)
+* Enable voltage divider (gain 1/11) (100 kΩ, 10 kΩ) (CLX)
 * Enable 5V boost converter (CHESTER-X0A only) (ONX)
 
 This picture show the electric circuit of each channel:
