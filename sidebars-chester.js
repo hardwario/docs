@@ -134,6 +134,11 @@ const sidebars = {
         'firmware-sdk/how-to-kconfig',
         'firmware-sdk/how-to-cbor',
         'firmware-sdk/how-to-lte-v2',
+        {
+          type: 'link',
+          label: 'API Reference',
+          href: 'https://hardwario.github.io/chester-sdk'
+        },
         'firmware-sdk/licenses',
       ],
     },
