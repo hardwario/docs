@@ -147,7 +147,7 @@ You can skip this step if you already have **Chocolatey** installed on your syst
 1. Run the **Zephyr SDK** bundle setup script:
 
    ```
-   setup.cmd
+   .\setup.cmd
    ```
 
    :::tip
