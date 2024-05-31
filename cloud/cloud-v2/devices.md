@@ -23,7 +23,7 @@ Tags are used to connect a group of devices to the connector. So also create at 
 
 ### QR Code Scan
 
-You can also use **SCAN DEVICE** button in the bottom of the **CREATE NEW DEVICE** dialog and use the phone or computer camera to scan the device QR Code. The HSN and Claim token is filled from the code.
+You can use **SCAN DEVICE** button at the bottom of the **CREATE NEW DEVICE** dialog and use the phone or computer camera to scan the device QR Code. The HSN and Claim token is filled from the code.
 
 ### Manually
 

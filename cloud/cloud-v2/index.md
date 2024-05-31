@@ -9,7 +9,7 @@ import Image from '@theme/IdealImage';
 
 Thanks to this, even low-power battery devices can be controlled and configured remotely with:
 - [**Web interface**](https://prod.hardwario.cloud/)
-- [**API**](https://api.prod.hardwario.cloud/v2/documentation/index.html)
+- [**API**](api.md)
 
 **Cloud v2** improves the device's codecs. In Cloud v1 codecs had to be set manually, in v2 codecs are directly in the device's firmware and they are uploaded automatically.
 
@@ -33,7 +33,11 @@ You can name your device so it can fill in for example its address or a specific
 
 ### Tags
 
-Tags are useful for organizing similar devices together, or you can create a callback and connect it to the tag. So tagged devices will trigger your callback when sending uplink messages. You can have multiple tags assigned to a device.
+Tags are useful for organizing similar devices together, or you can create a callback and connect it to the tag. So tagged devices will trigger your callback when sending uplink messages.
+
+Tags might also help you filter and categorize different types of devices.
+
+You can have multiple tags assigned to a device.
 
 ### Labels
 
