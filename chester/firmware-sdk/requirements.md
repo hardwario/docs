@@ -38,17 +38,9 @@ This **article** defines the requirements if you want to start development with 
   * macOS 11 / 12
   * Windows 10 / Windows 11
 
-## GitLab Access
+## GitHub Access
 
-You must have access to HARDWARIO GitLab (hosted at https://gitlab.hardwario.com). The account requires a partnership agreement with HARDWARIO. With the agreement, you are fully eligible for the CHESTER SDK GitLab access, and technical assistance.
-
-Once the GitLab account is created, you will receive an email with the invitation. After the first login, you will be enforced to set up the two-factor authentication (2FA) method. You can use any of the popular tools, such as Google Authenticator, Microsoft Authenticator, or Twilio Authy.
-
-:::tip
-
-In HARDWARIO, we recommend using [Twilio Authy](https://www.twilio.com/authy), as it provides seamless cloud synchronization between your devices. Also, you should never share a single password for more than one site. Preferably, you should use randomly generated passwords from a password manager such as [Bitwarden](https://bitwarden.com) (which is free for personal use, open-source, and comes with a cloud synchronization feature).
-
-:::
+We share the latest SDK on GitHub in [chester-sdk](https://github.com/hardwario/chester-sdk) repository. Please create a GitHub account and add follow next chapter on how to add an SSH key.
 
 ## Generate SSH Key
 
@@ -68,16 +60,16 @@ You must make sure the private key will not get to anybody else. Verify permissi
 
 ## Upload SSH Key
 
-Your public SSH key must be uploaded to your HARDWARIO GitLab account. Log in to GitLab and open **Preferences** (from the top right corner). Next, click on **SSH Keys** and insert the content of your public key to the text area, give it a name, and click on **Add Key**.
+Your public SSH key must be uploaded to your **GitHub** account. Log in to **GitHub** and open **Settings** (from the top right corner). Next, click on **SSH Keys and PGP keys**, click **New SSH key**, insert the content of your public key to the text area, give it a name, and click on **Add SSH key**.
 
 You can test your connection with this command:
 
 ```
-ssh -T git@gitlab.hardwario.com
+ssh -T git@github.com
 ```
 
 It should output something like this:
 
 ```
-Welcome to GitLab, @<YOUR_NICK_NAME>!
+Hi <YOUR_NICK_NAME>! You've successfully authenticated, but GitHub does not provide shell access.
 ```
