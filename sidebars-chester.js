@@ -72,14 +72,10 @@ const sidebars = {
       },
       collapsed: true,
       items: [
-        'hardware-description/basic-parameters',
-        'hardware-description/block-diagram',
-        'hardware-description/schematic-diagram',
-        'hardware-description/layout-placement',
-        'hardware-description/connector-description',
+        'hardware-description/chester-m',
         'hardware-description/chester-u1-module',
-        'hardware-description/i2c-address-space',
         'hardware-description/enclosures',
+        'hardware-description/i2c-address-space',
       ],
     },
     'power-management',
@@ -133,6 +129,11 @@ const sidebars = {
         'firmware-sdk/how-to-kconfig',
         'firmware-sdk/how-to-cbor',
         'firmware-sdk/how-to-lte-v2',
+        {
+          type: 'link',
+          label: 'Git Repository',
+          href: 'https://github.com/hardwario/chester-sdk'
+        },
         {
           type: 'link',
           label: 'API Reference',
