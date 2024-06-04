@@ -199,7 +199,7 @@ Follow these steps to flash the LTE modem firmware in the **CHESTER** device:
 
    :::info
 
-   If you are upgrading your CHESTER to the **LTEv2** communication stack, you need to download and flash [**v1.6.0**](pathname:///download/hio-chester-lte-v1.6.0.zip) or higher.
+   If you are upgrading your CHESTER to the **LTEv2** communication stack, you need to download and flash [**v1.7.0**](pathname:///download/hio-chester-lte-v1.7.0.zip) or higher.
 
    This newer LTE firmware is not backward compatible with **LTEv1** catalog apps and you have to flash to the **APP/BLE MCU** only the **LTEv2** application like [Demo](../firmware-sdk/how-to-lte-v2.md#demo) or [CHESTER Control](../firmware-sdk/how-to-lte-v2.md#chester-control).
 
