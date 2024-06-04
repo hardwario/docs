@@ -8,12 +8,6 @@ import Image from '@theme/IdealImage';
 
 This article will demonstrate how to upgrade existing CHESTER firmware to the LTE v2 and [Cloud v2](../../cloud/cloud-v2/).
 
-:::info
-
-**LTE v2** is currently in the separate [`lte-v2` branch](https://gitlab.hardwario.com/chester/sdk/-/tree/lte-v2) on GitLab. We are currently working on merging it to the mainline soon.
-
-:::
-
 LTE v2 is using a newer UDP protocol that supports downlink messages and automatically handles fragmentation, confirmation and signing of the packets with SHA-256.
 
 Downlink messages or configuration messages can be sent by API or in the HARDWARIO Cloud v2 user interface.
@@ -30,7 +24,7 @@ After you [flash LTE modem](#flash-lte-modem-firmware) to `v1.7.0` or higer, you
 
 `hardwario chester app flash af637aa1c5b842c18f9b10b070cb0292`
 
-https://gitlab.hardwario.com/chester/sdk/-/tree/lte-v2/applications/demo
+https://github.com/hardwario/chester-sdk/tree/main/applications/demo
 
 ### CHESTER Control
 
@@ -40,12 +34,12 @@ After you [flash LTE modem](#flash-lte-modem-firmware) to `v1.7.0` or higer, you
 
 `hardwario chester app flash a1201384db424cb394b5e9130293f708`
 
-https://gitlab.hardwario.com/chester/sdk/-/tree/martin/control
+https://github.com/hardwario/chester-sdk/tree/main/applications/control
 
 - Added reconfigurable inputs - you can reconfigure any of the 4 inputs to measure voltage, current, count pulses or react to logic level change.
 - Adds a control option with [CHESTER-X4](../extension-modules/chester-x4.md) in slot B for switching 4 outputs that are powered from the external DC power supply.
 
-The project also contains [example scripts](https://gitlab.hardwario.com/chester/sdk/-/tree/martin/control/applications/control/codec) on how to send downlink configuration and messages with `curl`.
+The project also contains [example scripts](https://github.com/hardwario/chester-sdk/tree/main/applications/control/codec) on how to send downlink configuration and messages with `curl`.
 
 CHESTER Control also contains configuration definitions through macros. So you define config parameters only in `app_config.h` file and settings, shell, and help commands are generated with macros.
 
@@ -56,19 +50,6 @@ CHESTER Control also contains configuration definitions through macros. So you d
 You need to update the LTE modem to the `v1.7.0` or higher. This firmware is not backward compatible with `v1.3.0` that is only for older LTE v1.
 
 Follow the [LTE Modem over J-Link](../firmware-flashing/lte-modem-over-j-link.md) article and [download firmware v1.7.0](pathname:///download/hio-chester-lte-v1.7.0.zip).
-
-### Use `lte-v2` Branch
-
-Until all is merged in the master. You have to use `lte-v2` branch in the `chester` subfolder. You can also do it by adding `revision` in your `west.yml` file:
-
-```yaml
-projects:
-  - name: sdk.git
-    remote: hardwario-chester
-    revision: lte-v2
-    path: chester
-    import: true
-```
 
 ### Project Configuration
 In file `prj.conf` add `CONFIG_CTR_CLOUD=y`.
