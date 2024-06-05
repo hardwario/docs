@@ -1,12 +1,13 @@
 ---
 slug: configuration
-title: Fiber Configuration File
+title: FIBER Configuration File
 ---
+
 import Image from '@theme/IdealImage';
 
 # Configuration File
 
-The configuration file is located on the Fiber device within the config directory and is named config.yaml. This file contains parameters that govern various aspects of Fiber's operation, such as network interfaces, sensor data collection intervals, MQTT communication settings, and data storage preferences.
+The configuration file is located on the FIBER device within the config directory and is named config.yaml. This file contains parameters that govern various aspects of FIBER's operation, such as network interfaces, sensor data collection intervals, MQTT communication settings, and data storage preferences.
 
 ## Overview of Configuration Parameters
 
@@ -45,4 +46,4 @@ storage:
     name: Specifies the name of the database file for storing records.
 ```
 
-To modify the configuration file, you must access the Fiber device. Once you have access, navigate to the **config** directory and edit the **config.yaml** file using a text editor, command line tools, or through Docker.
+To modify the configuration file, you must access the FIBER device. Once you have access, navigate to the **config** directory and edit the **config.yaml** file using a text editor, command line tools, or through Docker.

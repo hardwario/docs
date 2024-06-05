@@ -1,19 +1,19 @@
 ---
 slug: installation-setup
-title: Fiber Installation
+title: FIBER Installation
 ---
 import Image from '@theme/IdealImage';
 
-# Fiber Installation
+# FIBER Installation
 
 This article provides instructions on bootstrap and configuring the Linux system on Compute Module 4. The instructions below assume the Linux host environment.
-This article uses the term host - a Linux-based PC which configures the target (Fiber version 2 hardware).
+This article uses the term host - a Linux-based PC which configures the target (FIBER version 2 hardware).
 
 ## Install Image
 
 - Download image
 - Uncompress the image
-- Install image to Fiber
+- Install image to FIBER
   - Connect the PoE adapter to the target.
   - Connect the Mini USB cable between the host and the target.
   - Use a jumper to short the BOOT pins on the mainboard.
@@ -26,37 +26,37 @@ This article uses the term host - a Linux-based PC which configures the target (
 
 ## Network Connection Setup
 
-To start Fiber, follow the instructions below depending on your preferred connection method:
+To start FIBER, follow the instructions below depending on your preferred connection method:
 
 ### Wi-Fi Connection
 
-If you are connecting Fiber to your network via Wi-Fi, follow these steps:
+If you are connecting FIBER to your network via Wi-Fi, follow these steps:
 
-- Connect your Fiber device to the PoE port of the PoE adapter.
+- Connect your FIBER device to the PoE port of the PoE adapter.
 - Wait for the device to establish a Wi-Fi connection with your network.
 - Determine the IP address.
 - Log in to the target (password *`fiber`*):
   ```sh
   ssh root@[ip address]
   ```
-- Wait for approximately a minute for Fiber to establish a connection with your network.
+- Wait for approximately a minute for FIBER to establish a connection with your network.
 
 ### Ethernet Connection
 
-If you are connecting Fiber to your network via Ethernet, follow these steps:
+If you are connecting FIBER to your network via Ethernet, follow these steps:
 
 - Connect one Ethernet cable from the PoE adapter's LAN port to your router or switch.
-- Connect another Ethernet cable from the PoE adapter's port to the Fiber device.
+- Connect another Ethernet cable from the PoE adapter's port to the FIBER device.
 - Determine the IP address.
 - Log in to the target (password *`fiber`*):
   ```sh
   ssh root@[ip address]
   ```
-- Wait for approximately a minute for Fiber to establish a connection with your network.
+- Wait for approximately a minute for FIBER to establish a connection with your network.
 
 ### Static IP Address Connection
 
-If your company utilizes a static IP address for Fiber connections, follow these steps:
+If your company utilizes a static IP address for FIBER connections, follow these steps:
 
 - Update Configuration File (system section)
   - Set static_ip to True.
@@ -65,7 +65,7 @@ If your company utilizes a static IP address for Fiber connections, follow these
 
 ## Development Environment Setup
 
-This section outlines the process of configuring the development environment to facilitate work on the Fiber project. Follow these steps to ensure a smooth and efficient development experience with Fiber.
+This section outlines the process of configuring the development environment to facilitate work on the FIBER project. Follow these steps to ensure a smooth and efficient development experience with FIBER.
 
 ### 1. Clone Project Repository Locally from GitLab
 
@@ -148,7 +148,7 @@ RUN poetry config virtualenvs.create false
 
    _Please replace image-name and container-name with the desired names. Ensure that you execute docker build and docker run commands with administrator privileges if Docker Desktop is running without administrator rights (Windows and macOS)._ You'll be able to work with the project inside this container, and any changes you make will be reflected immediately in the local file system.
 
-### 3. Put the project in the Fiber
+### 3. Put the project in the FIBER
 
 1.  You need to copy the local project to your target:
 
