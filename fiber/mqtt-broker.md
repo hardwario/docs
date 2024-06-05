@@ -30,6 +30,7 @@ You can read [**more about the MQTT topics and how to use them**](https://www.hi
 
 :::
 
+
 ## FIBER Topics
 
 ### System
