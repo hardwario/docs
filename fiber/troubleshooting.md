@@ -33,6 +33,7 @@ If restarting the device via the button does not resolve the issue, please check
 ## 4. Reinstall image and run the FIBER
 
 - Follow the installation instructions outlined in section [**FIBER Installation**](./installation-setup) of this documentation.
+
 - Log in to the target
 
   ```sh
