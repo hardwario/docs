@@ -18,11 +18,18 @@ MQTT is an open, simple and low overhead communication protocol for sending mess
     - e.g. `+/light/set` will subscribe to `bedroom/light/set`, `kitchen/light/set`, etc.
   - `#` wildcard will subscribe to all sub-topics of a specified topic
     - e.g. `kitchen/#` will subscribe to `kitchen/light/set`, `kitchen/light/get`, `kitchen/temperature/get`, etc.
-      caution 
-      
+      :::caution
+
       The wildcard **#** can be used only at the **end of the topic** name
 
-> You can read [**more about the MQTT topics and how to use them**](https://www.hivemq.com/blog/mqtt-essentials-part-5-mqtt-topics-best-practices/).
+      :::
+
+:::tip
+
+You can read [**more about the MQTT topics and how to use them**](https://www.hivemq.com/blog/mqtt-essentials-part-5-mqtt-topics-best-practices/).
+
+:::
+
 
 ## FIBER Topics
 
