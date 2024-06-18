@@ -179,9 +179,10 @@ features:
 #### Custom Feature
 
 Refers to a feature that a customer can add based on specific requirements. Example:
-```c
-#define FEATURE_CUSTOM_X 1  
-#define FEATURE_CUSTOM_Y 1  
+```yaml
+features:
+- custom-x
+- custom-y 
 ```
 
 These features will enable the necessary configurations on: `app.overlay`, `Kconfig`, `prj.conf`. Furthermore, they are also included in `features.h` such as:
@@ -335,14 +336,14 @@ parameters:
 The `related` section specifies enum variables associated with the enum-name parameter. These variables (trigger, counter, etc.) share the same enum values (npn, pnp, etc.) and provide specific default values and help messages for each variable.
 :::
 
-In app_config.c
+In app_config.c:
 ```c
 const struct ctr_config_item items[] = {
 CTR_CONFIG_ITEM_ENUM("trigger-enum-name", m_config_interim.trigger_enum_name, ((const char*[]){"npn", "pnp"}), "Get/Set trigger-enum-name", APP_CONFIG_ENUM_NAME_NPN),
 CTR_CONFIG_ITEM_ENUM("counter-enum-name", m_config_interim.counter_enum_name, ((const char*[]){"npn", "pnp"}), "Get/Set counter-enum-name", APP_CONFIG_ENUM_NAME_PNP),
 };
 ```
-In app_config.h
+In app_config.h:
 ```c
 struct app_config {
     enum app_config_enum_name trigger_enum_name;
