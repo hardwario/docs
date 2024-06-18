@@ -129,6 +129,7 @@ const sidebars = {
         'firmware-sdk/how-to-kconfig',
         'firmware-sdk/how-to-cbor',
         'firmware-sdk/how-to-lte-v2',
+        'firmware-sdk/how-to-project-generator',
         {
           type: 'link',
           label: 'Git Repository',
