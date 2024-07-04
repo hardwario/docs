@@ -168,6 +168,57 @@ features:
 - subsystem-bluetooth
 ```
 
+<details>
+  <summary>Subsystem Feature Options</summary>
+
+
+
+  | Name | Feature | Configuration in `prj.conf` |
+  | :---: | :---: | :---: |
+  | Shell | subsystem-shell | `CONFIG_CTR_SHELL=y` |
+  | ADC | subsystem-adc | `CONFIG_CTR_ADC=y` |
+  | Accelerometer | subsystem-accel | `CONFIG_CTR_ACCEL=y` |
+  | Battery | subsystem-batt | `CONFIG_CTR_BATT=y` |
+  | Buffer | subsystem-buf | `CONFIG_CTR_BUF=y` |
+  | BLE Tag | subsystem-ble-tag | `CONFIG_CTR_BLE_TAG=y` |
+  | Bluetooth | subsystem-ble | `CONFIG_CTR_BLE=y` |
+  | Button | subsystem-button | `CONFIG_CTR_BUTTON=y` |
+  | CBPrintf FP Support | subsystem-cbprintf-fp-support | `CONFIG_CBPRINTF_FP_SUPPORT=y` |
+  | Config | subsystem-config | `CONFIG_CTR_CONFIG=y` |
+  | Cloud | subsystem-cloud | `CONFIG_CTR_CLOUD=y` |
+  | Defaults | subsystem-defaults | `CONFIG_CTR_DEFAULTS=y` |
+  | DS18B20 | subsystem-ds18b20 | `CONFIG_CTR_DS18B20=y` |
+  | Edge | subsystem-edge | `CONFIG_CTR_EDGE=y` |
+  | Entropy Generator | subsystem-entropy-generator | `CONFIG_ENTROPY_GENERATOR=y` |
+  | Flash | subsystem-flash | `CONFIG_CTR_FLASH=y` |
+  | GNSS | subsystem-gnss | `CONFIG_CTR_GNSS=y` |
+  | GPIO | subsystem-gpio | `CONFIG_CTR_GPIO=y` |
+  | Hygro | subsystem-hygro | `CONFIG_CTR_HYGRO=y` |
+  | Info | subsystem-info | `CONFIG_CTR_INFO=y` |
+  | LED | subsystem-led | `CONFIG_CTR_LED=y` |
+  | Log | subsystem-log | `CONFIG_CTR_LOG=y` |
+  | LTE | subsystem-lte | `CONFIG_CTR_LTE_CLKSYNC=y` |
+  | LTE V2 | subsystem-lte-v2 | `CONFIG_CTR_LTE_V2=y` |
+  | LRW | subsystem-lrw | `CONFIG_CTR_LRW=y` |
+  | Machine Probe | subsystem-machine-probe | `CONFIG_CTR_MACHINE_PROBE=y` |
+  | MB7066-A | subsystem-mb7066-a | `CONFIG_MB7066_TIMER4=y` `CONFIG_MB7066_SAMPLE_COUNT=1` |
+  | MB7066-B | subsystem-mb7066-b | `CONFIG_MB7066_TIMER4=y` `CONFIG_MB7066_SAMPLE_COUNT=1` |
+  | RTC | subsystem-rtc | `CONFIG_CTR_RTC=y` |
+  | RTD | subsystem-rtd | `CONFIG_CTR_RTD=y` |
+  | Settings | subsystem-settings | `CONFIG_SETTINGS=y` |
+  | Signal | subsystem-signal | `CONFIG_CTR_SIGNAL=y` |
+  | Soil Sensor | subsystem-soil-sensor | `CONFIG_CTR_SOIL_SENSOR=y` |
+  | Test | subsystem-test | `CONFIG_CTR_TEST=y` |
+  | Therm | subsystem-therm | `CONFIG_CTR_THERM=y` |
+  | TinyCrypt SHA256 | subsystem-tinycrypt-sha256 | `CONFIG_TINYCRYPT_SHA256=y` |
+  | TinyCrypt | subsystem-tinycrypt | `CONFIG_TINYCRYPT=y` |
+  | WDOG | subsystem-wdog | `CONFIG_CTR_WDOG=y` |
+  | W1 | subsystem-w1 | `CONFIG_CTR_W1=y` |
+  | ZCBOR | subsystem-zcbor | `CONFIG_ZCBOR=y` `CONFIG_ZCBOR_STOP_ON_ERROR=y` |
+  | BT Filter Accept List | subsystem-bt-filter-accept-list | `CONFIG_BT_FILTER_ACCEPT_LIST=y` |
+  | BT Observer | subsystem-bt-observer | `CONFIG_BT_OBSERVER=y` |
+</details>
+
 #### Hardware Chester feature
 
 The term `hardware-chester-` refers to a specific hardware component or device within the project's hardware ecosystem. Example:
