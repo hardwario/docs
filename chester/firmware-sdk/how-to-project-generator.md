@@ -660,6 +660,8 @@ Any addition changes to `cbor-encoder.yaml` or `cbor-decoder.yaml` can be update
 
 `west chester-update <name>` Generate files based on project.yaml features.
 
+`west chester-update <name> --list` List all available templates.
+
 `west chester-update <name> --variant <variant-name>` Generate files based on project.yaml variant features.
 
 Examples:
@@ -674,8 +676,14 @@ Examples:
 
 :::
 
+:::info
+
+  All commands can be executed without specifying `<name>` if you are already in the project folder, except for `west chester-init`.
+
+:::
+
 ### CHESTER CBOR v2
 
-`west chester-cbor <name>` Generates CBOR files.
+`west chester-cbor <name>` Generate CBOR files.
 
 
