@@ -37,6 +37,7 @@ import TabItem from '@theme/TabItem';
           <code>Kconfig<br /></code>
           <code>prj.conf<br /></code>
           <code>CMakeLists.txt<br /></code>
+          <code>VERSION<br /></code>
         </td>
       </tr>
     </table>
@@ -96,6 +97,8 @@ import TabItem from '@theme/TabItem';
           <code>Kconfig<br /></code>
           <code>prj.conf<br /></code>
           <code>CMakeLists.txt<br /></code>
+          <code>VERSION<br /></code>
+          <code>pm_static.yml*<br /></code>
         </td>
       </tr>
     </table>
@@ -116,6 +119,16 @@ import TabItem from '@theme/TabItem';
       <tr>
         <td align="left">
           <code>mcuboot.conf<br /></code>
+        </td>
+      </tr>
+    </table>
+        <table style={{ display: 'inline-table', margin: '20px' }}>
+      <tr>
+        <td align="center">/project-name/child_image/boards*</td>
+      </tr>
+      <tr>
+        <td align="left">
+          <code>chester_nrf52840.overlay*<br /></code>
         </td>
       </tr>
     </table>
@@ -471,7 +484,9 @@ struct app_config {
 ### Extras declaration
 These extras are employed when non-default **feature** configurations are necessary in the `prj.conf` file.
 
-When project requirements diverge from the default **features** configurations provided by underlying libraries or frameworks, these extras are utilized. They enable custumers to finely adjust the project's configuration to address specific needs not covered by default settings. Example:
+When project requirements diverge from the default **features** configurations provided by underlying libraries or frameworks, these extras are utilized. They enable custumers to finely adjust the project's configuration to address specific needs not covered by default settings. 
+
+Example in prj.conf:
 ```yaml
 extras:
 - CONFIG_ADC_TLA2021_INIT_PRIORITY=60 
@@ -660,15 +675,17 @@ Any addition changes to `cbor-encoder.yaml` or `cbor-decoder.yaml` can be update
 
 `west chester-update <name>` Generate files based on project.yaml features.
 
-`west chester-update <name> --list` List all available templates.
+`west chester-update <name> --list` List all available variants.
 
 `west chester-update <name> --variant <variant-name>` Generate files based on project.yaml variant features.
 
+`west chester-update <name> --version <v.X.Y.Z>` Generate files based on project.yaml using the specified `fw_version`.
+
 Examples:
 
-`west chester-update clime --variant clime-z`
+`west chester-update clime --variant chester-clime-z`
 
-`west chester-update clime --variant clime-rtd` 
+`west chester-update clime --variant chester-clime-rtd --version v3.2.1` 
 
 :::tip
 
