@@ -135,6 +135,42 @@ See [**Ordering Codes**](../ordering-codes.md) for more details.
 
 Firmware build shield options: `ctr_lrw ctr_lte ctr_rtd_a`
 
+### CHESTER Clime BLE Tag subsystem
+
+The catalog application **CHESTER Clime Tag** supports up to 8 **Teltonika EYE Sensor** Bluetooth tags that report temperature and humidity. This subsystem can be activated by following command:
+
+```
+tag config enabled true
+```
+
+After enabling the subsystem, save the configuration in order to restart **CHESTER** and start the subsystem:
+
+```
+save config
+```
+
+To use these sensors, the device must enroll them first. To enroll a tag, place it in very close proximity to CHESTER, run the following command and wait up to 10 seconds for the device to be discovered.
+
+```
+tag config devices enroll
+```
+
+To make the enrollment of these devices permanent, save them to the configuration with the previous command.
+
+**Tag configuration:**
+
+The tags can be configured using the [EYE APP](https://wiki.teltonika-gps.com/view/EYE_SENSOR_/_BTSMP1#EYE_App_Configuration).
+
+**Setup tips:**
+
+The working distance between CHESTER and the Teltonika sensors depends on the signal power configuration of the sensor. To test the signal strenght at the distance, run the following command and look at the rssi value:
+
+```
+tag config devices read
+```
+
+If the signal strength is lower than -85 dbm, consider boosting the signal power to assure reliable communication.
+
 ## Measurement and Behavior
 
 - All sensors are **sampled** with a configurable period (parameter `interval-sample`).
@@ -833,7 +869,7 @@ In each structure with the current configuration, there are six aggregated value
       ]
     }
   ],
-    "rtd_thermometers": [
+  "rtd_thermometers": [
     {
       "channel": 1,
       "measurements": [
@@ -927,6 +963,90 @@ In each structure with the current configuration, there are six aggregated value
           "mdn": 22.18
         }
       ]
+    }
+  ],
+  "ble_tags": [
+    {
+      "addr": "1234567890AB",
+      "rssi": -81,
+      "voltage": 3.11,
+      "humidity": {
+        "measurements": [
+          {
+            "timestamp": 1668857742,
+            "min": 54.78,
+            "max": 55.31,
+            "avg": 55.1,
+            "mdn": 55.12
+          },
+          {
+            "timestamp": 1668858042,
+            "min": 55.12,
+            "max": 56.16,
+            "avg": 55.55,
+            "mdn": 55.52
+          }
+        ]
+      },
+      "temperature": {
+        "measurements": [
+          {
+            "timestamp": 1668857742,
+            "min": 22.18,
+            "max": 22.25,
+            "avg": 22.23,
+            "mdn": 22.25
+          },
+          {
+            "timestamp": 1668858042,
+            "min": 22.18,
+            "max": 22.18,
+            "avg": 22.18,
+            "mdn": 22.18
+          }
+        ]
+      }
+    },
+    {
+      "addr": "BA0987654321",
+      "rssi": -77,
+      "voltage": 3.11,
+      "humidity": {
+        "measurements": [
+          {
+            "timestamp": 1668857742,
+            "min": 54.78,
+            "max": 55.31,
+            "avg": 55.1,
+            "mdn": 55.12
+          },
+          {
+            "timestamp": 1668858042,
+            "min": 55.12,
+            "max": 56.16,
+            "avg": 55.55,
+            "mdn": 55.52
+          }
+        ]
+      },
+      "temperature": {
+        "measurements": [
+          {
+            "timestamp": 1668857742,
+            "min": 22.18,
+            "max": 22.25,
+            "avg": 22.23,
+            "mdn": 22.25
+          },
+          {
+            "timestamp": 1668858042,
+            "min": 22.18,
+            "max": 22.18,
+            "avg": 22.18,
+            "mdn": 22.18
+          }
+        ]
+      }
     }
   ]
 }
