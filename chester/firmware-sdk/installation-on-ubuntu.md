@@ -146,6 +146,12 @@ sudo apt install python3-venv
    west init -m https://github.com/hardwario/chester-skeleton.git --manifest-rev main
    ```
 
+1. Move to **chester-sdk**:
+
+   ```
+   cd chester-sdk
+   ```
+
 1. Set the default board to **CHESTER (nRF52840)**:
 
    ```
