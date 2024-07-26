@@ -4,6 +4,7 @@
 const sidebars = {
   docs: [
     'introduction',
+    'getting-started',
     {
       type: 'category',
       label: 'Platform Connectivity',
