@@ -28,7 +28,7 @@ The application **CHESTER Counter** is used to count pulses on eight digital inp
 
 **CHESTER Counter** can be ordered in one of these variants:
 
-### CHESTER Counter
+### CHESTER Counter {#chester-counter}
 
 The catalog **CHESTER Counter** hardware consists of the following ordering codes:
 

@@ -30,7 +30,7 @@ The catalog application **CHESTER Meteo** measures:
 
 **CHESTER Meteo** can be ordered in one of these variants:
 
-### CHESTER Meteo
+### CHESTER Meteo {#chester-meteo}
 
 The hardware of this application consists of the following ordering codes:
 

@@ -22,7 +22,7 @@ Some of the basics are not provided, as they are common for all **CHESTER** cata
 
 **CHESTER Range** can be ordered in one of these variants:
 
-### CHESTER Range
+### CHESTER Range {#chester-range}
 
 The catalog **CHESTER Range** hardware consists of the following ordering codes:
 
