@@ -33,7 +33,33 @@ Firmwares are located in the [**Application Firmware**](#application-firmware) c
 
 \* The specific hardware or firmware variants may need an external power supply.
 
-## Application Firmware
+## Application Firmware Cloud v2
+
+These firmwares are for newer [**Cloud v2**](../../cloud/cloud-v2) communication.
+
+| Application name                                                | Version                                                                               |                    Identifier                     | Build date | Remark                         |
+| :-------------------------------------------------------------- | :------------------------------------------------------------------------------------ | :-----------------------------------------------: | :--------: | :----------------------------- |
+| [**CHESTER Clime**](chester-clime.md#chester-clime)             | [**v3.0.1**](https://firmware.hardwario.com/chester/6b35ff540c72483f9e33f643b7612731) | <small>`6b35ff540c72483f9e33f643b7612731`</small> | 2024-08-23 |                                |
+| [**CHESTER Clime Z**](chester-clime.md#chester-clime-z)         | [**v3.0.1**](https://firmware.hardwario.com/chester/15873e1343314bd587c1ddb1d16e9c8c) | <small>`15873e1343314bd587c1ddb1d16e9c8c`</small> | 2024-08-23 | Support for CHESTER-Z          |
+| [**CHESTER Clime IAQ**](chester-clime.md#chester-clime-iaq)     | [**v3.0.1**](https://firmware.hardwario.com/chester/77323fd128754a8ca0f6b21c16cf3cd8) | <small>`77323fd128754a8ca0f6b21c16cf3cd8`</small> | 2024-08-23 |                                |
+| [**CHESTER Clime 1W**](chester-clime.md#chester-clime-1w)       | [**v3.0.1**](https://firmware.hardwario.com/chester/41234a015b044c138c69767c8a9f91e5) | <small>`41234a015b044c138c69767c8a9f91e5`</small> | 2024-08-23 |                                |
+| [**CHESTER Clime 1WH**](chester-clime.md#chester-clime-1wh)     | [**v3.0.1**](https://firmware.hardwario.com/chester/bc074110c0b742609c1f6f6ed9139a75) | <small>`bc074110c0b742609c1f6f6ed9139a75`</small> | 2024-08-23 | Support for CHESTER-S2, 1-Wire |
+| [**CHESTER Clime RTD**](chester-clime.md#chester-clime-rtd)     | [**v3.0.1**](https://firmware.hardwario.com/chester/bba8698b52c04e4b8e0ffe601e617296) | <small>`bba8698b52c04e4b8e0ffe601e617296`</small> | 2024-08-23 |                                |
+| [**CHESTER Clime TC**](chester-clime.md#chester-clime-tc)       | [**v3.0.1**](https://firmware.hardwario.com/chester/ed732d2ee77e4540b8aafd21b4492209) | <small>`ed732d2ee77e4540b8aafd21b4492209`</small> | 2024-08-23 |                                |
+| [**CHESTER Push**](chester-push.md#chester-push)                | [**v3.0.1**](https://firmware.hardwario.com/chester/468354119427411fb8f72a42ba0588bf) | <small>`468354119427411fb8f72a42ba0588bf`</small> | 2024-08-23 |                                |
+| [**CHESTER Push FM**](chester-push.md#chester-push-fm)          | [**v3.0.1**](https://firmware.hardwario.com/chester/a945eec574df4c3b88112b08889b7729) | <small>`a945eec574df4c3b88112b08889b7729`</small> | 2024-08-23 |                                |
+| [**CHESTER Control**](chester-control.md#chester-control)       | [**v3.0.1**](https://firmware.hardwario.com/chester/c190122105634a9a85a352d7a89dd8b2) | <small>`c190122105634a9a85a352d7a89dd8b2`</small> | 2024-08-23 |                                |
+| [**CHESTER Current**](chester-current.md#chester-current)       | [**v3.0.1**](https://firmware.hardwario.com/chester/b6ccdec55cec440eb249a2a8255f4dc0) | <small>`b6ccdec55cec440eb249a2a8255f4dc0`</small> | 2024-08-23 |                                |
+| [**CHESTER Current Z**](chester-current.md#chester-current-z)   | [**v3.0.1**](https://firmware.hardwario.com/chester/1b7af405c40048f8bfcd9b6956c927b3) | <small>`1b7af405c40048f8bfcd9b6956c927b3`</small> | 2024-08-23 | Support for CHESTER-Z          |
+| [**CHESTER Current 1W**](chester-current.md#chester-current-1w) | [**v3.0.1**](https://firmware.hardwario.com/chester/3b0daa7654464b729e281614d84aa710) | <small>`3b0daa7654464b729e281614d84aa710`</small> | 2024-08-23 | Support for 1-Wire             |
+| [**CHESTER Scale**](chester-scale.md#chester-scale)             | [**v3.0.1**](https://firmware.hardwario.com/chester/e29694c140784da1aa9e715b29c25f3a) | <small>`e29694c140784da1aa9e715b29c25f3a`</small> | 2024-08-23 |                                |
+| [**CHESTER Scale Z**](chester-scale.md#chester-scale-z)         | [**v3.0.1**](https://firmware.hardwario.com/chester/7c39916a686144f8b8d30663a333668c) | <small>`7c39916a686144f8b8d30663a333668c`</small> | 2024-08-23 | Support for CHESTER-Z          |
+| [**CHESTER Meteo**](chester-meteo.md#chester-meteo)             | [**v3.0.1**](https://firmware.hardwario.com/chester/3ad374c4efd04d8389b18253d915944b) | <small>`3ad374c4efd04d8389b18253d915944b`</small> | 2024-08-23 |                                |
+| [**CHESTER Meteo Z**](chester-meteo.md#chester-meteo-z)         | [**v3.0.1**](https://firmware.hardwario.com/chester/893665533d1b481087ae123b53708a4c) | <small>`893665533d1b481087ae123b53708a4c`</small> | 2024-08-23 | Support for CHESTER-Z          |
+
+## Application Firmware Cloud v1
+
+These firmwares are for older [**Cloud v1**](../../cloud/overview) communication.
 
 The table below provides an overview of the available application firmware builds for **catalog applications**.
 
