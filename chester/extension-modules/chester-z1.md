@@ -1,6 +1,6 @@
 ---
 slug: chester-z1
-title: CHESTER-Z1 (Li-Ion battery backup with HMI)
+title: CHESTER-Z1 (Backup Button LED)
 ---
 import Image from '@theme/IdealImage';
 
@@ -38,6 +38,8 @@ These are some typical use-cases for CHESTER-Z (more scenarios are possible):
 * Use-case 3 (CHESTER-Z1-F):
   * Four illuminated push buttons and acoustic feedback
   * System power from CHESTER-Z battery (rechargeable from external DC line voltage)
+ 
+For more details see [**Ordering Codes**](../ordering-codes.md#chester-z).
 
 ## Technical Specification
 

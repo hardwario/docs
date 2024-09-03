@@ -16,12 +16,14 @@ CHESTER-C5 fits with the Takachi WP20-28-5Cx enclosure.
 ## Technical Specification
 
 * Input DC voltage range (VIN): 8-36 V
-* Supported C size battery: Saft LSH14 or LS26500*
-* Supported D size battery: Saft LSH20 or LS33000*
+* Supported C size battery: 1 x Saft LSH14 or 1 x LS26500*
+* Up to 4 x C size or 3 x D size battery on request (Saft LSH20 or LS33000)
 * Nominal battery voltage: 3.6 V
 * Battery idle current consumption <2 μA (without CHESTER-M)
   
-_\* Saft LS26500 can be used only with CHESTER-M variant with supercapacitors._
+_\* Saft LS26500 cannot be used with CHESTER-M-E variant (without supercapacitors)._
+
+For more details see [**Ordering Codes**](../ordering-codes.md#chester-m).
 
 ## Module drawing
 
