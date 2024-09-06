@@ -14,7 +14,7 @@ CHESTER-X3A provides 2 inputs for RTD (resistive temperature devices) sensors, s
 
 ## CHESTER-X3B Module Overview
 
-CHESTER-X3B allows connecting 2 type-N thermocouples (types B/C/E/J/K/R/S/T support on request) using 2 wire sensor connection.
+CHESTER-X3B allows connecting 2 type-K thermocouples (types B/C/E/J/N/R/S/T support on request) using 2 wire sensor connection.
 
 First sensor connects to **CH1A(-)** and **CH1B(+)**.
 If X3B is in the **slot A**, then you have to use terminals **A2(-)** and **A3(+)**.

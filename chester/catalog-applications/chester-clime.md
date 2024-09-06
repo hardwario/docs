@@ -135,6 +135,20 @@ See [**Ordering Codes**](../ordering-codes.md) for more details.
 
 Firmware build shield options: `ctr_lrw ctr_lte ctr_rtd_a`
 
+### CHESTER Clime TC
+
+The catalog application **CHESTER Clime TC** supports two external **type K** thermocouple sensors.
+
+The hardware of this application consists of the following ordering codes:
+
+* `CHESTER-M-BCGLS` - Standard mainboard
+* `CHESTER-X3B:A` - 2x Type K thermocouple interface
+* `CHESTER-E13-LP` - Enclosure with SMA pigtail and 2 cable PG7 glands
+
+See [**Ordering Codes**](../ordering-codes.md) for more details.
+
+Firmware build shield options: `ctr_lrw ctr_lte ctr_tc_a`
+
 ## Measurement and Behavior
 
 - All sensors are **sampled** with a configurable period (parameter `interval-sample`).
