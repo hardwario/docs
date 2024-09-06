@@ -5,31 +5,38 @@ title: CHESTER-C5 (1-Wire collector)
 import Image from '@theme/IdealImage';
 
 # CHESTER-C5
-This article describes the CHESTER-C1 carrier board.
+This article describes the **CHESTER-C5** carrier board.
 
 ## Module Overview
 
-CHESTER-C5 is a custom carrier board for CHESTER-U1 designed as a NB-IoT / LTE-M gateway for connecting arrays of 1-Wire sensors (i.e. DS18B20) equipped with Lithium-Ion battery backup, implements a step-down DC/DC converter providing power from an external 6-28 VDC line (VIN) or 12V solar panel. It allows to measure input DC voltage, QWIIC interface can by used for connecting OLED display.
+**CHESTER-C5** is a custom carrier board for **CHESTER-U1** designed as a **NB-IoT / LTE-M** gateway for connecting arrays of **1-Wire sensors** (i.e. DS18B20) equipped with Lithium-Ion battery backup, implements a step-down DC/DC converter providing power from an external 6-28 VDC line (VIN) or 12V solar panel. It allows to measure input DC voltage, QWIIC interface can by used for connecting OLED display.
 
 The board implements the Maxim DS2482S-800+ providing 8 independent 1-Wire channels on CHESTER-X slot A. Slot B can be extended with the CHESTER-X1 providing another 8-ch 1-Wire or any other CHESTER-X module.
 
-CHESTER-C5 fits with the Polycase WH-04-02 enclosure.
+**CHESTER-C5** fits with the Polycase WH-04-02 enclosure.
 
 ## Technical Specification
 
-* Input DC voltage range (VIN): 6-28 VDC, suitable also for 12-18V solar panel*
-* Nominal battery voltage: 3.7 V
-* Battery charging current: 200 mA
-* Battery idle current consumption <10 μA (without CHESTER-M)
+* Input DC voltage range (VIN): **6-28 VDC**, suitable also for **12-18V solar panels\***
+* Nominal battery voltage: **3.7 V**
+* Battery charging current: **200 mA**
+* Battery idle current consumption **<10 μA** (without CHESTER-M)
 * Recommended battery type for outdoor use: Samsung ICR18650-22P**
-* Operating temperature: -40 to +70°C (without Li-Ion Battery)
-* Storage temperature: -40 to +85°C (without Li-Ion Battery)
+* Operating temperature: **-40 to +70°C** (without Li-Ion Battery)
+* Storage temperature: **-40 to +85°C** (without Li-Ion Battery)
 
 _\*Optimal photovoltaic solar panel for CHESTER: 12 V / 10 W_
+
 _\**Appropriate for solar panel application, charging temperature range -20 to +45°C, discharging -20 to +70°C_
 
 ## Battery charger and protection circuit
-CHESTER-Z implements the MCP73833 charger IC and the AP9101C protection IC protecting the battery by detecting overcharge voltage, overdischarge voltage, overcharge/discharge current. For initial start powering from the battery without DC input power supply it is necessary to long pres the Bypass button (BYPASS).
+**CHESTER-C5** implements the MCP73833 charger IC and the AP9101C protection IC protecting the battery by detecting overcharge voltage, overdischarge voltage, overcharge/discharge current.
+
+:::caution
+
+For initial start powering from the battery without DC input power supply** it is necessary to long pres the Bypass button (BYPASS)**.
+
+:::
 
 ## Module drawing: top
 
@@ -72,7 +79,7 @@ CHESTER-Z implements the MCP73833 charger IC and the AP9101C protection IC prote
 
 _\* CHESTER-X SLOT A is by default occupied with integrated module CHESTER-X1_
 
-_\** Use the BYBASS BUTTON for initiate start from battery without DC input power_
+_\** Use the BYPASS BUTTON to initiate start from the battery without DC input power_
 
 ## Pinout Description
 

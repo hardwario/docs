@@ -5,22 +5,28 @@ title: CHESTER-C1 (I/O board w/ relay)
 import Image from '@theme/IdealImage';
 
 # CHESTER-C1
-This article describes the CHESTER-C1 carrier board.
+This article describes the **CHESTER-C1** carrier board.
 
 ## Module Overview
 
-CHESTER-C1 is a carrier board for CHESTER-M implementing DC/DC converter, 2x power relay, two 1-Wire terminals, 4x digital/analog inputs terminal, RS-485 interfaces terminal and battery holder for 4x C-cell sized 3.6V batteries.
+**CHESTER-C1** is a carrier board for **CHESTER-M** implementing:
+- 4x digital/analog inputs terminal
+- 2x power relay
+- RS-485 interfaces terminal
+- Two 1-Wire terminals
+- DC/DC converter
+- Battery holder for 4x C-cell sized 3.6V batteries
 
-CHESTER-C5 fits with the Takachi WP20-28-5Cx enclosure.
+**CHESTER-C1** fits with the Takachi WP20-28-5Cx enclosure.
 
 ## Technical Specification
 
-* Input DC voltage range (VIN): 8-36 V
-* Supported C size battery: 1 x Saft LSH14 or 1 x LS26500*
+* Input DC voltage range (VIN): **8-36 V**
+* Supported C size battery: 1 x **Saft LSH14** or 1 x **Saft LS26500\***
 * Up to 4 x C size or 3 x D size battery on request (Saft LSH20 or LS33000)
-* Nominal battery voltage: 3.6 V
-* Battery idle current consumption <2 μA (without CHESTER-M)
-  
+* Nominal battery voltage: **3.6 V**
+* Battery idle current consumption **<2 μA** (without **CHESTER-M**)
+
 _\* Saft LS26500 cannot be used with CHESTER-M-E variant (without supercapacitors)._
 
 For more details see [**Ordering Codes**](../ordering-codes.md#chester-m).
@@ -47,7 +53,7 @@ For more details see [**Ordering Codes**](../ordering-codes.md#chester-m).
 
 _\* CHESTER-X SLOT A is by default occupied with integrated module CHESTER-X1_
 
-_\** Use the BYBASS BUTTON for initiate start from battery without DC input power supply_
+_\** Use the BYPASS BUTTON to initiate start from the battery without DC input power supply_
 
 ## Pinout Description
 
