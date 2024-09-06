@@ -274,7 +274,7 @@ Command to set the **report rate** in reports per hour (just for event reports, 
 app config event-report-rate <1-3600>
 ```
 
-### CHESTER Clime BLE Tag subsystem
+## CHESTER Clime BLE Tag subsystem
 
 The catalog application **CHESTER Clime Tag** supports up to 8 **Teltonika EYE Sensor** Bluetooth tags that report temperature and humidity. This subsystem can be activated by following command:
 
