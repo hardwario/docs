@@ -35,6 +35,7 @@ import TabItem from '@theme/TabItem';
         <td align="left">
           <code>app.overlay<br /></code>
           <code>Kconfig<br /></code>
+          <code>Kconfig.variant<br /></code>
           <code>prj.conf<br /></code>
           <code>CMakeLists.txt<br /></code>
           <code>VERSION<br /></code>
@@ -51,7 +52,6 @@ import TabItem from '@theme/TabItem';
           <code>app_config.h<br /></code>
           <code>app_shell.c<br /></code>
           <code>feature.h<br /></code>
-          <code>variant.h<br /></code>
         </td>
       </tr>
     </table>
@@ -67,7 +67,6 @@ import TabItem from '@theme/TabItem';
           <code>app_config.h<br /></code>
           <code>app_shell.c<br /></code>
           <code>feature.h<br /></code>
-          <code>variant.h<br /></code>
           <code>app_cbor.c<br /></code>
           <code>app_cbor.h<br /></code>
           <code>app_send.c<br /></code>
@@ -95,6 +94,7 @@ import TabItem from '@theme/TabItem';
         <td align="left">
           <code>app.overlay<br /></code>
           <code>Kconfig<br /></code>
+          <code>Kconfig.variant<br /></code>
           <code>prj.conf<br /></code>
           <code>CMakeLists.txt<br /></code>
           <code>VERSION<br /></code>
@@ -158,16 +158,24 @@ This comprehensive guide outlines the step-by-step process to effectively config
 Enter essential project details as outlined in the YAML configuration.
 ```yaml
 project:
-    variant: Example Variant
+    variant: Variant-name
     company: 2024 COMPANY a.s.
     license: 'SPDX-License-Identifier: LicenseRef-COMPANY-5-Clause'
     fw_name: CHESTER Example
     fw_bundle: com.hardwario.chester.example
     fw_version: v1.0.0
 ```
-Furthermore, the variant is included in `variant.h` such as:
+Furthermore, the variant is included in `Kconfig.variant` such as:
 ```c
-#define VARIANT_EXAMPLE_APP 1
+config VARIANT_<VARIANT-NAME>
+    bool "Enable VARIANT_<VARIANT-NAME>"
+    default y
+```
+It can be used in the project using:
+```c
+#if defined(CONFIG_VARIANT_<VARIANT-NAME>)
+// Your code
+#endif /* defined(CONFIG_VARIANT_<VARIANT-NAME>) */
 ```
 ### Feature Specification
 
