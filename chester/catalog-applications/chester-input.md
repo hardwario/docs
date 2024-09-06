@@ -39,7 +39,7 @@ All these inputs and their options are explained in more detail in the article [
 
 **CHESTER Input** can be ordered in one of these variants:
 
-### CHESTER Input
+### CHESTER Input {#chester-input}
 
 The catalog **CHESTER Input** hardware consists of the following ordering codes:
 

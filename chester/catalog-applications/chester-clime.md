@@ -28,7 +28,7 @@ Some of the basics are not provided, as they are common for all **CHESTER** cata
 
 **CHESTER Clime** can be ordered in one of these variants:
 
-### CHESTER Clime
+### CHESTER Clime {#chester-clime}
 
 The catalog application **CHESTER Clime** measures:
 - Temperature
@@ -135,41 +135,19 @@ See [**Ordering Codes**](../ordering-codes.md) for more details.
 
 Firmware build shield options: `ctr_lrw ctr_lte ctr_rtd_a`
 
-### CHESTER Clime BLE Tag subsystem
+### CHESTER Clime TC
 
-The catalog application **CHESTER Clime Tag** supports up to 8 **Teltonika EYE Sensor** Bluetooth tags that report temperature and humidity. This subsystem can be activated by following command:
+The catalog application **CHESTER Clime TC** supports two external **type K** thermocouple sensors.
 
-```
-tag config enabled true
-```
+The hardware of this application consists of the following ordering codes:
 
-After enabling the subsystem, save the configuration in order to restart **CHESTER** and start the subsystem:
+* `CHESTER-M-BCGLS` - Standard mainboard
+* `CHESTER-X3B:A` - 2x Type K thermocouple interface
+* `CHESTER-E13-LP` - Enclosure with SMA pigtail and 2 cable PG7 glands
 
-```
-save config
-```
+See [**Ordering Codes**](../ordering-codes.md) for more details.
 
-To use these sensors, the device must enroll them first. To enroll a tag, place it in very close proximity to CHESTER, run the following command and wait up to 10 seconds for the device to be discovered.
-
-```
-tag config devices enroll
-```
-
-To make the enrollment of these devices permanent, save them to the configuration with the previous command.
-
-**Tag configuration:**
-
-The tags can be configured using the [EYE APP](https://wiki.teltonika-gps.com/view/EYE_SENSOR_/_BTSMP1#EYE_App_Configuration).
-
-**Setup tips:**
-
-The working distance between CHESTER and the Teltonika sensors depends on the signal power configuration of the sensor. To test the signal strenght at the distance, run the following command and look at the rssi value:
-
-```
-tag config devices read
-```
-
-If the signal strength is lower than -85 dbm, consider boosting the signal power to assure reliable communication.
+Firmware build shield options: `ctr_lrw ctr_lte ctr_tc_a`
 
 ## Measurement and Behavior
 
@@ -295,6 +273,42 @@ Command to set the **report rate** in reports per hour (just for event reports, 
 ```
 app config event-report-rate <1-3600>
 ```
+
+### CHESTER Clime BLE Tag subsystem
+
+The catalog application **CHESTER Clime Tag** supports up to 8 **Teltonika EYE Sensor** Bluetooth tags that report temperature and humidity. This subsystem can be activated by following command:
+
+```
+tag config enabled true
+```
+
+After enabling the subsystem, save the configuration in order to restart **CHESTER** and start the subsystem:
+
+```
+save config
+```
+
+To use these sensors, the device must enroll them first. To enroll a tag, place it in very close proximity to CHESTER, run the following command and wait up to 10 seconds for the device to be discovered.
+
+```
+tag config devices enroll
+```
+
+To make the enrollment of these devices permanent, save them to the configuration with the previous command.
+
+**Tag configuration:**
+
+The tags can be configured using the [EYE APP](https://wiki.teltonika-gps.com/view/EYE_SENSOR_/_BTSMP1#EYE_App_Configuration).
+
+**Setup tips:**
+
+The working distance between CHESTER and the Teltonika sensors depends on the signal power configuration of the sensor. To test the signal strenght at the distance, run the following command and look at the rssi value:
+
+```
+tag config devices read
+```
+
+If the signal strength is lower than -85 dbm, consider boosting the signal power to assure reliable communication.
 
 ## Firmware
 

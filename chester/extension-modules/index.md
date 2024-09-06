@@ -78,14 +78,14 @@ When CHESTER is mounted in the enclosure, you can check the module **"X_"** numb
 
 ## Cover Modules
 
-| Module Name  | Module Description                                                                                                                                       |
-| ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| CHESTER-A1   | AC/DC converter for 110/230 V power supply                                                                                                               |
-| CHESTER-A1A  | AC/DC converter for 110/230 V power supply with two 230V/16A power relays                                                                                |
-| CHESTER-G1   | 8-channel galvanically isolated input module with isolated DC/DC power supply                                                                            |
-| CHESTER-S1   | Environmental monitoring module with temperature, humidity, carbon dioxide (CO2), light intensity, atmospheric pressure, acoustic noise, and PIR sensors |
-| CHESTER-Z1   | Rechargeable battery backup module with DC/DC converter and charger                                                                                      |
-| CHESTER-Z1-F | Rechargeable battery backup module with DC/DC converter and charger + up to 4 RGB illuminated push-buttons with acoustic feedback                        |
+| Module Name                       | Module Description                                                                                                                                                  |
+| --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| CHESTER-A1                        | AC/DC converter for 110/230 V power supply                                                                                                                          |
+| CHESTER-A1A                       | AC/DC converter for 110/230 V power supply with two 230V/16A power relays                                                                                           |
+| CHESTER-G1                        | 8-channel galvanically isolated input module with isolated DC/DC power supply                                                                                       |
+| CHESTER-S1                        | Environmental monitoring module with temperature, humidity, carbon dioxide (CO2), light intensity, atmospheric pressure, acoustic noise, and PIR sensors            |
+| [**CHESTER-Z1**](chester-z1.md)   | Li-Ion battery backup module with DC/DC converter and charger, 6-28 VDC line or 12V solar panel input                                                               |
+| [**CHESTER-Z1-F**](chester-z1.md) | Li-Ion battery backup module with DC/DC converter and charger, 6-28 VDC line or 12V solar panel input + up to 4 RGB illuminated push-buttons with acoustic feedback |
 
 ## Carrier Boards
 
@@ -95,11 +95,12 @@ These carrier boards require a larger enclosure.
 
 :::
 
-| Module Name  | Module Description                                                                                                                                                     |
-| ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| CHESTER-B1   | Battery holders for up to either 6x D-cell or 8x C-cell sized batteries + off-mainboard LED                                                                            |
-| CHESTER-B1-W | Battery holders for up to either 6x D-cell or 8x C-cell sized batteries + off-mainboard LED + wireless M-Bus (wM-Bus)                                                  |
-| CHESTER-C1   | Interface board with DC/DC converter, 2x power relay, 1-Wire terminals, 4x digital/analog inputs, and RS-485 interfaces + battery holder for 4x C-cell sized batteries |
+| Module Name                     | Module Description                                                                                                                                                              |
+| ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| CHESTER-B1                      | Battery holders for up to either 6x D-cell or 8x C-cell sized batteries + off-mainboard LED                                                                                     |
+| CHESTER-B1-W                    | Battery holders for up to either 6x D-cell or 8x C-cell sized batteries + off-mainboard LED + wireless M-Bus (wM-Bus)                                                           |
+| [**CHESTER-C1**](chester-c1.md) | Interface board with DC/DC converter, 2x power relay, 1-Wire terminals, 4x digital/analog inputs, and RS-485 interfaces + battery holder for 4x C-cell sized batteries          |
+| [**CHESTER-C5**](chester-c5.md) | Custom carrier board for the CHESTER-U1 with up to 16-ch 1-Wire, Li-Ion battery backup, DC/DC converter and charger, 6-28 VDC line or 12V solar panel input, QWIIC OLED support |
 
 :::caution
 
