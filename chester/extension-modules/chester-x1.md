@@ -8,6 +8,17 @@ import Image from '@theme/IdealImage';
 
 This article describes the CHESTER-X1 extension module.
 
+<div class="container">
+  <div class="row">
+    <div class="col col--4">
+      <div><Image img={require('./chester-x1-top.png')} /></div>
+    </div>
+    <div class="col col--10">
+    </div>
+  </div>
+</div>
+<br />
+
 ## Module Overview
 
 CHESTER-X1 provides 8 independent 1-Wire channels allowing to connect digital  sensors ( e.g. Dallas DS18B20) or any other 1-Wire peripheries. The module implements Maxim DS2482S-800+ interface and also 5V boost converter to support 5V 1-Wire peripheries.

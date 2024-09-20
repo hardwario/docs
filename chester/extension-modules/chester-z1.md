@@ -7,6 +7,17 @@ import Image from '@theme/IdealImage';
 # CHESTER-Z1
 This article describes the **CHESTER-Z1** top-cover extension module.
 
+<div class="container">
+  <div class="row">
+    <div class="col col--5">
+      <div><Image img={require('./chester-z-top.png')} /></div>
+    </div>
+    <div class="col col--10">
+    </div>
+  </div>
+</div>
+<br />
+
 ## Module Overview
 
 **CHESTER-Z1** combines a rechargeable Lithium-Ion battery backup, wide supply voltage input, and an optional human-machine interface (HMI) with illuminated push buttons and acoustic feedback. Primarily, it is used with **CHESTER-M** (mainboard), but it can also be used with [**HARDWARIO TOWER**](../../tower) and 3rd party ecosystems such as **Raspberry Pi**, **Arduino**, **ESP**, etc. The module is installed below the top cover of the Takachi WP13-18 series enclosure.

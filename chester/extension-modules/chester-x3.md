@@ -8,6 +8,17 @@ import Image from '@theme/IdealImage';
 
 This article describes the CHESTER-X3A, CHESTER-X3B and CHESTER-X3C extension modules.
 
+<div class="container">
+  <div class="row">
+    <div class="col col--4">
+      <div><Image img={require('./chester-x3-top.png')} /></div>
+    </div>
+    <div class="col col--10">
+    </div>
+  </div>
+</div>
+<br />
+
 ## CHESTER-X3A Module Overview
 
 CHESTER-X3A provides 2 inputs for RTD (resistive temperature devices) sensors, such as Pt 100 and Pt 1000. Each input supports 4 wire sensor connection to improve the accuracy.
