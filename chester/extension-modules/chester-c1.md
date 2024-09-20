@@ -7,6 +7,17 @@ import Image from '@theme/IdealImage';
 # CHESTER-C1
 This article describes the **CHESTER-C1** carrier board.
 
+<div class="container">
+  <div class="row">
+    <div class="col col--8">
+      <div><Image img={require('./chester-c1-top.png')} /></div>
+    </div>
+    <div class="col col--10">
+    </div>
+  </div>
+</div>
+<br />
+
 ## Module Overview
 
 **CHESTER-C1** is a carrier board for **CHESTER-M** implementing:

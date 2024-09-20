@@ -8,7 +8,30 @@ import Image from '@theme/IdealImage';
 
 This article describes the CHESTER-X0 four-channel I/O extension module. Two variants are available:
 * CHESTER-X0**A** including 5.0V boost converter
+
+<div class="container">
+  <div class="row">
+    <div class="col col--4">
+      <div><Image img={require('./chester-x0a-top.png')} /></div>
+    </div>
+    <div class="col col--10">
+    </div>
+  </div>
+</div>
+<br />
+
 * CHESTER-X0**B** without 5.0V boost converter
+
+<div class="container">
+  <div class="row">
+    <div class="col col--4">
+      <div><Image img={require('./chester-x0b-top.png')} /></div>
+    </div>
+    <div class="col col--10">
+    </div>
+  </div>
+</div>
+<br />
 
 ## Module Overview
 

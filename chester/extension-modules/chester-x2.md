@@ -8,6 +8,17 @@ import Image from '@theme/IdealImage';
 
 This article describes the CHESTER-X2 extension module.
 
+<div class="container">
+  <div class="row">
+    <div class="col col--4">
+      <div><Image img={require('./chester-x2-top.png')} /></div>
+    </div>
+    <div class="col col--10">
+    </div>
+  </div>
+</div>
+<br />
+
 ## Module Overview
 
 CHESTER-X2 provides TTL/UART interface and RS-485 interface (e.g., for Modbus communication).
