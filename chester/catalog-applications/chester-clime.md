@@ -291,21 +291,34 @@ save config
 To use these sensors, the device must enroll them first. To enroll a tag, place it in very close proximity to CHESTER, run the following command and wait up to 10 seconds for the device to be discovered.
 
 ```
-tag config devices enroll
+tag enroll
 ```
 
 To make the enrollment of these devices permanent, save them to the configuration with the previous command.
 
 **Tag configuration:**
 
-The tags can be configured using the [EYE APP](https://wiki.teltonika-gps.com/view/EYE_SENSOR_/_BTSMP1#EYE_App_Configuration).
+The packaged sensor should come activated. In case it is not, a magnet must touch the sensor to wake it up from hibernation mode.
+
+The tags can be configured using the [EYE APP](https://wiki.teltonika-gps.com/view/EYE_SENSOR_/_BTSMP1#EYE_App_Configuration). We highly suggest updating the tag firmware as the default firmware does not allow some settings.
+
+To configure the device, select it from the list of devices and change the options. The device name, address and serial number are available for the Android version of the application, the IOS version has limited knowledge of the devices.
+
+The suggested configuration is:
+
+| **Setting**           | **Value**             |
+|-----------------------|-----------------------|
+| Power signal settings | 4dbm                  |
+| Advertising interval  | 10s                   |
+| Active sensors        | Temperature, Humidity |
+
 
 **Setup tips:**
 
-The working distance between CHESTER and the Teltonika sensors depends on the signal power configuration of the sensor. To test the signal strenght at the distance, run the following command and look at the rssi value:
+The working distance between CHESTER and the Teltonika sensors depends on the signal power configuration of the sensor. To test the signal strength at the distance, run the following command and look at the rssi value:
 
 ```
-tag config devices read
+tag read
 ```
 
 If the signal strength is lower than -85 dbm, consider boosting the signal power to assure reliable communication.
