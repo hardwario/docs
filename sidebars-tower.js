@@ -247,6 +247,19 @@ const sidebars = {
         'hardware-interfaces/one-wire-bus'
       ],
     },
+    {
+      type: 'category',
+      label: 'STEM Education',
+      link: {
+        type: 'doc',
+        id: 'stem-education/index',
+      },
+      collapsed: true,
+      items: [
+        'stem-education/target-group-and-students-profile',
+        'stem-education/expected-results-and-evaluation-method'
+      ],
+    }
   ],
 };
 
