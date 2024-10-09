@@ -257,7 +257,9 @@ const sidebars = {
       collapsed: true,
       items: [
         'stem-education/target-group-and-students-profile',
-        'stem-education/expected-results-and-evaluation-method'
+        'stem-education/expected-results-and-evaluation-method',
+        'stem-education/lesson-review'
+        
       ],
     }
   ],
