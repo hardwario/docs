@@ -153,6 +153,16 @@ lte config plmnid 23102
 lte config addr 165.227.146.193
 ```
 
+## Vodafone Slovakia (Orange)
+
+This is the reference LTE settings when using **CHESTER** with the Czech **Vodafone** SIM card in Slovakia using Orange:
+
+```
+lte config lte-m-mode true
+lte config nb-iot-mode false
+lte config plmnid 23101
+```
+
 ## Mobily (Saudi Arabia) NB-IoT Configuration
 
 This is the reference LTE settings when using **CHESTER** with the **Mobily** SIM card:
