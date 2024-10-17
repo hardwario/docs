@@ -285,13 +285,13 @@ tag config enabled true
 After enabling the subsystem, save the configuration in order to restart **CHESTER** and start the subsystem:
 
 ```
-save config
+config save
 ```
 
-To use these sensors, the device must enroll them first. To enroll a tag, place it in very close proximity to CHESTER, run the following command and wait up to 10 seconds for the device to be discovered.
+To use these sensors, the device must enroll them first. To enroll a tag, place it in very close proximity to CHESTER, run the following command and wait up to 10 seconds for the device to be discovered. A custom signal strength threshold (from -128 to 0dbm, -128dbm providing the most range, -40dbm being the default) can be specified to make the enrollment less/more strict.
 
 ```
-tag enroll
+tag enroll <threshold>
 ```
 
 To make the enrollment of these devices permanent, save them to the configuration with the previous command.
