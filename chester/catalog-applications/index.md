@@ -41,25 +41,40 @@ If your unit was already communicating with Cloud v2, you can upgrade just main 
 
 If your unit was previously used with Cloud v1, you have to first upgrade [**LTE modem firmware**](../firmware-sdk/how-to-lte-v2.md#flash-lte-modem-firmware).
 
+
+:::info
+
+Some catalog applications are built with NB-IoT/LTE and LoRaWAN functionality in a single firmware. You need to set the communication mode.
+
+The default functionality is that a device **does not use any radio** (mode `none`), it is blinking orange LED and you need to set configuration parameter **mode**.
+
+- `app config mode lte` for NB-IoT/LTE network
+- `app config mode lrw` for LoRaWAN network
+
+Then apply changes by typing `config save`. The device will reboot and use the correct network.
+
+:::
+
 | Application name                                              | Version                                                                               |                    Identifier                     | Build date | Remark                |
 | :------------------------------------------------------------ | :------------------------------------------------------------------------------------ | :-----------------------------------------------: | :--------: | :-------------------- |
-| [**CHESTER Clime**](chester-clime.md#chester-clime)           | [**v3.0.3**](https://firmware.hardwario.com/chester/09bfa3df50e747fea5d9f38fc249ce99) | <small>`09bfa3df50e747fea5d9f38fc249ce99`</small> | 2024-10-04 |                       |
-| [**CHESTER Clime Z**](chester-clime.md#chester-clime-z)       | [**v3.0.3**](https://firmware.hardwario.com/chester/84e845819b044eea8e2e1dbb0cf06dd7) | <small>`84e845819b044eea8e2e1dbb0cf06dd7`</small> | 2024-10-04 | Support for CHESTER-Z |
-| [**CHESTER Clime IAQ**](chester-clime.md#chester-clime-iaq)   | [**v3.0.3**](https://firmware.hardwario.com/chester/631737ce30a548d09325d730df167128) | <small>`631737ce30a548d09325d730df167128`</small> | 2024-10-04 |                       |
-| [**CHESTER Clime RTD**](chester-clime.md#chester-clime-rtd)   | [**v3.0.3**](https://firmware.hardwario.com/chester/2d15a7f5b2c94b709bc20af35e8c3bd7) | <small>`2d15a7f5b2c94b709bc20af35e8c3bd7`</small> | 2024-10-04 |                       |
-| [**CHESTER Clime 1W**](chester-clime.md#chester-clime-1w)     | [**v3.0.3**](https://firmware.hardwario.com/chester/7e8080cead004e2c88ff1dcd6b01adb9) | <small>`7e8080cead004e2c88ff1dcd6b01adb9`</small> | 2024-10-04 |                       |
-| [**CHESTER Clime TC**](chester-clime.md#chester-clime-tc)     | [**v3.0.3**](https://firmware.hardwario.com/chester/77dbe1ef7c374aafb37757c3f9a2be85) | <small>`77dbe1ef7c374aafb37757c3f9a2be85`</small> | 2024-10-04 |                       |
-| [**CHESTER Push**](chester-push.md#chester-push)              | [**v3.0.3**](https://firmware.hardwario.com/chester/161cdd3321c94d5c9ffbb70949099c2e) | <small>`161cdd3321c94d5c9ffbb70949099c2e`</small> | 2024-10-04 |                       |
-| [**CHESTER Push FM**](chester-push.md#chester-push-fm)        | [**v3.0.3**](https://firmware.hardwario.com/chester/afb332dc50904c2f9a8f76225a334ada) | <small>`afb332dc50904c2f9a8f76225a334ada`</small> | 2024-10-04 |                       |
-| [**CHESTER Control**](chester-control.md#chester-control)     | [**v3.0.3**](https://firmware.hardwario.com/chester/fcf361c38abc4ac5a43349496c56ad3b) | <small>`fcf361c38abc4ac5a43349496c56ad3b`</small> | 2024-10-04 |                       |
-| [**CHESTER Current**](chester-current.md#chester-current)     | [**v3.0.3**](https://firmware.hardwario.com/chester/47d2c39ea6f94de0879512574841d8a0) | <small>`47d2c39ea6f94de0879512574841d8a0`</small> | 2024-10-04 |                       |
-| [**CHESTER Current Z**](chester-current.md#chester-current-z) | [**v3.0.3**](https://firmware.hardwario.com/chester/fa0884b956684b3f8e72cc71bd615a32) | <small>`fa0884b956684b3f8e72cc71bd615a32`</small> | 2024-10-04 | Support for CHESTER-Z |
-| **CHESTER Scale**                                             | [**v3.0.3**](https://firmware.hardwario.com/chester/8ffabf91193d4e1d81840b90eb82f661) | <small>`8ffabf91193d4e1d81840b90eb82f661`</small> | 2024-10-04 |                       |
-| **CHESTER Scale Z**                                           | [**v3.0.3**](https://firmware.hardwario.com/chester/e17b5db11046426ba67e56c5fdad6910) | <small>`e17b5db11046426ba67e56c5fdad6910`</small> | 2024-10-04 | Support for CHESTER-Z |
-| [**CHESTER Meteo**](chester-meteo.md#chester-meteo)           | [**v3.0.3**](https://firmware.hardwario.com/chester/4c3842a0839d42e89cc4da7939857379) | <small>`4c3842a0839d42e89cc4da7939857379`</small> | 2024-10-04 |                       |
-| [**CHESTER Meteo Z**](chester-meteo.md#chester-meteo-z)       | [**v3.0.3**](https://firmware.hardwario.com/chester/cf24e202ae0b443c97c528f086a6a1ea) | <small>`cf24e202ae0b443c97c528f086a6a1ea`</small> | 2024-10-04 | Support for CHESTER-Z |
-| [**CHESTER Range**](chester-range.md#chester-range)           | [**v3.0.3**](https://firmware.hardwario.com/chester/2dee673a6b5f4ca8937589caa80dd4b9) | <small>`2dee673a6b5f4ca8937589caa80dd4b9`</small> | 2024-10-04 |                       |
-| [**CHESTER Range Z**](chester-range.md#chester-range-z)       | [**v3.0.3**](https://firmware.hardwario.com/chester/26165569fa844c5fa1d6a7d13cab7681) | <small>`26165569fa844c5fa1d6a7d13cab7681`</small> | 2024-10-04 | Support for CHESTER-Z |
+| [**CHESTER Clime**](chester-clime.md#chester-clime)           | [**v3.0.4**](https://firmware.hardwario.com/chester/158aaa38579347d5ad0bdf69a9c45edb) | <small>`158aaa38579347d5ad0bdf69a9c45edb`</small> | 2024-10-18 |                       |
+| [**CHESTER Clime Z**](chester-clime.md#chester-clime-z)       | [**v3.0.4**](https://firmware.hardwario.com/chester/40954843933e4882a16435c8f4365835) | <small>`40954843933e4882a16435c8f4365835`</small> | 2024-10-18 | Support for CHESTER-Z |
+| [**CHESTER Clime IAQ**](chester-clime.md#chester-clime-iaq)   | [**v3.0.4**](https://firmware.hardwario.com/chester/1a3ab56728104b0886b1eb039592e438) | <small>`1a3ab56728104b0886b1eb039592e438`</small> | 2024-10-18 |                       |
+| [**CHESTER Clime RTD**](chester-clime.md#chester-clime-rtd)   | [**v3.0.4**](https://firmware.hardwario.com/chester/d698dc3642b24fdca163437a908fbaf5) | <small>`d698dc3642b24fdca163437a908fbaf5`</small> | 2024-10-18 |                       |
+| [**CHESTER Clime 1W**](chester-clime.md#chester-clime-1w)     | [**v3.0.4**](https://firmware.hardwario.com/chester/b27e31440d7e48d58c40cc59e049bdf9) | <small>`b27e31440d7e48d58c40cc59e049bdf9`</small> | 2024-10-18 | None                  |
+| [**CHESTER Clime TC**](chester-clime.md#chester-clime-tc)     | [**v3.0.4**](https://firmware.hardwario.com/chester/8ee666a7b6aa407099f5a7f7f20f3ec8) | <small>`8ee666a7b6aa407099f5a7f7f20f3ec8`</small> | 2024-10-18 |                       |
+| [**CHESTER Push**](chester-push.md#chester-push)              | [**v3.0.4**](https://firmware.hardwario.com/chester/074e8efec0f047858abcad5286bdbbcd) | <small>`074e8efec0f047858abcad5286bdbbcd`</small> | 2024-10-18 |                       |
+| [**CHESTER Push FM**](chester-push.md#chester-push-fm)        | [**v3.0.4**](https://firmware.hardwario.com/chester/fff7982899184897bc1edfd23c6333ce) | <small>`fff7982899184897bc1edfd23c6333ce`</small> | 2024-10-18 |                       |
+| [**CHESTER Control**](chester-control.md#chester-control)     | [**v3.0.4**](https://firmware.hardwario.com/chester/5e7215edd10047ce96d258addceebe5c) | <small>`5e7215edd10047ce96d258addceebe5c`</small> | 2024-10-18 |                       |
+| [**CHESTER Current**](chester-current.md#chester-current)     | [**v3.0.4**](https://firmware.hardwario.com/chester/443bccb76bba4da4b403ba9be5a6dc12) | <small>`443bccb76bba4da4b403ba9be5a6dc12`</small> | 2024-10-18 |                       |
+| [**CHESTER Current Z**](chester-current.md#chester-current-z) | [**v3.0.4**](https://firmware.hardwario.com/chester/6ac834af2e3640abbb15aa071370a188) | <small>`6ac834af2e3640abbb15aa071370a188`</small> | 2024-10-18 | Support for CHESTER-Z |
+| **CHESTER Scale**                                             | [**v3.0.4**](https://firmware.hardwario.com/chester/37ca8af2ba5943a3b7cc41acec54170b) | <small>`37ca8af2ba5943a3b7cc41acec54170b`</small> | 2024-10-18 |                       |
+| **CHESTER Scale Z**                                           | [**v3.0.4**](https://firmware.hardwario.com/chester/2ff4f874ce8748c886ea87de4a45073d) | <small>`2ff4f874ce8748c886ea87de4a45073d`</small> | 2024-10-18 | Support for CHESTER-Z |
+| [**CHESTER Meteo**](chester-meteo.md#chester-meteo)           | [**v3.0.4**](https://firmware.hardwario.com/chester/c5ccff2e16ce4008bbd36130a04d37f9) | <small>`c5ccff2e16ce4008bbd36130a04d37f9`</small> | 2024-10-18 |                       |
+| [**CHESTER Meteo Z**](chester-meteo.md#chester-meteo-z)       | [**v3.0.4**](https://firmware.hardwario.com/chester/e3785b1b22344e34ae91cfbf16254c4e) | <small>`e3785b1b22344e34ae91cfbf16254c4e`</small> | 2024-10-18 | Support for CHESTER-Z |
+| [**CHESTER Range**](chester-range.md#chester-range)           | [**v3.0.4**](https://firmware.hardwario.com/chester/a4e954591cd64e1c8a6fda7485e95970) | <small>`a4e954591cd64e1c8a6fda7485e95970`</small> | 2024-10-18 |                       |
+| [**CHESTER Range Z**](chester-range.md#chester-range-z)       | [**v3.0.4**](https://firmware.hardwario.com/chester/79581a8cecc9413cb713278c584442bf) | <small>`79581a8cecc9413cb713278c584442bf`</small> | 2024-10-18 | Support for CHESTER-Z |
+| **CHESTER Demo**                                              | [**v3.0.4**](https://firmware.hardwario.com/chester/81117a5487e5424ebc517b76475b29a3) | <small>`81117a5487e5424ebc517b76475b29a3`</small> | 2024-10-18 |                       |
 
 ## Application Firmware Cloud v1
 
