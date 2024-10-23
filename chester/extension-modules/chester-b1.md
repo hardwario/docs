@@ -9,30 +9,31 @@ This article describes the **CHESTER-CB** carrier board.
 
 ## Module Overview
 
-**CHESTER-B1** is a carrier board for **CHESTER-M** providing extra battery capacity for extend battery lifespan. It can be useful for application that needs long life time 5 - 10 years without battery replacement or for standard application thats requires short period of measuring and communication which is mor power consumption The following configurations are available:
-- up to eight 3.6V lithium C cells (8P)
-- up to eight 1.5V alkaline C cells (2S4P)
-- up to six 3.6V D cell in parallel (6P)
-- up to six 1.5V alkaline D cells (2S3P)
+**CHESTER-B1** is a carrier board for **CHESTER-M** providing extra battery capacity for extend battery lifespan. It can be useful for application that needs long life time 5 - 10 years without battery replacement or for standard application thats requires short period of measuring and communication which is mor power consumption. The following configurations are available:
+- up to eight 3.6V lithium C cells (8P) providing 62 Ah (LS26500)
+- up to eight 1.5V alkaline C cells (2S4P) providing 31 Ah (C VARTA)
+- up to six 3.6V D cell in parallel (6P) providing 102 Ah (LS33600)
+- up to six 1.5V alkaline D cells (2S3P) providing 50 Ah (D VARTA)
 
 CHESTER-B1 with fits with the Takachi WP20-28-5Cx enclosure with C cell holders or Takachi WP20-28-57x with D cell holders.
 
 
 ## Technical Specification
 
-* Input DC voltage range (VIN): **8-36 V**
-* Supported C size battery: 1 x **Saft LSH14** or 1 x **Saft LS26500\***
-* Up to 4 x C size or 3 x D size battery on request (Saft LSH20 or LS33000)
-* Nominal battery voltage: **3.6 V**
+* Supported C size 3.6V lithium battery: 1P-8P x **Saft LSH14** or 8P x **Saft LS26500\***
+* Supported D size 3.6V lithium battery: 1P-6P x **Saft LSH20** or 6P x **Saft LS33600\****
+* Supported C size 1.5V: standard alkaline battery in 2S4P configuration
+* Supported D size 1.5V: standard alkaline battery in 2S3P configuration
 * Battery idle current consumption **<2 μA** (without **CHESTER-M**)
 
-_\* Saft LS26500 cannot be used with CHESTER-M-E variant (without supercapacitors)._
+_\* Single Saft LS26500 cell is not able to deliver hight current peaks, install all 8 cells.
+_\* Single Saft LS33600 cell is not able to deliver hight current peaks, install all 6 cells.
 
 For more details see [**Ordering Codes**](../ordering-codes.md#chester-m).
 
 ## Module drawing
 
-![](chester-c1.png)
+![](chester-b1.png)
 
 ## Inputs and outputs overview
 
@@ -40,7 +41,6 @@ For more details see [**Ordering Codes**](../ordering-codes.md#chester-m).
 | -------- | --------- | --------------------------------------- |
 | JP4      | BATTERY   | External battery input JST connector    |
 | JP5      | SYSTEM    | CHESTER SYSTEM JST connector            |
-
 
 _\* CHESTER-X SLOT A is by default occupied with integrated module CHESTER-X1_
 
