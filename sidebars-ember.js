@@ -5,6 +5,7 @@ const sidebars = {
   docs: [
     'introduction',
     'hardware-description',
+    'initial-configuration',
     'hotspot-configuration',
     'cloud-service',
     'ordering-codes',
