@@ -1,4 +1,4 @@
-# Initial Setup and Configuration of EMBER (MikroTik RBM33G)
+# Initial Setup and Configuration
 
 
 ## Purpose
