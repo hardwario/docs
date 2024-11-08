@@ -10,7 +10,7 @@ This document provides the step-by-step process for setting up, updating, and co
 
 ### 1. Preparation and Connection
 
-   - **Connect Power Supply and Ethernet**: Attach the power supply to the EMBER device. Connect an Ethernet cable from the EMBER's left Ethernet port (Ether1) to your computer.
+   - **Connect Power Supply and Ethernet**: Attach the power supply to the EMBER gateway. Connect an Ethernet cable from the EMBER's left Ethernet port (Ether1) to your computer.
    - **Open RouterOS Interface**: Access RouterOS via Winbox or WebFig for the following steps.
 
 ---
@@ -60,7 +60,7 @@ This document provides the step-by-step process for setting up, updating, and co
 
 #### 3.3 Apply New Configuration
 
-   - **Paste Configuration**: Copy the configuration below and paste it into the Terminal to set up the EMBER device.
+   - **Paste Configuration**: Copy the configuration below and paste it into the Terminal to set up the EMBER gateway.
 
   ```
   /interface bridge add name=bridge0
@@ -97,4 +97,4 @@ This document provides the step-by-step process for setting up, updating, and co
 
 ## Completion
 
-The EMBER device should now be fully updated and configured as per the specifications outlined in this document.
+The EMBER gateway should now be fully updated and configured as per the specifications outlined in this document.
