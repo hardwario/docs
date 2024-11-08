@@ -23,7 +23,7 @@ Then apply changes by typing `config save`. The device will reboot and use the c
 
 ## Button Behaviour
 
-Applications define actions for the mainboard button. The actions are chosen based on the number of consecutive presses of the button. Before an action is executed, **CHESTER** will blink the orange LED *N* times, indicating the amount of consecutive presses. The actions are:
+Applications define actions for the mainboard button. The actions are chosen based on the number of consecutive presses of the button. Before an action is executed, **CHESTER** will blink the orange LED for each of the consecutive presses. The actions are:
 
 | Number of presses | Action                                      |
 | :---------------: | :------------------------------------------ |
@@ -64,6 +64,8 @@ config save
 ```
 
 This will apply the changes and restart the application. After the restart, you can verify the settings changed using the `app config show` command.
+
+Configuration can be reset to the default state using the `config reset` command. If you do not have access to the console, you can perform the button reset. Before powering **CHESTER** on, press and hold the black user button. When the LED starts rapidly blinking red, release the button. **CHESTER** will reset the configuration and reboot. If you keep holding the button until the LED stops blinking, **CHESTER** will continue the usual boot process without resetting.
 
 ## Report Interval Jitter
 
