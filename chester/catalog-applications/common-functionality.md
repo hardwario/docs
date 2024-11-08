@@ -23,7 +23,7 @@ Then apply changes by typing `config save`. The device will reboot and use the c
 
 ## Button Behaviour
 
-Applications define actions for the mainboard button. The actions are chosen based on the number of consecutive presses of the button. Before an action is executed, **CHESTER** will blink the orange LED *N* times, indicating the amount of consecutive presses. The actions are:
+Applications define actions for the mainboard button. The actions are chosen based on the number of consecutive presses of the button. Before an action is executed, **CHESTER** will blink the orange LED once for each button press, indicating the amount of consecutive presses. The actions are:
 
 | Number of presses | Action                                      |
 | :---------------: | :------------------------------------------ |
@@ -64,6 +64,14 @@ config save
 ```
 
 This will apply the changes and restart the application. After the restart, you can verify the settings changed using the `app config show` command.
+
+If you want to reset the configuration back to the default state, you can do so using `config reset`. In rare cases, when the CHESTER console isn't available, you can use the manual reset procedure. To initiate this, holding down the button while CHESTER boots. After holding the button for around 5 seconds, CHESTER will start rapidly blinking. At this point, you can release the button to proceed with the reset. If you continue holding the button until CHESTER stops blinking, the reset will be aborted.
+
+:::caution
+
+Reseting the configuration will also reset the connection parameters for LTE and LoRaWAN, which can result in CHESTER unable to communicate.
+
+:::
 
 ## Report Interval Jitter
 
