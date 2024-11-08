@@ -4,6 +4,7 @@
 const sidebars = {
   docs: [
     'introduction',
+    'getting-started',
     {
       type: 'category',
       label: 'Platform Connectivity',
@@ -62,6 +63,9 @@ const sidebars = {
         'extension-modules/chester-x9',
         'extension-modules/chester-x10',
         'extension-modules/chester-k1',
+        'extension-modules/chester-c1',
+        'extension-modules/chester-c5',
+        'extension-modules/chester-z1',
       ],
     },
     {
@@ -72,14 +76,10 @@ const sidebars = {
       },
       collapsed: true,
       items: [
-        'hardware-description/basic-parameters',
-        'hardware-description/block-diagram',
-        'hardware-description/schematic-diagram',
-        'hardware-description/layout-placement',
-        'hardware-description/connector-description',
+        'hardware-description/chester-m',
         'hardware-description/chester-u1-module',
-        'hardware-description/i2c-address-space',
         'hardware-description/enclosures',
+        'hardware-description/i2c-address-space',
       ],
     },
     'power-management',
@@ -124,7 +124,6 @@ const sidebars = {
         'firmware-sdk/installation-on-ubuntu',
         'firmware-sdk/installation-on-macos',
         'firmware-sdk/installation-on-windows',
-        'firmware-sdk/installation-in-virtualbox',
         'firmware-sdk/build-and-deploy',
         'firmware-sdk/debug',
         'firmware-sdk/applications',
@@ -134,6 +133,17 @@ const sidebars = {
         'firmware-sdk/how-to-kconfig',
         'firmware-sdk/how-to-cbor',
         'firmware-sdk/how-to-lte-v2',
+        'firmware-sdk/how-to-project-generator',
+        {
+          type: 'link',
+          label: 'Git Repository',
+          href: 'https://github.com/hardwario/chester-sdk'
+        },
+        {
+          type: 'link',
+          label: 'API Reference',
+          href: 'https://hardwario.github.io/chester-sdk'
+        },
         'firmware-sdk/licenses',
       ],
     },

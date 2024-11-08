@@ -30,7 +30,7 @@ Below is the minimized set of commands that is extracted from the **CHESTER SDK*
    source venv/bin/activate
    pip install --upgrade pip
    pip install west
-   west init -m git@gitlab.hardwario.com:chester/sdk.git --manifest-rev main
+   west init -m git@github.com:hardwario/chester-sdk.git --manifest-rev main
    west config build.board chester_nrf52840
    west update
    west zephyr-export

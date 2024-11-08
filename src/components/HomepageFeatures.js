@@ -62,15 +62,17 @@ function Feature({ src, width, height, title, subtitle, link, description }) {
   return (
     <div className={clsx('col col--3')}>
       <div className="text--center">
-        <img src={src} width={width} height={height} />
+        <Link to={link}>
+          <img src={src} width={width} height={height} />
+        </Link>
       </div>
-      <div className="text--center padding-horiz--md">
-        <h2>{title}</h2>
-        <h3>{subtitle}</h3>
+      <div className='text--center padding-horiz--md'>
+        <Link to={link} className='link-unstyled'>
+          <h2>{title}</h2>
+          <h3>{subtitle}</h3>
+        </Link>
         <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--md"
-            to={link}>
+          <Link className = 'button button--secondary button--md' to={link}>
             👉 Go to {title} documentation
           </Link>
         </div>

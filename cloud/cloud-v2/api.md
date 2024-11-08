@@ -6,81 +6,42 @@ import Image from '@theme/IdealImage';
 
 # API
 
-For Cloud v2 API please see the [**API Swagger documentation**](https://api.prod.hardwario.cloud/v2/documentation/index.html).
+For Cloud v2 API please see the [**API Swagger documentation**](https://api.hardwario.cloud/v2/documentation/).
 
 For real-time delivery of devices' messages we strongly recommend using HTTP callback, please see the [**Connectors**](connectors.md).
 
-## Python API examples
+## API Examples
 
-Currently, Cloud v2 API does not support fixed API Keys, so you have to log in using your credentials and space name. See the examples below.
+### List devices in space with cURL
 
-### Log-in and list devices
+Please create an API key and fill it in `<api-key>`, also set correct `<space-id>`.
 
-This example logs in to the Cloud v2 production portal (`api.prod.hardwario.cloud`). It gets Space ID, then it get list of all devices in this space.
+```
+curl -X GET "https://api.hardwario.cloud/v2/spaces/<space-id>/devices" -H 'accept: application/json' -H 'X-API-Key: <api-key>' -H 'Content-Type: application/json'
+```
 
+### List devices in space with Python
 
 ```python
 #!/usr/bin/env python3
 
 import requests
+import json
 
-email = ''
-password = ''
-space_id = ''
+api_key = ...
+space_id = ...
+base_url = 'https://api.hardwario.cloud'
 
-base_url = 'https://api.prod.hardwario.cloud'
 
-# Login
-resp = requests.post(base_url + '/v2/auth/login',
-                     json={"email": email, "password": password})
+def get_devices():
+    data = requests.get(f'{base_url}/v2/spaces/{space_id}/devices?limit=500',
+                        headers={'X-API-Key': api_key}).json()
 
-if resp.status_code != 200:
-    raise Exception('Login failed')
+    for item in data:
+        print(item["id"], item["name"])
 
-authorization = 'Bearer ' + resp.json()['access_token']
 
-print(authorization)
+if __name__ == "__main__":
+    get_devices()
 
-resp = requests.get(f'{base_url}/v2/space/{space_id}/devices',
-                    headers={'Authorization': authorization})
-
-print(resp.status_code)
-
-if resp.status_code != 200:
-    raise Exception('Device read failed:' + resp.text)
-
-print(resp.json())
-```
-
-### Create devices
-
-```python
-
-# Copy the log-in from the first example code
-
-# Create device from list in space
-
-devices = [
-    {
-        "name": "dev-001",
-        "serial_number": "2112345678",
-        "token": "hie1koh5toh0ga6iedoJ1hahshohmoh7"
-    },
-    {
-        "name": "dev-002",
-        "serial_number": "2112345679",
-        "token": "hie1koh5toh0ga6iedoJ1hahshohmoh7",
-        "tags": [{"id": "5f6b5b4e-3b4c-4c4c-8c8c-8c8c8c8c8c8c"}],
-        "external_id": "1234567890"
-    }
-]
-
-for device in devices:
-    resp = requests.post(f'{base_url}/v2/space/{space_id}/devices', json=device,
-                         headers={'Authorization': authorization})
-
-    if resp.status_code != 201:
-        raise Exception('Device create failed:' + resp.text)
-
-    print(resp.json())
 ```

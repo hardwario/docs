@@ -8,6 +8,17 @@ import Image from '@theme/IdealImage';
 
 This article describes the CHESTER-X4 extension module.
 
+<div class="container">
+  <div class="row">
+    <div class="col col--4">
+      <div><Image img={require('./chester-x4-top.png')} /></div>
+    </div>
+    <div class="col col--10">
+    </div>
+  </div>
+</div>
+<br />
+
 ## Module Overview
 CHESTER-X4 implements a step-down DC/DC converter providing power from an external 6-28 VDC line (VIN). It allows also the input voltage measurement. This module has also 4 P-MOS switches allowing to supply of independent loads from VIN voltage input.
 

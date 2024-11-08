@@ -878,3 +878,36 @@
   to = "https://docs.hardwario.com/chester/firmware-sdk/application-customization"
   status = 301
   force = true
+
+#
+# CHESTER Redirects with CHESTER-M united article
+#
+[[redirects]]
+  from = "https://docs.hardwario.com/chester/hardware-description/basic-parameters"
+  to = "https://docs.hardwario.com/chester/hardware-description/chester-m"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://docs.hardwario.com/chester/hardware-description/block-diagram"
+  to = "https://docs.hardwario.com/chester/hardware-description/chester-m"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://docs.hardwario.com/chester/hardware-description/connector-description"
+  to = "https://docs.hardwario.com/chester/hardware-description/chester-m"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://docs.hardwario.com/chester/hardware-description/layout-placement"
+  to = "https://docs.hardwario.com/chester/hardware-description/chester-m"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://docs.hardwario.com/chester/hardware-description/schematic-diagram"
+  to = "https://docs.hardwario.com/chester/hardware-description/chester-m"
+  status = 301
+  force = true

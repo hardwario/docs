@@ -56,7 +56,7 @@ The application signals push-button events on LEDs in two different ways and cus
 
   :::
 
-## Hardware Description
+## Hardware Description {#chester-push}
 
 The catalog application **CHESTER Push** hardware consists of the following ordering codes:
 

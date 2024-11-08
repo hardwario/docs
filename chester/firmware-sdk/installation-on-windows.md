@@ -129,7 +129,7 @@ You can skip this step if you already have **Chocolatey** installed on your syst
 1. Download the toolchain:
 
    ```
-   wget https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v0.16.1/zephyr-sdk-0.16.1_windows-x86_64.7z
+   wget https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v0.16.1/zephyr-sdk-0.16.1_windows-x86_64.7z -O zephyr-sdk-0.16.1_windows-x86_64.7z
    ```
 
 1. Unzip the toolchain:
@@ -147,7 +147,7 @@ You can skip this step if you already have **Chocolatey** installed on your syst
 1. Run the **Zephyr SDK** bundle setup script:
 
    ```
-   setup.cmd
+   .\setup.cmd
    ```
 
    :::tip

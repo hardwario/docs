@@ -28,7 +28,7 @@ Some of the basics are not provided, as they are common for all **CHESTER** cata
 
 **CHESTER Clime** can be ordered in one of these variants:
 
-### CHESTER Clime
+### CHESTER Clime {#chester-clime}
 
 The catalog application **CHESTER Clime** measures:
 - Temperature
@@ -134,6 +134,20 @@ The hardware of this application consists of the following ordering codes:
 See [**Ordering Codes**](../ordering-codes.md) for more details.
 
 Firmware build shield options: `ctr_lrw ctr_lte ctr_rtd_a`
+
+### CHESTER Clime TC
+
+The catalog application **CHESTER Clime TC** supports two external **type K** thermocouple sensors.
+
+The hardware of this application consists of the following ordering codes:
+
+* `CHESTER-M-BCGLS` - Standard mainboard
+* `CHESTER-X3B:A` - 2x Type K thermocouple interface
+* `CHESTER-E13-LP` - Enclosure with SMA pigtail and 2 cable PG7 glands
+
+See [**Ordering Codes**](../ordering-codes.md) for more details.
+
+Firmware build shield options: `ctr_lrw ctr_lte ctr_tc_a`
 
 ## Measurement and Behavior
 
@@ -259,6 +273,64 @@ Command to set the **report rate** in reports per hour (just for event reports, 
 ```
 app config event-report-rate <1-3600>
 ```
+
+## CHESTER Clime BLE Tag subsystem
+
+The catalog application **CHESTER Clime Tag** supports up to 8 **Teltonika EYE Sensor** Bluetooth tags that report temperature and humidity. This subsystem can be activated by following command:
+
+```
+tag config enabled true
+```
+
+After enabling the subsystem, save the configuration in order to restart **CHESTER** and start the subsystem:
+
+```
+config save
+```
+
+To use these sensors, the device must enroll them first. To enroll a tag, place it in very close proximity to CHESTER, run the following command and wait up to 10 seconds for the device to be discovered.
+```
+tag enroll
+```
+
+A optional signal strength threshold (from -128 to 0dbm, -128dbm providing the most range, -40dbm being the default) can be specified to make the enrollment less/more strict.
+
+```
+tag enroll <threshold>
+```
+
+To make the enrollment of these devices permanent, save them to the configuration with command.
+
+```
+config save
+```
+
+**Tag configuration:**
+
+The packaged sensor should come activated. In case it is not, a magnet must touch the sensor to wake it up from hibernation mode.
+
+The tags can be configured using the [EYE APP](https://wiki.teltonika-gps.com/view/EYE_SENSOR_/_BTSMP1#EYE_App_Configuration). We highly suggest updating the tag firmware as the default firmware does not allow some settings.
+
+To configure the device, select it from the list of devices and change the options. The device name, address and serial number are available for the Android version of the application, the IOS version has limited knowledge of the devices.
+
+The suggested configuration is:
+
+| **Setting**           | **Value**             |
+|-----------------------|-----------------------|
+| Power signal settings | 4dbm                  |
+| Advertising interval  | 10s                   |
+| Active sensors        | Temperature, Humidity |
+
+
+**Setup tips:**
+
+The working distance between CHESTER and the Teltonika sensors depends on the signal power configuration of the sensor. To test the signal strength at the distance, run the following command and look at the rssi value:
+
+```
+tag read
+```
+
+If the signal strength is lower than -85 dbm, consider boosting the signal power to assure reliable communication.
 
 ## Firmware
 
@@ -833,7 +905,7 @@ In each structure with the current configuration, there are six aggregated value
       ]
     }
   ],
-    "rtd_thermometers": [
+  "rtd_thermometers": [
     {
       "channel": 1,
       "measurements": [
@@ -927,6 +999,90 @@ In each structure with the current configuration, there are six aggregated value
           "mdn": 22.18
         }
       ]
+    }
+  ],
+  "ble_tags": [
+    {
+      "addr": "1234567890AB",
+      "rssi": -81,
+      "voltage": 3.11,
+      "humidity": {
+        "measurements": [
+          {
+            "timestamp": 1668857742,
+            "min": 54.78,
+            "max": 55.31,
+            "avg": 55.1,
+            "mdn": 55.12
+          },
+          {
+            "timestamp": 1668858042,
+            "min": 55.12,
+            "max": 56.16,
+            "avg": 55.55,
+            "mdn": 55.52
+          }
+        ]
+      },
+      "temperature": {
+        "measurements": [
+          {
+            "timestamp": 1668857742,
+            "min": 22.18,
+            "max": 22.25,
+            "avg": 22.23,
+            "mdn": 22.25
+          },
+          {
+            "timestamp": 1668858042,
+            "min": 22.18,
+            "max": 22.18,
+            "avg": 22.18,
+            "mdn": 22.18
+          }
+        ]
+      }
+    },
+    {
+      "addr": "BA0987654321",
+      "rssi": -77,
+      "voltage": 3.11,
+      "humidity": {
+        "measurements": [
+          {
+            "timestamp": 1668857742,
+            "min": 54.78,
+            "max": 55.31,
+            "avg": 55.1,
+            "mdn": 55.12
+          },
+          {
+            "timestamp": 1668858042,
+            "min": 55.12,
+            "max": 56.16,
+            "avg": 55.55,
+            "mdn": 55.52
+          }
+        ]
+      },
+      "temperature": {
+        "measurements": [
+          {
+            "timestamp": 1668857742,
+            "min": 22.18,
+            "max": 22.25,
+            "avg": 22.23,
+            "mdn": 22.25
+          },
+          {
+            "timestamp": 1668858042,
+            "min": 22.18,
+            "max": 22.18,
+            "avg": 22.18,
+            "mdn": 22.18
+          }
+        ]
+      }
     }
   ]
 }

@@ -7,6 +7,17 @@ import Image from '@theme/IdealImage';
 # CHESTER-X8
 This article describes the CHESTER-X8 extension module.
 
+<div class="container">
+  <div class="row">
+    <div class="col col--4">
+      <div><Image img={require('./chester-x8-top.png')} /></div>
+    </div>
+    <div class="col col--10">
+    </div>
+  </div>
+</div>
+<br />
+
 ## Module Overview
 CHESTER-X8 implements precise low zero g offset 3-axis accelerometer ADXL355 providing the resolution up to 3.9 μg/LSB and measurement range ±2g, ±4g, ±8g.
 

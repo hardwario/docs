@@ -40,7 +40,7 @@ You can import a batch of console commands with the 📄 **Batch** button on the
 
 ## Bluetooth
 
-You can connect to the **CHESTER Shell** over Bluetooth. This is useful to change device configuration.
+You can connect to the **CHESTER Shell** over Bluetooth. This is useful to use `info show` command to get firmware version or show/change device configuration using `app config show` commands.
 
 If you cannot pair the device from the **HARDWARIO Monitor** application, you have to pair it with the system Bluetooth dialog first. Then go back to the **HARDWARIO Monitor** application
 and connect to the device again.

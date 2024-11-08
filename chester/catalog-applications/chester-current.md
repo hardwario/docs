@@ -36,7 +36,7 @@ Apart from the current measurements, the device can be configured (on demand) to
 
 **CHESTER Current** can be ordered in one of these variants:
 
-### CHESTER Current
+### CHESTER Current {#chester-current}
 
 The catalog **CHESTER Current** hardware consists of the following ordering codes:
 

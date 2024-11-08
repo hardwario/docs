@@ -27,17 +27,22 @@ In the connector preview tab, you can select one of the latest messages and in r
 
 ![](connector-preview.png)
 
+In the **Advanced** tab in the **Connectors**, you might change how many times the **HARDWARIO Cloud** tries to call your callback and in which intervals.
+
 ## JavaScript
 
 Every message passing through the Cloud is handled by a JavaScript. Users can add further logic or completely reformat JSON which is sent. In script, you can also access all the information from the device like name, tags and labels. You can change HTTP request headers, change URL or completely stop the callback.
 
 ```js
 function main(job) {
+  let body = job.message.body
   return {
-    "url": "https://best.app.ever/new-message",
     "method": "POST",
-    "body": JSON.stringify(job),
-    "header": { "Content-Type": "application/json" }
+    "url": "https://...",
+    "header": {
+      "Content-Type": "application/json"
+    },
+    "data": body
   }
 }
 ```
