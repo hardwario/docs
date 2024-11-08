@@ -1,9 +1,9 @@
-# Initial Setup and Configuration of EMBER (MikroTik RBM33G)
+# Initial Setup and Configuration
 
 
 ## Purpose
 
-This document provides the step-by-step process for setting up, updating, and configuring the EMBER device (MikroTik RBM33G) for HARDWARIO operations.
+This document provides the step-by-step process for setting up, updating, and configuring the EMBER gateway (MikroTik RBM33G).
 
 ## Procedure
 
@@ -18,9 +18,9 @@ This document provides the step-by-step process for setting up, updating, and co
 ### 2. Update Process
 
 
-#### 2.1 Record Installed Packages
+#### 2.1 Take note of Installed Packages
 
-   - **Note Current Packages**: Document all installed packages. This will be useful for reinstallation if needed.
+   - **Note Current Packages**: Document all installed packages.
 
 #### 2.2 Uninstall Unnecessary Packages
 
@@ -40,7 +40,7 @@ This document provides the step-by-step process for setting up, updating, and co
 #### 2.5 Reinstall Packages
 
    - **Download Latest Packages**: Obtain the latest package files for the device (Verified with [**v7.16.1**](pathname:///download/all_packages-mmips-7.16.1.zip)).
-   - **Upload Packages**: Upload the packages that have been previously installed to the EMBER's "Files" section (LoRa has been moved unde the IoT package).
+   - **Upload Packages**: Upload the packages that have been previously installed to the EMBER's "Files" section (LoRa has been moved under the IoT package).
    - **Reboot**: Reboot the device to complete the firmware update.
 
 ---
