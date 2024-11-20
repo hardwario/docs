@@ -6,17 +6,21 @@ import Image from '@theme/IdealImage';
 
 # CHESTER Counter
 
-This article describes the core functionality, hardware description, default configuration, and example **JSON** messages for the catalog application **CHESTER Counter**.
+:::warning
 
-:::danger
-
-When upgrading firmware from **v1.x.x** to version **v2.0.0 and newer** - it is necessary to [**backup configuration**](common-functionality.md#configuration-backup).
+CHESTER Counter is replaced by [**CHESTER Control**](chester-control.md) which offers the same functionality.
 
 :::
 
+This article describes the core functionality, hardware description, default configuration, and example **JSON** messages for the catalog application **CHESTER Counter**.
+
 :::caution
 
-Some basics are not provided, as they are common for all the **CHESTER** catalog applications. For example, see the article [**Platform Management**](../platform-connectivity/index.md) on how to work with the interactive console.
+Some of the basics are not provided, as they are common for all CHESTER catalog applications. Please see:
+
+- [**Getting started**](../getting-started.md) on how to connect device to Cloud.
+- [**Common functionality**](common-functionality.md) to know how LED, button and network configuration works.
+- [**Platform Management**](../category/platform-connectivity) on how to work with the interactive console.
 
 :::
 

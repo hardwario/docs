@@ -8,17 +8,16 @@ import Image from '@theme/IdealImage';
 
 This article describes the core functionality, hardware description, and example **JSON** message of the catalog application **CHESTER Push**.
 
-:::danger
-
-When upgrading firmware from **v1.x.x** to version **v2.0.0 and newer** - it is necessary to [**backup configuration**](common-functionality.md#configuration-backup).
-
-:::
-
 :::caution
 
-Some of the basics are not provided, as they are common for all **CHESTER** catalog applications. For example, see the article [**Platform Management**](../platform-connectivity/index.md) on how to work with the interactive console.
+Some of the basics are not provided, as they are common for all CHESTER catalog applications. Please see:
+
+- [**Getting started**](../getting-started.md) on how to connect device to Cloud.
+- [**Common functionality**](common-functionality.md) to know how LED, button and network configuration works.
+- [**Platform Management**](../category/platform-connectivity) on how to work with the interactive console.
 
 :::
+
 
 ## Application Overview
 

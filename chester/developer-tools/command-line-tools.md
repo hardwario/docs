@@ -124,7 +124,7 @@ Use the command `hardwario chester lte flash firmware.zip` to flash the modem fi
 
 :::caution
 
-Currently, you have to update the codec manually when you update the CHESTER firmware. In the LTEv2 stack, CHESTER will send the codec itself.
+In the Cloud v2, CHESTER will send the codec itself. You don't need to follow this step anymore.
 
 :::
 

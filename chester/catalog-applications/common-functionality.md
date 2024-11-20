@@ -10,8 +10,13 @@ The **catalog applications** share common functionality. For example the button 
 
 ## Network Mode Configuration
 
-Starting from firmware **v2.3.0** the catalog applications are built with NB-IoT/LTE and LoRaWAN functionality in a single firmware. You need to set the mode
-not only for new devices but also **when you are upgrading older firmware**.
+Some catalog firmwares allows configuration to use NB-IoT/LTE or LoRaWAN network. This firmware after power-up is not sending data, the **LED is blinking yellow** and you need to configure correct radio mode.
+
+This `app mode` configuration is needed currently for these catalog applications:
+
+- [CHESTER Clime](chester-clime.md)
+- [CHESTER Current](chester-current.md)
+- [CHESTER Push](chester-push.md)
 
 The default functionality is that a device **does not use any radio** (mode `none`) and you need to set configuration parameter **mode**.
 
@@ -37,6 +42,8 @@ Applications define actions for the mainboard button. The actions are chosen bas
 
 When **CHESTER** is powered on, the LED will be lit red until the application is initialized. Then **CHESTER** will blink the green LED every five seconds to indicate the app is running.
 
+If the **LED is blinking yellow**, you need to configure [which radio to use](#network-mode-configuration).
+
 ## Default Configuration
 
 This is the default configuration (printed using the `app config show` command):
@@ -46,14 +53,6 @@ app config interval-sample 60
 app config interval-aggreg 300
 app config interval-report 1800
 ```
-
-:::caution
-
-CHESTER sends in default the configuration about 500 bytes of data. If you increase the report interval too much without increasing also aggregation interval,
-the data buffer might be bigger than the UDP MTU and the packet will not be sent. Device then appears like it is not sending or sends only a fraction of packets.
-
-:::
-
 
 You can change configuration using the `app config` command, followed by `config save`. Example:
 
@@ -65,15 +64,8 @@ config save
 
 This will apply the changes and restart the application. After the restart, you can verify the settings changed using the `app config show` command.
 
-## Report Interval Jitter
-
-The periodic sending of data with `interval-report` has intentional jitter. This is used in case lot of CHESTERs are placed near each other, so they don't transmit at the same time if they have set the same interval. This jitter is random in the range of ±20 % of `interval-report`.
-
-For example, if `interval-report` is set to 100 seconds, you can receive periodic data where two messages have a time difference from 80 (-20%) to 120 (+20%) seconds.
-
-In applications where there are multiple aggregated values, this jitter has a side-effect that sometimes you can see fewer or more aggregated values than expected. The missing values are not lost, they will be sent correctly in the next message.
-
-This jitter is not applied to **events** like button presses or input changes. They report immediately.
+You might also change configuration remotely over HARDWARIO Cloud using [**Config downlink command**](../../cloud/cloud-v2/downlink#config).
+In cloud you don't send the `config save` command.
 
 ## Shell Commands
 
@@ -109,6 +101,17 @@ Available commands:
   send     :Send data immediately.
   therm    :Thermometer commands.
 ```
+
+## Report Interval Jitter
+
+The periodic sending of data with `interval-report` has intentional jitter. This is used in case lot of CHESTERs are placed near each other, so they don't transmit at the same time if they have set the same interval. This jitter is random in the range of ±20 % of `interval-report`.
+
+For example, if `interval-report` is set to 100 seconds, you can receive periodic data where two messages have a time difference from 80 (-20%) to 120 (+20%) seconds.
+
+In applications where there are multiple aggregated values, this jitter has a side-effect that sometimes you can see fewer or more aggregated values than expected. The missing values are not lost, they will be sent correctly in the next message.
+
+This jitter is not applied to **events** like button presses or input changes. They report immediately.
+
 
 ## Configuration backup v1.x.x → v2.x.x {#configuration-backup}
 

@@ -24,6 +24,8 @@ You can send JSON commands that the device will decode and your code will receiv
 
 You can configure the device the same way as you configure it over BLE or J-Link RTT. Just send for example `app config interval-report 600` command and CHESTER will apply the new configuration when it sends an uplink packet or polls for the new data.
 
+In cloud, don't type the `config save` command.
+
 ## Shell Commands
 
 In the messages or device detail, you can click on the **shell** icon and the shell console will open.
