@@ -41,6 +41,16 @@ const config = {
     [
       '@docusaurus/plugin-content-docs',
       ({
+        id: 'fiber',
+        path: 'fiber',
+        routeBasePath: 'fiber',
+        sidebarPath: require.resolve('./sidebars-fiber.js'),
+        editUrl: 'https://github.com/hardwario/docs/edit/main'
+      }),
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      ({
         id: 'ember',
         path: 'ember',
         routeBasePath: 'ember',
@@ -96,6 +106,12 @@ const config = {
             label: 'CHESTER',
             position: 'left',
             activeBaseRegex: `/chester/`,
+          },
+          {
+            to: '/fiber/',
+            label: 'FIBER',
+            position: 'left',
+            activeBaseRegex: `/fiber/`,
           },
           {
             to: '/ember/',
