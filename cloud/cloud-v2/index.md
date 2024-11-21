@@ -42,3 +42,7 @@ You can have multiple tags assigned to a device.
 ### Labels
 
 Labels are key-value information you can put on every device. Labels are also passed to the callback, so your callback can react to specific labels on that device.
+
+## Naming Conventions
+
+TBD
