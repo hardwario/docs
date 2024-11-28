@@ -52,8 +52,11 @@ postgresql
    \q
    ```
 
-> [!WARNING]
-> Run the following SQL commands **one by one** in the PostgreSQL CLI.
+  :::warning
+  
+  Run the following SQL commands **one by one** in the PostgreSQL CLI.
+  
+  :::
 
 ### Add ChirpStack Repository
 
@@ -148,8 +151,11 @@ Ensure `127.0.0.1` is mapped to localhost:
 sudo cat /etc/hosts
 ```
 
-> [!WARNING]
-> If missing, add the following line to file `/etc/hosts`:
+:::warning
+
+If missing, add the following line to file `/etc/hosts`:
+
+:::
 
 ```bash
 echo "127.0.0.1 localhost" | sudo tee -a /etc/hosts
@@ -193,12 +199,15 @@ sudo journalctl -u chirpstack-gateway-bridge -f
    sudo netstat -tuln | grep 8080
    ```
 
-> [!NOTE]
-> If the output shows that port 8080 is listening, it is ready to accept connections.
+  :::note
+  
+  If the output shows that port 8080 is listening, it is ready to accept connections.
+  
+  :::
 
 3. Log in using the default credentials:
 
-   Username: `admin` \
+   Username: `admin`  
    Password: `admin`
 
 ### Verify LoRaWAN Gateway Connection
