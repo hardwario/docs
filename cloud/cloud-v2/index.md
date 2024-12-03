@@ -45,4 +45,7 @@ Labels are key-value information you can put on every device. Labels are also pa
 
 ## Naming Conventions
 
-TBD
+- Only lowercase letters (a-z), numbers (0-9), and hyphens (-) are allowed.
+- The name must be at least 3 characters long.
+- The name cannot start with a number.
+- The name cannot begin or end with a hyphen (-).
