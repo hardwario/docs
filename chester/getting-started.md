@@ -6,18 +6,24 @@ import Image from '@theme/IdealImage';
 
 Thank you for choosing our CHESTER device. Here are the steps to get started and see your data in HARDWARIO Cloud.
 
-Current devices are shipped with the firmware that uses our more advanced **Cloud v2**. You can also check the firmware version you use with mobile [HARDWARIO Manager](platform-connectivity/hardwario-manager.md#show-information) or computer [HARDWARIO Monitor](platform-connectivity/hardwario-monitor.md), and if the firmware is **v3.0.0 or higher**, you have [Cloud v2](#cloud-v2) communication. Otherwise, jump to the [Cloud v1](#cloud-v1) chapter.
+You might also download the [**CHESTER Manual (EN/CZ)**](https://drive.google.com/drive/folders/1pFwF87Mc1c_9w0otSzTuk2yR6CwalqVB?usp=drive_link), which contains more details in a PDF file.
 
 ## Cloud v2
 
 ### Create an Account
 
 If you don't have an account:
-- Go to [https://prod.hardwario.cloud/](https://prod.hardwario.cloud/)
+- Go to [https://hardwario.cloud/](https://hardwario.cloud/)
 - Click **SIGN UP**
 - Create an account with **email/password**, **Google** or **Microsoft** account
+- When using **email/password**, check your inbox for validation email before first log-in
 
-### Add a Device to the Cloud
+### Create a new Space
+
+- In **SPACES** click the **NEW SPACE** in the top right corner.
+- Create a new space for your device. You cannot use
+
+### Add a Device to the Space
 
 - Select the **SPACE** where you would like to add a device
 - Click on the **DEVICES** in the left menu and choose [+NEW DEVICE](../cloud/cloud-v2/devices) in the top right corner
@@ -41,7 +47,7 @@ Watch the CHESTER [LED Behaviour](catalog-applications/common-functionality.md#l
 
 Now, when you open **DEVICES** and click on the **chat icon** on your device, you will see messages from your device.
 
-Now, please follow [**Cloud v2**](../cloud/cloud-v2) documentation to assign your device and a connector a tag, then you can resend the device's data to your cloud/backend, send downlink commands, use a remote shell, FOTA and other functionalities.
+Now, please follow [Cloud v2](../cloud/cloud-v2) documentation to assign your device and a connector a tag, then you can resend the device's data to your cloud/backend, send downlink commands, use a remote shell, FOTA and other functionalities.
 
 In **USERS**, you might also invite your co-workers and assign them a role **user** (read only) or role **admin**, which can change anything.
 
@@ -63,4 +69,4 @@ In the case of using your own SIM card, after changing **PLMN** and **APN** you 
 
 ## Cloud v1
 
-In [HARDWARIO Cloud v1](https://hardwario.cloud/), we need to make accounts manually. So, if you have a CHESTER device and don't already have access to the cloud, please contact your salesperson from HARDWARIO or write to ask@hardwario.com. Please send us the HSN (HARDWARIO Serial Nuber) of the device(s) or HEO (HARDWARIO Order code) together with the email(s) for which we create an account.
+In [HARDWARIO Cloud v1](https://legacy.hardwario.cloud/), we need to make accounts manually. So, if you have a CHESTER device and don't already have access to the cloud, please contact your salesperson from HARDWARIO or write to ask@hardwario.com. Please send us the HSN (HARDWARIO Serial Nuber) of the device(s) or HEO (HARDWARIO Order code) together with the email(s) for which we create an account.

@@ -6,18 +6,41 @@ import Image from '@theme/IdealImage';
 
 # How to: CBOR
 
-**CHESTER** uses [**CBOR**](https://cbor.io/) to encode and decode transmitted data. Thanks to **CBOR**, you can describe how the transmitted data will look like using the **YAML** file, then in your C code, you use the keys from this **YAML** file. Finally, you upload the same **YAML** file to the **HARDWARIO Cloud**, which will automatically decode the received data and convert them to **JSON**.
+**CHESTER** with Cloud v2 uses [**CBOR**](https://cbor.io/) to encode and decode transmitted data. Thanks to **CBOR**, you can describe how the transmitted data will look like using the **YAML** file, then in your C code, you use the keys from this **YAML** file.
+
+In the initial session messages, Cloud sends codec hash in the **session down** message. CHESTER compares the hash with its own codec hash and if needed, it uploads decoder with **decoder up** message and optionally uploads encoder in **encoder up** message.
 
 To use **CBOR** with **CHESTER** you need to:
 
 - Create a `codec\cbor-decoder.yaml` file in your application folder that describes the JSON attributes.
-- Upload the YAML file to the **HARDWARIO Cloud** using `hardwario cloud` [CLI tool](../developer-tools/command-line-tools.md#cloud-codec-commands).
-- Header file `msg_key.h` is automatically generated when `west build` is called.
+- Optionally create a `codec\cbor-encoder.yaml` file for downlink commands (see CHESTER Control code)
+- Header file `src/app_codec.h` is automatically generated when `west build` is called.
 - Use these definitions in `app_cbor.c` and add the needed data.
+
+YAML file have a header, then in `schema` you define a strictly hiearchical structure.
+
+In `src/app_codec.h` there are generated #defines with names like `CODEC_KEY_E_` where `E` stands for Encoder (viewed from CHESTER perspective).
+
+In you inherit items to deeper structure, then in header file you will see `__` double underscore.
+For example `CODEC_KEY_E_NETWORK__MESSAGE__VERSION` for YAML example below.
+
+```
+version: 2
+type: decoder
+name: com.hardwario.chester.app.clime
+schema:
+  - message:
+      - version:
+      - sequence:
+      - timestamp:
+...
+```
 
 :::info
 
-You can see more practical examples in CHESTER SDK in the catalog applications `chester/applications/*` folder or in the `chester/samples/lte_cbor` sample.
+You can see more practical examples in CHESTER SDK in the catalog applications `chester/applications/*` folder.
+
+Naming `cbor-decoder.yaml` and `cbor-encoder.yaml` is took from the Cloud perspective. So CHESTER is encoding data using **decoder** file because cloud is using this YAML file for decoding.
 
 :::
 
@@ -33,25 +56,25 @@ In the **YAML** you define the name of the keys that will later be used in decod
 
 Modificators are:
 
-- `add`
-- `sub`
-- `mul`
-- `div`
-- `fpp` - floating point decimal places in JSON
-- `key` - rename the **JSON** key
+- `$add`
+- `$sub`
+- `$mul`
+- `$div`
+- `$fpp` - floating point decimal places in JSON
+- `$key` - rename the **JSON** key
 
 The example below creates a key with name `temperature`. In **CHESTER** you need to multiply value by 100, then in **HARDWARIO Cloud** it is automatically divided by 100, and in the final **JSON**, the number has two decimal places.
 
 ```yaml
 - temperature:
-  - div: 100
-  - fpp: 2
+  - $div: 100
+  - $fpp: 2
 ```
 
 The **CHESTER** C code will look like this:
 
 ```c
-zcbor_uint32_put(zs, MSG_KEY_TEMPERATURE);
+zcbor_uint32_put(zs, CODEC_KEY_E_TEMPERATURE);
 zcbor_int32_put(zs, g_app_data.therm_temperature * 100.f);
 ```
 
@@ -67,7 +90,7 @@ Define string values and send them efficiently as an integer.
 
 ```yaml
 - backup_state:
-  - enum:
+  - $enum:
     - inactive
     - active
 ```
@@ -75,7 +98,7 @@ Define string values and send them efficiently as an integer.
 The **CHESTER** C code will look like this:
 
 ```c
-zcbor_uint32_put(zs, MSG_KEY_BACKUP_STATE);
+zcbor_uint32_put(zs, CODEC_KEY_E_BACKUP_STATE);
 zcbor_uint32_put(zs, g_app_data.backup.line_present ? 1 : 0);
 ```
 
@@ -91,7 +114,7 @@ Output **JSON** will be:
 
 ```yaml
 - measurements_val:
-  - tsp:
+  - $tsp:
     - avg:
     - mdn:
 ```
@@ -99,7 +122,7 @@ Output **JSON** will be:
 The **CHESTER** C code will look like this:
 
 ```c
-zcbor_uint32_put(zs, MSG_KEY_MEASUREMENTS_VAL);
+zcbor_uint32_put(zs, CODEC_KEY_E_MEASUREMENTS_VAL);
 {
   zcbor_list_start_encode(zs, ZCBOR_VALUE_IS_INDEFINITE_LENGTH);
 
@@ -144,10 +167,10 @@ This code also shows how you can combine modificators inside the TSO.
 
 ```yaml
 - trigger_events:
-  - key: "events"
-  - tso:
+  - $key: "events"
+  - $tso:
     - type:
-      - enum:
+      - $enum:
         - deactivated
         - activated
 ```
@@ -157,7 +180,7 @@ The **CHESTER** C code will look like this:
 ```c
 int64_t timestamp_abs = g_app_data.trigger.events[0].timestamp;
 
-zcbor_uint32_put(zs, MSG_KEY_TRIGGER_EVENTS);
+zcbor_uint32_put(zs, CODEC_KEY_E_TRIGGER_EVENTS);
 {
   zcbor_list_start_encode(zs, ZCBOR_VALUE_IS_INDEFINITE_LENGTH);
 

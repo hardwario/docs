@@ -10,13 +10,17 @@ This article describes the core functionality, hardware description, and example
 
 :::caution
 
-Some of the basics are not provided, as they are common for all **CHESTER** catalog applications. For example, see the article [**Platform Management**](../category/platform-connectivity) on how to work with the interactive console.
+Some of the basics are not provided, as they are common for all CHESTER catalog applications. Please see:
+
+- [**Getting started**](../getting-started.md) on how to connect device to Cloud.
+- [**Common functionality**](common-functionality.md) to know how LED, button and network configuration works.
+- [**Platform Management**](../category/platform-connectivity) on how to work with the interactive console.
 
 :::
 
 ## Application Overview
 
-**CHESTER Control** is based on [**CHESTER Input**](chester-input.md), but adds dynamic input type reconfiguration and remote control functionality of 4 transistor outputs.
+**CHESTER Control** is based on [**CHESTER Input**](chester-input.md) (see for more details), but adds dynamic input type reconfiguration and remote control functionality of 4 transistor outputs.
 
 Because **CHESTER Control** uses [**CHESTER-X0**](../extension-modules/chester-x0.md) input/output module, it is possible to change input behavior just by the configuration. This way you can assign any of four inputs to one of the functionalities:
 

@@ -42,3 +42,10 @@ You can have multiple tags assigned to a device.
 ### Labels
 
 Labels are key-value information you can put on every device. Labels are also passed to the callback, so your callback can react to specific labels on that device.
+
+## Naming Conventions
+
+- Only lowercase letters (a-z), numbers (0-9), and hyphens (-) are allowed.
+- The name must be at least 3 characters long.
+- The name cannot start with a number.
+- The name cannot begin or end with a hyphen (-).
