@@ -6,7 +6,7 @@ import Image from '@theme/IdealImage';
 
 Thank you for choosing our CHESTER device. Here are the steps to get started and see your data in HARDWARIO Cloud.
 
-Current devices are shipped with the firmware that uses our more advanced **Cloud v2**. You can also check the firmware version you use with mobile [HARDWARIO Manager](platform-connectivity/hardwario-manager.md#show-information) or computer [HARDWARIO Monitor](platform-connectivity/hardwario-monitor.md), and if the firmware is **v3.0.0 or higher**, you have [Cloud v2](#cloud-v2) communication. Otherwise, jump to the [Cloud v1](#cloud-v1) chapter.
+You might also download the [**CHESTER Manual (EN/CZ)**](https://drive.google.com/drive/folders/1pFwF87Mc1c_9w0otSzTuk2yR6CwalqVB?usp=drive_link), which contains more details in a PDF file.
 
 ## Cloud v2
 
