@@ -16,7 +16,7 @@ For real-time delivery of messages from the devices, we strongly recommend using
 
 Please create an API key with appropriate permissions and replace these fields:
 
-* Field `<api-key>,`
+* Field `<api-key>`
 * Field `<space-id>`
 
 ```
@@ -30,7 +30,7 @@ curl -X GET \
 
 Please create an API key with appropriate permissions and replace these fields:
 
-* Field `<api-key>,`
+* Field `<api-key>`
 * Field `<space-id>`
 * Field `<device-id>`
 * Field `<offset>` (UUID of the last read message; optional/irrelevant for the first listing)
