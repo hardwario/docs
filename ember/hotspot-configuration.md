@@ -32,7 +32,7 @@ The initial **EMBER Hotspot** has the following login credentials:
 
 * Username: `admin`
 
-* Password: `hardwario`
+* Password: `ember`
 
 The management is available through these services:
 
