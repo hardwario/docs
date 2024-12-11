@@ -1,6 +1,6 @@
 ---
 slug: api
-title: HARDWARIO Cloud v2 REST API
+title: REST API
 ---
 import Image from '@theme/IdealImage';
 
@@ -23,7 +23,7 @@ Please create an API key with appropriate permissions and replace these fields:
 curl -X GET \
   -H 'X-Api-Key: <api-key>' \
   -H 'Accept: application/json' \
-  'https://api.hardwario.cloud/v2/spaces/<space-id>/devices'  
+  'https://api.hardwario.cloud/v2/spaces/<space-id>/devices'
 ```
 
 ### List messages for a particular device with cURL
