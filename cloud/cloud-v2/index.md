@@ -49,3 +49,5 @@ Labels are key-value information you can put on every device. Labels are also pa
 - The name must be at least 3 characters long.
 - The name cannot start with a number.
 - The name cannot begin or end with a hyphen (-).
+
+This is the regular expression rule `/^[a-z][a-z0-9-]+[a-z0-9]$/`
