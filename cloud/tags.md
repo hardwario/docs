@@ -11,4 +11,4 @@ Tags are also crucial with **Connectors**. The same tag connects device(s) and c
 
 Tags are defined by its **name** and **color**.
 
-For proper naming, follow [**Naming Conventions**](index.md#naming-conventions).
+For proper naming, follow [**Naming Conventions**](./index.md#naming-conventions).
