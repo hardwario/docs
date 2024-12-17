@@ -1,4 +1,5 @@
 ---
+slug: /
 title: Cloud v2
 ---
 import Image from '@theme/IdealImage';
