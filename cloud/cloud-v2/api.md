@@ -33,7 +33,13 @@ Please create an API key with appropriate permissions and replace these fields:
 * Field `<api-key>`
 * Field `<space-id>`
 * Field `<device-id>`
-* Field `<offset>` (UUID of the last read message; optional/irrelevant for the first listing)
+* Field `<after>` is optional, default value is set only to **24 hrs ago**.
+* Field `<limit>` is optional, default value is set only to **20 messages**.
+* Field `<offset>` is optional (UUID of the last read message; optional/irrelevant for the first listing)
+
+:::caution
+If you see messages from the device in the HARDWARIO Cloud web, but not over API, please check parameters `<after>`  and `<limit>` mentioned above. They have different default values than filters in the web interface.
+:::
 
 ```
 curl -X GET \
