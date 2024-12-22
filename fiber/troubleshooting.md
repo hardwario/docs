@@ -8,7 +8,12 @@ import Image from '@theme/IdealImage';
 
 ## 1. Reboot the system using MQTT broker
 - **/system/reboot**: Initiates a system reboot.
-> You can read [**more about rebooting a system using MQTT here.**](./mqtt-broker)
+
+:::tip
+
+You can read [**more about rebooting a system using MQTT here.**](./mqtt-broker)
+
+:::
 
 ## 2. Restart the Device
 
@@ -28,6 +33,7 @@ If restarting the device via the button does not resolve the issue, please check
 ## 4. Reinstall image and run the FIBER
 
 - Follow the installation instructions outlined in section [**FIBER Installation**](./installation-setup) of this documentation.
+
 - Log in to the target
 
   ```sh
