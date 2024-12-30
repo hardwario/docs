@@ -8,7 +8,7 @@ const sidebars = {
       'configuration',
       'mqtt-broker',
       'project-structure',
-      'troubleshooting',
+      'troubleshouting',
     ],
   };
   
