@@ -8,15 +8,13 @@ import Image from '@theme/IdealImage';
 
 This article describes the core functionality, hardware description, default configuration, example JSON message, and channel calibration of the catalog application **CHESTER Current**.
 
-:::danger
-
-When upgrading firmware from **v1.x.x** to version **v2.0.0 and newer** - it is necessary to [**backup configuration**](common-functionality.md#configuration-backup). In the case of using **CHESTER Current** also calibration data.
-
-:::
-
 :::caution
 
-Some of the basics are not provided, as they are common for all CHESTER catalog applications. For example, see the article [**Platform Management**](../category/platform-connectivity) on how to work with the interactive console.
+Some of the basics are not provided, as they are common for all CHESTER catalog applications. Please see:
+
+- [**Getting started**](../getting-started.md) on how to connect device to Cloud.
+- [**Common functionality**](common-functionality.md) to know how LED, button and network configuration works.
+- [**Platform Management**](../category/platform-connectivity) on how to work with the interactive console.
 
 :::
 
@@ -36,7 +34,7 @@ Apart from the current measurements, the device can be configured (on demand) to
 
 **CHESTER Current** can be ordered in one of these variants:
 
-### CHESTER Current
+### CHESTER Current {#chester-current}
 
 The catalog **CHESTER Current** hardware consists of the following ordering codes:
 

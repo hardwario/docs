@@ -25,7 +25,7 @@ Each product lists available parts, i.e. which parts are standard and usually im
 * `A` = Battery holder size "AA" (2x)
 * `B` = Battery holder size "C" (1x)
 * `C` = Cellular (NB-IoT + LTE-M modem)
-* `D` = Developer variant (without supercapacitors and charger, with sprint terminals)
+* `D` = Developer variant (without supercapacitors and charger, with spring terminals for X modules)
 * `E` = External power source variant (without supercapacitors and charger)
 * `G` = GNSS (satellite positioning module GPS/Galileo/GLONASS/BeiDou)
 * `L` = LoRaWAN (LoRaWAN modem)

@@ -4,6 +4,7 @@
 const sidebars = {
   docs: [
     'introduction',
+    'getting-started',
     {
       type: 'category',
       label: 'Platform Connectivity',
@@ -32,13 +33,13 @@ const sidebars = {
         'catalog-applications/common-functionality',
         'catalog-applications/chester-clime',
         'catalog-applications/chester-current',
-        'catalog-applications/chester-counter',
-        'catalog-applications/chester-input',
+        'catalog-applications/chester-control',
         'catalog-applications/chester-push',
         'catalog-applications/chester-meteo',
-        'catalog-applications/chester-range',
         'catalog-applications/chester-wm-bus',
-        'catalog-applications/chester-control'
+        'catalog-applications/chester-range',
+        'catalog-applications/chester-input',
+        'catalog-applications/chester-counter'
       ],
     },
     {
@@ -62,6 +63,9 @@ const sidebars = {
         'extension-modules/chester-x9',
         'extension-modules/chester-x10',
         'extension-modules/chester-k1',
+        'extension-modules/chester-c1',
+        'extension-modules/chester-c5',
+        'extension-modules/chester-z1',
       ],
     },
     {
@@ -72,8 +76,8 @@ const sidebars = {
       },
       collapsed: true,
       items: [
-        'hardware-description/chester-m',
         'hardware-description/chester-u1-module',
+        'hardware-description/chester-m',
         'hardware-description/enclosures',
         'hardware-description/i2c-address-space',
       ],
@@ -129,6 +133,7 @@ const sidebars = {
         'firmware-sdk/how-to-kconfig',
         'firmware-sdk/how-to-cbor',
         'firmware-sdk/how-to-lte-v2',
+        'firmware-sdk/how-to-project-generator',
         {
           type: 'link',
           label: 'Git Repository',

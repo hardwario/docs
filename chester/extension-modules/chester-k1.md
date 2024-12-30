@@ -6,6 +6,17 @@ import Image from '@theme/IdealImage';
 
 # CHESTER-K1
 
+<div class="container">
+  <div class="row">
+    <div class="col col--8">
+      <div><Image img={require('./chester-k1-top.png')} /></div>
+    </div>
+    <div class="col col--10">
+    </div>
+  </div>
+</div>
+<br />
+
 ## CHESTER Pin Configuration Diagram
 
 <Image img={require('./tb-chester-k1.png')} />

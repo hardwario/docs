@@ -10,9 +10,14 @@ This article describes the core functionality, hardware description, and example
 
 :::caution
 
-Some of the basics are not provided, as they are common for all **CHESTER** catalog applications. For example, see the article [**Platform Management**](../category/platform-connectivity) on how to work with the interactive console.
+Some of the basics are not provided, as they are common for all CHESTER catalog applications. Please see:
+
+- [**Getting started**](../getting-started.md) on how to connect device to Cloud.
+- [**Common functionality**](common-functionality.md) to know how LED, button and network configuration works.
+- [**Platform Management**](../category/platform-connectivity) on how to work with the interactive console.
 
 :::
+
 
 ## Application Overview
 
@@ -22,7 +27,7 @@ Some of the basics are not provided, as they are common for all **CHESTER** cata
 
 **CHESTER Range** can be ordered in one of these variants:
 
-### CHESTER Range
+### CHESTER Range {#chester-range}
 
 The catalog **CHESTER Range** hardware consists of the following ordering codes:
 

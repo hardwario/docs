@@ -46,3 +46,4 @@ storage:
 ```
 
 To modify the configuration file, you must access the FIBER device. Once you have access, navigate to the **config** directory and edit the **config.yaml** file using a text editor, command line tools, or through Docker.
+

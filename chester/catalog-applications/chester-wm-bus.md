@@ -10,9 +10,14 @@ import Image from '@theme/IdealImage';
 
 :::caution
 
-Some of the basics are not provided, as they are common for all **CHESTER** catalog applications. For example, see the article [**Platform Management**](../category/platform-connectivity) on how to work with the interactive console.
+Some of the basics are not provided, as they are common for all CHESTER catalog applications. Please see:
+
+- [**Getting started**](../getting-started.md) on how to connect device to Cloud.
+- [**Common functionality**](common-functionality.md) to know how LED, button and network configuration works.
+- [**Platform Management**](../category/platform-connectivity) on how to work with the interactive console.
 
 :::
+
 
 ## Application Overview
 
@@ -176,6 +181,84 @@ Specifies the day of the month when scanning 1-28 during the monthly scan
 
 **dual** - the scan takes place twice, each time with a different antenna. If all devices are not scanned in the first cycle with antenna 1, a second scan with the second antenna is started. Each scan takes a maximum of scan-timeout seconds. The maximum time when the wM-Bus receiver is active is equal to 2x `scan-timeout`.
 
+## Example Configurations
+
+When configuring over BLE, you need to apply the configuraiton changes with `config save` command.
+
+When configuring over [Cloud config downlink commands](../../cloud/cloud-v2/downlink#config), don't add `config save` command, it is applied automatically. Othwerwise the configuration is not
+
+### Interval and wM-BUS Packets Every 2 Minutes
+
+wM-BUS devices send a packet every 2 minutes.
+We want to use only one antenna.
+We want to send data to the cloud every 2 hours.
+All devices are year-round, transmitting (the same) in summer and winter.
+
+```
+app config scan-mode interval
+app config scan-interval 7200   (measurement every 2 hours = 7200 seconds)
+app config scan-timeout 130     (sensors send every 2 minutes = 120 seconds + reserve)
+app config scan-ant single      (only one antenna, we scan for 130 seconds)
+app config address count 2
+app config address add 111111
+app config address add 222222
+```
+
+### Interval and wM-BUS Packets Every 2 minutes, Two Antennas
+
+wM-BUS devices send a packet every 2 minutes.
+We want to use both antennas for better reception, each oriented differently to change polarity.
+We want to send data to the cloud every 2 hours.
+All devices are year-round, transmitting (the same) in summer and winter.
+
+```
+app config scan-mode interval
+app config scan-interval 7200   (scanning every 2 hours = 7200 seconds)
+app config scan-timeout 130     (sensors send every 2 minutes = 120 seconds + reserve)
+app config scan-ant dual        (both antennas, we scan up to 130 seconds with one antenna and another up to 130 seconds with the second antenna, effectively scanning up to 260 seconds)
+app config address count 2
+app config address add 111111
+app config address add 222222
+```
+
+### Interval and wM-BUS Packets Sending Every Hour
+
+wM-BUS devices send a packet every 1 hour.
+We want to use only one antenna.
+We want to send data to the cloud every hour.
+All devices are year-round, transmitting (the same) in summer and winter.
+
+**This configuration is not for battery variant, because it scans constantly**
+
+```
+app config scan-mode interval
+app config scan-interval 3620   (scanning every hour = 3600 seconds + 20 seconds reserve for sending)
+app config scan-timeout 3600    (scanning up to 3600 seconds)
+app config scan-ant single      (one antenna, we scan up to 3580 seconds)
+app config address count 2
+app config address add 111111
+app config address add 222222
+```
+
+### Daily scanning
+
+wM-BUS devices send a packet every 1 hour.
+We want to use only one antenna.
+We want to send data to the cloud once a day.
+All devices are year-round, transmitting (the same) in summer and winter.
+
+**This configuration is not optimal for battery variant**
+
+```
+app config scan-mode daily      (daily scanning)
+app config scan-hour 12         (always at 12 o'clock UTC (for CET, conversion is needed))
+app config scan-timeout 3600    (scanning up to 3600 seconds)
+app config scan-ant single      (one antenna, we scan up to 3600 seconds)
+app config address count 2
+app config address add 111111
+app config address add 222222
+```
+
 ## Firmware
 
 The latest firmware is available in Catalog Applications [Firmware chapter](index.md#application-firmware).
@@ -225,7 +308,7 @@ Each JSON cloud message contains up to 20 wM-Bus packets. If CHESTER is configur
     },
     "wmbus": {
         "cycle": 1,
-        "devices": 1,
+        "devices": 2,
         "packets": [
             {
                 "data": "32446850003076816980a0919f2b06007007000061087c08000000000000000000000000010101020100000000000000000000",
@@ -237,8 +320,8 @@ Each JSON cloud message contains up to 20 wM-Bus packets. If CHESTER is configur
             }
         ],
         "part": 0,
-        "received": 1,
-        "scan_time": 2
+        "received": 2,
+        "scan_time": 17
     }
 }
 ```

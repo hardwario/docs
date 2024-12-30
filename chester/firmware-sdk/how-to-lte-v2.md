@@ -14,6 +14,8 @@ Downlink messages or configuration messages can be sent by API or in the HARDWAR
 
 Configuration messages `app config ...` can be send to any device using LTE v2. There is no need to add anything to your application, the `ctr_cloud` subsystem takes care of all.
 
+Currently all the catalog applications in CHESTER SDK `applications/*` folder are already migrated to Cloud v2 and you can take an inspiration.
+
 ## CHESTER LTE v2 Firmware Examples
 
 ### Demo
@@ -22,7 +24,7 @@ Simple example where you need just a CHESTER-M mainboard and you can uplink data
 
 After you [flash LTE modem](#flash-lte-modem-firmware) to `v1.7.0` or higer, you can flash APP/BLE MCU with CHESTER Demo with [HARDWARIO CLI](../developer-tools/command-line-tools.md) by typing:
 
-`hardwario chester app flash af637aa1c5b842c18f9b10b070cb0292`
+`hardwario chester app flash f702b81a61a54cd984b4ee0e594e65df`
 
 https://github.com/hardwario/chester-sdk/tree/main/applications/demo
 
@@ -42,6 +44,10 @@ https://github.com/hardwario/chester-sdk/tree/main/applications/control
 The project also contains [example scripts](https://github.com/hardwario/chester-sdk/tree/main/applications/control/codec) on how to send downlink configuration and messages with `curl`.
 
 CHESTER Control also contains configuration definitions through macros. So you define config parameters only in `app_config.h` file and settings, shell, and help commands are generated with macros.
+
+### Other Catalogue Apps
+
+Currently all the catalog applications in CHESTER SDK `applications/*` folder are already migrated to Cloud v2 and you can take an inspiration. Or use pre-built [**firmware**](../catalog-applications/catalog-applications#application-firmware-cloud-v2)
 
 ## Changes for LTE v2
 

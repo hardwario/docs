@@ -5,7 +5,9 @@ const sidebars = {
   docs: [
     'introduction',
     'hardware-description',
+    'initial-configuration',
     'hotspot-configuration',
+    'chirpstack-v4-installation',
     'cloud-service',
     'ordering-codes',
   ],
