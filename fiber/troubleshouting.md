@@ -4,38 +4,53 @@ title: Fiber Troubleshooting
 ---
 import Image from '@theme/IdealImage';
 
-
 # Troubleshooting
 
-## 1. Reboot the system using MQTT broker
-- **/system/reboot**: Initiates a system reboot.
+## 1. Reboot the system
+
+- **sudo reboot**: Initiates a system reboot using the command line.
+
+- **/system/reboot**: Initiates a system reboot using MQTT broker
+
+  :::tip
+
+  You can read [**more about rebooting a system using MQTT here.**](./mqtt-broker)
+
+  :::
 
 ## 2. Restart the Device
 
-- Press the reset button on the back of the Fiber
-- Wait up to a minute.
+1. Press the reset button on the back of the **FIBER**
+
+2. Wait up to a minute.
 
 ## 3. Check Power Supply and Network Connectivity
 
 If restarting the device via the button does not resolve the issue, please check the power supply:
 
-- Ensure that the power adapter is securely plugged into both the Fiber device and the power outlet.
-- Check the network cables to ensure they are securely connected to the Fiber device and the router.
-- If everything is working, then disconnect power to the Fiber device by turning it off.
-- Wait for a few minutes.
-- Turn on the Fiber device again and allow it some time to fully boot up.
+1. Ensure that the power adapter is securely plugged into both the **FIBER** device and the power outlet.
 
-## 4. Reinstall image and run the Fiber
+2. Check the network cables to ensure they are securely connected to the **FIBER** device and the router.
 
-- Follow the installation instructions outlined in section **Installation and Setup** of this documentation.
-- Log in to the target
+3. If everything is working, then disconnect power to the **FIBER** device by turning it off.
 
-  ```sh
-  ssh root@[ip address]
-  ```
+4. Wait for a few minutes.
 
-- Run the installation script using the following command:
+5. Turn on the **FIBER** device again and allow it some time to fully boot up.
 
-  ```sh
-  /app/scripts/install.sh
-  ```
+
+## 4. Reinstall image and run the FIBER
+
+1. Follow the installation instructions outlined in section [**FIBER Installation**](./installation-setup) of this documentation.
+
+2. Log in to the target
+
+    ```bash
+    ssh root@[ip address]
+    ```
+
+3.  Run the installation script using the following command:
+
+    ```bash
+    /app/scripts/install.sh
+    ```

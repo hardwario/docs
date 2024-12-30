@@ -69,6 +69,16 @@ const config = {
       }),
     ],
     [
+      '@docusaurus/plugin-content-docs',
+      ({
+        id: 'fiber',
+        path: 'fiber',
+        routeBasePath: 'fiber',
+        sidebarPath: require.resolve('./sidebars-fiber.js'),
+        editUrl: 'hhttps://github.com/hardwario/docs/edit/main',
+      }),
+    ],
+    [
       '@docusaurus/plugin-ideal-image',
       {
         quality: 70,
@@ -114,6 +124,12 @@ const config = {
             label: 'CLOUD',
             position: 'left',
             activeBaseRegex: `/cloud/`,
+          },
+          {
+            to: 'fiber/',
+            label: 'FIBER',
+            position: 'left',
+            activeBaseRegex: `/fiber/`,
           },
           {
             href: 'https://github.com/hardwario/docs',
