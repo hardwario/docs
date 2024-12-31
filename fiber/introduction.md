@@ -12,10 +12,13 @@ import Image from '@theme/IdealImage';
 ## Key Highlights
 
 ### Advanced Temperature Monitoring:
+
 **FIBER** boasts the capability to interface with up to eight temperature sensors concurrently. Through meticulous data processing, users gain access to comprehensive metrics including averages, medians, and extrema, facilitating nuanced environmental analysis.
 
 ### Versatile Connectivity:
+
 Seamlessly integrating into diverse network architectures, **FIBER** supports both **WiFi** and **Ethernet** connectivity options. This versatility ensures effortless deployment and integration within existing infrastructures, delivering a robust and adaptable solution.
 
 ### Intuitive User Interface:
+
 Driven by user-centric design principles, **FIBER** features an intuitive interface that grants users direct access to critical temperature data. Displayed on an screen adorned with LED indicators, information is presented in a clear and accessible manner, enabling swift decision-making.
