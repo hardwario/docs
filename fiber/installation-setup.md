@@ -80,7 +80,6 @@ If you are connecting **FIBER** to your network via **Ethernet**, follow these s
 
 If you utilize a **static IP** address for **FIBER** connections, follow these steps:
 
-
 1. Update Configuration File (system section)
 
     - Set `static_ip` to `True`.
