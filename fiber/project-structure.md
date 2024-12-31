@@ -14,7 +14,11 @@ The root directory of the project contains files and folders related to core asp
 
 This directory holds project configuration files, such as **config.yaml**, as well as files defining network settings.
 
-> For more information, see chapter [**Configuration File**](./configuration)
+:::tip
+
+For more information, see chapter [**Configuration File**](./configuration)
+
+:::
 
 ## 3. Source Code (fiber/)
 
@@ -56,29 +60,39 @@ This is the main directory of the project, containing the source code of the FIB
 
 > This module manages communication between the interface and system components, executing various operations based on incoming requests. Its functionality is driven by configuration variables, where **network interface** specifies the network interface used for communication. The system listens for interface requests via a queue manager, processing requests such as **setting indicator states and colors, retrieving MAC and IP addresses, system uptime, and rebooting the system**. It utilizes handlers to execute specific operations corresponding to each request type. Additionally, the module handles network interface initialization, ensuring availability for communication. This system-side module plays a pivotal role in facilitating seamless interaction between interface and system components within the FIBER application.
 
-## 4. Installation and Configuration Scripts (install/ and scripts/)
+## 4. Installation and Configuration Scripts
 
-These directories contain scripts for installing and configuring the project.
+**install/ & scripts/**
 
-## 5. Dependency and Configuration Files (pyproject.toml and poetry.lock)
+> These directories contain scripts for installing and configuring the project.
 
-These files are used for managing project dependencies with Poetry.
+## 5. Dependency and Configuration Files
 
-## 6. Tests (tests/)
+**pyproject.toml & poetry.lock**
 
-This directory contains tests for verifying the functionality of various project components.
+> These files are used for managing project dependencies with Poetry.
 
 # FIBER Architecture Diagram
-This diagram shows the operation of the software part of FIBER.
+
+This diagram shows the operation of the software part of **FIBER**.
 
 ![FIBER Architecture Diagram](architecture-diagram.png)
 - Sensors (**Sensor 1-8**) collect temperature data and send it at each iteration.
+
 - If a sensor is active, its data is forwarded to the broker (**Sensor Broker**) via the queue (**sensor broker queue**).
+
 - The data is filtered, and then the sensor broker sends it either to the MQTT broker (**MQTT Broker**) or directly to the database (**Database**).
+
 - Additionally, regardless of whether the sensor is active or not, data is sent to the system (**System**) for real-time display and visualization of the sensor's status (**Display Handler**).
+
 - The display handler updates the monitor (**Monitor**) with information such as port numbers, temperature, PoE power, and battery power. It also manages the indicators (**LEDs**) for each sensor: green indicates an active sensor, and red indicates an inactive sensor.
+
 - Users can interact with the monitor (**Monitor**) using buttons (**Buttons**) to adjust the brightness or to pause the display updates for 30 seconds.
+
 - Through MQTT, various information can also be requested and retrieved from the system network handler (**Network Handler**).
+
 - The network handler manages network settings and status, providing information such as MAC address, IP address, and uptime to the system. It also allows for the retrieval and modification of configuration files and the rebooting of FIBER.
+
 - The interface (**Interface**) handles external communications by managing requests from MQTT and sensors, and it forwards them to the system (**System**) for processing and response generation as necessary.
+
 - The interface (**Interface**) and the system (**System**) communicate and coordinate data and command flows via queues (**interface request, system response**). These queues ensure the necessary requests and responses are sent and received between different components of the program.

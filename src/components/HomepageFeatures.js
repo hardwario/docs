@@ -44,6 +44,19 @@ const FeatureList = [
     ),
   },
   {
+    title: 'FIBER',
+    subtitle: 'Sensor IoT Monitor',
+    link: '/fiber/',
+    src: '/img/fiber.png',
+    width: 300,
+    height: 200,
+    description: (
+      <>
+        FIBER is an IoT device for precise industrial temperature monitoring, offering seamless connectivity and intuitive interfaces.
+      </>
+    ),
+  },
+  {
     title: 'CLOUD',
     subtitle: 'Middleware IoT Service',
     link: '/cloud/',
