@@ -73,6 +73,7 @@ This is the main directory of the project, containing the source code of the FIB
 > These files are used for managing project dependencies with Poetry.
 
 # FIBER Architecture Diagram
+
 This diagram shows the operation of the software part of **FIBER**.
 
 ![FIBER Architecture Diagram](architecture-diagram.png)
