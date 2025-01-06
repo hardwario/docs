@@ -45,57 +45,77 @@ You can read [**more about the MQTT topics and how to use them**](https://www.hi
 
 |  Explanation            |    MQTT Topic                  |                        Response                        |
 | :---------------------- | :----------------------------: | :----------------------------------------------------: |
-| Get Device IP Address   | `fiber/{id}/system/ip/get`     | `"10.0.0.111"`  `"ok"`       |
-| Get Device MAC Address  | `fiber/{id}/system/mac/get`    | `"d1:1a:dd:11:1d:11"` `"ok"` |
-| Get Device Uptime       | `fiber/{id}/system/uptime/get` | `11111.11` `"ok"`            |
-| Request Device Reboot (payload-delay)   | `fiber/{id}/system/reboot`   | `{payload}` ` -> rebooting `           |
+| Get Device IP Address   | fiber/{id}/system/ip/get    | "10.0.0.111"  "ok"       |
+| Get Device MAC Address  | fiber/{id}/system/mac/get    | "d1:1a:dd:11:1d:11" "ok" |
+| Get Device Uptime       | fiber/{id}/system/uptime/get | 11111.11 "ok"            |
+| Request Device Reboot (payload-delay)   | fiber/{id}/system/reboot   | {payload}  -> rebooting            |
 
 ### Voltage
 
 |    Explanation   |      MQTT Topic         | Response  |
 | :-------------   | :---------------------: | :-------: |
-| Voltage          | `fiber/{id}/voltage/get`|  `{"battery_voltage": 0.0, "poe_voltage": 0.0}`|
+| Voltage          | fiber/{id}/voltage/get|  {"battery_voltage": 0.0, "poe_voltage": 0.0}|
 
 ### Config
 
 |  Explanation             |    MQTT Topic                  |                        Response                              |
 | :----------------------- | :----------------------------: | :----------------------------------------------------------: |
-| Get Current Configuration| `fiber/{id}/config/get`        | `{"version": 1, "system": {"interface": "end0,eth0", ... }}` `"ok"` |
+| Get Current Configuration| fiber/{id}/config/get        | {"version": 1, "system": {"interface": "end0,eth0", ... }} "ok" |
 
 |  Explanation |    MQTT Topic  |   Payload     |      Response |
 | :----------- | :------------: | :-----------: | :-----------: |
-|Set Configuration|`fiber/{id}/config/get`|`{"version": 2, "system": {"interface": "end0,eth0", ... }}`| `{"version": 2, "system": {"interface": "end0,eth0", ... }}` `"ok"`|
+|Set Configuration|fiber/{id}/config/get|{"version": 2, "system": {"interface": "end0,eth0", ... }}| {"version": 2, "system": {"interface": "end0,eth0", ... }} "ok"|
 
-# Mosquitto MQTT Broker Integration
+## Mosquitto MQTT Broker Integration
 
-#### Overview
+### Overview
 
 The integration of the Mosquitto MQTT broker into our product enhances its capabilities by providing a robust messaging infrastructure. Mosquitto facilitates the communication between different components of the system, enabling seamless data exchange and further system expansion.
 
-#### Usage
+### Pre-use
 
-When connected to **FIBER**, you can use the mosquitto-cli package to subscribe to MQTT topics and monitor incoming messages. Perform the following steps:
+When connected to **FIBER**, you can use the mosquitto-cli package to subscribe to MQTT topics and monitor incoming messages. Before using MQTT with **FIBER**, ensure that the **Mosquitto MQTT broker** is installed and running on your system.
 
-Ensure that the Mosquitto MQTT broker is installed and running on your system.
+  - Check Mosquitto Service Status:
 
-Use the following command to subscribe to all topics (#) and display incoming messages:
+    ```bash
+    sudo systemctl status mosquitto
+    ```
+  - Enable and Start Mosquitto: If the broker is not running, enable and start the service:
+  
+    ```bash
+    sudo systemctl enable mosquitto
+    sudo systemctl start mosquitto
+    ```
+
+### Subscribing to Topics
+
+To **monitor all incoming messages** from the **FIBER** system, use the following command:
+
+  ```bash
+  mosquitto_sub -t "#" -v
+  ```
+
+  This command subscribes to all topics (`#`) and displays incoming messages in real-time.
+  
+  **Example output**:
+
+  ```bash
+  fiber/{id}/beacon {"uptime": 11111.11, "ip_address": "10.0.0.111", "mac_address": "d1:1a:dd:11:1d:11"}
+
+  fiber/{id}/measurement {"5": {"28-00000dc9cd6b": [{"timestamp": 1717581574, "value": {"minimum": 22.5, "maximum": 25.19, "average": 23.4, "median": 22.5, "last": 25.11}, "sample_count": 3}]}}
+  ```
+
+### Publishing Messages
+
+To send commands to the **FIBER** system, use the mosquitto_pub command. To retrieve the IP address of the device:
 
 ```bash
-mosquitto_sub -t "#" -v
+mosquitto_pub -h localhost -t fiber/{id}/system/ip/get -m ""
 ```
 
-```bash
-fiber/2158512345/beacon {"uptime": 11111.11, "ip_address": "10.0.0.111", "mac_address": "d1:1a:dd:11:1d:11"}
-
-fiber/2158512345/measurement {"5": {"28-00000dc9cd6b": [{"timestamp": 1717581574, "value": {"minimum": 22.5, "maximum": 25.19, "average": 23.4, "median": 22.5, "last": 25.11}, "sample_count": 3}]}}
-```
-
-To retrieve information from the system via MQTT, you can use the following command:
+**Expected response**:
 
 ```bash
-mosquitto_pub -h localhost -t fiber/2158512345/system/ip/get -m ""
-```
-
-```bash
-fiber/2158512345/system/ip "10.0.0.111"
+fiber/{id}/system/ip "10.0.0.111"
 ```

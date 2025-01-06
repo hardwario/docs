@@ -51,6 +51,16 @@ const config = {
     [
       '@docusaurus/plugin-content-docs',
       ({
+        id: 'fiber',
+        path: 'fiber',
+        routeBasePath: 'fiber',
+        sidebarPath: require.resolve('./sidebars-fiber.js'),
+        editUrl: 'https://github.com/hardwario/docs/edit/main',
+      }),
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      ({
         id: 'tower',
         path: 'tower',
         routeBasePath: 'tower',
@@ -65,16 +75,6 @@ const config = {
         path: 'cloud',
         routeBasePath: 'cloud',
         sidebarPath: require.resolve('./sidebars-cloud.js'),
-        editUrl: 'https://github.com/hardwario/docs/edit/main',
-      }),
-    ],
-    [
-      '@docusaurus/plugin-content-docs',
-      ({
-        id: 'fiber',
-        path: 'fiber',
-        routeBasePath: 'fiber',
-        sidebarPath: require.resolve('./sidebars-fiber.js'),
         editUrl: 'https://github.com/hardwario/docs/edit/main',
       }),
     ],
@@ -114,6 +114,12 @@ const config = {
             activeBaseRegex: `/ember/`,
           },
           {
+            to: '/fiber/',
+            label: 'FIBER',
+            position: 'left',
+            activeBaseRegex: `/fiber/`,
+          },
+          {
             to: '/tower/',
             label: 'TOWER',
             position: 'left',
@@ -124,12 +130,6 @@ const config = {
             label: 'CLOUD',
             position: 'left',
             activeBaseRegex: `/cloud/`,
-          },
-          {
-            to: '/fiber/',
-            label: 'FIBER',
-            position: 'left',
-            activeBaseRegex: `/fiber/`,
           },
           {
             href: 'https://github.com/hardwario/docs',

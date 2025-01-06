@@ -31,19 +31,6 @@ const FeatureList = [
     ),
   },
   {
-    title: 'TOWER',
-    subtitle: 'Pluggable IoT Platform',
-    link: '/tower/',
-    src: '/img/tower.png',
-    width: 300,
-    height: 200,
-    description: (
-      <>
-        TOWER is an open-source IoT platform for rapid deployment, featuring sub-GHz radio and a very low power consumption.
-      </>
-    ),
-  },
-  {
     title: 'FIBER',
     subtitle: 'Sensor IoT Monitor',
     link: '/fiber/',
@@ -53,6 +40,19 @@ const FeatureList = [
     description: (
       <>
         FIBER is an IoT device for precise industrial temperature monitoring, offering seamless connectivity and intuitive interfaces.
+      </>
+    ),
+  },
+  {
+    title: 'TOWER',
+    subtitle: 'Pluggable IoT Platform',
+    link: '/tower/',
+    src: '/img/tower.png',
+    width: 300,
+    height: 200,
+    description: (
+      <>
+        TOWER is an open-source IoT platform for rapid deployment, featuring sub-GHz radio and a very low power consumption.
       </>
     ),
   },

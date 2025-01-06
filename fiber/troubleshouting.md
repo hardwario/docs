@@ -10,11 +10,11 @@ import Image from '@theme/IdealImage';
 
 - **sudo reboot**: Initiates a system reboot using the command line.
 
-- **/system/reboot**: Initiates a system reboot using MQTT broker
+- **`/system/reboot`**: Initiates a system reboot using MQTT broker
 
   :::tip
 
-  You can read [**more about rebooting a system using MQTT here.**](./mqtt-broker)
+  You can read [**more about rebooting a system using MQTT here.**](./mqtt-broker#system)
 
   :::
 

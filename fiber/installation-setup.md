@@ -33,7 +33,6 @@ This article uses the term host - a Linux-based PC which configures the target (
 
 5. Set up network connection
 
-
 ## Network Connection Setup
 
 To start **FIBER**, follow the instructions below depending on your preferred connection method:
@@ -60,7 +59,6 @@ If you are connecting **FIBER** to your network via **Wi-Fi**, follow these step
 
 If you are connecting **FIBER** to your network via **Ethernet**, follow these steps:
 
-
 1. Connect one Ethernet cable from the PoE adapter's LAN port to your router or switch.
 
 2. Connect another Ethernet cable from the PoE adapter's port to the **FIBER** device.
@@ -75,14 +73,52 @@ If you are connecting **FIBER** to your network via **Ethernet**, follow these s
 
 5. Wait for approximately a minute for **FIBER** to establish a connection with your network.
 
-
 ### Static IP Address Connection
 
 If you utilize a **static IP** address for **FIBER** connections, follow these steps:
 
 1. Update Configuration File (system section)
 
-    - Set `static_ip` to `True`.
-    - Replace the following placeholders with your network details: `address` (Your static IP address), `netmask`, `gateway`, `dns`.
+    - Set **static_ip** to **True**.
+    - Replace the following placeholders with your network details: **address** (your static IP address), **netmask**, **gateway**, **dns**.
 
-2. Depending on the type of Ethernet or Wi-fi connection, use the instructions for them above.
+2. Depending on the type of [**Ethernet**](#ethernet-connection) or [**Wi-Fi**](#wi-fi-connection) connection, use the instructions for them above.
+
+## Additional information
+
+1. Verifying Network Connectivity:
+
+    Test the connection to the **FIBER** device from the host:
+
+    ```bash
+    ping [ip address]
+    ```
+2. Checking device logs:
+
+    If the **FIBER** device does not function as expected, you can view logs for troubleshooting:
+
+   ```bash
+   journalctl -u fiber-core.service
+   ```
+3. Managing the service:
+
+    Use the following commands to control the **FIBER** service:
+
+   ```bash
+   systemctl start fiber-core.service
+
+   systemctl restart fiber-core.service
+
+   systemctl stop fiber-core.service
+   ```
+4. Restarting the device:
+
+    To restart the **FIBER** device after making changes or for troubleshooting:
+
+    - Using **SSH**:
+
+        ```bash
+        reboot
+        ```
+
+    - Press the physical reset button on the back of the device.
