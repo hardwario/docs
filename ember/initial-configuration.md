@@ -79,7 +79,7 @@ This document provides the step-by-step process for setting up, updating, and co
 
 :::tip
 
-##### What does the config do? (Differences from default)
+#### What does the config do? (Differences from default)
 
  - Creates a bridge between the `ether2` and `ether3` interfaces
  - No LoRa Servers - TBA by customer
@@ -97,7 +97,7 @@ This document provides the step-by-step process for setting up, updating, and co
 
 ### 4. Shutdown and Final Steps
 
-   - **Shutdown Device**: Run the command `/system/shutdown` in the Terminal.
+   - **Shutdown Device**: Run the command `/system/shutdown` in the Terminal or use the GUI `System` > `Reboot`.
    - **Disconnect Power**: Once the device has powered down, disconnect the power supply and ethernet.
 
 ## Completion
