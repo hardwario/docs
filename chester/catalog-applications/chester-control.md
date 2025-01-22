@@ -31,9 +31,25 @@ Because **CHESTER Control** uses [**CHESTER-X0**](../extension-modules/chester-x
 
 This device only supports the newer **LTEv2** stack and **HARDWARIO Cloud v2**.
 
+## Application Variants
+
+**CHESTER Control** can be ordered in one of these variants:
+
+### CHESTER Control {#chester-control}
+
+The catalog **CHESTER Control** hardware consists of the following ordering codes:
+
+* `CHESTER-M-BCGLS` - Standard mainboard
+
+* `CHESTER-X0B:A` - Input module (4 channels)
+
+* `CHESTER-X4:B` - Step-down + outputs (4 channels)
+
+See [**Ordering Codes**](../ordering-codes.md) for more details.
+
 ## Terminal Blocks
 
-| CHESTER-X0 in left slot A- signals A1 - A8  | CHESTER-X4 in right slot B - signals B1 - B8                                                 |
+| CHESTER-X0B in left slot A- signals A1 - A8 | CHESTER-X4 in right slot B - signals B1 - B8                                                 |
 | ------------------------------------------- | -------------------------------------------------------------------------------------------- |
 | Use inputs **CH1** to **CH4** and **GND**   | Use **VIN** and **GND** to supply external power.                                            |
 |                                             | Use **CH1** to **CH4** outputs, which supply voltage from **VIN** when the output is enabled |
