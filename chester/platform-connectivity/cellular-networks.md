@@ -54,7 +54,7 @@ The table below applies to the SIM cards provided by **HARDWARIO**. We cannot gu
 | Italy          | NB-IoT     | Vodafone | `22210`  | `hardwario`        |                  |
 | Netherlands    | NB-IoT     | Vodafone | `20404`  | `hardwario`        |                  |
 | New Zealand    | NB-IoT     | Vodafone | `53001`  | `hardwario`        |                  |
-| Poland         | NB-IoT     | T-Mobile | `26002`  | `nbiot.telekom.sk` |                  |
+| Poland         | LTE-M      | Vodafone | `26003`  | `hardwario`        |                  |
 | Portugal       | NB-IoT     | Vodafone | `26801`  | `hardwario`        |                  |
 | Romania        | NB-IoT     | Vodafone | `22601`  | `hardwario`        |                  |
 | Slovakia       | NB-IoT     | T-Mobile | `23102`  | `nbiot.telekom.sk` |                  |
