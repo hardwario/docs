@@ -20,7 +20,12 @@ Both channels can run completely separately with different sample rates.
 
 :::
 
-<details><summary><b>Sine Wave Generator Code Example</b></summary>
+<details>
+<summary>
+<b>
+Sine Wave Generator Code Example
+</b>
+</summary>
 <p>
 
   ```c showLineNumbers

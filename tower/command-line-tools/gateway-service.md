@@ -69,7 +69,12 @@ pip install --upgrade --no-cache-dir bcg
 
 To get all available commands just type **`bcg --help`** to your **CLI**
 
-<details><summary><b>bcg --help output</b></summary>
+<details>
+<summary>
+<b>
+bcg --help output
+</b>
+</summary>
 <p>
 
   ``` showLineNumbers

@@ -26,7 +26,12 @@ To switch the state, we use the [**button**](./push-button.md).
 
 :::
 
-<details><summary><b>Power Module Relay Control Code Example</b></summary>
+<details>
+<summary>
+<b>
+Power Module Relay Control Code Example
+</b>
+</summary>
 <p>
 
   ```c showLineNumbers

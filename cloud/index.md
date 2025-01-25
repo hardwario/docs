@@ -1,10 +1,10 @@
 ---
 slug: /
-title: Cloud v2
+title: HARDWARIO Cloud
 ---
 import Image from '@theme/IdealImage';
 
-# Cloud v2
+# HARDWARIO Cloud
 
 [**HARDWARIO Cloud v2**](https://prod.hardwario.cloud/) offers new CHESTER device management with bidirectional communication support.
 

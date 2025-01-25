@@ -6,7 +6,7 @@ import Image from '@theme/IdealImage';
 
 # How to: LTE v2
 
-This article will demonstrate how to upgrade existing CHESTER firmware to the LTE v2 and [Cloud v2](../../cloud/cloud-v2/).
+This article will demonstrate how to upgrade existing CHESTER firmware to the LTE v2 and [Cloud v2](../../cloud/).
 
 LTE v2 is using a newer UDP protocol that supports downlink messages and automatically handles fragmentation, confirmation and signing of the packets with SHA-256.
 

@@ -185,7 +185,7 @@ Specifies the day of the month when scanning 1-28 during the monthly scan
 
 When configuring over BLE, you need to apply the configuraiton changes with `config save` command.
 
-When configuring over [Cloud config downlink commands](../../cloud/cloud-v2/downlink#config), don't add `config save` command, it is applied automatically. Othwerwise the configuration is not
+When configuring over [Cloud config downlink commands](../../cloud/downlink#config), don't add `config save` command, it is applied automatically. Othwerwise the configuration is not
 
 ### Interval and wM-BUS Packets Every 2 Minutes
 

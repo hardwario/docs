@@ -2,11 +2,11 @@
 # HARDWARIO Documentation
 # Technical Resources for Products and Services
 
-This website is built using [Docusaurus 2](https://docusaurus.io), a modern static website generator.
+This website is built using [Docusaurus 3](https://docusaurus.io), a modern static website generator.
 
 ## Requirements
 
-* Node.js version 16+
+* Node.js version 18+.
 
 ## Installation
 

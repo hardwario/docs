@@ -112,7 +112,7 @@ app config channel-mode-4 current
 
 ## Output Control
 
-Please see the Cloud documentation, specifically [Downlink data](../../cloud/cloud-v2/downlink) and [API examples](../../cloud/cloud-v2/downlink#api-examples).
+Please see the Cloud documentation, specifically [Downlink data](../../cloud/downlink) and [API examples](../../cloud/downlink#api-examples).
 
 You control outputs by sending this JSON to the cloud API endpoint (`https://api.prod.hardwario.cloud/v2/messages`) or in the HARDWARIO Cloud by going to the device's messages and clicking on "Create new downlink message"
 

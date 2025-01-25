@@ -72,7 +72,7 @@ Reseting the configuration will also reset the connection parameters for LTE and
 
 :::
 
-You might also change configuration remotely over HARDWARIO Cloud using [**Config downlink command**](../../cloud/cloud-v2/downlink#config).
+You might also change configuration remotely over HARDWARIO Cloud using [**Config downlink command**](../../cloud/downlink#config).
 In cloud you don't send the `config save` command.
 
 ## Report Interval Jitter

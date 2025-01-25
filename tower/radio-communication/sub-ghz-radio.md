@@ -96,7 +96,12 @@ This is usable only for devices that can have a long delay before the change tak
 
 :::
 
-<details><summary><b>bcf --help output</b></summary>
+<details>
+<summary>
+<b>
+bcf --help output
+</b>
+</summary>
 <p>
 
 ```c showLineNumbers

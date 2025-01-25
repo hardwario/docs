@@ -911,3 +911,6 @@
   to = "https://docs.hardwario.com/chester/hardware-description/chester-m"
   status = 301
   force = true
+
+[build.environment]
+NODE_VERSION = "18"

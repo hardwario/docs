@@ -56,7 +56,12 @@ Then you start the **blocking transfer** and you have to wait for it to finish.
 
 :::
 
-<details><summary><b>Synchronous SPI Transfer Code Example</b></summary>
+<details>
+<summary>
+<b>
+Synchronous SPI Transfer Code Example
+</b>
+</summary>
 <p>
 
   ```c showLineNumbers
@@ -85,7 +90,12 @@ This is a **non-blocking** transfer where the **callback function is called** wh
 
 :::
 
-<details><summary><b>Asynchronous SPI Transfer Code Example</b></summary>
+<details>
+<summary>
+<b>
+Asynchronous SPI Transfer Code Example
+</b>
+</summary>
 <p>
 
   ```c showLineNumbers

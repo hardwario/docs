@@ -32,7 +32,12 @@ In the `application_init()` is some showcase on how to use some of the functions
 
 :::
 
-<details><summary><b>Simple PIR Module Configuration Code Example</b></summary>
+<details>
+<summary>
+<b>
+Simple PIR Module Configuration Code Example
+</b>
+</summary>
 <p>
 
   ```c showLineNumbers

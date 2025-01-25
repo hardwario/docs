@@ -82,7 +82,12 @@ pip install --upgrade --no-cache-dir bcf
 
 To get all available commands just type **`bcf --help`** to your **CLI**
 
-<details><summary><b>bcf --help output</b></summary>
+<details>
+<summary>
+<b>
+bcf --help output
+</b>
+</summary>
 <p>
 
   ``` showLineNumbers

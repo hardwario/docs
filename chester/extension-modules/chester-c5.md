@@ -20,7 +20,7 @@ The board implements the Maxim DS2482S-800+ providing 8 independent 1-Wire chann
 * Input DC voltage range (VIN): **6-28 VDC**, suitable also for **12-18V solar panels\***
 * Nominal battery voltage: **3.7 V**
 * Battery charging current: **200 mA**
-* Battery idle current consumption **<10 μA** (without CHESTER-M)
+* Battery idle current consumption **&lt;10 μA** (without CHESTER-M)
 * Recommended battery type for outdoor use: Samsung ICR18650-22P**
 * Operating temperature: **-40 to +70°C** (without Li-Ion Battery)
 * Storage temperature: **-40 to +85°C** (without Li-Ion Battery)

@@ -26,7 +26,7 @@ If you don't have an account:
 ### Add a Device to the Space
 
 - Select the **SPACE** where you would like to add a device
-- Click on the **DEVICES** in the left menu and choose [+NEW DEVICE](../cloud/cloud-v2/devices) in the top right corner
+- Click on the **DEVICES** in the left menu and choose [+NEW DEVICE](../cloud/devices) in the top right corner
 
 ### Power-up Device
 
@@ -47,7 +47,7 @@ Watch the CHESTER [LED Behaviour](catalog-applications/common-functionality.md#l
 
 Now, when you open **DEVICES** and click on the **chat icon** on your device, you will see messages from your device.
 
-Now, please follow [Cloud v2](../cloud/cloud-v2) documentation to assign your device and a connector a tag, then you can resend the device's data to your cloud/backend, send downlink commands, use a remote shell, FOTA and other functionalities.
+Now, please follow [Cloud v2](../cloud/) documentation to assign your device and a connector a tag, then you can resend the device's data to your cloud/backend, send downlink commands, use a remote shell, FOTA and other functionalities.
 
 In **USERS**, you might also invite your co-workers and assign them a role **user** (read only) or role **admin**, which can change anything.
 
@@ -59,8 +59,8 @@ For configuration, you use `config` commands in the CHESTER shell, which can be 
 
 - Over **BLE** phone app [HARDWARIO Manager](platform-connectivity/hardwario-manager.md#command-terminal) as a command terminal.
 - Over **BLE** or **J-Link USB programmer** from your computer using [HARDWARIO Monitor](platform-connectivity/hardwario-monitor.md)
-- Over HARDWARIO Cloud [config commands](../cloud/cloud-v2/downlink#config).
-- Over HARDWARIO Cloud [remote shell](../cloud/cloud-v2/downlink#shell-commands).
+- Over HARDWARIO Cloud [config commands](../cloud/downlink#config).
+- Over HARDWARIO Cloud [remote shell](../cloud/downlink#shell-commands).
 
 ### Troubleshooting
 If you use our Vodafone SIM card in a country other than the Czech Republic, please reconfigure PLMN [based on your country](platform-connectivity/cellular-networks.md#network-settings).

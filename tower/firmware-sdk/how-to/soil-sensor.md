@@ -16,7 +16,12 @@ This is the simplest example with a single connected sensor to the [**Sensor Mod
 
 :::
 
-<details><summary><b>Writing a single sensor values to the console Code Example</b></summary>
+<details>
+<summary>
+<b>
+Writing a single sensor values to the console Code Example
+</b>
+</summary>
 <p>
 
   ```c showLineNumbers
@@ -60,7 +65,12 @@ The example below shows how to work with multiple sensors.
 
 :::
 
-<details><summary><b>Multiple Connected Sensors Code Example</b></summary>
+<details>
+<summary>
+<b>
+Multiple Connected Sensors Code Example
+</b>
+</summary>
 <p>
 
   ```c showLineNumbers

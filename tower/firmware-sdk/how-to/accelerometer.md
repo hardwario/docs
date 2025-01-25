@@ -26,7 +26,12 @@ You also have to instantiate a structure `twr_lis2dh12_result_g_t` to store the 
 
 :::
 
-<details><summary><b>Continuous Measurement Code Example</b></summary>
+<details>
+<summary>
+<b>
+Continuous Measurement Code Example
+</b>
+</summary>
 <p>
 
   ```c showLineNumbers
@@ -81,7 +86,12 @@ After flashing, try to move your Core module very slowly. It will do nothing in 
 
 :::
 
-<details><summary><b>Alarm Code Example</b></summary>
+<details>
+<summary>
+<b>
+Alarm Code Example
+</b>
+</summary>
 <p>
 
   ```c showLineNumbers

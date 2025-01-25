@@ -28,7 +28,12 @@ The functions must have a **specific signature** for every module and tag, you c
 
 :::
 
-<details><summary><b>Button Event Handler Code Example</b></summary>
+<details>
+<summary>
+<b>
+Button Event Handler Code Example
+</b>
+</summary>
 <p>
 
   ```c showLineNumbers
@@ -87,7 +92,12 @@ The functions must have a **specific signature** for every module and tag, you c
 
 :::
 
-<details><summary><b>Temperature Sensor Event Handler Code Example</b></summary>
+<details>
+<summary>
+<b>
+Temperature Sensor Event Handler Code Example
+</b>
+</summary>
 <p>
 
   ```c showLineNumbers

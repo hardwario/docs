@@ -38,7 +38,12 @@ Every output has a different **duty cycle**: 180, 210 and 255.
 
 :::
 
-<details><summary><b>Run PWM on Pins Code Example</b></summary>
+<details>
+<summary>
+<b>
+Run PWM on Pins Code Example
+</b>
+</summary>
 <p>
 
   ```c showLineNumbers

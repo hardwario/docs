@@ -18,7 +18,12 @@ With every press of the button, one more relay will be activated. When all relay
 
 :::
 
-<details><summary><b>Code Example</b></summary>
+<details>
+<summary>
+<b>
+Code Example
+</b>
+</summary>
 <p>
 
   ```c showLineNumbers

@@ -32,7 +32,12 @@ This example sets up the RTC to **10.5.2020 18:26:10**.
 
 :::
 
-<details><summary><b>RTC Structure Setup Code Example</b></summary>
+<details>
+<summary>
+<b>
+RTC Structure Setup Code Example
+</b>
+</summary>
 <p>
 
   ```c showLineNumbers
@@ -61,7 +66,12 @@ Year register value 0 stands for 1900 and value 199 stands for 2099.
 
 ## Get Date and Time
 
-<details><summary><b>RTC Get Datetime Code Example</b></summary>
+<details>
+<summary>
+<b>
+RTC Get Datetime Code Example
+</b>
+</summary>
 <p>
 
   ```c showLineNumbers

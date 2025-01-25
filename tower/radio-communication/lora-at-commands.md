@@ -35,7 +35,12 @@ Parameters for the configuration are:
 
 To list all possible commands use `AT$HELP`. The set of supported commands will depend on your firmware version.
 
-<details><summary><b>AT$HELP Example Output</b></summary>
+<details>
+<summary>
+<b>
+AT$HELP Example Output
+</b>
+</summary>
 <p>
 
 ```showLineNumbers
