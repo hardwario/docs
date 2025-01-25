@@ -35,7 +35,7 @@ Firmwares are located in the [**Application Firmware**](#application-firmware) c
 
 ## Application Firmware Cloud v2
 
-These firmwares are for newer [**Cloud v2**](../../cloud/cloud-v2) communication.
+These firmwares are for newer [**Cloud v2**](../../cloud) communication.
 
 If your unit was already communicating with Cloud v2, you can upgrade just main [**APP/BLE MCU firmware over BLE**](../platform-connectivity/hardwario-manager.md#firmware-update).
 
@@ -78,7 +78,7 @@ Then apply changes by typing `config save`. The device will reboot and use the c
 
 ## Application Firmware Cloud v1
 
-These firmwares are for older [**Cloud v1**](../../cloud/overview) communication.
+These firmwares are for older [**Cloud v1**](../../cloud/category/cloud-v1) communication.
 
 The table below provides an overview of the available application firmware builds for **catalog applications**.
 
