@@ -6,7 +6,7 @@ This website is built using [Docusaurus 3](https://docusaurus.io), a modern stat
 
 ## Requirements
 
-* Node.js version 16+
+* Node.js version 18+
 
 ## Installation
 
