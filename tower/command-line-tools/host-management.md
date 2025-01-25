@@ -101,7 +101,12 @@ pip install --upgrade --no-cache-dir bch
 
 To get all available commands just type **`bch --help`** to your **CLI**
 
-<details><summary><b>bch --help output</b></summary>
+<details>
+<summary>
+<b>
+bch --help output
+</b>
+</summary>
 <p>
 
   ``` showLineNumbers

@@ -36,7 +36,12 @@ TWR_MODULE_BATTERY_EVENT_LEVEL_CRITICAL
 
 ## Examples
 
-<details><summary><b>Voltage Over USB Code Example</b></summary>
+<details>
+<summary>
+<b>
+Voltage Over USB Code Example
+</b>
+</summary>
 <p>
 
   ```c showLineNumbers
@@ -86,7 +91,12 @@ TWR_MODULE_BATTERY_EVENT_LEVEL_CRITICAL
 
 :::
 
-<details><summary><b>Voltage Periodically Over Radio Code Example</b></summary>
+<details>
+<summary>
+<b>
+Voltage Periodically Over Radio Code Example
+</b>
+</summary>
 <p>
 
   ```c showLineNumbers

@@ -28,7 +28,12 @@ You can visit the [**twr_log SDK Module**](https://sdk.hardwario.com/group__twr_
 
 :::
 
-<details><summary><b>Logging Code Example</b></summary>
+<details>
+<summary>
+<b>
+Logging Code Example
+</b>
+</summary>
 <p>
 
 ```c showLineNumbers

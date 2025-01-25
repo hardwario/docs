@@ -31,7 +31,12 @@ If the button is held for 1.5 seconds, the LED on Core Module will start blinkin
 
 :::
 
-<details><summary><b>Push Button Code Example</b></summary>
+<details>
+<summary>
+<b>
+Push Button Code Example
+</b>
+</summary>
 <p>
 
   ```c showLineNumbers

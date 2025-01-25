@@ -29,7 +29,12 @@ This example uses **Medium sensitivity**. When movement is detected, the message
 
 :::
 
-<details><summary><b>Motion Detection Code Example</b></summary>
+<details>
+<summary>
+<b>
+Motion Detection Code Example
+</b>
+</summary>
 <p>
 
   ```c showLineNumbers

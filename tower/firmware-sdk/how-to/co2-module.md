@@ -20,7 +20,12 @@ The module uses [**infrared light for measurements**](https://en.wikipedia.org/w
 
 :::
 
-<details><summary><b>CO₂ Over Radio Code Example</b></summary>
+<details>
+<summary>
+<b>
+CO₂ Over Radio Code Example
+</b>
+</summary>
 <p>
 
   ```c showLineNumbers

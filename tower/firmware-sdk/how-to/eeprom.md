@@ -53,7 +53,12 @@ hello world!
 
 :::
 
-<details><summary><b>EEPROM Test Code Example</b></summary>
+<details>
+<summary>
+<b>
+EEPROM Test Code Example
+</b>
+</summary>
 <p>
 
 

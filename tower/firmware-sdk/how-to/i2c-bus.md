@@ -47,7 +47,12 @@ For example, you can read 8 bits of data from memory address `0x01` over `I2C_0`
 
 :::
 
-<details><summary><b>Read 8 bits over I²C Code Example</b></summary>
+<details>
+<summary>
+<b>
+Read 8 bits over I²C Code Example
+</b>
+</summary>
 <p>
 
   ```c showLineNumbers
@@ -64,7 +69,12 @@ To read more data over **I²C** you have to create a `twr_i2c_memory_transfer_t`
 
 :::
 
-<details><summary><b>Read custom number of bits over I²C Code Example</b></summary>
+<details>
+<summary>
+<b>
+Read custom number of bits over I²C Code Example
+</b>
+</summary>
 <p>
 
   ```c showLineNumbers
@@ -98,7 +108,12 @@ For example, you can write 8 bits, `0x81` to be specific, of data to memory addr
 
 :::
 
-<details><summary><b>Write 8 bits over I²C Code Example</b></summary>
+<details>
+<summary>
+<b>
+Write 8 bits over I²C Code Example
+</b>
+</summary>
 <p>
 
   ```c showLineNumbers
@@ -114,7 +129,12 @@ To write more data over **I²C** you have to create a `twr_i2c_memory_transfer_t
 
 :::
 
-<details><summary><b>Write custom number of bits over I²C Code Example</b></summary>
+<details>
+<summary>
+<b>
+Write custom number of bits over I²C Code Example
+</b>
+</summary>
 <p>
 
   ```c showLineNumbers

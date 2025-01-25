@@ -59,7 +59,12 @@ This example prints out some text on the screen and lights up LCD LEDs with **bl
 
 :::
 
-<details><summary><b>LCD LEDs Code Example</b></summary>
+<details>
+<summary>
+<b>
+LCD LEDs Code Example
+</b>
+</summary>
 <p>
 
   ```c showLineNumbers
@@ -116,7 +121,12 @@ If you hold both buttons, the LEDs will blink fast.
 
 :::
 
-<details><summary><b>LCD Buttons Code Example</b></summary>
+<details>
+<summary>
+<b>
+LCD Buttons Code Example
+</b>
+</summary>
 <p>
 
   ```c showLineNumbers

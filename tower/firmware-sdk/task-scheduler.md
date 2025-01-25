@@ -24,7 +24,12 @@ You can also save the task ID when registering a task. Thanks to this you will b
 
 :::
 
-<details><summary><b>Run Task Once Code Example</b></summary>
+<details>
+<summary>
+<b>
+Run Task Once Code Example
+</b>
+</summary>
 <p>
 
 ```c showLineNumbers
@@ -96,7 +101,12 @@ For example, if you want to **turn the LCD on and off after 5 seconds** you can 
 
 :::
 
-<details><summary><b>Run Current Task Code Example</b></summary>
+<details>
+<summary>
+<b>
+Run Current Task Code Example
+</b>
+</summary>
 <p>
 
 ```c showLineNumbers
@@ -141,7 +151,12 @@ For example, if you want to **turn the LCD off 5 seconds after pushing a button*
 
 :::
 
-<details><summary><b>Run Task From Anywhere Code Example</b></summary>
+<details>
+<summary>
+<b>
+Run Task From Anywhere Code Example
+</b>
+</summary>
 <p>
 
 ```c showLineNumbers

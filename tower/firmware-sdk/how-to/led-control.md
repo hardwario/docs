@@ -16,7 +16,12 @@ In this simple example, the LED will be initialized and then it will blink conti
 
 :::
 
-<details><summary><b>Simple Blinking LED Code Example</b></summary>
+<details>
+<summary>
+<b>
+Simple Blinking LED Code Example
+</b>
+</summary>
 <p>
 
   ```c showLineNumbers
@@ -42,7 +47,12 @@ Also, the LED will blink at the start of the program. This is useful for most fi
 
 :::
 
-<details><summary><b>Button Controlled LED Code Example</b></summary>
+<details>
+<summary>
+<b>
+Button Controlled LED Code Example
+</b>
+</summary>
 <p>
 
   ```c showLineNumbers

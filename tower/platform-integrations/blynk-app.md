@@ -54,7 +54,12 @@ If you don't know what a **Node-RED** is, you can read the [**Desktop Programmin
 
 :::
 
-<details><summary><b>Blynk example project flow JSON</b></summary>
+<details>
+<summary>
+<b>
+Blynk example project flow JSON
+</b>
+</summary>
 <p>
 
 ```json showLineNumbers

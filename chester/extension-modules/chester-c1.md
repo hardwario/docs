@@ -36,7 +36,7 @@ This article describes the **CHESTER-C1** carrier board.
 * Supported C size battery: 1 x **Saft LSH14** or 1 x **Saft LS26500\***
 * Up to 4 x C size or 3 x D size battery on request (Saft LSH20 or LS33000)
 * Nominal battery voltage: **3.6 V**
-* Battery idle current consumption **<2 μA** (without **CHESTER-M**)
+* Battery idle current consumption **&lt;2 μA** (without **CHESTER-M**)
 
 _\* Saft LS26500 cannot be used with CHESTER-M-E variant (without supercapacitors)._
 

@@ -39,7 +39,12 @@ This is a simple example of printing `Hello world` to the [**LCD Module that is 
 
 :::
 
-<details><summary><b>Using GFX with LCD Module Code Example</b></summary>
+<details>
+<summary>
+<b>
+Using GFX with LCD Module Code Example
+</b>
+</summary>
 <p>
 
   ```c showLineNumbers
@@ -71,7 +76,12 @@ This is a similar example to the last one, but here we use the SSD1303 OLED disp
 
 :::
 
-<details><summary><b>Using GFX with SSD1303 OLED Code Example</b></summary>
+<details>
+<summary>
+<b>
+Using GFX with SSD1303 OLED Code Example
+</b>
+</summary>
 <p>
 
   ```c showLineNumbers
@@ -123,7 +133,12 @@ void application_init(void)
 }
 ```
 
-<details><summary><b>Custom GFX Driver Implementation Code Example</b></summary>
+<details>
+<summary>
+<b>
+Custom GFX Driver Implementation Code Example
+</b>
+</summary>
 <p>
 
   ```c showLineNumbers

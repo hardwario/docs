@@ -32,7 +32,12 @@ In the example below, the relay on the **Relay Module** will turn **On/Off** eve
 
 :::
 
-<details><summary><b>Relay Module Pulse Code Example</b></summary>
+<details>
+<summary>
+<b>
+Relay Module Pulse Code Example
+</b>
+</summary>
 <p>
 
   ```c showLineNumbers

@@ -36,7 +36,12 @@ To set the color of the pixel(LED on the strip) you will have to provide some in
 
 For the changes to take effect, you have to call `twr_led_strip_write(&led_strip);`. If you don't do that, nothing will happen on the strip.
 
-<details><summary><b>Set Few LEDs Code Example</b></summary>
+<details>
+<summary>
+<b>
+Set Few LEDs Code Example
+</b>
+</summary>
 <p>
 
 ```c showLineNumbers
@@ -87,7 +92,12 @@ These effects look great and you can maybe use them for some signalization witho
 
 If you want to try out these effects, there is a skeleton code for the 144 LEDs strip.
 
-<details><summary><b>LED Strip Effects Skeleton Code Example</b></summary>
+<details>
+<summary>
+<b>
+LED Strip Effects Skeleton Code Example
+</b>
+</summary>
 <p>
 
 ```c showLineNumbers
@@ -192,7 +202,12 @@ You can easily stop the effect with this function
 twr_led_strip_effect_stop(&led_strip);
 ```
 
-<details><summary><b>Stop LED Strip Effect Code Example</b></summary>
+<details>
+<summary>
+<b>
+Stop LED Strip Effect Code Example
+</b>
+</summary>
 <p>
 
 ```c showLineNumbers

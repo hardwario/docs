@@ -21,7 +21,12 @@ This example will send the date, time, position, number of satellites the module
 
 :::
 
-<details><summary><b>GPS function Code Example</b></summary>
+<details>
+<summary>
+<b>
+GPS function Code Example
+</b>
+</summary>
 <p>
 
   ```c showLineNumbers

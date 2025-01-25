@@ -145,7 +145,12 @@ This example will add the category **Ultrasound Sensor**** with black color (def
 
 :::
 
-<details><summary><b>Basic Categories Example</b></summary>
+<details>
+<summary>
+<b>
+Basic Categories Example
+</b>
+</summary>
 <p>
 
   ```yml showLineNumbers
@@ -186,7 +191,12 @@ The first example is one of our pre-made modules for the [**Button Module**](htt
     - `code` - code is the same as well.
 :::
 
-<details><summary><b>Pre-made button module</b></summary>
+<details>
+<summary>
+<b>
+Pre-made button module
+</b>
+</summary>
 <p>
 
   ```yaml showLineNumbers

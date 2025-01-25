@@ -56,7 +56,12 @@ In `nano`, you can save changes by pressing the key combination `Ctrl + O` and e
 
 :::
 
-<details><summary><b>Configuration File Snippet</b></summary>
+<details>
+<summary>
+<b>
+Configuration File Snippet
+</b>
+</summary>
 <p>
 
 ```bash

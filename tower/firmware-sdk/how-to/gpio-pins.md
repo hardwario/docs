@@ -17,7 +17,12 @@ This example will turn on the **LED on the Core Module**. The usual and more com
 
 :::
 
-<details><summary><b>GPIO as Output Code Example</b></summary>
+<details>
+<summary>
+<b>
+GPIO as Output Code Example
+</b>
+</summary>
 <p>
 
   ```c showLineNumbers
@@ -40,7 +45,12 @@ This example will **read the button state** and based on that the **LED will be 
 
 :::
 
-<details><summary><b>GPIO Input and Output Code Example</b></summary>
+<details>
+<summary>
+<b>
+GPIO Input and Output Code Example
+</b>
+</summary>
 <p>
 
   ```c showLineNumbers

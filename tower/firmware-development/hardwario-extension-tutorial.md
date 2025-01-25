@@ -21,7 +21,9 @@ In both modes, you should see the **HARDWARIO logo on the side panel**.
 <div class="container">
   <div class="row">
     <div class="col col--4">
-      <div><Image img={require('./hardwario-sidebar-icon.png')}/></div>
+      <div>
+        <Image img={require('./hardwario-sidebar-icon.png')}/>
+      </div>
     </div>
     <div class="col col--6">
     </div>
@@ -31,7 +33,7 @@ In both modes, you should see the **HARDWARIO logo on the side panel**.
 :::
 
 - If you have some HARDWARIO TOWER firmware open ([**Firmware Mode**](#firmware-mode))
-  <div class="container">
+<div class="container">
   <div class="row">
     <div class="col col--4">
       <div><Image img={require('./firmware-mode.png')}/></div>
@@ -40,6 +42,7 @@ In both modes, you should see the **HARDWARIO logo on the side panel**.
     </div>
   </div>
 </div>
+
 - If you have anything else or nothing open ([**Basic Mode**](#basic-mode))
   <div class="container">
   <div class="row">
