@@ -31,7 +31,7 @@ Below is the minimized set of commands that is extracted from the **CHESTER SDK*
    pip install --upgrade pip
    pip install west
    west init -m git@github.com:hardwario/chester-sdk.git --manifest-rev main
-   west config build.board chester_nrf52840
+   west config build.board chester
    west update
    west zephyr-export
    pip install -r zephyr/scripts/requirements.txt
