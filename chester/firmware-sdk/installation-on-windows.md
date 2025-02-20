@@ -221,7 +221,7 @@ You can skip this step if you already have **Chocolatey** installed on your syst
 1. Set the default board to **CHESTER (nRF52840)**:
 
    ```
-   west config build.board chester_nrf52840
+   west config build.board chester
    ```
 
 1. Synchronize the **West** workspace:

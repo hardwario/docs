@@ -19,7 +19,7 @@ This article will explain how to build, deploy and upload an application firmwar
 
    :::tip
 
-   Make sure that the `build.board` is configured with `west config build.board chester_nrf52840`, please see the previous **Installation chapter**
+   Make sure that the `build.board` is configured with `west config build.board chester`, please see the previous **Installation chapter**
 
    :::
 
