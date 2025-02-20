@@ -118,33 +118,39 @@ You can skip this step if you already have **Chocolatey** installed on your syst
 
 ### Install Toolchain
 
-1. Open the **Windows PowerShell** application with user rights.
+:::caution
 
-1. Go to your home directory:
+Close your previous PowerShell and open new one with user rights. **Do not continue with Administrator rights.**
+
+:::
+
+1. Open the **Windows PowerShell** application with **user** rights.
+
+2. Go to your home directory:
 
    ```
    Set-Location ~
    ```
 
-1. Download the toolchain:
+3. Download the toolchain:
 
    ```
    wget https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v0.16.1/zephyr-sdk-0.16.1_windows-x86_64.7z -O zephyr-sdk-0.16.1_windows-x86_64.7z
    ```
 
-1. Unzip the toolchain:
+4. Unzip the toolchain:
 
    ```
    7z x zephyr-sdk-0.16.1_windows-x86_64.7z
    ```
 
-1. Go to the toolchain directory:
+5. Go to the toolchain directory:
 
    ```
    cd zephyr-sdk-0.16.1
    ```
 
-1. Run the **Zephyr SDK** bundle setup script:
+6. Run the **Zephyr SDK** bundle setup script:
 
    ```
    .\setup.cmd
@@ -156,7 +162,17 @@ You can skip this step if you already have **Chocolatey** installed on your syst
 
    :::
 
+7. Go back to your home directory
+
+   ```
+   cd ..
+   ```
+
 ## Create Application
+
+You should be now in your home directory. However, you might continue the next steps in the different directory where you want the project.
+
+Do not use a folder that has spaces anywhere in the path.
 
 1. Create the directory for your application:
 
