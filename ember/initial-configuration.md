@@ -1,23 +1,22 @@
 ---
-slug: initial-config
+slug: initial-configuration
 title: Initial Setup and Configuration
 ---
 
 # EMBER Initial Setup and Configuration
 
-This article is a step-by-step guide for setting up, updating, and configuring the EMBER gateway (MikroTik RBM33G) for
-shipping.
+This article is a step-by-step guide for updating and configuring the EMBER gateway (MikroTik RBM33G) before shipping.
 
 :::caution
 
-This guide is mainly for the first configuration of EMBER before shipping.
+This guide is mainly for the **first configuration** of EMBER **before shipping**.\
 Most users will want to follow the [**Hotspot Configuration**](hotspot-configuration.md) guide.
 
 :::
 
-## Prerequisities
+## Prerequisites
 
-You will need a way to connect to the EMBER (WebFig should be fine, but Winbox is preferred) and a copy of the Firmware
+You will need **a way to connect** to the EMBER (WebFig should be fine, but **WinBox is preferred**) and a copy of the Firmware
 and package files.
 
 - **RouterOS/Firmware package** - verified with [**v7.16.1**](pathname:///download/routeros-7.16.1-mmips.npk)
@@ -26,7 +25,7 @@ and package files.
 
 :::tip
 
-Don't forget to Extract the package files from the Archive.
+Don't forget to **extract** the package files **from the archive**.
 
 :::
 
@@ -34,62 +33,75 @@ Don't forget to Extract the package files from the Archive.
 
 ### Power On and connect to EMBER
 
-- **Connect the power supply and ethernet**: Attach the power supply to the EMBER gateway. Connect an Ethernet cable from
-  the EMBER's left Ethernet port (`ether1`) to your computer.
+- **Connect the power supply and ethernet**: Attach the **power supply** to the EMBER gateway and connect an **Ethernet cable** from
+  the **left Ethernet port** on EMBER (`ether1`) to **your computer**.
 
-:::tip
-
-[**MikroTik's WinBox docs**](https://help.mikrotik.com/docs/spaces/ROS/pages/328129/WinBox)
-
-:::
-
-- **Open RouterOS interface**: Access RouterOS via Winbox or WebFig for the following steps.
+- **Open RouterOS interface**: Access RouterOS via **WinBox** or WebFig for the following steps.
 
 ### Update EMBER
 
 #### Uninstall All Packages
 
-- **Remove all non-essential packages**: Uninstall all packages except the RouterOS package. (`System` > `Packages`)
+- **Remove all packages**: Uninstall all packages **except the RouterOS** package. (`System` > `Packages`)
+
+:::danger
+
+**Do not uninstall** the **RouterOS** package.
+
+:::
+
+:::tip
+
+#### Why remove packages first?
+Uninstalling **all extra packages** ensures a clean installation and **prevents conflicts** with older versions. This helps **avoid compatibility issues**.
+
+:::
 
 #### Update OS
 
-- **Upload RouterOS image**: Upload the RouterOS .npk file to the `Files` section on EMBER.
-- **Reboot**: Reboot the device to complete the update (`System` > `Reboot`).
+- **Upload RouterOS image**: Upload the RouterOS **.npk file** to the **`Files`** section on EMBER.
+- **Reboot**: Reboot the device to complete the update. (`System` > `Reboot`)
 
 #### Update Bootloader
 
 - **Update bootloader**: Go to `System` > `RouterBOARD` and select `Upgrade`.
-- **Reboot device**: Reboot after updating the bootloader to finalize the upgrade (`System` > `Reboot`).
+- **Reboot device**: Reboot after updating the bootloader to finalize the upgrade. (`System` > `Reboot`)
 
 #### Install Packages
 
-- **Upload packages**: Upload the iot package .npk file to the `Files` section (LoRa has been moved under the IoT
+- **Upload packages**: Upload the **iot** package **.npk file** to the **`Files`** section (LoRa has been moved under the IoT
   package).
-- **Reboot**: Reboot the device to complete the package installation (`System` > `Reboot`).
+- **Reboot**: Reboot the device to complete the package installation. (`System` > `Reboot`)
+
+:::caution
+
+The **LoRa package** is now **under the IoT package**.
+
+:::
 
 ### Configuration
 
 #### Reset Configuration
 
-- **Factory reset**: Go to `System` > `Reset Configuration` and select `No Default Configuration` to clear all settings.
-- **Log in**: Use username `admin` and leave the password field empty.
-- **Set a new password**: Go to `System` > `Users`, select admin, and change the password to `ember`.
+- **Factory reset**: Go to `System` > `Reset Configuration` and check `No Default Configuration` to clear all settings.
+- **Log in**: Use username `admin` and leave the **password field empty**.
+- **Set a new password**: Go to `System` > `Users`, select **admin**, and change the password to `ember`.
+
+:::tip
+
+The **terminal** in WinBox might **prompt** you to set a **password**. If you do, there is **no need to set it in the menu**.
+
+:::
 
 #### Remove Pre-configured Settings
 
 - **Delete LoRa servers**: Navigate to `IoT` > `LoRa` > `Servers` and remove all LoRa server entries.
 - **Remove IP addresses**: Go to `IP` > `Addresses` and delete all existing IP address configurations.
 
-:::caution
-
-As of RouterOS/IoT package v7.17, MikroTik has not yet resolved the bug where TTN servers reappear after each reboot. It
-is safe to ignore them.
-
-:::
 
 #### Apply New Configuration
 
-- **Paste configuration**: Copy the configuration below and paste it into the Terminal to set up the EMBER gateway.
+- **Paste configuration**: Copy the configuration **below** and **paste** it into the **terminal** to set up the EMBER gateway.
 
   ```
      /interface bridge add name=bridge0
@@ -102,7 +114,6 @@ is safe to ignore them.
      /ip dhcp-client add interface=ether1
      /system identity set name=ember
      /system note set show-at-login=no
-
   ```
 
 :::tip
@@ -119,27 +130,27 @@ is safe to ignore them.
 
 :::danger
 
-This configuration does not set up any LoRa servers; these have to be added by the customer.
+This configuration **does not** set up any **LoRa servers**; the **customer has to add these themselves**.
 
 :::
 
 #### Verify Configuration
 
-- **Print configuration**: Use the `export terse` command in the Terminal and review the output. Ensure it matches the
+- **Print configuration**: Use the `export terse` command in the terminal and review the output. Ensure it matches the
   configuration above.
 
 :::caution
 
-There might be additional TTN LoRa servers after a reboot. These are safe to Ignore.
-This is a baked-in behavior of RouterOS when no LoRa servers are configured before rebooting.
+There might be additional **TTN LoRa servers** after a reboot. These are **safe to Ignore**.\
+This is a **baked-in** behavior of **RouterOS** when **no LoRa servers** are configured **before rebooting**.
 
 :::
 
 ### Finalization
 
-- **Shut down device**: Run the command `/system/shutdown` in the Terminal or use the GUI `System` > `Shutdown`.
-- **Disconnect power and ethernet**: Once the device has powered down, disconnect the power supply and the ethernet.
+- **Shut down device**: Run the **command** `/system/shutdown` in the **terminal** or use the GUI `System` > `Shutdown`.
+- **Disconnect power and ethernet**: Once the **device has powered down**, disconnect the **power supply** and the **ethernet**.
 
 ## Completion
 
-The EMBER gateway should now be fully updated and configured. Good job!
+The EMBER gateway should now be **fully updated and configured**. Good job!
