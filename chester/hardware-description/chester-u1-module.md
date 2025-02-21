@@ -23,9 +23,14 @@ Instead of using **CHESTER-M** and putting extension modules in it, you design a
 
 ![CHESTER-U1 layout](chester-u1-description.png)
 
-## Layout
+## E-CAD Library
 
 HARDWARIO can provide ECAD footprints for your integration.
+
+- [**KiCad symbol, footprint, 3D model**](pathname:///download/kicad-hardwario-lib.zip)
+- Eagle CAD
+
+## Layout
 
 ![CHESTER-U1 layout](chester-u1-layout.png)
 
