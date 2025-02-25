@@ -32,6 +32,12 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
   color: white; /* Changes color of text (Force) */
   background: rgb(45, 45, 60); /* Changes color of button background */
   border: none; /* Remove border */
+  transition: background-color 0.2s ease-in-out; /* Smooth transition */
+}
+
+/* Darken secondary slightly when hovered */
+[data-theme='dark'] .button--secondary:hover {
+  background: rgb(35, 35, 50); /* Slightly darker */
 }
 
 /* Change hero banner text color in dark mode */
