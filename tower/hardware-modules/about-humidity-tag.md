@@ -37,7 +37,7 @@ Values below this range (**dry air**) can lead to various **health issues**. On 
 - Mechanical dimensions: 16 x 16 mm
 
 ## References
-- [**Shop**](https://shop.hardwario.com/humidity-tag/)
+- [**Store**](https://www.hardwario.store/p/humidity-tag)
 - [**Schematics**](https://github.com/hardwario/bc-hardware/tree/master/out/bc-tag-humidity)
 - [**SDK Library**](https://sdk.hardwario.com/group__twr__tag__humidity)
 - [**Header File**](https://github.com/hardwario/twr-sdk/blob/master/twr/inc/twr_tag_humidity.h)

@@ -40,7 +40,7 @@ Many smartphones are equipped with NFC technology today.
 - Mechanical dimensions: 16 x 16 mm
 
 ## References
-- [**Shop**](https://shop.hardwario.com/nfc-tag/)
+- [**Store**](https://www.hardwario.store/p/nfc-tag)
 - [**Schematics**](https://github.com/hardwario/bc-hardware/tree/master/out/bc-tag-nfc)
 - [**SDK Library**](https://sdk.hardwario.com/group__twr__tag__nfc)
 - [**Header File**](https://github.com/hardwario/twr-sdk/blob/master/twr/inc/twr_tag_nfc.h)

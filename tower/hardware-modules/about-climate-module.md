@@ -32,7 +32,7 @@ import Image from '@theme/IdealImage';
 - Mechanical dimensions: 33 x 55 mm
 
 ## References
-- [**Shop**](https://shop.hardwario.com/button-module/)
+- [**Store**](https://www.hardwario.store/p/climate-module)
 - [**Schematics**](https://github.com/hardwario/bc-hardware/tree/master/out/bc-module-button)
 - [**SDK Library**](https://sdk.hardwario.com/group__twr__button)
 - [**Header File**](https://github.com/hardwario/twr-sdk/blob/master/twr/inc/twr_button.h)

@@ -64,7 +64,7 @@ We **do not recommend** putting the top part of the sensor under the ground. Gro
 - Protection marking IP 68
 
 ## References
-- [**Shop**](https://shop.hardwario.com/soil-sensor/)
+- [**Store**](https://www.hardwario.store/p/soil-sensor-set)
 - [**Schematics**](https://github.com/hardwario/bc-hardware/tree/master/out/bc-soil-sensor)
 - [**SDK Library**](https://sdk.hardwario.com/group__twr__soil__sensor.html)
 - [**Header File**](https://github.com/hardwario/twr-sdk/blob/master/twr/inc/twr_soil_sensor.h)

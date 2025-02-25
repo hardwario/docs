@@ -31,7 +31,7 @@ import Image from '@theme/IdealImage';
 - Integrated temperature sensor −20 °C to 80 °C
 
 ## References
-- [**Shop**](https://shop.hardwario.com/infra-grid-module/)
+- [**Store**](https://www.hardwario.store/p/infra-grid-module)
 - [**Schematics**](https://github.com/hardwario/bc-hardware/tree/master/out/bc-module-infra-grid)
 - [**SDK Library**](https://sdk.hardwario.com/group__twr__module__infra__grid.html)
 - [**Header File**](https://github.com/hardwario/twr-sdk/blob/master/twr/inc/twr_module_infra_grid.h)

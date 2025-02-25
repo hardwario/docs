@@ -30,5 +30,5 @@ import Image from '@theme/IdealImage';
 - Mechanical dimensions: 33 x 55 mm
 
 ## References
-- [**Shop**](https://shop.hardwario.com/bridge-module/)
+- [**Store**](https://www.hardwario.store/p/bridge-module)
 - [**Schematics**](https://github.com/hardwario/twr-hardware/tree/master/out/bc-module-bridge)

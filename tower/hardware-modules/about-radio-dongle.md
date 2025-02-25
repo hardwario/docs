@@ -34,6 +34,6 @@ import Image from '@theme/IdealImage';
 - Mechanical dimensions: 25 x 60 mm
 
 ## References
-- [**Shop**](https://shop.hardwario.com/radio-dongle/)
+- [**Store**](https://www.hardwario.store/p/radio-dongle)
 - [**Schematics**](https://github.com/hardwario/bc-hardware/tree/master/out/bc-usb-dongle)
 - [**Projects**](https://www.hackster.io/hardwario/projects?part_id=73696)

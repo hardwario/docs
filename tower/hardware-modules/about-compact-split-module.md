@@ -27,5 +27,5 @@ This module cannot be connected directly to the [**Battery Module**](./about-bat
 :::
 
 ## References
-- [**Shop**](https://shop.hardwario.com/compact-split-module/)
+- [**Store**](https://www.hardwario.store/p/compact-split-module)
 - [**Schematics**](https://github.com/hardwario/twr-hardware/tree/master/out/bc-module-split-compact)

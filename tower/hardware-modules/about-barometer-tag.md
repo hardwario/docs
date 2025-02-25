@@ -35,7 +35,7 @@ import Image from '@theme/IdealImage';
 - Mechanical dimensions: 16 x 16 mm
 
 ## References
-- [**Shop**](https://shop.hardwario.com/barometer-tag/)
+- [**Store**](https://www.hardwario.store/p/barometer-tag)
 - [**Schematics**](https://github.com/hardwario/bc-hardware/tree/master/out/bc-tag-barometer)
 - [**SDK Library**](https://sdk.hardwario.com/group__twr__tag__barometer)
 - [**Header File**](https://github.com/hardwario/twr-sdk/blob/HEAD/twr/inc/twr_tag_barometer.h)

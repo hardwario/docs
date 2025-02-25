@@ -45,7 +45,7 @@ The VCC middle pin is possible to control by software. You can enable 3 V on thi
 - Dimensions: 33 x 55 mm
 
 ## References
-- [**Shop**](https://shop.hardwario.com/sensor-module/)
+- [**Store**](https://www.hardwario.store/p/sensor-module)
 - [**Schematics**](https://github.com/hardwario/bc-hardware/tree/master/out/bc-module-sensor)
 - [**SDK Library**](https://sdk.hardwario.com/group__twr__module__sensor)
 - [**Header File**](https://github.com/hardwario/twr-sdk/blob/master/twr/inc/twr_module_sensor.h)
