@@ -27,22 +27,18 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
   background-color: rgb(37, 37, 50);
 }
 
-/* Overriding root Infima variables when in dark mode */
-[data-theme='dark'] {
-  --ifm-color-secondary: rgb(45, 45, 60); /* Changing color of button background - affects whole secondary class */
-  --ifm-color-secondary-dark: rgb(37, 37, 50); /* Changing color of effect on buttons - affects whole secondary class */
-}
-
 /* Secondary buttons in dark mode */
 [data-theme='dark'] .button--secondary {
-  color: white !important; /* Changes color of text (Force) */
+  color: white; /* Changes color of text (Force) */
+  background: rgb(45, 45, 60); /* Changes color of button background */
+  border: none; /* Remove border */
 }
 
 /* Change hero banner text color in dark mode */
 [data-theme='dark'] .hero__title {
-  color: white !important; /* Changes color of text */
+  color: white; /* Changes color of text */
 }
 
 [data-theme='dark'] .hero__subtitle {
-  color: rgb(221, 221, 221) !important; /* Slightly different shade for subtitle */
+  color: rgb(221, 221, 221); /* Slightly different shade for subtitle */
 }
