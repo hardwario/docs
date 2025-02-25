@@ -41,7 +41,7 @@ If you want your device to last even longer and don't care about the footprint, 
 - Dimensions: 33 x 55 mm
 
 ## References
-- [**Shop**](https://shop.hardwario.com/mini-battery-module/)
+- [**Store**](https://www.hardwario.store/p/mini-battery-module)
 - [**Schematics**](https://github.com/hardwario/bc-hardware/tree/master/out/bc-module-battery-mini)
 - [**SDK Library**](https://sdk.hardwario.com/group__twr__module__battery)
 - [**Header File**](https://github.com/hardwario/twr-sdk/blob/master/twr/inc/twr_module_battery.h)

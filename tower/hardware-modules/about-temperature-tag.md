@@ -34,7 +34,7 @@ import Image from '@theme/IdealImage';
 - Mechanical dimensions: 16 x 16 mm
 
 ## References
-- [**Shop**](https://shop.hardwario.com/temperature-tag/)
+- [**Store**](https://www.hardwario.store/p/temperature-tag)
 - [**Schematics**](https://github.com/hardwario/bc-hardware/tree/master/out/bc-tag-temperature)
 - [**SDK Library**](https://sdk.hardwario.com/group__twr__tag__temperature)
 - [**Header File**](https://github.com/hardwario/twr-sdk/blob/master/twr/inc/twr_tag_temperature.h)

@@ -24,7 +24,6 @@ import Image from '@theme/IdealImage';
 - Mechanical dimensions: 33 x 55 mm
 
 ## References
-- [**Shop**](https://shop.hardwario.com/1-wire-module/)
 - [**Schematics**](https://github.com/hardwario/bc-hardware/tree/master/out/bc-module-1-wire)
 - [**SDK Library**](https://sdk.hardwario.com/group__twr__onewire)
 - [**Header File**](https://github.com/hardwario/twr-sdk/blob/master/twr/inc/twr_onewire.h)

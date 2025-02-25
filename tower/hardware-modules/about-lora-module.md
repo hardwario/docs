@@ -33,7 +33,7 @@ import Image from '@theme/IdealImage';
 - Dimensions: 33 x 55 mm
 
 ## References
-- [**Shop**](https://shop.hardwario.com/lora-module/)
+- [**Store**](https://www.hardwario.store/p/lora-module)
 - [**Schematics**](https://github.com/hardwario/bc-hardware/tree/master/out/bc-module-lora)
 - [**SDK Library**](https://sdk.hardwario.com/group__twr__cmwx1zzabz)
 - [**Header File**](https://github.com/hardwario/twr-sdk/blob/master/twr/inc/twr_cmwx1zzabz.h)

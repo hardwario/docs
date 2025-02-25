@@ -37,7 +37,7 @@ You can use the sensor to **detect day and night** or it could be used as auxili
 - Mechanical dimensions: 16 x 16 mm
 
 ## References
-- [**Shop**](https://shop.hardwario.com/lux-meter-tag/)
+- [**Store**](https://www.hardwario.store/p/lux-meter-tag)
 - [**Schematics**](https://github.com/hardwario/bc-hardware/tree/master/out/bc-tag-lux-meter)
 - [**SDK Library**](https://sdk.hardwario.com/group__twr__tag__lux__meter)
 - [**Header File**](https://github.com/hardwario/twr-sdk/blob/master/twr/inc/twr_tag_lux_meter.h)

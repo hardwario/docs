@@ -42,7 +42,7 @@ Carbon dioxide (or CO₂) is a colorless and odorless gas that is vital to life 
 - Mechanical dimensions: 88 x 55 mm
 
 ## References
-- [**Shop**](https://shop.hardwario.com/co2-module/)
+- [**Store**](https://www.hardwario.store/p/co2-module)
 - [**Schematics**](https://github.com/hardwario/bc-hardware/tree/master/out/bc-module-co2)
 - [**SDK Library**](https://sdk.hardwario.com/group__twr__module__co2)
 - [**Header File**](https://github.com/hardwario/twr-sdk/blob/master/twr/inc/twr_module_co2.h)

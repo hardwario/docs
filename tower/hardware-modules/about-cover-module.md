@@ -31,5 +31,5 @@ You can use our [**Mini Cover Module**](./about-mini-cover-module.md) instead.
 - Mechanical dimensions: 88 x 55 mm
 
 ## References
-- [**Shop**](https://shop.hardwario.com/cover-module/)
+- [**Store**](https://www.hardwario.store/p/cover-module)
 - [**Schematics**](https://github.com/hardwario/bc-hardware/tree/master/out/bc-module-cover)

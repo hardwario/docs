@@ -39,7 +39,7 @@ The aluminum knob on the photo is not a part of the module and is sold as an [**
 - Dimensions: 88 x 55 mm
 
 ## References
-- [**Shop**](https://shop.hardwario.com/encoder-module/)
+- [**Store**](https://www.hardwario.store/p/encoder-module)
 - [**Schematics**](https://github.com/hardwario/bc-hardware/tree/master/out/bc-module-encoder)
 - [**SDK Library**](https://sdk.hardwario.com/group__twr__module__encoder)
 - [**Header File**](https://github.com/hardwario/twr-sdk/blob/master/twr/inc/twr_module_encoder.h)

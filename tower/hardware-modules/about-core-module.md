@@ -76,6 +76,6 @@ The maximum current for all **GPIOs combined is 90 mA**.
 - Mechanical dimensions: 33 x 55 mm
 
 ## References
-- [**Shop**](https://shop.hardwario.com/core-module/)
+- [**Store**](https://www.hardwario.store/p/core-module)
 - [**Schematics**](https://github.com/hardwario/bc-hardware/tree/master/out/bc-module-core)
 - [**Projects**](https://www.hackster.io/hardwario/projects?part_id=73681)

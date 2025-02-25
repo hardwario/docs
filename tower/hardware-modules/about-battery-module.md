@@ -43,7 +43,7 @@ It will of course last less time because of just **2 batteries**.
 - Mechanical dimensions: 88 x 55 mm
 
 ## References
-- [**Shop**](https://shop.hardwario.com/battery-module/)
+- [**Store**](https://www.hardwario.store/p/battery-module)
 - [**Schematics**](https://github.com/hardwario/bc-hardware/tree/master/out/bc-module-battery)
 - [**SDK Library**](https://sdk.hardwario.com/group__twr__module__battery)
 - [**Header File**](https://github.com/hardwario/twr-sdk/blob/master/twr/inc/twr_module_battery.h)

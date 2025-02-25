@@ -28,5 +28,5 @@ import Image from '@theme/IdealImage';
 - Operating temperature range: -20 ° C to 80 ° C
 
 ## References
-- [**Shop**](https://shop.hardwario.com/maxi-base-module/)
+- [**Store**](https://www.hardwario.store/p/maxi-base-module)
 - [**Schematics**](https://github.com/hardwario/twr-hardware/tree/master/out/bc-module-base-maxi)

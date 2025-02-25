@@ -27,6 +27,6 @@ If you want to use a thinner module and you can spare the two tag module connect
 :::
 
 ## References
-- [**Shop**](https://shop.hardwario.com/compact-split-module/)
+- [**Store**](https://www.hardwario.store/p/split-module)
 - [**Schematics**](https://github.com/hardwario/twr-hardware/tree/master/out/bc-module-split-compact)
 

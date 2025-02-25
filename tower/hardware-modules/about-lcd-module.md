@@ -45,7 +45,7 @@ An example use-case for the **LCD Module** is a wireless thermostat, or it can d
 - Dimensions: 33 x 55 mm
 
 ## References
-- [**Shop**](https://shop.hardwario.com/lcd-module-bg/)
+- [**Store**](https://www.hardwario.store/p/lcd-module-bg)
 - [**Schematics**](https://github.com/hardwario/bc-hardware/tree/master/out/bc-module-lcd)
 - [**SDK Library**](https://sdk.hardwario.com/group__twr__module__lcd)
 - [**Header File**](https://github.com/hardwario/twr-sdk/blob/master/twr/inc/twr_module_lcd.h)

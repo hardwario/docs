@@ -45,7 +45,7 @@ The maximum allowed current is **6 A**.
 - Mechanical dimensions: 88 x 55 mm
 
 ## References
-- [**Shop**](https://shop.hardwario.com/power-module/)
+- [**Store**](https://www.hardwario.store/p/power-module)
 - [**Schematics**](https://github.com/hardwario/bc-hardware/tree/master/out/bc-module-power)
 - [**SDK Library**](https://sdk.hardwario.com/group__twr__module__power)
 - [**Header File**](https://github.com/hardwario/twr-sdk/blob/master/twr/inc/twr_module_power.h)
