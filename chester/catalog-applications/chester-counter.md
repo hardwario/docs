@@ -81,12 +81,6 @@ app config interval-report 1800
 
 ## Firmware
 
-:::danger
-
-When upgrading firmware from **v1.x.x** to version **v2.0.0 and newer** - it is necessary to [**backup configuration**](common-functionality.md#configuration-backup).
-
-:::
-
 The latest firmware is available in Catalog Applications [Firmware chapter](index.md#application-firmware).
 
 ## Example JSON Message

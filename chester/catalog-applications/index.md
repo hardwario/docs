@@ -33,7 +33,7 @@ Firmwares are located in the [**Application Firmware**](#application-firmware) c
 
 \* The specific hardware or firmware variants may need an external power supply.
 
-## Application Firmware Cloud v2
+## Application Firmware Cloud v2 {#application-firmware}
 
 These firmwares are for newer [**Cloud v2**](../../cloud) communication.
 
