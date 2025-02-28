@@ -87,14 +87,20 @@ sudo apt install python3-venv
 1. Download and unpack the toolchain:
 
    ```
-   wget -c https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v0.16.1/zephyr-sdk-0.16.1_linux-x86_64.tar.xz -O - | xz -d -c - | tar xv -C $HOME/.local/opt
+   wget -c https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v0.17.0/zephyr-sdk-0.17.0_linux-x86_64.tar.xz -O - | xz -d -c - | tar xv -C $HOME/.local/opt
    ```
 
 1. Run the **Zephyr SDK** bundle setup script:
 
    ```
-   $HOME/.local/opt/zephyr-sdk-0.16.1/setup.sh
+   $HOME/.local/opt/zephyr-sdk-0.17.0/setup.sh
    ```
+
+   :::tip
+
+   Answer `Y` to everything.
+
+   :::
 
 ## Create Application
 
