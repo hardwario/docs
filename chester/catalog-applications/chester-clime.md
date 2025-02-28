@@ -274,12 +274,6 @@ app config event-report-rate <1-3600>
 
 ## Firmware
 
-:::danger
-
-When upgrading firmware from **v1.x.x** to version **v2.0.0 and newer** - it is necessary to [**backup configuration**](common-functionality.md#configuration-backup).
-
-:::
-
 The latest firmware is available in the Catalog Applications [Firmware chapter](index.md#application-firmware).
 
 ## Example JSON Message

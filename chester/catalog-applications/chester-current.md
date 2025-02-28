@@ -278,12 +278,6 @@ app config w1-therm-interval-aggreg <1-86400>
 
 ## Firmware
 
-:::danger
-
-When upgrading firmware from **v1.x.x** to version **v2.0.0 and newer** - it is necessary to [**backup configuration**](common-functionality.md#configuration-backup). In the case of using **CHESTER Current** also calibration data.
-
-:::
-
 The latest firmware is available in Catalog Applications [Firmware chapter](index.md#application-firmware).
 
 ## Example JSON Message
