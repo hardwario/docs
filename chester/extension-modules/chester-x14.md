@@ -10,7 +10,7 @@ This article describes the CHESTER-X14 extension module.
 
 ## Module Overview
 
-CHESTER-X13 provides support for 10/100 Ethernet connectivity. It also comes with a built-in step-down with support of up to 30 V.
+CHESTER-X14 provides support for 10/100 Ethernet connectivity. It also comes with a built-in step-down with support of up to 28 V.
 
 ## CHESTER Pin Configuration Diagram
 
