@@ -25,7 +25,7 @@ Some of the basics are not provided, as they are common for all CHESTER catalog 
 Because **CHESTER Control** uses [**CHESTER-X0**](../extension-modules/chester-x0.md) input/output module, it is possible to change input behavior just by the configuration. This way you can assign any of four inputs to one of the functionalities:
 
 - trigger (button, door contact)
-- counter (count events, energy meters with S0 output)
+- counter (count events, energy meters with S0 output, signal length > 1ms)
 - voltage (measure 0-28 V)
 - current (measure 4-20mA current loop)
 
