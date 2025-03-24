@@ -35,7 +35,7 @@ const FeatureList = [
     subtitle: 'Sensor IoT Monitor',
     link: '/fiber/',
     src: '/img/fiber.png',
-    width: 300,
+    width: 250,
     height: 200,
     description: (
       <>
