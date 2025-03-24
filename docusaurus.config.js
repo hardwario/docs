@@ -218,9 +218,8 @@ const config = {
         },
       },
       colorMode: {
-        defaultMode: 'dark', // Default to dark mode
+        defaultMode: 'light', // Default to dark mode
         disableSwitch: false, // Allow switching themes
-        respectPrefersColorScheme: true, // Use system preference
       },
     }),
     onBrokenLinks: 'log',
