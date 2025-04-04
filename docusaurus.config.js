@@ -79,6 +79,16 @@ const config = {
       }),
     ],
     [
+      '@docusaurus/plugin-content-docs',
+      ({
+        id: 'gauger',
+        path: 'gauger',
+        routeBasePath: 'gauger',
+        sidebarPath: require.resolve('./sidebars-gauger.js'),
+        editUrl: 'https://github.com/hardwario/docs/edit/main',
+      }),
+    ],
+    [
       '@docusaurus/plugin-ideal-image',
       {
         quality: 70,
@@ -130,6 +140,12 @@ const config = {
             label: 'CLOUD',
             position: 'left',
             activeBaseRegex: `/cloud/`,
+          },
+          {
+            to: '/gauger/',
+            label: 'GAUGER',
+            position: 'left',
+            activeBaseRegex: `/gauger/`,
           },
           {
             href: 'https://github.com/hardwario/docs',
