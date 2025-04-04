@@ -69,6 +69,19 @@ const FeatureList = [
       </>
     ),
   },
+  {
+    title: 'GAUGER',
+    subtitle: 'Wi-Fi/LAN Input Industrial Module',
+    link: '/gauger/',
+    src: '/img/gauger.png',
+    width: 200,
+    height: 200,
+    description: (
+      <>
+        GAUGER is an industrial IoT device designed to enable seamless data acquisition from production lines, connecting to existing PLCs or standalone machinery.
+      </>
+    ),
+  },
 ];
 
 function Feature({ src, width, height, title, subtitle, link, description }) {
