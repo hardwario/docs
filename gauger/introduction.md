@@ -1,5 +1,5 @@
 ---
-slug: introduction
+slug: /
 title: Introduction
 ---
 
