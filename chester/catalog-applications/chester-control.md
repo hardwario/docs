@@ -146,8 +146,14 @@ The device is polling the Cloud in an interval set by `interval-poll` parameter 
             "delta": 6,
             "measurements": [
                 {
+                    "timestamp": 1705328041,
+                    "value": 4,
+                    "delta": 2
+                },
+                {
                     "timestamp": 1705328341,
-                    "value": 7
+                    "value": 7,
+                    "delta": 3
                 }
             ],
             "value": 7
