@@ -58,7 +58,7 @@ Uninstalling **all extra packages** ensures a clean installation and **prevents 
 :::
 
 #### Update OS
-
+- **Download RouterOS image**: download from [**official webpage**](https://mikrotik.com/product/rbm33g#fndtn-downloads))
 - **Upload RouterOS image**: Upload the RouterOS **.npk file** to the **`Files`** section on EMBER.
 - **Reboot**: Reboot the device to complete the update. (`System` > `Reboot`)
 
