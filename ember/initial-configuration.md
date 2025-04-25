@@ -69,6 +69,7 @@ Uninstalling **all extra packages** ensures a clean installation and **prevents 
 
 #### Install Packages
 
+- **Download packages**: download the package for **MMIPS** via [**download page**](https://mikrotik.com/download)
 - **Upload packages**: Upload the **iot** package **.npk file** to the **`Files`** section (LoRa has been moved under the IoT
   package).
 - **Reboot**: Reboot the device to complete the package installation. (`System` > `Reboot`)
