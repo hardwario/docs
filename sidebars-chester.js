@@ -72,6 +72,53 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: 'Supported Sensors',
+      link: {
+        type: 'doc',
+        id: 'supported-sensors/index',
+      },
+      collapsed: true,
+      items: [
+        {
+          type: 'category',
+          label: 'M-Bus Sensors',
+          link: {
+            type: 'doc',
+            id: 'supported-sensors/m-bus',
+          },
+          collapsed: true,
+          items: [
+
+          ]
+        },
+        {
+          type: 'category',
+          label: 'Modbus Sensors',
+          link: {
+            type: 'doc',
+            id: 'supported-sensors/modbus',
+          },
+          collapsed: true,
+          items: [
+
+          ]
+        },
+        {
+          type: 'category',
+          label: 'wm-Bus Sensors',
+          link: {
+            type: 'doc',
+            id: 'supported-sensors/wm-bus',
+          },
+          collapsed: true,
+          items: [
+            'supported-sensors/wm-bus/bmeters_iwm-tx3',
+          ]
+        }
+      ]
+    },
+    {
+      type: 'category',
       label: 'Hardware Description',
       link: {
         type: 'generated-index',

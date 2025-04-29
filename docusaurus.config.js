@@ -89,6 +89,16 @@ const config = {
       }),
     ],
     [
+      '@docusaurus/plugin-content-docs',
+      ({
+        id: 'apps',
+        path: 'apps',
+        routeBasePath: 'apps',
+        sidebarPath: require.resolve('./sidebars-apps.js'),
+        editUrl: 'https://github.com/hardwario/docs/edit/main',
+      }),
+    ],
+    [
       '@docusaurus/plugin-ideal-image',
       {
         quality: 70,
@@ -146,6 +156,12 @@ const config = {
             label: 'GAUGER',
             position: 'left',
             activeBaseRegex: `/gauger/`,
+          },
+          {
+            to: '/apps/',
+            label: 'APPS',
+            position: 'left',
+            activeBaseRegex: `/apps/`,
           },
           {
             href: 'https://github.com/hardwario/docs',

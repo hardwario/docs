@@ -3,13 +3,12 @@ slug: bmeters_iwm-tx3
 title: BMeters IWM-TX3
 ---
 
-
 # BMeters IWM-TX3
 ## Descriptions
 
 [Web-Site](https://www.bmeters.com/en/products/iwm-tx3/)
 
-![IWM-TX3](chester/supported-sensors/wm-bus/bmeters_iwm-tx3.png)
+![IWM-TX3](./bmeters_iwm-tx3.png)
 
 ## Configuration
 

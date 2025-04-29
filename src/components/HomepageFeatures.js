@@ -82,6 +82,19 @@ const FeatureList = [
       </>
     ),
   },
+  {
+    title: 'APPS',
+    subtitle: 'Custom Dashboards and Applitions',
+    link: '/apps/',
+    src: '/img/thingsboard.png',
+    width: 200,
+    height: 200,
+    description: (
+      <>
+        APPS is a collection of custom dashboards and applications for visualizing and managing data from your IoT devices.
+      </>
+    ),
+  },
 ];
 
 function Feature({ src, width, height, title, subtitle, link, description }) {
