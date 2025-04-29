@@ -21,8 +21,11 @@ This documentation helps users and gateway integrators to navigate these essenti
 * What ready-made firmware applications are available (with devices in stock) - see the article:<br/>
   [**Catalog Applications**](catalog-applications/index.md)
 
-* Which sensors and environments can be connected to the platform and how - see the article:<br/>
+* Extendsion modules for connecting sensors and enviroments to the platform and how - see the article:<br/>
   [**Extension Modules**](extension-modules/index.md)
+
+* Which sensors and environments can be connected to the platform and how - see the article:<br/>
+  [**Supported Sensors**](supported-sensors/index.md)
 
 * What are the main parts and parameters of the **CHESTER** platform - see the article:<br/>
   [**Hardware Description**](category/hardware-description)
