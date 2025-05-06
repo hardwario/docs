@@ -15,6 +15,7 @@ Here is list of tested sensors by HARDWARIO with basic configuration to use:
 | Carlo Gavazzi EM5XX Series        | 3-Phase Electrometer | Integrated into CHESTER Energy |
 | ORNO OR-WE-516                    | 3-Phase Electrometer | Integrated into CHESTER Energy |
 | Schneider Electric iEM3000 series | 3-Phase Eletrometer  | Integrated into CHESTER Energy |
+| LAMBRECHT meteo sensors           |                      | Integrated into CHESTER Meteo  |
 
 # Modbus Communication Overview
 
