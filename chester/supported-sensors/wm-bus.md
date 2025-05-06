@@ -6,20 +6,12 @@ title: wM-Bus Sensors
 import Image from '@theme/IdealImage';
 
 # wM-Bus Sensors
+
 Here is list of tested sensors by HARDWARIO with basic configuration to use:
-| Name of sensor | Type of sensor |
-| [**BMeters IWM-TX3**](chester/supported-sensors/wm-bus/bmeters_iwm-tx3.md) | Watermeter |
 
-
-
-
-
-
-
-
-
-
-
+| Name of sensor                                                             | Type of sensor |
+|----------------------------------------------------------------------------|----------------|
+| [**BMeters IWM-TX3**](chester/supported-sensors/wm-bus/bmeters_iwm-tx3.md) | Watermeter     |
 
 # Wireless M-Bus (wM-Bus) Communication Overview
 
