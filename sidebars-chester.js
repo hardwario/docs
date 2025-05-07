@@ -113,6 +113,7 @@ const sidebars = {
           collapsed: true,
           items: [
             'supported-sensors/wm-bus/bmeters_iwm-tx3',
+            'supported-sensors/wm-bus/bmeters_iwm-tx5',
           ]
         }
       ]

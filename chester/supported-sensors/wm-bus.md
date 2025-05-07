@@ -15,7 +15,7 @@ Here is list of tested sensors by HARDWARIO with basic configuration to use:
 
 # Wireless M-Bus (wM-Bus) Communication Overview
 
-![wM-Bus Architecture](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/OMS_Grafik.jpg/800px-OMS_Grafik.jpg)
+![wM-Bus Architecture](wm-bus_topology.png)
 
 *Figure: Example architecture using Wireless M-Bus devices communicating with a gateway.*
 
