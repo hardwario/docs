@@ -12,6 +12,7 @@ Here is list of tested sensors by HARDWARIO with basic configuration to use:
 | Name of sensor                                                             | Type of sensor |
 |----------------------------------------------------------------------------|----------------|
 | [**BMeters IWM-TX3**](chester/supported-sensors/wm-bus/bmeters_iwm-tx3.md) | Watermeter     |
+| [**BMeters IWM-TX5**](chester/supported-sensors/wm-bus/bmeters_iwm-tx5.md) | Watermeter     |
 
 # Wireless M-Bus (wM-Bus) Communication Overview
 
@@ -21,7 +22,7 @@ Here is list of tested sensors by HARDWARIO with basic configuration to use:
 
 ## What is Wireless M-Bus?
 
-Wireless M-Bus (wM-Bus) is an extension of the wired M-Bus protocol defined by the EN 13757 standard, enabling wireless communication between utility meters and data collectors. It is primarily used in applications requiring remote meter reading over longer distances without the need for physical cabling.
+Wireless M-Bus (wM-Bus) is an extension of the wired M-Bus protocol defined by the EN 13757 standard. It enables wireless communication between utility meters and data collectors. It is primarily used in applications requiring remote meter reading over longer distances without physical cabling.
 
 wM-Bus is optimized for low-power, low-bandwidth communication, making it ideal for battery-powered metering devices in residential, commercial, and industrial environments.
 
@@ -29,7 +30,7 @@ wM-Bus is optimized for low-power, low-bandwidth communication, making it ideal 
 
 ## Wireless Modes and Frequencies
 
-wM-Bus supports several modes depending on use case:
+wM-Bus supports several modes depending on the use case:
 - **S-Mode**: Stationary, one-way communication (e.g., daily metering)
 - **T-Mode**: Frequent transmissions with support for two-way communication
 - **C-Mode**: Continuous communication with acknowledgment (bidirectional)
@@ -38,7 +39,7 @@ wM-Bus supports several modes depending on use case:
 ### Frequency Bands
 - **868 MHz** (Europe)
 - **433 MHz** (some regions)
-- Data rate typically ranges from 2.4 kbps to 100 kbps depending on mode
+- Data rate typically ranges from 2.4 kbps to 100 kbps, depending on mode
 
 ---
 
