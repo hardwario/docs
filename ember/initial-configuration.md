@@ -15,8 +15,8 @@ Most users will want to follow the [**Hotspot Configuration**](hotspot-configura
 :::
 
 ## Hardware preparation
-Insert the **Mikrotik R11E-LR8** LoRaWAN card into the onboard slot labeled **PCIe1**
-Remove the **jumper** on the right side (J7) to **enable power** to the PCIe cards.
+- Insert the **Mikrotik R11E-LR8** LoRaWAN card into the onboard slot labeled **PCIe1**
+- Remove the **jumper** on the right side (J7) to **enable power** to the PCIe cards.
 
 
 ## Prerequisites
