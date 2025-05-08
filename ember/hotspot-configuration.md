@@ -122,8 +122,8 @@ You can ignore the default **TTN** servers.
 :::
 
 ```
-/lora servers add address=192.168.16.1 down-port=1700 name=ember-cloud up-port=1700
-/lora set 0 antenna=uFL disabled=no name=gateway-0 network=private servers=ember-cloud
+/iot lora servers add address=192.168.16.1 down-port=1700 name=ember-cloud up-port=1700 protocol=UDP
+/iot lora set 0 antenna=uFL disabled=no name=gateway-0 network=private servers=ember-cloud
 ```
 
 :::caution
@@ -139,13 +139,13 @@ In case you do not use the **EMBER Cloud** service, you have to use your **LoRaW
 * Add the **Datacake** server to the server list by running the following command on **RouterOS**
 
 ```
-/lora servers add address=eu1.datacake-lns.com up-port=1700 name=datacake down-port=1700
+/iot lora servers add address=eu1.datacake-lns.com up-port=1700 name=datacake down-port=1700 protocol=UDP
 ```
 
 * Assign the **Datacake** server to the **LoRa** device
 
 ```
-/lora set 0 servers=datacake
+/iot lora set 0 servers=datacake
 ```
 
 * Add the gateway by providing the following details:
