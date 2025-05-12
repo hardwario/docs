@@ -18,6 +18,11 @@ Most users will want to follow the [**Hotspot Configuration**](hotspot-configura
 - Insert the **Mikrotik R11E-LR8** LoRaWAN card into the onboard slot labeled **PCIe1**
 - Remove the **jumper** on the right side (J7) to **enable power** to the PCIe cards.
 
+:::tip
+
+To use an external antenna, replace the internal cable connected to the LoRaWAN card in the PCIe slot with a cable routed to the external antenna connector.
+
+:::
 
 ## Prerequisites
 
