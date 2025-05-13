@@ -1,20 +1,20 @@
 ---
-slug: bmeters_iwm-tx3
-title: BMeters IWM-TX3
+slug: bmeters_iwm-tx5
+title: BMeters IWM-TX5
 ---
 
-# BMeters IWM-TX3
+# BMeters IWM-TX5
 ## Descriptions
 
-[Web-Site](https://www.bmeters.com/en/products/iwm-tx3/)
+[Web-Site](https://www.bmeters.com/en/products/iwm-tx5/)
 
-![IWM-TX3](./bmeters_iwm-tx3.png)
+![IWM-TX3](./bmeters_iwm-tx5.png)
 
 ## Configuration
 
-### Configuration Guide for IWM-TX3 Water Meter via NFC
+### Configuration Guide for IWM-TX5 Water Meter via NFC
 
-This guide describes the steps to configure a water meter with an IWM-TX3 NFC module using an Android smartphone.
+This guide describes the steps to configure a water meter with an IWM-TX5 NFC module using an Android smartphone.
 
 ---
 
@@ -41,7 +41,7 @@ You can scan the QR code below to go directly to the app:
 ### Step 3: Select Device Type
 
 From the list of available devices, select:
-- **IWM-TX3**
+- **IWM-TX5**
 
 ---
 
@@ -50,8 +50,8 @@ From the list of available devices, select:
 Adjust the following settings:
 
 - **AMR**: Check (enable automatic meter reading)
-- **Water meter type**: `GMDM-I AF`
-- **Transmit during weekend**: Check (enable weekend transmissions)
+- **Water meter type**: `GSD8-I AF DN15`
+- **Transmit during weekend**: Check "Saturday" and "Sunday" and "Send Date and Time"
 
 ---
 
@@ -70,4 +70,4 @@ Adjust the following settings:
 
 Your water meter is now successfully configured.
 
-![Read data via config](bmeters_iwm-tx3_data.png)
+![Read data via config](bmeters_iwm_tx5_data.png)
