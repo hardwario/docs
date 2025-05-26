@@ -15,7 +15,7 @@ TAPPER is an NFC Tag reader, communicating over MQTT.
 - MQTT communication
   - TLS connection is currently work-in-progress
 - Tamper switch
-- Visual and accoustic signalization (TAPPER is equipped with and RGB LED and a Buzzer)
+- Visual and acoustic signalization (TAPPER is equipped with an RGB LED and a Buzzer)
 
 ## What next?
 
