@@ -48,7 +48,7 @@ The request topic is `tapper/$id/control/request`.
 The request payload:
 ```json
 {
-    "timestamp": float
+    "timestamp": float,
     "id": int,
     "output": { // relay
             "command":"activate"|"deactivate"|"pulse",
