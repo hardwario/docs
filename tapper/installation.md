@@ -50,7 +50,7 @@ Continue at [Test-it-out](#test-it-out)
 
 - [Git](https://en.wikipedia.org/wiki/Git) for downloading the tapper source
 - [pipx](https://pipx.pypa.io/stable/) for instalation into a separate virtual environment
-- python3-dev are utilities for Python modules useing C compiled code
+- python3-dev are utilities for Python modules using C compiled code
 
 ### Enable SPI and serial port
 
