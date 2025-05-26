@@ -9,7 +9,7 @@ import Image from '@theme/IdealImage';
 
 TAPPER is an NFC Tag reader, communicating over MQTT.
 
-## Featues
+## Features
 
 - NFC Tag detection (verified with MIFARE Classic 1k)
 - MQTT communication
