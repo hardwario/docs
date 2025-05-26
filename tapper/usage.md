@@ -9,26 +9,27 @@ import Image from '@theme/IdealImage';
 
 ## Commands
 
-`tapper command [options]`
+Usage: `tapper COMMAND [OPTIONS] [ARGS]...`
 
-## version
+### version
 
 Write the version of the TAPPER client build into the stdout.
 
 `tapper version`
 
-## run
+### run
 
 Run the client.
 
-`tapper run [options]`
+`tapper run [OPTIONS]`
 
-### Options
+#### Options
 
 - `-c` path to the [configuration](#configuration) file
 - `-d` show debug output
 - `-h` MQTT Broker host
 - `--legacy` for use with legacy R1.0 hardware
+- `--help` display help 
 
 # Configuration
 
