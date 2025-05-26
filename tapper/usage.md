@@ -29,7 +29,7 @@ Run the client.
 - `-d` show debug output
 - `-h` MQTT Broker host
 - `--legacy` for use with legacy R1.0 hardware
-- `--help` display help 
+- `--help` display help
 
 # Configuration
 
