@@ -27,7 +27,7 @@ TAPPER has multiple events defined in the API.
 | :-----------------------: | :-----------------------------------------------------: |
 |  `tapper/$id/event/boot`  |                 `{"timestamp": float }`                 |
 | `tapper/$id/event/tamper` | `{"timestamp": float, "state": "active" \| "inactive"}` |
-|  `tapper/$id/event/tag`   |           `{"timestamp": number, "id": str}`            |
+|  `tapper/$id/event/tag`   |           `{"timestamp": float, "id": str}`            |
 
 :::info[Tags]
 
