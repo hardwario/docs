@@ -19,6 +19,6 @@ TAPPER is an NFC Tag reader, communicating over MQTT.
 
 ## What next?
 
-- [Installation](installation)
-- [Usage](usage)
+- [Client Installation](installation)
+- [Client Usage](usage)
 - [MQTT Specification](api-spec)
