@@ -11,7 +11,7 @@ TAPPER can communicate over MQTT, using JSON messages.
 
 ## Topic
 
-Every MQTT Topic starts with `tapper/$id/`, where id is the hardware address of TAPPER.
+Every MQTT Topic starts with `tapper/$id/`, where `id` is the hardware address of TAPPER.
 
 ## Payload
 
