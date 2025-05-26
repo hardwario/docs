@@ -46,6 +46,7 @@ These can be activated through a request sent through MQTT in accordance with th
 The request topic is `tapper/$id/control/request`.
 
 The request payload:
+
 ```json
 {
     "timestamp": float,
@@ -72,12 +73,11 @@ The request payload:
 }
 ```
 
-
-
-
 #### Response
 
-|               Result               |             Topic             |                              Payload                               |
-| :--------------------------------: | :---------------------------: | :----------------------------------------------------------------: |
-| <font color="green">Success</font> | `tapper/$id/control/response` |       `{"timestamp": float, "id": int, "result": "success"}`       |
-|   <font color="red">Error</font>   | `tapper/$id/control/response` | `{"timestamp": float, "id": int, "result": "error", "error": str}` |
+The topic for the response is `tapper/$id/control/response`.
+
+|               Result               |                              Payload                               |
+| :--------------------------------: | :----------------------------------------------------------------: |
+| <font color="green">Success</font> |       `{"timestamp": float, "id": int, "result": "success"}`       |
+|   <font color="red">Error</font>   | `{"timestamp": float, "id": int, "result": "error", "error": str}` |
