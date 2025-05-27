@@ -21,7 +21,7 @@ jobs:
     - name: Install Python dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install algoliasearch
+        pip install --upgrade 'algoliasearch>=4.0,<5.0'
 
     - name: Create deleteIndex.py script
       run: |
@@ -33,7 +33,9 @@ jobs:
         echo "print(\"Deleted records.\")" >> tmp/deleteIndex.py
 
     - name: Run deleteIndex.py
-      run: python tmp/deleteIndex.py
+      run: |
+        pip show algoliasearch
+        python tmp/deleteIndex.py
 
     - name: Clone Algolia scraper
       uses: actions/checkout@v2
