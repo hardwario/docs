@@ -58,7 +58,8 @@ jobs:
         echo "index.clear_objects()" >> tmp/deleteIndex.py
         echo "print(\"Deleted records.\")" >> tmp/deleteIndex.py
 
-        python tmp/deleteIndex.py
+        pipenv install "algoliasearch>=4.0,<5.0"
+        pipenv run python tmp/deleteIndex.py
 
     - name: Build The Index
       run: |
