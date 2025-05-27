@@ -2,7 +2,7 @@ name: main
 
 on:
   push:
-    branches: [ main, master ]
+    branches: [ main, master, ci_test ]
   workflow_dispatch:
 
 jobs:
