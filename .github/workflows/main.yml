@@ -48,6 +48,9 @@ jobs:
         sed -r -i'' 's/APPLICATION_ID=/APPLICATION_ID=AKRT8SVTPP/' algolia/.env
         sed -r -i'' 's/API_KEY=/API_KEY=${{ secrets.API_KEY }}/' algolia/.env
 
+        pipenv install "algoliasearch>=4.0,<5.0"
+        pipenv run pip show algoliasearch
+
     - name: Delete Old Index
       run: |
         echo "from algoliasearch.search_client import SearchClient" > deleteIndex.py
@@ -56,8 +59,6 @@ jobs:
         echo "index.clear_objects()" >> deleteIndex.py
         echo "print(\"Deleted records.\")" >> deleteIndex.py
 
-        pipenv install "algoliasearch>=4.0,<5.0"
-        pipenv run pip show algoliasearch
         pipenv run python deleteIndex.py
 
     - name: Build The Index
