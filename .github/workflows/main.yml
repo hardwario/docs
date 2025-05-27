@@ -18,6 +18,7 @@ jobs:
     - name: Install all dependencies
       run: |
         python -m pip install --upgrade pipenv
+        python -m pip install "algoliasearch>=4.0,<5.0"
 
     - name: Clone algolia repository
       uses: actions/checkout@v2
@@ -48,18 +49,15 @@ jobs:
         sed -r -i'' 's/APPLICATION_ID=/APPLICATION_ID=AKRT8SVTPP/' algolia/.env
         sed -r -i'' 's/API_KEY=/API_KEY=${{ secrets.API_KEY }}/' algolia/.env
 
-        pipenv install "algoliasearch>=4.0,<5.0"
-        pipenv run pip show algoliasearch
-
     - name: Delete Old Index
       run: |
-        echo "from algoliasearch.search_client import SearchClient" > tmp/deleteIndex.py
-        echo "client = SearchClient.create(\"AKRT8SVTPP\", \"${{ secrets.API_KEY }}\")" >> tmp/deleteIndex.py
-        echo "index = client.init_index(\"hardwario\")" >> tmp/deleteIndex.py
-        echo "index.clear_objects()" >> tmp/deleteIndex.py
-        echo "print(\"Deleted records.\")" >> tmp/deleteIndex.py
+        echo "from algoliasearch.search_client import SearchClient" > deleteIndex.py
+        echo "client = SearchClient.create(\"AKRT8SVTPP\", \"${{ secrets.API_KEY }}\")" >> deleteIndex.py
+        echo "index = client.init_index(\"hardwario\")" >> deleteIndex.py
+        echo "index.clear_objects()" >> deleteIndex.py
+        echo "print(\"Deleted records.\")" >> deleteIndex.py
 
-        pipenv run python tmp/deleteIndex.py
+        python deleteIndex.py
 
     - name: Build The Index
       run: |
