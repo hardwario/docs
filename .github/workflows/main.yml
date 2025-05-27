@@ -51,12 +51,14 @@ jobs:
 
     - name: Delete Old Index
       run: |
+        pip list
         echo "from algoliasearch.search_client import SearchClient" > deleteIndex.py
         echo "client = SearchClient.create(\"AKRT8SVTPP\", \"${{ secrets.API_KEY }}\")" >> deleteIndex.py
         echo "index = client.init_index(\"hardwario\")" >> deleteIndex.py
         echo "index.clear_objects()" >> deleteIndex.py
         echo "print(\"Deleted records.\")" >> deleteIndex.py
 
+        cat deleteIndex.py
         python deleteIndex.py
 
     - name: Build The Index
