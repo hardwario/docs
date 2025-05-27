@@ -61,4 +61,4 @@ jobs:
     - name: Build The Index
       run: |
         chmod +x algolia/docsearch
-        cd algolia ; pipenv install ; pipenv run ./docsearch run config.json
+        cd algolia ; pipenv install --python $(which python) ; pipenv run ./docsearch run config.json
