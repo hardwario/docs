@@ -53,8 +53,7 @@ jobs:
       run: |
         echo "from algoliasearch.search.client import SearchClient" > deleteIndex.py
         echo "client = SearchClient(\"AKRT8SVTPP\", \"${{ secrets.API_KEY }}\")" >> deleteIndex.py
-        echo "index = client.init_index(\"hardwario\")" >> deleteIndex.py
-        echo "index.clear_objects()" >> deleteIndex.py
+        echo "client.clear_objects(\"hardwario\")" >> deleteIndex.py
         echo "print(\"Deleted records.\")" >> deleteIndex.py
 
         python deleteIndex.py
