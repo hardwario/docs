@@ -53,9 +53,10 @@ mqtt:
   port: 1883
   tls:
     cafile: "/path/to/file" # path to the self signed CA certificate file
-    certfile: "/path/to/file" # path to the client certificate file, signed by the CA 
+    certfile: "/path/to/file" # path to the client certificate file, signed by the CA
     keyfile: "/path/to/file" # path to the client key file
 ```
+
 :::warning[MQTT Server Certificate]
 
 The **MQTT host** must **match** the **CN** or one of the **SANs** specified in the **server** X509 certificate.
