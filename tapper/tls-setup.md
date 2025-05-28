@@ -31,7 +31,8 @@ Or generate a server key without encryption.
 Generate a certificate signing request.  
 `openssl req -out server.csr -key server.key -new`
 
-Create a `v3.ext` file with the following contents.  
+Create a `v3.ext` file with the following contents.
+
 ```conf
 subjectAltName         = DNS:hostname, IP:10.0.0.0
 ```
@@ -45,7 +46,6 @@ Sign the CSR with your CA key.
 ### Mosquitto setup
 
 We also need to configure mosquitto to actually use these certificates and keys.
-
 
 Make a config file for mosquitto (for example `nano mosquitto.conf`).
 
