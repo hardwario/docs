@@ -52,7 +52,8 @@ Raspberry Pi Imager allows you to set up hostname, SSH, WiFi, and [other setting
 - We will need `git`, `pipx`, and `python3-dev`
 - `sudo apt install git pipx python3-dev`
 - `pipx` needs to be added to PATH: `pipx ensurepath`
-  - This adds an entry into your `~/.bashrc` to load it without logging out, use `source ~/.bashrc`
+  - This adds an entry into your `~/.bashrc`. 
+  - To load it without logging out, use `source ~/.bashrc`
 
 #### Why these?
 
