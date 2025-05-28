@@ -183,14 +183,44 @@ const config = {
           }
         }
       },
-      algolia: {
+      headTags: [
+        {
+          tagName: 'link',
+          attributes: {
+            rel: 'stylesheet',
+            href: 'https://cdn.jsdelivr.net/npm/@docsearch/css@3',
+          },
+        },
+      ],
+      scripts: [
+        {
+          src: 'https://cdn.jsdelivr.net/npm/@docsearch/js@3',
+          async: true,
+        },
+        {
+          // Inline script to initialize DocSearch
+          content: `
+        document.addEventListener("DOMContentLoaded", function () {
+          docsearch({
+            appId: "K135P34ZHO",
+            apiKey: "509f73575ce4e11ae0df53b76d7cad48",
+            indexName: "hardwario",
+            insights: true,
+            container: "#docsearch",
+            debug: false
+          });
+        });
+      `,
+        },
+      ],
+      /*algolia: {
         apiKey: "00f3bf4268a994b715822ae701e41326",
         indexName: "hardwario",
         appId: "AKRT8SVTPP",
         contextualSearch: false,
         placeholder: "search",
         searchPagePath: false,
-      },
+      },*/
       footer: {
         style: 'dark',
         links: [
@@ -254,7 +284,7 @@ const config = {
         disableSwitch: false, // Allow switching themes
       },
     }),
-    onBrokenLinks: 'log',
+  onBrokenLinks: 'log',
 };
 
 module.exports = config;
