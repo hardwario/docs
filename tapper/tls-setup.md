@@ -1,13 +1,13 @@
 ---
 slug: /tls-setup
-title: MQTT TLS setup
+title: MQTT TLS Setup
 ---
 
 import Image from '@theme/IdealImage';
 
-# MQTT over TLS setup
+# MQTT over TLS
 
-This quide provides all the information needed to make TLS work with self-signed certificates.
+This guide provides all the information needed to make TLS work with self-signed certificates.
 
 ## Certificate Authority
 
@@ -37,17 +37,17 @@ Create a `v3.ext` file with the following contents.
 subjectAltName         = DNS:hostname, IP:10.0.0.0
 ```
 
-Replace the `hostname` and `10.0.0.0` in SAN with your hostname and your ip, if you wish to use those for mosquitto server specification.  
-For more information abou SANs, refer to this [RFC](https://www.rfc-editor.org/rfc/rfc9525#name-identifying-application-ser).
+If you wish to use the `hostname` and `10.0.0.0` in SANs for mosquito server specification, replace them with your hostname and IP.  
+For more information about SANs, refer to this [RFC](https://www.rfc-editor.org/rfc/rfc9525#name-identifying-application-ser).
 
 Sign the CSR with your CA key.
 `openssl x509 -req -in server.csr -CA ca.crt -CAkey ca.key -CAcreateserial -out server.crt -days 365 -extfile v3.ext`
 
-### Mosquitto setup
+### Mosquitto Setup
 
-We also need to configure mosquitto to actually use these certificates and keys.
+We also need to configure Mosquitto actually to use these certificates and keys.
 
-Make a config file for mosquitto (for example `nano mosquitto.conf`).
+Make a config file for mosquitto (for example, `nano mosquitto.conf`).
 
 ```conf
 per_listener_settings true
@@ -89,6 +89,6 @@ Send the `client.key`, `client.crt`, and `ca.crt` to the TAPPER and update your 
 
 :::tip
 
-You can send the files using `scp`.
+You can send the files using `scp`
 
 :::

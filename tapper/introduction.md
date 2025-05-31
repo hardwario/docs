@@ -7,19 +7,20 @@ import Image from '@theme/IdealImage';
 
 # TAPPER
 
-TAPPER is a secure NFC tag reader powered by a Raspberry Pi Zero 2 W, along with the PN532 module. It communicates over MQTT and is designed for systems requiring reliable tag verification.
+TAPPER is a secure NFC tag reader powered by a Raspberry Pi Zero 2 W and the PN532 module. It was designed to communicate over MQTT for systems requiring reliable tag verification.
 
-## Features
+## Basic Features
 
 - NFC Tag detection (verified with MIFARE Classic 1k)
-- MQTT communication
-  - MQTT over TLS opssible
-- Tamper switch
-- Visual and acoustic signalization (TAPPER is equipped with an RGB LED and a Buzzer)
+- Secure MQTT communication
+  - TLS support
+- Tamper detection using a mechanical switch
+- Visual and acoustic feedback via integrated RGB LED and Buzzer
 
-## What next?
+## Where next?
 
-- [Client Installation](installation)
-- [Client Usage](usage)
-- [MQTT over TLS](tls-setup)
-- [MQTT Specification](api-spec)
+- [Client Installation](installation) - Install the TAPPER client on TAPPER
+- [Hardware Description](hardware) - Power connections, operating conditions specification
+- [Client Usage](usage) - Usage of the TAPPER Client
+- [MQTT over TLS](tls-setup) - Setup guide for MQTT over TLS
+- [MQTT Specification](api-spec) - MATT API Specification
