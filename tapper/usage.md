@@ -13,7 +13,7 @@ Usage: `tapper COMMAND [OPTIONS] [ARGS]...`
 
 ### version
 
-Write the version of the TAPPER client build into the stdout.
+Write the version of the TAPPER client build into stdout.
 
 `tapper version`
 
@@ -31,9 +31,25 @@ Run the client.
 - `--legacy` for use with legacy R1.0 hardware
 - `--help` display help
 
+#### Peripherals Behavior
+
+**LED**
+
+|        Behavior        |   Description    |
+| :--------------------: | :--------------: |
+| One Short Yellow Blink | NFC tag detected |
+|  Continuous Red Light  | Tamper detected  |
+
+**Buzzer**
+
+|    Behavior    |   Description    |
+| :------------: | :--------------: |
+| One Short Beep | NFC tag detected |
+| Continous Beep | Tamper Detected  |
+
 # Configuration
 
-The TAPPER configuration file is written using the YAML syntax.
+The TAPPER configuration file uses YAML syntax.
 
 ## Options
 
@@ -45,14 +61,14 @@ More options are coming.
 
 ### MQTT
 
-For setup of TLSrefer to [TLS Setup](tls-setup)
+To set up TLS, refer to [TLS Setup](tls-setup)
 
 ```yaml
 mqtt:
   host: "your_host" # required
   port: 1883
   tls:
-    cafile: "/path/to/file" # path to the self signed CA certificate file
+    cafile: "/path/to/file" # path to the self-signed CA certificate file
     certfile: "/path/to/file" # path to the client certificate file, signed by the CA
     keyfile: "/path/to/file" # path to the client key file
 ```
@@ -60,5 +76,7 @@ mqtt:
 :::warning[MQTT Server Certificate]
 
 The **MQTT host** must **match** the **CN** or one of the **SANs** specified in the **server** X509 certificate.
+
+See [MQTT TLS Setup](tls-setup)
 
 :::

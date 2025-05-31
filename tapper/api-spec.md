@@ -1,13 +1,13 @@
 ---
 slug: /api-spec
-title: MQTT API specification
+title: MQTT API Specification
 ---
 
 import Image from '@theme/IdealImage';
 
-# MQTT API specification
+# MQTT API Specification
 
-TAPPER can communicate over MQTT, using JSON messages.
+TAPPER can communicate over MQTT using JSON messages.
 
 ## Topic
 
@@ -15,7 +15,7 @@ Every MQTT Topic starts with `tapper/$id/`, where `id` is the hardware address o
 
 ## Payload
 
-TAPPER uses JSON formatted payloads.
+TAPPER uses JSON-formatted payloads.
 
 Each Payload includes a timestamp.
 
@@ -31,7 +31,7 @@ TAPPER has multiple events defined in the API.
 
 :::info[Tags]
 
-Tag UID is sent in the form of a big-endian hex string.
+TAPPER sends the NFC tag UID as a big-endian hex string.
 
 :::
 
@@ -39,7 +39,7 @@ Tag UID is sent in the form of a big-endian hex string.
 
 TAPPER has an RGB LED and a Buzzer for interaction with the user.
 
-These can be activated through a request sent through MQTT in accordance with this specification.
+These can be activated through a request sent through MQTT following this specification.
 
 #### Request
 
@@ -52,7 +52,7 @@ The request payload:
     "timestamp": float,
     "id": int,
     "output": { // relay
-            "command":"activate"|"deactivate"|"pulse",
+            "command": "activate"|"deactivate"|"pulse",
             "duration": int (optional, only for pulse)
         },
     "visual": { // LED
