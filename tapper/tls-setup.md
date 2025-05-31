@@ -41,7 +41,10 @@ If you wish to use the `hostname` and `10.0.0.0` in SANs for mosquito server spe
 For more information about SANs, refer to this [RFC](https://www.rfc-editor.org/rfc/rfc9525#name-identifying-application-ser).
 
 Sign the CSR with your CA key.
-`openssl x509 -req -in server.csr -CA ca.crt -CAkey ca.key -CAcreateserial -out server.crt -days 365 -extfile v3.ext`
+
+```bash
+openssl x509 -req -in server.csr -CA ca.crt -CAkey ca.key -CAcreateserial -out server.crt -days 365 -extfile v3.ext
+```
 
 ### Mosquitto Setup
 
@@ -85,7 +88,7 @@ Generate a CSR.
 Sign the CSR with your CA key.  
 `openssl x509 -req -in client.csr -CA ca.crt -CAkey ca.key -CAcreateserial -out client.crt -days 365`
 
-Send the `client.key`, `client.crt`, and `ca.crt` to the TAPPER and update your config accordingly.
+Send the `client.key`, `client.crt`, and `ca.crt` to the TAPPER and update your [TAPPER config](usage#configuration) accordingly.
 
 :::tip
 

@@ -39,7 +39,7 @@ TAPPER sends the NFC tag UID as a big-endian hex string.
 
 TAPPER has an RGB LED and a Buzzer for interaction with the user.
 
-These can be activated through a request sent through MQTT following this specification.
+These can be activated using a request sent through MQTT following this specification.
 
 #### Request
 
@@ -76,6 +76,8 @@ The request payload:
 #### Response
 
 The topic for the response is `tapper/$id/control/response`.
+
+The Response payloads are:
 
 |               Result               |                              Payload                               |
 | :--------------------------------: | :----------------------------------------------------------------: |
