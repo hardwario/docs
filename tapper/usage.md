@@ -42,10 +42,10 @@ Run the client.
 
 **Buzzer**
 
-|    Behavior    |   Description    |
-| :------------: | :--------------: |
-| One Short Beep | NFC tag detected |
-| Continous Beep | Tamper Detected  |
+|    Behavior     |   Description    |
+| :-------------: | :--------------: |
+| One Short Beep  | NFC tag detected |
+| Continuous Beep | Tamper Detected  |
 
 # Configuration
 

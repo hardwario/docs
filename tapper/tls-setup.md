@@ -58,7 +58,7 @@ allow_anonymous true
 listener 8883
 cafile /path/to/ca.crt
 certfile /path/to/server.crt
-keyfile /path/toserver.key
+keyfile /path/to/server.key
 allow_anonymous false
 require_certificate true
 use_identity_as_username true
