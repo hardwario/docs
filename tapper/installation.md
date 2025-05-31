@@ -49,17 +49,16 @@ Raspberry Pi Imager allows you to set up a hostname, SSH, WiFi, and [other setti
 
 ### Install and set up required packages
 
-- We will need `git`, `pipx`, and `python3-dev`
-- `sudo apt install git pipx python3-dev`
+- We will need `git`, `pipx`, and `python3-dev`: `sudo apt install git pipx python3-dev`
 - `pipx` needs to be added to PATH: `pipx ensurepath`
   - This adds an entry into your `~/.bashrc`
   - To load it without logging out, use `source ~/.bashrc`
 
 #### Why these?
 
-- [Git](https://en.wikipedia.org/wiki/Git) for downloading the tapper source
+- [Git](https://en.wikipedia.org/wiki/Git) for downloading the TAPPER Client
 - [pipx](https://pipx.pypa.io/stable/) for installation into a separate virtual environment
-- python3-dev are utilities for Python modules using C-compiled code
+- `python3-dev` are utilities for Python modules using C-compiled code
 
 ### Enable SPI and serial port
 
