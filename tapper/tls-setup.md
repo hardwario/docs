@@ -37,7 +37,7 @@ Create a `v3.ext` file with the following contents.
 subjectAltName         = DNS:hostname, IP:10.0.0.0
 ```
 
-If you wish to use the `hostname` and `10.0.0.0` in SANs for mosquito server specification, replace them with your hostname and IP.  
+If you wish to use the `hostname` and `10.0.0.0` in SANs for Mosquito server specification, replace them with your hostname and IP.  
 For more information about SANs, refer to this [RFC](https://www.rfc-editor.org/rfc/rfc9525#name-identifying-application-ser).
 
 Sign the CSR with your CA key.
