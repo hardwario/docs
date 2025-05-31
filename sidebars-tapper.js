@@ -2,7 +2,7 @@
 
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
-  docs: ["introduction", "installation", "hardware", "usage", "tls-setup", "api-spec"],
+  docs: ["introduction", "hardware", "installation", "usage", "tls-setup", "api-spec"],
 };
 
 module.exports = sidebars;
