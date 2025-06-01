@@ -12,7 +12,7 @@ In this article, you will find the details about the TAPPER hardware configurati
 ## Basic Parameters
 
 |       **Electrical**       |                           |
-| :------------------------: | :-----------------------: | ------------ |
+| :------------------------: | :-----------------------: |
 |   Minimal supply voltage   |            10V            |
 |   Maximum supply voltage   |            30V            |
 | Typical power consumption  |            TBA            | [//]: # TODO |
@@ -31,6 +31,8 @@ In this article, you will find the details about the TAPPER hardware configurati
 |   Operation temperature    |     -20 °C to +60 °C      |
 
 ## Schematic Diagram
+
+- [Schematic R1.1 (PDF)](media/hio-tapper-r1.1-schematic.pdf)
 
 ### Power
 
