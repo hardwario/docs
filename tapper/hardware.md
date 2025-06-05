@@ -13,10 +13,10 @@ In this article, you will find the details about the TAPPER hardware configurati
 
 | **Electrical**                       |                           |
 | :----------------------------------- | ------------------------: |
-| Minimal supply voltage               |                       10V |
-| Maximum supply voltage               |                       30V |
-| Typical power consumption            |                       TBA | [//]: # TODO |
-| Maximum power consumption            |                       TBA | [//]: # TODO |
+| Minimal supply voltage               |                      10 V |
+| Maximum supply voltage               |                      30 V |
+| Typical power consumption            |                     1.4 W | [//]: # TODO |
+| Maximum power consumption            |                     2.5 W | [//]: # TODO |
 | **Inputs**                           |                           |
 | Terminal block nominal cross section |        1.5 mm<sup>2</sup> |
 | DC power Jack                        |                 1.3x3.8mm |
@@ -24,7 +24,7 @@ In this article, you will find the details about the TAPPER hardware configurati
 | RGB LED                              | 355 mcd, 710 mcd, 140 mcd |
 | Buzzer                               |           80 dBA / 2.7kHz |
 | **Physical**                         |                           |
-| Enclosure dimensions                 |             155x84x21.3mm |
+| Enclosure dimensions                 |            155x84x21.3 mm |
 | Enclosure material                   |        ASA+PC (UL 94 V-0) |
 | Enclosure protection class           |                      IP40 |
 | Enclosure colour                     |    traffic white RAL 9016 |
