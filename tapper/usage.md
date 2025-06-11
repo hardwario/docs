@@ -47,11 +47,11 @@ Run the client.
 | One Short Beep  | NFC tag detected |
 | Continuous Beep | Tamper Detected  |
 
-# Configuration
+## Configuration
 
 The TAPPER configuration file uses YAML syntax.
 
-## Options
+### Options
 
 :::info
 
@@ -59,7 +59,7 @@ More options are coming.
 
 :::
 
-### MQTT
+#### MQTT
 
 To set up TLS, refer to [TLS Setup](tls-setup)
 
