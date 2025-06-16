@@ -46,7 +46,7 @@ Don't forget to **extract** the package files **from the archive**.
 - **Connect the power supply and ethernet**: Attach the **power supply** to the EMBER gateway and connect an **Ethernet cable** from
   the **left Ethernet port** on EMBER (`ether1`) to **your computer**.
 
-- **Open RouterOS interface**: Access RouterOS via **WinBox** or WebFig for the following steps.
+- **Open RouterOS interface**: Access RouterOS via **WinBox** or WebFig for the following steps. Log in using username: **admin** and password: **admin**.
 
 ### Update EMBER
 
