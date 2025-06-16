@@ -181,6 +181,22 @@ sudo journalctl -u chirpstack -f
 sudo journalctl -u chirpstack-gateway-bridge -f
 ```
 
+### Allow outside connections to MQTT broker
+
+:::info
+
+Mainly for testing and debug purposes
+
+:::
+
+- Edit the mosquitto config file in `/etc/mosquitto/mosquitto.conf`:  
+  Add to the bottom:  
+  ```
+  listener 1883
+  allow_anonymous true
+  ```
+
+
 ## Post-Installation Checklist
 
 ### Access the ChirpStack Web Interface
