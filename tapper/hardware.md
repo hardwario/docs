@@ -19,7 +19,7 @@ In this article, you will find the details about the TAPPER hardware configurati
 | Maximum power consumption            |                     2.5 W | [//]: # TODO |
 | **Inputs**                           |                           |
 | Terminal block nominal cross section |        1.5 mm<sup>2</sup> |
-| DC power Jack                        |                1.3x3.8 mm |
+| DC power Jack                        |               1.35x3.5 mm |
 | **Outputs**                          |                           |
 | RGB LED                              | 355 mcd, 710 mcd, 140 mcd |
 | Buzzer                               |          80 dBA / 2.7 kHz |
