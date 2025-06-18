@@ -91,6 +91,16 @@ const config = {
     [
       '@docusaurus/plugin-content-docs',
       ({
+        id: 'sticker',
+        path: 'sticker',
+        routeBasePath: 'sticker',
+        sidebarPath: require.resolve('./sidebars-sticker.js'),
+        editUrl: 'https://github.com/hardwario/docs/edit/main',
+      }),
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      ({
         id: 'apps',
         path: 'apps',
         routeBasePath: 'apps',
@@ -150,6 +160,12 @@ const config = {
             label: 'CLOUD',
             position: 'left',
             activeBaseRegex: `/cloud/`,
+          },
+          {
+            to: '/sticker/',
+            label: 'STICKER',
+            position: 'left',
+            activeBaseRegex: `/sticker/`,
           },
           {
             to: '/gauger/',

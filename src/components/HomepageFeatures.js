@@ -70,6 +70,19 @@ const FeatureList = [
     ),
   },
   {
+    title: 'STICKER',
+    subtitle: '.....................',
+    link: '/sticker/',
+    src: '/img/sticker.webp',
+    width: 200,
+    height: 200,
+    description: (
+      <>
+        STICKER is....
+      </>
+    ),
+  },
+  {
     title: 'GAUGER',
     subtitle: 'Wi-Fi/LAN Input Industrial Module',
     link: '/gauger/',
