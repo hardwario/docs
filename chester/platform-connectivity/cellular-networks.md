@@ -18,9 +18,8 @@ In **HARDWARIO**, we do not restrict customers to use any SIM card provider of t
 
 As of now, we can deliver SIM cards for these three carriers:
 
-* **LTE-M** connectivity: **Onomondo**
-* **NB-IoT** connectivity: **Vodafone**
-* **NB-IoT** connectivity: **T-Mobile**
+* **LTE-M** / **NB-IoT* connectivity: **Vodafone** in European countries.
+* **LTE-M** connectivity: **1NCE** for other providers in non-European countries.
 
 :::caution
 
@@ -142,30 +141,81 @@ The `Carrier` column shows which SIM card you have to use.
 You can apply the settings using these commands:
 
 ```
-lte config lte-m-mode false
-lte config nb-iot-mode true
-lte config autoconn false
-lte config plmnid 50503
-lte config apn hardwario
+lte config antenna "internal"
+lte config mode "lte-m,nb-iot"
+lte config bands ""
+lte config network ""
+lte config apn ""
+lte config auth "none"
+lte config username ""
+lte config password ""
+lte config addr "192.168.192.4"
+lte config modemtrace false
 ```
 
-When `autoconn` is `true`, the **`plmnid` parameter is ignored** and SIM searches for the best network according to 3GPP standard.
+## Auto-Configuration
 
-```
-lte config autoconn true
-```
+If configuration parameters are left **empty**, the system will perform **auto-configuration** based on the available hardware and network environment.
 
-:::tip
+---
 
-Having this option enabled is the recommended setting for the **LTE-M** networks (e.g. **Onomondo**).
+## Configuration Parameters
 
-:::
+### `antenna` – Antenna Type
+Defines the type of antenna connected to the device:
 
-You must save the settings using this command:
+- `internal` – Use the built-in antenna.
+- `external` – Use an externally connected antenna.
 
-```
-config save
-```
+---
+
+### `mode` – Network Mode Selection
+Specifies the preferred network connectivity modes and their priority:
+
+- `lte-m,nb-iot` – Prefer **LTE-M**, fallback to NB-IoT.
+- `nb-iot,lte-m` – Prefer **NB-IoT**, fallback to LTE-M.
+- `lte-m` – Use **LTE-M only**.
+- `nb-iot` – Use **NB-IoT only**.
+
+> ⚠️ Ensure the selected mode is supported by your SIM card and the local network operator.
+
+---
+
+### `apn` – Network APN (Access Point Name)
+Defines the APN required to connect to the mobile network:
+
+- The **IP address** is provided by the **SIM card provider**.
+- Leave empty for **auto-configuration**, if supported by the network and modem.
+
+---
+
+### `auth` – Authentication Method
+Defines the method of APN authentication:
+
+- `"none"` – No authentication.
+- `"pap"` – Use PAP authentication (if supported).
+- `"chap"` – Use CHAP authentication (if supported).
+
+> If your SIM does not require authentication, use `"none"`.
+
+---
+
+### `username` – APN Username
+The username used for APN authentication.  
+Leave empty (`""`) if authentication is not required.
+
+---
+
+### `password` – APN Password
+The password used for APN authentication.  
+Leave empty (`""`) if authentication is not required.
+
+---
+
+### `addr` – Static IP Address
+Specifies the static IP address assigned to the LTE network interface.
+
+
 
 You can verify the settings using this command:
 
@@ -183,6 +233,35 @@ You can read the IMSI of the SIM card even when the CHESTER is not attached:
 
 ```
 lte imsi
+```
+
+## Vodafone Configuration
+This is the reference LTE settings with using **CHESTER** with the **1nce** SIM card:
+
+```
+lte config mode "lte-m,nb-iot"
+lte config bands ""
+lte config network ""
+lte config apn ""
+lte config auth "none"
+lte config username ""
+lte config password ""
+lte config addr "192.168.192.4
+```
+
+
+## 1nce Configuration
+This is the reference LTE settings with using **CHESTER** with the **1nce** SIM card:
+
+```
+lte config mode "lte-m,nb-iot"
+lte config bands ""
+lte config network ""
+lte config apn "iot.1nce.net"
+lte config auth "none"
+lte config username ""
+lte config password ""
+lte config addr "157.245.24.13"
 ```
 
 ## Onomondo Configuration
