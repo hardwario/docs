@@ -90,6 +90,23 @@ The **LoRa package** is now **under the IoT package**.
 
 :::
 
+#### Update LTE
+
+If installed, the LTE card needs updateing.
+
+- In Interface, select the LTE card and disable it
+- Open more settings for the LTE card
+- Allow Roaming and apply
+- Click upgrade firmware and wait for it to finish (might give you an error saying you are already on the newest one)
+- Click Okay
+- Enable the LTE interface again
+
+:::danger
+
+Do not forget to enable the LTE interface at the end.
+
+:::
+
 ### Configuration
 
 #### Reset Configuration
