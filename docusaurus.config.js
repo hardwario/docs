@@ -95,6 +95,15 @@ const config = {
         path: 'apps',
         routeBasePath: 'apps',
         sidebarPath: require.resolve('./sidebars-apps.js'),
+      }),
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      ({
+        id: 'tapper',
+        path: 'tapper',
+        routeBasePath: 'tapper',
+        sidebarPath: require.resolve('./sidebars-tapper.js'),
         editUrl: 'https://github.com/hardwario/docs/edit/main',
       }),
     ],
@@ -162,6 +171,12 @@ const config = {
             label: 'APPS',
             position: 'left',
             activeBaseRegex: `/apps/`,
+          },
+          {
+            to: '/tapper/',
+            label: 'TAPPER',
+            position: 'left',
+            activeBaseRegex: `/tapper/`,
           },
           {
             href: 'https://github.com/hardwario/docs',
