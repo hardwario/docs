@@ -21,13 +21,23 @@ Write the version of the TAPPER client build into stdout.
 
 Run the client.
 
-`tapper run [OPTIONS]`
+`tapper run [OPTIONS]` or `sudo ~/.local/bin/tapper run [OPTIONS]` if you want to use the WiFi config.
+
+:::info 
+
+`sudo` is required for use of NetworkManager.
+
+:::
 
 #### Options
 
-- `-c` path to the [configuration](#configuration) file
-- `-d` show debug output
-- `-h` MQTT Broker host
+- `-c PATH` `--config PATH` path to the [configuration](#configuration) file
+- `-d` `---debug` show debug output
+- `-h IP` `--host IP` MQTT Broker host
+- `-p PORT` `--port PORT` MQTT Broker port
+- `-ca PATH` `--cafile PATH` Path to the CA certificate file
+- `-cert PATH` `--certfile PATH` Path to the client certificate file for use with TLS
+- `-key PATH` `--keyfile PATH` Path to the key file for use with TLS
 - `--legacy` for use with legacy R1.0 hardware
 - `--help` display help
 
@@ -51,6 +61,11 @@ Run the client.
 
 The TAPPER configuration file uses YAML syntax.
 
+### MQTT
+
+- Host is the host with the MQTT broker. At least this is required.
+- Port is the port with the exposed MQTT broker.
+
 ```yaml
 mqtt:
   host: "your_host" 
@@ -61,12 +76,7 @@ mqtt:
     keyfile: "/path/to/file"
 ```
 
-### MQTT
-
-- Host is the host with the MQTT broker. At least this is required.
-- Port is the port with the exposed MQTT broker.
-
-### TLS
+#### TLS
 
 To set up TLS, refer to [TLS Setup](tls-setup).
 
@@ -82,6 +92,45 @@ See [MQTT TLS Setup](tls-setup)
 
 :::
 
+### WiFi
+
+- WiFi can be set up either in static or in dynamic mode.
+
+:::tip
+
+The `passphrase` field can have the `psk` value acquired from `wpa_passphrase`.
+
+:::
+
+#### Dynamic 
+
+Dynamic mode uses DHCP and sets the address, gateway, and DNS servers automatically.
+
+```yaml
+wifi:
+  network: "MyWiFiSSID"
+  passphrase: "supersecretpassword"
+  mode: "dynamic"
+```
+
+#### Static
+
+In static mode you have to set everything manually.
+
+```yaml
+wifi:
+  network: "MyWiFiSSID"
+  passphrase: "supersecretpassword"
+  mode: "static"
+  address: "192.168.1.100/24"
+  gateway: "192.168.1.1"
+  nameservers:  
+  - 8.8.8.8
+  - 1.1.1.1
+```
+
+The address can have a prefix length or a netmask attached, as shown in the example.
+
 ### Example
 
 An example config file in `/home/hardwario/tapper.conf`:
@@ -94,5 +143,15 @@ mqtt:
     cafile: "/home/hardwario/ca.crt"
     certfile: "/home/hardwario/client.crt"
     keyfile: "/home/hardwario/client.key"
+wifi:
+  network: "MyWiFiSSID"
+  passphrase: "supersecretpassword"
+  mode: "static"
+  address: "192.168.1.100/24"
+  gateway: "192.168.1.1"
+  nameservers:  
+  - 8.8.8.8
+  - 1.1.1.1
 ```
-Would be used with: `tapper run -c /home/hardwario/tapper.conf`
+
+This would be used with: `sudo tapper run -c /home/hardwario/tapper.conf`
