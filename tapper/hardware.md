@@ -15,8 +15,8 @@ In this article, you will find the details about the TAPPER hardware configurati
 | :----------------------------------- | ------------------------: |
 | Minimal supply voltage               |                      10 V |
 | Maximum supply voltage               |                      30 V |
-| Typical power consumption            |                     1.4 W | [//]: # TODO |
-| Maximum power consumption            |                     2.5 W | [//]: # TODO |
+| Typical power consumption            |                     1.4 W |
+| Maximum power consumption            |                     2.5 W |
 | **Inputs**                           |                           |
 | Terminal block nominal cross section |        1.5 mm<sup>2</sup> |
 | DC power Jack                        |               1.35x3.5 mm |

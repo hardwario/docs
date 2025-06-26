@@ -43,7 +43,7 @@ Raspberry Pi Imager allows you to set up a hostname, SSH access, WiFi, and [othe
 
 :::caution[SSH Security]
 
-It is recommended to set up **SSH with public key authentication** only.  
+It is recommended to set up **SSH with public-key authentication** only.  
 RPi Imager lets you do this within [OS Customization](https://www.raspberrypi.com/documentation/computers/getting-started.html#advanced-options).
 
 :::
