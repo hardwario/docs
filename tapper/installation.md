@@ -13,18 +13,19 @@ Basic installation of the TAPPER client application.
 
 :::info[TL;DR]
 
-```bash
-# For easy copy
-sudo apt update && sudo apt upgrade
-sudo reboot
-# reconnect
-sudo apt install git pipx python3-dev cmake libdbus-1-dev libglib2.0-dev
-pipx ensurepath
-sudo raspi-config # enable serial port and SPI
-pipx install 'git+ssh://git@github.com/hardwario/tapper.git@main#egg=tapper' # stable
-```
-
-Continue at [Test it out](#test-it-out)
+- Flash RPi
+- Update RPi and install client
+  ```bash
+  # For easy copy
+  sudo apt update && sudo apt upgrade
+  sudo reboot
+  # reconnect
+  sudo apt install git pipx python3-dev cmake libdbus-1-dev libglib2.0-dev
+  pipx ensurepath
+  sudo raspi-config # enable serial port and SPI
+  pipx install 'git+ssh://git@github.com/hardwario/tapper.git@main#egg=tapper' # stable
+  ```
+- Continue at [Test it out](#test-it-out)
 
 :::
 
@@ -32,11 +33,18 @@ Continue at [Test it out](#test-it-out)
 
 - Use a tool like [Raspberry Pi Imager](https://github.com/raspberrypi/rpi-imager)
   - [Raspberry Pi Imager documentation](https://www.raspberrypi.com/documentation/computers/getting-started.html#raspberry-pi-imager)
-  - Raspberry Pi OS Lite is recommended
+  - Raspberry Pi OS **Lite** is recommended
 
 :::tip
 
-Raspberry Pi Imager allows you to set up a hostname, SSH, WiFi, and [other settings](https://www.raspberrypi.com/documentation/computers/getting-started.html#advanced-options).
+Raspberry Pi Imager allows you to set up a hostname, SSH access, WiFi, and [other settings](https://www.raspberrypi.com/documentation/computers/getting-started.html#advanced-options).
+
+:::
+
+:::caution[SSH Security]
+
+It is recommended to set up **SSH with public key authentication** only.  
+RPi Imager lets you do this within [OS Customization](https://www.raspberrypi.com/documentation/computers/getting-started.html#advanced-options).
 
 :::
 
