@@ -133,6 +133,7 @@ The **terminal** in WinBox might **prompt** you to set a **password**. If you do
 
   ```
      /interface bridge add name=bridge0
+     /interface lte set [ find default-name=lte1 ] allow-roaming=yes band=""
      /port set 0 name=serial0
      /port set 1 name=serial1
      /interface bridge port add bridge=bridge0 interface=ether2
