@@ -15,6 +15,18 @@ const sidebars = {
       items: [
 
       ],
+    },
+    {
+      type: 'category',
+      label: 'Ubidots',
+      link: {
+        type: 'doc',
+        id: 'ubidots/index',
+      },
+      collapsed: true,
+      items: [
+
+      ],
     }
   ],
 };
