@@ -154,6 +154,7 @@ The **terminal** in WinBox might **prompt** you to set a **password**. If you do
 - Sets an IP address range for `bridge0` with `ether2` and `ether3` interfaces (`172.31.255.1/24`)
 - Creates a DHCP client for the `ether1` interface
 - Sets hostname to `ember`
+- Enables LTE roaming
 
 :::
 
