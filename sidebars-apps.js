@@ -25,7 +25,9 @@ const sidebars = {
       },
       collapsed: true,
       items: [
-
+        'ubidots/creating-device',
+        'ubidots/cloud-connection',
+        'ubidots/creating-dashboard',
       ],
     }
   ],
