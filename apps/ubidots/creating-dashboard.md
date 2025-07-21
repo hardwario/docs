@@ -4,9 +4,7 @@ title: Creating a dashboard
 ---
 import Image from '@theme/IdealImage';
 
-# Ubidots
 
-## Ubidots – Creating Dashboards
 
 
 After successfully connecting your device to the Ubidots cloud and logging into the web interface, follow these steps to create basic widgets on your dashboard:
