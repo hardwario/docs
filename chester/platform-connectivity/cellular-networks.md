@@ -4,13 +4,6 @@ title: Cellular Networks
 ---
 import Image from '@theme/IdealImage';
 
-export const Link1 = () => (
-  <a href="https://onomondo.com/network-marketplace/lte-m-network-coverage/"><b>Open list</b></a>
-);
-
-export const Link2 = () => (
-  <a href="https://onomondo.com/network-marketplace/nb-iot-network-coverage/"><b>Open list</b></a>
-);
 
 In this article, you will find details on various supported cellular networks and the particular settings in various environments. The **CHESTER** platform supports **LTE-M** and **NB-IoT** cellular technologies using  **nRF9160** System-in-Package from **Nordic Semiconductor**.
 
@@ -18,18 +11,18 @@ In **HARDWARIO**, we do not restrict customers to use any SIM card provider of t
 
 As of now, we can deliver SIM cards for these three carriers:
 
-* **LTE-M** / **NB-IoT* connectivity: **Vodafone** in European countries.
-* **LTE-M** connectivity: **1NCE** for other providers in non-European countries.
+* **Vodafone** in European countries.
+* **1NCE** for other providers in non-European countries.
 
 :::caution
 
-For plastic SIM cards, we only support **Nano-SIM** form factor (4FF). Alternatively, **HARDWARIO** can provide a SIM chip variant (MFF2) for bulk orders.
+We only support the **Nano-SIM** form factor (4FF) for plastic SIM cards. Alternatively, **HARDWARIO** can provide a SIM chip variant (MFF2) for bulk orders.
 
 :::
 
-## Network Settings
+# Network Settings
 
-This article provides settings reference for the tested networks and current **Cloud v2**.
+This article provides a settings reference for the tested networks and the current **Cloud v2**.
 
 In case of older firmwares, see legacy [**Cloud v1**](#cloud-v1-configuration) chapter.
 
@@ -39,8 +32,139 @@ The table below applies to the SIM cards provided by **HARDWARIO**. We cannot gu
 
 :::
 
+## Vodafone Configuration
+This is the reference LTE settings using **CHESTER** with the **Vodafone** SIM card:
 
-### Vodafone SIM EU28+2
+```
+lte config mode "lte-m,nb-iot"
+lte config bands ""
+lte config network ""
+lte config apn ""
+lte config auth "none"
+lte config username ""
+lte config password ""
+lte config addr "192.168.192.4
+```
+
+
+## 1nce Configuration
+This is the reference LTE settings with using **CHESTER** with the **1nce** SIM card:
+
+```
+lte config mode "lte-m,nb-iot"
+lte config bands ""
+lte config network ""
+lte config apn "iot.1nce.net"
+lte config auth "none"
+lte config username ""
+lte config password ""
+lte config addr "157.245.24.13"
+```
+
+## Other Settings
+
+You can apply the settings using these commands:
+
+```
+lte config antenna "internal"
+lte config mode "lte-m,nb-iot"
+lte config bands ""
+lte config network ""
+lte config apn ""
+lte config auth "none"
+lte config username ""
+lte config password ""
+lte config addr "157.245.24.13"
+lte config modemtrace false
+```
+
+If configuration parameters are left **empty**, the system will perform **auto-configuration** based on the available hardware and network environment.
+- Select the **lte config apn** according to your **sim card holder**
+
+| SimCard holder         | APN              |
+| :--------------------- | :----------------|
+| 1nce                   | iot.1nce.net     |
+| Onomondo               | onomondo         |
+| Slovak Telekom         | nbiot.telekom.sk |
+| Mobily Saudi Arabia    | M2M-NB           |
+
+## Configuration Parameters
+
+### `antenna` – Antenna Type
+Defines the type of antenna connected to the device:
+
+- `internal` – Use the built-in antenna.
+- `external` – Use an externally connected antenna.
+
+---
+
+### `mode` – Network Mode Selection
+Specifies the preferred network connectivity modes and their priority:
+
+- `lte-m,nb-iot` – Prefer **LTE-M**, fallback to NB-IoT.
+- `nb-iot,lte-m` – Prefer **NB-IoT**, fallback to LTE-M.
+- `lte-m` – Use **LTE-M only**.
+- `nb-iot` – Use **NB-IoT only**.
+
+> ⚠️ Ensure the selected mode is supported by your SIM card and the local network operator.
+
+---
+
+### `apn` – Network APN (Access Point Name)
+Defines the APN required to connect to the mobile network:
+
+- The **IP address** is provided by the **SIM card provider**.
+- Leave empty for **auto-configuration**, if supported by the network and modem.
+
+---
+
+### `auth` – Authentication Method
+Defines the method of APN authentication:
+
+- `"none"` – No authentication.
+- `"pap"` – Use PAP authentication (if supported).
+- `"chap"` – Use CHAP authentication (if supported).
+
+> If your SIM does not require authentication, use `"none"`.
+
+---
+
+### `username` – APN Username
+The username used for APN authentication.  
+Leave empty (`""`) if authentication is not required.
+
+---
+
+### `password` – APN Password
+The password used for APN authentication.  
+Leave empty (`""`) if authentication is not required.
+
+---
+
+### `addr` – Static IP Address
+Specifies the static IP address assigned to the LTE network interface.
+For global connection use `"157.245.24.13"`
+
+## Test commands
+You can verify the settings using this command:
+
+```
+lte config show
+```
+
+Run this command to query the LTE registration state:
+
+```
+lte state
+```
+
+You can read the IMSI of the SIM card even when the CHESTER is not attached:
+
+```
+lte imsi
+```
+
+## Vodafone SIM EU28+2
 
 This table applies for Vodafone SIM card. The `Carrier` column shows which roaming partner Vodafone uses in this area.
 
@@ -123,209 +247,8 @@ This table applies for Vodafone SIM card. The `Carrier` column shows which roami
 | Vatican                | NB-IoT, LTE-M | Vodafone Italy                    | `22210`  | `hardwario` |
 | Vietnam                | NB-IoT        | Viettel Vietnam                   | `45204`  | `hardwario` |
 
-### Another carriers
-
-The `Carrier` column shows which SIM card you have to use.
-
-| Country  | Technology | Carrier  | PLMN ID | APN                |
-| :------- | :--------- | :------- | :------ | :----------------- |
-| <Link1/> | LTE-M      | Onomondo | -       | `onomondo`         |
-| <Link2/> | NB-IoT     | Onomondo | -       | `onomondo`         |
-| Austria  | NB-IoT     | T-Mobile | `23203` | `nbiot.telekom.sk` |
-| Poland   | NB-IoT     | T-Mobile | `26002` | `nbiot.telekom.sk` |
-| Slovakia | NB-IoT     | T-Mobile | `23102` | `nbiot.telekom.sk` |
 
 
-## Applying Settings
-
-You can apply the settings using these commands:
-
-```
-lte config antenna "internal"
-lte config mode "lte-m,nb-iot"
-lte config bands ""
-lte config network ""
-lte config apn ""
-lte config auth "none"
-lte config username ""
-lte config password ""
-lte config addr "192.168.192.4"
-lte config modemtrace false
-```
-
-## Auto-Configuration
-
-If configuration parameters are left **empty**, the system will perform **auto-configuration** based on the available hardware and network environment.
-
----
-
-## Configuration Parameters
-
-### `antenna` – Antenna Type
-Defines the type of antenna connected to the device:
-
-- `internal` – Use the built-in antenna.
-- `external` – Use an externally connected antenna.
-
----
-
-### `mode` – Network Mode Selection
-Specifies the preferred network connectivity modes and their priority:
-
-- `lte-m,nb-iot` – Prefer **LTE-M**, fallback to NB-IoT.
-- `nb-iot,lte-m` – Prefer **NB-IoT**, fallback to LTE-M.
-- `lte-m` – Use **LTE-M only**.
-- `nb-iot` – Use **NB-IoT only**.
-
-> ⚠️ Ensure the selected mode is supported by your SIM card and the local network operator.
-
----
-
-### `apn` – Network APN (Access Point Name)
-Defines the APN required to connect to the mobile network:
-
-- The **IP address** is provided by the **SIM card provider**.
-- Leave empty for **auto-configuration**, if supported by the network and modem.
-
----
-
-### `auth` – Authentication Method
-Defines the method of APN authentication:
-
-- `"none"` – No authentication.
-- `"pap"` – Use PAP authentication (if supported).
-- `"chap"` – Use CHAP authentication (if supported).
-
-> If your SIM does not require authentication, use `"none"`.
-
----
-
-### `username` – APN Username
-The username used for APN authentication.  
-Leave empty (`""`) if authentication is not required.
-
----
-
-### `password` – APN Password
-The password used for APN authentication.  
-Leave empty (`""`) if authentication is not required.
-
----
-
-### `addr` – Static IP Address
-Specifies the static IP address assigned to the LTE network interface.
-
-
-
-You can verify the settings using this command:
-
-```
-lte config show
-```
-
-Run this command to query the LTE registration state:
-
-```
-lte state
-```
-
-You can read the IMSI of the SIM card even when the CHESTER is not attached:
-
-```
-lte imsi
-```
-
-## Vodafone Configuration
-This is the reference LTE settings with using **CHESTER** with the **1nce** SIM card:
-
-```
-lte config mode "lte-m,nb-iot"
-lte config bands ""
-lte config network ""
-lte config apn ""
-lte config auth "none"
-lte config username ""
-lte config password ""
-lte config addr "192.168.192.4
-```
-
-
-## 1nce Configuration
-This is the reference LTE settings with using **CHESTER** with the **1nce** SIM card:
-
-```
-lte config mode "lte-m,nb-iot"
-lte config bands ""
-lte config network ""
-lte config apn "iot.1nce.net"
-lte config auth "none"
-lte config username ""
-lte config password ""
-lte config addr "157.245.24.13"
-```
-
-## Onomondo Configuration
-
-This is the reference LTE settings when using **CHESTER** with the **Onomondo** SIM card:
-
-```
-lte config lte-m-mode true
-lte config nb-iot-mode false
-lte config autoconn true
-lte config apn onomondo
-lte config addr 20.101.123.47
-```
-
-## Vodafone Czech Republic NB-IoT Configuration
-
-This is the reference LTE settings when using **CHESTER** with the **Vodafone Czech Republic** SIM card:
-
-```
-lte config lte-m-mode false
-lte config nb-iot-mode true
-lte config autoconn false
-lte config apn hardwario
-lte config plmnid 23003
-lte config addr 192.168.192.4
-```
-
-## Slovak Telekom NB-IoT Configuration
-
-This is the reference LTE settings when using **CHESTER** with the **Slovak Telekom** SIM card:
-
-```
-lte config lte-m-mode false
-lte config nb-iot-mode true
-lte config autoconn false
-lte config apn nbiot.telekom.sk
-lte config plmnid 23102
-lte config addr 20.101.123.47
-```
-
-## Vodafone Slovakia (Orange)
-
-This is the reference LTE settings when using **CHESTER** with the Czech **Vodafone** SIM card in Slovakia using Orange:
-
-```
-lte config nb-iot-mode false
-lte config lte-m-mode true
-lte config plmnid 23101
-lte config apn hardwario
-lte config addr 192.168.192.4
-```
-
-## Mobily (Saudi Arabia) NB-IoT Configuration
-
-This is the reference LTE settings when using **CHESTER** with the **Mobily** SIM card:
-
-```
-lte config lte-m-mode false
-lte config nb-iot-mode true
-lte config autoconn false
-lte config apn M2M-NB
-lte config plmnid 42003
-lte config addr 20.101.123.47
-```
 
 ## Cloud v1 configuration
 
