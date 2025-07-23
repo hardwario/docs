@@ -22,7 +22,7 @@ Here is list of tested sensors by HARDWARIO with basic configuration to use:
 
 [Web-Site](https://www.gavazziautomation.com/en-global/product/EM530DINAV53XM1X)
 
-![](carlo_gavazzi_em5xx.png)
+![Carlo Gavazzi - EM530](carlo_gavazzi_em5xx.png)
 
 ### Installation
 
@@ -31,6 +31,10 @@ Here is list of tested sensors by HARDWARIO with basic configuration to use:
 | Pin 9                     | Pin 6 (A−)      |
 | Pin 8                     | Pin 7 (B+)        |
 | Pin 10                    | Pin 1 (GND)        |
+
+#### Carlo Gavazzi - EM530 - Modbus communication
+
+![Carlo Gavazzi - EM530 - Modbus communication](CG-EM530-modbus.png)
 
 ---
 
@@ -92,7 +96,15 @@ Here is list of tested sensors by HARDWARIO with basic configuration to use:
 
 ### Example Installation: Split Core Current Transformer CTA6X200A5A
 
-| **Carlo Gavazzi Energy Analyzer EM5XX** | **Split Core Current Transformer CTA6X200A5A** |
+| **Carlo Gavazzi Energy Analyzer EM530** | **Split Core Current Transformer CTA6X200A5A** |
 |----------------------------------------|-----------------------------------------------|
 | Pin 13                                 | **K**                                         |
 | Pin 14                                 | **L**                                         |
+
+#### Carlo Gavazzi - EM530 - Connection Diagram
+
+![Carlo Gavazzi - EM530 - Connection Diagram](CG-EM530.png)
+
+#### Carlo Gavazzi - CTA6X200A5A - Connection Diagram
+
+![Carlo Gavazzi - CTA6X200A5A - Connection Diagram ](CTA6X200A5A.png)
