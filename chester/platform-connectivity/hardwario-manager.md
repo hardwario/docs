@@ -114,6 +114,7 @@ Anytime when you feel lost, just type the **help** command.
 You can update your **CHESTER** device via this page. You can find [**pre-built binaries**](../catalog-applications/index.md#application-firmware) for catalog applications, or you will receive a link to your custom build firmware via e-mail.
 
 Click on **SCAN QR CODE** to get the link to firmware **(1)**. When you do so and scan a valid QR code, you get information about firmware **(2)**. If this information is OK, you can start flashing by pressing **UPDATE FIRMWARE (3)**. You can click at **START OVER**, if you want to update to different firmware **(4)**.
+Firmware Update Interruption: Should the phone disconnect during a firmware swap, please attempt the update again. The final firmware version is stored in the device's memory but requires confirmation for use. Bluetooth communication timeouts may occur.
 
 <div class="container">
   <div class="row">
