@@ -4,6 +4,7 @@ title: BMeters IWM-TX3
 ---
 
 # BMeters IWM-TX3
+
 ## Descriptions
 
 [Web-Site](https://www.bmeters.com/en/products/iwm-tx3/)
@@ -41,6 +42,7 @@ You can scan the QR code below to go directly to the app:
 ### Step 3: Select Device Type
 
 From the list of available devices, select:
+
 - **IWM-TX3**
 
 ---
