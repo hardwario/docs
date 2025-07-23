@@ -20,6 +20,8 @@ Here is list of tested sensors by HARDWARIO with basic configuration to use:
 
 ## Carlo Gavazzi EM5XX Series
 
+[Web-Site](https://www.gavazziautomation.com/en-global/product/EM530DINAV53XM1X)
+
 ![](carlo_gavazzi_em5xx.png)
 
 ### Installation
