@@ -14,5 +14,5 @@ Here is list of tested sensors by HARDWARIO with basic configuration to use:
 | [Carlo Gavazzi EM1XX Series](chester/supported-sensors/modbus/carlo-gavazzi-em1xx-series.md)       | Electrometer         | Integrated into CHESTER Energy |
 | [Carlo Gavazzi EM5XX Series](chester/supported-sensors/modbus/carlo-gavazzi-em5xx-series.md)     | 3-Phase Electrometer | Integrated into CHESTER Energy |
 | [ORNO OR-WE-516](chester/supported-sensors/modbus/orno-or-we-516.md)                    | 3-Phase Electrometer | Integrated into CHESTER Energy |
-| [Schneider Electric iEM3000 series](chester/supported-sensors/modbus/schneider-electric-iem3000-series.md)  | 3-Phase Eletrometer  | Integrated into CHESTER Energy |
+| [Schneider Electric iEM3xxx series](chester/supported-sensors/modbus/schneider-electric-iem3xxx-series.md)  | 3-Phase Eletrometer  | Integrated into CHESTER Energy |
 
