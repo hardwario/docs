@@ -6,7 +6,7 @@ title: Carlo Gavazzi EM5XX Series
 import Image from '@theme/IdealImage';
 
 
-[Web-Site](https://www.gavazziautomation.com/en-global/product/EM530DINAV53XM1X)
+[Web-Site](https://www.gavazziautomation.com/en-global/product/EM530DINAV53XS1PFB)
 
 ![Carlo Gavazzi - EM530](carlo_gavazzi_em5xx.png)
 
