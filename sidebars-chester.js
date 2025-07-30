@@ -100,7 +100,10 @@ const sidebars = {
           },
           collapsed: true,
           items: [
-
+            'supported-sensors/modbus/carlo-gavazzi-em1xx-series',
+            'supported-sensors/modbus/carlo-gavazzi-em5xx-series',
+            'supported-sensors/modbus/orno-or-we-516',
+            'supported-sensors/modbus/schneider-electric-iem3xxx-series',
           ]
         },
         {
