@@ -108,41 +108,17 @@ There are multiple options to access the terminal:
 
 Use the following commands to configure communication parameters on the energy meter via Chester terminal:
 
-#### Reporting Interval
+
 ```
 app config interval-sample 300
-```
-#### Polling Interval
-```
-app config interval-poll 0
-```
-#### Reporting Interval
-```
 app config interval-report 900
-```
-#### Baud Rate
-```
+app config interval-poll 0
 app config modbus-baud 9600
-```
-#### Modbus Address
-```
 app config modbus-addr 1
-```
-#### Parity
-```
 app config modbus-parity "none"
-```
-#### Stop bits
-```
 app config modbus-stop-bits "1"
-```
-#### Energy Meter Type
-```
 app config em-type "g1"
-```
-#### After entering all the commands above, make sure to run:
-```
-Config save
+config save
 ```
 ---
 
