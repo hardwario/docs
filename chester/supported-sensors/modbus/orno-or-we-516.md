@@ -27,13 +27,13 @@ This energy meter **does not require** any **external sensor** for current measu
 
 | **ORNO Energy Analyzer - OR-WE-516** | |
 |----------------------------------------|-----------------------------------------------|
-| Pin 1                                  | **L1 (IN)**                                    |
+| Pin 1                                  | **L1 (IN)**                                   |
 | Pin 3                                  | **L2 (IN)**                                   |
-| Pin 5                                  | **L3 (IN)**                                    |
-| Pin 7                                  | **N (IN)**                                   |
-| Pin 2                                  | **L1 (OUT)**                                    |
-| Pin 4                                  | **L2 (OUT)**                                   |
-| Pin 6                                  | **L3 (OUT)**                                    |
+| Pin 5                                  | **L3 (IN)**                                   |
+| Pin 7                                  | **N (IN)**                                    |
+| Pin 2                                  | **L1 (OUT)**                                  |
+| Pin 4                                  | **L2 (OUT)**                                  |
+| Pin 6                                  | **L3 (OUT)**                                  |
 
 #### Connection Diagram (OR-WE-516)
 
@@ -53,8 +53,8 @@ In this case, it is also possible to connect the energy analyzer in single-phase
 
 | **ORNO Energy Analyzer - OR-WE-516** | **CHESTER Modbus** |
 |---------------------------|--------------------|
-| Pin 21                     | Pin 6 (A−)      |
-| Pin 20                     | Pin 7 (B+)        |
+| Pin 20                    | Pin 6 (B)          |
+| Pin 21                    | Pin 7 (A)          |
 
 
 #### Connection Diagram (OR-WE-516)
@@ -108,40 +108,13 @@ There are multiple options to access the terminal:
 
 Use the following commands to configure communication parameters on the energy meter via Chester terminal:
 
-#### Reporting Interval
-```
-app config interval-sample 300
-```
-#### Polling Interval
-```
-app config interval-poll 0
-```
-#### Reporting Interval
-```
-app config interval-report 900
-```
-#### Baud Rate
+#### Configuration of chester
 ```
 app config modbus-baud 9600
-```
-#### Modbus Address
-```
 app config modbus-addr 1
-```
-#### Parity
-```
-app config modbus-parity "none"
-```
-#### Stop bits
-```
+app config modbus-parity "even"
 app config modbus-stop-bits "1"
-```
-#### Energy Meter Type
-```
-app config em-type "g1"
-```
-#### After entering all the commands above, make sure to run:
-```
+app config em-type "g3"
 Config save
 ```
 ---
@@ -150,7 +123,7 @@ Config save
 
 | Address | Baud Rate | Parity | Stop Bit |
 |---------|-----------|--------|-----------|
-| 1       | 9.6k      | None   | 1         |
+| 1       | 9.6k      | Even   | 1         |
 
 :::info
 The table above shows the default communication settings used in our setup.  
