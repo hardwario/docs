@@ -57,24 +57,27 @@ RPi Imager lets you do this within [OS Customization](https://www.raspberrypi.co
 
 ### Install and set up required packages
 
-- We will need `git`, `pipx`, `python3-dev`, `cmake`, `libdbus-1-dev`, and `libglib2.0-dev`: `sudo apt install git pipx python3-dev cmake libdbus-1-dev libglib2.0-dev`
-- `pipx` needs to be added to PATH: `pipx ensurepath`
+1. We will need the following packages:
+  
+       sudo apt install git pipx python3-dev cmake libdbus-1-dev libglib2.0-dev
+
+1. The package **pipx** needs to be added to PATH:
+
+       pipx ensurepath
+  
   - This adds an entry into your `~/.bashrc`
-  - To load it without logging out, use `source ~/.bashrc`
 
-#### Why these?
+1. Load the new shell environment:
 
-- [Git](https://en.wikipedia.org/wiki/Git) for downloading the TAPPER Client
-- [pipx](https://pipx.pypa.io/stable/) for installation into a separate virtual environment
-- `python3-dev` are utilities for Python modules using C-compiled code
-- [CMake](https://cmake.org/) for some compiled dependencies
-- `libdbus-1-dev` is a library for dbus operations, dependency
-- [GLib](https://docs.gtk.org/glib/) is a general-purpose, portable utility library, dependency
+       source ~/.bashrc
 
-### Enable SPI and serial port
+### Enable SPI and Serial Port
 
-- Enable the serial port and SPI interface using `sudo raspi-config`
-  - They are under Interface options
+1. Enable the serial port and SPI interface:
+
+       sudo raspi-config
+
+   Both interfaces are under the **Interface** option.
 
 ### Install the TAPPER client
 
