@@ -65,7 +65,7 @@ The **Raspberry Pi Imager** lets you do this within [OS Customization](https://w
 
 :::
 
-### Update the Raspberry Pi
+### Update Raspberry Pi
 
 1. Connect to your Raspberry Pi through SSH:
 
@@ -83,7 +83,7 @@ The **Raspberry Pi Imager** lets you do this within [OS Customization](https://w
 
 1. We will need the following packages:
   
-       sudo apt install cmake git libdbus-1-dev libglib2.0-dev pipx python3-dev
+      sudo apt install cmake git libdbus-1-dev libglib2.0-dev pipx python3-dev
 
 1. The package **pipx** needs to be added to the **PATH** environmental variable:
 
@@ -133,7 +133,7 @@ Example: `--suffix dev` would result in the command `tapperdev`
 
 Run TAPPER in debug mode:
 
-    tapper run -d -h <your_mqtt_broker_host>
+    tapper run -d -h &lt;your_mqtt_broker_host&gt;
 
 Parameters:
 
