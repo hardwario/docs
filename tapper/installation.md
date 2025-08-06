@@ -25,7 +25,7 @@ Basic installation of the TAPPER client application.
   sudo raspi-config # enable serial port and SPI
   pipx install 'git+ssh://git@github.com/hardwario/tapper.git@main#egg=tapper' # stable
   ```
-- Continue at [Test it out](#test-it-out)
+- Continue at [**Testing**](#testing)
 
 :::
 
@@ -69,25 +69,25 @@ The **Raspberry Pi Imager** lets you do this within [OS Customization](https://w
 
 1. Connect to your Raspberry Pi through SSH:
 
-       ssh tapper@[IP ADDRESS OF TAPPER]
+       `ssh tapper@[IP ADDRESS OF TAPPER]`
 
 1. Update the system packages:
 
-       sudo apt update && sudo apt upgrade -y
+       `sudo apt update && sudo apt upgrade -y`
 
 1. Reboot the system:
 
-       sudo reboot
+       `sudo reboot`
 
 ### Install and set up required packages
 
 1. We will need the following packages:
   
-      sudo apt install cmake git libdbus-1-dev libglib2.0-dev pipx python3-dev
+      `sudo apt install cmake git libdbus-1-dev libglib2.0-dev pipx python3-dev`
 
 1. The package **pipx** needs to be added to the **PATH** environmental variable:
 
-       pipx ensurepath
+       `pipx ensurepath`
   
    :::info
 
@@ -97,27 +97,27 @@ The **Raspberry Pi Imager** lets you do this within [OS Customization](https://w
 
 1. Load the new shell environment:
 
-       source ~/.bashrc
+       `source ~/.bashrc`
 
 ### Enable SPI and Serial Port
 
 1. Enable the serial port and SPI interfaces:
 
-       sudo raspi-config
+       `sudo raspi-config`
 
-1. Enable both interfaces are under the **Interface** option.
+1. Both interfaces are under the **Interface** option.
 
 ### Install TAPPER Client
 
 Install the TAPPER client Python package:
 
-    pipx install 'git+https://github.com/hardwario/tapper.git@main#egg=tapper'
+    `pipx install 'git+https://github.com/hardwario/tapper.git@main#egg=tapper'`
 
 :::danger
 
 If you want to test a bleeding-edge installation instead, you can do:
 
-    pipx install 'git+https://github.com/hardwario/tapper.git@dev#egg=tapper'
+    `pipx install 'git+https://github.com/hardwario/tapper.git@dev#egg=tapper'`
 
 :::
 
@@ -133,7 +133,7 @@ Example: `--suffix dev` would result in the command `tapperdev`
 
 Run TAPPER in debug mode:
 
-    tapper run -d -h &lt;your_mqtt_broker_host&gt;
+    `tapper run -d -h &lt;your_mqtt_broker_host&gt;`
 
 Parameters:
 
