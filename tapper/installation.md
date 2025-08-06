@@ -31,41 +31,69 @@ Basic installation of the TAPPER client application.
 
 ### Flash the Raspberry Pi
 
-- Use a tool like [Raspberry Pi Imager](https://github.com/raspberrypi/rpi-imager)
-  - [Raspberry Pi Imager documentation](https://www.raspberrypi.com/documentation/computers/getting-started.html#raspberry-pi-imager)
-  - Raspberry Pi OS **Lite** is recommended
+1. Open the TAPPER device.
 
-:::tip
+   :::tip
 
-Raspberry Pi Imager allows you to set up a hostname, SSH access, WiFi, and [other settings](https://www.raspberrypi.com/documentation/computers/getting-started.html#advanced-options).
+   There are two plastic latches from the bottom of the device. Use a flat head screwdriver.
 
-:::
+   :::
+
+1. Insert the MicroSD card to your computer (the size of 16 GB is preferred).
+
+   :::info
+
+   The MicroSD card is already shipped with the TAPPER device.
+
+   :::
+
+1. Download and install the [**Raspberry Pi Imager**](https://github.com/raspberrypi/rpi-imager) tool.
+
+1. Click **CHOOSE DEVICE** and select **Raspberry Pi Zero 2 W**.
+
+1. Click **CHOOSE OS**, select **Raspberry Pi OS (other)**, and then select **Raspberry Pi OS Lite (64-bit).
+
+1. Click **CHOOSE STORAGE** and select the target MicroSD card.
+
+1. Click **NEXT** - the tool will ask about the settings customization - click ***...***.
 
 :::caution[SSH Security]
 
-It is recommended to set up **SSH with public-key authentication** only.  
-RPi Imager lets you do this within [OS Customization](https://www.raspberrypi.com/documentation/computers/getting-started.html#advanced-options).
+It is recommended to set up **SSH with public-key authentication** only. For simplicity, you can use the password-based login.
+
+The **Raspberry Pi Imager** lets you do this within [OS Customization](https://www.raspberrypi.com/documentation/computers/getting-started.html#advanced-options).
 
 :::
 
 ### Update the Raspberry Pi
 
-- Connect to your Raspberry Pi through SSH (`ssh <host>`)
-- Run `sudo apt update && sudo apt upgrade`
-  - This will update your indexes and download newer versions of installed packages
-- Reboot (`sudo reboot`)
+1. Connect to your Raspberry Pi through SSH:
+
+       ssh tapper@[IP ADDRESS OF TAPPER]
+
+1. Update the system packages:
+
+       sudo apt update && sudo apt upgrade -y
+
+1. Reboot the system:
+
+       sudo reboot
 
 ### Install and set up required packages
 
 1. We will need the following packages:
   
-       sudo apt install git pipx python3-dev cmake libdbus-1-dev libglib2.0-dev
+       sudo apt install cmake git libdbus-1-dev libglib2.0-dev pipx python3-dev
 
-1. The package **pipx** needs to be added to PATH:
+1. The package **pipx** needs to be added to the **PATH** environmental variable:
 
        pipx ensurepath
   
-  - This adds an entry into your `~/.bashrc`
+   :::info
+
+   This adds an entry into your `~/.bashrc`
+
+   :::
 
 1. Load the new shell environment:
 
@@ -73,36 +101,41 @@ RPi Imager lets you do this within [OS Customization](https://www.raspberrypi.co
 
 ### Enable SPI and Serial Port
 
-1. Enable the serial port and SPI interface:
+1. Enable the serial port and SPI interfaces:
 
        sudo raspi-config
 
-   Both interfaces are under the **Interface** option.
+1. Enable both interfaces are under the **Interface** option.
 
-### Install the TAPPER client
+### Install TAPPER Client
 
-:::tip[Regular Install (recommended)]
+Install the TAPPER client Python package:
 
-**Regular install**: `pipx install 'git+https://github.com/hardwario/tapper.git@main#egg=tapper'`
+    pipx install 'git+https://github.com/hardwario/tapper.git@main#egg=tapper'
+
+:::danger
+
+If you want to test a bleeding-edge installation instead, you can do:
+
+    pipx install 'git+https://github.com/hardwario/tapper.git@dev#egg=tapper'
 
 :::
 
-:::danger[Bleeding Edge]
+:::note
 
-Bleeding-edge install (likely to experience bugs): `pipx install 'git+https://github.com/hardwario/tapper.git@dev#egg=tapper'`
+The command `pipx` experimentally supports suffixes. If you want a bleeding-edge version with the suffix support, append `--suffix <suffix>` to the command.
 
-`pipx` experimentally supports suffixes if you want the bleeding-edge version with a suffix, append `--suffix <suffix>` to the command.  
 Example: `--suffix dev` would result in the command `tapperdev`
 
 :::
 
-### Test it out
+### Testing
 
-- Run TAPPER in debug mode: `tapper run -d -h <your_mqtt_broker_host>`
+Run TAPPER in debug mode:
 
-:::info
+    tapper run -d -h <your_mqtt_broker_host>
+
+Parameters:
 
 - `-d` enables DEBUG logging into the CLI
 - `-h` specifies the MQTT host
-
-:::
