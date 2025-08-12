@@ -84,7 +84,7 @@ This energy meter **requires** the use of an **external sensor**, such as a curr
 
 ---
 
-### Modbus Communication and CT Ratio Configuration
+### Modbus Communication and CT Ratio Configuration for Energy Analyzer
 
 1. Press and hold the `OK` and `ESC` buttons until the password prompt appears.  
 2. Enter the password using the `▼` (**Arrow button**) button. (Default password for new meters is `0010`.)  
@@ -105,6 +105,22 @@ This energy meter **requires** the use of an **external sensor**, such as a curr
 | Address | Baud Rate | Parity | Stop Bit |
 |---------|-----------|--------|-----------|
 | 1       | 9.6k      | None   | 1         |
+
+---
+
+### Modbus Communication Configuration for Chester
+
+Use the following commands to configure communication parameters via Chester terminal:
+
+
+```
+app config modbus-baud 9600
+app config modbus-addr 1
+app config modbus-parity "none"
+app config modbus-stop-bits "1"
+app config em-type "g4"
+Config save
+```
 
 ---
 

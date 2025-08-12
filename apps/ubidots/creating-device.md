@@ -11,22 +11,22 @@ Before you can send data to Ubidots or create dashboards, the first step is to c
 
 #### Step-by-Step Instructions
 
-1. **Click the Plus Button**  
+1. #### **Click the Plus Button**  
    After logging into the [Ubidots web interface](https://ubidots.hardwario.com/), click the `+` button in the upper-right corner, just below your profile icon.
 
    ![](ubidots-device-0.png)
 
-2. **Choose to Create a Device**  
+2. #### **Choose to Create a Device**  
    A dialog will appear with two options. Click on `Create a device`.
 
   ![](ubidots-device-1.png)
 
-3. **Select Blank Device**  
+3. #### **Select Blank Device**  
    A new window will open. Click on the `Blank Device` option.
 
   ![](ubidots-device-2.png)
 
-4. **Configure Device Name and Label**  
+4. #### **Configure Device Name and Label**  
    You will be taken to a form where you can define:  
    • `Name` – the display name of the device  
    • `Label` – the unique identifier used in API and dashboard references  
@@ -34,7 +34,7 @@ Before you can send data to Ubidots or create dashboards, the first step is to c
 
    ![](ubidots-device-3.png)
 
-5. **View the Newly Created Device**  
+5. #### **View the Newly Created Device**  
    The new device will now appear in your device list.  
    Click on its name to open the device’s details page, where you can find additional information such as:  
    • `Description`  

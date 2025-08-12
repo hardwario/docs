@@ -29,7 +29,21 @@ const sidebars = {
         'ubidots/cloud-connection',
         'ubidots/creating-dashboard',
       ],
+    },
+
+  
+     {
+      type: 'category',
+      label: 'Video Tutorials',
+      link: {
+        type: 'doc',
+        id: 'videos-apps/index',
+      },
+      collapsed: true,
+      items: [
+      ],
     }
+
   ],
 };
 

@@ -104,21 +104,18 @@ There are multiple options to access the terminal:
 - Use the **Google Chrome terminal** at **[terminal.hardwario.com](https://terminal.hardwario.com/)**
 
 
-#### Commands for Setting Communication Parameters
+#### Modbus Communication Configuration for Chester
 
-Use the following commands to configure communication parameters on the energy meter via Chester terminal:
+Use the following commands to configure communication parameters via Chester terminal:
 
 
 ```
-app config interval-sample 300
-app config interval-report 900
-app config interval-poll 0
 app config modbus-baud 9600
 app config modbus-addr 1
-app config modbus-parity "none"
+app config modbus-parity "even"
 app config modbus-stop-bits "1"
-app config em-type "g1"
-config save
+app config em-type "g3"
+Config save
 ```
 ---
 
@@ -126,7 +123,7 @@ config save
 
 | Address | Baud Rate | Parity | Stop Bit |
 |---------|-----------|--------|-----------|
-| 1       | 9.6k      | None   | 1         |
+| 1       | 9.6k      | Even   | 1         |
 
 :::info
 The table above shows the default communication settings used in our setup.  

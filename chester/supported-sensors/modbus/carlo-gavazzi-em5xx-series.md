@@ -92,7 +92,7 @@ This energy meter **requires** the use of an **external sensor**, such as a curr
 
 ---
 
-### Modbus Communication Configuration
+### Modbus Communication Configuration for Energy Analyzer
 
 1. Press the **Select** button to open the menu.  
 2. Use the **Select** button to choose the **Setting** option.  
@@ -104,6 +104,22 @@ This energy meter **requires** the use of an **external sensor**, such as a curr
 | Address | Baud Rate | Parity | Stop Bit |
 |---------|-----------|--------|-----------|
 | 1       | 9.6k      | None   | 1         |
+
+---
+
+### Modbus Communication Configuration for Chester
+
+Use the following commands to configure communication parameters via Chester terminal:
+
+
+```
+app config modbus-baud 9600
+app config modbus-addr 1
+app config modbus-parity "none"
+app config modbus-stop-bits "1"
+app config em-type "g2"
+Config save
+```
 
 ---
 
