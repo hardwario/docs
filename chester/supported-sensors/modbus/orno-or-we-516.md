@@ -27,13 +27,13 @@ This energy meter **does not require** any **external sensor** for current measu
 
 | **ORNO Energy Analyzer - OR-WE-516** | |
 |----------------------------------------|-----------------------------------------------|
-| Pin 1                                  | **L1 (IN)**                                    |
+| Pin 1                                  | **L1 (IN)**                                   |
 | Pin 3                                  | **L2 (IN)**                                   |
-| Pin 5                                  | **L3 (IN)**                                    |
-| Pin 7                                  | **N (IN)**                                   |
-| Pin 2                                  | **L1 (OUT)**                                    |
-| Pin 4                                  | **L2 (OUT)**                                   |
-| Pin 6                                  | **L3 (OUT)**                                    |
+| Pin 5                                  | **L3 (IN)**                                   |
+| Pin 7                                  | **N (IN)**                                    |
+| Pin 2                                  | **L1 (OUT)**                                  |
+| Pin 4                                  | **L2 (OUT)**                                  |
+| Pin 6                                  | **L3 (OUT)**                                  |
 
 #### Connection Diagram (OR-WE-516)
 
@@ -53,8 +53,8 @@ In this case, it is also possible to connect the energy analyzer in single-phase
 
 | **ORNO Energy Analyzer - OR-WE-516** | **CHESTER Modbus** |
 |---------------------------|--------------------|
-| Pin 21                     | Pin 6 (A−)      |
-| Pin 20                     | Pin 7 (B+)        |
+| Pin 20                    | Pin 6 (B)          |
+| Pin 21                    | Pin 7 (A)          |
 
 
 #### Connection Diagram (OR-WE-516)
@@ -108,6 +108,8 @@ There are multiple options to access the terminal:
 
 Use the following commands to configure communication parameters via Chester terminal:
 
+
+#### Configuration of chester
 
 ```
 app config modbus-baud 9600
