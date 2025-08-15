@@ -13,22 +13,22 @@ After successfully connecting your device to the Ubidots cloud, follow these ste
 
 #### Step-by-Step Instructions
 
-1. **Open Dashboards**  
+1. #### **Open Dashboards**  
    In the top navigation bar, click on `Data`, then select `Dashboards`. This will open the dashboard management area.
 
    ![](ubidots-metric-0.png)
 
-2. **Add a New Widget**  
+2. #### **Add a New Widget**  
    Click the `Add new Widget` button (marked with a + icon).
 
    ![](ubidots-metric-1.png)
 
-3. **Choose a Widget Type**  
+3. #### **Choose a Widget Type**  
    From the list of available widgets, choose one of the `Metric` types (used to display numerical values).
 
    ![](ubidots-metric-2.png)
 
-4. **Add a Variable**  
+4. #### **Add a Variable**  
    Click on `+ ADD VARIABLES`, then:  
    • Select your device  
    • Choose the desired variable  
@@ -36,12 +36,12 @@ After successfully connecting your device to the Ubidots cloud, follow these ste
 
    ![](ubidots-metric-3.png)
 
-5. **Configure Aggregation and Time Span**  
+5. #### **Configure Aggregation and Time Span**  
    Set the `Aggregation Method` (e.g. average, last value) and `Span` (time range).
 
    ![](ubidots-metric-7.png)
 
-6. **Edit Widget Appearance**  
+6. #### **Edit Widget Appearance**  
    Switch to the `APPEARANCE` tab to customize display options such as:  
    • Label  
    • Color  
@@ -51,7 +51,7 @@ After successfully connecting your device to the Ubidots cloud, follow these ste
 
     ![](ubidots-metric-8.png)
 
-7. **Save the Widget**  
+7. #### **Save the Widget**  
    Click `SAVE` to add the widget to your dashboard.
 
     ![](ubidots-metric-9.png)
@@ -62,22 +62,22 @@ After successfully connecting your device to the Ubidots cloud, follow these ste
 
 #### Step-by-Step Instructions
 
-1. **Open Dashboards**  
+1. #### **Open Dashboards**  
    In the top navigation bar, click on `Data`, then select `Dashboards`. This will open the dashboard management area.
 
     ![](ubidots-chart-0.png)
 
-2. **Add a New Widget**  
+2. #### **Add a New Widget**  
    Click the `Add new Widget` button (marked with a + icon).
 
     ![](ubidots-chart-1.png)
 
-3. **Choose a Widget Type**  
+3. #### **Choose a Widget Type**  
    From the list of available widgets, scroll to the `Charts` section and choose a `Line Chart`.
 
     ![](ubidots-chart-2.png)
 
-4. **Add a Variable**  
+4. #### **Add a Variable**  
    Click on `+ ADD VARIABLES`, then:  
    • Select your device  
    • Choose the desired variable  
@@ -85,7 +85,7 @@ After successfully connecting your device to the Ubidots cloud, follow these ste
 
     ![](ubidots-chart-3.png)
 
-5. **Configure Chart Settings**  
+5. #### **Configure Chart Settings**  
    In the `SETTINGS` tab, configure options such as:  
    • Aggregation Method  
    • Span  
@@ -95,7 +95,7 @@ After successfully connecting your device to the Ubidots cloud, follow these ste
 
    ![](ubidots-chart-7.png)
 
-6. **Edit Y-Axis Settings**  
+6. #### **Edit Y-Axis Settings**  
    In the same `SETTINGS` tab, click the `1 Y-Axis` button to adjust:  
    • Axis name  
    • Position  
@@ -104,7 +104,7 @@ After successfully connecting your device to the Ubidots cloud, follow these ste
 
     ![](ubidots-chart-8.png)
 
-7. **Edit Widget Appearance**  
+7. #### **Edit Widget Appearance**  
    Switch to the `APPEARANCE` tab to modify visual elements such as:  
    • X-axis label  
    • Font  
@@ -113,12 +113,12 @@ After successfully connecting your device to the Ubidots cloud, follow these ste
 
    ![](ubidots-chart-9.png)
 
-8. **Resize the Chart**  
+8. #### **Resize the Chart**  
    Once the widget is added to your dashboard, resize it using the arrow icon in the bottom-right corner of the chart.
 
     ![](ubidots-chart-10.png)
 
-9. **View Data Points**  
+9. #### **View Data Points**  
    Hover over the chart line to view individual data values as tooltips.
 
     ![](ubidots-chart-12.png)

@@ -210,8 +210,24 @@ const sidebars = {
       collapsed: true,
       items: [],
     },
+    
     'ordering-codes',
     'product-certification',
+
+     {
+      type: 'category',
+      label: 'Video Tutorials',
+      link: {
+        type: 'doc',
+        id: 'videos-chester/index',
+      },
+      collapsed: true,
+      items: [
+        'videos-chester/chester-connect-phone',
+        'videos-chester/chester-update-phone',
+        'videos-chester/chester-pair-tag',
+      ],
+    }
   ],
 };
 

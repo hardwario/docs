@@ -23,7 +23,22 @@ const sidebars = {
         'cloud-v1/introduction',
         'cloud-v1/overview',
       ]
+    },
+
+  
+     {
+      type: 'category',
+      label: 'Video Tutorials',
+      link: {
+        type: 'doc',
+        id: 'videos-cloud/index',
+      },
+      collapsed: true,
+      items: [
+        'videos-cloud/cloud-chester-add',
+      ],
     }
+
   ],
 };
 

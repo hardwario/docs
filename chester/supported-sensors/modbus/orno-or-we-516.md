@@ -104,11 +104,13 @@ There are multiple options to access the terminal:
 - Use the **Google Chrome terminal** at **[terminal.hardwario.com](https://terminal.hardwario.com/)**
 
 
-#### Commands for Setting Communication Parameters
+#### Modbus Communication Configuration for Chester
 
-Use the following commands to configure communication parameters on the energy meter via Chester terminal:
+Use the following commands to configure communication parameters via Chester terminal:
+
 
 #### Configuration of chester
+
 ```
 app config modbus-baud 9600
 app config modbus-addr 1
