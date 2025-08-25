@@ -5,7 +5,7 @@ title: How to connect Chester to your phone
 
 import Image from '@theme/IdealImage';
 
-## How to connect Chester to your phone
+
 
 <iframe width="560" height="315"
   src="https://www.youtube.com/embed/DJR5v-Y___o"

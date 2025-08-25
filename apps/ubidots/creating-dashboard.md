@@ -5,7 +5,7 @@ title: Creating a dashboard
 import Image from '@theme/IdealImage';
 
 
-After successfully connecting your device to the Ubidots cloud, follow these steps to create basic widgets on your dashboard:
+After successfully connecting your device to the [HARDWARIO Cloud](https://hardwario.cloud/), follow these steps to create basic widgets on your dashboard:
 
 ---
 

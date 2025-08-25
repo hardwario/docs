@@ -5,7 +5,7 @@ title: Connecting to the Cloud
 import Image from '@theme/IdealImage';
 
 
-Before sending data to Ubidots, you need to set up your device and integration within the [HARDWARIO Cloud](https://hardwario.cloud/).
+Before sending data to [Ubidots](https://ubidots.hardwario.com/), you need to set up your device and integration within the [HARDWARIO Cloud](https://hardwario.cloud/).
 This tutorial will walk you through each step required to connect via a webhook connector.
 If you have not yet completed the initial Cloud setup steps, you can follow the instructions here: [HARDWARIO Cloud Documentation](https://docs.hardwario.com/cloud/).
 

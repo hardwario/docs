@@ -4,7 +4,7 @@ title: Introduction
 ---
 import Image from '@theme/IdealImage';
 
-# EMBER Introduction
+# Introduction
 
 **EMBER** platform provides transmission and processing of measured sensor values and control of actuators in industrial sites.
 

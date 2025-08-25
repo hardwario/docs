@@ -5,7 +5,7 @@ title: How to pair Bluetooth tag with Chester
 
 import Image from '@theme/IdealImage';
 
-## How to pair Bluetooth tag with Chester
+
 
 <iframe width="560" height="315"
   src="https://www.youtube.com/embed/7ita74JSj98"

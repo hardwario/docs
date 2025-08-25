@@ -5,7 +5,7 @@ title: How to update Chester with phone
 
 import Image from '@theme/IdealImage';
 
-## How to update Chester with phone
+
 
 <iframe width="560" height="315"
   src="https://www.youtube.com/embed/RYrgRapP_og"
