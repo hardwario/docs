@@ -41,6 +41,9 @@ const sidebars = {
       },
       collapsed: true,
       items: [
+        'videos-apps/ubidots-new-device',
+        'videos-apps/ubidots-cloud-connection',
+        'videos-apps/ubidots-dashboard',
       ],
     }
 

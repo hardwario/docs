@@ -5,7 +5,7 @@ title: Introduction
 
 # Introduction
 
-The GAUGER is a configurable WiFi/Ethernet device used for counting pulses on up to four galvanically separated digital inputs.
+**GAUGER** is a configurable WiFi/Ethernet device used for counting pulses on up to four galvanically separated digital inputs.
 
 The device hosts a web based user interface used for it’s configuration. It can also be controlled through an HTTP API. The counter values can be read via Modbus TCP.
 
