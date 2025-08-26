@@ -51,11 +51,48 @@ Basic installation of the TAPPER client application.
 
 1. Click **CHOOSE DEVICE** and select **Raspberry Pi Zero 2 W**.
 
-1. Click **CHOOSE OS**, select **Raspberry Pi OS (other)**, and then select **Raspberry Pi OS Lite (64-bit).
+1. Click **CHOOSE OS**, select **Raspberry Pi OS (other)**, and then select **Raspberry Pi OS Lite (64-bit)**.
 
 1. Click **CHOOSE STORAGE** and select the target MicroSD card.
 
-1. Click **NEXT** - the tool will ask about the settings customization - click ***...***.
+1. Click **NEXT** - the tool will ask about the settings customization - click **EDIT SETTINGS**.
+
+1. Check **Set hostname**.
+
+1. Enter a hostname for you TAPPER into the **hostname** field.
+
+1. Check **Set username and password**.
+
+1. Enter a username and a password into the **username** and **password** fields respectively.
+
+:::tip
+
+You can use `tapper` for username and `hardwario` for password.
+
+:::danger
+
+This is only recommended with public-key SSH authentication, otherwise use a strong passphrase.
+
+Set up public-key SSH authentication (recommended): [**SSH with public-key authentication**](security#ssh-with-public-key-authentication-only)
+
+You can use the [**Bitwarden passphrase generator**](https://bitwarden.com/password-generator/#password-generator).
+       1. Select Passphrase in type.
+       1. You can click generate a few times for a more memorable Passphrase, we recommendd oing 6 at most.
+              - Write the passphrases down and then choose the most memorable one.
+
+:::    
+
+1. Check **Configure Wireless LAN**.
+
+1. Enter your wireless network's SSID and password into the **SSID** and **Password** fields respectively.
+
+1. Set the **Wireless LAN Country** drop-down to the country where the TAPPER device will be used.
+
+1. Check **Set locale settings**.
+
+1. Select your time zone in the **Time zone** drop-down menu.
+
+1. Select your preferred keyboard layout in the **Keyboard layout** drop-down menu.
 
 :::caution[SSH Security]
 
