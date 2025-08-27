@@ -213,6 +213,7 @@ const sidebars = {
     
     'ordering-codes',
     'product-certification',
+    'cloud-v2-migration-guide',
 
      {
       type: 'category',

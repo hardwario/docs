@@ -5,7 +5,7 @@ title: Adding a New Device
 import Image from '@theme/IdealImage';
 
 
-Before you can send data to Ubidots or create dashboards, the first step is to create a new device. This tutorial will guide you through a few simple steps to help you add your first device.
+Before you can send data to [Ubidots](https://ubidots.hardwario.com/) or create dashboards, the first step is to create a new device. This tutorial will guide you through a few simple steps to help you add your first device.
 
 ---
 

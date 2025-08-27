@@ -112,12 +112,12 @@ Use the following commands to configure communication parameters via Chester ter
 #### Configuration of chester
 
 ```
-app config modbus-baud 9600
-app config modbus-addr 1
-app config modbus-parity "even"
+app config modbus-baud "9600"
+app config modbus-addr "1"
+app config modbus-parity "none"
 app config modbus-stop-bits "1"
-app config em-type "g3"
-Config save
+app config em-type "g1"
+config save
 ```
 ---
 

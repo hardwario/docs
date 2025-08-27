@@ -43,7 +43,7 @@ lte config apn ""
 lte config auth "none"
 lte config username ""
 lte config password ""
-lte config addr "192.168.192.4
+lte config addr "192.168.192.4"
 ```
 
 
