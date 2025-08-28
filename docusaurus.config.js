@@ -108,6 +108,15 @@ const config = {
       }),
     ],
     [
+      '@docusaurus/plugin-content-docs',
+      ({
+        id: 'sticker',
+        path: 'sticker',
+        routeBasePath: 'sticker',
+        sidebarPath: require.resolve('./sidebars-sticker.js'),
+      }),
+    ],
+    [
       '@docusaurus/plugin-ideal-image',
       {
         quality: 70,
@@ -161,16 +170,22 @@ const config = {
             activeBaseRegex: `/tower/`,
           },
           {
-            to: '/cloud/',
-            label: 'CLOUD',
-            position: 'left',
-            activeBaseRegex: `/cloud/`,
-          },
-          {
             to: '/gauger/',
             label: 'GAUGER',
             position: 'left',
             activeBaseRegex: `/gauger/`,
+          },
+          {
+            to: '/sticker/',
+            label: 'STICKER',
+            position: 'left',
+            activeBaseRegex: `/sticker/`,
+          },
+          {
+            to: '/cloud/',
+            label: 'CLOUD',
+            position: 'left',
+            activeBaseRegex: `/cloud/`,
           },
           {
             to: '/apps/',
@@ -273,4 +288,3 @@ const config = {
 };
 
 module.exports = config;
-
