@@ -4,7 +4,7 @@ title: Introduction
 ---
 import Image from '@theme/IdealImage';
 
-# Introduction
+# STICKER
 
 **STICKER** is an open IoT platform based on STM32WL with integrated LoRaWAN connectivity. It is a compact, battery-powered device with long lifetime and ready-to-use applications such as STICKER Clime, Input, and Motion, making it ideal for flexible sensor deployments.
 

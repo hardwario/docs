@@ -6,18 +6,6 @@ const sidebars = {
     'introduction',
     {
       type: 'category',
-      label: 'Thingsboard',
-      link: {
-        type: 'doc',
-        id: 'thingsboard/index',
-      },
-      collapsed: true,
-      items: [
-
-      ],
-    },
-    {
-      type: 'category',
       label: 'Ubidots',
       link: {
         type: 'doc',
@@ -30,7 +18,30 @@ const sidebars = {
         'ubidots/creating-dashboard',
       ],
     },
+    {
+      type: 'category',
+      label: 'ThingsBoard',
+      link: {
+        type: 'doc',
+        id: 'thingsboard/index',
+      },
+      collapsed: true,
+      items: [
 
+      ],
+    },
+    {
+      type: 'category',
+      label: 'ChirpStack',
+      link: {
+        type: 'doc',
+        id: 'chirpstack/index',
+      },
+      collapsed: true,
+      items: [
+        'chirpstack/chirpstack-installation',
+      ],
+    },
   
      {
       type: 'category',

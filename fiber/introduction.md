@@ -5,7 +5,7 @@ title: Introduction
 ---
 import Image from '@theme/IdealImage';
 
-# Introduction
+# FIBER
 
 **FIBER** is an **IoT device** designed to provide **precise temperature measurements** in industrial settings. It connects to various **sensors** via cables and computes **temperature data** which is displayed to the user. The product supports connectivity through **WiFi** or **Ethernet** and enables extensive **device networking**. Data from connected sensors is aggregated and displayed, showing detailed metrics such as **average**, **median**, **minimum**, and **maximum values** at given timestamps.
 

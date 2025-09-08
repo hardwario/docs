@@ -22,3 +22,9 @@ import Image from '@theme/IdealImage';
 
 #### Smart open/close detection
 - Door and window detection isn’t just for security - it’s also key for smart heating and cooling. Traditional systems can be costly due to strict certification standards. STICKER Input offers a simple and affordable alternative with a built-in magnetic field sensor or digital inputs for standard switches.
+
+## Configuration and Wiring of External Inputs
+
+Documentation → [**STICKER Input Configuration**](/sticker/sticker-input-configuration/sticker-input-configuration)
+
+Here you can find information about STICKER input configuration, including DIP switch settings, wiring options, and supported modes such as 1-Wire sensors, dry contact inputs, and 0–24 V analog inputs.

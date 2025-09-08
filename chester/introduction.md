@@ -4,6 +4,8 @@ title: Introduction
 ---
 import Image from '@theme/IdealImage';
 
+# CHESTER
+
 **HARDWARIO CHESTER** is a highly configurable IoT **LPWAN** gateway. Its primary function is to connect as many devices and environments as possible to the Internet, especially from places where there is no standard connection to the power grid and the Internet.
 
 :::tip

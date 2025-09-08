@@ -10,7 +10,7 @@ const sidebars = {
       link: {
         type: 'generated-index'
       },
-      collapsed: false,
+      collapsed: true,
       items: [
         'detailed-description/connector-description',
         'detailed-description/device-states',
@@ -26,7 +26,7 @@ const sidebars = {
       link: {
         type: 'generated-index'
       },
-      collapsed: false,
+      collapsed: true,
       items: [
         'operation-instructions/initial-configuration',
         'operation-instructions/configuration-reset',

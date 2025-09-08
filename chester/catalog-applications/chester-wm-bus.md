@@ -6,8 +6,17 @@ import Image from '@theme/IdealImage';
 
 # CHESTER wM-Bus
 
-![](chester-wm-bus.png)
-
+<div class="container">
+  <div class="row">
+    <div class="col col--8">
+      <div>
+        <Image img={require('./chester-wm-bus.png')} width={376} height={376} />
+      </div>
+    </div>
+    <div class="col col--24"></div>
+  </div>
+</div>
+<br />
 :::caution
 
 Some of the basics are not provided, as they are common for all CHESTER catalog applications. Please see:
@@ -121,10 +130,6 @@ Lists all saved device addresses. If this listing is done via BLE and contains a
 
 Adding a sensor that broadcasts all year round with the address 123456.
 
-`app config address add 123456 S`
-
-Adding a sensor that transmits only during the heating season with the address 123456. At the end of the line, the character S means seasonal. A season can be defined by setting the season start and end months using the season-month-start and season-month-end parameters.
-
 `app config address remove 123456`
 
 Removing a sensor from the list.
@@ -132,6 +137,10 @@ Removing a sensor from the list.
 `app config address erase`
 
 Removing all sensors from the list.
+
+`config save`
+
+After completing the configuration, you need to confirm everything.
 
 ### Scan Configuration
 
@@ -180,6 +189,10 @@ Specifies the day of the month when scanning 1-28 during the monthly scan
 **single** - scan uses only one cycle with one antenna, if it receives data from all devices, it sends data immediately, if not, it sends data after the `scan-timeout` timeout
 
 **dual** - the scan takes place twice, each time with a different antenna. If all devices are not scanned in the first cycle with antenna 1, a second scan with the second antenna is started. Each scan takes a maximum of scan-timeout seconds. The maximum time when the wM-Bus receiver is active is equal to 2x `scan-timeout`.
+
+`config save`
+
+After completing the configuration, you need to confirm everything.
 
 ## Example Configurations
 
@@ -325,3 +338,31 @@ Each JSON cloud message contains up to 20 wM-Bus packets. If CHESTER is configur
     }
 }
 ```
+
+## Hardwario Cloud – Decryption Keys
+
+The **transmitted messages from wM-Bus devices are encrypted** to optimize energy consumption during data transmission, which extends the overall battery life.  
+
+The **received data must therefore be decrypted**, which is done using **decryption keys**.  
+
+In this section, we will show **how to add individual decryption keys** into the Cloud using the **Variables** section.  
+
+:::tip
+If you are not sure how to **get started with the Cloud**, follow this tutorial: [**Hardwario Cloud v2**](/cloud/)
+:::
+
+### Step-by-Step Instructions
+
+1. In the left sidebar, select **Variables**.  
+2. Click the **+ NEW VARIABLE** button in the top-right corner.  
+3. Fill in the following information:  
+   - **Device** → select your device  
+   - **Name of Variable** → enter the wM-Bus address of the device  
+   - **Value of Variable** → enter the decryption key assigned to your device  
+   - **Environment** → select `wmbus`  
+   - **Comment** → optional, you may add a comment if needed  
+4. Your data should now appear **decrypted** in the Cloud.  
+
+:::info
+There is also the option to take the incoming data from the Cloud and **manually decrypt** it using the **online tool**: [https://wmbusmeters.org/](https://wmbusmeters.org/).  
+:::
