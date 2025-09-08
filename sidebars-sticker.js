@@ -18,6 +18,7 @@ const sidebars = {
             'catalog-applications/sticker-motion',
           ]
         },
+        'developer-mode',
           'hardware-description',
       {
           type: 'category',
