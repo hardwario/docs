@@ -13,7 +13,7 @@ In this configuration, the device is supplied in an open state, allowing direct 
 
 This mode highlights that STICKER is an **open platform**, enabling developers to explore, modify, and extend its functionality according to their needs.
 
-## Application over J-Link
+## Flashing Firmware via J-Link
 
 To flash application firmware to the CHESTER device with SEGGER J-Link:
 
