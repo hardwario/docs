@@ -9,7 +9,7 @@ import Image from '@theme/IdealImage';
 
 ![Carlo Gavazzi - EM111](carlo-gavazzi-em111.png)
 
-### Introduction
+### Description
 
 The EM1xx series includes compact and user-friendly energy analyzers designed for **single-phase systems**. These devices are ideal for active energy metering and cost allocation in residential, commercial, and light industrial applications. With direct or indirect current measurement options and support for dual tariff management, the EM1xx series offers flexibility, precision, and easy integration.
 

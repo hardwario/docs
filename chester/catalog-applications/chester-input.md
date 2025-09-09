@@ -101,7 +101,7 @@ The **trigger** input can be connected to a PLC/sensor output (NPN/PNP), push bu
 
 * Both **NPN** and **PNP** input logic types are supported (parameter `trigger-input-type`).
 
-* The minimum level duration is configured separately for **active** (parameter `trigger-duration-active`) and **inactive** (parameter `trigger-duration-inactive`) states.
+* The minimum level duration is configured separately for **active** (parameter `trigger-active-duration`) and **inactive** (parameter `trigger-inactive-duration`) states.
 
 * The maximum number of reports per hour is configurable (parameter `event-report-rate`). The event throttling limits communication bandwidth and preserves the battery lifespan.
 
@@ -113,7 +113,7 @@ The **counter** input can be connected to a PLC/sensor output (NPN/PNP), push bu
 
 * Both **NPN** and **PNP** type of input logic is supported (parameter `counter-input-type`).
 
-* The minimum level duration is configured separately for **active** (parameter `counter-duration-active`) and **inactive** (parameter `counter-duration-inactive`) states.
+* The minimum level duration is configured separately for **active** (parameter `counter-active-duration`) and **inactive** (parameter `counter-inactive-duration`) states.
 
 ### Voltage
 
@@ -168,15 +168,15 @@ app config event-report-rate 30
 app config backup-report-connected false
 app config backup-report-disconnected false
 app config trigger-input-type npn
-app config trigger-duration-active 100
-app config trigger-duration-inactive 100
+app config trigger-active-duration 100
+app config trigger-inactive-duration 100
 app config trigger-cooldown-time 10
 app config trigger-report-active false
 app config trigger-report-inactive false
 app config counter-interval-aggreg 300
 app config counter-input-type npn
-app config counter-duration-active 2
-app config counter-duration-inactive 2
+app config counter-active-duration 2
+app config counter-inactive-duration 2
 app config counter-cooldown-time 10
 app config analog-interval-sample 60
 app config analog-interval-aggreg 300
@@ -246,19 +246,19 @@ app config trigger-report-inactive <true/false>
 Use these commands to set the **active** and **inactive** time duration (in milliseconds) for the **trigger** and **counter** digital inputs:
 
 ```
-app config trigger-duration-active <value>
-app config trigger-duration-inactive <value>
+app config trigger-active-duration <value>
+app config trigger-inactive-duration <value>
 app config trigger-cooldown-time <value>
 
-app config counter-duration-active <value>
-app config counter-duration-inactive <value>
+app config counter-active-duration <value>
+app config counter-inactive-duration <value>
 app config counter-cooldown-time <value>
 ```
 
 :::info
 
-- The parameter `duration-active` sets the millisecond delay between the input signal changes to an active level (based on `npn` or `pnp` configuration) and when CHESTER reacts to this change. This could be used to filter (debounce) input signal in case the input signal is connected to a "electrically noisy" mechanical switch or relay. It could also be used if the CHESTER has to react to longer pulses than the set duration.
-- The parameter `duration-inactive` is the same as for the `duration-active` above, except it sets the time for the opposite edge.
+- The parameter `active-duration` sets the millisecond delay between the input signal changes to an active level (based on `npn` or `pnp` configuration) and when CHESTER reacts to this change. This could be used to filter (debounce) input signal in case the input signal is connected to a "electrically noisy" mechanical switch or relay. It could also be used if the CHESTER has to react to longer pulses than the set duration.
+- The parameter `inactive-duration` is the same as for the `active-duration` above, except it sets the time for the opposite edge.
 - The parameter `cooldown-time` is a delay protecting CHESTER from too many incoming interrupt events. If a too-fast signal (>10 kHz) is connected, the interrupt handler could consume all the processor time, stopping the execution of other threads. This parameter sets a small delay between executing the interrupt handler again. A default value of 10 ms could be used here.
 
 

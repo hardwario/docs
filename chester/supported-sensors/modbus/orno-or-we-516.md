@@ -9,7 +9,7 @@ import Image from '@theme/IdealImage';
 
 ![ORNO OR-WE - 516](orno-or-we-516.png)
 
-### Introduction
+### Description
 
 The OR-WE-516 is a compact **three-phase** energy meter designed for accurate measurement of active energy in electrical installations. It is equipped with an **RS-485 Modbus interface** for remote data reading and is MID-certified for fiscal metering applications.
 

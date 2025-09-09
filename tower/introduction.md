@@ -5,7 +5,7 @@ title: Introduction
 ---
 import Image from '@theme/IdealImage';
 
-# Introduction
+# TOWER
 
 **TOWER** is a modular, wireless, open-source/open-hardware IoT platform for rapid prototyping and deployment.
 It is used in industrial applications, STEM education, and hobby projects (home automation, gardening, lighting, escape rooms, etc.).

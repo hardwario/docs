@@ -7,9 +7,19 @@ import Image from '@theme/IdealImage';
 
 [Web-Site](https://www.se.com/cz/cs/product/A9MEM3255/iem3250-elektrom%C4%9Br-ct-modbus-2-digit%C3%A1ln%C3%AD-vstupy/)
 
-![Schneider Electric - IEM3250](schneider-electric-iem3000-series.png)
+<div class="container">
+  <div class="row">
+    <div class="col col--8">
+      <div style={{ width: '376px', height: '376px' }}>
+        <Image img={require('./schneider-electric-iem3000-series.png')} />
+      </div>
+    </div>
+    <div class="col col--24"></div>
+  </div>
+</div>
+<br />
 
-### Introduction
+### Description
 
 The iEM3200 series consists of compact, DIN-rail mounted energy meters designed for accurate and certified measurement of electrical energy in **single-phase** and **three-phase systems**. These meters are MID-compliant, making them suitable for both fiscal metering and cost allocation applications in residential, commercial, and light industrial installations.
 

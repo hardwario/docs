@@ -115,8 +115,14 @@ const sidebars = {
           },
           collapsed: true,
           items: [
+            'supported-sensors/wm-bus/bmeters-rfm-tx1.1',
             'supported-sensors/wm-bus/bmeters_iwm-tx3',
             'supported-sensors/wm-bus/bmeters_iwm-tx5',
+            'supported-sensors/wm-bus/bmeters-hydrocal-m4',
+            'supported-sensors/wm-bus/bmeters-hydroclima-2',
+            'supported-sensors/wm-bus/zenner-c5-isf',
+            'supported-sensors/wm-bus/zenner-caltos-e',
+            'supported-sensors/wm-bus/zenner-minomess',
           ]
         }
       ]

@@ -8,9 +8,21 @@ import Image from '@theme/IdealImage';
 
 [Web-Site](https://www.gavazziautomation.com/en-global/product/EM530DINAV53XS1PFB)
 
-![Carlo Gavazzi - EM530](carlo_gavazzi_em5xx.png)
+<div class="container">
+  <div class="row">
+    <div class="col col--8">
+      <div style={{ width: '376px', height: '376px' }}>
+        <Image img={require('./carlo_gavazzi_em5xx.png')} />
+      </div>
+    </div>
+    <div class="col col--24"></div>
+  </div>
+</div>
+<br />
 
-### Introduction
+
+
+### Description
 
 The EM5xx series offers a range of compact and versatile energy analyzers designed for monitoring electrical consumption and quality in **single-phase**, **two-phase**, and **three-phase systems**. These devices are ideal for use in residential, commercial, and industrial environments where accurate measurement, reliability, and ease of use are essential.
 

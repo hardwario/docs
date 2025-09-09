@@ -108,7 +108,22 @@ config save
 
 **Tag configuration:**
 
-The packaged sensor should come activated. In case it is not, a magnet must touch the sensor to wake it up from hibernation mode.
+:::info
+**The packaged sensor should come activated. In case it is not, a magnet must touch the sensor to wake it up from hibernation mode, as shown in the picture.**
+:::
+
+<div class="container">
+  <div class="row">
+    <div class="col col--8">
+      <div style={{ width: '376px', height: '250px' }}>
+        <Image img={require('./tag-magnet.png')} />
+      </div>
+    </div>
+    <div class="col col--24"></div>
+  </div>
+</div>
+<br />
+
 
 The tags can be configured using the [EYE APP](https://wiki.teltonika-gps.com/view/EYE_SENSOR_/_BTSMP1#EYE_App_Configuration). We highly suggest updating the tag firmware as the default firmware does not allow some settings.
 

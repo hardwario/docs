@@ -3,7 +3,7 @@ slug: /
 title: Introduction
 ---
 
-# Introduction
+# GAUGER
 
 **GAUGER** is a configurable WiFi/Ethernet device used for counting pulses on up to four galvanically separated digital inputs.
 

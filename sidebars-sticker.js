@@ -18,20 +18,20 @@ const sidebars = {
             'catalog-applications/sticker-motion',
           ]
         },
-
+        'developer-mode',
+          'hardware-description',
       {
           type: 'category',
-          label: 'Supported Sensors',
+          label: 'STICKER Input Configuration',
           link: {
             type: 'doc',
-            id: 'supported-sensors/index',
+            id: 'sticker-input-configuration/index',
           },
           collapsed: true,
           items: [
           
           ]
         },
-        'hardware-description',
         'power-management',
         'ordering-codes',
 
