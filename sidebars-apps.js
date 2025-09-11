@@ -27,7 +27,9 @@ const sidebars = {
       },
       collapsed: true,
       items: [
-
+        'thingsboard/creating-device',
+        'thingsboard/cloud-connection',
+        'thingsboard/creating-dashboard',
       ],
     },
     {
@@ -40,6 +42,7 @@ const sidebars = {
       collapsed: true,
       items: [
         'chirpstack/chirpstack-installation',
+        'chirpstack/chirpstack-configuration',
       ],
     },
   

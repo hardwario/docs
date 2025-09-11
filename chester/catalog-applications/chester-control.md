@@ -51,7 +51,7 @@ The catalog **CHESTER Control** hardware consists of the following ordering code
 
 See [**Ordering Codes**](../ordering-codes.md) for more details.
 
-### CHESTER Control Z {#chester-control}
+### CHESTER Control Z {#chester-control-z}
 
 The catalog **CHESTER Control Z** hardware consists of the following ordering codes:
 

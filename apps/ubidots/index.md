@@ -6,7 +6,7 @@ import Image from '@theme/IdealImage';
 
 # Ubidots
 
-Ubidots is a cloud‑based IoT application development platform that empowers developers, system integrators, businesses, and innovators to design, deploy, and scale IoT solutions with minimal coding effort. The platform delivers a comprehensive toolkit—featuring drag‑and‑drop dashboards, real‑time data visualizations, smart alerts, scheduled reporting, analytics, and white‑label capabilities—to turn raw sensor data into actionable insights quickly and efficiently
+[**Ubidots**](https://ubidots.hardwario.com/) is a cloud-based IoT platform that helps developers and businesses design, deploy, and scale IoT solutions with minimal coding. It offers drag-and-drop dashboards, real-time visualizations, alerts, reports, analytics, and white-label options to quickly turn sensor data into actionable insights.
 
 ---
 
