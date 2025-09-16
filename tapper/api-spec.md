@@ -78,12 +78,10 @@ This is the ID of the request, an integer is expected.
 
 ### Output
 
-
-
 This section is for the relay output.
 
 - Command can be: `activate`, `deactivate`, or `pulse`
-    - The `pulse` command requires the `duration` element to be set as well (in seconds), an integer is expected.
+  - The `pulse` command requires the `duration` element to be set as well (in seconds), an integer is expected.
 
 ```json
 "output": {
@@ -106,6 +104,7 @@ It can either have a `state"` or a `"pattern` element.
 
 - State can have the following values: `off`, or `on/` with the color `red`/`green`/`blue`/`yellow` following.  
   Example: `on/red`
+
   ```json
   "visual": {
             "state": "off" | "on/red" | "on/green" | "on/blue" | "on/yellow",
@@ -114,12 +113,12 @@ It can either have a `state"` or a `"pattern` element.
 
 - The `pattern` is very similar, with the options `p1/`, `p2/`, `p3/`, or `p4/` with the color `red`/`green`/`blue`/`yellow` following.  
   Example: `p4/blue`
-  | Pattern |    Description    |
+  | Pattern | Description |
   | :-----: | :---------------: |
-  |  `p1`   |  one long blink   |
-  |  `p2`   |  two long blinks  |
-  |  `p3`   | three long blinks |
-  |  `p4`   | four long blinks  |
+  | `p1` | one long blink |
+  | `p2` | two long blinks |
+  | `p3` | three long blinks |
+  | `p4` | four long blinks |
 
   ```json
   "visual": {
@@ -153,18 +152,18 @@ The only element is `pattern`, which can have the value `p1`, `p2`, `p3`, or `p4
 
 ```json
 {
-    "timestamp": 1747951200,
-    "id": 1,
-    "output": {
-            "command": "pulse",
-            "duration": 2
-        },
-    "visual": {
-            "pattern": "p4/blue" 
-        },
-    "acoustic": {
-            "pattern": "p1"
-        }
+  "timestamp": 1747951200,
+  "id": 1,
+  "output": {
+    "command": "pulse",
+    "duration": 2
+  },
+  "visual": {
+    "pattern": "p4/blue"
+  },
+  "acoustic": {
+    "pattern": "p1"
+  }
 }
 ```
 
@@ -183,8 +182,8 @@ The Response payloads are:
 
 ```json
 {
-    "timestamp": 1747951200,
-    "id": 1,
-    "result": "success"
+  "timestamp": 1747951200,
+  "id": 1,
+  "result": "success"
 }
 ```

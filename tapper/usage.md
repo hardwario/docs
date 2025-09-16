@@ -23,7 +23,7 @@ Run the client.
 
 `tapper run [OPTIONS]` or `sudo ~/.local/bin/tapper run [OPTIONS]` if you want to use the WiFi config.
 
-:::info 
+:::info
 
 `sudo` is required for use of NetworkManager.
 
@@ -68,7 +68,7 @@ The TAPPER configuration file uses YAML syntax.
 
 ```yaml
 mqtt:
-  host: "your_host" 
+  host: "your_host"
   port: 1883
   tls:
     cafile: "/path/to/file"
@@ -102,7 +102,7 @@ The `passphrase` field can have the `psk` value acquired from `wpa_passphrase`.
 
 :::
 
-#### Dynamic 
+#### Dynamic
 
 Dynamic mode uses DHCP and sets the address, gateway, and DNS servers automatically.
 
@@ -124,7 +124,7 @@ wifi:
   mode: "static"
   address: "192.168.1.100/24"
   gateway: "192.168.1.1"
-  nameservers:  
+  nameservers:
   - 8.8.8.8
   - 1.1.1.1
 ```
@@ -149,7 +149,7 @@ wifi:
   mode: "static"
   address: "192.168.1.100/24"
   gateway: "192.168.1.1"
-  nameservers:  
+  nameservers:
   - 8.8.8.8
   - 1.1.1.1
 ```
