@@ -25,7 +25,9 @@ Here is a detailed step-by-step guide:
 👉 [Adding a New Device](creating-device)
 
 Here is a video guide:
-🎥 [link to video tutorial]
+🎥 https://docs.hardwario.com/apps/videos-apps/ubidots-new-device
+
+---
 
 ### 2. Create a Connector in HARDWARIO Cloud
 
@@ -36,7 +38,9 @@ Here is a detailed step-by-step guide:
 👉 [Connectiong to the Cloud](cloud-connection)
 
 Here is a video guide:
-🎥 [link to video tutorial]
+🎥 https://docs.hardwario.com/apps/videos-apps/ubidots-cloud-connection
+
+---
 
 ### 3. Create a Dashboard in Ubidots
 
@@ -47,4 +51,4 @@ Here is a detailed step-by-step guide:
 👉 [Creating a dashboard](creating-dashboard)
 
 Here is a video guide:
-🎥 [link to video tutorial]
+🎥 https://docs.hardwario.com/apps/videos-apps/ubidots-dashboard

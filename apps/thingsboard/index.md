@@ -13,3 +13,31 @@ import Image from '@theme/IdealImage';
 ## Example of an IoT Data Dashboard
 
 ![ThingsBoards](thingsboard-dashboard.png)
+
+## Getting Started
+
+### 1. Create a Device in ThingsBoard
+
+Start by logging into [ThingsBoard](https://thingsboard.hardwario.com/) and creating a new device.  
+This device will act as the endpoint that receives and stores data sent from HARDWARIO Cloud.  
+
+Here is a detailed step-by-step guide: 👉 [Adding a New Device](creating-device)
+
+---
+
+### 2. Create a Connector in HARDWARIO Cloud
+
+Next, go to [HARDWARIO Cloud](https://hardwario.cloud/) and set up a Connector that points to your ThingsBoard device.  
+This connector will securely transmit your device data from HARDWARIO Cloud to ThingsBoard.  
+
+Here is a detailed step-by-step guide: 👉 [Connecting to ThingsBoard](cloud-connection)
+
+---
+
+### 3. Create a Dashboard in ThingsBoard
+
+Once the connection is established and data is flowing, create a dashboard in [ThingsBoard](https://thingsboard.io/).  
+Add widgets (such as cards, charts, and gauges) to visualize your data in real time.  
+
+Here is a detailed step-by-step guide: 👉 [Creating a Dashboard](creating-dashboard)
+
