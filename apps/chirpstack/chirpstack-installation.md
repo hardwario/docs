@@ -8,6 +8,8 @@ import Image from '@theme/IdealImage';
 
 This guide outlines the installation process of **ChirpStack v4** on a **Debian/Ubuntu system**. It covers installing the required dependencies, configuring the ChirpStack server, and enabling communication with gateways. Follow the instructions step by step for a smooth installation process.
 
+---
+
 ## Prerequisites
 
 Before you start, ensure your system is up to date. Run the following command in your terminal:
@@ -15,6 +17,8 @@ Before you start, ensure your system is up to date. Run the following command in
 ```bash
 sudo apt update && sudo apt upgrade -y
 ```
+
+---
 
 ## Procedure
 
@@ -196,7 +200,7 @@ Mainly for testing and debug purposes
   listener 1883
   allow_anonymous true
   ```
-
+---
 
 ## Post-Installation Checklist
 
@@ -246,6 +250,8 @@ To confirm that your **LoRaWAN** gateway is connected and operational:
   - Check the gateway logs to ensure proper configuration for communication with ChirpStack.
 
   - Verify the **MQTT** topic configuration in the `chirpstack-gateway-bridge.toml` file.
+
+---
 
 ## Completion
 

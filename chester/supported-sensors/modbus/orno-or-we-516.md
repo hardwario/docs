@@ -134,4 +134,26 @@ Before applying these settings in Chester, you should check the actual communica
 Make sure to match the settings in Chester according to the values configured in the energy meter.
 :::
 
+### Measured values
+
+| Measured Value | Key / Path                                   |
+|----------------|----------------------------------------------|
+| Power          | E_ENERGY_METER.METER_3.POWER.MEASUREMENTS    |
+| Frequency      | E_ENERGY_METER.METER_3.FREQUENCY.MEASUREMENTS|
+| Energy In      | E_ENERGY_METER.METER_3.ENERGY_IN.MEASUREMENTS|
+| Energy Out     | E_ENERGY_METER.METER_3.ENERGY_OUT.MEASUREMENTS|
+| Voltage L1     | E_ENERGY_METER.METER_3.VOLTAGE_L1.MEASUREMENTS|
+| Voltage L2     | E_ENERGY_METER.METER_3.VOLTAGE_L2.MEASUREMENTS|
+| Voltage L3     | E_ENERGY_METER.METER_3.VOLTAGE_L3.MEASUREMENTS|
+| Current L1     | E_ENERGY_METER.METER_3.CURRENT_L1.MEASUREMENTS|
+| Current L2     | E_ENERGY_METER.METER_3.CURRENT_L2.MEASUREMENTS|
+| Current L3     | E_ENERGY_METER.METER_3.CURRENT_L3.MEASUREMENTS|
+| Power L1       | E_ENERGY_METER.METER_3.POWER_L1.MEASUREMENTS |
+| Power L2       | E_ENERGY_METER.METER_3.POWER_L2.MEASUREMENTS |
+| Power L3       | E_ENERGY_METER.METER_3.POWER_L3.MEASUREMENTS |
+| Energy L1      | E_ENERGY_METER.METER_3.ENERGY_L1.MEASUREMENTS|
+| Energy L2      | E_ENERGY_METER.METER_3.ENERGY_L2.MEASUREMENTS|
+| Energy L3      | E_ENERGY_METER.METER_3.ENERGY_L3.MEASUREMENTS|
+
+
 ---

@@ -6,7 +6,7 @@ import Image from '@theme/IdealImage';
 
 # Ubidots
 
-Ubidots is a cloud‑based IoT application development platform that empowers developers, system integrators, businesses, and innovators to design, deploy, and scale IoT solutions with minimal coding effort. The platform delivers a comprehensive toolkit—featuring drag‑and‑drop dashboards, real‑time data visualizations, smart alerts, scheduled reporting, analytics, and white‑label capabilities—to turn raw sensor data into actionable insights quickly and efficiently
+[**Ubidots**](https://ubidots.hardwario.com/) is a cloud-based IoT platform that helps developers and businesses design, deploy, and scale IoT solutions with minimal coding. It offers drag-and-drop dashboards, real-time visualizations, alerts, reports, analytics, and white-label options to quickly turn sensor data into actionable insights.
 
 ---
 
@@ -25,7 +25,9 @@ Here is a detailed step-by-step guide:
 👉 [Adding a New Device](creating-device)
 
 Here is a video guide:
-🎥 [link to video tutorial]
+🎥 https://docs.hardwario.com/apps/videos-apps/ubidots-new-device
+
+---
 
 ### 2. Create a Connector in HARDWARIO Cloud
 
@@ -36,7 +38,9 @@ Here is a detailed step-by-step guide:
 👉 [Connectiong to the Cloud](cloud-connection)
 
 Here is a video guide:
-🎥 [link to video tutorial]
+🎥 https://docs.hardwario.com/apps/videos-apps/ubidots-cloud-connection
+
+---
 
 ### 3. Create a Dashboard in Ubidots
 
@@ -47,4 +51,4 @@ Here is a detailed step-by-step guide:
 👉 [Creating a dashboard](creating-dashboard)
 
 Here is a video guide:
-🎥 [link to video tutorial]
+🎥 https://docs.hardwario.com/apps/videos-apps/ubidots-dashboard

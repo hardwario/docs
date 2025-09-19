@@ -79,6 +79,10 @@ Device status is indicated by a **multi-color LED (R/G/Y)** and communication is
 
 ![Sticker - NFC](hardware-diagrams/nfc.png)
 
+### NFC Configuration Architecture
+
+![Sticker - NFC Configuration Architecture](sticker-nfc.drawio.png)
+
 ### Power
 
 ![Sticker - Power](hardware-diagrams/power.png)

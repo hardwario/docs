@@ -108,3 +108,16 @@ config save
 ```
 
 ---
+
+### Measured values
+
+| Measured Value | Key / Path                                   |
+|----------------|----------------------------------------------|
+| Current        | E_ENERGY_METER.METER_1.CURRENT.MEASUREMENTS  |
+| Voltage        | E_ENERGY_METER.METER_1.VOLTAGE.MEASUREMENTS  |
+| Power          | E_ENERGY_METER.METER_1.POWER.MEASUREMENTS    |
+| Frequency      | E_ENERGY_METER.METER_1.FREQUENCY.MEASUREMENTS|
+| Energy In      | E_ENERGY_METER.METER_1.ENERGY_IN.MEASUREMENTS|
+| Energy Out     | E_ENERGY_METER.METER_1.ENERGY_OUT.MEASUREMENTS|
+
+---
