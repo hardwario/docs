@@ -124,6 +124,7 @@ config save
 </div>
 <br />
 
+&nbsp;<br />
 
 The tags can be configured using the [EYE APP](https://wiki.teltonika-gps.com/view/EYE_SENSOR_/_BTSMP1#EYE_App_Configuration). We highly suggest updating the tag firmware as the default firmware does not allow some settings.
 
