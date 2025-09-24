@@ -45,8 +45,7 @@ const sidebars = {
         'chirpstack/chirpstack-configuration',
       ],
     },
-  
-     {
+    {
       type: 'category',
       label: 'Video Tutorials',
       link: {
@@ -55,12 +54,36 @@ const sidebars = {
       },
       collapsed: true,
       items: [
-        'videos-apps/ubidots-new-device',
-        'videos-apps/ubidots-cloud-connection',
-        'videos-apps/ubidots-dashboard',
+        {
+          type: 'category',
+          label: 'Ubidots',
+          collapsed: true,
+          items: [
+            'videos-apps/ubidots-new-device',
+            'videos-apps/ubidots-cloud-connection',
+            'videos-apps/ubidots-dashboard',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'ThingsBoard',
+          collapsed: true,
+          items: [
+            'videos-apps/thingsboard-new-device',
+            'videos-apps/thingsboard-cloud-connection',
+            'videos-apps/thingsboard-dashboard',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'ChirpStack v4',
+          collapsed: true,
+          items: [
+            'videos-apps/chirpstack-configuration',
+          ],
+        },
       ],
-    }
-
+    },
   ],
 };
 

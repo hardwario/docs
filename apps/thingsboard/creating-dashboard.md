@@ -4,9 +4,13 @@ title: Creating a dashboard
 ---
 import Image from '@theme/IdealImage';
 
-## 1.How to Create a Dashboard
+In this guide, you will learn how to create a dashboard, add a simple variable display, and build a basic chart. This will allow you to visualize and monitor your device data in real time.
 
-#### Step-by-Step Instructions
+---
+
+## Step-by-Step Instructions
+
+### 1.How to Create a Dashboard
 
    1. Navigate to the **left navigation bar**.  
    2. Click on the **Dashboards** tab.  
@@ -24,9 +28,7 @@ import Image from '@theme/IdealImage';
 
 ---
 
-## 2.How to Create a Simple Variable Display
-
-#### Step-by-Step Instructions
+### 2.How to Create a Simple Variable Display
 
    1. Inside your dashboard, click on the **+ Add new widget** button.  
       - Alternatively, you can use the **+ Add widget** option in the top menu bar. 
@@ -63,9 +65,7 @@ import Image from '@theme/IdealImage';
 
 ---
 
-## 3.How to Create a Simple Chart
-
-#### Step-by-Step Instructions
+### 3.How to Create a Simple Chart
 
    1. Inside your dashboard, click on the **+ Add new widget** button.  
       - Alternatively, use the **+ Add widget** option in the top menu bar.  
@@ -102,7 +102,7 @@ import Image from '@theme/IdealImage';
    
 ![Re-edit the widget](thingsboard-chart-6.png)
 
-## Example of a Created Dashboard
+### Example of a Created Dashboard
 
 ![Example of a Created Dashboard](thingsboard-dashboard.png)
 

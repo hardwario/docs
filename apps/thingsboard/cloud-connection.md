@@ -5,8 +5,11 @@ title: Connecting to the Cloud
 import Image from '@theme/IdealImage';
 import EditCodeBlock from './edit-code-block.js';
 
+In this guide, you will learn how to connect your devices to HARDWARIO Cloud by creating a new connector, transforming your data, and sending it to ThingsBoard. By the end, your data will flow automatically into the platform.
 
-### Step-by-Step Instructions
+---
+
+## Step-by-Step Instructions
 
 1. #### **Create a New Connector**  
    To establish communication with ThingsBoard, go to the `Connectors` section in the left-hand menu.  
@@ -18,12 +21,16 @@ import EditCodeBlock from './edit-code-block.js';
    
    ![ThingsBoard - Create a New Connector](thingsboard-cloud-1.png)
    
+---
+
 2. #### **Transform Data for ThingsBoard Format**  
    ThingsBoard requires a specific data format. You need to adjust your device data using a **transformation code**.  
    In the connector page, scroll down to the `Transformation` section and click the magnifying glass icon 📄🔍 to open the code editor.
 
    
    ![ThingsBoard - Transform Data for ThingsBoard Format](thingsboard-cloud-4.png)
+
+---
 
 3. #### **Insert the Transformation Code**  
    Add the transformation logic that converts incoming data to a ThingsBoard-compatible format.
@@ -184,6 +191,7 @@ import EditCodeBlock from './edit-code-block.js';
     };
 }`} />
 
+---
 
 4.  #### **Assign Devices to Connector**  
     Scroll down and select which devices (with the matching tag) should be connected.  
