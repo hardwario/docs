@@ -11,7 +11,7 @@ If you have not yet completed the initial Cloud setup steps, you can follow the 
 
 ---
 
-#### Step-by-Step Instructions
+## Step-by-Step Instructions
 
 
 1. #### **Create a New Connector**  
@@ -23,12 +23,16 @@ If you have not yet completed the initial Cloud setup steps, you can follow the 
    • `Tag` – assign the tag you created earlier
    
    ![](ubidots-cloud-7.png)
+
+---
    
 2. #### **Transform Data for Ubidots Format**  
    Ubidots requires a specific data format. You need to adjust your device data using a **transformation code**.  
    In the connector page, scroll down to the `Transformation` section and click the magnifying glass icon 📄🔍 to open the code editor.
 
    ![](ubidots-cloud-10.png)
+
+---
 
 3. #### **Insert the Transformation Code**  
    Add the transformation logic that converts incoming data to a Ubidots-compatible format.
@@ -157,12 +161,16 @@ import EditCodeBlock from './edit-code-block.js';
     };
 }`} />
 
+---
+
 ####
 
 1.  #### **Set Ubidots Token in Headers**  
     Make sure to include your **Ubidots device token** in the header of the transformation code to authorize data transmission.
 
    ![](ubidots-cloud-12.png)
+
+---
 
 2.  #### **Assign Devices to Connector**  
     Scroll down and select which devices (with the matching tag) should be connected.  

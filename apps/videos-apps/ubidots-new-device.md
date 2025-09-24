@@ -1,6 +1,6 @@
 ---
 slug: ubidots-new-device
-title: Ubidots - New Device
+title: New Device
 ---
 
 import Image from '@theme/IdealImage';
@@ -8,8 +8,8 @@ import Image from '@theme/IdealImage';
 # Ubidots – How to Create a New Device
 
 <iframe width="560" height="315"
-  src="https://www.youtube.com/embed/1me1lS9fxgI"
-  title="Ubidots – How to Create a New Device"
+  src="https://www.youtube.com/embed/wE5o0GIGPOg"
+  title="YouTube video player"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
   allowfullscreen>

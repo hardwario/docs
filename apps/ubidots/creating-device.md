@@ -9,22 +9,28 @@ Before you can send data to [Ubidots](https://ubidots.hardwario.com/) or create 
 
 ---
 
-#### Step-by-Step Instructions
+## Step-by-Step Instructions
 
 1. #### **Click the Plus Button**  
    After logging into the [Ubidots web interface](https://ubidots.hardwario.com/), click the `+` button in the upper-right corner, just below your profile icon.
 
    ![](ubidots-device-0.png)
 
+---
+
 2. #### **Choose to Create a Device**  
    A dialog will appear with two options. Click on `Create a device`.
 
   ![](ubidots-device-1.png)
 
+---
+
 3. #### **Select Blank Device**  
    A new window will open. Click on the `Blank Device` option.
 
   ![](ubidots-device-2.png)
+
+---
 
 4. #### **Configure Device Name and Label**  
    You will be taken to a form where you can define:  
@@ -33,6 +39,8 @@ Before you can send data to [Ubidots](https://ubidots.hardwario.com/) or create 
    After filling both fields, click `SAVE`.
 
    ![](ubidots-device-3.png)
+
+---
 
 5. #### **View the Newly Created Device**  
    The new device will now appear in your device list.  

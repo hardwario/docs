@@ -9,24 +9,30 @@ After successfully connecting your device to the [HARDWARIO Cloud](https://hardw
 
 ---
 
-### Displaying the Current Value of a Variable (Metric)
+## Step-by-Step Instructions
 
-#### Step-by-Step Instructions
+### Displaying the Current Value of a Variable (Metric)
 
 1. #### **Open Dashboards**  
    In the top navigation bar, click on `Data`, then select `Dashboards`. This will open the dashboard management area.
 
    ![](ubidots-metric-0.png)
 
+---
+
 2. #### **Add a New Widget**  
    Click the `Add new Widget` button (marked with a + icon).
 
    ![](ubidots-metric-1.png)
 
+---
+
 3. #### **Choose a Widget Type**  
    From the list of available widgets, choose one of the `Metric` types (used to display numerical values).
 
    ![](ubidots-metric-2.png)
+
+---
 
 4. #### **Add a Variable**  
    Click on `+ ADD VARIABLES`, then:  
@@ -36,10 +42,14 @@ After successfully connecting your device to the [HARDWARIO Cloud](https://hardw
 
    ![](ubidots-metric-3.png)
 
+---
+
 5. #### **Configure Aggregation and Time Span**  
    Set the `Aggregation Method` (e.g. average, last value) and `Span` (time range).
 
    ![](ubidots-metric-7.png)
+
+---
 
 6. #### **Edit Widget Appearance**  
    Switch to the `APPEARANCE` tab to customize display options such as:  
@@ -50,6 +60,8 @@ After successfully connecting your device to the [HARDWARIO Cloud](https://hardw
    • ...  
 
     ![](ubidots-metric-8.png)
+
+---
 
 7. #### **Save the Widget**  
    Click `SAVE` to add the widget to your dashboard.
@@ -67,15 +79,21 @@ After successfully connecting your device to the [HARDWARIO Cloud](https://hardw
 
     ![](ubidots-chart-0.png)
 
+---
+
 2. #### **Add a New Widget**  
    Click the `Add new Widget` button (marked with a + icon).
 
     ![](ubidots-chart-1.png)
 
+---
+
 3. #### **Choose a Widget Type**  
    From the list of available widgets, scroll to the `Charts` section and choose a `Line Chart`.
 
     ![](ubidots-chart-2.png)
+
+---
 
 4. #### **Add a Variable**  
    Click on `+ ADD VARIABLES`, then:  
@@ -84,6 +102,8 @@ After successfully connecting your device to the [HARDWARIO Cloud](https://hardw
    • Confirm the selection by clicking `SELECT`
 
     ![](ubidots-chart-3.png)
+
+---
 
 5. #### **Configure Chart Settings**  
    In the `SETTINGS` tab, configure options such as:  
@@ -95,6 +115,8 @@ After successfully connecting your device to the [HARDWARIO Cloud](https://hardw
 
    ![](ubidots-chart-7.png)
 
+---
+
 6. #### **Edit Y-Axis Settings**  
    In the same `SETTINGS` tab, click the `1 Y-Axis` button to adjust:  
    • Axis name  
@@ -103,6 +125,8 @@ After successfully connecting your device to the [HARDWARIO Cloud](https://hardw
    • ...
 
     ![](ubidots-chart-8.png)
+
+---
 
 7. #### **Edit Widget Appearance**  
    Switch to the `APPEARANCE` tab to modify visual elements such as:  
@@ -113,15 +137,20 @@ After successfully connecting your device to the [HARDWARIO Cloud](https://hardw
 
    ![](ubidots-chart-9.png)
 
+---
+
 8. #### **Resize the Chart**  
    Once the widget is added to your dashboard, resize it using the arrow icon in the bottom-right corner of the chart.
 
     ![](ubidots-chart-10.png)
 
+---
+
 9. #### **View Data Points**  
    Hover over the chart line to view individual data values as tooltips.
 
     ![](ubidots-chart-12.png)
+    
 ---
 
 #### These widgets will allow you to build a simple, clear dashboard for monitoring real-time or historical sensor data.
