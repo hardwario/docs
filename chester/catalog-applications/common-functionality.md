@@ -149,6 +149,10 @@ tag read
 
 If the signal strength is lower than -85 dbm, consider boosting the signal power to assure reliable communication.
 
+:::tip
+If you need further assistance or a visual demonstration of the process described in this guide, consult the [Video Guide](https://docs.hardwario.com/chester/videos-chester/chester-pair-tag).
+:::
+
 ## Report Interval Jitter
 
 The periodic sending of data with `interval-report` has intentional jitter. This is used in case lot of CHESTERs are placed near each other, so they don't transmit at the same time if they have set the same interval. This jitter is random in the range of ±20 % of `interval-report`.
@@ -214,3 +218,4 @@ In case you forget to back up the data - they are not lost unless you executed `
 In the old firmware type `app config show` to the console. Then you need to copy all configuration items. If you use **HARDWARIO Manager** phone app or **HARDWARIO CLI** on your computer, you can highlight and copy current configuration text to your clipboard or text editor.
 
 After updating to a newer firmware, paste the same lines to the console. If you use **HARDWARIO Manager** phone app or **HARDWARIO CLI** on your computer, you can paste all the lines together to the input line and press enter. All commands will be applied one by one. Check that configuration was applied correctly by typing `app config show`. Do not forget to apply changes by typing `config save`.
+

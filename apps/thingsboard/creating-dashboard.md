@@ -107,6 +107,6 @@ In this guide, you will learn how to create a dashboard, add a simple variable d
 ![Example of a Created Dashboard](thingsboard-dashboard.png)
 
 :::tip
-You can combine different widget types, overlay multiple variables, or group related data visually for more advanced dashboards.
+If you need further assistance or a visual demonstration of the process described in this guide, consult the [Video Guide](https://docs.hardwario.com/apps/videos-apps/thingsboard-dashboard).
 :::
 

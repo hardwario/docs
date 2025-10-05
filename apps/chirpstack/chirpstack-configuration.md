@@ -291,3 +291,6 @@ Within your **Application**, go to the **Integrations** tab and choose the integ
 
 ---
 
+:::tip
+If you need further assistance or a visual demonstration of the process described in this guide, consult the [Video Guide](https://docs.hardwario.com/apps/videos-apps/chirpstack-configuration).
+:::

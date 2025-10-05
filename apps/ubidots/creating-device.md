@@ -55,7 +55,8 @@ Before you can send data to [Ubidots](https://ubidots.hardwario.com/) or create 
    ![](ubidots-device-5.png)
 
 ---
+
 :::tip
-Once the device is created, you can start sending data to it and add variables to visualize on your dashboards.
+If you need further assistance or a visual demonstration of the process described in this guide, consult the [Video Guide](https://docs.hardwario.com/apps/videos-apps/ubidots-new-device).
 :::
 

@@ -156,5 +156,5 @@ After successfully connecting your device to the [HARDWARIO Cloud](https://hardw
 #### These widgets will allow you to build a simple, clear dashboard for monitoring real-time or historical sensor data.
 
 :::tip
-You can combine different widget types, overlay multiple variables, or group related data visually for more advanced dashboards.
+If you need further assistance or a visual demonstration of the process described in this guide, consult the [Video Guide](https://docs.hardwario.com/apps/videos-apps/ubidots-dashboard).
 :::

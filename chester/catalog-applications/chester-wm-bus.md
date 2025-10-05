@@ -120,7 +120,13 @@ This is not needed if you apply commands in a batch over the cloud.
 
 ### Address List Configuration
 
-This command adds the wM-Bus addresses that device scans and sends later their raw data to the cloud.
+`wm scan`
+
+Performs a scan and lists all devices in range (shows their addresses and manufacturer).
+
+`wm enroll`
+
+Enrolls (learns) all devices in range.
 
 `app config address`
 
@@ -141,6 +147,15 @@ Removing all sensors from the list.
 `config save`
 
 After completing the configuration, you need to confirm everything.
+
+`send`
+
+Sends values from the collected data to the cloud.  
+Useful to verify the data flow and check if sensors are sending data correctly.
+
+:::caution
+**Behavior without addresses** → If no addresses are configured, the device scans all available devices and sends all their data to the cloud.
+:::
 
 ### Scan Configuration
 
@@ -366,3 +381,11 @@ If you are not sure how to **get started with the Cloud**, follow this tutorial:
 :::info
 There is also the option to take the incoming data from the Cloud and **manually decrypt** it using the **online tool**: [https://wmbusmeters.org/](https://wmbusmeters.org/).  
 :::
+
+## Supported W-MBus Sensors
+
+For **CHESTER W-MBus**, we support several sensors from **BMeters** and **Zenner**.  
+We offer different types of devices, including **water meters**, **heat meters**, and **environmental sensors**.
+
+For the complete list and detailed information, see the documentation here:  
+➡️ [Supported W-MBus Sensors](https://docs.hardwario.com/chester/supported-sensors/wm-bus_sensors)
