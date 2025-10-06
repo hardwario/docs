@@ -68,7 +68,7 @@ After adding gateways, the next step is to create device profiles in ChirpStack.
 
 ---
 
-#### Example for **STICKER** device:  
+### Example for STICKER devices  
 
 **General Tab:**  
 - MAC version: **LoRaWAN 1.0.4**  
@@ -84,7 +84,21 @@ After adding gateways, the next step is to create device profiles in ChirpStack.
 **Class-C Tab:**  
 - Device supports Class-C: **OFF**  
 
+### Example for CHESTER devices:  
 
+**General Tab:**  
+- MAC version: **LoRaWAN 1.0.4**  
+- Regional parameters revision: **A**  
+- ADR algorithm: **Default ADR algorithm (LoRa only)**  
+
+**Join (OTAA/ABP) Tab:**  
+- Device supports OTAA: **ON**  
+
+**Class-B Tab:**  
+- Device supports Class-B: **OFF**  
+
+**Class-C Tab:**  
+- Device supports Class-C: **OFF**  
 
 ---
 
@@ -277,3 +291,6 @@ Within your **Application**, go to the **Integrations** tab and choose the integ
 
 ---
 
+:::tip
+If you need further assistance or a visual demonstration of the process described in this guide, consult the [Video Guide](https://docs.hardwario.com/apps/videos-apps/chirpstack-configuration).
+:::

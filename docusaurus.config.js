@@ -116,6 +116,17 @@ const config = {
         sidebarPath: require.resolve('./sidebars-sticker.js'),
       }),
     ],
+    // ➜ NEW: Milesight docs plugin (generuje /milesight/)
+    [
+      '@docusaurus/plugin-content-docs',
+      ({
+        id: 'milesight',
+        path: 'milesight',
+        routeBasePath: 'milesight',
+        sidebarPath: require.resolve('./sidebars-milesight.js'),
+        editUrl: 'https://github.com/hardwario/docs/edit/main',
+      }),
+    ],
     [
       '@docusaurus/plugin-ideal-image',
       {
@@ -126,7 +137,7 @@ const config = {
         disableInDev: false,
       },
     ],
-    require.resolve("docusaurus-plugin-image-zoom"),
+    require.resolve('docusaurus-plugin-image-zoom'),
   ],
 
   themeConfig:
@@ -139,54 +150,36 @@ const config = {
           srcDark: 'img/logo-dark.svg',
         },
         items: [
+          // 1) PRODUCTS (podmenu)
           {
-            to: '/chester/',
-            label: 'CHESTER',
+            label: 'PRODUCTS',
             position: 'left',
-            activeBaseRegex: `/chester/`,
+            items: [
+              { to: '/chester/', label: 'CHESTER', activeBaseRegex: `/chester/` },
+              { to: '/ember/',   label: 'EMBER',   activeBaseRegex: `/ember/` },
+              { to: '/fiber/',   label: 'FIBER',   activeBaseRegex: `/fiber/` },
+              { to: '/tapper/',  label: 'TAPPER',  activeBaseRegex: `/tapper/` },
+              { to: '/tower/',   label: 'TOWER',   activeBaseRegex: `/tower/` },
+              { to: '/gauger/',  label: 'GAUGER',  activeBaseRegex: `/gauger/` },
+              { to: '/sticker/', label: 'STICKER', activeBaseRegex: `/sticker/` },
+            ],
           },
+          // 2) THIRD-PARTY DEVICES (podmenu)
           {
-            to: '/ember/',
-            label: 'EMBER',
+            label: 'THIRD-PARTY DEVICES',
             position: 'left',
-            activeBaseRegex: `/ember/`,
+            items: [
+              { to: '/milesight/', label: 'MILESIGHT', activeBaseRegex: `/milesight/` },
+            ],
           },
-          {
-            to: '/fiber/',
-            label: 'FIBER',
-            position: 'left',
-            activeBaseRegex: `/fiber/`,
-          },
-          {
-            to: '/tapper/',
-            label: 'TAPPER',
-            position: 'left',
-            activeBaseRegex: `/tapper/`,
-          },
-          {
-            to: '/tower/',
-            label: 'TOWER',
-            position: 'left',
-            activeBaseRegex: `/tower/`,
-          },
-          {
-            to: '/gauger/',
-            label: 'GAUGER',
-            position: 'left',
-            activeBaseRegex: `/gauger/`,
-          },
-          {
-            to: '/sticker/',
-            label: 'STICKER',
-            position: 'left',
-            activeBaseRegex: `/sticker/`,
-          },
+          // 3) CLOUD (bez podmenu)
           {
             to: '/cloud/',
             label: 'CLOUD',
             position: 'left',
             activeBaseRegex: `/cloud/`,
           },
+          // 4) APPS (bez podmenu)
           {
             to: '/apps/',
             label: 'APPS',
@@ -201,24 +194,24 @@ const config = {
         ],
       },
       prism: {
-        theme: require('prism-react-renderer/themes/dracula'),
+        theme: lightCodeTheme,
+        darkTheme: darkCodeTheme,
       },
       zoom: {
         selector: '.markdown :not(em) > img',
         config: {
-          // options you can specify via https://github.com/francoischalifour/medium-zoom#usage
           background: {
             light: 'rgb(255, 255, 255)',
-            dark: 'rgb(50, 50, 50)'
-          }
-        }
+            dark: 'rgb(50, 50, 50)',
+          },
+        },
       },
       algolia: {
-        apiKey: "00f3bf4268a994b715822ae701e41326",
-        indexName: "hardwario",
-        appId: "AKRT8SVTPP",
+        apiKey: '00f3bf4268a994b715822ae701e41326',
+        indexName: 'hardwario',
+        appId: 'AKRT8SVTPP',
         contextualSearch: false,
-        placeholder: "search",
+        placeholder: 'search',
         searchPagePath: false,
       },
       footer: {
@@ -226,65 +219,35 @@ const config = {
         links: [
           {
             title: 'Sites',
-            items: [
-              {
-                label: 'Homepage',
-                to: 'https://hardwario.com',
-              },
-            ],
+            items: [{ label: 'Homepage', to: 'https://hardwario.com' }],
           },
           {
             title: 'Community',
             items: [
-              {
-                label: 'Forum',
-                href: 'https://forum.hardwario.com',
-              },
-              {
-                label: 'LinkedIn',
-                href: 'https://www.linkedin.com/company/hardwario',
-              },
-              {
-                label: 'Twitter (EN)',
-                href: 'https://twitter.com/hardwario_en',
-              },
-              {
-                label: 'Twitter (CZ)',
-                href: 'https://twitter.com/hardwario_cz',
-              },
+              { label: 'Forum', href: 'https://forum.hardwario.com' },
+              { label: 'LinkedIn', href: 'https://www.linkedin.com/company/hardwario' },
+              { label: 'Twitter (EN)', href: 'https://twitter.com/hardwario_en' },
+              { label: 'Twitter (CZ)', href: 'https://twitter.com/hardwario_cz' },
             ],
           },
           {
             title: 'More',
             items: [
-              {
-                label: 'GitHub',
-                href: 'https://github.com/hardwario',
-              },
-              {
-                label: 'GitLab',
-                href: 'https://gitlab.hardwario.com',
-              },
+              { label: 'GitHub', href: 'https://github.com/hardwario' },
+              { label: 'GitLab', href: 'https://gitlab.hardwario.com' },
             ],
           },
         ],
         copyright: `Copyright © ${new Date().getFullYear()} HARDWARIO a.s. Built with Docusaurus.`,
       },
-      prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
-      },
       docs: {
-        sidebar: {
-          hideable: true,
-        },
+        sidebar: { hideable: true },
       },
       colorMode: {
-        defaultMode: 'light', // Default to dark mode
-        disableSwitch: false, // Allow switching themes
+        defaultMode: 'light',
+        disableSwitch: false,
       },
     }),
-    onBrokenLinks: 'log',
 };
 
 module.exports = config;

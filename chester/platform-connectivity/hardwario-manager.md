@@ -61,6 +61,10 @@ To manage your **CHESTER** device, you have to connect to it via Bluetooth. Ever
 You can't use the built-in QR code reader in **HARDWARIO Manager** app to get the BLE passkey. Use your favorite QR scan app or camera app to read **QR code** to get the BLE passkey to pair your device.
 :::
 
+:::tip
+If you need further assistance or a visual demonstration of the process described in this guide, consult the [Video Guide](https://docs.hardwario.com/chester/videos-chester/chester-connect-phone).
+:::
+
 ## App Menu
 
 When you connect to **CHESTER**, you can use a menu to browse the following categories
@@ -129,6 +133,10 @@ Firmware Update Interruption: Should the phone disconnect during a firmware swap
     </div>
   </div>
 </div>
+
+:::tip
+If you need further assistance or a visual demonstration of the process described in this guide, consult the [Video Guide](https://docs.hardwario.com/chester/videos-chester/chester-update-phone).
+:::
 
 ### Device Reboot
 

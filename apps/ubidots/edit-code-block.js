@@ -32,18 +32,22 @@ function EditCodeBlock({ initialText }) {
   const buttonStyle = {
     position: 'absolute',
     top: '0.5rem',
-    right: '0.5rem',
-    backgroundColor: 'transparent',
-    border: 'none',
+    right: '2.5rem',
+    backgroundColor: isDarkMode ? '#3a3a3a' : '#ffffff',
+    border: '1px solid rgba(0,0,0,0.1)',
+    borderRadius: '4px',
     cursor: 'pointer',
-    padding: '0.5rem',
-    color: isDarkMode ? '#b0b0b0' : '#888',
+    padding: '0.25rem',
+    color: isDarkMode ? '#ccc' : '#555',
+    boxShadow: '0 1px 2px rgba(0,0,0,0.15)',
+    transition: 'background-color 0.2s',
   };
 
   const textareaStyle = {
     width: '100%',
     minHeight: '150px',
     padding: '0.5rem',
+    paddingRight: '3rem',
     fontFamily: 'monospace',
     fontSize: '0.875rem',
     lineHeight: '1.25rem',

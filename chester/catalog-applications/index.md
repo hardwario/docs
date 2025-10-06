@@ -80,7 +80,7 @@ Then apply changes by typing `config save`. The device will reboot and use the c
 | [**CHESTER Range**](chester-range.md#chester-range)             | [**v3.3.0**](https://firmware.hardwario.com/chester/d38047862971443e8096103930b44d03) | <small>`d38047862971443e8096103930b44d03`</small> | 2025-07-14 |                         |
 | [**CHESTER Range Z**](chester-range.md#chester-range-z)         | [**v3.3.0**](https://firmware.hardwario.com/chester/f5ca83a564604ce1a3a6c8f9ae637056) | <small>`f5ca83a564604ce1a3a6c8f9ae637056`</small> | 2025-07-14 | Support for CHESTER-Z   |
 | **CHESTER Demo**                                                | [**v3.3.0**](https://firmware.hardwario.com/chester/4811f1457dc44468bb9c015a30e2f66a) | <small>`4811f1457dc44468bb9c015a30e2f66a`</small> | 2025-07-14 |                         |
-| [**CHESTER wM-Bus**](chester-wm-bus.md#chester-wm-bus)          | [**v3.3.0**](https://firmware.hardwario.com/chester/e11c53c8a03540a78cce2bd7deaaff23) | <small>`e11c53c8a03540a78cce2bd7deaaff23`</small> | 2025-07-14 |                         |
+| [**CHESTER wM-Bus**](chester-wm-bus.md)          | [**v3.4.0**](https://firmware.hardwario.com/chester/d9b464c0d7df4cf09ded65d87438f1a9) | <small>`d9b464c0d7df4cf09ded65d87438f1a9`</small> | 2025-09-30 |                         |
 
 
 
