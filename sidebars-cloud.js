@@ -12,6 +12,7 @@ const sidebars = {
     'downlink',
     'fota',
     'api',
+    'variables',
     {
       type: 'category',
       label: 'Cloud v1',

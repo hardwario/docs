@@ -1,164 +1,16 @@
 ---
-slug: creating-dashboard
-title: Creating a dashboard
+slug: html-canvas
+title: HTML Canvas
 ---
 import Image from '@theme/IdealImage';
-import EditCodeBlock from './edit-code-block.js';
 
+# Displaying Variables on HTML Canvas
 
-After successfully connecting your device to the [HARDWARIO Cloud](https://hardwario.cloud/), follow these steps to create basic widgets on your dashboard:
+This widget allows you to create custom visualizations using HTML, CSS, and JavaScript. It’s a flexible option for advanced users who want to design personalized dashboards or interactive data views.
 
 ---
 
 ## Step-by-Step Instructions
-
-### Displaying the Current Value of a Variable (Metric)
-
-1. #### **Open Dashboards**  
-   In the top navigation bar, click on `Data`, then select `Dashboards`. This will open the dashboard management area.
-
-   ![](ubidots-metric-0.png)
-
----
-
-2. #### **Add a New Widget**  
-   Click the `Add new Widget` button (marked with a + icon).
-
-   ![](ubidots-metric-1.png)
-
----
-
-3. #### **Choose a Widget Type**  
-   From the list of available widgets, choose one of the `Metric` types (used to display numerical values).
-
-   ![](ubidots-metric-2.png)
-
----
-
-4. #### **Add a Variable**  
-   Click on `+ ADD VARIABLES`, then:  
-   • Select your device  
-   • Choose the desired variable  
-   • Confirm the selection by clicking `SELECT`
-
-   ![](ubidots-metric-3.png)
-
----
-
-5. #### **Configure Aggregation and Time Span**  
-   Set the `Aggregation Method` (e.g. average, last value) and `Span` (time range).
-
-   ![](ubidots-metric-7.png)
-
----
-
-6. #### **Edit Widget Appearance**  
-   Switch to the `APPEARANCE` tab to customize display options such as:  
-   • Label  
-   • Color  
-   • Font  
-   • Date format  
-   • ...  
-
-    ![](ubidots-metric-8.png)
-
----
-
-7. #### **Save the Widget**  
-   Click `SAVE` to add the widget to your dashboard.
-
-    ![](ubidots-metric-9.png)
-
----
-
-### Displaying a Variable in a Basic Chart (Line Chart)
-
-#### Step-by-Step Instructions
-
-1. #### **Open Dashboards**  
-   In the top navigation bar, click on `Data`, then select `Dashboards`. This will open the dashboard management area.
-
-    ![](ubidots-chart-0.png)
-
----
-
-2. #### **Add a New Widget**  
-   Click the `Add new Widget` button (marked with a + icon).
-
-    ![](ubidots-chart-1.png)
-
----
-
-3. #### **Choose a Widget Type**  
-   From the list of available widgets, scroll to the `Charts` section and choose a `Line Chart`.
-
-    ![](ubidots-chart-2.png)
-
----
-
-4. #### **Add a Variable**  
-   Click on `+ ADD VARIABLES`, then:  
-   • Select your device  
-   • Choose the desired variable  
-   • Confirm the selection by clicking `SELECT`
-
-    ![](ubidots-chart-3.png)
-
----
-
-5. #### **Configure Chart Settings**  
-   In the `SETTINGS` tab, configure options such as:  
-   • Aggregation Method  
-   • Span  
-   • Sample Period  
-   • Bar Width  
-   • ...
-
-   ![](ubidots-chart-7.png)
-
----
-
-6. #### **Edit Y-Axis Settings**  
-   In the same `SETTINGS` tab, click the `1 Y-Axis` button to adjust:  
-   • Axis name  
-   • Position  
-   • Value range  
-   • ...
-
-    ![](ubidots-chart-8.png)
-
----
-
-7. #### **Edit Widget Appearance**  
-   Switch to the `APPEARANCE` tab to modify visual elements such as:  
-   • X-axis label  
-   • Font  
-   • Date format  
-   • ...
-
-   ![](ubidots-chart-9.png)
-
----
-
-8. #### **Resize the Chart**  
-   Once the widget is added to your dashboard, resize it using the arrow icon in the bottom-right corner of the chart.
-
-    ![](ubidots-chart-10.png)
-
----
-
-9. #### **View Data Points**  
-   Hover over the chart line to view individual data values as tooltips.
-
-    ![](ubidots-chart-12.png)
-    
----
-
-:::tip
-If you need further assistance or a visual demonstration of the process described in this guide, consult the [Video Guide](https://docs.hardwario.com/apps/videos-apps/ubidots-dashboard).
-:::
-
-### Displaying Variables on a Floor Plan (HTML Canvas)
 
 1. #### **Open Dashboards**  
    In the top navigation bar, click on `Data`, then select `Dashboards`. This will open the dashboard management area.
@@ -214,16 +66,40 @@ You can set:
 
 ---
 
-7. #### **Example of HTML Canvas (Floor Plan)**  
+## Example of HTML Canvas (Floor Plan)
 
 ![](ubidots-html-5.png)
 
 ---
 
+#### **Configure the Floor Plan Widget**
+
+Before using the HTML code, you must update several parameters inside the **`CONFIG`** section of the script.  
+These define your Ubidots connection, the floor plan image, and the BLE tag positions.
+
+---
+
+| Parameter | Description | Required |
+|------------|-------------|-----------|
+| `CONFIG.ubidots.token` | Your Ubidots **API token** (found under *API Credentials* in Ubidots). | ✅ |
+| `CONFIG.ubidots.deviceLabel` | The **device label** that contains your BLE sensor variables. | ✅ |
+| `CONFIG.floorplanUrl` | Public URL to your **PNG/JPG floor plan image**. You can host it via [Postimages](https://postimages.org) or [Imgur](https://imgur.com). | ✅ |
+| `CONFIG.pollingMs` | How often to refresh values from Ubidots, in **milliseconds**. Default: `15000` (15 seconds). | ⚙️ Optional |
+| `CONFIG.tags` | Array containing all BLE sensors with their names, indexes, and positions. Each entry represents one sensor pin on the floor plan. | ✅ |
+| `room` | Display name (e.g., `"Server Room"`). | ✅ |
+| `idx` | BLE tag index *(0–N)* — values are read from: `ble_tags.<idx>.temperature.avg` and `ble_tags.<idx>.humidity.avg`. | ✅ |
+| `x`, `y` | Position in **percentages (0–100)** relative to the image dimensions. | ✅ |
+| `loc.anchor` | Locator arrow direction — `"down"` (below), `"top"` (above), or `"diag"` (diagonal). | ⚙️ Optional |
+| `loc.dx`, `loc.dy` | Fine offset adjustment for the locator position in **pixels**. | ⚙️ Optional |
+| `loc.angle` | Rotation of the locator in **degrees** (used with `"diag"`). | ⚙️ Optional |
+| `loc.mirror` | Flip the locator **horizontally** (`true` / `false`). | ⚙️ Optional |
+
+---
+
 #### Example Code – HTML Floor Plan
 
-<EditCodeBlock
-  initialText={String.raw`<div id="floor-wrapper">
+```
+<div id="floor-wrapper">
   <img id="floorplan" alt="Floor plan" />
   <div id="pins"></div>
 </div>
@@ -434,101 +310,40 @@ You can set:
   window.addEventListener("resize", positionPins);
   refreshData();
   setInterval(refreshData, CONFIG.pollingMs);
-</script>`}
-/>
+</script>
+```
 
 
 
-#### **Configure the Floor Plan Widget**
 
-Before using the HTML code, you must update several parameters inside the **`CONFIG`** section of the script.  
-These define your Ubidots connection, the floor plan image, and the BLE tag positions.
-
----
-
-| Parameter | Description | Required |
-|------------|-------------|-----------|
-| `CONFIG.ubidots.token` | Your Ubidots **API token** (found under *API Credentials* in Ubidots). | ✅ |
-| `CONFIG.ubidots.deviceLabel` | The **device label** that contains your BLE sensor variables. | ✅ |
-| `CONFIG.floorplanUrl` | Public URL to your **PNG/JPG floor plan image**. You can host it via [Postimages](https://postimages.org) or [Imgur](https://imgur.com). | ✅ |
-| `CONFIG.pollingMs` | How often to refresh values from Ubidots, in **milliseconds**. Default: `15000` (15 seconds). | ⚙️ Optional |
-| `CONFIG.tags` | Array containing all BLE sensors with their names, indexes, and positions. Each entry represents one sensor pin on the floor plan. | ✅ |
-| `room` | Display name (e.g., `"Server Room"`). | ✅ |
-| `idx` | BLE tag index *(0–N)* — values are read from: `ble_tags.<idx>.temperature.avg` and `ble_tags.<idx>.humidity.avg`. | ✅ |
-| `x`, `y` | Position in **percentages (0–100)** relative to the image dimensions. | ✅ |
-| `loc.anchor` | Locator arrow direction — `"down"` (below), `"top"` (above), or `"diag"` (diagonal). | ⚙️ Optional |
-| `loc.dx`, `loc.dy` | Fine offset adjustment for the locator position in **pixels**. | ⚙️ Optional |
-| `loc.angle` | Rotation of the locator in **degrees** (used with `"diag"`). | ⚙️ Optional |
-| `loc.mirror` | Flip the locator **horizontally** (`true` / `false`). | ⚙️ Optional |
-
----
-
-### Displaying Variables in a Data Table (HTML Canvas)
-
-1. #### **Open Dashboards**  
-   In the top navigation bar, click on `Data`, then select `Dashboards`. This will open the dashboard management area.
-
-   ![](ubidots-metric-0.png)
-
----
-
-2. #### **Add a New Widget**  
-   Click the `Add new Widget` button (marked with a + icon).
-
-   ![](ubidots-metric-1.png)
-
----
-
-3. #### **Choose a Widget Type**  
-   From the list of available widgets, choose the `HTML Canvas`.
-
-   ![](ubidots-html-0.png)
-
----
-
-4. #### **Configure HTML Canvas Settings**  
-In the **`SETTINGS`** tab, configure the available options.  
-This is where you can enable or disable features such as:  
-
-- **Preload dashboard data** (recommended: ON)  
-- **Enable React.js** (optional, for dynamic rendering)  
-- **Add third-party libraries** (for external JS/CSS resources)  
-
-After configuration, click **`Edit code`** under **Code editor** and insert your HTML, CSS, and JavaScript.
-
-![](ubidots-html-1.png)
-
----
-
-5. #### **Add HTML Code to the Canvas**
-In the **Code Editor**, insert your desired layout and logic.  
-
-![](ubidots-html-2.png)
-
----
-
-6. #### **Edit Canvas Appearance**  
-Switch to the **`APPEARANCE`** tab to modify the visual style of your widget.  
-You can set:  
-
-- Widget **name**  
-- Option to **hide the header**  
-- Add a **custom style** (JSON format)
-
-![](ubidots-html-4.png)
-
----
-
-7. #### **Example of HTML Canvas (Data Table)**  
+## Example of HTML Canvas (Data Table)
 
 ![](ubidots-html-6.png)
 
 ---
 
+#### **Configure the Table Widget**
+
+Before using the HTML code, you must update several parameters inside the **`CONFIG`** section of the script.  
+
+---
+
+| Parameter | Description | Required |
+|---|---|---|
+| `CONFIG.ubidots.token` | Your Ubidots **API token** (found under API Credentials). | ✅ |
+| `CONFIG.ubidots.deviceLabel` | Device label in Ubidots that contains the BLE variables. | ✅ |
+| `CONFIG.pollingMs` | Refresh interval in **milliseconds**. Default: `15000`. | ⚙️ Optional |
+| `CONFIG.tags` | Array of rows to display in the table. Each row maps to `ble_tags.<idx>.*`. | ✅ |
+| `name` | Display name of the tag (table’s first column). | ✅ |
+| `idx` | BLE tag index *(0–N)* used to read: `rssi`, `voltage`, `temperature.avg`, `humidity.avg`. | ✅ |
+
+---
+
+
 #### Example Code – HTML Data Table
 
-<EditCodeBlock
-  initialText={String.raw`<!-- ======== HTML TABLE: BLE TAGS STATUS ======== -->
+```
+<!-- ======== HTML TABLE: BLE TAGS STATUS ======== -->
 <table id="tags-table" cellspacing="0" cellpadding="8"
   style="width:100%; border-collapse: collapse; text-align:center; font-family: system-ui, sans-serif;">
   <thead>
@@ -648,25 +463,4 @@ You can set:
   refreshOnce();
   setInterval(refreshOnce, CONFIG.pollingMs);
 </script>
-`}
-/>
-
-
-#### **Configure the Table Widget**
-
-Before using the HTML code, you must update several parameters inside the **`CONFIG`** section of the script.  
-
----
-
-| Parameter | Description | Required |
-|---|---|---|
-| `CONFIG.ubidots.token` | Your Ubidots **API token** (found under API Credentials). | ✅ |
-| `CONFIG.ubidots.deviceLabel` | Device label in Ubidots that contains the BLE variables. | ✅ |
-| `CONFIG.pollingMs` | Refresh interval in **milliseconds**. Default: `15000`. | ⚙️ Optional |
-| `CONFIG.tags` | Array of rows to display in the table. Each row maps to `ble_tags.<idx>.*`. | ✅ |
-| `name` | Display name of the tag (table’s first column). | ✅ |
-| `idx` | BLE tag index *(0–N)* used to read: `rssi`, `voltage`, `temperature.avg`, `humidity.avg`. | ✅ |
-
----
-
-#### These widgets will allow you to build a simple, clear dashboard for monitoring real-time or historical sensor data.
+```
