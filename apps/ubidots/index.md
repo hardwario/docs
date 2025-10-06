@@ -47,8 +47,18 @@ Here is a video guide:
 Once the connection is established and data is flowing, create a dashboard in [Ubidots](https://ubidots.hardwario.com/).
 Add widgets (such as graphs, indicators, and tables) to visualize your data in real time.
 
-Here is a detailed step-by-step guide:
-👉 [Creating a dashboard](creating-dashboard)
+Here are detailed step-by-step guides:
+
+Here are detailed step-by-step guides:
+
+| Guide               | Link                        |
+|---------------------|-----------------------------|
+| Metric              | [Open](creating-dashboard/metric)            |
+| Line Chart          | [Open](creating-dashboard/line-chart)        |
+| HTML Canvas         | [Open](creating-dashboard/html-canvas)       |
+| Synthetic Variable  | [Open](creating-dashboard/synthetic-variable)|
+
+
 
 Here is a video guide:
 🎥 https://docs.hardwario.com/apps/videos-apps/ubidots-dashboard
