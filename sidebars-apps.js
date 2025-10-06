@@ -15,7 +15,17 @@ const sidebars = {
       items: [
         'ubidots/creating-device',
         'ubidots/cloud-connection',
-        'ubidots/creating-dashboard',
+        {
+          type: 'category',
+          label: 'Creating Dashboard',
+          collapsed: true,
+          items: [
+            'ubidots/creating-dashboard/metric',
+            'ubidots/creating-dashboard/line-chart',
+            'ubidots/creating-dashboard/html-canvas',
+            'ubidots/creating-dashboard/synthetic-variable',
+          ],
+        },
       ],
     },
     {
@@ -44,6 +54,16 @@ const sidebars = {
         'chirpstack/chirpstack-installation',
         'chirpstack/chirpstack-configuration',
       ],
+    },
+    {
+      type: 'category',
+      label: 'The Things Network',
+      link: {
+        type: 'doc',
+        id: 'the-things-network/index',
+      },
+      collapsed: true,
+      items: [],
     },
     {
       type: 'category',
@@ -78,9 +98,7 @@ const sidebars = {
           type: 'category',
           label: 'ChirpStack v4',
           collapsed: true,
-          items: [
-            'videos-apps/chirpstack-configuration',
-          ],
+          items: ['videos-apps/chirpstack-configuration'],
         },
       ],
     },

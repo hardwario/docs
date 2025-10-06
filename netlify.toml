@@ -913,4 +913,4 @@
   force = true
 
 [build.environment]
-NODE_VERSION = "18"
+  NODE_VERSION = "22.17.0"
