@@ -119,6 +119,23 @@ config save
 
 Note, that lower data rate means a lower payload that can reach [as low as 51 bytes](https://www.thethingsnetwork.org/docs/lorawan/regional-parameters/#eu863-870-maximum-payload-size). This is 51 bytes for a complete LoRaWAN packet, not only your useful payload.
 
+### CHIRPSTACK Configuration 
+
+The following table provides a summary of the recommended configuration parameters for CHESTER devices within the ChirpStack v4 environment.
+
+| **Parameter** | **Value** |
+|----------------|-----------|
+| **General – MAC version** | **LoRaWAN 1.0.4** |
+| **General – Regional parameters revision** | **A** |
+| **General – ADR algorithm** | **Default ADR algorithm (LoRa only)** |
+| **Join (OTAA/ABP) – Device supports OTAA** | **ON** |
+| **Class-B – Device supports Class-B** | **OFF** |
+| **Class-C – Device supports Class-C** | **OFF** |
+
+:::info
+If you are unsure about the **ChirpStack setup** or **configuration**, please refer to the following guide, which provides detailed instructions for installing and configuring ChirpStack v4: [**Getting Started with ChirpStack v4**](https://docs.hardwario.com/apps/chirpstack/index#getting-started-with-chirpstack-v4)
+:::
+
 ## Decoders and Codecs
 
 To correctly decode RAW binary data you have to use a decoder that outputs values with JSON.

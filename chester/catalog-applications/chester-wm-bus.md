@@ -124,9 +124,14 @@ This is not needed if you apply commands in a batch over the cloud.
 
 Performs a scan and lists all devices in range (shows their addresses and manufacturer).
 
-`wm enroll`
+`wm enroll <timeout> <threshold>`
 
-Enrolls (learns) all devices in range.
+Registers (enrolls) all devices within range.
+
+- `timeout` – duration of the scan in seconds.  
+- `threshold` (RSSI) – minimum signal strength of devices to be accepted (range 0 to -150 dBm).  
+
+If parameters are not provided, the default value from `config timeout` is used.
 
 `app config address`
 
@@ -156,6 +161,15 @@ Useful to verify the data flow and check if sensors are sending data correctly.
 :::caution
 **Behavior without addresses** → If no addresses are configured, the device scans all available devices and sends all their data to the cloud.
 :::
+
+### Cloud Decode Configuration
+
+`app config cloud-decode false/true`
+
+- `false` – messages are sent in raw (binary) format.  
+- `true` – the cloud decodes messages into a readable (JSON) format.  
+  If the messages are encrypted, the decryption key from **Variables** is used.
+
 
 ### Scan Configuration
 
