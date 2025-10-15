@@ -5,15 +5,29 @@ title: How to connect Chester to your phone
 
 import Image from '@theme/IdealImage';
 
+## Tutorial Overview
 
+In this guide, you’ll learn how to connect your CHESTER device to your phone using the HARDWARIO Manager app. Follow simple steps to pair via Bluetooth and access all device information and tools.
 
-<iframe width="560" height="315"
-  src="https://www.youtube.com/embed/DJR5v-Y___o"
-  title="HOW TO CONNECT CHESTER TO YOUR PHONE"
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  allowfullscreen>
-</iframe>
+---
+
+<div style={{ position: "relative", paddingBottom: "56.25%", height: 0 }}>
+  <iframe
+    src="https://www.youtube.com/embed/DJR5v-Y___o?rel=0"
+    title="HOW TO CONNECT CHESTER TO YOUR PHONE"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowFullScreen
+    style={{
+      position: "absolute",
+      top: 0,
+      left: 0,
+      width: "100%",
+      height: "100%"
+    }}
+  ></iframe>
+</div>
+
 
 ## Step-by-Step Text Guide
 

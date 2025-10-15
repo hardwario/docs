@@ -7,13 +7,29 @@ import Image from '@theme/IdealImage';
 
 # How to add chester to Cloud
 
-<iframe width="560" height="315"
-  src="https://www.youtube.com/embed/w0M63Kh03Lc"
-  title="HOW TO ADD CHESTER TO CLOUD"
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  allowfullscreen>
-</iframe>
+## Tutorial Overview
+
+In this guide, you’ll learn how to add your CHESTER device to HARDWARIO Cloud. You’ll scan the QR code to fill in device details automatically, set tags or comments, and create the device in your Cloud space to view its messages.
+
+---
+
+<div style={{ position: "relative", paddingBottom: "56.25%", height: 0 }}>
+  <iframe
+    src="https://www.youtube.com/embed/w0M63Kh03Lc?rel=0"
+    title="HOW TO ADD CHESTER TO CLOUD"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowFullScreen
+    style={{
+      position: "absolute",
+      top: 0,
+      left: 0,
+      width: "100%",
+      height: "100%"
+    }}
+  ></iframe>
+</div>
+
 
 ## Step-by-Step Text Guide
 

@@ -5,15 +5,29 @@ title: How to pair Bluetooth tag with Chester
 
 import Image from '@theme/IdealImage';
 
+## Tutorial Overview
 
+In this guide, you’ll learn how to pair and manage up to eight tags with your CHESTER device. We’ll show you how to enroll, verify, and read data from tags directly in the HARDWARIO Manager console.
 
-<iframe width="560" height="315"
-  src="https://www.youtube.com/embed/7ita74JSj98"
-  title="HOW TO PAIR BLUETOOTH TAG WITH CHESTER"
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  allowfullscreen>
-</iframe>
+---
+
+<div style={{ position: "relative", paddingBottom: "56.25%", height: 0 }}>
+  <iframe
+    src="https://www.youtube.com/embed/7ita74JSj98?rel=0"
+    title="HOW TO PAIR BLUETOOTH TAG WITH CHESTER"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowFullScreen
+    style={{
+      position: "absolute",
+      top: 0,
+      left: 0,
+      width: "100%",
+      height: "100%"
+    }}
+  ></iframe>
+</div>
+
 
 ## Step-by-Step Text Guide
 

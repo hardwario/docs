@@ -8,11 +8,11 @@ const sidebars = {
     'messages',
     'tags',
     'connectors',
+    'variables',
     'users',
     'downlink',
     'fota',
     'api',
-    'variables',
     {
       type: 'category',
       label: 'Cloud v1',

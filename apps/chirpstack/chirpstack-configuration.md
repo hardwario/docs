@@ -1,6 +1,6 @@
 ---
 slug: chirpstack-configuration
-title: ChirpStack v4 Configuration
+title: Configuration
 ---
 import Image from '@theme/IdealImage';
 
@@ -24,29 +24,9 @@ Once completed, click **Submit**.
 
 ![ChirStack v4 - Gateways](chirpstack-tutorial-1.png)
 
----
-
-#### Ember Gateways – MikroTik Software  
-
-
 :::info
-If you are using our **Ember gateway**, the **Gateway ID** can be found through MikroTik software.  
+If you are using our **Ember gateway**, the **Gateway ID** can be found through **[MikroTik software](/ember/mikrotik-gateway-configuration#c-link-lora-device-to-the-new-server)**.  
 :::
-
-1. Open a browser and enter the IP address of your gateway.  
-2. In the left menu, select **IoT → LoRa → Devices**.  
-3. Click on your gateway to view its details, including the Gateway ID.  
-4. Ensure that **Network** is set to **Private**, not Public.  
-
-You also need to verify the connection between the gateway and the ChirpStack LoRaWAN Network Server.  
-1. In the same **IoT → LoRa** section, select **Servers** instead of Devices.  
-2. Remove the default manufacturer configuration.  
-3. Click **New** to create your own server connection.  
-4. Fill in:  
-   - **Name**  
-   - **Server address** (where ChirpStack is running)  
-   - **Protocol**  
-   - **Uplink and Downlink ports**  
 
 ---
 
@@ -68,37 +48,14 @@ After adding gateways, the next step is to create device profiles in ChirpStack.
 
 ---
 
-### Example for STICKER devices  
+### Example for HARDWARIO devices
 
-**General Tab:**  
-- MAC version: **LoRaWAN 1.0.4**  
-- Regional parameters revision: **B**  
-- ADR algorithm: **Default ADR algorithm (LoRa only)**  
+If you are using Chester or Sticker as an end device, you can find examples of device profile configurations in the following links:
 
-**Join (OTAA/ABP) Tab:**  
-- Device supports OTAA: **OFF**  
-
-**Class-B Tab:**  
-- Device supports Class-B: **OFF**  
-
-**Class-C Tab:**  
-- Device supports Class-C: **OFF**  
-
-### Example for CHESTER devices:  
-
-**General Tab:**  
-- MAC version: **LoRaWAN 1.0.4**  
-- Regional parameters revision: **A**  
-- ADR algorithm: **Default ADR algorithm (LoRa only)**  
-
-**Join (OTAA/ABP) Tab:**  
-- Device supports OTAA: **ON**  
-
-**Class-B Tab:**  
-- Device supports Class-B: **OFF**  
-
-**Class-C Tab:**  
-- Device supports Class-C: **OFF**  
+| **Device** | **Documentation Link** |
+|-------------|-------------------------|
+| **CHESTER** | https://docs.hardwario.com/chester/platform-connectivity/lorawan-radio#chirpstack-configuration |
+| **STICKER** | https://docs.hardwario.com/sticker/getting-started#chirpstack-v4-configuration-for-sticker |
 
 ---
 
@@ -127,7 +84,6 @@ After creating the device, go to the **Activation** tab and enter:
 Finally, click **(Re)activate Device**.  
 
 ![ChirStack v4 - Gateways](chirpstack-tutorial-13.png)
-
 
 ---
 
@@ -294,3 +250,16 @@ Within your **Application**, go to the **Integrations** tab and choose the integ
 :::tip
 If you need further assistance or a visual demonstration of the process described in this guide, consult the [Video Guide](https://docs.hardwario.com/apps/videos-apps/chirpstack-configuration).
 :::
+
+---
+
+## Ember Gateways – MikroTik Software  
+
+If you are using our **EMBER** as the gateway, all of its configuration must be done directly in the **MikroTik system**.
+Once configured, the gateway should become visible and ready to connect with the ChirpStack system.
+
+Here is the link to the **step-by-step guide** for ****configuring the gateway via MikroTik**:
+https://docs.hardwario.com/ember/mikrotik-gateway-update
+
+Here is the link to the **step-by-step guide** for **updating the gateway via MikroTik**:
+https://docs.hardwario.com/ember/mikrotik-gateway-configuration
