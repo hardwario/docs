@@ -1,5 +1,5 @@
 ---
-slug: mikrotik-gateway-update
+slug: gateway-update
 title: Gateway Update
 ---
 import Image from '@theme/IdealImage';
@@ -16,7 +16,7 @@ This guide walks you through updating RouterOS packages and the RouterBOARD (fir
 
 ---
 
-## A) Update RouterOS Software
+## 1. Update RouterOS Software
 
 1. **Open your browser** and enter the gateway’s **IP address**.
 2. **Log in** with your administrator credentials.
@@ -34,7 +34,7 @@ This guide walks you through updating RouterOS packages and the RouterBOARD (fir
 
 ---
 
-## B) Update RouterBOARD (Firmware/“BIOS”)
+## 2. Update RouterBOARD (Firmware/“BIOS”)
 
 1. In the left menu, open **System → RouterBOARD**.
 2. Check whether a **new firmware version** is available — you can compare **Current Firmware** with **Upgrade Firmware**.
@@ -45,7 +45,7 @@ This guide walks you through updating RouterOS packages and the RouterBOARD (fir
 
 ---
 
-## C) Reboot to Apply Firmware
+## 3. Reboot to Apply Firmware
 
 1. In the left menu, open **System → Reboot**.
 2. Confirm the reboot to apply the RouterBOARD firmware upgrade.
@@ -53,7 +53,7 @@ This guide walks you through updating RouterOS packages and the RouterBOARD (fir
 
 ---
 
-## D) Verify the Update
+## 4. Verify the Update
 
 1. **System → Packages**:  
    - Click **Check For Updates** — it should now report **up to date** (both versions should match).

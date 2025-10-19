@@ -25,7 +25,7 @@ Once completed, click **Submit**.
 ![ChirStack v4 - Gateways](chirpstack-tutorial-1.png)
 
 :::info
-If you are using our **Ember gateway**, the **Gateway ID** can be found through **[MikroTik software](/ember/mikrotik-gateway-configuration#c-link-lora-device-to-the-new-server)**.  
+If you are using our **Ember gateway**, the **Gateway ID** can be found through **[MikroTik software](/ember/mikrotik/gateway-configuration#3-link-lora-device-to-the-new-server)**.  
 :::
 
 ---

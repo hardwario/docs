@@ -1,5 +1,5 @@
 ---
-slug: mikrotik-gateway-configuration
+slug: gateway-configuration
 title: Gateway Configuration
 ---
 import Image from '@theme/IdealImage';
@@ -16,7 +16,7 @@ This step-by-step guide explains how to configure the LoRa interface on a MikroT
 
 ---
 
-## A) Prepare LoRa Device for Configuration
+## 1. Prepare LoRa Device for Configuration
 
 1. Open your browser and log in to the gateway via its **IP address**.
 2. In the left menu, open **WebFig → LoRa**.
@@ -28,7 +28,7 @@ This step-by-step guide explains how to configure the LoRa interface on a MikroT
 
 ---
 
-## B) Define LoRa Server
+## 2. Define LoRa Server
 
 1. Go to the **Servers** tab.
 2. If there are **predefined servers** (from the manufacturer), you can **remove them**.
@@ -46,7 +46,7 @@ This step-by-step guide explains how to configure the LoRa interface on a MikroT
 
 ---
 
-## C) Link LoRa Device to the New Server
+## 3. Link LoRa Device to the New Server
 
 1. Go back to the **Devices** tab.
 2. Click on your LoRa card.
@@ -66,7 +66,7 @@ Here you can also find the **Gateway ID**
 
 ---
 
-## D) Verify Operation and Traffic
+## 4. Verify Operation and Traffic
 
 1. While still in the **LoRa** section, open the **Traffic** tab.
 2. Check for **incoming messages** — this confirms that the LoRa card is active and receiving data.
