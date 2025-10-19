@@ -51,7 +51,7 @@ const sidebars = {
       },
       collapsed: true,
       items: [
-        'chirpstack/chirpstack-installation',
+        
         'chirpstack/chirpstack-configuration',
       ],
     },
@@ -98,7 +98,12 @@ const sidebars = {
           type: 'category',
           label: 'ChirpStack v4',
           collapsed: true,
-          items: ['videos-apps/chirpstack-configuration'],
+          items: [
+            
+            'videos-apps/chirpstack-ember',
+            'videos-apps/chirpstack-devices',
+            'videos-apps/chirpstack-decoding',
+          ],
         },
       ],
     },

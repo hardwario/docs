@@ -7,9 +7,38 @@ const sidebars = {
     'hardware-description',
     'initial-configuration',
     'hotspot-configuration',
-    'chirpstack-v4-installation',
+     {
+      type: 'category',
+      label: 'ChirpStack',
+      link: {
+        type: 'doc',
+        id: 'chirpstack/index',
+      },
+      collapsed: true,
+      items: [
+        'chirpstack-v4-installation',
+        'chirpstack/chirpstack-ember',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'MikroTik',
+      collapsed: true,
+      items: [
+        'mikrotik/gateway-update',
+        'mikrotik/gateway-configuration',
+      ],
+    },
     'cloud-service',
     'ordering-codes',
+    {
+      type: 'category',
+      label: 'Video Tutorials',
+      collapsed: true,
+      items: [
+        'videos-ember/chirpstack-ember',
+      ],
+    }
   ],
 };
 

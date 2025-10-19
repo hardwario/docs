@@ -5,15 +5,29 @@ title: How to update Chester with phone
 
 import Image from '@theme/IdealImage';
 
+## Tutorial Overview
 
+In this guide, you’ll learn how to easily update your CHESTER firmware using the HARDWARIO Manager app. Scan a QR code, start the update, and verify that your device is running the latest version.
 
-<iframe width="560" height="315"
-  src="https://www.youtube.com/embed/RYrgRapP_og"
-  title="HOW TO UPDATE CHESTER WITH PHONE"
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  allowfullscreen>
-</iframe>
+---
+
+<div style={{ position: "relative", paddingBottom: "56.25%", height: 0 }}>
+  <iframe
+    src="https://www.youtube.com/embed/RYrgRapP_og?rel=0"
+    title="HOW TO UPDATE CHESTER WITH PHONE"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowFullScreen
+    style={{
+      position: "absolute",
+      top: 0,
+      left: 0,
+      width: "100%",
+      height: "100%"
+    }}
+  ></iframe>
+</div>
+
 
 ## Step-by-Step Text Guide
 

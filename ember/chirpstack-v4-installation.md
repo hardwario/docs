@@ -1,9 +1,9 @@
 ---
 slug: chirpstack-v4-installation
-title: ChirpStack v4 Installation
+title: Installation
 ---
 
-# ChirpStack v4 Installation Guide
+# ChirpStack v4 - Installation Guide
 
 This guide outlines the installation process of **ChirpStack v4** on a **Debian/Ubuntu system**. It covers installing the required dependencies, configuring the ChirpStack server, and enabling communication with gateways. Follow the instructions step by step for a smooth installation process.
 

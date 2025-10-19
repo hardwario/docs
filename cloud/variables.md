@@ -24,6 +24,11 @@ In the Variables section, you can upload **decryption keys** used to decode data
    - **Environment** → select `wmbus`  
    - **Comment** → optional, you may add a comment if needed  
 
+:::info
+If a device is specified, the decryption key applies **only to that specific device**.  
+If no device is selected, the key will apply **to the entire space**.
+:::
+
 ![Variables - informations](cloud-variables-1.png)
 
 4. Your data should now appear **decrypted** in the Cloud.  
