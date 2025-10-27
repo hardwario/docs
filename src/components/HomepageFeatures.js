@@ -18,6 +18,19 @@ const FeatureList = [
     ),
   },
   {
+    title: 'STICKER',
+    subtitle: 'LoRaWAN Sensor Platform',
+    link: '/sticker/',
+    src: '/img/sticker.png',
+    width: 300,
+    height: 200,
+    description: (
+      <>
+        STICKER is an STM32WL-based IoT platform with integrated LoRaWAN, designed as a compact, low-power, long-lifetime module for sensor applications.
+      </>
+    ),
+  },
+  {
     title: 'EMBER',
     subtitle: 'LoRaWAN IoT Hotspot',
     link: '/ember/',
@@ -40,6 +53,32 @@ const FeatureList = [
     description: (
       <>
         FIBER is an IoT device for precise industrial temperature monitoring, offering seamless connectivity and intuitive interfaces.
+      </>
+    ),
+  },
+   {
+    title: 'GAUGER',
+    subtitle: 'Wi-Fi/LAN Input Module',
+    link: '/gauger/',
+    src: '/img/gauger.png',
+    width: 200,
+    height: 200,
+    description: (
+      <>
+        GAUGER is an industrial IoT device designed to enable seamless data acquisition from production lines, connecting to existing PLCs or standalone machinery.
+      </>
+    ),
+  },
+  {
+    title: 'TAPPER',
+    subtitle: 'NFC Tag Reader',
+    link: '/tapper/',
+    src: '/img/tapper.png',
+    width: 300,
+    height: 200,
+    description: (
+      <>
+        TAPPER is an NFC tag reader using Raspberry Pi Zero 2 W and PN532, designed for secure tag verification over MQTT. 
       </>
     ),
   },
@@ -66,19 +105,6 @@ const FeatureList = [
     description: (
       <>
         CLOUD is a device and data management platform providing REST API services for seamless integration for customers.
-      </>
-    ),
-  },
-  {
-    title: 'GAUGER',
-    subtitle: 'Wi-Fi/LAN Input Industrial Module',
-    link: '/gauger/',
-    src: '/img/gauger.png',
-    width: 200,
-    height: 200,
-    description: (
-      <>
-        GAUGER is an industrial IoT device designed to enable seamless data acquisition from production lines, connecting to existing PLCs or standalone machinery.
       </>
     ),
   },

@@ -162,12 +162,12 @@ const config = {
             position: 'left',
             items: [
               { to: '/chester/', label: 'CHESTER', activeBaseRegex: `/chester/` },
+              { to: '/sticker/', label: 'STICKER', activeBaseRegex: `/sticker/` },
               { to: '/ember/',   label: 'EMBER',   activeBaseRegex: `/ember/` },
               { to: '/fiber/',   label: 'FIBER',   activeBaseRegex: `/fiber/` },
+              { to: '/gauger/',  label: 'GAUGER',  activeBaseRegex: `/gauger/` },
               { to: '/tapper/',  label: 'TAPPER',  activeBaseRegex: `/tapper/` },
               { to: '/tower/',   label: 'TOWER',   activeBaseRegex: `/tower/` },
-              { to: '/gauger/',  label: 'GAUGER',  activeBaseRegex: `/gauger/` },
-              { to: '/sticker/', label: 'STICKER', activeBaseRegex: `/sticker/` },
             ],
           },
           // 2) THIRD-PARTY DEVICES (podmenu)

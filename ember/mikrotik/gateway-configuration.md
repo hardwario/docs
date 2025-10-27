@@ -21,7 +21,7 @@ This step-by-step guide explains how to configure the LoRa interface on a MikroT
 1. Open your browser and log in to the gateway via its **IP address**.
 2. In the left menu, open **WebFig → LoRa**.
 
-![](mikrotik-configuration-0.png)
+![](mikrotik-configuration-0-disabled.png)
 
 3. Go to the **Devices** tab.
 4. Check that the **gateway status is set to Disabled** — all LoRa card settings must be made while the card is stopped.
@@ -51,7 +51,7 @@ This step-by-step guide explains how to configure the LoRa interface on a MikroT
 1. Go back to the **Devices** tab.
 2. Click on your LoRa card.
 
-![](mikrotik-configuration-0.png)
+![](mikrotik-configuration-0-disabled.png)
 
 :::info
 Here you can also find the **Gateway ID**

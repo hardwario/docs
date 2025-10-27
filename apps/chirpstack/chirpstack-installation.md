@@ -1,6 +1,6 @@
 ---
 slug: chirpstack-installation
-title: ChirpStack v4 Installation
+title: Installation
 ---
 import Image from '@theme/IdealImage';
 

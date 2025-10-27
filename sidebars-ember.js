@@ -16,7 +16,6 @@ const sidebars = {
       },
       collapsed: true,
       items: [
-        'chirpstack-v4-installation',
         'chirpstack/chirpstack-ember',
       ],
     },

@@ -1,16 +1,35 @@
 ---
 slug: chirpstack-ember
-title: Adding EMBER (Gateways)
+title: Adding Gateways
 ---
 
 import Image from '@theme/IdealImage';
 
-# ChirpStack v4 - How to Add EMBER to a LoRaWAN Network
+# ChirpStack v4 - How to Add Gateway to a LoRaWAN Network
 
 ## Tutorial Overview
 
-In this guide, you’ll learn how to connect your EMBER gateway to ChirpStack v4.
+In this guide, you’ll learn how to connect your gateway to ChirpStack v4.
 
 ---
 
+<div style={{ position: "relative", paddingBottom: "56.25%", height: 0 }}>
+  <iframe
+    src="https://www.youtube.com/embed/vSI1pwvOmCM?rel=0"
+    title="YouTube video player"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowFullScreen
+    style={{
+      position: "absolute",
+      top: 0,
+      left: 0,
+      width: "100%",
+      height: "100%"
+    }}
+  ></iframe>
+</div>
+
+
 👉 **Step-by-Step Text Guide: https://docs.hardwario.com/apps/chirpstack/chirpstack-configuration#1-gateways**
+

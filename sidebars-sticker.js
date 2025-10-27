@@ -6,36 +6,43 @@ const sidebars = {
     'introduction',
     'getting-started',
     {
+      type: 'category',
+      label: 'Catalog Applications',
+      link: {
+        type: 'doc',
+        id: 'catalog-applications/index',
+      },
+      collapsed: true,
+      items: [
+        'catalog-applications/sticker-clime',
+        {
           type: 'category',
-          label: 'Catalog Applications',
+          label: 'Sticker Input',
           link: {
             type: 'doc',
-            id: 'catalog-applications/index',
+            id: 'catalog-applications/sticker-input',
           },
           collapsed: true,
           items: [
-            'catalog-applications/sticker-clime',
-            'catalog-applications/sticker-input',
-            'catalog-applications/sticker-motion',
+            {
+              type: 'category',
+              label: 'Configuration',
+              link: {
+                type: 'doc',
+                id: 'sticker-input-configuration/index',
+              },
+              collapsed: true,
+              items: []
+            },
           ]
         },
-        'developer-mode',
-          'hardware-description',
-      {
-          type: 'category',
-          label: 'STICKER Input Configuration',
-          link: {
-            type: 'doc',
-            id: 'sticker-input-configuration/index',
-          },
-          collapsed: true,
-          items: [
-          
-          ]
-        },
-        'power-management',
-        'ordering-codes',
-
+        'catalog-applications/sticker-motion',
+      ],
+    },
+    'developer-mode',
+    'hardware-description',
+    'power-management',
+    'ordering-codes',
   ],
 };
 
