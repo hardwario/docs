@@ -17,10 +17,9 @@ const sidebars = {
          label: 'Video Tutorials',
           collapsed: true,
           items: [
-           'getting-started/videos-chester/chester-connect-phone',
-           'getting-started/videos-chester/chester-update-phone',
-            'getting-started/videos-chester/chester-pair-tag',
-            'getting-started/videos-chester/chester-cloud',
+           'videos-chester/chester-connect-phone',
+           'videos-chester/chester-update-phone',
+            'videos-chester/chester-pair-tag',
          ],
         }
       ],
@@ -253,7 +252,6 @@ const sidebars = {
         'videos-chester/chester-connect-phone',
         'videos-chester/chester-update-phone',
         'videos-chester/chester-pair-tag',
-        'videos-chester/chester-cloud',
       ],
     }
   ],

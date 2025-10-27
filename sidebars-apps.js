@@ -51,7 +51,7 @@ const sidebars = {
       },
       collapsed: true,
       items: [
-        
+        'chirpstack/chirpstack-installation',
         'chirpstack/chirpstack-configuration',
       ],
     },

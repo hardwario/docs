@@ -4,7 +4,7 @@ title: Configuration
 ---
 import Image from '@theme/IdealImage';
 
-# ChirpStack v4 Configuration
+# ChirpStack v4 Configuration Guide
 
 This tutorial walks you through the process of adding gateways, creating device profiles, registering devices, decoding payloads, and setting up integrations in ChirpStack v4.  
 

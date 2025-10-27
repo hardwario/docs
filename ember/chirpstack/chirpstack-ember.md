@@ -1,6 +1,6 @@
 ---
 slug: chirpstack-ember
-title: Adding EMBER (Gateways)
+title: First Gateway Setup
 ---
 
 import Image from '@theme/IdealImage';

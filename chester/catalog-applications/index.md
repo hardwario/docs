@@ -57,6 +57,8 @@ Then apply changes by typing `config save`. The device will reboot and use the c
 
 :::
 
+#### Available Application Firmware Builds
+
 | Application name                                                | Version                                                                               |                    Identifier                     | Build date | Remark                  |
 | :-------------------------------------------------------------- | :------------------------------------------------------------------------------------ | :-----------------------------------------------: | :--------: | :---------------------- |
 | [**CHESTER Clime**](chester-clime.md#chester-clime)             | [**v3.3.0**](https://firmware.hardwario.com/chester/a00c1970d7cc43f2a09760af3b06a0c1) | <small>`a00c1970d7cc43f2a09760af3b06a0c1`</small> | 2025-07-14 |                         |
