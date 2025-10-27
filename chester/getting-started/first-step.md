@@ -38,7 +38,14 @@ For more detailed information, you can also download the [**CHESTER Manual (EN/C
 
 1. Select your **Space**  
 2. Go to **DEVICES → +NEW DEVICE**  
-3. Enter your CHESTER’s **serial number (HSN)** — you’ll find it on the label of your device  
+3. Enter your informations about your **CHESTER** — you can choose one of the following options:
+
+   **Option 1 – Manually:**  
+   Enter your CHESTER’s **serial number (HSN)** — you’ll find it on the label of your device.  
+
+   **Option 2 – Scan the QR Code:**  
+   Use the **`⛶ SCAN DEVICE`** feature in the HARDWARIO Cloud to **scan the QR code** on your CHESTER — all the information will be filled in automatically!  
+
 4. Save it — your CHESTER is now **registered in the Cloud**!
 
 :::info
@@ -49,6 +56,8 @@ You can find more in-depth information about the **HARDWARIO Cloud** here:
 Or check out our **video tutorial** on how to add your CHESTER device to the Cloud:  
 👉 [https://docs.hardwario.com/chester/getting-started/videos-chester/chester-cloud](https://docs.hardwario.com/chester/getting-started/videos-chester/chester-cloud)
 :::
+
+
 
 ---
 
