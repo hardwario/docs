@@ -21,7 +21,7 @@ import Image from '@theme/IdealImage';
 
 Some of the basics are not provided, as they are common for all CHESTER catalog applications. Please see:
 
-- [**Getting started**](../getting-started.md) on how to connect device to Cloud.
+- [**Getting started**](https://docs.hardwario.com/chester/getting-started/first-step) on how to connect device to Cloud.
 - [**Common functionality**](common-functionality.md) to know how LED, button and network configuration works.
 - [**Platform Management**](../category/platform-connectivity) on how to work with the interactive console.
 
@@ -84,8 +84,6 @@ This is the default configuration (printed using the `app config show` command):
 
 ```
 app config scan-timeout 130
-app config season-month-start 9
-app config season-month-end 3
 app config scan-interval 600
 app config scan-hour 12
 app config scan-weekday 3
@@ -192,14 +190,6 @@ This is a safety timer which, in the worst case, prevents the scanning from rema
 `app config scan-interval 600`
 
 Fixed scan in intervals if `scan-mode` is set to **interval**, for debug only, units of seconds 0-86400.
-
-`app config season-month-start 9`
-
-`app config season-month-end 3`
-
-It determines the months when it is the heating season and when the cost indicators that were set when adding via the “address” command with the “S” parameter are to be scanned. 1-12 / January-December.
-
-The starting month must always be greater than the ending "end" month. The parameter "3" in the example above, which ends the season, means that even the third month is still the heating season, i.e. from September to March inclusive. (September 1 - March 31).
 
 `app config scan-hour 12`
 

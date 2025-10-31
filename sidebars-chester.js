@@ -4,7 +4,7 @@
 const sidebars = {
   docs: [
     'introduction',
-       {
+    {
       type: 'category',
       label: 'Getting Started',
       collapsed: true,
@@ -12,16 +12,16 @@ const sidebars = {
         'getting-started/first-step',
         'getting-started/hardwario-manager',
         'getting-started/hardwario-monitor',
-         {
-         type: 'category',
-         label: 'Video Tutorials',
+        {
+          type: 'category',
+          label: 'Video Tutorials',
           collapsed: true,
           items: [
-           'getting-started/videos-chester/chester-connect-phone',
-           'getting-started/videos-chester/chester-update-phone',
+            'getting-started/videos-chester/chester-connect-phone',
+            'getting-started/videos-chester/chester-update-phone',
             'getting-started/videos-chester/chester-pair-tag',
             'getting-started/videos-chester/chester-cloud',
-         ],
+          ],
         }
       ],
     },
@@ -50,7 +50,18 @@ const sidebars = {
       },
       collapsed: true,
       items: [
-        'catalog-applications/common-functionality',
+        {
+          type: 'category',
+          label: 'Common Functionality',
+          link: {
+            type: 'doc',
+            id: 'catalog-applications/common-functionality',
+          },
+          collapsed: true,
+          items: [
+            'catalog-applications/ble-tags',
+          ],
+        },
         'catalog-applications/chester-clime',
         'catalog-applications/chester-current',
         'catalog-applications/chester-control',
@@ -58,8 +69,15 @@ const sidebars = {
         'catalog-applications/chester-meteo',
         'catalog-applications/chester-wm-bus',
         'catalog-applications/chester-range',
-        'catalog-applications/chester-input',
-        'catalog-applications/chester-counter'
+        {
+          type: 'category',
+          label: 'Legacy',
+          collapsed: true,
+          items: [
+            'catalog-applications/legacy/chester-input',
+            'catalog-applications/legacy/chester-counter',
+          ],
+        },
       ],
     },
     {
@@ -107,9 +125,7 @@ const sidebars = {
             id: 'supported-sensors/m-bus',
           },
           collapsed: true,
-          items: [
-
-          ]
+          items: []
         },
         {
           type: 'category',
@@ -186,7 +202,8 @@ const sidebars = {
       },
       collapsed: true,
       items: [
-        'developer-tools/command-line-tools', 'developer-tools/segger-j-link',
+        'developer-tools/command-line-tools',
+        'developer-tools/segger-j-link',
         'developer-tools/power-profiler-kit-ii'
       ],
     },
@@ -236,12 +253,12 @@ const sidebars = {
       collapsed: true,
       items: [],
     },
-    
+
     'ordering-codes',
     'product-certification',
     'cloud-v2-migration-guide',
 
-     {
+    {
       type: 'category',
       label: 'Video Tutorials',
       link: {

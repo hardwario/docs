@@ -12,7 +12,7 @@ This article describes the core functionality, hardware description, and example
 
 Some of the basics are not provided, as they are common for all CHESTER catalog applications. Please see:
 
-- [**Getting started**](../getting-started.md) on how to connect device to Cloud.
+- [**Getting started**](https://docs.hardwario.com/chester/getting-started/first-step) on how to connect device to Cloud.
 - [**Common functionality**](common-functionality.md) to know how LED, button and network configuration works.
 - [**Platform Management**](../category/platform-connectivity) on how to work with the interactive console.
 
@@ -22,7 +22,7 @@ Some of the basics are not provided, as they are common for all CHESTER catalog 
 
 The application **CHESTER Control** is used to measure and observe analog and digital inputs. The sampled analog values are aggregated, the aggregate measurements are buffered, and scheduled for later data transfer in the form of buffered data altogether with the timestamp annotations. Also, the changes on digital input (type **trigger**) can be tracked with the type of change and timestamp. The buffering strategy allows a higher number of events to be recorded while conserving data bandwidth and power required for data transfer.
 
-**CHESTER Input** has these four inputs:
+**CHESTER Control** has these four inputs:
 
 | **Type** | **Channel** | **Terminal** | **Input type**    | **Input range** | **Typical use-case**                  |
 | :------- | :---------- | :----------- | :---------------- | :-------------- | :------------------------------------ |

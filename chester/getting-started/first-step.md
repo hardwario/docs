@@ -124,24 +124,24 @@ You can check it in two ways:
      ```
    - You’ll see firmware and application details in the console
 
-### Update Firmware
-If a newer version is available, you can update it using one of these methods:
-
-#### Update via [**HARDWARIO Manager**](https://docs.hardwario.com/chester/getting-started/hardwario-manager)
-Follow this step-by-step guide:  
-👉 [**Firmware update using HARDWARIO Manager**](https://docs.hardwario.com/chester/platform-connectivity/hardwario-manager#firmware-update)
-
-#### Manual Update via J-Link
-If you prefer flashing manually, see this guide:  
-👉 [**Application update over J-Link**](https://docs.hardwario.com/chester/firmware-flashing/application-over-j-link)
-
-#### Latest Firmware Downloads
+### Download the Latest Firmware
 You can always find the newest firmware builds here:  
 👉 [**Available Application Firmware Builds**](https://docs.hardwario.com/chester/catalog-applications/catalog-applications#available-application-firmware-builds)
 
 :::info
  The firmware table is organized by CHESTER type, so make sure to select the correct one for your device.
 :::
+
+### Update Firmware
+If a newer version is available, you can update it using one of these methods:
+
+#### A) Update via [**HARDWARIO Manager**](https://docs.hardwario.com/chester/getting-started/hardwario-manager)
+Follow this step-by-step guide:  
+👉 [**Firmware update using HARDWARIO Manager**](https://docs.hardwario.com/chester/platform-connectivity/hardwario-manager#firmware-update)
+
+#### B) Manual Update via J-Link
+If you prefer flashing manually, see this guide:  
+👉 [**Application update over J-Link**](https://docs.hardwario.com/chester/firmware-flashing/application-over-j-link)
 
 ---
 
@@ -161,5 +161,7 @@ You can extend its functionality using [**HARDWARIO Applications**](https://docs
 
 All applications are easy to deploy and can transform your CHESTER into a complete IoT solution.
 
+:::info
 👉 Learn more and explore available applications here:  
 [**https://docs.hardwario.com/apps/**](https://docs.hardwario.com/apps/)
+:::

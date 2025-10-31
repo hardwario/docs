@@ -57,10 +57,10 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'The Things Network',
+      label: 'The Things Stack',
       link: {
         type: 'doc',
-        id: 'the-things-network/index',
+        id: 'the-things-stack/index',
       },
       collapsed: true,
       items: [],
