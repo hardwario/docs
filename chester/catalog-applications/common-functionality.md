@@ -75,82 +75,11 @@ Reseting the configuration will also reset the connection parameters for LTE and
 You might also change configuration remotely over HARDWARIO Cloud using [**Config downlink command**](../../cloud/downlink#config).
 In cloud you don't send the `config save` command.
 
-## CHESTER BLE Tag subsystem
-
-The **Chester** supports up to 8 **Teltonika EYE Sensor** Bluetooth tags that report temperature and humidity. This subsystem can be activated by following command:
-
-```
-tag config enabled true
-```
-
-After enabling the subsystem, save the configuration in order to restart **CHESTER** and start the subsystem:
-
-```
-config save
-```
-
-To use these sensors, the device must enroll them first. To enroll a tag, place it in very close proximity to CHESTER, run the following command and wait up to 10 seconds for the device to be discovered.
-```
-tag enroll
-```
-
-A optional signal strength threshold (from -128 to 0dbm, -128dbm providing the most range, -40dbm being the default) can be specified to make the enrollment less/more strict.
-
-```
-tag enroll <threshold>
-```
-
-To make the enrollment of these devices permanent, save them to the configuration with command.
-
-```
-config save
-```
-
-**Tag configuration:**
+## BLE Tag Subsystem
 
 :::info
-**The packaged sensor should come activated. In case it is not, a magnet must touch the sensor to wake it up from hibernation mode, as shown in the picture.**
-:::
-
-<div class="container">
-  <div class="row">
-    <div class="col col--8">
-      <div style={{ width: '376px', height: '250px' }}>
-        <Image img={require('./tag-magnet.png')} />
-      </div>
-    </div>
-    <div class="col col--24"></div>
-  </div>
-</div>
-<br />
-
-&nbsp;<br />
-
-The tags can be configured using the [EYE APP](https://wiki.teltonika-gps.com/view/EYE_SENSOR_/_BTSMP1#EYE_App_Configuration). We highly suggest updating the tag firmware as the default firmware does not allow some settings.
-
-To configure the device, select it from the list of devices and change the options. The device name, address and serial number are available for the Android version of the application, the IOS version has limited knowledge of the devices.
-
-The suggested configuration is:
-
-| **Setting**           | **Value**             |
-| --------------------- | --------------------- |
-| Power signal settings | 4dbm                  |
-| Advertising interval  | 10s                   |
-| Active sensors        | Temperature, Humidity |
-
-
-**Setup tips:**
-
-The working distance between CHESTER and the Teltonika sensors depends on the signal power configuration of the sensor. To test the signal strength at the distance, run the following command and look at the rssi value:
-
-```
-tag read
-```
-
-If the signal strength is lower than -85 dbm, consider boosting the signal power to assure reliable communication.
-
-:::tip
-If you need further assistance or a visual demonstration of the process described in this guide, consult the [Video Guide](https://docs.hardwario.com/chester/videos-chester/chester-pair-tag).
+**CHESTER** also supports integration with **Bluetooth tags** (Teltonika EYE Sensor subsystem) for wireless temperature and humidity monitoring.  
+Learn how to activate and configure this feature in the [**CHESTER BLE Tag Subsystem** documentation](ble-tags.md).
 :::
 
 ## Report Interval Jitter

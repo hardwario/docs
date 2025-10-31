@@ -1,31 +1,33 @@
 ---
 slug: index
-title: The Things Network
+title: The Things Stack
 ---
 import Image from '@theme/IdealImage';
 
-# The Things Network
+# The Things Stack
 
 ## Introduction
 
-[The Things Network](https://www.thethingsnetwork.org/) (TTN) is a global IoT network that enables companies and individuals to connect their devices easily and securely using LoRaWAN® technology. It provides an open, reliable, and low-cost communication infrastructure for transmitting small amounts of data over long distances without the need for SIM cards, complex cellular plans, or high energy consumption.
+[The Things Stack](https://www.thethingsindustries.com/docs/) (TTS) is a modern and scalable LoRaWAN® Network Server designed for secure, reliable, and flexible IoT connectivity. Developed by The Things Industries, it powers both public and private LoRaWAN networks, offering advanced device, gateway, and application management features suitable for enterprises, developers, and service providers.
 
 ### Key Benefits
 
-- **Global coverage** – The network is available in more than 150 countries and continuously expanding.  
-- **Low power, long range** – Devices can operate for years on a single battery and communicate over several kilometers.  
-- **Secure communication** – All messages are encrypted end-to-end to protect your data.  
-- **Open and scalable** – Built on open standards, enabling flexible integration with your existing cloud systems or applications.  
+- **Enterprise-grade security** – TTS implements end-to-end encryption, secure device provisioning, and multi-tenant architecture to protect data and ensure compliance.  
+- **Scalability and reliability** – Built for large-scale deployments, with clustering, redundancy, and multi-region support.  
+- **Flexible deployment options** – Available as a managed cloud service, private cloud, or on-premises installation.  
+- **Interoperability and open standards** – Fully compliant with the LoRaWAN® specification and integrates easily with existing IoT platforms via MQTT, Webhooks, or APIs.  
 
-### What You Can Do with TTN
+### What You Can Do with TTS
 
-By connecting your devices to The Things Network, you gain access to an easy-to-use platform for managing your IoT data. You can visualize sensor readings, create alerts, and integrate the information into business dashboards or automation systems. TTN supports a wide range of use cases from smart agriculture and logistics to smart cities and energy management.
+With The Things Stack, you can deploy and operate a complete LoRaWAN infrastructure — from device registration and gateway management to data routing and integration with third-party systems.  
+You can build and scale IoT applications for smart agriculture, asset tracking, energy management, logistics, or industrial monitoring, while keeping full control over your network and data.
+
+---
+
+The Things Stack provides the foundation for professional LoRaWAN networks — secure, scalable, and interoperable. Whether you’re building a private IoT solution or operating a global deployment, TTS gives you the tools to manage your devices and data with confidence.
 
 ---
 
-The Things Network helps you turn data into insights and insights into smarter decisions. With its global reach, secure architecture, and open ecosystem, TTN is the ideal foundation for any IoT solution that requires reliability, scalability, and simplicity.
-
----
 
 ## LoRaWAN Network 
 LoRaWAN is a **low-power, wide-area network (LPWAN) protocol** built on top of the LoRa modulation. It is specifically designed for Internet of Things (IoT) applications. LoRa modulation is based on chirp spread spectrum (CSS), which enables **long-range connectivity**, **resistance to interference**, and **operation with very low power consumption**.  

@@ -15,7 +15,7 @@ import Image from '@theme/IdealImage';
 This documentation helps users and gateway integrators to navigate these essential areas:
 
 * How to get started with CHESTER - see the article:<br/>
-  [**Getting Started**](getting-started)
+  [**Getting Started**](getting-started/first-step.md)
 
 * How to configure and manage the platform - see the article:<br/>
   [**Platform Connectivity**](category/platform-connectivity)

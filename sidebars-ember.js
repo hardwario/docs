@@ -30,14 +30,31 @@ const sidebars = {
     },
     'cloud-service',
     'ordering-codes',
+  {
+  type: 'category',
+  label: 'Video Tutorials',
+  collapsed: true,
+  items: [
     {
       type: 'category',
-      label: 'Video Tutorials',
+      label: 'ChirpStack v4',
       collapsed: true,
       items: [
         'videos-ember/chirpstack-ember',
       ],
-    }
+    },
+    {
+      type: 'category',
+      label: 'MikroTik',
+      collapsed: true,
+      items: [
+        'videos-ember/mikrotik-update',
+        'videos-ember/mikrotik-configuration',
+      ],
+    },
+  ],
+}
+
   ],
 };
 

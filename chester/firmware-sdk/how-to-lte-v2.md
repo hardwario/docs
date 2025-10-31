@@ -30,7 +30,7 @@ https://github.com/hardwario/chester-sdk/tree/main/applications/demo
 
 ### CHESTER Control
 
-This is an improved [CHESTER Input](../catalog-applications/chester-input.md) application.
+This is an improved [CHESTER Input](../catalog-applications/legacy/chester-input.md) application.
 
 After you [flash LTE modem](#flash-lte-modem-firmware) to `v1.7.0` or higer, you can flash APP/BLE MCU with CHESTER Control with [HARDWARIO CLI](../developer-tools/command-line-tools.md) by typing:
 
