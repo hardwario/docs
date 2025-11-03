@@ -74,11 +74,11 @@ const FeatureList = [
     subtitle: 'NFC Tag Reader',
     link: '/tapper/',
     src: '/img/tapper.png',
-    width: 300,
+    width: 200,
     height: 200,
     description: (
       <>
-        TAPPER is an NFC tag reader using Raspberry Pi Zero 2 W and PN532, designed for secure tag verification over MQTT. 
+        TAPPER is an NFC tag reader using Raspberry Pi Zero 2 W and PN532, designed for secure tag verification over MQTT.
       </>
     ),
   },
