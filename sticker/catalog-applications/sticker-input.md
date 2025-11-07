@@ -25,6 +25,6 @@ import Image from '@theme/IdealImage';
 
 ## Configuration and Wiring of External Inputs
 
-Documentation → [**STICKER Input Configuration**](/sticker/sticker-input-configuration/sticker-input-configuration)
+Documentation → [**STICKER Input Wiring**](/sticker/sticker-input-wiring/index.md)
 
-Here you can find information about STICKER input configuration, including DIP switch settings, wiring options, and supported modes such as 1-Wire sensors, dry contact inputs, and 0–24 V analog inputs.
+Here you can find information about STICKER input wiring, including DIP switch settings and supported modes such as 1-Wire sensors, dry contact inputs, and 0–24 V analog inputs.

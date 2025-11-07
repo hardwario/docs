@@ -35,6 +35,7 @@ const sidebars = {
       items: [
         'platform-connectivity/hardwario-manager',
         'platform-connectivity/hardwario-monitor',
+        'platform-connectivity/hardwario-terminal',        
         'platform-connectivity/cellular-networks',
         'platform-connectivity/bluetooth-low-energy',
         'platform-connectivity/lorawan-radio',

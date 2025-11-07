@@ -1,15 +1,15 @@
 ---
-slug: sticker-input-configuration
-title: STICKER Input Configuration
+slug: sticker-input-wiring
+title: STICKER Input Wiring
 ---
 import Image from '@theme/IdealImage';
 
-# STICKER Input Configuration
+# STICKER Input Wiring
 
 ## DIP Switch Legend
 
-- 🔴 = DIP switch ON [RED]
-- ⚫ = DIP switch OFF [BLACK]
+- |🟥←| **ON** — DIP switch in the ON position (red)
+- |→⬛| **OFF** — DIP switch in the OFF position (black)
 
 ## 1-Wire Input
 Wiring for 1-WIRE (Dallas, ...):
