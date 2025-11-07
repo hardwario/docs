@@ -26,10 +26,10 @@ const sidebars = {
           items: [
             {
               type: 'category',
-              label: 'Configuration',
+              label: 'Wiring',
               link: {
                 type: 'doc',
-                id: 'sticker-input-configuration/index',
+                id: 'sticker-input-wiring/index',
               },
               collapsed: true,
               items: []
