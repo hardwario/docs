@@ -1,19 +1,19 @@
 ---
-slug: ws303-868m
-title: WS303-868M
+slug: milesight-wt101
+title: WT101
 ---
 
 import Image from '@theme/IdealImage';
 
-# Milesight Sensor WS303-868M
+# Milesight Sensor WT101-868M
 
-Milesight WS303 is a **smart water leak detector** with **two stainless steel probes** that detect water as low as 0.5 mm. It features a **built-in buzzer** for local alerts, sends notifications through **LoRaWAN**, and offers up to **5 years of battery life**. Its **compact IP67 design** allows installation even in hard-to-reach places.
+Milesight WT101 is a **smart radiator thermostat** with **LoRaWAN control** for efficient heating management. It integrates a **high-accuracy temperature sensor (±0.5 °C)**, supports **up to 16 heating schedules**, and includes safety features like **open window detection and child lock**.
 
 <div class="container">
   <div class="row">
     <div class="col col--8">
       <div style={{ width: '500px', height: '500px' }}>
-        <Image img={require('./ws303-868m.png')} />
+        <Image img={require('./wt101-868m.png')} />
       </div>
     </div>
     <div class="col col--24"></div>
@@ -66,43 +66,50 @@ For sensor configuration, use the **Milesight ToolBox** mobile application, avai
 
 | Type | GitHub Link |
 |------|--------------|
-| Decoder | [View decoder](https://github.com/Milesight-IoT/SensorDecoders/blob/main/ws-series/ws303/ws303-decoder.js) |
-| Encoder | [View encoder](https://github.com/Milesight-IoT/SensorDecoders/blob/main/ws-series/ws303/ws303-encoder.js) |
-| Codec | [View codec](https://github.com/Milesight-IoT/SensorDecoders/blob/main/ws-series/ws303/ws303-codec.json) |
-
+| Decoder | [View decoder](https://github.com/Milesight-IoT/SensorDecoders/blob/main/wt-series/wt101/wt101-decoder.js) |
+| Encoder | [View encoder](https://github.com/Milesight-IoT/SensorDecoders/blob/main/wt-series/wt101/wt101-encoder.js) |
+| Codec | [View codec](https://github.com/Milesight-IoT/SensorDecoders/blob/main/wt-series/wt101/wt101-codec.json) |
 
 ## Technical Specifications
 
 | **Parameter** | **Value** |
 |---------------|-----------|
 | **Wireless Transmission** | |
-| Technology | LoRaWAN®, Milesight D2D |
-| Antenna | Internal |
-| Frequency | CN470 / IN865 / RU864 / EU868 / US915 / AU915 / KR920 / AS923-1&2&3&4 |
-| Tx Power | 16 dBm (868MHz) / 20 dBm (915MHz) / 19 dBm (470MHz) |
-| Sensitivity | -137 dBm @300bps |
+| Protocol | LoRaWAN® |
+| Frequency | IN865 / RU864 / EU868 |
+| Tx Power | 16 dBm (868 MHz) |
+| Sensitivity | -137 dBm |
 | Mode | OTAA / ABP Class A |
-| **Leakage Detection** | |
-| Liquid Type | Conductive liquid |
-| Trigger Condition | ≥ 0.5 mm liquid level |
+| **Valve Control** | |
+| Actuator | Stepping Motor |
+| Default Fitting | M30 × 1.5 mm |
+| Optional Adapters | RA, RAV, RAVL, Giacomini, M28 (Comap, Herz, TA) |
+| Advanced Features | Auto temperature control, Heat plans, Freeze protection, Open-window detection, Tamper alarm |
+| **Temperature Sensor** | |
+| Type | NTC |
+| Range | -20°C ~ +60°C |
+| Accuracy | ±0.5°C (0–50°C) |
+| Resolution | 0.1°C |
 | **Others** | |
-| Buzzer | Yes |
-| Configuration | NFC App / Downlink |
-| Advanced Features | D2D Controller, Water Leakage Alarm |
+| Display | LED display (white light) |
+| Buttons | Control knob, Calibration/Tamper (internal), Reset (internal) |
+| Software | NFC App / Downlink |
+| Advanced Features | Child lock, External sensor mode, FUOTA |
 | **Physical Characteristics** | |
-| Power Supply | 1 × CR2450 (590 mAh) |
-| Battery Life | ~5.7 years (typical use, 25°C) |
-| Operating Temp | -10°C ~ +60°C |
-| Humidity | 0%–100% RH (non-condensing) |
-| Ingress Protection | IP67 |
-| Dimensions | 63 × 63 × 14 mm |
-| Weight | 36.4 g (incl. battery) |
-| Material | ABS+PC, White |
-| Installation | 3M Tape / Desktop |
-| **Approvals** | CE, FCC, RoHS |
+| Power Supply | 2 × AA Li-FeS2 (3000 mAh total) |
+| Battery Life | ~5–8 years (depending on SF) |
+| Operating Temp | -20°C ~ +60°C |
+| Storage Temp | -40°C ~ +70°C (without battery) |
+| Humidity | 0–95% RH (non-condensing) |
+| Ingress Protection | IP30 |
+| Dimensions | Φ52 × 90 mm |
+| Weight | 170 g (with batteries) |
+| Material | Stainless + ABS, White |
+| Installation | Valve latch |
+| **Approvals** | CE, RoHS |
 
 ## Integration resources and distribution links
 | Resource        | Link                                                                 |
 |-----------------|----------------------------------------------------------------------|
-| HARDWARIO Store | https://www.hardwario.store/p/milesight-ws303                        |
-| Official page   | https://www.milesight.com/iot/product/lorawan-sensor/ws303           |
+| HARDWARIO Store | https://www.hardwario.store/p/milesight-wt101                        |
+| Official page   | https://www.milesight.com/iot/product/lorawan-sensor/wt101           |

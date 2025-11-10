@@ -13,10 +13,10 @@ const sidebars = {
       },
       collapsed: true,
       items: [
-        'sensors/am319-868m',
-        'sensors/ws201-868m',
-        'sensors/ws303-868m',
-        'sensors/wt101-868m',
+        'sensors/milesight-am319',
+        'sensors/milesight-ws201',
+        'sensors/milesight-ws303',
+        'sensors/milesight-wt101',
       ],
     },
     {
@@ -28,8 +28,8 @@ const sidebars = {
       },
       collapsed: true,
       items: [
-        'gateways/ug63-868m',
-        'gateways/ug65-868m',
+        'gateways/milesight-ug63',
+        'gateways/milesight-ug65',
       ],
     },
   ],
