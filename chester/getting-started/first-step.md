@@ -20,17 +20,25 @@ For more detailed information, you can also download the [**CHESTER Manual (EN/C
 1. Go to [**https://hardwario.cloud**](https://hardwario.cloud)  
 2. Click **SIGN UP**  
 3. Create an account using:  
-   - **Email and password** (don’t forget to verify your email), or  
-   - **Google** or **Microsoft** account  
+   - **Google** or **Microsoft** account
+   - **Email and password** (don’t forget to verify your email)  
 4. Once verified, **log in**.
+
+:::info
+For improved security, we recommend authenticating via **Google** or **Microsoft**, as these identity providers use verified credentials and **advanced account protection** mechanisms.
+:::
 
 ---
 
 ## Step 2: Create Your Space
 
 1. In the top-right corner, click **SPACES → NEW SPACE**  
-2. Name your space (for example: `My Home`, `Office Sensors`, `Warehouse`)  
+2. Name your space (for example: `my-home`, `office-sensors`, `warehouse`)  
 3. This is where your **CHESTER devices** will live.
+
+:::caution
+Please follow our [**Naming Conventions**](https://docs.hardwario.com/cloud/#naming-conventions) when creating your space.
+:::
 
 ---
 
@@ -38,17 +46,25 @@ For more detailed information, you can also download the [**CHESTER Manual (EN/C
 
 1. Select your **Space**  
 2. Go to **DEVICES → +NEW DEVICE**  
-3. Enter your informations about your **CHESTER** — you can choose one of the following options:
+3. Enter the information about your **CHESTER** — you can choose one of the following options:
 
-   **Option 1 – Manually:**  
-   Enter your CHESTER’s **serial number (HSN)** — you’ll find it on the label of your device.  
+   **Option 1 – Scan the QR Code:**  
+   Use the **`⛶ SCAN DEVICE`** feature in the HARDWARIO Cloud to **scan the QR code** on your CHESTER — all the **information** will be **filled in automatically**!  
 
-   **Option 2 – Scan the QR Code:**  
-   Use the **`⛶ SCAN DEVICE`** feature in the HARDWARIO Cloud to **scan the QR code** on your CHESTER — all the information will be filled in automatically!  
+   **Option 2 – Manually:**  
+   You can add a device manually by filling in the following fields:  
+   - **Name**  
+   - **HARDWARIO Serial Number (HSN)**  
+   - **Claim Token**
+
+:::info
+The **Claim Token** is unique for each device — you can obtain it by **scanning the QR code** on the device with any QR code reader, or by using the **`info show`** command when the device is connected via **J-Link**.
+:::
+
 
 4. Save it — your CHESTER is now **registered in the Cloud**!
 
-:::info
+:::tip
 **Need more details?**  
 You can find more in-depth information about the **HARDWARIO Cloud** here:  
 👉 [https://docs.hardwario.com/cloud/](https://docs.hardwario.com/cloud/)
@@ -63,13 +79,15 @@ Or check out our **video tutorial** on how to add your CHESTER device to the Clo
 
 ## Step 4: Power Up Your CHESTER
 
-:::info
+:::caution
 > **Important:** Add the device to the Cloud **before powering it up.**  
 > Otherwise, it might take longer (up to several hours) to connect.
 :::
 
 - Insert the batteries or connect an external power source  
-- Wait a few minutes while it connects  
+- Wait a few minutes while your device connects to the HARDWARIO Cloud — the device will **blink the green LED** once it’s successfully connected  
+  *(See LED behavior explained below in [Step 5: Check the Status LED](#step-5-check-the-status-led))*  
+- If you are using an older **CHESTER-M** model with supercapacitors, wait about **30 seconds** after inserting the batteries — the capacitors need to charge before the LED starts blinking.  
 - If it doesn’t connect, try one of these quick actions:
 
    🔹 **Press the button four times** → reboots the device  
@@ -79,12 +97,15 @@ Or check out our **video tutorial** on how to add your CHESTER device to the Clo
 
 ---
 
+
 ## Step 5: Check the Status LED
 
 - **Blinking green every 5 seconds** → Connected to HARDWARIO Cloud ✅  
-- **No blinking / other colors** → Still connecting or error → check SIM, coverage, or power  
+- **No blinking /** [**other colors**](https://docs.hardwario.com/chester/catalog-applications/common-functionality/#led-behaviour) → Still connecting or an error occurred — check SIM, network coverage, or power  
 
----
+:::info
+For details about all LED color states and meanings, see the [**LED Behaviour documentation**](https://docs.hardwario.com/chester/catalog-applications/common-functionality/#led-behaviour).
+:::
 
 ## Step 6: See Your Data in the Cloud
 
@@ -98,10 +119,10 @@ Or check out our **video tutorial** on how to add your CHESTER device to the Clo
 
 Once connected, you can:
 
-- Send **config commands** directly from the Cloud  
+- Send [**Config commands**](https://docs.hardwario.com/cloud/downlink#config) directly from the Cloud  
 - Use [**HARDWARIO Manager**](https://docs.hardwario.com/chester/getting-started/hardwario-manager) (mobile app via BLE)  
 - Use [**HARDWARIO Monitor**](https://docs.hardwario.com/chester/getting-started/hardwario-monitor) (USB J-Link or BLE from your PC)  
-- Access a **remote shell** and even perform [**FOTA updates**](https://docs.hardwario.com/cloud/fota)
+- Access a [**Remote shell**](https://docs.hardwario.com/cloud/downlink/#shell-commands) and even perform [**FOTA updates**](https://docs.hardwario.com/cloud/fota)
 
 ---
 
@@ -112,11 +133,11 @@ It’s always a good idea to make sure your CHESTER is running the **latest firm
 ### Check Firmware Version
 You can check it in two ways:
 
-1. **Using** [**HARDWARIO Manager**](https://docs.hardwario.com/chester/getting-started/hardwario-manager)  
+1. **Using** [**HARDWARIO Manager (mobile app)**](https://docs.hardwario.com/chester/getting-started/hardwario-manager)  
    - Open the app and connect to your CHESTER via Bluetooth  
    - The firmware version will be displayed automatically  
 
-2. **Using** [**HARDWARIO Monitor (command line)**](https://docs.hardwario.com/chester/getting-started/hardwario-monitor)  
+2. **Using** [**HARDWARIO Monitor (desktop app)**](https://docs.hardwario.com/chester/getting-started/hardwario-monitor)  
    - Connect CHESTER via USB or BLE  
    - Run the command:  
      ```bash
@@ -135,13 +156,17 @@ You can always find the newest firmware builds here:
 ### Update Firmware
 If a newer version is available, you can update it using one of these methods:
 
-#### A) Update via [**HARDWARIO Manager**](https://docs.hardwario.com/chester/getting-started/hardwario-manager)
-Follow this step-by-step guide:  
-👉 [**Firmware update using HARDWARIO Manager**](https://docs.hardwario.com/chester/platform-connectivity/hardwario-manager#firmware-update)
+1. **Update via [**HARDWARIO Manager  (mobile app)**](https://docs.hardwario.com/chester/getting-started/hardwario-manager)**
 
-#### B) Manual Update via J-Link
-If you prefer flashing manually, see this guide:  
-👉 [**Application update over J-Link**](https://docs.hardwario.com/chester/firmware-flashing/application-over-j-link)
+   - Follow this step-by-step guide: 👉 [**Firmware update using HARDWARIO Manager**](https://docs.hardwario.com/chester/platform-connectivity/hardwario-manager#firmware-update)
+
+2. **Update Firmware from the Cloud ([**FOTA**](https://docs.hardwario.com/cloud/fota/))**
+   - You can also update your CHESTER **remotely** via the cloud.
+
+   - For full technical details, see this guide: 👉 [**FOTA documentation**](https://docs.hardwario.com/cloud/fota/). 
+
+3. **Manual Update via [**J-Link (over USB)**](https://docs.hardwario.com/chester/firmware-flashing/application-over-j-link)**
+   - If you prefer flashing manually, see this guide: 👉 [**Application update over J-Link**](https://docs.hardwario.com/chester/firmware-flashing/application-over-j-link)
 
 ---
 

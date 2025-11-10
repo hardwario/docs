@@ -1,6 +1,6 @@
 ---
-slug: am319-868m
-title: AM319-868M
+slug: milesight-am319
+title: AM319
 ---
 
 import Image from '@theme/IdealImage';

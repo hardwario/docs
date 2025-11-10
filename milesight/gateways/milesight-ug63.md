@@ -1,6 +1,6 @@
 ---
-slug: ug63-868m
-title: UG63-868M
+slug: milesight-ug63
+title: UG63
 ---
 
 import Image from '@theme/IdealImage';

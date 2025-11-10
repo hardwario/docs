@@ -1,6 +1,6 @@
 ---
-slug: ws201-868m
-title: WS201-868M
+slug: milesight-ws201
+title: WS201
 ---
 
 import Image from '@theme/IdealImage';
