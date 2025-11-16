@@ -1,5 +1,5 @@
 ---
-slug: installation-setup
+slug: installation
 title: Installation
 ---
 import Image from '@theme/IdealImage';

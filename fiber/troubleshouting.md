@@ -41,7 +41,7 @@ If restarting the device via the button does not resolve the issue, please check
 
 ## 4. Reinstall image and run the FIBER
 
-1. Follow the installation instructions outlined in section [**Installation**](./installation-setup) of this documentation.
+1. Follow the installation instructions outlined in section [**Installation**](./installation) of this documentation.
 
 2. Log in to the target
 

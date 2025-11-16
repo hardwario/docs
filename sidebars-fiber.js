@@ -4,7 +4,7 @@
 const sidebars = {
     docs: [
       'introduction',
-      'installation-setup',
+      'installation',
       'configuration',
       'mqtt-broker',
       'project-structure',
