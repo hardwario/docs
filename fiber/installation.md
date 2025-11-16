@@ -11,7 +11,6 @@ This article provides instructions on bootstrap and configuration of the Linux s
 In the article, we use two terms:
 
 - **HOST:** The computer from which you will perform the setup.
-
 - **TARGET:** The actual FIBER device you are setting up.
 
 ## Connect Target to Host
