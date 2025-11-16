@@ -6,8 +6,16 @@ import Image from '@theme/IdealImage';
 
 # Installation
 
-This article provides instructions on bootstrap and configuring the Linux system on **Compute Module 4**. The instructions below assume the Linux host environment.
-This article uses the term host - a Linux-based PC which configures the target (**FIBER** version 2 hardware).
+This article provides instructions on bootstrap and configuration of the Linux system on the **FIBER** device. The platform is based on **Compute Module 4**, and industrial version of **Raspberry Pi 4**.
+
+In the article, we use two terms:
+
+- **HOST:** Your computer from which you perform the setup.
+- **TARGET:** The actual FIBER device you are setting up.
+
+
+
+---
 
 ## Install Image
 
