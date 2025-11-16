@@ -40,13 +40,13 @@ In the article, we use two terms:
 
 ## Activate Bootloader
 
-1. Follow the instructions from this GitHub repository:
+1. Install the **rpiboot** tool - follow the instructions from this GitHub repository:
 
    **https://github.com/raspberrypi/usbboot**
 
 1. Connect an Ethernet cable between the PoE port of the PoE adapter and the target's Ethernet (RJ-45) connector.
 
-1. Start the `rpiboot` command.
+1. Start the `rpiboot` tool.
 
    :::tip
 
