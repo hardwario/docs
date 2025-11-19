@@ -35,7 +35,7 @@ In the article, we use two terms:
 
 1. Connect an Ethernet cable between the LAN port of the PoE adapter and your LAN router (unless WiFi connectivity is desired).
 
-1. Connect the USB-B cable to **HOST** and the backside USB connector on the target.
+1. Connect the USB-B cable to **HOST** and the backside USB connector on the **TARGET**.
 
 ## Activate Bootloader
 
@@ -43,13 +43,13 @@ In the article, we use two terms:
 
    **https://github.com/raspberrypi/usbboot**
 
-1. Connect an Ethernet cable between the PoE port of the PoE adapter and the target's Ethernet (RJ-45) connector.
+1. Connect an Ethernet cable between the PoE port of the PoE adapter and the Ethernet (RJ-45) connector of the **TARGET**.
 
 1. Start the `rpiboot` tool.
 
    :::tip
 
-   This should switch the **target** to the bootloader mode. On the **HOST**, a new USB disk will appear.
+   This should switch the **TARGET** to the bootloader mode. On the **HOST**, a new USB disk will appear.
 
    :::
 
@@ -103,7 +103,7 @@ In the article, we use two terms:
 
    :::tip
    
-   You may find your target's IP address from your DHCP server's leases).
+   You may find IP address of your **TARGET** from your DHCP server's leases).
 
    :::
 
