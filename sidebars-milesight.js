@@ -14,8 +14,15 @@ const sidebars = {
       collapsed: true,
       items: [
         'sensors/milesight-am319',
+        'sensors/milesight-em400',
+        'sensors/milesight-em500',
+        'sensors/milesight-gs601',
+        'sensors/milesight-vs135',
+        'sensors/milesight-vs373',
+        'sensors/milesight-ws101',
         'sensors/milesight-ws201',
         'sensors/milesight-ws303',
+        'sensors/milesight-ws523',
         'sensors/milesight-wt101',
       ],
     },
@@ -30,6 +37,18 @@ const sidebars = {
       items: [
         'gateways/milesight-ug63',
         'gateways/milesight-ug65',
+      ],
+    },
+      {
+      type: 'category',
+      label: 'Utility',
+      link: {
+        type: 'doc',
+        id: 'utility/index',
+      },
+      collapsed: true,
+      items: [
+        'utility/milesight-ft101',
       ],
     },
   ],

@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.milesight.com)",
+      "WebSearch",
+      "WebFetch(domain:resource.milesight.com)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

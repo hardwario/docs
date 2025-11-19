@@ -170,9 +170,9 @@ const config = {
               { to: '/tower/',   label: 'TOWER',   activeBaseRegex: `/tower/` },
             ],
           },
-          // 2) THIRD-PARTY DEVICES (podmenu)
+          // 2) SMART DEVICES (podmenu)
           {
-            label: 'THIRD-PARTY DEVICES',
+            label: 'SMART DEVICES',
             position: 'left',
             items: [
               { to: '/milesight/', label: 'MILESIGHT', activeBaseRegex: `/milesight/` },

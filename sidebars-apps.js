@@ -52,7 +52,17 @@ const sidebars = {
       collapsed: true,
       items: [
         'chirpstack/chirpstack-installation',
-        'chirpstack/chirpstack-configuration',
+        {
+      type: 'category',
+      label: 'Configuration',
+      collapsed: true,
+      items: [
+        'chirpstack/chirpstack-configuration/chirpstack-gateways',
+        'chirpstack/chirpstack-configuration/chirpstack-end-devices',
+        'chirpstack/chirpstack-configuration/chirpstack-decoding',
+      ],
+    },
+        'chirpstack/chirpstack-integrations',
       ],
     },
     {
@@ -63,7 +73,17 @@ const sidebars = {
         id: 'the-things-stack/index',
       },
       collapsed: true,
-      items: [],
+      items: [
+         {
+      type: 'category',
+      label: 'Configuration',
+      collapsed: true,
+      items: [
+        'the-things-stack/tts-configuration/tts-gateways',
+        'the-things-stack/tts-configuration/tts-end-devices',
+      ],
+    },
+      ],
     },
     {
       type: 'category',
@@ -103,6 +123,15 @@ const sidebars = {
             'videos-apps/chirpstack-ember',
             'videos-apps/chirpstack-devices',
             'videos-apps/chirpstack-decoding',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'The Things Stack',
+          collapsed: true,
+          items: [
+            'videos-apps/tts-gateways',
+            'videos-apps/tts-end-devices',
           ],
         },
       ],

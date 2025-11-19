@@ -5,8 +5,7 @@ title: AM319
 
 import Image from '@theme/IdealImage';
 
-
-# Milesight Sensor AM319-868M
+# Milesight Sensor AM319
 
 Milesight AM319 is an **indoor air quality sensor** that measures **nine parameters** including temperature, humidity, CO₂, and particulate matter. It displays results on a **4.2” E-Ink screen** with clear indicators and transmits data via **LoRaWAN technology** for long-range, low-power communication.  
 
@@ -22,39 +21,28 @@ Milesight AM319 is an **indoor air quality sensor** that measures **nine paramet
 </div>
 <br />
 
+## Integration Links
+| Resource        | Link                                                                 |
+|-----------------|----------------------------------------------------------------------|
+| HARDWARIO Store | https://www.hardwario.store/p/milesight-am319                        |
+| Official page   | https://www.milesight.com/iot/product/lorawan-sensor/am319           |
+| User Guide      | https://resource.milesight.com/milesight/iot/document/am300-series-user-guide-en.pdf |
+| Datasheet       | https://resource.milesight.com/milesight/iot/document/am319-datasheet-en.pdf |
+
+---
+
 ## General configuration
+Configuration is done via NFC using the [Milesight ToolBox app](/milesight/sensors/index#qr-code--milesight-toolbox).
 
-**Overview**  
-For sensor configuration, use the **Milesight ToolBox** mobile application, available on both:  
-- Apple App Store: https://apps.apple.com/us/app/milesight-toolbox/id1518748039  
-- Google Play Store: https://play.google.com/store/apps/details?id=com.ursalinknfc&hl=en&pli=1  
+For sensor configuration instructions, see 👉 [**General configuration**](/milesight/sensors/index/#general-configuration).
 
-#### QR code – Milesight ToolBox
-<div class="container">
-  <div class="row">
-    <div class="col col--8">
-      <div style={{ width: '250px', height: '250px' }}>
-        <Image img={require('./milesight-toolbox.png')} />
-      </div>
-    </div>
-    <div class="col col--24"></div>
-  </div>
-</div>
-<br />
+---
 
-**Installation and configuration**  
-- Configuration is done via **NFC**.  
-- After reading the device, go to the *Basic Information* tab to update the **Device Time**.  
-- Setting the correct **date and time** is required for all devices.  
+## LoRaWAN Network Options
 
-**LoRaWAN connection**  
-- Devices are preconfigured with an **AppKey for OTAA** (default values are listed in the user manual).  
-- The **gateway must be set to Public**. If the gateway is configured as Private, devices will not be able to join the network.  
+For information about supported LoRaWAN network server platforms, see 👉[**LoRaWAN Network Options**](https://docs.hardwario.com/milesight/sensors/index#lorawan-network-options)
 
-## Power supply
-| Type   | Value              |
-|--------|--------------------|
-| Power  | USB-C or battery   |
+---
 
 ## LoRaWAN configuration
 | Parameter        | Value                    |
@@ -62,8 +50,10 @@ For sensor configuration, use the **Milesight ToolBox** mobile application, avai
 | LoRaWAN version  | 1.0.3                    |
 | Work mode        | Class C                  |
 | Join type        | OTAA                     |
-| AppEUI           | 24E124C0002A0001         |
+| AppEUI/JoinEUI   | 24E124C0002A0001         |
 | AppKey           | 5572404C696E6B4C6F52613230313823 |
+
+---
 
 ## Data Encoding & Decoding
 
@@ -72,6 +62,15 @@ For sensor configuration, use the **Milesight ToolBox** mobile application, avai
 | Decoder | [View decoder](https://github.com/Milesight-IoT/SensorDecoders/blob/main/am-series/am319-hcho/am319-hcho-decoder.js) |
 | Encoder | [View encoder](https://github.com/Milesight-IoT/SensorDecoders/blob/main/am-series/am319-hcho/am319-hcho-encoder.js) |
 | Codec | [View codec](https://github.com/Milesight-IoT/SensorDecoders/blob/main/am-series/am319-hcho/am319-hcho-codec.json) |
+
+---
+
+## Power supply
+| Type   | Value              |
+|--------|--------------------|
+| Power  | USB-C or battery   |
+
+---
 
 ## Technical Specifications
 
@@ -110,8 +109,3 @@ For sensor configuration, use the **Milesight ToolBox** mobile application, avai
 | Installation | Wall mount (3M tape or screws) |
 | **Approvals** | CE, FCC, ISED, RoHS |
 
-## Integration resources and distribution links
-| Resource        | Link                                                                 |
-|-----------------|----------------------------------------------------------------------|
-| HARDWARIO Store | https://www.hardwario.store/p/milesight-am319                        |
-| Official page   | https://www.milesight.com/iot/product/lorawan-sensor/am319           |
