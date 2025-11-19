@@ -5,7 +5,7 @@ title: WS201
 
 import Image from '@theme/IdealImage';
 
-# Milesight Sensor WS201-868M
+# Milesight Sensor WS201
 
 Milesight WS201 is a **wireless fill level monitoring sensor** using **ToF (Time-of-Flight) technology** for high accuracy. It supports **LoRaWAN connectivity** with remote management in the Milesight IoT Cloud, operates for **up to 2 years on a coin cell battery**, and is ideal for **public facility maintenance**
 
@@ -21,46 +21,37 @@ Milesight WS201 is a **wireless fill level monitoring sensor** using **ToF (Time
 </div>
 <br />
 
+## Integration Links
+| Resource        | Link                                                                 |
+|-----------------|----------------------------------------------------------------------|
+| HARDWARIO Store | Not yet available                                                     |
+| Official page   | https://www.milesight.com/iot/product/lorawan-sensor/ws201           |
+| User Guide      | https://resource.milesight.com/milesight/iot/document/ws201-user-guide-en.pdf |
+| Datasheet       | https://resource.milesight.com/milesight/iot/document/ws201-datasheet-en.pdf |
+
+---
+
 ## General configuration
+Configuration is done via NFC using the [Milesight ToolBox app](/milesight/sensors/index#qr-code--milesight-toolbox).
 
-**Overview**  
-For sensor configuration, use the **Milesight ToolBox** mobile application, available on both:  
-- Apple App Store: https://apps.apple.com/us/app/milesight-toolbox/id1518748039  
-- Google Play Store: https://play.google.com/store/apps/details?id=com.ursalinknfc&hl=en&pli=1  
+For sensor configuration instructions, see 👉 [**General configuration**](/milesight/sensors/index/#general-configuration).
 
-#### QR code – Milesight ToolBox
-<div class="container">
-  <div class="row">
-    <div class="col col--8">
-      <div style={{ width: '250px', height: '250px' }}>
-        <Image img={require('./milesight-toolbox.png')} />
-      </div>
-    </div>
-    <div class="col col--24"></div>
-  </div>
-</div>
-<br />
+---
 
-**Installation and configuration**  
-- Configuration is done via **NFC**.  
-- After reading the device, go to the *Basic Information* tab to update the **Device Time**.  
-- Setting the correct **date and time** is required for all devices.  
+## LoRaWAN Network Options
 
-**LoRaWAN connection**  
-- Devices are preconfigured with an **AppKey for OTAA** (default values are listed in the user manual).  
-- The **gateway must be set to Public**. If the gateway is configured as Private, devices will not be able to join the network.  
+For information about supported LoRaWAN network server platforms, see 👉[**LoRaWAN Network Options**](https://docs.hardwario.com/milesight/sensors/index#lorawan-network-options)
 
-## Power supply
-| Type   | Value           |
-|--------|-----------------|
-| Power  | 2× AA batteries |
+---
 
 ## LoRaWAN configuration
 | Parameter        | Value                    |
 |------------------|--------------------------|
 | Join type        | OTAA                     |
-| AppEUI           | 24E124C0002A0001         |
+| AppEUI/JoinEUI   | 24E124C0002A0001         |
 | AppKey           | 5572404C696E6B4C6F52613230313823 |
+
+---
 
 ## Data Encoding & Decoding
 
@@ -69,6 +60,15 @@ For sensor configuration, use the **Milesight ToolBox** mobile application, avai
 | Decoder | [View decoder](https://github.com/Milesight-IoT/SensorDecoders/blob/main/ws-series/ws201/ws201-decoder.js) |
 | Encoder | [View encoder](https://github.com/Milesight-IoT/SensorDecoders/blob/main/ws-series/ws201/ws201-encoder.js) |
 | Codec | [View codec](https://github.com/Milesight-IoT/SensorDecoders/blob/main/ws-series/ws201/ws201-codec.json) |
+
+---
+
+## Power supply
+| Type   | Value           |
+|--------|-----------------|
+| Power  | 2× AA batteries |
+
+---
 
 ## Technical Specifications
 
@@ -104,7 +104,3 @@ For sensor configuration, use the **Milesight ToolBox** mobile application, avai
 | Installation | 3M tape |
 | **Approvals** | CE, FCC, RoHS |
 
-## Integration resources
-| Resource        | Link                                                                 |
-|-----------------|----------------------------------------------------------------------|
-| Official page   | https://www.milesight.com/iot/product/lorawan-sensor/ws201           |

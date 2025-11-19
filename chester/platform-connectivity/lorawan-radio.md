@@ -1,6 +1,6 @@
 ---
 slug: lorawan-radio
-title: LoRaWAN Radio
+title: LoRaWAN Networks
 ---
 import Image from '@theme/IdealImage';
 
@@ -10,11 +10,34 @@ CHESTER is using **CMWX1ZZABZ-078** module from **Murata**. This module has manu
 
 The standard **CMWX1ZZABZ-078** module from **Murata** uses LoRaWAN standard 1.0.2 release B.
 
+---
+
+## Network Mode Configuration
+
+Some catalog firmwares allows configuration to use NB-IoT/LTE or LoRaWAN network. This firmware after power-up is not sending data, the **LED is blinking yellow** and you need to configure correct radio mode.
+
+This `app mode` configuration is needed currently for these catalog applications:
+
+- [CHESTER Clime](https://docs.hardwario.com/chester/catalog-applications/chester-clime)
+- [CHESTER Current](https://docs.hardwario.com/chester/catalog-applications/chester-current)
+- [CHESTER Push](https://docs.hardwario.com/chester/catalog-applications/chester-push)
+
+The default functionality is that a device **does not use any radio** (mode `none`) and you need to set configuration parameter **mode**.
+
+- `app config mode lte` for NB-IoT/LTE network
+- `app config mode lrw` for LoRaWAN network
+
+Then apply changes by typing `config save`. The device will reboot and use the correct network.
+
+---
+
 ## EMBER LoRaWAN Gateway
 
 We also offer **LoRaWAN gateway EMBER** ([EMBER docs](../../ember), [EMBER e-shop](https://shop.hardwario.com/ember/)). This gateway can manage LoRaWAN communication with CHESTER and network software could be running in our HARDWARIO Cloud, or completely in your infrastructure. LoRaWAN network is very flexible, reliable with long range and we use it in big factories or large open areas.
 
 EMBER is using [CHIRPSTACK](https://www.chirpstack.io/) and [Node-RED](https://nodered.org/) for device management and further integrations.
+
+---
 
 ## CHESTER LoRaWAN Configuration
 
@@ -156,6 +179,8 @@ You can set the decoder in Device-profile in the **Codec** tab.
 For Node-RED we use connecting directly to the CHIRPSTACK MQTT broker with a MQTT out node that has set the MQTT topic to `application/<application-id>/device/+/event/up`.
 
 Replace the `<application-id>` with your application ID. In older CHIRPSTACK it is a **0..n number**, in newer versions it is a **unique ID**.
+
+---
 
 ## Troubleshooting
 

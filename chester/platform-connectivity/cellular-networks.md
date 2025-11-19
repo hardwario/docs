@@ -1,11 +1,33 @@
 ---
 slug: cellular-networks
-title: Cellular Networks
+title: Mobile Networks
 ---
 import Image from '@theme/IdealImage';
 
+# Mobile Networks
 
 In this article, you will find details on various supported cellular networks and the particular settings in various environments. The **CHESTER** platform supports **LTE-M** and **NB-IoT** cellular technologies using  **nRF9160** System-in-Package from **Nordic Semiconductor**.
+
+---
+
+## Network Mode Configuration
+
+Some catalog firmwares allows configuration to use NB-IoT/LTE or LoRaWAN network. This firmware after power-up is not sending data, the **LED is blinking yellow** and you need to configure correct radio mode.
+
+This `app mode` configuration is needed currently for these catalog applications:
+
+- [CHESTER Clime](https://docs.hardwario.com/chester/catalog-applications/chester-clime)
+- [CHESTER Current](https://docs.hardwario.com/chester/catalog-applications/chester-current)
+- [CHESTER Push](https://docs.hardwario.com/chester/catalog-applications/chester-push)
+
+The default functionality is that a device **does not use any radio** (mode `none`) and you need to set configuration parameter **mode**.
+
+- `app config mode lte` for NB-IoT/LTE network
+- `app config mode lrw` for LoRaWAN network
+
+Then apply changes by typing `config save`. The device will reboot and use the correct network.
+
+---
 
 In **HARDWARIO**, we do not restrict customers to use any SIM card provider of their preference (as long as the selected carrier offers one of the supported cellular technologies). On the other hand, for the SIM cards provided by **HARDWARIO**, we can provide an extended level of technical support.
 
@@ -20,17 +42,6 @@ We only support the **Nano-SIM** form factor (4FF) for plastic SIM cards. Altern
 
 :::
 
-# Network Settings
-
-This article provides a settings reference for the tested networks and the current **Cloud v2**.
-
-In case of older firmwares, see legacy [**Cloud v1**](#cloud-v1-configuration) chapter.
-
-:::caution
-
-The table below applies to the SIM cards provided by **HARDWARIO**. We cannot guarantee data validity if the SIM cards are sourced from anywhere else.
-
-:::
 
 ## Vodafone Configuration
 This is the reference LTE settings using **CHESTER** with the **Vodafone** SIM card:
@@ -45,7 +56,7 @@ lte config username ""
 lte config password ""
 lte config addr "192.168.192.4"
 ```
-
+---
 
 ## 1nce Configuration
 This is the reference LTE settings with using **CHESTER** with the **1nce** SIM card:
@@ -60,6 +71,8 @@ lte config username ""
 lte config password ""
 lte config addr "157.245.24.13"
 ```
+
+---
 
 ## Other Settings
 
@@ -87,6 +100,22 @@ If configuration parameters are left **empty**, the system will perform **auto-c
 | Onomondo               | onomondo         |
 | Slovak Telekom         | nbiot.telekom.sk |
 | Mobily Saudi Arabia    | M2M-NB           |
+
+---
+
+## Network Settings
+
+This article provides a settings reference for the tested networks and the current **Cloud v2**.
+
+In case of older firmwares, see legacy [**Cloud v1**](#cloud-v1-configuration) chapter.
+
+:::caution
+
+The table below applies to the SIM cards provided by **HARDWARIO**. We cannot guarantee data validity if the SIM cards are sourced from anywhere else.
+
+:::
+
+---
 
 ## Configuration Parameters
 
@@ -145,6 +174,8 @@ Leave empty (`""`) if authentication is not required.
 Specifies the static IP address assigned to the LTE network interface.
 For global connection use `"157.245.24.13"`
 
+---
+
 ## Test commands
 You can verify the settings using this command:
 
@@ -158,11 +189,25 @@ Run this command to query the LTE registration state:
 lte state
 ```
 
-You can read the IMSI of the SIM card even when the CHESTER is not attached:
+You can read the IMSI (International Mobile Subscriber Identity) of the SIM card even when the CHESTER is not attached:
 
 ```
 lte imsi
 ```
+
+To read the ICCID (Integrated Circuit Card Identifier):
+
+```
+lte iccid
+```
+
+To read the device IMEI (International Mobile Equipment Identity):
+
+```
+lte imei
+```
+
+---
 
 ## Vodafone SIM EU28+2
 
@@ -247,8 +292,7 @@ This table applies for Vodafone SIM card. The `Carrier` column shows which roami
 | Vatican                | NB-IoT, LTE-M | Vodafone Italy                    | `22210`  | `hardwario` |
 | Vietnam                | NB-IoT        | Viettel Vietnam                   | `45204`  | `hardwario` |
 
-
-
+---
 
 ## Cloud v1 configuration
 
@@ -261,6 +305,8 @@ For our legacy [HARDWARIO Cloud v1](https://legacy.hardwario.cloud) firmwares (u
 Notice the APN has a `.com` suffix, and IP leads to Cloud v1 UDP server.
 
 Don't forget to **save configuration changes by typing `config save`.**
+
+---
 
 ## List Available Networks
 

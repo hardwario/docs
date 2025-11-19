@@ -28,6 +28,17 @@ The Things Stack provides the foundation for professional LoRaWAN networks — s
 
 ---
 
+## Configure The Things Stack
+
+In this guide, you will configure The Things Stack by adding gateways and registering end devices. It shows how to work with LoRaWAN settings, assign network parameters, and properly register devices within your TTS application environment.
+
+👉 **Step-by-step guide sections:**
+
+- **Gateways: https://docs.hardwario.com/apps/the-things-stack/tts-configuration/tts-gateways**
+
+- **End Devices: https://docs.hardwario.com/apps/the-things-stack/tts-configuration/tts-end-devices**
+
+---
 
 ## LoRaWAN Network 
 LoRaWAN is a **low-power, wide-area network (LPWAN) protocol** built on top of the LoRa modulation. It is specifically designed for Internet of Things (IoT) applications. LoRa modulation is based on chirp spread spectrum (CSS), which enables **long-range connectivity**, **resistance to interference**, and **operation with very low power consumption**.  

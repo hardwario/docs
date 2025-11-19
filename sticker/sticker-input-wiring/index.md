@@ -32,3 +32,7 @@ Analog input 0–24 V:
 - Divider 1 kΩ / 33 kΩ.
 
 ![STICKER Analog Input](STICKER-ANALOG-INPUT.png)
+
+## SO Sensor
+
+![STICKER ](STICKER-SO-SENSOR.png)

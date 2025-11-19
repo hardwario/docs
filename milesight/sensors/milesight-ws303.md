@@ -5,7 +5,7 @@ title: WS303
 
 import Image from '@theme/IdealImage';
 
-# Milesight Sensor WS303-868M
+# Milesight Sensor WS303
 
 Milesight WS303 is a **smart water leak detector** with **two stainless steel probes** that detect water as low as 0.5 mm. It features a **built-in buzzer** for local alerts, sends notifications through **LoRaWAN**, and offers up to **5 years of battery life**. Its **compact IP67 design** allows installation even in hard-to-reach places.
 
@@ -21,46 +21,38 @@ Milesight WS303 is a **smart water leak detector** with **two stainless steel pr
 </div>
 <br />
 
+## Integration Links
+| Resource        | Link                                                                 |
+|-----------------|----------------------------------------------------------------------|
+| HARDWARIO Store | https://www.hardwario.store/p/milesight-ws303                        |
+| Official page   | https://www.milesight.com/iot/product/lorawan-sensor/ws303           |
+| User Guide      | https://resource.milesight.com/milesight/iot/document/ws303-user-guide-en.pdf |
+| Datasheet       | https://resource.milesight.com/milesight/iot/document/ws303-datasheet-en.pdf |
+
+---
+
 ## General configuration
+Configuration is done via NFC using the [Milesight ToolBox app](/milesight/sensors/index#qr-code--milesight-toolbox).
 
-**Overview**  
-For sensor configuration, use the **Milesight ToolBox** mobile application, available on both:  
-- Apple App Store: https://apps.apple.com/us/app/milesight-toolbox/id1518748039  
-- Google Play Store: https://play.google.com/store/apps/details?id=com.ursalinknfc&hl=en&pli=1  
+For sensor configuration instructions, see 👉 [**General configuration**](/milesight/sensors/index/#general-configuration).
 
-#### QR code – Milesight ToolBox
-<div class="container">
-  <div class="row">
-    <div class="col col--8">
-      <div style={{ width: '250px', height: '250px' }}>
-        <Image img={require('./milesight-toolbox.png')} />
-      </div>
-    </div>
-    <div class="col col--24"></div>
-  </div>
-</div>
-<br />
+---
 
-**Installation and configuration**  
-- Configuration is done via **NFC**.  
-- After reading the device, go to the *Basic Information* tab to update the **Device Time**.  
-- Setting the correct **date and time** is required for all devices.  
+## LoRaWAN Network Options
 
-**LoRaWAN connection**  
-- Devices are preconfigured with an **AppKey for OTAA** (default values are listed in the user manual).  
-- The **gateway must be set to Public**. If the gateway is configured as Private, devices will not be able to join the network.  
+For information about supported LoRaWAN network server platforms, see 👉[**LoRaWAN Network Options**](https://docs.hardwario.com/milesight/sensors/index#lorawan-network-options)
 
-## Power supply
-| Type   | Value          |
-|--------|----------------|
-| Power  | CR2450 battery |
+---
 
 ## LoRaWAN configuration
 | Parameter        | Value                    |
 |------------------|--------------------------|
 | Join type        | OTAA                     |
-| AppEUI           | 24E124C0002A0001         |
+| AppEUI/JoinEUI   | 24E124C0002A0001         |
 | AppKey           | 5572404C696E6B4C6F52613230313823 |
+
+---
+
 
 ## Data Encoding & Decoding
 
@@ -70,6 +62,14 @@ For sensor configuration, use the **Milesight ToolBox** mobile application, avai
 | Encoder | [View encoder](https://github.com/Milesight-IoT/SensorDecoders/blob/main/ws-series/ws303/ws303-encoder.js) |
 | Codec | [View codec](https://github.com/Milesight-IoT/SensorDecoders/blob/main/ws-series/ws303/ws303-codec.json) |
 
+---
+
+## Power supply
+| Type   | Value          |
+|--------|----------------|
+| Power  | CR2450 battery |
+
+---
 
 ## Technical Specifications
 
@@ -101,8 +101,3 @@ For sensor configuration, use the **Milesight ToolBox** mobile application, avai
 | Installation | 3M Tape / Desktop |
 | **Approvals** | CE, FCC, RoHS |
 
-## Integration resources and distribution links
-| Resource        | Link                                                                 |
-|-----------------|----------------------------------------------------------------------|
-| HARDWARIO Store | https://www.hardwario.store/p/milesight-ws303                        |
-| Official page   | https://www.milesight.com/iot/product/lorawan-sensor/ws303           |

@@ -21,21 +21,50 @@ Milesight UG65 is a **semi-industrial LoRaWAN® gateway** powered by the **SX130
 </div>
 <br />
 
-## Power supply / connectivity
-| Type        | Value                                   |
-|-------------|-----------------------------------------|
-| Power       | PoE or power adapter                    |
+## Integration Links
+| Resource        | Link                                                                 |
+|-----------------|----------------------------------------------------------------------|
+| HARDWARIO Store | https://www.hardwario.store/p/milesight-ug65                         |
+| Official page   | https://www.milesight.com/iot/product/lorawan-gateway/ug65           |
+| User Guide      | https://resource.milesight.com/milesight/iot/document/ug65-user-guide-en.pdf |
+| Datasheet       | https://resource.milesight.com/milesight/iot/document/ug65-datasheet-en.pdf |
+
+---
+
+## Connectivity
+| Type        | Value                                            |
+|-------------|--------------------------------------------------|
 | Wi-Fi       | Default SSID: Gateway_**** / Password: iotpassword |
-| Access URL  | http://192.168.1.1                      |
-| Login       | admin / password                        |
+| Access URL  | http://192.168.1.1                               |
+| Login       | admin / password                                 |
+
+---
 
 ## Network configuration
-- Connect to the gateway via Wi-Fi and log in to the web interface.  
-- The default configuration provides one destination which cannot be modified.  
-- Disable the default destination and create a new one.  
+
+**Initial Setup:**
+1. Power up the gateway via **PoE** or **power adapter**
+2. Connect to the gateway's **Wi-Fi network**:
+   - **SSID:** Gateway_**** (shown on device label)
+   - **Password:** iotpassword
+3. Open web browser and go to **http://192.168.1.1**
+4. Log in with: **admin** / **password**
+
+**Important Note:**
+- The gateway comes with a **default destination** that **cannot be modified**
+- You must **disable** this default destination and **create a new one**
+
+---
 
 ## Packet forwarding (CUPS)
-To connect the gateway to The Things Industries using CUPS:  
+
+**What is CUPS?**
+CUPS (Configuration and Update Server) automatically configures your gateway. You only need to upload the CUPS key, and the gateway will download all other settings automatically.
+
+**Setup Steps:**
+
+1. In the gateway web interface, **disable the default destination** (ID: 0)
+2. Create a **new destination** with the following settings:
 
 | Setting         | Value                                                                 |
 |-----------------|-----------------------------------------------------------------------|
@@ -44,9 +73,21 @@ To connect the gateway to The Things Industries using CUPS:
 | Protocol        | CUPS                                                                  |
 | Server address  | hardwario-com.eu1.cloud.thethings.industries                          |
 | CA File (*.pem) | Download from [TTI root certificates](https://www.thethingsindustries.com/docs/concepts/advanced/root-certificates/) |
-| Client key file | Upload the `cups.key` generated in your TTN/TTI account               |
+| Client key file | Upload the `cups.key` generated in your The Things Stack account      |
 
-After uploading the **CUPS key**, the gateway will automatically fetch the correct LNS configuration.  
+**Important:**
+- Upload **only the CUPS key** (`cups.key`)
+- The gateway will **automatically download** the LNS (LoRaWAN Network Server) configuration
+- No need to manually configure LNS settings  
+
+---
+
+## Power supply
+| Type   | Value                |
+|--------|----------------------|
+| Power  | PoE or power adapter |
+
+---
 
 ## Technical Specifications
 
@@ -89,8 +130,3 @@ After uploading the **CUPS key**, the gateway will automatically fetch the corre
 | Humidity | 0–95% RH (non-cond.) |
 | **Approvals** | CE, FCC, Telec, JATE, RCM, RoHS |
 
-## Integration resources and distribution links
-| Resource        | Link                                                                 |
-|-----------------|----------------------------------------------------------------------|
-| HARDWARIO Store | https://www.hardwario.store/p/milesight-ug65                         |
-| Official page   | https://www.milesight.com/iot/product/lorawan-gateway/ug65           |
