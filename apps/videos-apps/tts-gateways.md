@@ -9,7 +9,7 @@ import Image from '@theme/IdealImage';
 
 ## Tutorial Overview
 
-In this guide, you’ll learn how to connect your gateway to ChirpStack v4.
+In this guide, you’ll learn how to connect your gateway to The Things Stack.
 
 ---
 
