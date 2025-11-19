@@ -35,7 +35,7 @@ In the article, we use two terms:
 
 1. Connect an Ethernet cable between the LAN port of the PoE adapter and your LAN router (unless WiFi connectivity is desired).
 
-1. Connect the USB-B cable to host and the backside USB connector on the target.
+1. Connect the USB-B cable to **HOST** and the backside USB connector on the target.
 
 ## Activate Bootloader
 
@@ -49,7 +49,7 @@ In the article, we use two terms:
 
    :::tip
 
-   This should switch the **target** to the bootloader mode. On the **host**, a new USB disk will appear.
+   This should switch the **target** to the bootloader mode. On the **HOST**, a new USB disk will appear.
 
    :::
 
@@ -97,9 +97,9 @@ In the article, we use two terms:
 
 1. Write image to the the device.
 
-1. When finished, press the **RESET** button on the target (located next to the USB connector).
+1. When finished, press the **RESET** button on the **TARGET** (located next to the USB connector).
 
-1. Wait for the target to boot, and connect to the network.
+1. Wait for the **TARGET** to boot, and connect to the network.
 
    :::tip
    
@@ -129,7 +129,7 @@ In the article, we use two terms:
 
 ## Install ChirpStack
 
-1. Install required packages for ChirpStack (MQTT broker, Redis, and PostgreSQL):
+1. Install required packages for **ChirpStack** (MQTT broker, Redis, and PostgreSQL):
 
    ```sh
    sudo apt install \
@@ -140,13 +140,13 @@ In the article, we use two terms:
        postgresql
    ```
 
-1. Connect to PostgreSQL as the `postgres` user:
+1. Connect to **PostgreSQL** as the `postgres` user:
 
    ```sh
    sudo -u postgres psql
    ```
 
-1. Create a new PostgreSQL role named `chirpstack` with login capability and password:
+1. Create a new **PostgreSQL** role named `chirpstack` with login capability and password:
 
    ```sh
    create role chirpstack with login password 'chirpstack';
@@ -170,49 +170,49 @@ In the article, we use two terms:
    create extension pg_trgm;
    ```
 
-1. Quit the PostgreSQL prompt:
+1. Quit the **PostgreSQL** prompt:
 
    ```sh
    \q
    ```
 
-1. Install the GPG tool for verifying package signatures:
+1. Install the **GPG tool** for verifying package signatures:
 
    ```sh
    sudo apt install gpg
    ```
 
-1. Create the directory for APT keyrings if it doesn't exist:
+1. Create the directory for **APT keyrings** if it doesn't exist:
 
    ```sh
    sudo mkdir -p /etc/apt/keyrings/
    ```
 
-1. Download and add the ChirpStack repository GPG key:
+1. Download and add the **ChirpStack** repository GPG key:
 
    ```sh
    sudo sh -c 'wget -q -O - https://artifacts.chirpstack.io/packages/chirpstack.key | gpg --dearmor > /etc/apt/keyrings/chirpstack.gpg'
    ```
 
-1. Add the ChirpStack repository to the APT sources list:
+1. Add the **ChirpStack** repository to the APT sources list:
 
    ```sh
    echo "deb [signed-by=/etc/apt/keyrings/chirpstack.gpg] https://artifacts.chirpstack.io/packages/4.x/deb stable main" | sudo tee /etc/apt/sources.list.d/chirpstack.list
    ```
 
-1. Update the package list to include packages from the ChirpStack repository:
+1. Update the package list to include packages from the **ChirpStack** repository:
 
    ```sh
    sudo apt update
    ```
 
-1. Install the ChirpStack Gateway Bridge package:
+1. Install the **ChirpStack Gateway Bridge** package:
 
    ```sh
    sudo apt install chirpstack-gateway-bridge
    ```
 
-1. Apply a patch to modify the MQTT topic templates in the configuration file:
+1. Apply a patch to modify the **MQTT topic templates** in the configuration file:
 
    ```sh
    sudo patch /etc/chirpstack-gateway-bridge/chirpstack-gateway-bridge.toml << 'EOF'
@@ -233,33 +233,35 @@ In the article, we use two terms:
    EOF
    ```
 
-1. Start the ChirpStack Gateway Bridge service:
+1. Start the **ChirpStack Gateway Bridge** service:
 
    ```sh
    sudo systemctl start chirpstack-gateway-bridge
    ```
 
-1. Enable the ChirpStack Gateway Bridge service to start automatically on boot:
+1. Enable the **ChirpStack Gateway Bridge** service to start automatically on boot:
 
    ```sh
    sudo systemctl enable chirpstack-gateway-bridge
    ```
 
-1. Install the ChirpStack package:
+1. Install the **ChirpStack** package:
 
    ```sh
    sudo apt install chirpstack
    ```
 
+1. Now, you can access **ChirpStack** at this address: `http://[TARGET IP ADDRESS]:8080/`
+
 ## Install Node-RED
 
-1. Download and run the Node-RED installation script:
+1. Download and run the **Node-RED** installation script:
 
    ```sh
    bash <(curl -sL https://github.com/node-red/linux-installers/releases/latest/download/update-nodejs-and-nodered-deb)
    ```
 
-1. Enable the Node-RED service to start automatically on boot:
+1. Enable the **Node-RED** service to start automatically on boot:
 
    ```sh
    sudo systemctl enable nodered.service
@@ -270,3 +272,5 @@ In the article, we use two terms:
    ```sh
    sudo reboot
    ```
+
+1. Now, you can access **Node-RED** at this address: `http://[TARGET IP ADDRESS]:1880/`
