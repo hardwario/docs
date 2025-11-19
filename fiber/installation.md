@@ -95,118 +95,178 @@ In the article, we use two terms:
 
 1. Select your preferred keyboard layout in the **Keyboard layout** drop-down menu.
 
----
+1. Write image to the the device.
 
-## Install Image
+1. When finished, press the **RESET** button on the target (located next to the USB connector).
 
-1. Download image
+1. Wait for the target to boot, and connect to the network.
 
-2. Uncompress the image
+   :::tip
+   
+   You may find your target's IP address from your DHCP server's leases).
 
-3. Install image to **FIBER**
+   :::
 
-    - Connect the **PoE adapter** to the target.
-    
-    - Connect the **Mini USB cable** between the host and the target.
+## Update System
 
-    - Use a jumper to short the **BOOT pins** on the mainboard.
+1. Update the package list to get information on the newest versions of packages:
 
-    - Shortly press the **RESET tact switch** on the rear side of the mainboard.
-
-    - Now **Compute Module 4** should start in the bootloader mode.
-
-    - Remove the jumper from the **BOOT pins** on the mainboard.
-
-4. Flash the image
-
-5. Set up network connection
-
-## Network Connection Setup
-
-To start **FIBER**, follow the instructions below depending on your preferred connection method:
-
-### Wi-Fi Connection
-
-If you are connecting **FIBER** to your network via **Wi-Fi**, follow these steps:
-
-1. Connect your **FIBER** device to the PoE port of the PoE adapter.
-
-2. Wait for the device to establish a Wi-Fi connection with your network.
-
-3. Determine the IP address.
-
-4. Log in to the target (password *`fiber`*):
-
-    ```bash
-    ssh root@[ip address]
-    ```
-
-5. Wait for approximately a minute for **FIBER** to establish a connection with your network.
-
-### Ethernet Connection
-
-If you are connecting **FIBER** to your network via **Ethernet**, follow these steps:
-
-1. Connect one Ethernet cable from the PoE adapter's LAN port to your router or switch.
-
-2. Connect another Ethernet cable from the PoE adapter's port to the **FIBER** device.
-
-3. Determine the IP address.
-
-4. Log in to the target (password *`fiber`*):
-
-    ```bash
-    ssh root@[ip address]
-    ```
-
-5. Wait for approximately a minute for **FIBER** to establish a connection with your network.
-
-### Static IP Address Connection
-
-If you utilize a **static IP** address for **FIBER** connections, follow these steps:
-
-1. Update Configuration File (system section)
-
-    - Set **static_ip** to **True**.
-    - Replace the following placeholders with your network details: **address** (your static IP address), **netmask**, **gateway**, **dns**.
-
-2. Depending on the type of [**Ethernet**](#ethernet-connection) or [**Wi-Fi**](#wi-fi-connection) connection, use the instructions for them above.
-
-## Additional information
-
-1. Verifying Network Connectivity:
-
-    Test the connection to the **FIBER** device from the host:
-
-    ```bash
-    ping [ip address]
-    ```
-2. Checking device logs:
-
-    If the **FIBER** device does not function as expected, you can view logs for troubleshooting:
-
-   ```bash
-   journalctl -u fiber-core.service
+   ```sh
+   sudo apt update
    ```
-3. Managing the service:
 
-    Use the following commands to control the **FIBER** service:
+1. Upgrade all installed packages to their latest versions:
 
-   ```bash
-   systemctl start fiber-core.service
-
-   systemctl restart fiber-core.service
-
-   systemctl stop fiber-core.service
+   ```sh
+   sudo apt upgrade -y
    ```
-4. Restarting the device:
 
-    To restart the **FIBER** device after making changes or for troubleshooting:
+1. Reboot the system to apply updates:
 
-    - Using **SSH**:
+   ```sh
+   sudo reboot
+   ```
 
-        ```bash
-        reboot
-        ```
+## Install ChirpStack
 
-    - Press the physical reset button on the back of the device.
+1. Install required packages for ChirpStack (MQTT broker, Redis, and PostgreSQL):
+
+   ```sh
+   sudo apt install \
+       mosquitto \
+       mosquitto-clients \
+       redis-server \
+       redis-tools \
+       postgresql
+   ```
+
+1. Connect to PostgreSQL as the `postgres` user:
+
+   ```sh
+   sudo -u postgres psql
+   ```
+
+1. Create a new PostgreSQL role named `chirpstack` with login capability and password:
+
+   ```sh
+   create role chirpstack with login password 'chirpstack';
+   ```
+
+1. Create a new database named `chirpstack` owned by the `chirpstack` role:
+
+   ```sh
+   create database chirpstack with owner chirpstack;
+   ```
+
+1. Connect to the `chirpstack` database:
+
+   ```sh
+   \c chirpstack
+   ```
+
+1. Enable the `pg_trgm` extension for trigram matching:
+
+   ```sh
+   create extension pg_trgm;
+   ```
+
+1. Quit the PostgreSQL prompt:
+
+   ```sh
+   \q
+   ```
+
+1. Install the GPG tool for verifying package signatures:
+
+   ```sh
+   sudo apt install gpg
+   ```
+
+1. Create the directory for APT keyrings if it doesn't exist:
+
+   ```sh
+   sudo mkdir -p /etc/apt/keyrings/
+   ```
+
+1. Download and add the ChirpStack repository GPG key:
+
+   ```sh
+   sudo sh -c 'wget -q -O - https://artifacts.chirpstack.io/packages/chirpstack.key | gpg --dearmor > /etc/apt/keyrings/chirpstack.gpg'
+   ```
+
+1. Add the ChirpStack repository to the APT sources list:
+
+   ```sh
+   echo "deb [signed-by=/etc/apt/keyrings/chirpstack.gpg] https://artifacts.chirpstack.io/packages/4.x/deb stable main" | sudo tee /etc/apt/sources.list.d/chirpstack.list
+   ```
+
+1. Update the package list to include packages from the ChirpStack repository:
+
+   ```sh
+   sudo apt update
+   ```
+
+1. Install the ChirpStack Gateway Bridge package:
+
+   ```sh
+   sudo apt install chirpstack-gateway-bridge
+   ```
+
+1. Apply a patch to modify the MQTT topic templates in the configuration file:
+
+   ```sh
+   sudo patch /etc/chirpstack-gateway-bridge/chirpstack-gateway-bridge.toml << 'EOF'
+   @@ -34,11 +34,8 @@
+   
+      # MQTT integration configuration.
+      [integration.mqtt]
+   -  # Event topic template.
+   -  event_topic_template="gateway/{{ .GatewayID }}/event/{{ .EventType }}"
+   -
+   -  # Command topic template.
+   -  command_topic_template="gateway/{{ .GatewayID }}/command/#"
+   +  event_topic_template="eu868/gateway/{{ .GatewayID }}/event/{{ .EventType }}"
+   +  command_topic_template="eu868/gateway/{{ .GatewayID }}/command/#"
+   
+      # MQTT authentication.
+      [integration.mqtt.auth]
+   EOF
+   ```
+
+1. Start the ChirpStack Gateway Bridge service:
+
+   ```sh
+   sudo systemctl start chirpstack-gateway-bridge
+   ```
+
+1. Enable the ChirpStack Gateway Bridge service to start automatically on boot:
+
+   ```sh
+   sudo systemctl enable chirpstack-gateway-bridge
+   ```
+
+1. Install the ChirpStack package:
+
+   ```sh
+   sudo apt install chirpstack
+   ```
+
+## Install Node-RED
+
+1. Download and run the Node-RED installation script:
+
+   ```sh
+   bash <(curl -sL https://github.com/node-red/linux-installers/releases/latest/download/update-nodejs-and-nodered-deb)
+   ```
+
+1. Enable the Node-RED service to start automatically on boot:
+
+   ```sh
+   sudo systemctl enable nodered.service
+   ```
+
+1. Reboot the system to complete the installation:
+
+   ```sh
+   sudo reboot
+   ```
