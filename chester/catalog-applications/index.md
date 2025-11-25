@@ -76,13 +76,13 @@ Then apply changes by typing `config save`. The device will reboot and use the c
 | [**CHESTER Current Z**](chester-current.md#chester-current-z)   | [**v3.3.0**](https://firmware.hardwario.com/chester/cf5daced77324499bd66ff751bdb5a21) | <small>`cf5daced77324499bd66ff751bdb5a21`</small> | 2025-07-14 | Support for CHESTER-Z   |
 | **CHESTER Scale**                                               | [**v3.3.0**](https://firmware.hardwario.com/chester/2644049166354277a72973f8a003c75c) | <small>`2644049166354277a72973f8a003c75c`</small> | 2025-07-14 |                         |
 | **CHESTER Scale Z**                                             | [**v3.3.0**](https://firmware.hardwario.com/chester/6c9888e973f148508b3b468e8df8918b) | <small>`6c9888e973f148508b3b468e8df8918b`</small> | 2025-07-14 | Support for CHESTER-Z   |
-| [**CHESTER Meteo**](chester-meteo.md#chester-meteo)             | [**v3.3.0**](https://firmware.hardwario.com/chester/75d1cae16d6543c28879c62e437a1304) | <small>`75d1cae16d6543c28879c62e437a1304`</small> | 2025-07-14 |                         |
-| [**CHESTER Meteo Z**](chester-meteo.md#chester-meteo-z)         | [**v3.3.0**](https://firmware.hardwario.com/chester/d93c18b364c741f7adec7a0a5a68e020) | <small>`d93c18b364c741f7adec7a0a5a68e020`</small> | 2025-07-14 | Support for CHESTER-Z   |
-| [**CHESTER Meteo P**](chester-meteo.md#chester-meteo-p)         | [**v3.3.0**](https://firmware.hardwario.com/chester/36a8bd985efc4b45827d49ea9dc97732) | <small>`36a8bd985efc4b45827d49ea9dc97732`</small> | 2025-07-14 | Support for pyranometer |
+| [**CHESTER Meteo**](chester-meteo.md#chester-meteo)             | [**v3.4.0**](https://firmware.hardwario.com/chester/3b558cae964f466d9cb08bd2eb2a294d) | <small>`3b558cae964f466d9cb08bd2eb2a294d`</small> | 2025-11-25 |  |
+| [**CHESTER Meteo Z**](chester-meteo.md#chester-meteo-z)         | [**v3.4.0**](https://firmware.hardwario.com/chester/fde61b2caa1a400e8882725977a5d16a) | <small>`fde61b2caa1a400e8882725977a5d16a`</small> | 2025-11-25 | Support for CHESTER-Z |
+| [**CHESTER Meteo P**](chester-meteo.md#chester-meteo-p)         | [**v3.4.0**](https://firmware.hardwario.com/chester/1d16cfc2089741e0938494550e11842c) | <small>`1d16cfc2089741e0938494550e11842c`</small> | 2025-11-25 | Support for pyranometer |
 | [**CHESTER Range**](chester-range.md#chester-range)             | [**v3.3.0**](https://firmware.hardwario.com/chester/d38047862971443e8096103930b44d03) | <small>`d38047862971443e8096103930b44d03`</small> | 2025-07-14 |                         |
 | [**CHESTER Range Z**](chester-range.md#chester-range-z)         | [**v3.3.0**](https://firmware.hardwario.com/chester/f5ca83a564604ce1a3a6c8f9ae637056) | <small>`f5ca83a564604ce1a3a6c8f9ae637056`</small> | 2025-07-14 | Support for CHESTER-Z   |
 | **CHESTER Demo**                                                | [**v3.3.0**](https://firmware.hardwario.com/chester/4811f1457dc44468bb9c015a30e2f66a) | <small>`4811f1457dc44468bb9c015a30e2f66a`</small> | 2025-07-14 |                         |
-| [**CHESTER wM-Bus**](chester-wm-bus.md)          | [**v3.4.0**](https://firmware.hardwario.com/chester/d9b464c0d7df4cf09ded65d87438f1a9) | <small>`d9b464c0d7df4cf09ded65d87438f1a9`</small> | 2025-09-30 |                         |
+| [**CHESTER wM-Bus**](chester-wm-bus.md)                         | [**v3.4.0**](https://firmware.hardwario.com/chester/d9b464c0d7df4cf09ded65d87438f1a9) | <small>`d9b464c0d7df4cf09ded65d87438f1a9`</small> | 2025-09-30 |                         |
 
 
 
