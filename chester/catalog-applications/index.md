@@ -78,7 +78,7 @@ Then apply changes by typing `config save`. The device will reboot and use the c
 | [**CHESTER Meteo P**](chester-meteo.md#chester-meteo-p) | [**v3.5.0**](https://firmware.hardwario.com/chester/1395914f1887484f8c38b0827b2563a7) | <small>`1395914f1887484f8c38b0827b2563a7`</small> | 2025-12-03 | Support for pyranometer |
 | [**CHESTER Push**](chester-push.md#chester-push) | [**v3.5.0**](https://firmware.hardwario.com/chester/f740987ee59742d6b8889a3d73f7ff4d) | <small>`f740987ee59742d6b8889a3d73f7ff4d`</small> | 2025-12-03 |  |
 | [**CHESTER Push FM**](chester-push.md#chester-push-fm) | [**v3.5.0**](https://firmware.hardwario.com/chester/e04603aa42354544b5e68393be016e92) | <small>`e04603aa42354544b5e68393be016e92`</small> | 2025-12-03 |  |
-| **CHESTER Radon** | [**v3.5.0**](https://firmware.hardwario.com/chester/50ea09cc334e48fcb54673de49091a3d) | <small>`50ea09cc334e48fcb54673de49091a3d`</small> | 2025-12-03 |  |
+| **CHESTER Radon** | [**v3.5.0**](https://firmware.hardwario.com/chester/6dad80d937154e288cd9d8270c3839fe) | <small>`6dad80d937154e288cd9d8270c3839fe`</small> | 2025-12-08 |  |
 | [**CHESTER Range**](chester-range.md#chester-range) | [**v3.5.0**](https://firmware.hardwario.com/chester/1724da3664f54034a9177ca26bdfd9db) | <small>`1724da3664f54034a9177ca26bdfd9db`</small> | 2025-12-03 |  |
 | [**CHESTER Range Z**](chester-range.md#chester-range-z) | [**v3.5.0**](https://firmware.hardwario.com/chester/fe7186e6197e48edbe8eb319fdc0b814) | <small>`fe7186e6197e48edbe8eb319fdc0b814`</small> | 2025-12-03 | Support for CHESTER-Z |
 | **CHESTER Scale** | [**v3.5.0**](https://firmware.hardwario.com/chester/ebfe14ec6f074fa494a1f7961bcee258) | <small>`ebfe14ec6f074fa494a1f7961bcee258`</small> | 2025-12-03 |  |
