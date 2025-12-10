@@ -18,9 +18,9 @@ const sidebars = {
           label: 'AM300',
           collapsed: true,
           items: [
-            'sensors/am300/am319',
-            'sensors/am300/am307',
-            'sensors/am300/am308',
+            'sensors/milesight-am300/milesight-am319',
+            'sensors/milesight-am300/milesight-am307',
+            'sensors/milesight-am300/milesight-am308',
           ],
         },
         'sensors/milesight-em400',

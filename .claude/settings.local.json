@@ -6,7 +6,12 @@
       "WebFetch(domain:resource.milesight.com)",
       "Bash(mkdir:*)",
       "WebFetch(domain:github.com)",
-      "WebFetch(domain:raw.githubusercontent.com)"
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:www.hardwario.com)",
+      "WebFetch(domain:docs.hardwario.com)",
+      "WebFetch(domain:api.github.com)",
+      "Bash(npm run build:*)",
+      "Bash(npm run clear:*)"
     ],
     "deny": [],
     "ask": []

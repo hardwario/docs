@@ -2,7 +2,6 @@
 slug: milesight-am308
 title: AM308(L)
 ---
-
 import Image from '@theme/IdealImage';
 
 # Milesight Sensor AM308(L)
