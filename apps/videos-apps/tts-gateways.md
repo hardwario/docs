@@ -9,9 +9,26 @@ import Image from '@theme/IdealImage';
 
 ## Tutorial Overview
 
-In this guide, you’ll learn how to connect your gateway to The Things Stack.
+This tutorial explains how to register and configure a new gateway in The Things Stack, including entering the Gateway EUI, setting essential parameters, generating and downloading API keys, and preparing the gateway for use.
 
 ---
+
+<div style={{ position: "relative", paddingBottom: "56.25%", height: 0, marginTop: "2rem" }}>
+  <iframe
+    src="https://www.youtube.com/embed/UufJ4dBav3s?rel=0"
+    title="YouTube video player"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowFullScreen
+    style={{
+      position: "absolute",
+      top: 0,
+      left: 0,
+      width: "100%",
+      height: "100%"
+    }}
+  ></iframe>
+</div>
 
 
 

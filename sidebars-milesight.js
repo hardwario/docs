@@ -13,7 +13,16 @@ const sidebars = {
       },
       collapsed: true,
       items: [
-        'sensors/milesight-am319',
+        {
+          type: 'category',
+          label: 'AM300',
+          collapsed: true,
+          items: [
+            'sensors/milesight-am300/milesight-am319',
+            'sensors/milesight-am300/milesight-am307',
+            'sensors/milesight-am300/milesight-am308',
+          ],
+        },
         'sensors/milesight-em400',
         'sensors/milesight-em500',
         'sensors/milesight-gs601',

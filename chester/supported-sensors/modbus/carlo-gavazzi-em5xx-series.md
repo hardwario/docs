@@ -144,6 +144,12 @@ config save
 5. Enter the CT ratio values.  
 6. Confirm the settings by selecting **YES** using the **Up** button, then press the **Select** button.
 
+:::warning
+These models are **MID-certified meters** (Measuring Instruments Directive — EU legal metrology standard).  
+The CT ratio can be changed **only before** the device registers **1 kWh** of active energy.  
+After exceeding 1 kWh, the CT ratio becomes **permanently locked** and **cannot be modified**, even with a factory reset or MID reset.  
+:::
+
 ### Example of CT Ratio Selection
 
 **Carlo Gavazzi Split Core Current Transformer - CTA6X200A5A**
@@ -157,6 +163,7 @@ config save
  The CT ratio is selected based on the maximum expected primary current. For example, if the system's maximum current is around 200 A, a 200:5 CT (40 CT) is chosen to step this down to 5 A for measurement devices.
 
 :::
+
 >
 ### Measured values
 

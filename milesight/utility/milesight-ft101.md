@@ -68,6 +68,10 @@ For information about supported LoRaWAN network server platforms, see 👉[**LoR
 | Sensitivity      | -137 dBm @ 125kHz, SF=12 |
 | Tx Power         | 19 dBm (470MHz) / 16 dBm (868MHz) / 22 dBm (915MHz) |
 
+:::info
+**DevEUI** (Device Extended Unique Identifier) is unique for each device and can be found printed on the device label.
+:::
+
 ---
 
 ## Power supply
