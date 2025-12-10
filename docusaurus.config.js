@@ -185,12 +185,17 @@ const config = {
             position: 'left',
             activeBaseRegex: `/cloud/`,
           },
-          // 4) APPS (bez podmenu)
+          // 4) APPS (podmenu)
           {
-            to: '/apps/',
             label: 'APPS',
             position: 'left',
-            activeBaseRegex: `/apps/`,
+            items: [
+              { to: '/apps/ubidots/index', label: 'UBIDOTS', activeBaseRegex: `/apps/ubidots/index` },
+              { to: '/apps/thingsboard/index', label: 'THINGSBOARD', activeBaseRegex: `/apps/thingsboard/index` },
+              { to: '/apps/chirpstack/index', label: 'CHIRPSTACK', activeBaseRegex: `/apps/chirpstack/index` },
+              { to: '/apps/the-things-stack/index', label: 'THE THINGS STACK', activeBaseRegex: `/apps/the-things-stack/index` },
+              { to: '/apps/videos-apps/videos-apps', label: 'VIDEO TUTORIALS', activeBaseRegex: `/apps/videos-apps/videos-apps` },
+            ],
           },
           {
             href: 'https://github.com/hardwario/docs',

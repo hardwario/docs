@@ -45,7 +45,7 @@ If you need to create a new variable derived from your existing data (for exampl
 
 **1. Average of two variables**  
 ```text
-(temperature + humidity) / 2
+(temperature_1 + temperature_2) / 2
 ```
 
 **2. Convert temperature from °C to °F**  

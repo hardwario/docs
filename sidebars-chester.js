@@ -26,22 +26,36 @@ const sidebars = {
       ],
     },
     {
+  type: 'category',
+  label: 'Platform Connectivity',
+  link: {
+    type: 'generated-index',
+  },
+  collapsed: true,
+  items: [
+    'platform-connectivity/hardwario-manager',
+    'platform-connectivity/hardwario-monitor',
+    'platform-connectivity/hardwario-terminal',
+    'platform-connectivity/cellular-networks',
+
+    {
       type: 'category',
-      label: 'Platform Connectivity',
-      link: {
-        type: 'generated-index',
+      label: 'LoRaWAN Radio',
+       link: {
+        type: 'doc',
+        id: 'platform-connectivity/lorawan-radio',
       },
       collapsed: true,
       items: [
-        'platform-connectivity/hardwario-manager',
-        'platform-connectivity/hardwario-monitor',
-        'platform-connectivity/hardwario-terminal',        
-        'platform-connectivity/cellular-networks',
-        'platform-connectivity/lorawan-radio',
-        'platform-connectivity/bluetooth-low-energy',
-        'platform-connectivity/satellite-connectivity',
+        
+        'platform-connectivity/lorawan-network-options',
       ],
     },
+
+    'platform-connectivity/bluetooth-low-energy',
+    'platform-connectivity/satellite-connectivity',
+  ],
+},
     {
       type: 'category',
       label: 'Catalog Applications',

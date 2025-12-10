@@ -35,7 +35,3 @@ The **EMBER Hotspot** is powered either by:
 For outdoor installations, **EMBER Hotspot** has to be mounted with connectors facing down.
 
 :::
-
-## CHESTER Device
-
-You can find detailed information in the [**CHESTER documentation**](https://docs.hardwario.com/chester/).

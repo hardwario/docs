@@ -63,7 +63,7 @@ lrw config band eu868
 lrw config chmask
 lrw config class a
 lrw config mode otaa
-lrw config nwk private
+lrw config nwk public
 lrw config adr true
 lrw config datarate 0
 lrw config dutycycle true
@@ -93,7 +93,7 @@ Also, the key has spaces so in the CHESTER shell you have to put key in quotatio
 
 ```
 lrw config mode otaa
-lrw config nwk private
+lrw config nwk public
 lrw config dutycycle false
 
 lrw config deveui <your-deveui>
@@ -121,7 +121,7 @@ Then you configure CHESTER
 
 ```
 lrw config mode abp
-lrw config nwk private
+lrw config nwk public
 lrw config dutycycle false
 
 lrw config deveui <deveui>

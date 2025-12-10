@@ -53,7 +53,8 @@ Next, create an application:
 
 3. Add devices by providing details such as:  
    - **Name**  
-   - **Device EUI**  
+   - **Device EUI** 
+   - **Join EUI / AppEUI** 
    - **Device Profile**  
 
 Click **Submit**.  

@@ -52,6 +52,10 @@ For information about supported LoRaWAN network server platforms, see 👉[**LoR
 | AppEUI/JoinEUI   | 24E124C0002A0001         |
 | AppKey           | 5572404C696E6B4C6F52613230313823 |
 
+:::info 
+**DevEUI** (Device Extended Unique Identifier) is unique for each device and can be found printed on the device label.
+:::
+
 ---
 
 ## Data Encoding & Decoding
@@ -61,6 +65,14 @@ For information about supported LoRaWAN network server platforms, see 👉[**LoR
 | Decoder | [View decoder](https://github.com/Milesight-IoT/SensorDecoders/blob/main/ws-series/ws52x/ws52x-decoder.js) |
 | Encoder | [View encoder](https://github.com/Milesight-IoT/SensorDecoders/blob/main/ws-series/ws52x/ws52x-encoder.js) |
 | Codec | [View codec](https://github.com/Milesight-IoT/SensorDecoders/blob/main/ws-series/ws52x/ws52x-codec.json) |
+
+:::info
+### Terminology Overview
+**Decoder** -> Converts the device's binary payload into readable JSON.<br />
+**Encoder** -> Converts JSON commands into binary payload for downlinks.<br />
+**Codec** -> Defines the rules for decoding and encoding (structure, fields, ports) used by network servers.
+:::
+
 
 ---
 
