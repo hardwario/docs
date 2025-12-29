@@ -4,9 +4,19 @@
 const sidebars = {
   docs: [
     'introduction',
+    //'getting-started',
     'hardware-description',
     'initial-configuration',
     'hotspot-configuration',
+    {
+      type: 'category',
+      label: 'LoRaWAN Network Server',
+      collapsed: true,
+      items: [
+        'lorawan-network-server/lorawan-chirpstack',
+        'lorawan-network-server/lorawan-tts',
+      ],
+    },
      {
       type: 'category',
       label: 'ChirpStack',

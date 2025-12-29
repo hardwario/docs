@@ -31,24 +31,29 @@ This tutorial guides you through the process of creating device profiles and add
 
 ## Registering End Devices
 
+In The Things Stack, end devices can be registered in two ways:
+- Using a predefined device from the LoRaWAN Device Repository
+- Manually, by entering all device parameters
+
+---
+
+### Predefined Devices
+
 1. Inside the application, click the blue **+ Register end device** button.  
    - Alternatively, click **+ Add** and choose **Register end device in an application**.
 
 ![](tts-end-device-2.png)
 
-2. Choose one of the available methods:
-   - Search for a device already known in TTS, or  
-   - Enter the device manually.  
-   *(Using a predefined device is usually easier if available.)*
+2. Select **Select the end device in the LoRaWAN Device Repository**.
+
+3. Search for the manufacturer and model of your device and select it.  
+   - Using a predefined device automatically fills in most technical parameters.
 
 :::info
-You can also add some devices by **scanning a QR code**, which automatically fills in identifiers.  
-This feature **does not work with Milesight devices**. However, it **does work with Nexelec devices**, which provide all required identifiers in the QR code.
+This method is recommended whenever the device is available in the LoRaWAN Device Repository, as it minimizes configuration errors.
 :::
 
-![](tts-end-device-3.png)
-
-1. Fill in the required identifiers:
+4. Fill in the required identifiers:
    - **JoinEUI (AppEUI)**  
      - Available in our documentation or in the manufacturer’s documents.
    - **DevEUI**  
@@ -58,18 +63,74 @@ This feature **does not work with Milesight devices**. However, it **does work w
    - **Device ID**  
      - Your chosen identifier for the device.
 
-2. (Optional) Add the same **label** you used for the application and gateway.
+5. (Optional) Add the same **label** you used for the application and gateway.
 
-3. Click the blue **Register end device** button.
+6. Click the blue **Register end device** button.
 
 ![](tts-end-device-4.png)
 
 ---
 
+### Manual Configuration
+
+This method is used when the device is **not available** in the LoRaWAN Device Repository or when **full manual control** over device parameters is required.
+
+1. Inside the application, click **+ Register end device**.
+
+2. Select **Enter end device specifics manually**.
+
+---
+
+#### End Device Type
+
+3. Configure the basic LoRaWAN parameters:
+
+   - **Frequency plan**  
+     - Select the regional frequency plan (e.g. **Europe 863–870 MHz**).
+   - **LoRaWAN version**  
+     - Select the LoRaWAN specification supported by the device  
+       (commonly **LoRaWAN Specification 1.0.4**).
+   - **Regional Parameters version**  
+     - Select the matching regional parameters version  
+       (e.g. **RP002 Regional Parameters 1.0.4**).
+
+![](tts-end-device-5.png)
+
+---
+
+#### Provisioning Information
+
+4. Enter the **JoinEUI (AppEUI)** of the device.
+
+5. Click **Confirm**.  
+
+
+---
+
+#### Device Identifiers
+
+6. Fill in the remaining required identifiers:
+
+   - **DevEUI**  
+     - Unique identifier of the device (printed on the device or packaging).
+   - **AppKey**  
+     - Application key provided by the manufacturer.
+   - **Device ID**  
+     - Your chosen identifier for the device within the application.
+
+7. (Optional) Add a **label** matching the application and gateway.
+
+8. Click the blue **Register end device** button.
+
+![](tts-end-device-6.png)
+
+---
+
 ## End Device Ready
 
-Your end device is now ready to use.
+Your end device is now registered and ready to communicate with The Things Stack.
 
 :::tip
-If you need **further assistance** or a visual demonstration of the process described in this guide, consult the [**Video Guide**](https://docs.hardwario.com/apps/videos-apps/tts-end-devices).
+If you need **further assistance** or a visual walkthrough, consult the  
+[**Video Guide**](https://docs.hardwario.com/apps/videos-apps/tts-end-devices).
 :::
