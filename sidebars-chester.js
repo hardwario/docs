@@ -48,7 +48,8 @@ const sidebars = {
       collapsed: true,
       items: [
         
-        'platform-connectivity/lorawan-network-options',
+        'platform-connectivity/lorawan-chirpstack',
+        'platform-connectivity/lorawan-tts',
       ],
     },
 
