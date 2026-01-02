@@ -52,6 +52,13 @@ For sensor configuration, use the **Milesight ToolBox** mobile application, avai
 - Devices are preconfigured with an **AppKey for OTAA** (default values are listed in the user manual).  
 - The **gateway must be set to Public**. If the gateway is configured as Private, devices will not be able to join the network.  
 
+:::info
+We also provide a **complete video tutorial** for a better overview of device configuration using the **Milesight ToolBox** application:
+
+https://docs.hardwario.com/milesight/videos-milesight/general-configuration
+:::
+
+
 ---
 
 ## LoRaWAN Network Options

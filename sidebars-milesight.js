@@ -59,6 +59,16 @@ const sidebars = {
       items: [
         'utility/milesight-ft101',
       ],
+
+    },
+    {
+      type: 'category',
+      label: 'Video Tutorials',
+      collapsed: true,
+      items: [
+        'videos-milesight/general-configuration',
+      ],
+      
     },
   ],
 };

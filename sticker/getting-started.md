@@ -65,6 +65,11 @@ STICKER is **NFC-ready** and can be configured even when batteries are not inser
 This is useful for provisioning LoRaWAN settings before installation:
 - STICKER Power Management: https://docs.hardwario.com/sticker/power-management/
 
+:::info
+A HARDWARIO provisioning and configuration application using NFC is currently under development.
+:::
+
+
 ---
 
 ## 3) Choose your LoRaWAN backend
@@ -72,11 +77,11 @@ This is useful for provisioning LoRaWAN settings before installation:
 You always need:
 **STICKER → (LoRa radio) → Gateway → Network Server → Application/Cloud/Dashboard**
 
-#### Path A — ChirpStack (private/self-hosted LoRaWAN)
+### ChirpStack v4
 Best if you want a private LoRaWAN network you control.
 
 Start here (HARDWARIO guide):
-- https://docs.hardwario.com/apps/chirpstack/index/
+- **https://docs.hardwario.com/sticker/lorawan-network-server/lorawan-chirpstack**
 
 Step-by-step sections:
 - Installation: https://docs.hardwario.com/ember/chirpstack/chirpstack-installation
@@ -86,11 +91,11 @@ Step-by-step sections:
 
 ---
 
-#### Path B — The Things Stack (TTS)
+### The Things Stack
 Best if you want to use TTS (managed or self-hosted), including TTN/TTI workflows.
 
 Start here (HARDWARIO guide):
-- https://docs.hardwario.com/apps/the-things-stack/index/
+- **https://docs.hardwario.com/sticker/lorawan-network-server/lorawan-tts**
 
 Step-by-step sections:
 - Gateways: https://docs.hardwario.com/apps/the-things-stack/tts-configuration/tts-gateways
@@ -98,7 +103,7 @@ Step-by-step sections:
 
 ---
 
-#### Path C — Your own LoRaWAN Network Server / private LoRaWAN
+### Self-Hosted LoRaWAN Server
 If you already operate a LoRaWAN backend (or a local LoRaWAN stack), integrate STICKER as a standard LoRaWAN end device:
 
 - Register the device in your NS
@@ -111,24 +116,17 @@ If you already operate a LoRaWAN backend (or a local LoRaWAN stack), integrate S
 
 ## 4) Visualize data
 
-Once uplinks are flowing, you have two common approaches:
-
-#### Option 1 — Use HARDWARIO Cloud as a bridge (fastest dashboard path)
-If you use HARDWARIO Cloud, you can forward data to dashboards via connectors.
-
-- HARDWARIO Cloud: https://hardwario.cloud
-
-#### Ubidots
+### Ubidots
 HARDWARIO guide:
-- https://docs.hardwario.com/apps/ubidots/index/
+- **https://docs.hardwario.com/apps/ubidots/index/**
 
 Useful links:
 - Ubidots (HARDWARIO instance): https://ubidots.hardwario.com
 - Ubidots official: https://ubidots.com
 
-#### ThingsBoard
+### ThingsBoard
 HARDWARIO guide:
-- https://docs.hardwario.com/apps/thingsboard/index/
+- **https://docs.hardwario.com/apps/thingsboard/index/**
 
 Useful links:
 - ThingsBoard (HARDWARIO instance): https://thingsboard.hardwario.com
@@ -136,22 +134,24 @@ Useful links:
 
 ---
 
-#### Option 2 — Integrate directly from ChirpStack / TTS to your platform
-Both ChirpStack and TTS support exporting data using **MQTT** and/or **Webhooks**.
-You can connect those outputs directly to Ubidots or ThingsBoard if you do not want HARDWARIO Cloud in between.
-
----
-
 ## 5) Next steps (after first successful uplink)
 
-- Mount the device in its final location and validate LoRaWAN coverage.
-- Choose what you want to measure:
-  - **Clime**: ambient monitoring
-  - **Motion**: motion events + occupancy/traffic insights
-  - **Input**: connect external sensors / industrial signals
+At this point, your STICKER is connected, data is arriving, and dashboards are working.
 
-#### STICKER Input wiring (if you have the Input variant)
-- Wiring + DIP switch modes: https://docs.hardwario.com/sticker/sticker-input-wiring/sticker-input-wiring/
+Typical next steps:
+
+- **Install the device in its final location** and verify long-term LoRaWAN coverage.
+- **Observe data for several hours or days** to confirm stability and expected update intervals.
+- **Adjust reporting behavior** (if applicable) to balance responsiveness and battery life.
+- **Set alerts or thresholds** in your dashboard platform.
+
+:::info
+#### STICKER Input wiring (Input variant only)
+
+If you are using **STICKER Input**, refer to the wiring and DIP switch configuration guide:
+- https://docs.hardwario.com/sticker/sticker-input-wiring/sticker-input-wiring/
+:::
+
 
 ---
 

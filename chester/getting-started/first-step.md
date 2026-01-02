@@ -1,6 +1,6 @@
 ---
 slug: first-step
-title: First Step
+title: Quick Start Guide
 ---
 import Image from '@theme/IdealImage';
 
