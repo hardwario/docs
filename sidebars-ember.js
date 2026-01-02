@@ -4,7 +4,7 @@
 const sidebars = {
   docs: [
     'introduction',
-    //'getting-started',
+    'getting-started',
     'hardware-description',
     'initial-configuration',
     'hotspot-configuration',
@@ -15,18 +15,6 @@ const sidebars = {
       items: [
         'lorawan-network-server/lorawan-chirpstack',
         'lorawan-network-server/lorawan-tts',
-      ],
-    },
-     {
-      type: 'category',
-      label: 'ChirpStack',
-      link: {
-        type: 'doc',
-        id: 'chirpstack/index',
-      },
-      collapsed: true,
-      items: [
-        'chirpstack/chirpstack-ember',
       ],
     },
     {

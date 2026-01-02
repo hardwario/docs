@@ -48,3 +48,68 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 [data-theme='dark'] .hero__subtitle {
   color: rgb(221, 221, 221); /* Slightly different shade for subtitle */
 }
+
+/* Zvýšíme trochu navbar, aby se tam vešly ty "visací" popisky */
+.navbar {
+  min-height: 4.5rem;
+}
+
+/* Zajistíme, aby se položky centrovaly k horní části/středu a neplavaly */
+.navbar__items {
+  align-items: center;
+}
+
+/* Mezera mezi položkami, aby se podnadpisy nepletly do sebe */
+.navbar__item {
+  margin: 0 4px;
+}
+
+/* Skryje podnadpis v mobilním menu, pokud je sekce rozbalená (šipka dole) */
+.menu__list-item:not(.menu__list-item--collapsed) .navbar-custom-sublabel {
+  display: none !important;
+}
+
+/* Volitelné: Úprava pozice v mobilním menu, aby se popisek nekryl s linkou */
+.menu__list-item .navbar-custom-sublabel {
+  position: relative !important; /* V mobilu je lepší relativní pozice */
+  bottom: 0 !important;
+  margin-top: 2px;
+}
+
+/* Na desktopu ale chceme nechat to původní absolutní pozicování */
+@media (min-width: 997px) {
+  .navbar-custom-sublabel {
+    position: absolute !important;
+    bottom: -10px !important;
+  }
+}
+
+/* --- LOGIKA PODPISKU (SUB-LABEL) --- */
+
+.navbar-custom-sublabel {
+  /* Zajišťuje, že se použije stejný font jako u .navbar__link */
+  font-family: var(--ifm-font-family-base); 
+}
+
+/* Desktop: Popisek "visí" pod hlavním textem */
+@media (min-width: 997px) {
+  .navbar-custom-sublabel {
+    position: absolute !important;
+    bottom: -12px !important; /* Mírně posunuto dolů kvůli stejnému fontu */
+    left: 0;
+  }
+}
+
+/* Mobil: Popisek je relativně pod textem */
+@media (max-width: 996px) {
+  .navbar-custom-sublabel {
+    position: relative !important;
+    margin-top: 2px;
+    margin-bottom: 4px;
+  }
+}
+
+/* Skrytí popisku při rozbaleném menu v mobilu */
+.menu__list-item:not(.menu__list-item--collapsed) .navbar-custom-sublabel {
+  display: none !important;
+}

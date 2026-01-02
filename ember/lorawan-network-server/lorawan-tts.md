@@ -61,8 +61,13 @@ You’ll use the downloaded keys in RouterOS.
 - Enable **SSL/TLS**
 
 ### Root certificates (required for SSL/TLS)
-Import The Things Stack **Root Certificates** into RouterOS and mark them as trusted (RouterOS “Files” → import certificate).
-> The MikroTik guide (link above) points to the Root Certificates download page.
+
+To establish a secure TLS connection to **The Things Stack (LNS / CUPS)**, import the official **The Things Stack Root CA certificates** into RouterOS and mark them as **trusted**.
+
+- Download the certificates from:  
+  https://www.thethingsindustries.com/docs/reference/root-certificates/
+- Import them in RouterOS (**Files → Import Certificate**) and set them as trusted.
+
 
 ---
 

@@ -9,9 +9,18 @@ import Image from '@theme/IdealImage';
 This guide shows how to connect the **HARDWARIO EMBER** LoRaWAN gateway (MikroTik RouterOS) to a **ChirpStack v4** network server.
 
 ## Useful docs
+- ChirpStack v4 Installation → https://docs.hardwario.com/apps/chirpstack/chirpstack-installation
 - EMBER → ChirpStack: https://docs.hardwario.com/ember/chirpstack/chirpstack-ember/
 - EMBER → MikroTik LoRa interface configuration: https://docs.hardwario.com/ember/mikrotik/gateway-configuration/
 - EMBER hotspot configuration (RouterOS basics, LoRaWAN section): https://docs.hardwario.com/ember/hotspot-configuration/
+
+:::info
+Before configuring the HARDWARIO EMBER gateway, make sure **ChirpStack v4 is installed and running**.
+
+Installation instructions are available here:  
+https://docs.hardwario.com/apps/chirpstack/chirpstack-installation
+:::
+
 
 ## Prerequisites
 - Access to the EMBER management interface (**WebFig** or **WinBox**)
@@ -59,6 +68,8 @@ This guide shows how to connect the **HARDWARIO EMBER** LoRaWAN gateway (MikroTi
    - **Gateway ID**: the value from **RouterOS → LoRa → Devices → Gateway ID**
    - **Stats Interval**: your preference
 4. Click **Submit**.
+
+![ChirStack v4 - Gateways](chirpstack-tutorial-1.png)
 
 ---
 

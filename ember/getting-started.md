@@ -38,10 +38,6 @@ Hardware description: https://docs.hardwario.com/ember/hardware-description/
 - EMBER product page (datasheet + overview): https://www.hardwario.com/ember
 - Hotspot configuration (LAN IP, login, RouterOS script): https://docs.hardwario.com/ember/hotspot-configuration/
 - EMBER Cloud Service (managed ChirpStack + Node-RED): https://docs.hardwario.com/ember/cloud-service/
-- ChirpStack: https://www.chirpstack.io/
-- The Things Stack (TTS): https://www.thethingsindustries.com/docs/
-- Ubidots: https://ubidots.com/
-- ThingsBoard: https://thingsboard.io/
 
 ---
 
@@ -51,7 +47,7 @@ Hardware description: https://docs.hardwario.com/ember/hardware-description/
 - **Attach the LoRaWAN antenna before powering on.**
 - If your unit includes LTE, it may use **two LTE antennas** (internal/external depending on configuration).
 
-More details: https://docs.hardwario.com/ember/hardware-description/
+More details: https://docs.hardwario.com/ember/hardware-description/#antennas
 
 #### 1.2 Power the gateway
 EMBER can be powered by:
@@ -59,51 +55,46 @@ EMBER can be powered by:
 - **24 V DC power supply**
 - **24 V DC passive PoE** through the **WAN Ethernet port**
 
-More details: https://docs.hardwario.com/ember/hardware-description/
+More details: https://docs.hardwario.com/ember/hardware-description/#power-supply-options
 
 #### 1.3 Outdoor mounting safety note
-For outdoor installations, mount EMBER with **connectors facing down**.  
-https://docs.hardwario.com/ember/hardware-description/
+:::danger
+
+For outdoor installations, **EMBER Hotspot** has to be mounted with connectors facing down.
+
+:::
 
 ---
 
 ## 2) Connect for local access
 
-EMBER runs **MikroTik RouterOS**. The easiest “day 1” workflow is to plug into LAN and open WebFig.
+EMBER runs **MikroTik RouterOS**.  
+For initial access and management, use the LAN interface and standard RouterOS tools.
 
-#### 2.1 Plug your PC into the LAN port
-Default management network:
-- **LAN IP (gateway):** `172.31.255.254`
-- LAN is **non-routed** and provides **DHCP server** functionality.
+**Main documentation (recommended start):**
+- EMBER Hotspot configuration & local access:  
+  https://docs.hardwario.com/ember/hotspot-configuration/
 
-Hotspot configuration reference: https://docs.hardwario.com/ember/hotspot-configuration/
-
-#### 2.2 Log in to RouterOS
-Default login credentials:
-- **Username:** `admin`
-- **Password:** `ember`
-
-Management options:
-- SSH
-- WinBox (desktop)
-- WebFig (browser)
-- RouterOS API
-
-Reference: https://docs.hardwario.com/ember/hotspot-configuration/
-
-> Recommended: after onboarding, change credentials and review access rules according to your security policy.
+Additional references:
+- MikroTik RouterOS overview:  
+  https://help.mikrotik.com/docs/spaces/ROS/pages/328059/RouterOS
+- WebFig (browser management):  
+  https://help.mikrotik.com/docs/spaces/ROS/pages/328131/WebFig
 
 ---
 
-## 3) Optional: update RouterOS 
+## 3) Optional: update RouterOS
 
-If you need a controlled, up-to-date baseline:
-- HARDWARIO guide (WebFig → System → Packages): https://docs.hardwario.com/ember/mikrotik/gateway-update/
+Use this section if you need to update or align the RouterOS version on EMBER.
 
-Official MikroTik docs:
-- RouterOS Manual: https://help.mikrotik.com/docs/spaces/ROS/pages/328059/RouterOS
-- WebFig overview: https://help.mikrotik.com/docs/spaces/ROS/pages/328131/WebFig
-- MikroTik downloads (WinBox / RouterOS): https://mikrotik.com/download
+**Main documentation (HARDWARIO):**
+- RouterOS update on EMBER (WebFig workflow):  
+  https://docs.hardwario.com/ember/mikrotik/gateway-update/
+
+Additional references:
+- MikroTik downloads (RouterOS / WinBox):  
+  https://mikrotik.com/download
+
 
 ---
 
@@ -112,76 +103,72 @@ Official MikroTik docs:
 At a high level:
 **LoRaWAN devices → EMBER (gateway) → LoRaWAN Network Server → Integrations → Dashboards / Apps**
 
-#### Path A — EMBER Cloud Service (managed ChirpStack + Node-RED)
-This is the fastest path if you want a ready-to-use backend operated for you.
+### EMBER Cloud Service (managed backend)
 
-Docs: https://docs.hardwario.com/ember/cloud-service/
+**EMBER Cloud Service** is a fully managed LoRaWAN backend operated by HARDWARIO.  
+It is designed for a fast start without the need to run your own infrastructure.
 
-#### How to access the web management
-Login URL format:
-- `https://<customer identifier>-<service index>.ember.hardwario.cloud/`
+What the service typically provides:
+- **ChirpStack** – LoRaWAN Network Server  
+- **Node-RED** – data processing, payload decoding, and forwarding  
+- Preconfigured connectivity between the gateway, LNS, and integrations
 
-Inside the portal, services are typically labeled:
-- `cs` = ChirpStack
-- `nr` = Node-RED
+👉 Recommended if you want to **get data from devices quickly** and forward it to applications or dashboards.
 
-#### ChirpStack access (EMBER Cloud Service)
-ChirpStack URL format:
-- `https://ember-<customer identifier>-<service index>-cs.tp.hardwario.com/`
+#### Key links
+- Service overview and concept:  
+  **https://docs.hardwario.com/ember/cloud-service/**
 
-Default ChirpStack credentials (as documented):
-- Username: `admin`
-- Password: `admin`
+- EMBER Cloud web portal (service management):  
+  https://docs.hardwario.com/ember/cloud-service/#web-management
 
-Docs: https://docs.hardwario.com/ember/cloud-service/
+- ChirpStack in EMBER Cloud Service:  
+  https://docs.hardwario.com/ember/cloud-service/#chirpstack-lorawan-server
 
-#### Node-RED access (EMBER Cloud Service)
-Node-RED URL format:
-- `https://ember-<customer identifier>-<service index>-nr.tp.hardwario.com/`
-
-Data is delivered to Node-RED using MQTT (Mosquitto) at:
-- `localhost:1883`
-
-Default uplink topic:
-- `application/+/device/+/event/up`
-
-Docs: https://docs.hardwario.com/ember/cloud-service/
-
-> Practical tip: Decoding payloads in Node-RED is often more flexible than decoding directly in ChirpStack.
+- Node-RED in EMBER Cloud Service:  
+  https://docs.hardwario.com/ember/cloud-service/#node-red-application
 
 ---
 
-#### Path B — Your own ChirpStack (self-hosted)
-Use this path when you operate your own LoRaWAN infrastructure.
+### ChirpStack (self-hosted)
 
-Start here:
+**Main documentation (recommended start):**
+- ChirpStack (LoRaWAN Network Server overview):  
+  **https://docs.hardwario.com/ember/lorawan-network-server/lorawan-chirpstack**
+
+Additional resources:
 - Add EMBER gateway to ChirpStack v4 (HARDWARIO tutorial):  
   https://docs.hardwario.com/ember/chirpstack/chirpstack-ember/
 
-(Optional) Install ChirpStack v4 (Debian/Ubuntu guide):
-- https://docs.hardwario.com/ember/chirpstack-v4-installation/
+- (Optional) Install ChirpStack v4 (Debian/Ubuntu):  
+  https://docs.hardwario.com/ember/chirpstack-v4-installation/
 
-Official ChirpStack docs (gateway connectivity):
-- https://www.chirpstack.io/docs/guides/connect-gateway.html
+- Official ChirpStack docs (gateway connectivity):  
+  https://www.chirpstack.io/docs/guides/connect-gateway.html
 
 ---
 
-#### Path C — The Things Stack (TTS)
-Use this path when you want to connect EMBER to TTS/TTN-style deployments.
+### The Things Stack
 
-TTS docs home:
-- https://www.thethingsindustries.com/docs/
+**Main documentation (recommended start):**
+- The Things Stack (LoRaWAN Network Server overview):  
+  **https://docs.hardwario.com/ember/lorawan-network-server/lorawan-tts**
+
+Additional resources:
+- TTS documentation home:  
+  https://www.thethingsindustries.com/docs/
 
 Protocol note:
-- Many gateways use **Semtech UDP Packet Forwarder**, but it has known security/scalability drawbacks.
+- Many gateways use **Semtech UDP Packet Forwarder**, but it has known security and scalability drawbacks.  
   TTS recommends **LoRa Basics™ Station** when possible.
 
-Reference (Semtech UDP concept page):
-- https://www.thethingsindustries.com/docs/hardware/gateways/concepts/udp/
+Reference:
+- Semtech UDP Packet Forwarder concept:  
+  https://www.thethingsindustries.com/docs/hardware/gateways/concepts/udp/
 
 ---
 
-#### Path D — Your own LoRaWAN Network Server / custom forwarding
+### Self-Hosted LoRaWAN Server
 If you already run another LoRaWAN server, you can set EMBER to forward packets to your server.
 
 Key note from the official Hotspot Configuration:
@@ -192,31 +179,46 @@ Reference: https://docs.hardwario.com/ember/hotspot-configuration/
 
 ---
 
-## 5) Dashboards & visualization 
+## 5) Dashboards & visualization
 
 Once your LoRaWAN server receives uplinks, you typically:
-1) decode payload → 2) transform to JSON/telemetry → 3) send to dashboard via HTTP/MQTT.
+1) decode payload → 2) transform to JSON/telemetry → 3) send to a dashboard via HTTP/MQTT.
 
-If you use **EMBER Cloud Service**, Node-RED is usually the fastest way to transform and forward data.
+If you use **EMBER Cloud Service**, **Node-RED** is usually the fastest way to transform and forward data.
 
-#### Option 1 — Ubidots
-Official links:
-- Ubidots home: https://ubidots.com/
-- Ubidots docs: https://ubidots.com/docs/
+### Ubidots
 
-HARDWARIO example page (creating a device):
-- https://docs.hardwario.com/apps/ubidots/creating-device/
+**Main documentation (HARDWARIO):**
+- Ubidots integration overview:  
+  **https://docs.hardwario.com/apps/ubidots/index**
 
-If your deployment uses the HARDWARIO-hosted Ubidots instance:
-- https://ubidots.hardwario.com/
+Additional resources:
+- Ubidots home:  
+  https://ubidots.com/
+- Ubidots documentation:  
+  https://ubidots.com/docs/
 
-#### Option 2 — ThingsBoard
-Official links:
-- ThingsBoard home: https://thingsboard.io/
-- ThingsBoard docs: https://thingsboard.io/docs/
 
-If your deployment uses the HARDWARIO-hosted ThingsBoard instance:
-- https://thingsboard.hardwario.com/
+- HARDWARIO-hosted Ubidots instance (if applicable):  
+  https://ubidots.hardwario.com/
+
+---
+
+### ThingsBoard
+
+**Main documentation (HARDWARIO):**
+- ThingsBoard integration overview:  
+  **https://docs.hardwario.com/apps/thingsboard/index**
+
+Additional resources:
+- ThingsBoard home:  
+  https://thingsboard.io/
+- ThingsBoard documentation:  
+  https://thingsboard.io/docs/
+
+- HARDWARIO-hosted ThingsBoard instance (if applicable):  
+  https://thingsboard.hardwario.com/
+
 
 ---
 

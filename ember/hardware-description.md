@@ -2,36 +2,51 @@
 slug: hardware-description
 title: Hardware Description
 ---
-import Image from '@theme/IdealImage';
 
 # Hardware Description
 
-In this article, you will find details about **EMBER Hotspot** hardware configuration.
+This article describes the **hardware configuration of the EMBER Hotspot**.
 
-## EMBER Hotspot
+## EMBER Hotspot Overview
 
-The device is based on the **RBM33G** platform from **MikroTik**. It comes with a **LoRaWAN** card and an optional LTE modem. **EMBER Hotspot** enclosure and connectors are water-proof and dust-proof with **IP67** protection.
+The **EMBER Hotspot** is based on the **RBM33G** platform from **MikroTik**.  
+It is equipped with a **LoRaWAN** card and can optionally include an **LTE modem**.
 
-An external antenna has to be used for **LoRaWAN**.
+The enclosure and connectors are **water-proof and dust-proof**, providing **IP67** protection.
 
-Two internal or external antennas are used for the **LTE** modem (with support for 2G/3G/4G).
+## Antennas
 
-There are two **RJ45** metallic 100/10 Mbit/s **Ethernet** ports:
+### LoRaWAN
 
-* **LAN** for local configuration, management, and troubleshooting
+- Requires one external antenna
 
-* **WAN** for backup Internet connectivity to the cloud
+### LTE
 
-The **EMBER Hotspot** is powered either by:
+- Uses two antennas
+- Antennas can be internal or external
+- Supports 2G / 3G / 4G
 
-* 24 V DC power adapter
+## Network Interfaces
 
-* 24 V DC power supply
+The **EMBER Hotspot** provides two metallic **RJ45 Ethernet ports** (100/10 Mbit/s):
 
-* 24 V DC passive **PoE** (Power over Ethernet) through the **WAN** Ethernet port
+- **LAN**
+  - Local configuration
+  - Device management
+  - Troubleshooting
+
+- **WAN**
+  - Backup Internet connectivity to the cloud
+  - Used for PoE power input
+
+## Power Supply Options
+
+The device can be powered by:
+
+- 24 V DC power adapter
+- 24 V DC power supply
+- 24 V DC passive **PoE** (Power over Ethernet) via the **WAN** port
 
 :::danger
-
-For outdoor installations, **EMBER Hotspot** has to be mounted with connectors facing down.
-
+For outdoor installations, the **EMBER Hotspot must be mounted with connectors facing down**.
 :::
