@@ -57,21 +57,33 @@ In the article, we use two terms:
 
 1. Download, install, and launch the [**Raspberry Pi Imager**](https://github.com/raspberrypi/rpi-imager) tool.
 
-1. Click **CHOOSE DEVICE** and select **Compute Module 4**.
+1. In the **Device** step, select **Raspberry Pi 4** (this includes Compute Module 4).
 
-1. Click **CHOOSE OS**, select **Raspberry Pi OS (other)**, and then select **Raspberry Pi OS Lite (64-bit)**.
+   <Image img={require('./rpi-imager-select-device.png')} />
 
-1. Click **CHOOSE STORAGE** and select the **FIBER** device.
+1. In the **OS** step, select **Raspberry Pi OS (other)**.
 
-1. Click **NEXT** - the tool will ask about the settings customization - click **EDIT SETTINGS**.
+   <Image img={require('./rpi-imager-choose-os.png')} />
 
-1. Check **Set hostname**.
+1. Select **Raspberry Pi OS Lite (64-bit)**.
 
-1. Enter a hostname for your **FIBER** into the **hostname** field (e.g. `fiber`).
+   <Image img={require('./rpi-imager-choose-os-lite.png')} />
 
-1. Check **Set username and password**.
+1. In the **Storage** step, select the **FIBER** device (shown as **RPi-MSD-0001 Media**).
 
-1. Enter a username and a password into the **username** and **password** fields respectively.
+   <Image img={require('./rpi-imager-select-storage.png')} />
+
+1. In the **Customisation** step, enter a hostname for your **FIBER** device (e.g. `fiber`).
+
+   <Image img={require('./rpi-imager-hostname.png')} />
+
+1. In the **Localisation** section, select your location, time zone, and keyboard layout.
+
+   <Image img={require('./rpi-imager-localisation.png')} />
+
+1. In the **User** section, enter a username and password.
+
+   <Image img={require('./rpi-imager-user.png')} />
 
    :::tip
 
@@ -85,26 +97,36 @@ In the article, we use two terms:
 
    :::
 
-1. Optional: Check **Configure Wireless LAN**.
+1. Optional: In the **Wi-Fi** section, enter your wireless network's SSID and password.
 
-1. Optional: Enter your wireless network's SSID and password into the **SSID** and **Password** fields respectively.
+   <Image img={require('./rpi-imager-wifi.png')} />
 
-1. Optional: Set the **Wireless LAN Country** drop-down to the country where the **FIBER** device will be used.
+1. In the **Remote access** section, enable **SSH** and select your preferred authentication method.
 
-1. Check **Set locale settings**.
+   <Image img={require('./rpi-imager-ssh.png')} />
 
-1. Select your time zone in the **Time zone** drop-down menu.
+1. Optional: In the **Raspberry Pi Connect** section, you can enable remote access via Raspberry Pi Connect. For this guide, we leave it disabled.
 
-1. Select your preferred keyboard layout in the **Keyboard layout** drop-down menu.
+   <Image img={require('./rpi-imager-connect.png')} />
 
-1. Write image to the device.
+1. Review the summary and click **WRITE** to start the flashing process.
+
+   <Image img={require('./rpi-imager-summary.png')} />
+
+1. Confirm the warning dialog by clicking **I UNDERSTAND, ERASE AND WRITE**.
+
+   <Image img={require('./rpi-imager-confirm.png')} />
+
+1. Wait for the writing process to complete.
+
+   <Image img={require('./rpi-imager-writing.png')} />
 
 1. When finished, press the **RESET** button on the **TARGET** (located next to the USB connector).
 
-1. Wait for the **TARGET** to boot, and connect to the network.
+1. Wait for the **TARGET** to boot and connect to the network.
 
    :::tip
-   
+
    You may find the IP address of your **TARGET** from your DHCP server's leases.
 
    :::
