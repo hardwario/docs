@@ -373,91 +373,26 @@ This section installs and configures the **ChirpStack Concentratord** for the Lo
 
    ```sh
    cat << EOF | sudo tee /etc/chirpstack-concentratord/chirpstack-concentratord.toml > /dev/null
-   # Concentratord configuration.
    [concentratord]
-     # Log level.
-     #
-     # Valid options are:
-     #   * TRACE
-     #   * DEBUG
-     #   * INFO
-     #   * WARN
-     #   * ERROR
-     #   * OFF
      log_level="INFO"
-
-     # Log to syslog.
-     #
-     # When set to true, log messages are being written to syslog instead of stdout.
      log_to_syslog=false
-
-     # Statistics interval.
      stats_interval="30s"
-
-     # Disable CRC status filter.
-     #
-     # By default, the Concentratord will ignore received frames which do not have
-     # a valid CRC. This option makes it possible to disable this filter such that
-     # received frames without (valid) CRC can be analyzed.
      disable_crc_filter=false
 
-     # Configuration for the (ZeroMQ based) API.
      [concentratord.api]
-       # Event PUB socket bind.
        event_bind="ipc:///tmp/concentratord_event"
-
-       # Command REP socket bind.
        command_bind="ipc:///tmp/concentratord_command"
 
-   # LoRa gateway configuration.
    [gateway]
-
-     # Antenna gain (dB).
      antenna_gain=0
-
-     # Public LoRaWAN network.
      lorawan_public=true
-
-     # Region.
-     #
-     # The region of the gateway. Options:
-     #  EU868, US915, CN779, EU433, AU915, CN470, AS923, AS923_2, AS923_3, AS923_4,
-     #  KR923, IN865, RU864
-     #
-     # Not all gateway models implement all regions.
      region="EU868"
-
-     # Gateway vendor / model.
-     #
-     # This configures various vendor and model specific settings.
      model="rak_5146"
-
-     # Gateway vendor / model flags.
-     #
-     # Flag can be used to configure additional vendor / model features. The
-     # following flags can be used:
-     #
-     #   Global flags:
-     #     GNSS - Enable GNSS / GPS support
-     #     USB  - Use USB for concentrator communication (default is SPI)
      model_flags=["USB"]
-
-     # Time fallback.
-     #
-     # In case the gateway does not have a GNSS module or is unable to aquire a
-     # GNSS fix, use the system-time for setting the 'time' field on RX.
      time_fallback_enabled=true
-
-     # Gateway ID.
-     #
-     # Only set this if you would like to override the Gateway ID provided by the SX1302/3.
      gateway_id=""
 
-
-     # LoRa concentrator configuration.
      [gateway.concentrator]
-
-       # Multi spreading-factor channels (LoRa).
        multi_sf_channels=[
          868100000,
          868300000,
@@ -469,25 +404,17 @@ This section installs and configures the **ChirpStack Concentratord** for the Lo
          867900000,
        ]
 
-       # LoRa std channel (single spreading-factor).
        [gateway.concentrator.lora_std]
          frequency=868300000
          bandwidth=250000
          spreading_factor=7
 
-       # FSK channel.
        [gateway.concentrator.fsk]
          frequency=868800000
          bandwidth=125000
          datarate=50000
 
-
-     # Static gateway location.
      [gateway.location]
-
-       # When set to non-zero values, the static gateway location will be reported
-       # when the gateway does not have a GNSS module or when no GNSS location fix
-       # is available.
        latitude=0.0
        longitude=0.0
        altitude=0
