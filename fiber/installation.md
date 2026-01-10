@@ -264,6 +264,63 @@ This section configures the I2C bus and real-time clock (RTC) on the **FIBER** d
    sudo apt install chirpstack-sqlite
    ```
 
+1. Create the SQLite database file with proper ownership and permissions:
+
+   ```sh
+   sudo install -o chirpstack -g chirpstack -m 0640 /dev/null /var/lib/chirpstack/chirpstack.sqlite
+   ```
+
+1. Write the **ChirpStack** configuration file:
+
+   ```sh
+   cat << 'EOF' | sudo tee /etc/chirpstack/chirpstack.toml > /dev/null
+   [logging]
+     level = "info"
+
+   [sqlite]
+     path="sqlite:///var/lib/chirpstack/chirpstack.sqlite"
+     pragmas=[
+       "busy_timeout = 1000",
+       "foreign_keys = ON",
+     ]
+
+   [redis]
+     servers = ["redis://localhost/"]
+     cluster = false
+
+   [network]
+     net_id = "000000"
+     enabled_regions = [
+       "as923",
+       "as923_2",
+       "as923_3",
+       "as923_4",
+       "au915_0",
+       "cn470_10",
+       "cn779",
+       "eu433",
+       "eu868",
+       "in865",
+       "ism2400",
+       "kr920",
+       "ru864",
+       "us915_0",
+       "us915_1",
+     ]
+
+   [api]
+     bind = "0.0.0.0:8080"
+     secret = "you-must-replace-this"
+
+   [integration]
+     enabled = ["mqtt"]
+
+     [integration.mqtt]
+       server = "tcp://localhost:1883/"
+       json = true
+   EOF
+   ```
+
 1. Generate and set a random secret key in the **ChirpStack** configuration:
 
    ```sh
@@ -273,13 +330,19 @@ This section configures the I2C bus and real-time clock (RTC) on the **FIBER** d
 1. Enable the **ChirpStack** service to start automatically on boot:
 
    ```sh
-   sudo systemctl enable chirpstack
+   sudo systemctl enable chirpstack-sqlite
    ```
 
 1. Start the **ChirpStack** service:
 
    ```sh
-   sudo systemctl start chirpstack
+   sudo systemctl start chirpstack-sqlite
+   ```
+
+1. Check the service logs to verify successful startup:
+
+   ```sh
+   sudo journalctl -fu chirpstack-sqlite
    ```
 
 1. Now, you can access **ChirpStack** at this address: `http://[TARGET IP ADDRESS]:8080/`
