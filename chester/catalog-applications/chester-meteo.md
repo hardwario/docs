@@ -545,7 +545,7 @@ Pressure is in **pascals**.
   </TabItem>
   <TabItem value="lora" label="LoRaWAN">
 
-	```json
+```json
 {
   "system": {
     "voltage_rest": 3.7
@@ -566,7 +566,7 @@ Pressure is in **pascals**.
     "humidity": 60.5
   }
 }
-	```
+```
     
   </TabItem>
 </Tabs>

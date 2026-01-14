@@ -408,7 +408,8 @@ import TabItem from '@theme/TabItem';
 ```
   </TabItem>
   <TabItem value="lora" label="LoRaWAN">
-	```json
+
+```json
 {
   "system": {
     "uptime": 1200,
@@ -435,8 +436,8 @@ import TabItem from '@theme/TabItem';
     ]
   }
 }
-	```
-    OBSAH PRO LORAWAN
+```
+
   </TabItem>
 </Tabs>
 

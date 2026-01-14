@@ -225,11 +225,10 @@ import TabItem from '@theme/TabItem';
 }
 ```
 
-
   </TabItem>
   <TabItem value="lora" label="LoRaWAN">
 
-	```json
+```json
 {
   "system": {
     "voltage_rest": 3.8
@@ -240,7 +239,7 @@ import TabItem from '@theme/TabItem';
   },
   "orientation": 1
 }
-	```
+```
     
   </TabItem>
 </Tabs>

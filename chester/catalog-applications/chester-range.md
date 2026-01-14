@@ -250,7 +250,7 @@ Every available sensor has one aggrevated measurement, which contains the minimu
   </TabItem>
   <TabItem value="lora" label="LoRaWAN">
 
-	```json
+```json
 {
   "system": {
     "voltage_rest": 3.6
@@ -260,7 +260,7 @@ Every available sensor has one aggrevated measurement, which contains the minimu
     "signal_quality": 25
   }
 }
-	```
+```
     
   </TabItem>
 </Tabs>
