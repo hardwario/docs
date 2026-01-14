@@ -10,6 +10,6 @@ HARDWARIO offers three types of STICKER devices – STICKER Clime for precise te
 
 | Application Name | Application Goal |
 |------------------|------------------|
-| [Sticker Clime](sticker-clime)    | Temperature and humidity |
-| [Sticker Input](sticker-input)    | Analog and digital inputs |
-| [Sticker Motion](sticker-motion)           | Low power motion detector |
+| [**Sticker Clime**](sticker-clime)    | Temperature and humidity |
+| [**Sticker Input**](sticker-input)    | Analog and digital inputs |
+| [**Sticker Motion**](sticker-motion)           | Low power motion detector |

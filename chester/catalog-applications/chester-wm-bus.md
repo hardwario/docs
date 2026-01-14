@@ -297,6 +297,12 @@ The latest firmware is available in Catalog Applications [Firmware chapter](inde
 
 ## Example JSON Message
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+  <TabItem value="lte" label="LTE">
+    
 In this example **JSON** you can see raw data from two wM-Bus sensors
 
 Each JSON cloud message contains up to 20 wM-Bus packets. If CHESTER is configured for more than 20 devices, then the raw wM-Bus packets are split to multiple JSON messages.
@@ -357,6 +363,28 @@ Each JSON cloud message contains up to 20 wM-Bus packets. If CHESTER is configur
     }
 }
 ```
+
+  </TabItem>
+  <TabItem value="lora" label="LoRaWAN">
+
+	```json
+	{
+  "system": {
+    "uptime": 12000,
+    "voltage_load": 3.6
+  },
+  "wmbus": {
+    "mode": "T1",
+    "packet_count": 5,
+    "status": "ok"
+  }
+}
+	```
+    
+  </TabItem>
+</Tabs>
+
+
 
 ## Hardwario Cloud – Decryption Keys
 

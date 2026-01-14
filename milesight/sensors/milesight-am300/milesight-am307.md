@@ -31,7 +31,7 @@ Milesight AM307 is an **indoor ambience monitoring sensor** that measures **seve
 | Resource        | Link                                                                 |
 |-----------------|----------------------------------------------------------------------|
 | HARDWARIO Store | Not yet available                      |
-| Official page   | https://www.milesight.com/iot/product/lorawan-sensor/am307           |
+| Official page   | https://www.milesight.com/iot/product/lorawan-sensor/am319           |
 | User Guide      | https://resource.milesight.com/milesight/iot/document/am300-series-user-guide-en.pdf |
 | Datasheet       | https://resource.milesight.com/milesight/iot/document/am300-series-datasheet-en.pdf |
 

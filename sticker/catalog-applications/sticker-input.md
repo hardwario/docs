@@ -8,9 +8,15 @@ import Image from '@theme/IdealImage';
 
 **STICKER Input** is a compact, wireless LoRaWAN module for connecting external sensors and reading digital or analog signals. Powered by two AA batteries, it supports 1-Wire temperature probes, voltage and current measurement, and monitoring of digital inputs up to 30 V, making it a versatile tool for industrial and monitoring applications.
 
-[Web-site](https://www.hardwario.com/sticker/input)
-
 ![Sticker Input](sticker-input-top.png)
+
+## Quick Links
+
+* [**Getting Started Guide**](https://docs.hardwario.com/sticker/getting-started) – Step-by-step setup guide.
+* [**Buy STICKER Input**](https://www.hardwario.store/p/sticker-input) – Purchase on our store.
+* [**Ordering Codes**](https://docs.hardwario.com/sticker/ordering-codes) - List of components and part numbers.
+* [**Hardware Description**](https://docs.hardwario.com/sticker/hardware-description) - Technical details and hardware overview.
+* [**Official Product Page**](https://www.hardwario.com/sticker) – Features and overview.
 
 ## Typical use cases
 
@@ -28,3 +34,18 @@ import Image from '@theme/IdealImage';
 Documentation → [**STICKER Input Wiring**](/sticker/sticker-input-wiring/index.md)
 
 Here you can find information about STICKER input wiring, including DIP switch settings and supported modes such as 1-Wire sensors, dry contact inputs, and 0–24 V analog inputs.
+
+## Example JSON Message
+
+```json
+{
+  "input_1": true,
+  "input_2": false,
+  "count_1": 15,
+  "count_2": 0,
+  "voltage": 3.05,
+  "battery": 99,
+  "orientation": 1,
+  "event": "change"
+}
+```

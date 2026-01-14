@@ -10,10 +10,6 @@ This tutorial guides you through the process of adding and configuring a gateway
 
 ---
 
-:::tip
-If you need further assistance or a visual demonstration of the process described in this guide, consult the [**Video Guide**](https://docs.hardwario.com/apps/videos-apps/chirpstack-ember).
-:::
-
 From the left navigation menu, under tenant, select **Gateways** and then click the **Add Gateway** button in the top right.  
 
 A form will appear where you can enter gateway information such as:  
@@ -44,3 +40,8 @@ https://docs.hardwario.com/ember/mikrotik-gateway-configuration
 
 
 
+## Video Tutorial
+
+:::tip
+If you need further assistance or a visual demonstration of the process described in this guide, consult the [**Video Guide**](https://docs.hardwario.com/apps/videos-apps/chirpstack-ember).
+:::

@@ -44,6 +44,7 @@
     "node": ">=18.0.0"
   },
   "devDependencies": {
-    "@docusaurus/theme-search-algolia": "^3.9.2"
+    "@docusaurus/theme-search-algolia": "^3.9.2",
+    "baseline-browser-mapping": "^2.9.14"
   }
 }

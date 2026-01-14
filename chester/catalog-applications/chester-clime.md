@@ -278,7 +278,12 @@ The latest firmware is available in the Catalog Applications [Firmware chapter](
 
 ## Example JSON Message
 
-In this example **JSON** you can see data from all three variants
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+  <TabItem value="lte" label="LTE">
+    In this example **JSON** you can see data from all three variants
 
 - **CHESTER Clime** has its own `hygrometer` structure.
 - **CHESTER Clime IAQ**  has its own `iaq_sensor` structure.
@@ -1021,3 +1026,40 @@ In each structure with the current configuration, there are six aggregated value
   ]
 }
 ```
+  </TabItem>
+  <TabItem value="lora" label="LoRaWAN">
+    ```json
+    {
+  "system": {
+    "uptime": 45200,
+    "voltage_load": 3.65,
+    "current_load": 12
+  },
+  "thermometer": {
+    "measurements": [
+      {
+        "timestamp": 1685093569,
+        "min": 22.1,
+        "max": 22.5,
+        "avg": 22.3,
+        "mdn": 22.3
+      }
+    ]
+  },
+  "hygrometer": {
+    "measurements": [
+      {
+        "timestamp": 1685093569,
+        "min": 45.0,
+        "max": 46.2,
+        "avg": 45.6,
+        "mdn": 45.5
+      }
+    ]
+  }
+}
+    ```
+  </TabItem>
+</Tabs>
+
+

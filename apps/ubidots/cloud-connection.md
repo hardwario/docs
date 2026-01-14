@@ -184,6 +184,8 @@ import EditCodeBlock from './edit-code-block.js';
 
 Once everything is properly configured, your device’s data should begin flowing into Ubidots automatically.
 
+## Video Tutorial
+
 :::tip
 If you need further assistance or a visual demonstration of the process described in this guide, consult the [Video Guide](https://docs.hardwario.com/apps/videos-apps/ubidots-cloud-connection).
 :::

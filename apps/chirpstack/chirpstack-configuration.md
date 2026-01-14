@@ -247,12 +247,6 @@ Within your **Application**, go to the **Integrations** tab and choose the integ
 
 ---
 
-:::tip
-If you need further assistance or a visual demonstration of the process described in this guide, consult the [Video Guide](https://docs.hardwario.com/apps/videos-apps/chirpstack-configuration).
-:::
-
----
-
 ## Ember Gateways – MikroTik Software  
 
 If you are using our **EMBER** as the gateway, all of its configuration must be done directly in the **MikroTik system**.
@@ -263,3 +257,9 @@ https://docs.hardwario.com/ember/mikrotik/gateway-update
 
 Here is the link to the **step-by-step guide** for **updating the gateway via MikroTik**:
 https://docs.hardwario.com/ember/mikrotik/gateway-configuration
+
+## Video Tutorial
+
+:::tip
+If you need further assistance or a visual demonstration of the process described in this guide, consult the [Video Guide](https://docs.hardwario.com/apps/videos-apps/chirpstack-configuration).
+:::

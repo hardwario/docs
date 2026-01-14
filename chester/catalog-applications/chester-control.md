@@ -292,7 +292,12 @@ The device is polling the Cloud in an interval set by `interval-poll` parameter 
 
 ## Example JSON Message
 
-```json
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+  <TabItem value="lte" label="LTE">
+    ```json
 {
     "accelerometer": {
         "accel_x": 0,
@@ -401,3 +406,26 @@ The device is polling the Cloud in an interval set by `interval-poll` parameter 
     ]
 }
 ```
+  </TabItem>
+  <TabItem value="lora" label="LoRaWAN">
+	```json
+	{
+  "system": {
+    "uptime": 3600,
+    "voltage_load": 24.0
+  },
+  "inputs": {
+    "states": [true, false, false, true]
+  },
+  "relays": {
+    "states": [false, true]
+  },
+  "thermometer": {
+    "temperature": 25.4
+  }
+}
+	```
+    OBSAH PRO LORAWAN
+  </TabItem>
+</Tabs>
+

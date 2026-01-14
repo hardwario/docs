@@ -284,6 +284,12 @@ The latest firmware is available in Catalog Applications [Firmware chapter](http
 
 ## Example JSON Message
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+  <TabItem value="lte" label="LTE">
+    
 ```json
 {
   "message": {
@@ -455,3 +461,20 @@ The latest firmware is available in Catalog Applications [Firmware chapter](http
   }
 }
 ```
+
+  </TabItem>
+  <TabItem value="lora" label="LoRaWAN">
+
+	```json
+	{
+  "inputs": [
+    { "channel": 1, "state": true, "count": 102 },
+    { "channel": 2, "state": false, "count": 10 }
+  ],
+  "system": { "voltage": 3.6 }
+}
+	```
+    
+  </TabItem>
+</Tabs>
+
