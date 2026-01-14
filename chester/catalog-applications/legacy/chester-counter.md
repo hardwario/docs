@@ -181,12 +181,23 @@ This example message was sent by a **CHESTER** with an **X0** module only in the
   <TabItem value="lora" label="LoRaWAN">
 
 	```json
-	{
-  "counters": [
-    { "channel": 1, "value": 5002 },
-    { "channel": 2, "value": 123 }
-  ],
-  "system": { "voltage": 3.6 }
+{
+  "system": {
+    "uptime": 86400,
+    "voltage_rest": 3.6
+  },
+  "counter": {
+    "channels": [
+      {
+        "id": 0,
+        "count": 5020
+      },
+      {
+        "id": 1,
+        "count": 120
+      }
+    ]
+  }
 }
 	```
     

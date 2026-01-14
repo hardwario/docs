@@ -409,19 +409,30 @@ import TabItem from '@theme/TabItem';
   </TabItem>
   <TabItem value="lora" label="LoRaWAN">
 	```json
-	{
+{
   "system": {
-    "uptime": 3600,
-    "voltage_load": 24.0
+    "uptime": 1200,
+    "voltage_rest": 24.0
   },
-  "inputs": {
-    "states": [true, false, false, true]
+  "digital_inputs": {
+    "channels": [
+      {
+        "id": 0,
+        "state": true
+      },
+      {
+        "id": 1,
+        "state": false
+      }
+    ]
   },
-  "relays": {
-    "states": [false, true]
-  },
-  "thermometer": {
-    "temperature": 25.4
+  "digital_outputs": {
+    "channels": [
+      {
+        "id": 0,
+        "state": true
+      }
+    ]
   }
 }
 	```

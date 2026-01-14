@@ -546,29 +546,24 @@ Pressure is in **pascals**.
   <TabItem value="lora" label="LoRaWAN">
 
 	```json
-	{
+{
   "system": {
-    "voltage_load": 3.7
+    "voltage_rest": 3.7
   },
-  "wind_sensor": {
-    "measurements": [
-      {
-        "timestamp": 1685093500,
-        "speed_avg": 3.5,
-        "speed_max": 5.2,
-        "direction": 180
-      }
-    ]
+  "wind": {
+    "speed": 2.5,
+    "direction": 180,
+    "gust": 4.1
   },
-  "rain_sensor": {
-    "total": 12.5,
-    "rate": 0.0
+  "rain": {
+    "count": 10,
+    "total": 2.0
   },
   "thermometer": {
-    "temperature": 18.2
+    "temperature": 19.5
   },
   "hygrometer": {
-    "humidity": 65.0
+    "humidity": 60.5
   }
 }
 	```

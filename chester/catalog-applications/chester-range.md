@@ -251,22 +251,14 @@ Every available sensor has one aggrevated measurement, which contains the minimu
   <TabItem value="lora" label="LoRaWAN">
 
 	```json
-	{
+{
   "system": {
-    "voltage_load": 3.6
+    "voltage_rest": 3.6
   },
-  "distance": {
-    "measurements": [
-      {
-        "timestamp": 1685093569,
-        "min": 1500,
-        "max": 1505,
-        "avg": 1502,
-        "mdn": 1502
-      }
-    ]
-  },
-  "orientation": 1
+  "range": {
+    "distance": 1540,
+    "signal_quality": 25
+  }
 }
 	```
     

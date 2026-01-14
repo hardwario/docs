@@ -36,12 +36,13 @@ import Image from '@theme/IdealImage';
 
 ```json
 {
-  "temperature": 23.5,
-  "humidity": 48.0,
-  "voltage": 3.02,
+  "event": "interval",
+  "voltage": 3.01,
   "battery": 98,
-  "orientation": 1,
-  "event": "interval"
+  "temperature": 24.5,
+  "humidity": 48.5,
+  "illuminance": 120,
+  "pressure": 101300
 }
 ```
 
