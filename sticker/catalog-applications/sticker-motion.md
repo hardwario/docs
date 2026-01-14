@@ -33,13 +33,13 @@ import Image from '@theme/IdealImage';
 
 ```json
 {
-  "motion_count": 12,
-  "acceleration_x": 0.05,
-  "acceleration_y": -0.02,
-  "acceleration_z": 0.98,
+  "event": "motion",
+  "voltage": 3.01,
+  "battery": 98,
   "orientation": 1,
-  "voltage": 2.98,
-  "battery": 95,
-  "event": "motion"
+  "acceleration_x": 12,
+  "acceleration_y": -45,
+  "acceleration_z": 1020,
+  "count": 5
 }
 ```

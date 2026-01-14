@@ -552,26 +552,24 @@ import TabItem from '@theme/TabItem';
   </TabItem>
   <TabItem value="lora" label="LoRaWAN">
 
-	```json
-	{
+```json
+{
   "system": {
-    "uptime": 86400,
-    "voltage_load": 12.1
+    "uptime": 7200,
+    "voltage_rest": 3.6
   },
   "adc": {
     "measurements": [
       {
-        "timestamp": 1685093569,
         "channel": 0,
-        "min": 4.1,
+        "min": 4.0,
         "max": 12.5,
-        "avg": 8.2,
-        "mdn": 8.0
+        "avg": 8.2
       }
     ]
   }
 }
-	```
+```
 
   </TabItem>
 </Tabs>

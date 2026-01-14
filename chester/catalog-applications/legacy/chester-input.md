@@ -466,12 +466,20 @@ import TabItem from '@theme/TabItem';
   <TabItem value="lora" label="LoRaWAN">
 
 	```json
-	{
-  "inputs": [
-    { "channel": 1, "state": true, "count": 102 },
-    { "channel": 2, "state": false, "count": 10 }
-  ],
-  "system": { "voltage": 3.6 }
+{
+  "voltage": 3.6,
+  "channels": [
+    {
+      "id": 0,
+      "state": true,
+      "count": 100
+    },
+    {
+      "id": 1,
+      "state": false,
+      "count": 5
+    }
+  ]
 }
 	```
     

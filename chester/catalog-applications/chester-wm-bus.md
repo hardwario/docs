@@ -368,15 +368,15 @@ Each JSON cloud message contains up to 20 wM-Bus packets. If CHESTER is configur
   <TabItem value="lora" label="LoRaWAN">
 
 	```json
-	{
+{
   "system": {
-    "uptime": 12000,
-    "voltage_load": 3.6
+    "uptime": 15000,
+    "voltage_rest": 3.6
   },
   "wmbus": {
-    "mode": "T1",
-    "packet_count": 5,
-    "status": "ok"
+    "status": 0,
+    "packet_count": 125,
+    "message": "0412345678..." 
   }
 }
 	```

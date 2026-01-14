@@ -230,14 +230,13 @@ import TabItem from '@theme/TabItem';
   <TabItem value="lora" label="LoRaWAN">
 
 	```json
-	{
+{
   "system": {
-    "voltage_load": 3.8
+    "voltage_rest": 3.8
   },
   "button": {
-    "event": "press",
-    "channel": 1,
-    "counter": 42
+    "event": "single-click",
+    "count": 42
   },
   "orientation": 1
 }

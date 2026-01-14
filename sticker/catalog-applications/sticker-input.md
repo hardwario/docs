@@ -39,13 +39,13 @@ Here you can find information about STICKER input wiring, including DIP switch s
 
 ```json
 {
-  "input_1": true,
-  "input_2": false,
-  "count_1": 15,
-  "count_2": 0,
-  "voltage": 3.05,
-  "battery": 99,
+  "event": "change",
+  "voltage": 3.01,
+  "battery": 98,
   "orientation": 1,
-  "event": "change"
+  "input_1_state": true,
+  "input_1_count": 120,
+  "input_2_state": false,
+  "input_2_count": 0
 }
 ```
