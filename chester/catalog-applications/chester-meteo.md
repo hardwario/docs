@@ -130,6 +130,12 @@ The latest firmware is available in Catalog Applications [Firmware chapter](inde
 
 ## Example JSON Message
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+  <TabItem value="lte" label="LTE">
+    
 In each structure with the current configuration, there are six aggregated values. Each aggregated value has its timestamp and is computed from multiple samples, and `min`, `max`, `avg`, and `mdn` values are calculated.
 
 Wind speed is in **meters per second**.
@@ -534,3 +540,39 @@ Pressure is in **pascals**.
   ]
 }
 ```
+
+
+  </TabItem>
+  <TabItem value="lora" label="LoRaWAN">
+
+	```json
+	{
+  "system": {
+    "voltage_load": 3.7
+  },
+  "wind_sensor": {
+    "measurements": [
+      {
+        "timestamp": 1685093500,
+        "speed_avg": 3.5,
+        "speed_max": 5.2,
+        "direction": 180
+      }
+    ]
+  },
+  "rain_sensor": {
+    "total": 12.5,
+    "rate": 0.0
+  },
+  "thermometer": {
+    "temperature": 18.2
+  },
+  "hygrometer": {
+    "humidity": 65.0
+  }
+}
+	```
+    
+  </TabItem>
+</Tabs>
+

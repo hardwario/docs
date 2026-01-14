@@ -85,6 +85,12 @@ The latest firmware is available in Catalog Applications [Firmware chapter](http
 
 ## Example JSON Message
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+  <TabItem value="lte" label="LTE">
+    
 This example message was sent by a **CHESTER** with an **X0** module only in the A slot. The message was sent because of a tamper event.
 
 ```json
@@ -169,3 +175,21 @@ This example message was sent by a **CHESTER** with an **X0** module only in the
   }
 }
 ```
+
+
+  </TabItem>
+  <TabItem value="lora" label="LoRaWAN">
+
+	```json
+	{
+  "counters": [
+    { "channel": 1, "value": 5002 },
+    { "channel": 2, "value": 123 }
+  ],
+  "system": { "voltage": 3.6 }
+}
+	```
+    
+  </TabItem>
+</Tabs>
+

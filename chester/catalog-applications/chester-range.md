@@ -124,6 +124,12 @@ The latest firmware is available in Catalog Applications [Firmware chapter](inde
 
 ## Example JSON Message
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+  <TabItem value="lte" label="LTE">
+    
 In this example **JSON** you can see data from all three variants
 
 Every available sensor has one aggrevated measurement, which contains the minimum, maximum, average and median value.
@@ -240,3 +246,31 @@ Every available sensor has one aggrevated measurement, which contains the minimu
   ]
 }
 ```
+
+  </TabItem>
+  <TabItem value="lora" label="LoRaWAN">
+
+	```json
+	{
+  "system": {
+    "voltage_load": 3.6
+  },
+  "distance": {
+    "measurements": [
+      {
+        "timestamp": 1685093569,
+        "min": 1500,
+        "max": 1505,
+        "avg": 1502,
+        "mdn": 1502
+      }
+    ]
+  },
+  "orientation": 1
+}
+	```
+    
+  </TabItem>
+</Tabs>
+
+

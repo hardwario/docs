@@ -90,6 +90,14 @@ We strongly recommend updating the firmware, as the default version does not all
 3. Adjust the configuration options as needed.  
    *(Note: The Android app provides more detailed information such as device name, address, and serial number. The iOS version is more limited.)*
 
+:::info 
+Accessing the configuration requires a PIN code. 
+
+**Default PIN: 123456**
+
+This PIN can be changed later in the device settings. 
+:::
+
 #### Teltonika EYE App — Device Overview
 
 <div class="container">

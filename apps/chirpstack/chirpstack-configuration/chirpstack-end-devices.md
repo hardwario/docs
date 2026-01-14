@@ -10,10 +10,6 @@ This tutorial guides you through the process of creating device profiles and add
 
 ---
 
-:::tip
-If you need further assistance or a visual demonstration of the process described in this guide, consult the [**Video Guide**](https://docs.hardwario.com/apps/videos-apps/chirpstack-devices).
-:::
-
 ## 1. Device Profiles  
 
 After adding gateways, the next step is to create device profiles in ChirpStack.  
@@ -70,3 +66,8 @@ Finally, click **(Re)activate Device**.
 
 ![ChirStack v4 - Gateways](chirpstack-tutorial-13.png)
 
+## Video Tutorial
+
+:::tip
+If you need further assistance or a visual demonstration of the process described in this guide, consult the [**Video Guide**](https://docs.hardwario.com/apps/videos-apps/chirpstack-devices).
+:::

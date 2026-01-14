@@ -23,6 +23,7 @@ const sidebars = {
             'ubidots/creating-dashboard/metric',
             'ubidots/creating-dashboard/line-chart',
             'ubidots/creating-dashboard/html-canvas',
+            'ubidots/creating-dashboard/boolean',
             'ubidots/creating-dashboard/synthetic-variable',
           ],
         },

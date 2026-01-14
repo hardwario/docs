@@ -30,7 +30,7 @@ Milesight AM308 and AM308L are **indoor ambience monitoring sensors** that measu
 | Resource        | Link                                                                 |
 |-----------------|----------------------------------------------------------------------|
 | HARDWARIO Store | Not yet available                      |
-| Official page   | https://www.milesight.com/iot/product/lorawan-sensor/am308           |
+| Official page   | https://www.milesight.com/iot/product/lorawan-sensor/am319           |
 | User Guide      | https://resource.milesight.com/milesight/iot/document/am300-series-user-guide-en.pdf |
 | Datasheet       | https://resource.milesight.com/milesight/iot/document/am300-series-datasheet-en.pdf |
 

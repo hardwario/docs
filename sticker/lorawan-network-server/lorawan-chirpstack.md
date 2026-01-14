@@ -15,6 +15,7 @@ Useful HARDWARIO docs:
   https://docs.hardwario.com/apps/chirpstack/chirpstack-configuration/chirpstack-end-devices
 - ChirpStack v4 – Data Decoding (STICKER codec example)  
   https://docs.hardwario.com/apps/chirpstack/chirpstack-configuration/chirpstack-decoding
+- STICKER Decoder - https://github.com/hardwario/sticker-firmware/blob/main/app/decoder/ttn.js 
 
 :::info
 Before registering your STICKER, make sure **ChirpStack v4 is installed and running**.

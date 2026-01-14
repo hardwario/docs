@@ -64,10 +64,6 @@ After downloading:
 
 Your gateway is now ready to use, and you can begin connecting individual end devices.
 
-:::tip
-If you need **further assistance** or a visual demonstration of the process described in this guide, consult the [**Video Guide**](https://docs.hardwario.com/apps/videos-apps/tts-gateways).
-:::
-
 ## Removing Gateway
 
 When deleting a gateway in The Things Stack, its **Gateway ID is not fully removed from the server**. Even though the gateway disappears from the console, the ID remains reserved in the backend.  
@@ -76,3 +72,8 @@ This means it is **not possible to create a new gateway with the same ID** unles
 Only a **system administrator** has the rights to free or purge the gateway ID from the server.  
 For regular users, the only available solution is to **create the gateway again using a new, different ID**.
 
+## Video Tutorial
+
+:::tip
+If you need **further assistance** or a visual demonstration of the process described in this guide, consult the [**Video Guide**](https://docs.hardwario.com/apps/videos-apps/tts-gateways).
+:::

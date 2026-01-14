@@ -282,8 +282,12 @@ The latest firmware is available in Catalog Applications [Firmware chapter](inde
 
 ## Example JSON Message
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-```json
+<Tabs>
+  <TabItem value="lte" label="LTE">
+    ```json
 {
   "message": {
     "version": 1,
@@ -545,6 +549,32 @@ The latest firmware is available in Catalog Applications [Firmware chapter](inde
   ]
 }
 ```
+  </TabItem>
+  <TabItem value="lora" label="LoRaWAN">
+
+	```json
+	{
+  "system": {
+    "uptime": 86400,
+    "voltage_load": 12.1
+  },
+  "adc": {
+    "measurements": [
+      {
+        "timestamp": 1685093569,
+        "channel": 0,
+        "min": 4.1,
+        "max": 12.5,
+        "avg": 8.2,
+        "mdn": 8.0
+      }
+    ]
+  }
+}
+	```
+
+  </TabItem>
+</Tabs>
 
 ## Channel Calibration
 

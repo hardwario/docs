@@ -130,6 +130,8 @@ This method is used when the device is **not available** in the LoRaWAN Device R
 
 Your end device is now registered and ready to communicate with The Things Stack.
 
+## Video Tutorial
+
 :::tip
 If you need **further assistance** or a visual walkthrough, consult the  
 [**Video Guide**](https://docs.hardwario.com/apps/videos-apps/tts-end-devices).

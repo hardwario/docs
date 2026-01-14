@@ -12,12 +12,15 @@ Welcome! This page helps you **power up (revive)** your STICKER and choose what 
 - or use **your own LoRaWAN network**,
 and then visualize data in **Ubidots** or **ThingsBoard**.
 
-> STICKER is a compact, battery-powered LoRaWAN end device.  
-> Official STICKER docs: https://docs.hardwario.com/sticker/
-
 ---
 
 ## Before you start
+
+#### What STICKER is
+
+**STICKER** is an open IoT platform based on STM32WL with integrated LoRaWAN connectivity. It is a compact, battery-powered device with long lifetime and ready-to-use applications such as STICKER Clime, Input, and Motion, making it ideal for flexible sensor deployments.
+
+For detailed technical specifications of the hardware, please refer to the [**Hardware Description**](https://docs.hardwario.com/sticker/hardware-description/) page.
 
 #### You will need
 - **STICKER device** (Clime / Input / Motion)
@@ -30,6 +33,7 @@ and then visualize data in **Ubidots** or **ThingsBoard**.
 - STICKER overview: https://docs.hardwario.com/sticker/
 - STICKER product page: https://www.hardwario.com/sticker
 - STICKER store page: https://www.hardwario.store/sticker
+- STICKER **Decoder**: https://github.com/hardwario/sticker-firmware/blob/main/app/decoder/ttn.js
 - HARDWARIO datasheets hub (includes STICKER datasheet link): https://www.hardwario.com/resources/datasheets
 
 ---
@@ -88,6 +92,7 @@ Step-by-step sections:
 - Gateways: https://docs.hardwario.com/apps/chirpstack/chirpstack-configuration/chirpstack-gateways
 - End devices: https://docs.hardwario.com/apps/chirpstack/chirpstack-configuration/chirpstack-end-devices
 - Payload decoding: https://docs.hardwario.com/apps/chirpstack/chirpstack-configuration/chirpstack-decoding
+- STICKER **Decoder**: https://github.com/hardwario/sticker-firmware/blob/main/app/decoder/ttn.js
 
 ---
 
@@ -100,6 +105,7 @@ Start here (HARDWARIO guide):
 Step-by-step sections:
 - Gateways: https://docs.hardwario.com/apps/the-things-stack/tts-configuration/tts-gateways
 - End devices: https://docs.hardwario.com/apps/the-things-stack/tts-configuration/tts-end-devices
+- STICKER **Decoder**: https://github.com/hardwario/sticker-firmware/blob/main/app/decoder/ttn.js
 
 ---
 
@@ -109,7 +115,7 @@ If you already operate a LoRaWAN backend (or a local LoRaWAN stack), integrate S
 - Register the device in your NS
 - Use the correct **frequency plan/region**
 - Configure keys / activation method required by your firmware
-- Add a **payload decoder** (so you get engineering values)
+- Add a [**payload decoder**](https://github.com/hardwario/sticker-firmware/blob/main/app/decoder/ttn.js) (so you get engineering values)
 - Forward data via **MQTT / Webhooks / HTTP** to your application
 
 ---

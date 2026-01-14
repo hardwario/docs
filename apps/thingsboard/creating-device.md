@@ -54,6 +54,8 @@ In this guide, you will learn how to create a new device in ThingsBoard and mana
 
 ![Thingsboard - View Device Information](thingsboard-device-5.png)
 
+## Video Tutorial
+
 :::tip
 If you need further assistance or a visual demonstration of the process described in this guide, consult the [Video Guide](https://docs.hardwario.com/apps/videos-apps/thingsboard-new-device).
 :::

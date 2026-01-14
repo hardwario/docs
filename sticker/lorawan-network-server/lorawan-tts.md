@@ -13,7 +13,8 @@ Useful HARDWARIO docs:
   https://docs.hardwario.com/apps/the-things-stack/tts-configuration/tts-end-devices
 - STICKER codec example (JavaScript payload formatter):  
   https://docs.hardwario.com/apps/chirpstack/chirpstack-configuration/chirpstack-decoding
-
+- STICKER Decoder - https://github.com/hardwario/sticker-firmware/blob/main/app/decoder/ttn.js 
+  
 ---
 
 ## Prerequisites
