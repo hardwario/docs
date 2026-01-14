@@ -180,7 +180,7 @@ This example message was sent by a **CHESTER** with an **X0** module only in the
   </TabItem>
   <TabItem value="lora" label="LoRaWAN">
 
-	```json
+```json
 {
   "system": {
     "uptime": 86400,
@@ -199,7 +199,7 @@ This example message was sent by a **CHESTER** with an **X0** module only in the
     ]
   }
 }
-	```
+```
     
   </TabItem>
 </Tabs>

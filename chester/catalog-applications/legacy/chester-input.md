@@ -465,7 +465,7 @@ import TabItem from '@theme/TabItem';
   </TabItem>
   <TabItem value="lora" label="LoRaWAN">
 
-	```json
+```json
 {
   "voltage": 3.6,
   "channels": [
@@ -481,7 +481,7 @@ import TabItem from '@theme/TabItem';
     }
   ]
 }
-	```
+```
     
   </TabItem>
 </Tabs>

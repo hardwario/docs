@@ -1028,7 +1028,8 @@ In each structure with the current configuration, there are six aggregated value
 ```
   </TabItem>
   <TabItem value="lora" label="LoRaWAN">
-    ```json
+
+```json
  {
   "system": {
     "uptime": 3600,
@@ -1042,7 +1043,8 @@ In each structure with the current configuration, there are six aggregated value
     "humidity": 45.1
   }
 }
-    ```
+```
+
   </TabItem>
 </Tabs>
 

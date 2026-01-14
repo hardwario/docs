@@ -287,7 +287,8 @@ import TabItem from '@theme/TabItem';
 
 <Tabs>
   <TabItem value="lte" label="LTE">
-    ```json
+
+```json
 {
   "message": {
     "version": 1,
@@ -549,6 +550,7 @@ import TabItem from '@theme/TabItem';
   ]
 }
 ```
+
   </TabItem>
   <TabItem value="lora" label="LoRaWAN">
 
