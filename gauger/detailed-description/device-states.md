@@ -5,18 +5,43 @@ title: Device States
 
 # Device States
 
-Through its runtime, the device can get into multiple states, each of which is indicated by the green status LED.
+The device has three main states:
 
-The first state, entered right after booting the device, is initialization. In this state, all the device subsystems are being sequentially initialized. In the init state, the LED is constantly on.
+* initialization
+* running
+* error
 
-After successfull initialization, the device will enter the running state. This state is indicated by occasional short blinks of the status LED. Additionally, while the device is in this state, it will broadcast info about itself (see [Device Discovery](../operation-instructions/device-discovery.md)).
+During the running and error states, the device will try to broadcast information about itself (see [Device Discovery](../operation-instructions/device-discovery.md)).
 
-If the device encounters an error, most likely during initialization (there are also other sources of errors like failing to connect to WiFi), it will enter the error state. In this state, the LED will blink in fixed intervals of 500 ms. The error is logged every second and is included in the broadcast messages. If enabled in the firmware build, the device will automatically reboot after being in the error state for 60 seconds. It is possible to trigger a firmware rollback from this state (see [Firmware Management](../operation-instructions/firmware-management.md)).
+In the error state, the device will begin counting down from 60 seconds and then will reboot. During this countdown, it is possible to rollback the firmware using similar procedure to the USER button factory reset.
 
-Table of LED behavior per state:
+## LED Behavior
 
-| LED State      | Device State   |
-| :------------- | :------------- |
-| on             | initialization |
-| short blinks   | running        |
-| rapid blinking | error          |
+During the init state, the LED will be on.
+
+During operation, the green status LED will blink every 5 seconds to display
+the current state. The LED blinks represents the following bit field:
+
+| 1              | 2           | 3               | 4 - 6      |
+| :------------- | :---------- | :-------------- | :--------  |
+| Device running | WiFi status | Ethernet status | Error bits |
+
+* **Device running** - this bit is always active
+* **WiFi status** - this bit is active if WiFi is enabled, but not connected
+* **Ethernet status** - this bit is active if Ethernet is enabled, but not connected
+* **Error bits** - these bits are active if the device is in the error state
+
+The bits are transmitted from the first one to the sixth one. If the bit is
+high, the LED will blink for 20 ms and turn off for another 60 ms. A low bit
+will result in the LED being off for 80 ms.
+
+Due to how the bits are assigned, it is possible to get the current state
+from just counting the amount of active bits:
+
+* **1 bit** - device is running without issues
+* **2 bits** - on of the connection interfaces is not active
+* **3 bits** - both of the connection interfaces are inactive
+* **> 3 bits** - the device is in an error state
+  * if the device is in error state, you can subtract 3 from the cound and
+    refer to the points above
+
