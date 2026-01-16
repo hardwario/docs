@@ -41,6 +41,7 @@ const sidebars = {
         'thingsboard/creating-device',
         'thingsboard/cloud-connection',
         'thingsboard/creating-dashboard',
+        'thingsboard/user-roles',
       ],
     },
     {
