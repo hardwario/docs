@@ -3,21 +3,32 @@ slug: /
 title: Introduction
 ---
 import Image from '@theme/IdealImage';
-import Link from '@docusaurus/Link';
 
 # Milesight
 
-[Milesight](https://www.milesight.com/iot-solutions) is a leading provider of **Internet of Things (IoT)** solutions, delivering high-quality devices and software platforms for connectivity, monitoring, and management of sensors, gateways, and networks.  
+[Milesight](https://www.milesight.com/iot-solutions) is a fast-growing high-tech company delivering smart IoT and video surveillance products with a focus on **AIoT (Artificial Intelligence of Things)**. Their solutions combine reliable connectivity with cutting-edge sensing technologies to digitize physical spaces.
 
 ---
 
-Its portfolio includes **LoRaWAN® sensors, gateways, controllers, and a cloud platform**, enabling deployments across various scenarios such as smart buildings, city infrastructure, energy management, climate monitoring, and leak detection.
+Milesight is particularly renowned for its **LoRaWAN®** product line, which stands out for its industrial reliability combined with a sleek, modern design suitable for office and commercial environments.
 
-Milesight solutions are designed to:
+### Key Product Categories
 
-- simplify the deployment and management of IoT systems  
-- integrate easily with existing infrastructures  
-- provide scalability for projects of all sizes  
-- deliver data visualization and analytics for effective decision-making  
+The Milesight portfolio covered in our documentation includes:
 
-This makes Milesight a strong choice for applications in **smart buildings, industrial IoT, utilities, and smart cities**.  
+* **Environmental Sensors (AM/EM Series):** Advanced devices for monitoring Indoor Air Quality (IAQ), temperature, humidity, CO2, and occupancy. Many models feature e-Ink screens for clear local data visualization.
+* **LoRaWAN Gateways (UG Series):** robust indoor and outdoor gateways that serve as the bridge between sensors and the cloud, featuring embedded network servers and high processing capability.
+* **IoT Controllers (UC Series):** Devices designed to bridge legacy sensors and actuators (4-20mA, Modbus RS485, GPIO) to LoRaWAN networks.
+
+### Why Choose Milesight?
+
+* **User-Friendly Configuration:** Most sensors support **NFC configuration**, allowing for rapid deployment using a smartphone app without opening the device enclosure.
+* **Premium Design:** Unlike typical "industrial-looking" hardware, Milesight sensors (especially the AM series) are designed to blend seamlessly into modern smart buildings and offices.
+* **Smart & Efficient:** Features like "Milesight D2D" (Device-to-Device) allow direct communication between sensors and controllers for ultra-low latency control without a gateway.
+
+### Applications
+
+Milesight solutions are a top choice for:
+* **Smart Buildings:** IAQ monitoring, people counting, and workspace optimization.
+* **Smart HVAC:** Automated ventilation control based on real-time CO2 levels.
+* **Utilities & Industry:** Leak detection, tank level monitoring, and energy consumption tracking.
