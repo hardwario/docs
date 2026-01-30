@@ -122,7 +122,7 @@ const config = {
         sidebarPath: require.resolve('./sidebars-sticker.js'),
       }),
     ],
-    // ➜ NEW: Milesight docs plugin (generuje /milesight/)
+    // ➜ Milesight docs plugin
     [
       '@docusaurus/plugin-content-docs',
       ({
@@ -130,6 +130,17 @@ const config = {
         path: 'milesight',
         routeBasePath: 'milesight',
         sidebarPath: require.resolve('./sidebars-milesight.js'),
+        editUrl: 'https://github.com/hardwario/docs/edit/main',
+      }),
+    ],
+    // ➜ NEW: RAKwireless docs plugin
+    [
+      '@docusaurus/plugin-content-docs',
+      ({
+        id: 'rakwireless',
+        path: 'rakwireless',
+        routeBasePath: 'rakwireless',
+        sidebarPath: require.resolve('./sidebars-rakwireless.js'),
         editUrl: 'https://github.com/hardwario/docs/edit/main',
       }),
     ],
@@ -176,6 +187,7 @@ const config = {
             position: 'left',
             items: [
               { to: '/milesight/', label: 'MILESIGHT', activeBaseRegex: `/milesight/` },
+              { to: '/rakwireless/', label: 'RAKwireless', activeBaseRegex: `/rakwireless/` },
             ],
           },
           // 3) CLOUD (bez podmenu)

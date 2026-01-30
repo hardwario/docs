@@ -83,6 +83,7 @@ const sidebars = {
         'catalog-applications/chester-control',
         'catalog-applications/chester-push',
         'catalog-applications/chester-meteo',
+        'catalog-applications/chester-serial',
         'catalog-applications/chester-wm-bus',
         'catalog-applications/chester-range',
         {
@@ -116,6 +117,7 @@ const sidebars = {
         'extension-modules/chester-x8',
         'extension-modules/chester-x9',
         'extension-modules/chester-x10',
+        'extension-modules/chester-x12',
         'extension-modules/chester-x13',
         'extension-modules/chester-x14',
         'extension-modules/chester-k1',

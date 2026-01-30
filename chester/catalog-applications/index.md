@@ -19,19 +19,19 @@ For details on how each catalog application works, click on the application name
 Common features are described in the special [**Common Functionality**](common-functionality.md) article.
 
 Firmwares are located in the [**Application Firmware**](#application-firmware) chapter.
-
-| Application name                          | Application goal                                                                                             | Low-power | Outdoor | LTE-M / NB-IoT | LoRaWAN on request |
-| :---------------------------------------- | :----------------------------------------------------------------------------------------------------------- | :-------: | :------: | :-------------: | :-----------------: |
-| [**CHESTER Clime**](chester-clime.md)     | Temperature and humidity sensing, IAQ monitoring, DS18B20 transmitter                                        | ✔️🔋 | ✔️🌲 | ✔️📡 | ✔️🛜 |
-| [**CHESTER Control**](chester-control.md) | 4 NPN/PNP/dry contact/0-10 V/4-20 mA/digital output channels                                                 | ✔️🔋 | ❌🌲 | ✔️📡 | ✔️🛜 |
-| [**CHESTER Push**](chester-push.md)       | Event alerting on 4× push button with optical and acoustic feedback                                          | ✔️🔋 (*) | ❌🌲 | ✔️📡 | ✔️🛜 |
-| [**CHESTER Current**](chester-current.md) | Non-invasive consumption sensing for AC/DC currents (4 channels)                                             | ✔️🔋 | ❌🌲 | ✔️📡 | ✔️🛜 |
-| **CHESTER Scale**                         | Ultra-precise weight scale monitoring using load cells (2 channels)                                          | ✔️🔋 | ✔️🌲 | ✔️📡 | ✔️🛜 |
-| [**CHESTER Meteo**](chester-meteo.md)     | Wind, pressure, temperature and humidity measurement                                                         | ✔️🔋 | ✔️🌲 | ✔️📡 | ✔️🛜 |
-| [**CHESTER Range**](chester-range.md)     | Distance measurement                                                                                         | ✔️🔋 | ✔️🌲 | ✔️📡 | ✔️🛜 |
-| [**CHESTER wM-Bus**](chester-wm-bus.md)   | Monitoring of wM-Bus devices (electricity meters etc.)                                                       | ✔️🔋 | ✔️🌲 | ✔️📡 | ✔️🛜 |
+| Application name | Application goal | Low-power | Outdoor | LTE-M / NB-IoT | LoRaWAN on request |
+| :--- | :--- | :---: | :---: | :---: | :---: |
+| [**CHESTER Clime**](chester-clime.md) | Temperature and humidity sensing, IAQ monitoring, DS18B20 transmitter | ✔️🔋 | ✔️🌲 | ✔️📡 | ✔️🛜 |
+| [**CHESTER Control**](chester-control.md) | 4 NPN/PNP/dry contact/0-10 V/4-20 mA/digital output channels | ✔️🔋 | ❌🌲 | ✔️📡 | ✔️🛜 |
+| [**CHESTER Push**](chester-push.md) | Event alerting on 4× push button with optical and acoustic feedback | ✔️🔋 (*) | ❌🌲 | ✔️📡 | ✔️🛜 |
+| [**CHESTER Current**](chester-current.md) | Non-invasive consumption sensing for AC/DC currents (4 channels) | ✔️🔋 | ❌🌲 | ✔️📡 | ✔️🛜 |
+| **CHESTER Scale** | Ultra-precise weight scale monitoring using load cells (2 channels) | ✔️🔋 | ✔️🌲 | ✔️📡 | ✔️🛜 |
+| [**CHESTER Meteo**](chester-meteo.md) | Wind, pressure, temperature and humidity measurement | ✔️🔋 | ✔️🌲 | ✔️📡 | ✔️🛜 |
+| [**CHESTER Range**](chester-range.md) | Distance measurement | ✔️🔋 | ✔️🌲 | ✔️📡 | ✔️🛜 |
+| [**CHESTER wM-Bus**](chester-wm-bus.md) | Monitoring of wM-Bus devices (electricity meters etc.) | ✔️🔋 | ✔️🌲 | ✔️📡 | ✔️🛜 |
+| [**CHESTER Serial**](chester-serial.md) | Industrial serial gateway (RS-232/RS-485), Modbus RTU Master, transparent bridge | ✔️🔋 (*) | ✔️🌲 | ✔️📡 | ✔️🛜 |
 | [**CHESTER Counter**](legacy/chester-counter.md) | Pulse counting from energy meters using NPN/dry contact (4 channels). Deprecated in favor of CHESTER Control | ✔️🔋 | ✔️🌲 | ✔️📡 | ✔️🛜 |
-| [**CHESTER Input**](legacy/chester-input.md)     | Transmitter for NPN/PNP/dry contact/0-10 V/4-20 mA (4 channels). Deprecated in favor of CHESTER Control      | ✔️🔋 (*) | ❌🌲 | ✔️📡 | ✔️🛜 |
+| [**CHESTER Input**](legacy/chester-input.md) | Transmitter for NPN/PNP/dry contact/0-10 V/4-20 mA (4 channels). Deprecated in favor of CHESTER Control | ✔️🔋 (*) | ❌🌲 | ✔️📡 | ✔️🛜 |
 
 \* The specific hardware or firmware variants may need an external power supply.
 
