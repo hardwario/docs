@@ -81,14 +81,6 @@ The RS-232 transceiver uses negative voltage levels. CHESTER must have modified 
 
 The module uses a standardized header layout compatible with CHESTER extension slots.
 
-### CHESTER Pin Configuration Diagram
-
-<div style={{ width: '220px' }}>
-
-![CHESTER-X12 Pin Diagram](pc-chester-x12.png)
-
-</div>
-
 ### Pin Configuration and Functions
 
 | Pin | Signal | Type | Description |
@@ -146,3 +138,11 @@ The following diagrams show the internal wiring of the module, including the sys
 ### Power Supply
 
 ![CHESTER-X12 Power Schematic](schematics/hio-chester-x12-r1.1-power.png)
+
+## Module Drawing
+
+<div style={{ width: '500px' }}>
+
+![CHESTER-X12 Pin Diagram](pc-chester-x12.png)
+
+</div>
