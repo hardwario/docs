@@ -85,7 +85,7 @@ The module uses a standardized header layout compatible with CHESTER extension s
 
 <div style={{ width: '220px' }}>
 
-![CHESTER-X12 Pin Diagram](./schematics/hio-chester-x12.png)
+![CHESTER-X12 Pin Diagram](pc-chester-x12.png)
 
 </div>
 
