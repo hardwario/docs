@@ -4,11 +4,7 @@
 const sidebars = {
     docs: [
       'introduction',
-      'installation-setup',
-      'configuration',
-      'mqtt-broker',
-      'project-structure',
-      'troubleshouting',
+      'installation',
     ],
   };
   
