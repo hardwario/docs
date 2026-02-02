@@ -5,20 +5,141 @@ title: Introduction
 ---
 import Image from '@theme/IdealImage';
 
-# FIBER
+# Introduction
 
-**FIBER** is an **IoT device** designed to provide **precise temperature measurements** in industrial settings. It connects to various **sensors** via cables and computes **temperature data** which is displayed to the user. The product supports connectivity through **WiFi** or **Ethernet** and enables extensive **device networking**. Data from connected sensors is aggregated and displayed, showing detailed metrics such as **average**, **median**, **minimum**, and **maximum values** at given timestamps.
+**FIBER** is a robust industrial IoT device built on an **embedded Linux** platform and designed for **Industrial IoT applications**. It integrates both **wireless 868/915 MHz radio** and **8-channel 1-Wire sensor/actuator** hub.
 
-## Key Highlights
+Thanks to its modular and open architecture, **FIBER** supports standard **Raspberry Pi OS** distributions as well as **custom Linux images built with Yocto**, making it suitable both as a turnkey measurement appliance and a versatile development platform. Designed for deployment in industrial and commercial environments, the device provides wireless and wired communication channels for reliable sensor acquisition, local visualization on its integrated display, and robust network connectivity through **Ethernet**, **WiFi**, or optional **LTE**.
 
-### Advanced Temperature Monitoring:
+## Key Features
 
-**FIBER** boasts the capability to interface with up to **eight temperature sensors** concurrently. Through meticulous **data processing**, users gain access to comprehensive metrics including **averages**, **medians**, and **extrema**, facilitating nuanced **environmental analysis**.
+* **Embedded Linux platform**
 
-### Versatile Connectivity:
+  * Compatible with Raspberry Pi OS or custom Yocto-based images.
 
-Seamlessly integrating into diverse **network architectures**, **FIBER** supports both **WiFi** and **Ethernet connectivity** options. This versatility ensures effortless deployment and integration within existing infrastructures, delivering a robust and adaptable solution.
+* **Hybrid sensor integration**
 
-### Intuitive User Interface:
+  * Supports wireless sensors at **868 MHz ISM band**.
+  * Equipped with **8 fully independent 1-Wire ports** for digital wired sensors.
 
-Driven by **user-centric design principles**, **FIBER** features an **intuitive interface** that grants users direct access to critical **temperature data**. Displayed on a screen adorned with **LED indicators**, information is presented in a clear and accessible manner, enabling swift **decision-making**.
+* **Industrial-grade design**
+
+  * Wide operating temperature range: **–20 °C to +60 °C**.
+  * Built around the **Compute Module 4** for high reliability and long-term availability.
+
+* **Flexible connectivity options**
+
+  * Ethernet, WiFi, BLE (Bluetooth Low Energy), or optional LTE Cat 4 module.
+
+* **Local visualization and diagnostics**
+
+  * Backlit graphical LCD for immediate sensor value display.
+  * Per-channel status LEDs for real-time 1-Wire activity.
+  * Integrated acoustic buzzer for notifications and diagnostics.
+
+* **Power-over-Ethernet (PoE)**
+
+  * With an onboard **Li-Ion backup battery** for power stability.
+
+## Hardware Overview
+
+### Processing Platform
+
+**FIBER** is built on the **Raspberry Pi Compute Module 4 (CM4)**, providing a reliable ARM-based processing platform with extensive Linux ecosystem support. This enables long-term maintenance, broad application compatibility, and flexibility in custom firmware development.
+
+Key characteristics:
+
+* Quad-core Cortex-A72 (ARMv8, 64-bit) @ 1.8 GHz
+* Memory options: 1/2/4/8 GB RAM, and 8/16/32 GB eMMC storage
+* Industrial temperature options
+* Compatible with upstream Linux packages and standard development workflows
+
+### Sensor Interfaces
+
+#### 1-Wire Inputs
+
+* **Eight fully isolated, independent 1-Wire ports**
+* Designed for digital temperature probes and similar 1-Wire sensors
+* Per-channel LEDs indicate input activity and sensor status
+
+#### 868 MHz ISM Radio
+
+* Integrated long-range ISM radio (LoRa-capable) for communication with wireless sensors
+* Compatibility with **HARDWARIO STICKER** sensor nodes (temperature, humidity, motion, etc.)
+* Suitable for distributed sensing across buildings or facilities
+
+#### Display & Local Interaction
+
+* **Backlit graphic LCD**
+* Physical buttons for basic navigation and device control
+* Suitable for viewing instantaneous sensor values, system states, or diagnostics
+
+### Acoustic & Visual Signaling
+
+* **Piezo buzzer** for alerts or diagnostic feedback
+* **Status LEDs** for each 1-Wire input, providing immediate hardware-level insight
+
+### Power System
+
+* Supports **Power-over-Ethernet (PoE)**
+* Integrated **3.6 V Li-Ion backup battery**
+* Ensures stable operation during power interruptions
+
+## Connectivity
+
+**FIBER** provides multiple communication interfaces suitable for a wide range of installations:
+
+* **Ethernet (LAN)**
+  Reliable wired networking for industrial environments.
+
+* **WiFi**
+  For wireless deployments without physical cabling.
+
+* **Bluetooth Low Energy (BLE)**
+  Useful for commissioning, diagnostics, or peripheral connectivity.
+
+* **LTE (optional)**
+  LTE Cat 4 module available for remote or mobile deployments.
+
+* **868 MHz ISM Radio**
+  Enables communication with remote STICKER-based wireless sensors.
+
+These interfaces allow **FIBER** to integrate into both existing industrial networks and modern distributed IoT architectures.
+
+## User Interface
+
+**FIBER** offers several local interfaces designed for clarity and quick diagnostics:
+
+### LCD Display
+
+* Backlit graphical display
+* Shows real-time sensor values and device diagnostics
+
+### Buttons
+
+* Navigation and confirmation controls
+* Suitable for on-site interactions without external tools
+
+### Status LEDs
+
+* One LED per 1-Wire port
+* Visual feedback for sensor presence, activity, and errors
+
+### Acoustic Buzzer
+
+* Provides audible alerts
+* Useful for alarms or feedback during configuration
+
+## Technical Specifications
+
+| Category                  | Specification                             |
+| ------------------------- | ----------------------------------------- |
+| **Power**                 | PoE with integrated Li-Ion backup battery |
+| **DC Input**              | 36 V to 57 V (IEEE 802.3af compliant)     |
+| **Backup Battery**        | Nominal voltage 3.6 V                     |
+| **Sensor Inputs**         | 8× independent 1-Wire ports               |
+| **Wireless Radio**        | 868 MHz ISM band                          |
+| **Connectivity**          | Ethernet, WiFi, BLE, optional LTE         |
+| **Dimensions**            | 175 × 120 × 35 mm                         |
+| **Operating Temperature** | –20 °C to +60 °C                          |
+| **Storage Temperature**   | –20 °C to +60 °C                          |

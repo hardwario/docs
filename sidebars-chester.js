@@ -4,27 +4,18 @@
 const sidebars = {
   docs: [
     'introduction',
-    {
-      type: 'category',
-      label: 'Getting Started',
-      collapsed: true,
-      items: [
-        'getting-started/first-step',
-        'getting-started/hardwario-manager',
-        'getting-started/hardwario-monitor',
-        {
+    'first-step',
+   {
           type: 'category',
           label: 'Video Tutorials',
           collapsed: true,
           items: [
-            'getting-started/videos-chester/chester-connect-phone',
-            'getting-started/videos-chester/chester-update-phone',
-            'getting-started/videos-chester/chester-pair-tag',
-            'getting-started/videos-chester/chester-cloud',
+            'videos-chester/chester-connect-phone',
+            'videos-chester/chester-update-phone',
+            'videos-chester/chester-pair-tag',
+            'videos-chester/chester-cloud',
           ],
-        }
-      ],
-    },
+        },
     {
   type: 'category',
   label: 'Platform Connectivity',
@@ -79,13 +70,15 @@ const sidebars = {
           ],
         },
         'catalog-applications/chester-clime',
-        'catalog-applications/chester-current',
         'catalog-applications/chester-control',
-        'catalog-applications/chester-push',
+        'catalog-applications/chester-current',
         'catalog-applications/chester-meteo',
+        'catalog-applications/chester-push',
+        'catalog-applications/chester-range',
+        'catalog-applications/chester-scale',
         'catalog-applications/chester-serial',
         'catalog-applications/chester-wm-bus',
-        'catalog-applications/chester-range',
+        
         {
           type: 'category',
           label: 'Legacy',
@@ -277,21 +270,6 @@ const sidebars = {
     'product-certification',
     'cloud-v2-migration-guide',
 
-    {
-      type: 'category',
-      label: 'Video Tutorials',
-      link: {
-        type: 'doc',
-        id: 'videos-chester/index',
-      },
-      collapsed: true,
-      items: [
-        'videos-chester/chester-connect-phone',
-        'videos-chester/chester-update-phone',
-        'videos-chester/chester-pair-tag',
-        'videos-chester/chester-cloud',
-      ],
-    }
   ],
 };
 

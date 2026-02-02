@@ -119,9 +119,10 @@ For details about all LED color states and meanings, see the [**LED Behaviour do
 
 Once connected, you can:
 
-- Send [**Config commands**](https://docs.hardwario.com/cloud/downlink#config) directly from the Cloud  
-- Use [**HARDWARIO Manager**](https://docs.hardwario.com/chester/getting-started/hardwario-manager) (mobile app via BLE)  
-- Use [**HARDWARIO Monitor**](https://docs.hardwario.com/chester/getting-started/hardwario-monitor) (USB J-Link or BLE from your PC)  
+- Send [**Config commands**](https://docs.hardwario.com/cloud/downlink#config) directly from the Cloud
+- Use [**HARDWARIO Manager**](https://docs.hardwario.com/chester/getting-started/hardwario-manager) (mobile app via BLE)
+- Use [**HARDWARIO Monitor**](https://docs.hardwario.com/chester/getting-started/hardwario-monitor) (J-Link or BLE from your PC)
+- Use [**HARDWARIO Terminal**](https://docs.hardwario.com/chester/platform-connectivity/hardwario-terminal) (Google Chrome browser via WebSerial/WebBluetooth)
 - Access a [**Remote shell**](https://docs.hardwario.com/cloud/downlink/#shell-commands) and even perform [**FOTA updates**](https://docs.hardwario.com/cloud/fota)
 
 ---
@@ -131,19 +132,28 @@ Once connected, you can:
 It’s always a good idea to make sure your CHESTER is running the **latest firmware version**.
 
 ### Check Firmware Version
-You can check it in two ways:
+You can check it in three ways:
 
-1. **Using** [**HARDWARIO Manager (mobile app)**](https://docs.hardwario.com/chester/getting-started/hardwario-manager)  
-   - Open the app and connect to your CHESTER via Bluetooth  
-   - The firmware version will be displayed automatically  
+1. **Using** [**HARDWARIO Manager (mobile app)**](https://docs.hardwario.com/chester/getting-started/hardwario-manager)
+   - Open the app and connect to your CHESTER via Bluetooth
+   - The firmware version will be displayed automatically
 
-2. **Using** [**HARDWARIO Monitor (desktop app)**](https://docs.hardwario.com/chester/getting-started/hardwario-monitor)  
-   - Connect CHESTER via USB or BLE  
-   - Run the command:  
+2. **Using** [**HARDWARIO Monitor (desktop app)**](https://docs.hardwario.com/chester/getting-started/hardwario-monitor)
+   - Connect CHESTER via J-Link or BLE
+   - Run the command:
      ```bash
      info show
      ```
-   - You’ll see firmware and application details in the console
+   - You'll see firmware and application details in the console
+
+3. **Using** [**HARDWARIO Terminal (Google Chrome)**](https://docs.hardwario.com/chester/platform-connectivity/hardwario-terminal)
+   - Open Chrome and go to [**terminal.hardwario.com**](https://terminal.hardwario.com)
+   - Connect CHESTER via J-Link (WebSerial) or BLE (WebBluetooth)
+   - Run the command:
+     ```bash
+     info show
+     ```
+   - You'll see firmware and application details in the terminal
 
 ### Download the Latest Firmware
 You can always find the newest firmware builds here:  
@@ -165,7 +175,7 @@ If a newer version is available, you can update it using one of these methods:
 
    - For full technical details, see this guide: 👉 [**FOTA documentation**](https://docs.hardwario.com/cloud/fota/). 
 
-3. **Manual Update via [**J-Link (over USB)**](https://docs.hardwario.com/chester/firmware-flashing/application-over-j-link)**
+3. **Manual Update via [**J-Link**](https://docs.hardwario.com/chester/firmware-flashing/application-over-j-link)**
    - If you prefer flashing manually, see this guide: 👉 [**Application update over J-Link**](https://docs.hardwario.com/chester/firmware-flashing/application-over-j-link)
 
 ---

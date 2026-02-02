@@ -81,21 +81,21 @@ The RS-232 transceiver uses negative voltage levels. CHESTER must have modified 
 
 The module uses a standardized header layout compatible with CHESTER extension slots.
 
-### Pin Configuration and Functions
+### CHESTER-X12 Connector Pinout
 
 | Pin | Signal | Type | Description |
-| :--- | :--- | :--- | :--- |
-| **1** | **+VIN** | Power Input | External power input (5–28 V DC) |
-| **2** | **GND** | Ground | Ground reference |
-| **3** | **+V** | Power Output | Auxiliary power output for sensors (from DC-DC) |
-| **4** | **GND** | Ground | Ground reference |
-| **5** | **TX** | Output | RS-232 Transmit Data |
-| **6** | **RX** | Input | RS-232 Receive Data |
-| **7** | **VDD** | Power | 3.3 V supply from CHESTER mainboard |
-| **8** | **GND** | Ground | Ground reference |
+| :---: | :--- | :--- | :--- |
+| 1 | GND | Ground | Ground reference |
+| 2 | +VIN | Power Input | External power input (5–28 V DC) |
+| 3 | GND | Ground | Ground reference |
+| 4 | +V | Power Output | Auxiliary power output (from DC-DC converter) |
+| 5 | RX | Input | RS-232 Receive Data |
+| 6 | TX | Output | RS-232 Transmit Data |
+| 7 | GND | Ground | Ground reference |
+| 8 | VDD | Power | 3.3 V supply from CHESTER mainboard |
 
 :::info
-The **+VIN** terminal (Pin 1) is used to power the DC-DC converter, which subsequently powers the external devices via the **+V** terminal (Pin 3). The logic of the module itself (UART bridge) is powered by **VDD** (Pin 7) from the CHESTER mainboard.
+The **+VIN** terminal (Pin 2) is used to power the DC-DC converter, which subsequently powers the external devices via the **+V** terminal (Pin 4). The logic of the module itself (UART bridge) is powered by **VDD** (Pin 8) from the CHESTER mainboard.
 :::
 
 ---
@@ -123,9 +123,7 @@ The CHESTER-X12 module can be used with various CHESTER mainboard configurations
 
 The following diagrams show the internal wiring of the module, including the system connection, interface logic, and power supply.
 
-- [Schematic - Main Page (PDF)](schematics/hio-chester-x12-r1.1-main-page.pdf)
-- [Schematic - Interface (PDF)](schematics/hio-chester-x12-r1.1-interface.pdf)
-- [Schematic - Power (PDF)](schematics/hio-chester-x12-r1.1-power.pdf)
+- [Schematic (PDF)](schematics/hio-chester-x12-r1.1.pdf)
 
 ### Main Page
 
