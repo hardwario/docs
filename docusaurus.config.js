@@ -221,7 +221,7 @@ const config = {
         darkTheme: darkCodeTheme,
       },
       zoom: {
-        selector: '.markdown :not(em) > img',
+        selector: '.markdown :not(em) > img:not([data-zoomable="false"])',
         config: {
           background: {
             light: 'rgb(255, 255, 255)',
