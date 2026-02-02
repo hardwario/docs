@@ -1030,18 +1030,14 @@ In each structure with the current configuration, there are six aggregated value
   <TabItem value="lora" label="LoRaWAN">
 
 ```json
- {
-  "system": {
-    "uptime": 3600,
-    "voltage_rest": 3.65,
-    "current_load": 15
-  },
-  "thermometer": {
-    "temperature": 22.4
-  },
-  "hygrometer": {
-    "humidity": 45.1
-  }
+{
+  "voltage_rest": 3.65,
+  "voltage_load": 3.6,
+  "current_load": 15,
+  "orientation": 2,
+  "therm_temperature": 22.4,
+  "hygro_temperature": 22.3,
+  "hygro_humidity": 45.1
 }
 ```
 

@@ -411,30 +411,41 @@ import TabItem from '@theme/TabItem';
 
 ```json
 {
-  "system": {
-    "uptime": 1200,
-    "voltage_rest": 24.0
-  },
-  "digital_inputs": {
-    "channels": [
-      {
-        "id": 0,
-        "state": true
-      },
-      {
-        "id": 1,
-        "state": false
-      }
-    ]
-  },
-  "digital_outputs": {
-    "channels": [
-      {
-        "id": 0,
-        "state": true
-      }
-    ]
-  }
+  "voltage_rest": 3.7,
+  "voltage_load": 3.65,
+  "current_load": 20,
+  "orientation": 2,
+  "therm_temperature": 23.5,
+  "hygro_temperature": 23.2,
+  "hygro_humidity": 48.5,
+  "w1_thermometers": [22.1, 22.3],
+  "ble_tags": [
+    {
+      "temperature": 21.5,
+      "humidity": 55.0
+    }
+  ],
+  "inputs_a": [
+    {
+      "type": "trigger",
+      "state": true,
+      "trigger_active": 5,
+      "trigger_inactive": 3
+    },
+    {
+      "type": "counter",
+      "count": 1234,
+      "delta": 12
+    },
+    {
+      "type": "voltage",
+      "voltage": 12.5
+    },
+    {
+      "type": "current",
+      "current": 4.2
+    }
+  ]
 }
 ```
 

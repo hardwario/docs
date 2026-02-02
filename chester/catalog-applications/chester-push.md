@@ -230,17 +230,31 @@ import TabItem from '@theme/TabItem';
 
 ```json
 {
-  "system": {
-    "voltage_rest": 3.8
+  "voltage_rest": 3.8,
+  "voltage_load": 3.75,
+  "current_load": 15,
+  "orientation": 1,
+  "therm_temperature": 22.5,
+  "backup": {
+    "line_voltage": 24.0,
+    "battery_voltage": 4.1,
+    "backup_state": true
   },
-  "button": {
-    "event": "single-click",
-    "count": 42
+  "button_x": {
+    "press_count": 42,
+    "hold_count": 3,
+    "press_event": true,
+    "hold_event": false
   },
-  "orientation": 1
+  "button_1": {
+    "press_count": 10,
+    "hold_count": 1,
+    "press_event": false,
+    "hold_event": false
+  }
 }
 ```
-    
+
   </TabItem>
 </Tabs>
 

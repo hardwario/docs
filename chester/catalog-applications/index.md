@@ -19,21 +19,32 @@ For details on how each catalog application works, click on the application name
 Common features are described in the special [**Common Functionality**](common-functionality.md) article.
 
 Firmwares are located in the [**Application Firmware**](#application-firmware) chapter.
-| Application name | Application goal | Low-power | Outdoor | LTE-M / NB-IoT | LoRaWAN on request |
-| :--- | :--- | :---: | :---: | :---: | :---: |
-| [**CHESTER Clime**](chester-clime.md) | Temperature and humidity sensing, IAQ monitoring, DS18B20 transmitter | ✔️🔋 | ✔️🌲 | ✔️📡 | ✔️🛜 |
-| [**CHESTER Control**](chester-control.md) | 4 NPN/PNP/dry contact/0-10 V/4-20 mA/digital output channels | ✔️🔋 | ❌🌲 | ✔️📡 | ✔️🛜 |
-| [**CHESTER Push**](chester-push.md) | Event alerting on 4× push button with optical and acoustic feedback | ✔️🔋 (*) | ❌🌲 | ✔️📡 | ✔️🛜 |
-| [**CHESTER Current**](chester-current.md) | Non-invasive consumption sensing for AC/DC currents (4 channels) | ✔️🔋 | ❌🌲 | ✔️📡 | ✔️🛜 |
-| **CHESTER Scale** | Ultra-precise weight scale monitoring using load cells (2 channels) | ✔️🔋 | ✔️🌲 | ✔️📡 | ✔️🛜 |
-| [**CHESTER Meteo**](chester-meteo.md) | Wind, pressure, temperature and humidity measurement | ✔️🔋 | ✔️🌲 | ✔️📡 | ✔️🛜 |
-| [**CHESTER Range**](chester-range.md) | Distance measurement | ✔️🔋 | ✔️🌲 | ✔️📡 | ✔️🛜 |
-| [**CHESTER wM-Bus**](chester-wm-bus.md) | Monitoring of wM-Bus devices (electricity meters etc.) | ✔️🔋 | ✔️🌲 | ✔️📡 | ✔️🛜 |
-| [**CHESTER Serial**](chester-serial.md) | Industrial serial gateway (RS-232/RS-485), Modbus RTU Master, transparent bridge | ✔️🔋 (*) | ✔️🌲 | ✔️📡 | ✔️🛜 |
-| [**CHESTER Counter**](legacy/chester-counter.md) | Pulse counting from energy meters using NPN/dry contact (4 channels). Deprecated in favor of CHESTER Control | ✔️🔋 | ✔️🌲 | ✔️📡 | ✔️🛜 |
-| [**CHESTER Input**](legacy/chester-input.md) | Transmitter for NPN/PNP/dry contact/0-10 V/4-20 mA (4 channels). Deprecated in favor of CHESTER Control | ✔️🔋 (*) | ❌🌲 | ✔️📡 | ✔️🛜 |
 
-\* The specific hardware or firmware variants may need an external power supply.
+
+
+| Application | Application Goal | LoRaWAN | BLE Tags | Backup Module (Z1) | 1-Wire (DS18B20) | External Power Supply |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: |
+| [**CHESTER Clime**](chester-clime.md) | Temperature, humidity, IAQ sensing | <img src="/img/check.png" width="27" /> | <img src="/img/check.png" width="27" /> | <img src="/img/check.png" width="27" /> | <img src="/img/check.png" width="27" /> | <img src="/img/check.png" width="27" /> |
+| [**CHESTER Control**](chester-control.md) | 4ch input/output control | <img src="/img/check.png" width="27" /> | <img src="/img/check.png" width="27" /> | <img src="/img/check.png" width="27" /> | <img src="/img/check.png" width="27" /> | <img src="/img/check.png" width="27" /> |
+| [**CHESTER Current**](chester-current.md) | AC/DC current sensing (4ch) | <img src="/img/check.png" width="27" /> | <img src="/img/cross.png" width="27" /> | <img src="/img/check.png" width="27" /> | <img src="/img/check.png" width="27" /> | <img src="/img/cross.png" width="27" /> |
+| [**CHESTER Meteo**](chester-meteo.md) | Wind, pressure, weather sensing | <img src="/img/check.png" width="27" /> | <img src="/img/check.png" width="27" /> | <img src="/img/check.png" width="27" /> | <img src="/img/check.png" width="27" /> | <img src="/img/cross.png" width="27" /> |
+| [**CHESTER Push**](chester-push.md) | Push button alerting | <img src="/img/check.png" width="27" /> | <img src="/img/cross.png" width="27" /> | <img src="/img/check.png" width="27" /> | <img src="/img/cross.png" width="27" /> | <img src="/img/check.png" width="27" /> |
+| [**CHESTER Range**](chester-range.md) | Ultrasonic distance measurement | <img src="/img/check.png" width="27" /> | <img src="/img/check.png" width="27" /> | <img src="/img/check.png" width="27" /> | <img src="/img/check.png" width="27" /> | <img src="/img/cross.png" width="27" /> |
+| [**CHESTER Scale**](chester-scale.md) | Weight scale monitoring | <img src="/img/check.png" width="27" /> | <img src="/img/check.png" width="27" /> | <img src="/img/check.png" width="27" /> | <img src="/img/cross.png" width="27" /> | <img src="/img/cross.png" width="27" /> |
+| [**CHESTER Serial**](chester-serial.md) | RS-232/RS-485 Modbus gateway | <img src="/img/check.png" width="27" /> | <img src="/img/check.png" width="27" /> | <img src="/img/cross.png" width="27" /> | <img src="/img/cross.png" width="27" /> | <img src="/img/check.png" width="27" /> |
+| [**CHESTER wM-Bus**](chester-wm-bus.md) | Wireless M-Bus gateway | <img src="/img/cross.png" width="27" /> | <img src="/img/cross.png" width="27" /> | <img src="/img/cross.png" width="27" /> | <img src="/img/cross.png" width="27" /> | <img src="/img/check.png" width="27" /> |
+
+
+
+:::info
+
+- **CHESTER Clime IAQ** variant uses CHESTER-X10 for external power input (6-28V)
+- **CHESTER Control** uses CHESTER-X4 module for step-down power supply and digital outputs
+- **CHESTER Push** uses CHESTER-Z1-F which combines backup battery with power supply; can also run from battery only
+- **CHESTER wM-Bus** is available in battery variant (6x D-cells) or DC variant with external 230V adapter
+- **CHESTER Serial** uses CHESTER-X12 (RS-232) or CHESTER-X2 (RS-485) with external power input (5-28V)
+
+:::
 
 
 ## Application Firmware Cloud v2 {#application-firmware}
@@ -75,8 +86,8 @@ Then apply changes by typing `config save`. The device will reboot and use the c
 | [**CHESTER Control Z**](chester-control.md#chester-control-z)   | [**v3.3.0**](/chester/catalog-applications/chester-control#chester-control-z) | <small>`8dd55d5ca15d4e41bd989f0d7118ae4e`</small> | 2025-07-14 | Support for CHESTER-Z   |
 | [**CHESTER Current**](chester-current.md#chester-current)       | [**v3.3.0**](https://firmware.hardwario.com/chester/ea947acaf2774bc084de44b66b8aa1b6) | <small>`ea947acaf2774bc084de44b66b8aa1b6`</small> | 2025-07-14 |                         |
 | [**CHESTER Current Z**](chester-current.md#chester-current-z)   | [**v3.3.0**](https://firmware.hardwario.com/chester/cf5daced77324499bd66ff751bdb5a21) | <small>`cf5daced77324499bd66ff751bdb5a21`</small> | 2025-07-14 | Support for CHESTER-Z   |
-| **CHESTER Scale**                                               | [**v3.3.0**](https://firmware.hardwario.com/chester/2644049166354277a72973f8a003c75c) | <small>`2644049166354277a72973f8a003c75c`</small> | 2025-07-14 |                         |
-| **CHESTER Scale Z**                                             | [**v3.3.0**](https://firmware.hardwario.com/chester/6c9888e973f148508b3b468e8df8918b) | <small>`6c9888e973f148508b3b468e8df8918b`</small> | 2025-07-14 | Support for CHESTER-Z   |
+| [**CHESTER Scale**](chester-scale.md#chester-scale)             | [**v3.3.0**](https://firmware.hardwario.com/chester/2644049166354277a72973f8a003c75c) | <small>`2644049166354277a72973f8a003c75c`</small> | 2025-07-14 |                         |
+| [**CHESTER Scale Z**](chester-scale.md#chester-scale-z)         | [**v3.3.0**](https://firmware.hardwario.com/chester/6c9888e973f148508b3b468e8df8918b) | <small>`6c9888e973f148508b3b468e8df8918b`</small> | 2025-07-14 | Support for CHESTER-Z   |
 | [**CHESTER Meteo**](chester-meteo.md#chester-meteo)             | [**v3.3.0**](https://firmware.hardwario.com/chester/75d1cae16d6543c28879c62e437a1304) | <small>`75d1cae16d6543c28879c62e437a1304`</small> | 2025-07-14 |                         |
 | [**CHESTER Meteo Z**](chester-meteo.md#chester-meteo-z)         | [**v3.3.0**](https://firmware.hardwario.com/chester/d93c18b364c741f7adec7a0a5a68e020) | <small>`d93c18b364c741f7adec7a0a5a68e020`</small> | 2025-07-14 | Support for CHESTER-Z   |
 | [**CHESTER Meteo P**](chester-meteo.md#chester-meteo-p)         | [**v3.3.0**](https://firmware.hardwario.com/chester/36a8bd985efc4b45827d49ea9dc97732) | <small>`36a8bd985efc4b45827d49ea9dc97732`</small> | 2025-07-14 | Support for pyranometer |
@@ -129,8 +140,8 @@ Then apply changes by typing `config save`. The device will reboot and use the c
 | [**CHESTER Current**](chester-current.md#chester-current)       | [**v2.3.0**](https://firmware.hardwario.com/chester/52177a80039543d38725d4d9f57590ea) [ℹ️](common-functionality.md#network-mode-configuration "Network Mode Configuration")     | <small>`52177a80039543d38725d4d9f57590ea`</small> | 2023-08-02 |                                                |
 | [**CHESTER Current Z**](chester-current.md#chester-current-z)   | [**v2.3.0**](https://firmware.hardwario.com/chester/fa2f25c0de5643e6ad77bcc118aad30c) [ℹ️](common-functionality.md#network-mode-configuration "Network Mode Configuration")     | <small>`fa2f25c0de5643e6ad77bcc118aad30c`</small> | 2023-08-02 | Support for **CHESTER-Z1**                     |
 | [**CHESTER Current 1W**](chester-current.md#chester-current-1w) | [**v2.3.0**](https://firmware.hardwario.com/chester/80ecf08298914cdb9df632ca749e309e) [ℹ️](common-functionality.md#network-mode-configuration "Network Mode Configuration")     | <small>`80ecf08298914cdb9df632ca749e309e`</small> | 2023-08-02 |                                                |
-| **CHESTER Scale**                                               | [**v2.3.0**](https://firmware.hardwario.com/chester/c37b56df73cf4272b301a8f00eb1486d) [ℹ️](common-functionality.md#network-mode-configuration "Network Mode Configuration")     | <small>`c37b56df73cf4272b301a8f00eb1486d`</small> | 2023-08-02 |                                                |
-| **CHESTER Scale Z**                                             | [**v2.3.0**](https://firmware.hardwario.com/chester/489e5fb2b9d943d28d4f1b2aba3ed540) [ℹ️](common-functionality.md#network-mode-configuration "Network Mode Configuration")     | <small>`489e5fb2b9d943d28d4f1b2aba3ed540`</small> | 2023-08-02 | Support for **CHESTER-Z1**                     |
+| [**CHESTER Scale**](chester-scale.md#chester-scale)             | [**v2.3.0**](https://firmware.hardwario.com/chester/c37b56df73cf4272b301a8f00eb1486d) [ℹ️](common-functionality.md#network-mode-configuration "Network Mode Configuration")     | <small>`c37b56df73cf4272b301a8f00eb1486d`</small> | 2023-08-02 |                                                |
+| [**CHESTER Scale Z**](chester-scale.md#chester-scale-z)         | [**v2.3.0**](https://firmware.hardwario.com/chester/489e5fb2b9d943d28d4f1b2aba3ed540) [ℹ️](common-functionality.md#network-mode-configuration "Network Mode Configuration")     | <small>`489e5fb2b9d943d28d4f1b2aba3ed540`</small> | 2023-08-02 | Support for **CHESTER-Z1**                     |
 | [**CHESTER Meteo**](chester-meteo.md#chester-meteo)             | [**v2.3.0**](https://firmware.hardwario.com/chester/7e886270374f4ebba8712324630c96b7) [ℹ️](common-functionality.md#network-mode-configuration "Network Mode Configuration")     | <small>`7e886270374f4ebba8712324630c96b7`</small> | 2023-08-02 |                                                |
 | [**CHESTER Meteo Z**](chester-meteo.md#chester-meteo-z)         | [**v2.3.0**](https://firmware.hardwario.com/chester/ef86634d1ad04d06a55c760333aa7a5e) [ℹ️](common-functionality.md#network-mode-configuration "Network Mode Configuration")     | <small>`ef86634d1ad04d06a55c760333aa7a5e`</small> | 2023-08-02 | Support for **CHESTER-Z1**                     |
 | [**CHESTER Range**](chester-range.md#chester-range)             | [**v2.3.1**](https://firmware.hardwario.com/chester/5c3cc2b6-b263-4f39-90ac-d409771bfaee) [ℹ️](common-functionality.md#network-mode-configuration "Network Mode Configuration") | <small>`5c3cc2b6b2634f3990acd409771bfaee`</small> | 2024-03-20 |                                                |
