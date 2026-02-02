@@ -547,27 +547,33 @@ Pressure is in **pascals**.
 
 ```json
 {
-  "system": {
-    "voltage_rest": 3.7
-  },
-  "wind": {
-    "speed": 2.5,
-    "direction": 180,
-    "gust": 4.1
-  },
-  "rain": {
-    "count": 10,
-    "total": 2.0
-  },
-  "thermometer": {
-    "temperature": 19.5
-  },
-  "hygrometer": {
-    "humidity": 60.5
-  }
+  "voltage_rest": 3.7,
+  "voltage_load": 3.65,
+  "current_load": 18,
+  "orientation": 2,
+  "therm_temperature": 19.5,
+  "hygro_temperature": 19.2,
+  "hygro_humidity": 60.5,
+  "wind_speed": 2.5,
+  "wind_direction": 180,
+  "rainfall": 2.0,
+  "barometer": 101325,
+  "w1_thermometers": [18.5, 19.0],
+  "ble_tags": [
+    {
+      "temperature": 20.0,
+      "humidity": 58.0
+    }
+  ],
+  "soil_sensors": [
+    {
+      "temperature": 15.5,
+      "moisture": 450
+    }
+  ]
 }
 ```
-    
+
   </TabItem>
 </Tabs>
 

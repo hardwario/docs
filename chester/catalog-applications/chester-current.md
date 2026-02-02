@@ -554,24 +554,9 @@ import TabItem from '@theme/TabItem';
   </TabItem>
   <TabItem value="lora" label="LoRaWAN">
 
-```json
-{
-  "system": {
-    "uptime": 7200,
-    "voltage_rest": 3.6
-  },
-  "adc": {
-    "measurements": [
-      {
-        "channel": 0,
-        "min": 4.0,
-        "max": 12.5,
-        "avg": 8.2
-      }
-    ]
-  }
-}
-```
+:::info
+**CHESTER Current** uses CBOR encoding for LoRaWAN communication. The decoded message format is identical to the LTE format shown above.
+:::
 
   </TabItem>
 </Tabs>

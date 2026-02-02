@@ -250,18 +250,10 @@ Every available sensor has one aggrevated measurement, which contains the minimu
   </TabItem>
   <TabItem value="lora" label="LoRaWAN">
 
-```json
-{
-  "system": {
-    "voltage_rest": 3.6
-  },
-  "range": {
-    "distance": 1540,
-    "signal_quality": 25
-  }
-}
-```
-    
+:::info
+**CHESTER Range** uses CBOR encoding for LoRaWAN communication. The decoded message format is identical to the LTE format shown above.
+:::
+
   </TabItem>
 </Tabs>
 

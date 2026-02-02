@@ -15,8 +15,12 @@ Some catalog firmwares allows configuration to use NB-IoT/LTE or LoRaWAN network
 This `app mode` configuration is needed currently for these catalog applications:
 
 - [CHESTER Clime](chester-clime.md)
-- [CHESTER Current](chester-current.md)
+- [CHESTER Control](chester-control.md)
 - [CHESTER Push](chester-push.md)
+- [CHESTER Current](chester-current.md)
+- [CHESTER Scale](chester-scale.md)
+- [CHESTER Meteo](chester-meteo.md)
+- [CHESTER Range](chester-range.md)
 
 The default functionality is that a device **does not use any radio** (mode `none`) and you need to set configuration parameter **mode**.
 
