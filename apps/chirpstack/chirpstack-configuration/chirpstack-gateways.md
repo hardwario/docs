@@ -32,11 +32,11 @@ If you are using our **Ember gateway**, the **Gateway ID** can be found through 
 If you are using our **EMBER** as the gateway, all of its configuration must be done directly in the **MikroTik system**.
 Once configured, the gateway should become visible and ready to connect with the ChirpStack system.
 
-Here is the link to the **step-by-step guide** for ****configuring the gateway via MikroTik**:
-https://docs.hardwario.com/ember/mikrotik-gateway-update
+Here is the link to the **step-by-step guide** for **configuring the gateway via MikroTik**:
+https://docs.hardwario.com/ember/mikrotik/gateway-configuration
 
 Here is the link to the **step-by-step guide** for **updating the gateway via MikroTik**:
-https://docs.hardwario.com/ember/mikrotik-gateway-configuration
+https://docs.hardwario.com/ember/mikrotik/gateway-update
 
 
 
