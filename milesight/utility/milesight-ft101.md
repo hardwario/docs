@@ -7,7 +7,7 @@ import Image from '@theme/IdealImage';
 
 # Milesight Field Tester FT101
 
-Milesight FT101 is a **portable LoRaWAN® network testing device** with a **5.72-inch HD touchscreen** designed for **signal assessment and optimization**. It features an **octa-core processor running Android 12.0**, supports **all standard LoRaWAN® frequency bands**, and provides **up to 8 hours of continuous operation**. The device is ideal for evaluating network quality, identifying optimal deployment locations, and comprehensive **field testing of LoRaWAN networks**.
+Milesight FT101 is a **portable LoRaWAN® network testing device** with a **5.72-inch HD touchscreen** designed for **signal assessment and optimization**. It features an **octa-core processor running Android 12.0**, supports **all standard LoRaWAN® frequency bands**, and provides **up to 8 hours of continuous operation**. The device is ideal for evaluating network quality, identifying optimal deployment locations, and comprehensive field testing of LoRaWAN networks.
 
 <div class="container">
   <div class="row">
