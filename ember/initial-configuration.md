@@ -1,184 +1,357 @@
 ---
-slug: initial-configuration
-title: Initial Setup and Configuration
+slug: getting-started
+title: Getting Started
+---
+import Image from '@theme/IdealImage';
+
+# EMBER Quick Start Guide
+
+Welcome! This page helps you **power up (revive)** your HARDWARIO **EMBER** and choose what to do next:
+- run a **managed LoRaWAN backend** via **EMBER Cloud Service** (ChirpStack + Node-RED),
+- connect EMBER to your own **ChirpStack**,
+- connect EMBER to **The Things Stack (TTS)**,
+- or forward packets to **your own LoRaWAN Network Server**,
+and then pass data to dashboards such as **Ubidots** or **ThingsBoard**.
+
+Official documentation:
+- https://docs.hardwario.com/ember/
+
 ---
 
-# EMBER Initial Setup and Configuration
+## Before you start
 
-This article is a step-by-step guide for updating and configuring the EMBER gateway (MikroTik RBM33G) before shipping.
+#### What EMBER is 
+EMBER is an industrial **LoRaWAN gateway (IoT Hotspot)** based on **MikroTik RBM33G**, designed for outdoor deployments (IP67 enclosure).  
+Hardware description: https://docs.hardwario.com/ember/hardware-description/
 
-:::caution
+#### You will need
+- EMBER gateway (Hotspot)
+- **LoRaWAN antenna** (required)
+- Power source:
+  - 24 V DC adapter / 24 V DC power supply, or
+  - 24 V DC passive PoE via the **WAN** port
+- Internet connectivity (WAN and/or LTE, depending on your setup)
+- A LoRaWAN backend (EMBER Cloud Service / ChirpStack / TTS / other)
+- (Optional) A dashboard platform (Ubidots / ThingsBoard)
 
-This guide is mainly for the **first configuration** of EMBER **before shipping**.\
-Most users will want to follow the [**Hotspot Configuration**](hotspot-configuration.md) guide.
+#### Quick links
+- EMBER product page (datasheet + overview): https://www.hardwario.com/ember
+- Hotspot configuration (LAN IP, login, RouterOS script): https://docs.hardwario.com/ember/hotspot-configuration/
+- EMBER Cloud Service (managed ChirpStack + Node-RED): https://docs.hardwario.com/ember/cloud-service/
 
-:::
+---
 
-## Hardware preparation
-- Insert the **Mikrotik R11E-LR8** LoRaWAN card into the onboard slot labeled **PCIe1**
-- Remove the **jumper** on the right side (J7) to **enable power** to the PCIe cards.
+## 1) "Revive" EMBER
 
-:::tip
+#### 1.1 Attach antennas (important)
+- **Attach the LoRaWAN antenna before powering on.**
+- If your unit includes LTE, it may use **two LTE antennas** (internal/external depending on configuration).
 
-To use an external antenna, replace the internal cable connected to the LoRaWAN card in the PCIe slot with a cable routed to the external antenna connector.
+More details: https://docs.hardwario.com/ember/hardware-description/#antennas
 
-:::
+#### 1.2 Power the gateway
+EMBER can be powered by:
+- **24 V DC power adapter**
+- **24 V DC power supply**
+- **24 V DC passive PoE** through the **WAN Ethernet port**
 
-## Prerequisites
+More details: https://docs.hardwario.com/ember/hardware-description/#power-supply-options
 
-You will need **a way to connect** to the EMBER (WebFig should be fine, but **WinBox is preferred**) and a copy of the Firmware
-and package files.
-
-- **RouterOS/Firmware package** - verified with [**v7.16.1**](pathname:///download/routeros-7.16.1-mmips.npk)
-
-- **Package files (.zip archive)** - verified with [**v7.16.1**](pathname:///download/all_packages-mmips-7.16.1.zip)
-
-:::tip
-
-Don't forget to **extract** the package files **from the archive**.
-
-:::
-
-## Procedure
-
-### Power On and connect to EMBER
-
-- **Connect the power supply and ethernet**: Attach the **power supply** to the EMBER gateway and connect an **Ethernet cable** from
-  the **left Ethernet port** on EMBER (`ether1`) to **your computer**.
-
-- **Open RouterOS interface**: Access RouterOS via **WinBox** or WebFig for the following steps. Log in using username: **admin** and password: **admin**.
-
-### Update EMBER
-
-#### Uninstall All Packages
-
-- **Remove all packages**: Uninstall all packages **except the RouterOS** package. (`System` > `Packages`)
-
+#### 1.3 Outdoor mounting safety note
 :::danger
 
-**Do not uninstall** the **RouterOS** package.
+For outdoor installations, **EMBER Hotspot** has to be mounted with connectors facing down.
 
 :::
 
-:::tip
+---
 
-#### Why remove packages first?
-Uninstalling **all extra packages** ensures a clean installation and **prevents conflicts** with older versions. This helps **avoid compatibility issues**.
+## 2) Connect for local access
 
-:::
+EMBER runs **MikroTik RouterOS**.  
+For initial access and management, use the LAN interface and standard RouterOS tools.
 
-#### Update OS
-- **Download RouterOS image**: download from [**official webpage**](https://mikrotik.com/product/rbm33g#fndtn-downloads))
-- **Upload RouterOS image**: Upload the RouterOS **.npk file** to the **`Files`** section on EMBER.
-- **Reboot**: Reboot the device to complete the update. (`System` > `Reboot`)
+**Main documentation (recommended start):**
+- EMBER Hotspot configuration & local access:  
+  https://docs.hardwario.com/ember/hotspot-configuration/
 
-#### Update Bootloader
+Additional references:
+- MikroTik RouterOS overview:  
+  https://help.mikrotik.com/docs/spaces/ROS/pages/328059/RouterOS
+- WebFig (browser management):  
+  https://help.mikrotik.com/docs/spaces/ROS/pages/328131/WebFig
 
-- **Update bootloader**: Go to `System` > `RouterBOARD` and select `Upgrade`.
-- **Reboot device**: Reboot after updating the bootloader to finalize the upgrade. (`System` > `Reboot`)
+---
 
-#### Install Packages
+## 3) Initial RouterOS Configuration Script
 
-- **Download packages**: download the package for **MMIPS** via [**download page**](https://mikrotik.com/download)
-- **Upload packages**: Upload the **iot** package **.npk file** to the **`Files`** section (LoRa has been moved under the IoT
-  package).
-- **Reboot**: Reboot the device to complete the package installation. (`System` > `Reboot`)
+This section provides a comprehensive configuration script to set up your EMBER gateway from a fresh state. The script will configure the network interfaces, update RouterOS, install the IoT package, and prepare the LoRa interface.
 
-:::caution
+### 3.1 Set Password and Run Base Configuration
 
-The **LoRa package** is now **under the IoT package**.
+**Open a New Terminal window** (or connect via SSH to your EMBER at `172.31.255.254`), set a secure admin password, then paste the following script:
 
-:::
+```routeros
+/system identity set name=ember
+/interface bridge add name=bridge0
+/interface bridge port add bridge=bridge0 interface=ether2
+/interface bridge port add bridge=bridge0 interface=ether3
+/ip address add address=172.31.255.1/24 interface=bridge0 network=172.31.255.0
+/ip dhcp-client add interface=ether1 disabled=no
+/system note set show-at-login=no
+/port set 0 name=serial0
+/port set 1 name=serial1
+# Wait for DHCP to acquire IP and establish internet connection
+:delay 30s
+/system package update check-for-updates
+# Wait for update check to complete
+:delay 20s
+:if ([/system package update get status] = "New version is available") do={
+    /system package update install
+}
+```
 
-#### Update LTE
+**What this script does:**
+- Sets the system identity to "ember"
+- Creates a bridge interface (bridge0) and adds ether2 and ether3 to it
+- Assigns IP address 172.31.255.1/24 to the bridge for LAN access
+- Enables DHCP client on ether1 (WAN) for internet connectivity
+- Configures serial ports
+- Checks for RouterOS updates and installs if available
 
-If installed, the LTE card needs updateing.
+Press **Enter** to execute the script.
 
-- In Interface, select the LTE card and disable it
-- Open more settings for the LTE card
-- Allow Roaming and apply
-- Click upgrade firmware and wait for it to finish (might give you an error saying you are already on the newest one)
-- Click Okay
-- Enable the LTE interface again
+**Important:** Once finished, press **Y** to confirm reboot so that the RouterOS version may be upgraded.
 
-:::danger
+---
 
-Do not forget to enable the LTE interface at the end.
+### 3.2 Install IoT Package
 
-:::
+After the gateway has rebooted and you've reconnected, paste the following script to download and install the IoT package (required for LoRa functionality):
 
-### Configuration
+```routeros
+:local curVer [/system package update get installed-version]
+:local arch [/system resource get architecture-name]
+:local iotFile ("iot-" . $curVer . "-" . $arch . ".npk")
+:local iotUrl ("https://download.mikrotik.com/routeros/" . $curVer . "/" . $iotFile)
+/tool fetch url=$iotUrl mode=https check-certificate=no
+:delay 15s
+:if ([:len [/file find name=$iotFile]] > 0) do={
+    /system reboot
+}
+```
 
-#### Reset Configuration
+**What this script does:**
+- Detects your current RouterOS version
+- Detects your device architecture
+- Downloads the matching IoT package (.npk file) from MikroTik
+- Automatically reboots to install the package
 
-- **Factory reset**: Go to `System` > `Reset Configuration` and check `No Default Configuration` to clear all settings.
-- **Log in**: Use username `admin` and leave the **password field empty**.
-- **Set a new password**: Go to `System` > `Users`, select **admin**, and change the password to `ember`.
+Press **Enter** to execute.
 
-:::tip
+Once finished, press **Y** to confirm the reboot.
 
-The **terminal** in WinBox might **prompt** you to set a **password**. If you do, there is **no need to set it in the menu**.
+---
 
-:::
+### 3.3 Configure LoRa Interface and Update Bootloader
 
-#### Remove Pre-configured Settings
+After reconnecting following the reboot, paste this script to configure the LoRa interface and update the bootloader:
 
-- **Delete LoRa servers**: Navigate to `IoT` > `LoRa` > `Servers` and remove all LoRa server entries.
-- **Remove IP addresses**: Go to `IP` > `Addresses` and delete all existing IP address configurations.
+```routeros
+/iot lora set 0 antenna=uFL
+/iot lora servers remove [find]
+/system routerboard upgrade
+```
 
+**What this script does:**
+- Sets the LoRa antenna to use the uFL connector
+- Removes any preconfigured LoRaWAN Network Server (LNS) entries
+- Updates the bootloader to match the current RouterOS version
 
-#### Apply New Configuration
+Press **Enter** to execute.
 
-- **Paste configuration**: Copy the configuration **below** and **paste** it into the **terminal** to set up the EMBER gateway.
+Immediately afterwards, press **Y** to confirm the bootloader upgrade, then type:
 
-  ```
-     /interface bridge add name=bridge0
-     /port set 0 name=serial0
-     /port set 1 name=serial1
-     /interface bridge port add bridge=bridge0 interface=ether2
-     /interface bridge port add bridge=bridge0 interface=ether3
-     /iot lora set 0 antenna=uFL
-     /ip address add address=172.31.255.1/24 interface=bridge0 network=172.31.255.0
-     /ip dhcp-client add interface=ether1
-     /system identity set name=ember
-     /system note set show-at-login=no
-  ```
+```routeros
+/system reboot
+```
 
-:::tip
+and press **Enter** to complete the setup.
 
-#### What does the config do?
+---
 
-- Creates a bridge between the `ether2` and `ether3` interfaces
-- Sets the LoRa card antenna.
-- Sets an IP address range for `bridge0` with `ether2` and `ether3` interfaces (`172.31.255.1/24`)
-- Creates a DHCP client for the `ether1` interface
-- Sets hostname to `ember`
+## 4) Optional: Manual RouterOS Update
 
-:::
+Use this section if you need to update or align the RouterOS version on EMBER manually (outside of the automated script in Section 3.1).
 
-:::danger
+**Main documentation (HARDWARIO):**
+- RouterOS update on EMBER (WebFig workflow):  
+  https://docs.hardwario.com/ember/mikrotik/gateway-update/
 
-This configuration **does not** set up any **LoRa servers**; the **customer has to add these themselves**.
+Additional references:
+- MikroTik downloads (RouterOS / WinBox):  
+  https://mikrotik.com/download
 
-:::
+---
 
-#### Verify Configuration
+## 5) Choose your LoRaWAN backend 
 
-- **Print configuration**: Use the `export terse` command in the terminal and review the output. Ensure it matches the
-  configuration above.
+At a high level:
+**LoRaWAN devices → EMBER (gateway) → LoRaWAN Network Server → Integrations → Dashboards / Apps**
 
-:::caution
+### EMBER Cloud Service (managed backend)
 
-There might be additional **TTN LoRa servers** after a reboot. These are **safe to Ignore**.\
-This is a **baked-in** behavior of **RouterOS** when **no LoRa servers** are configured **before rebooting**.
+**EMBER Cloud Service** is a fully managed LoRaWAN backend operated by HARDWARIO.  
+It is designed for a fast start without the need to run your own infrastructure.
 
-:::
+What the service typically provides:
+- **ChirpStack** – LoRaWAN Network Server  
+- **Node-RED** – data processing, payload decoding, and forwarding  
+- Preconfigured connectivity between the gateway, LNS, and integrations
 
-### Finalization
+👉 Recommended if you want to **get data from devices quickly** and forward it to applications or dashboards.
 
-- **Shut down device**: Run the **command** `/system/shutdown` in the **terminal** or use the GUI `System` > `Shutdown`.
-- **Disconnect power and ethernet**: Once the **device has powered down**, disconnect the **power supply** and the **ethernet**.
+#### Key links
+- Service overview and concept:  
+  **https://docs.hardwario.com/ember/cloud-service/**
 
-## Completion
+- EMBER Cloud web portal (service management):  
+  https://docs.hardwario.com/ember/cloud-service/#web-management
 
-The EMBER gateway should now be **fully updated and configured**. Good job!
+- ChirpStack in EMBER Cloud Service:  
+  https://docs.hardwario.com/ember/cloud-service/#chirpstack-lorawan-server
+
+- Node-RED in EMBER Cloud Service:  
+  https://docs.hardwario.com/ember/cloud-service/#node-red-application
+
+---
+
+### ChirpStack (self-hosted)
+
+**Main documentation (recommended start):**
+- ChirpStack (LoRaWAN Network Server overview):  
+  **https://docs.hardwario.com/ember/lorawan-network-server/lorawan-chirpstack**
+
+Additional resources:
+- Add EMBER gateway to ChirpStack v4 (HARDWARIO tutorial):  
+  https://docs.hardwario.com/ember/chirpstack/chirpstack-ember/
+
+- (Optional) Install ChirpStack v4 (Debian/Ubuntu):  
+  https://docs.hardwario.com/ember/chirpstack-v4-installation/
+
+- Official ChirpStack docs (gateway connectivity):  
+  https://www.chirpstack.io/docs/guides/connect-gateway.html
+
+---
+
+### The Things Stack
+
+**Main documentation (recommended start):**
+- The Things Stack (LoRaWAN Network Server overview):  
+  **https://docs.hardwario.com/ember/lorawan-network-server/lorawan-tts**
+
+Additional resources:
+- TTS documentation home:  
+  https://www.thethingsindustries.com/docs/
+
+Protocol note:
+- Many gateways use **Semtech UDP Packet Forwarder**, but it has known security and scalability drawbacks.  
+  TTS recommends **LoRa Basics™ Station** when possible.
+
+Reference:
+- Semtech UDP Packet Forwarder concept:  
+  https://www.thethingsindustries.com/docs/hardware/gateways/concepts/udp/
+
+---
+
+### Self-Hosted LoRaWAN Server
+If you already run another LoRaWAN server, you can set EMBER to forward packets to your server.
+
+Key note from the official Hotspot Configuration:
+- If you **do not use EMBER Cloud service**, use **your LoRaWAN server IP address**
+  and you **don't need to configure VPN tunnels**.
+
+Reference: https://docs.hardwario.com/ember/hotspot-configuration/
+
+---
+
+## 6) Dashboards & visualization
+
+Once your LoRaWAN server receives uplinks, you typically:
+1) decode payload → 2) transform to JSON/telemetry → 3) send to a dashboard via HTTP/MQTT.
+
+If you use **EMBER Cloud Service**, **Node-RED** is usually the fastest way to transform and forward data.
+
+### Ubidots
+
+**Main documentation (HARDWARIO):**
+- Ubidots integration overview:  
+  **https://docs.hardwario.com/apps/ubidots/index**
+
+Additional resources:
+- Ubidots home:  
+  https://ubidots.com/
+- Ubidots documentation:  
+  https://ubidots.com/docs/
+- HARDWARIO-hosted Ubidots instance (if applicable):  
+  https://ubidots.hardwario.com/
+
+---
+
+### ThingsBoard
+
+**Main documentation (HARDWARIO):**
+- ThingsBoard integration overview:  
+  **https://docs.hardwario.com/apps/thingsboard/index**
+
+Additional resources:
+- ThingsBoard home:  
+  https://thingsboard.io/
+- ThingsBoard documentation:  
+  https://thingsboard.io/docs/
+- HARDWARIO-hosted ThingsBoard instance (if applicable):  
+  https://thingsboard.hardwario.com/
+
+---
+
+## 7) "Day 1" validation checklist
+
+- [ ] LoRaWAN antenna attached (required)
+- [ ] Power connected (24 V DC or 24 V passive PoE via WAN)
+- [ ] Outdoor installation: connectors facing down
+- [ ] PC connected to **LAN**, receives DHCP lease, can reach `172.31.255.1` (updated from default)
+- [ ] RouterOS login works (`admin` / `[your-password]`)
+- [ ] Initial configuration script completed (Section 3)
+- [ ] RouterOS updated to latest version
+- [ ] IoT package installed
+- [ ] LoRa interface configured (antenna set to uFL)
+- [ ] Bootloader updated
+- [ ] Gateway is configured to your backend (EMBER Cloud / ChirpStack / TTS / other)
+- [ ] In the LoRaWAN server UI, gateway status shows **Last seen / connected**
+- [ ] You can see uplinks from at least one LoRaWAN device
+
+---
+
+## Troubleshooting (quick)
+
+#### Can't reach `172.31.255.1`
+- Make sure you are plugged into the **LAN** port (not WAN). LAN ports are ether2 and ether3 after running the configuration script.
+- Ensure your PC is set to DHCP (or set a static IP in `172.31.255.0/24`).
+- Check the Ethernet link LEDs.
+- If you haven't run the configuration script yet, the default IP might still be `172.31.255.254`.
+
+#### Gateway is powered, but not "seen" in the LoRaWAN server
+- Confirm the gateway's forwarding destination (server address / ports / protocol).
+- Verify WAN/LTE Internet connectivity.
+- Ensure the IoT package is installed (check with `/system package print`).
+- Verify LoRa interface is configured (check with `/iot lora print`).
+- If using EMBER Cloud, confirm you are using the provided service URL and correct configuration guidance.
+
+#### Script execution errors
+- Ensure you have a stable internet connection on the WAN port (ether1).
+- If the IoT package download fails, verify the RouterOS version matches available packages on MikroTik's download server.
+- You can manually download the IoT package from https://mikrotik.com/download and upload it via WebFig or WinBox.
+
+#### Want to understand the baseline RouterOS configuration
+- The reference configuration is documented here:  
+  https://docs.hardwario.com/ember/hotspot-configuration/
