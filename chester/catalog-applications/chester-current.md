@@ -157,6 +157,10 @@ app config channel-calib-y1 1 0
 app config channel-calib-y1 2 0
 app config channel-calib-y1 3 0
 app config channel-calib-y1 4 0
+app config channel-calib-mode 1 rms
+app config channel-calib-mode 2 rms
+app config channel-calib-mode 3 rms
+app config channel-calib-mode 4 rms
 app config w1-therm-interval-sample 60
 app config w1-therm-interval-aggreg 300
 ```
@@ -262,6 +266,32 @@ Command to set **calibration point Y1** (output) on the channel `n` (index 1-4):
 app config channel-calib-y1 <n> <value>
 ```
 
+Command to set **calibration mode** on the channel `n` (index 1-4):
+
+```
+app config channel-calib-mode <n> <avg/rms>
+```
+
+| Mode | Description | Use Case |
+|------|-------------|----------|
+| `avg` | Mean (average) value | DC signals, slow-changing values |
+| `rms` | Root Mean Square | AC signals, current transformers |
+
+### Channel Commands
+
+The following shell commands allow interactive calibration and reading of channels:
+
+| Command | Description |
+|---------|-------------|
+| `channel <n> read` | Read raw and calibrated values |
+| `channel <n> calib set-0 <value>` | Set calibration point 0 |
+| `channel <n> calib set-1 <value>` | Set calibration point 1 |
+| `channel <n> calib show` | Show calibration parameters |
+| `channel <n> calib reset` | Reset calibration to defaults |
+| `channel <n> calib mode [avg\|rms]` | Get/set calibration mode |
+
+Where `<n>` is channel number 1-4.
+
 ### 1-Wire Thermometer
 
 Command to set **1-Wire thermometer sample interval** in seconds:
@@ -280,6 +310,13 @@ app config w1-therm-interval-aggreg <1-86400>
 
 The latest firmware is available in Catalog Applications [Firmware chapter](index.md#application-firmware).
 
+### Firmware v3.5.1
+
+| Variant | Version | Link |
+|---------|---------|------|
+| **CHESTER Current** | v3.5.1 | [Download](https://firmware.hardwario.com/chester/c2ac3f9d94194573b43c56f54962e672) |
+| **CHESTER Current Z** | v3.5.1 | [Download](https://firmware.hardwario.com/chester/627823995dc34c4a9336d0534ce3e418) |
+
 ## Example JSON Message
 
 import Tabs from '@theme/Tabs';
@@ -292,271 +329,102 @@ import TabItem from '@theme/TabItem';
 {
   "message": {
     "version": 1,
-    "sequence": 1,
-    "timestamp": 1673272805
-  },
-  "attribute": {
-    "vendor_name": "HARDWARIO",
-    "product_name": "CHESTER-M",
-    "hw_variant": "CDGLS",
-    "hw_revision": "R3.2",
-    "fw_name": "CHESTER Current",
-    "fw_version": "v1.5.0",
-    "serial_number": "2159018247"
+    "sequence": 42,
+    "timestamp": 1738627200
   },
   "system": {
-    "uptime": 131,
-    "voltage_rest": 4.73,
-    "voltage_load": 4.67,
-    "current_load": 46
-  },
-  "backup": {
-    "line_voltage": 9.51,
-    "batt_voltage": 3.45,
-    "state": "connected",
-    "events": []
+    "uptime": 86400,
+    "voltage_rest": 3.65,
+    "voltage_load": 3.42,
+    "current_load": 28
   },
   "network": {
-    "imei": 351358815178303,
-    "imsi": 901288003957939,
     "parameter": {
       "eest": 7,
       "ecl": 0,
-      "rsrp": -87,
-      "rsrq": -4,
-      "snr": 16,
+      "rsrp": -89,
+      "rsrq": -10,
+      "snr": 12,
       "plmn": 23003,
-      "cid": 939040,
+      "cid": 1234567,
       "band": 20,
-      "earfcn": 6447
+      "earfcn": 6300
     }
   },
   "thermometer": {
-    "temperature": 22.68
+    "temperature": 23.45
   },
   "accelerometer": {
-    "acceleration_x": -0.16,
-    "acceleration_y": 0.07,
-    "acceleration_z": 9.88,
+    "accel_x": 0.012,
+    "accel_y": -0.008,
+    "accel_z": 1.002,
     "orientation": 2
   },
   "analog_channels": [
     {
       "channel": 1,
-      "measurements": [
-        {
-          "timestamp": 1673272718,
-          "mean_min": 1037,
-          "mean_max": 1039,
-          "mean_avg": 1038,
-          "mean_mdn": 1038,
-          "rms_min": 1037,
-          "rms_max": 1039,
-          "rms_avg": 1038,
-          "rms_mdn": 1038
-        },
-        {
-          "timestamp": 1673272748,
-          "mean_min": 1038,
-          "mean_max": 1038,
-          "mean_avg": 1038,
-          "mean_mdn": 1038,
-          "rms_min": 1038,
-          "rms_max": 1038,
-          "rms_avg": 1038,
-          "rms_mdn": 1038
-        },
-        {
-          "timestamp": 1673272778,
-          "mean_min": 1038,
-          "mean_max": 1038,
-          "mean_avg": 1038,
-          "mean_mdn": 1038,
-          "rms_min": 1038,
-          "rms_max": 1038,
-          "rms_avg": 1038,
-          "rms_mdn": 1038
-        }
-      ]
-    },
-    {
-      "channel": 2,
-      "measurements": [
-        {
-          "timestamp": 1673272718,
-          "mean_min": 0,
-          "mean_max": 0,
-          "mean_avg": 0,
-          "mean_mdn": 0,
-          "rms_min": 0,
-          "rms_max": 0,
-          "rms_avg": 0,
-          "rms_mdn": 0
-        },
-        {
-          "timestamp": 1673272748,
-          "mean_min": 0,
-          "mean_max": 0,
-          "mean_avg": 0,
-          "mean_mdn": 0,
-          "rms_min": 0,
-          "rms_max": 0,
-          "rms_avg": 0,
-          "rms_mdn": 0
-        },
-        {
-          "timestamp": 1673272778,
-          "mean_min": 0,
-          "mean_max": 0,
-          "mean_avg": 0,
-          "mean_mdn": 0,
-          "rms_min": 0,
-          "rms_max": 0,
-          "rms_avg": 0,
-          "rms_mdn": 0
-        }
-      ]
-    },
-    {
-      "channel": 3,
-      "measurements": [
-        {
-          "timestamp": 1673272718,
-          "mean_min": -8,
-          "mean_max": -7,
-          "mean_avg": -8,
-          "mean_mdn": -8,
-          "rms_min": 8,
-          "rms_max": 8,
-          "rms_avg": 8,
-          "rms_mdn": 8
-        },
-        {
-          "timestamp": 1673272748,
-          "mean_min": -8,
-          "mean_max": -8,
-          "mean_avg": -8,
-          "mean_mdn": -8,
-          "rms_min": 8,
-          "rms_max": 9,
-          "rms_avg": 8,
-          "rms_mdn": 8
-        },
-        {
-          "timestamp": 1673272778,
-          "mean_min": -8,
-          "mean_max": -8,
-          "mean_avg": -8,
-          "mean_mdn": -8,
-          "rms_min": 9,
-          "rms_max": 9,
-          "rms_avg": 9,
-          "rms_mdn": 9
-        }
-      ]
-    },
-    {
-      "channel": 4,
-      "measurements": [
-        {
-          "timestamp": 1673272718,
-          "mean_min": 4,
-          "mean_max": 5,
-          "mean_avg": 4,
-          "mean_mdn": 4,
-          "rms_min": 5,
-          "rms_max": 5,
-          "rms_avg": 5,
-          "rms_mdn": 5
-        },
-        {
-          "timestamp": 1673272748,
-          "mean_min": 4,
-          "mean_max": 4,
-          "mean_avg": 4,
-          "mean_mdn": 4,
-          "rms_min": 5,
-          "rms_max": 5,
-          "rms_avg": 5,
-          "rms_mdn": 5
-        },
-        {
-          "timestamp": 1673272778,
-          "mean_min": 4,
-          "mean_max": 4,
-          "mean_avg": 4,
-          "mean_mdn": 4,
-          "rms_min": 5,
-          "rms_max": 5,
-          "rms_avg": 5,
-          "rms_mdn": 5
-        }
-      ]
-    }
-  ],
-  "w1_thermometers": [
-    {
-      "serial_number": 170783697,
-      "measurements": [
-        {
-          "timestamp": 1673272718,
-          "min": 21.25,
-          "max": 21.25,
-          "avg": 21.25,
-          "mdn": 21.25
-        },
-        {
-          "timestamp": 1673272748,
-          "min": 21.25,
-          "max": 21.31,
-          "avg": 21.27,
-          "mdn": 21.25
-        },
-        {
-          "timestamp": 1673272778,
-          "min": 21.25,
-          "max": 21.25,
-          "avg": 21.25,
-          "mdn": 21.25
-        }
-      ]
-    },
-    {
-      "serial_number": 170787196,
-      "measurements": [
-        {
-          "timestamp": 1673272718,
-          "min": 21.43,
-          "max": 21.43,
-          "avg": 21.43,
-          "mdn": 21.43
-        },
-        {
-          "timestamp": 1673272748,
-          "min": 21.43,
-          "max": 21.43,
-          "avg": 21.43,
-          "mdn": 21.43
-        },
-        {
-          "timestamp": 1673272778,
-          "min": 21.43,
-          "max": 21.43,
-          "avg": 21.43,
-          "mdn": 21.43
-        }
-      ]
+      "raw_rms": {
+        "measurements": [
+          { "timestamp": 1738627200, "period": 300 },
+          { "min": 70.12, "max": 72.45, "avg": 71.28, "mdn": 71.30 },
+          { "min": 69.88, "max": 73.01, "avg": 71.45, "mdn": 71.42 }
+        ]
+      },
+      "raw_mean": {
+        "measurements": [
+          { "timestamp": 1738627200, "period": 300 },
+          { "min": 49.50, "max": 51.20, "avg": 50.35, "mdn": 50.32 },
+          { "min": 49.22, "max": 51.55, "avg": 50.38, "mdn": 50.40 }
+        ]
+      },
+      "calibration": {
+        "mode": 1,
+        "measurements": [
+          { "timestamp": 1738627200, "period": 300 },
+          { "min": 9.85, "max": 10.18, "avg": 10.01, "mdn": 10.02 },
+          { "min": 9.82, "max": 10.25, "avg": 10.03, "mdn": 10.04 }
+        ]
+      }
     }
   ]
 }
 ```
 
+:::info
+
+The payload structure for analog channels has changed in **v3.5.1**:
+- `raw_rms` - Contains RMS measurements in mV
+- `raw_mean` - Contains mean (average) measurements in mV
+- `calibration` - Contains calibrated values based on the selected mode (0=avg, 1=rms)
+
+:::
+
   </TabItem>
   <TabItem value="lora" label="LoRaWAN">
 
-:::info
-**CHESTER Current** uses CBOR encoding for LoRaWAN communication. The decoded message format is identical to the LTE format shown above.
-:::
+**CHESTER Current** supports binary LoRaWAN payload encoding. Example with battery + thermometer + channel 1 active:
+
+**Header:** `0x25 0x00` (bits: BATT=1, ACCEL=0, THERM=1, W1=0, BACKUP=0, CH1=1)
+
+**Raw bytes (hex):**
+```
+25 00 45 0E 5A 0D 1C 29 09 00 47 00 48 E4 49
+```
+
+**Decoded:**
+
+| Offset | Bytes | Field | Value |
+|--------|-------|-------|-------|
+| 0-1 | `25 00` | Header | 0x0025 (BATT + THERM + CH1) |
+| 2-3 | `45 0E` | voltage_rest | 3653 mV |
+| 4-5 | `5A 0D` | voltage_load | 3418 mV |
+| 6 | `1C` | current_load | 28 mA |
+| 7-8 | `29 09` | temperature | 23.45 °C (2345 / 100) |
+| 9-10 | `00 47` | ch1_rms | 71.5 mV (float16) |
+| 11-12 | `00 48` | ch1_mean | 50.3 mV (float16) |
+| 13-14 | `E4 49` | ch1_calib | 10.02 A (float16) |
+
+**Total:** 15 bytes
 
   </TabItem>
 </Tabs>
@@ -575,21 +443,139 @@ The following section is provided only for reference. Usually, the **CHESTER Cur
 
 :::
 
-In the **CHESTER Current** application, each channel can be individually calibrated using two-point calibration (two points specified by the XY coordinates). For these two points together with the input value (from the A/D converter), **CHESTER** performs the so-call linear interpolation.
+### Calibration System Overview
+
+The calibration system uses **two-point linear interpolation** to convert raw mV readings to calibrated values (e.g., Amps, Watts, or any physical unit).
 
 :::tip
 
 Linear interpolation is defined by this formula for output calculation:
 
-`y = y0 + (x - x0) * (y1 - y0) / (x1 - x0)`
+`calibrated = (y0 × (x1 - raw) + y1 × (raw - x0)) / (x1 - x0)`
 
-Where `y` is the output value, `x` is the input value (number read from the A/D converter), and the constants `x0` + `y0` + `x1` + `y1` represent the calibration points.
+Where:
+- `x0`, `x1` = Raw mV values at calibration points
+- `y0`, `y1` = Real physical values at calibration points
+- `raw` = Current raw mV reading
 
 :::
 
+### Configuration Parameters
+
+| Parameter | Type | Range | Default | Description |
+|-----------|------|-------|---------|-------------|
+| `channel-active-1..4` | bool | true/false | false | Enable channel |
+| `channel-differential-1..4` | bool | true/false | true | Differential mode |
+| `channel-calib-x0-1..4` | float | -10000..10000 | 0 | Raw mV at point 0 |
+| `channel-calib-x1-1..4` | float | -10000..10000 | 0 | Raw mV at point 1 |
+| `channel-calib-y0-1..4` | float | -10000..10000 | 0 | Real value at point 0 |
+| `channel-calib-y1-1..4` | float | -10000..10000 | 0 | Real value at point 1 |
+| `channel-calib-mode-1..4` | enum | avg/rms | rms | Calibration mode |
+
+### Calibration Procedure
+
+#### Prerequisites
+
+1. Connect the current sensor (e.g., CT clamp) to the CHESTER-K1 channel
+2. Connect to CHESTER via RTT shell or USB console
+3. Have a reference measurement device ready (multimeter, clamp meter)
+
+#### Step-by-Step Calibration
+
+##### 1. Enable the Channel
+
+```shell
+app config channel-active-1 true
+```
+
+##### 2. Set Calibration Mode
+
+Choose `rms` for AC current transformers or `avg` for DC sensors:
+
+```shell
+channel 1 calib mode rms
+```
+
+##### 3. Verify Raw Reading
+
+Read the current raw mV value:
+
+```shell
+channel 1 read
+```
+
+Output example:
+```
+Channel 1: avg=0.5 rms=1.2 mV (mode=rms, no calibration)
+```
+
+##### 4. Calibration Point 0 (Zero/Low Point)
+
+Apply a known **low** current (e.g., 0 A) and set the calibration:
+
+```shell
+channel 1 calib set-0 0
+```
+
+This captures the current raw mV reading as `x0` and sets `y0 = 0`.
+
+Output:
+```
+Channel 1: avg=0.5 rms=1.2 (using rms), point 0 set (x0=1.20, y0=0.00)
+```
+
+##### 5. Calibration Point 1 (High Point)
+
+Apply a known **high** current (e.g., 10 A) and set the calibration:
+
+```shell
+channel 1 calib set-1 10
+```
+
+This captures the current raw mV reading as `x1` and sets `y1 = 10`.
+
+Output:
+```
+Channel 1: avg=50.3 rms=71.5 (using rms), point 1 set (x1=71.50, y1=10.00)
+```
+
+##### 6. Verify Calibration
+
+Read the channel to see calibrated output:
+
+```shell
+channel 1 read
+```
+
+Output:
+```
+Channel 1: avg=50.3 rms=71.5 mV (mode=rms, calibrated: 10.00)
+```
+
+##### 7. Show Calibration Parameters
+
+```shell
+channel 1 calib show
+```
+
+Output:
+```
+Channel 1 calibration: x0=1.20 y0=0.00, x1=71.50 y1=10.00, mode=rms
+```
+
+#### Reset Calibration
+
+To clear calibration and return to raw mV output:
+
+```shell
+channel 1 calib reset
+```
+
+### Legacy Calibration Method
+
 In **HARDWARIO**, we have a calibration kit for **CHESTER Current** made of several air-core coils with 10/50/100 turns.
 
-### Example Current Calibration
+#### Example Current Calibration (Legacy)
 
 1. Measure the **zero-current offsets** and write them for each channel as the `x0` parameter
 
