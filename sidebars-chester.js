@@ -73,6 +73,7 @@ const sidebars = {
         'catalog-applications/chester-control',
         'catalog-applications/chester-current',
         'catalog-applications/chester-meteo',
+        //'catalog-applications/chester-motion',
         'catalog-applications/chester-push',
         'catalog-applications/chester-range',
         'catalog-applications/chester-scale',
