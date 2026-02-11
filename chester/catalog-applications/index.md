@@ -94,6 +94,8 @@ Then apply changes by typing `config save`. The device will reboot and use the c
 | [**CHESTER Range Z**](chester-range.md#chester-range-z) | [**v3.5.0**](https://firmware.hardwario.com/chester/fe7186e6197e48edbe8eb319fdc0b814) | <small>`fe7186e6197e48edbe8eb319fdc0b814`</small> | 2025-12-03 | Support for CHESTER-Z |
 | **CHESTER Scale** | [**v3.5.0**](https://firmware.hardwario.com/chester/ebfe14ec6f074fa494a1f7961bcee258) | <small>`ebfe14ec6f074fa494a1f7961bcee258`</small> | 2025-12-03 |  |
 | **CHESTER Scale Z** | [**v3.5.0**](https://firmware.hardwario.com/chester/f046baa2f974460cac8443979a798732) | <small>`f046baa2f974460cac8443979a798732`</small> | 2025-12-03 | Support for CHESTER-Z |
+| [**CHESTER Serial RS-232**](chester-serial.md#chester-serial-rs232) | [**v3.5.1**](https://firmware.hardwario.com/chester/ee1adb273b184f03a9f1b2f4b7127040) | <small>`ee1adb273b184f03a9f1b2f4b7127040`</small> | 2026-02-10 |  |
+| [**CHESTER Serial RS-485**](chester-serial.md#chester-serial-rs485) | [**v3.5.1**](https://firmware.hardwario.com/chester/d526911651dd479f9bfc20a92a25a893) | <small>`d526911651dd479f9bfc20a92a25a893`</small> | 2026-02-10 |  |
 | [**CHESTER wM-Bus**](chester-wm-bus.md#chester-wm-bus) | [**v3.5.0**](https://firmware.hardwario.com/chester/844541b36a18410ab3904a31b862a063) | <small>`844541b36a18410ab3904a31b862a063`</small> | 2025-12-03 |  |
 
 
