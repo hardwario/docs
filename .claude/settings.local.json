@@ -13,7 +13,8 @@
       "Bash(npm run build:*)",
       "Bash(npm run clear:*)",
       "WebFetch(domain:www.hardwario.store)",
-      "WebFetch(domain:shop.hardwario.com)"
+      "WebFetch(domain:shop.hardwario.com)",
+      "Bash(copy:*)"
     ],
     "deny": [],
     "ask": []
