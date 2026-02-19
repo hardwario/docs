@@ -14,7 +14,10 @@
       "Bash(npm run clear:*)",
       "WebFetch(domain:www.hardwario.store)",
       "WebFetch(domain:shop.hardwario.com)",
-      "Bash(copy:*)"
+      "Bash(copy:*)",
+      "Bash(python:*)",
+      "Bash(python -c:*)",
+      "Bash(pip install:*)"
     ],
     "deny": [],
     "ask": []
