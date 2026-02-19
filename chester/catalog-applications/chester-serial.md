@@ -6,7 +6,7 @@ import Image from '@theme/IdealImage';
 
 # CHESTER Serial
 
-This article describes the core functionality, hardware description, and example **JSON** message of the catalog application **CHESTER Serial**.
+This article describes the core functionality, hardware description, default configuration, and example **JSON** message of the catalog application **CHESTER Serial**.
 
 :::caution
 
@@ -20,19 +20,13 @@ Some of the basics are not provided, as they are common for all CHESTER catalog 
 
 ## Application Overview
 
-**CHESTER Serial** is a universal application for industrial serial communications developed for the HARDWARIO CHESTER platform. It serves as a flexible gateway for integrating industrial devices (sensors, PLCs, meters) into the cloud.
+**CHESTER Serial** is a universal application for industrial serial communications. It works as a flexible gateway for integrating industrial devices (sensors, energy meters) into the cloud via LTE-M/NB-IoT or LoRaWAN.
 
-The application is hardware-aware; it automatically detects the installed extension module and adapts its behavior:
-* **RS-232** (with Module [**CHESTER-X12**](../extension-modules/chester-x12.md))
-* **RS-485** (with Module [**CHESTER-X2**](../extension-modules/chester-x2.md))
+The application supports two communication interfaces, depending on the installed extension module:
+* **RS-485** (with Module [**CHESTER-X2**](../extension-modules/chester-x2.md)) — Modbus RTU Master, multi-drop bus, up to 8 slave devices
+* **RS-232** (with Module [**CHESTER-X12**](../extension-modules/chester-x12.md)) — point-to-point connection, 1 device
 
-## Key Features
-
-* **Dual Interface Support:** Automatic configuration for RS-232 (Point-to-Point) or RS-485 (Multi-drop) based on the connected hardware.
-* **Modbus RTU Master:** Polling of up to 8 slave devices with support for standard Modbus functions.
-* **Transparent Mode:** Bidirectional data passthrough (tunneling) without interpretation, ideal for proprietary protocols.
-* **Multi-Radio Connectivity:** Data transmission via LTE-M / NB-IoT (CBOR) or LoRaWAN (Optimized Binary).
-* **Native Sensor Support:** Built-in drivers for specific industrial sensors like **MicroSENS** (CO2), **SenseCAP** (Meteo), and **Cubic** (Particulate Matter).
+It supports 10 device types including energy meters, environmental sensors, and generic Modbus devices. Data is transmitted via LTE (CBOR encoding) or LoRaWAN (optimized binary encoding with multi-device packing).
 
 ## Application Variants
 
@@ -40,7 +34,11 @@ The application is hardware-aware; it automatically detects the installed extens
 
 ### CHESTER Serial RS-485 {#chester-serial-rs485}
 
-The catalog application **CHESTER Serial RS-485** provides RS-485/Modbus RTU connectivity.
+This variant is equipped with the **CHESTER-X2** extension module. It is designed for standard industrial bus communication where multiple devices are connected in a daisy-chain topology.
+
+* **Interface:** Non-isolated RS-485
+* **Topology:** Multi-drop bus
+* **Capacity:** Up to 8 Modbus RTU slave devices
 
 The hardware of this application consists of the following ordering codes:
 
@@ -53,7 +51,11 @@ See [**Ordering Codes**](../ordering-codes.md) for more details.
 
 ### CHESTER Serial RS-232 {#chester-serial-rs232}
 
-The catalog application **CHESTER Serial RS-232** provides RS-232 connectivity for legacy devices.
+This variant is equipped with the **CHESTER-X12** extension module. It is intended for point-to-point communication with a single peripheral device, legacy equipment, or sensors requiring a direct serial link.
+
+* **Interface:** Non-isolated RS-232
+* **Topology:** Point-to-point connection
+* **Capacity:** Single device (1:1 connection)
 
 The hardware of this application consists of the following ordering codes:
 
@@ -65,26 +67,60 @@ See [**Ordering Codes**](../ordering-codes.md) for more details.
 
 :::caution
 
-**CHESTER Serial** requires external power supply (5-28V DC) for operation. It cannot run on battery alone.
+**CHESTER Serial** requires an external power supply (5–28 V DC) for continuous operation. Sensors and the serial interface are powered continuously.
 
 :::
 
-## Operating Modes
+## Supported Devices
 
-### Modbus RTU Master
+The firmware includes native support for the following devices:
 
-In this mode, CHESTER acts as a Master controller that periodically queries connected Slave devices.
+| Device | Type String | Interface | Measurements |
+| :--- | :--- | :--- | :--- |
+| **MicroSENS 180-HS** | `microsens_180hs` | RS-232 (ASCII) | CO2 (Vol.-%), Temperature, Pressure |
+| **SenseCAP S1000 / S500** | `sensecap_s1000` | RS-485 Modbus | Temperature, Humidity, Pressure, Light, Wind |
+| **CUBIC 6303** | `cubic_6303` | RS-485 Modbus | PM1.0, PM2.5, PM10 |
+| **Lambrecht** | `lambrecht` | RS-485 Modbus | Weather station data |
+| **Generic Modbus** | `generic` | RS-485 Modbus | Custom register mapping |
+| **Carlo Gavazzi EM1XX** | `em1xx` | RS-485 Modbus | Voltage, Current, Power, Frequency, Energy in/out (single-phase) |
+| **Carlo Gavazzi EM5XX** | `em5xx` | RS-485 Modbus | Voltage, Current, Power, Frequency, Energy per phase (three-phase) |
+| **ORNO OR-WE-504** | `or_we_504` | RS-485 Modbus | Voltage, Current, Power, Energy (single-phase) |
+| **ORNO OR-WE-516** | `or_we_516` | RS-485 Modbus | Voltage, Current, Power per phase, Energy (three-phase) |
+| **Schneider iEM3000** | `iem3000` | RS-485 Modbus | Voltage, Current, Power, Energy per phase (three-phase) |
 
-* **Capacity:** Up to 8 devices simultaneously.
-* **Addressing:** Supports slave addresses 1–247.
-* **Functions:** Supports FC01, FC02, FC03, FC04, FC05, FC06, FC0F, and FC10.
+:::tip
+
+You can also use short aliases for some device types: `microsens`, `sensecap`, `cubic`, `em111`, `em540`.
+
+:::
+
+## Application Behavior
+
+### Modbus RTU Mode
+
+In Modbus mode, CHESTER acts as the Modbus RTU Master and periodically polls all configured slave devices:
+
+* Devices are **sampled** with a configurable period (parameter `interval-sample`).
+* Collected measurements are sent in batch during the report interval (parameter `interval-report`).
+* Up to **8 devices** can be configured simultaneously on the RS-485 bus.
+* Supported Modbus functions: FC01, FC02, FC03, FC04, FC05, FC06, FC0F, and FC10.
 
 ### Transparent Mode
 
-CHESTER acts as a bridge. Data received from the serial port is sent to the cloud "as is" and vice versa.
+In Transparent mode, CHESTER acts as a bidirectional bridge between the serial port and the cloud:
 
-* **Usage:** Debugging, legacy equipment, non-standard protocols.
-* **Limitation:** Only one connected device is supported in this mode.
+* Data received on the serial line is forwarded to the cloud.
+* Only one device can be connected (`device-0` slot only).
+* Useful for debugging, legacy equipment, or non-standard protocols.
+
+### LoRaWAN Multi-Device Packing
+
+When using LoRaWAN, the application uses adaptive multi-device packing (Protocol v2) to optimize airtime:
+
+* Dynamically queries the current Data Rate to determine available MTU.
+* Batches multiple device readings into single uplinks where possible.
+* First uplink contains system data (battery, temperature, accelerometer) plus device data.
+* Subsequent uplinks contain only device data.
 
 ## Technical Specifications
 
@@ -96,37 +132,36 @@ CHESTER acts as a bridge. Data received from the serial port is sent to the clou
 | **Cloud Formats** | CBOR (LTE), Optimized Binary (LoRaWAN) |
 | **Power Supply** | External source (5–28V DC) required |
 
-## Integrated Sensor Drivers
-
-The firmware includes native support for the following devices:
-
-| Device | Interface | Measurements |
-| :--- | :--- | :--- |
-| **MicroSENS 180-HS** | RS-232 | CO2 (0–100%), Temperature (-40 to +85°C), Pressure (300–1100 mbar) |
-| **SenseCAP S1000 / S500** | RS-485 Modbus | Air temperature, humidity, pressure, light intensity, wind speed, wind direction |
-| **CUBIC 6303** | RS-485 Modbus | PM1.0, PM2.5, PM10 (in μg/m³) |
-| **Generic Modbus** | RS-485 Modbus | Custom register mapping for any Modbus RTU device |
-
 ## Default Configuration
 
 This is the default configuration (printed using the `app config show` command):
 
 ```
-app config mode lte
-app config serial-mode modbus
+app config mode none
 app config interval-sample 60
-app config interval-report 900
+app config interval-aggreg 300
+app config interval-report 1800
+app config interval-poll 0
+app config serial-mode transparent
 app config serial-baudrate 9600
+app config serial-data-bits 8
 app config serial-parity none
 app config serial-stop-bits 1
-app config serial-data-bits 8
+app config device-0
+app config device-1
+app config device-2
+app config device-3
+app config device-4
+app config device-5
+app config device-6
+app config device-7
 ```
 
 ## Specific Commands
 
 :::info
 
-You can easily explore the whole command tree structure - start with the `help` command.
+You can easily explore the whole command tree structure — start with the `help` command.
 
 :::
 
@@ -136,28 +171,40 @@ To apply a new configuration, you need to call `config save`, which applies the 
 
 :::
 
+### Action Commands
+
+Command to **trigger sample** immediately (and store the result in the sample buffer):
+
+```
+sample
+```
+
+Command to **send data** immediately:
+
+```
+send
+```
+
 ### Network Mode
 
-Command to set **communication mode** (lte, lrw, or none):
+Command to set the **communication mode**:
 
 ```
-app config mode <lte/lrw/none>
+app config mode <none/lte/lrw>
 ```
 
-### Serial Mode
-
-Command to set **serial operating mode** (modbus or transparent):
-
-```
-app config serial-mode <modbus/transparent>
-```
-
-### Intervals
+### Reporting
 
 Command to set **sample interval** in seconds:
 
 ```
 app config interval-sample <1-86400>
+```
+
+Command to set **aggregation interval** in seconds:
+
+```
+app config interval-aggreg <1-86400>
 ```
 
 Command to set **report interval** in seconds:
@@ -166,7 +213,19 @@ Command to set **report interval** in seconds:
 app config interval-report <30-86400>
 ```
 
-### Serial Line Configuration
+Command to set **LTE polling interval** in seconds (0 = disabled):
+
+```
+app config interval-poll <0-86400>
+```
+
+### Serial Line
+
+Command to set **serial operating mode**:
+
+```
+app config serial-mode <transparent/modbus>
+```
 
 Command to set **baud rate**:
 
@@ -174,75 +233,126 @@ Command to set **baud rate**:
 app config serial-baudrate <1200-115200>
 ```
 
-Command to set **parity** (none, odd, even):
+Command to set **data bits**:
+
+```
+app config serial-data-bits <7-9>
+```
+
+Command to set **parity**:
 
 ```
 app config serial-parity <none/odd/even>
 ```
 
-Command to set **stop bits** (1 or 2):
+Command to set **stop bits**:
 
 ```
-app config serial-stop-bits <1/2>
-```
-
-Command to set **data bits** (7 or 8):
-
-```
-app config serial-data-bits <7/8>
+app config serial-stop-bits <1-2>
 ```
 
 ### Device Configuration
 
-Command to configure a **device slot** (1-8):
+Configure device slots 0–7 using the format `type[,addr[,timeout]]`:
 
 ```
-app config device<n> "<type>,<address>,<timeout>"
+app config device-<n> "<type>,<addr>,<timeout>"
 ```
+
+Where:
+* `n` — device slot index (0–7)
+* `type` — device type string (see Supported Devices table)
+* `addr` — Modbus slave address (1–247), required in Modbus mode
+* `timeout` — response timeout in seconds (default: 1)
 
 **Example configurations:**
 
 ```
-# SenseCAP Weather Station on address 1
-app config device1 "sensecap_s1000,1,1"
+# Gavazzi EM111 single-phase meter at address 1
+app config device-0 "em1xx,1,1"
 
-# MicroSENS CO2 sensor (transparent mode)
-app config device1 "microsens_180hs"
+# ORNO OR-WE-516 three-phase meter at address 2
+app config device-1 "or_we_516,2,1"
 
-# Generic Modbus device on address 5
-app config device2 "generic_modbus,5,1"
+# Schneider iEM3000 at address 10 with 3s timeout
+app config device-2 "iem3000,10,3"
+
+# MicroSENS CO2 sensor (RS-232, no address needed)
+app config device-0 "microsens_180hs"
+
+# Clear a device slot
+app config device-3 ""
 ```
 
-### Diagnostics Commands
+:::tip
 
-Command to **list configured devices**:
+In Modbus mode, the Modbus slave address is required for all devices. In Transparent mode, only `device-0` can be configured.
+
+:::
+
+### Modbus Commands
+
+Read Modbus registers from a slave device:
+
+```
+modbus read <slave> <addr> <count> [holding|input]
+```
+
+Write a value to a Modbus register:
+
+```
+modbus write <slave> <addr> <value>
+```
+
+Sample the configured Modbus device:
+
+```
+modbus sample
+```
+
+### Serial Commands
+
+Send hex data on the serial line and wait for a response:
+
+```
+serial send <hex> [timeout_s]
+```
+
+Read data from the serial RX buffer:
+
+```
+serial recv [timeout_s]
+```
+
+### Device Commands
+
+List all configured devices:
 
 ```
 device list
 ```
 
-Command to **trigger immediate measurement**:
+Sample a specific device by its slot index:
 
 ```
-app sample
+device sample <0-7>
 ```
 
-Command to **trigger immediate data transmission**:
+Reset a specific device:
 
 ```
-app send
+device reset <0-7>
 ```
 
-Command to **test Modbus communication** directly:
+Access device-specific commands (per device type):
 
 ```
-modbus read <address> <count> <type>
-```
-
-**Example:** Read 5 input registers from slave address 1:
-
-```
-modbus read 1 5 input
+device microsens_180hs <subcommand>
+device em1xx <subcommand>
+device or_we_504 <subcommand>
+device or_we_516 <subcommand>
+device em5xx <subcommand>
+device iem3000 <subcommand>
 ```
 
 ## Firmware
@@ -262,70 +372,82 @@ import TabItem from '@theme/TabItem';
   "message": {
     "version": 1,
     "sequence": 42,
-    "timestamp": 1673272805
+    "timestamp": 1738627200
   },
   "attribute": {
     "vendor_name": "HARDWARIO",
     "product_name": "CHESTER-M",
     "hw_variant": "CGLS",
     "hw_revision": "R3.4",
-    "fw_name": "CHESTER Serial",
-    "fw_version": "v3.0.0",
+    "fw_version": "v1.0.0",
     "serial_number": "2159018267"
   },
   "system": {
     "uptime": 86400,
-    "voltage_rest": 3.7,
-    "voltage_load": 3.65,
-    "current_load": 45
+    "voltage_rest": 3.65,
+    "voltage_load": 3.42,
+    "current_load": 28
   },
   "network": {
     "imei": 351358815180770,
     "imsi": 901288910018982,
     "parameter": {
-      "eest": 7,
-      "ecl": 0,
       "rsrp": -85,
       "rsrq": -6,
       "snr": 12,
       "plmn": 23003,
       "cid": 939040,
-      "band": 20,
-      "earfcn": 6447
+      "band": 20
     }
   },
   "thermometer": {
-    "temperature": 24.5
+    "temperature": 23.45
   },
   "accelerometer": {
-    "accel_x": 0.05,
-    "accel_y": -0.12,
-    "accel_z": 9.78,
+    "accel_x": 0.012,
+    "accel_y": -0.008,
+    "accel_z": 1.002,
     "orientation": 2
   },
-  "serial_devices": [
+  "devices": [
     {
-      "slot": 1,
-      "type": "sensecap_s1000",
-      "address": 1,
-      "measurements": {
-        "air_temperature": 22.5,
-        "air_humidity": 48.2,
-        "air_pressure": 101250,
-        "light_intensity": 850,
-        "wind_speed": 3.2,
-        "wind_direction": 225
-      }
+      "device": 0,
+      "type": 7,
+      "type_name": "em1xx",
+      "addr": 1,
+      "data": [
+        {
+          "timestamp": 1738627200,
+          "voltage": 230.5,
+          "current": 5.23,
+          "power": 1198.0,
+          "frequency": 50.01,
+          "energy_in": 12345,
+          "energy_out": 0
+        }
+      ]
     },
     {
-      "slot": 2,
-      "type": "cubic_6303",
-      "address": 2,
-      "measurements": {
-        "pm1_0": 12,
-        "pm2_5": 18,
-        "pm10": 25
-      }
+      "device": 1,
+      "type": 8,
+      "type_name": "or_we_516",
+      "addr": 2,
+      "data": [
+        {
+          "timestamp": 1738627200,
+          "voltage_l1": 230.1,
+          "voltage_l2": 231.2,
+          "voltage_l3": 229.8,
+          "current_l1": 4.12,
+          "current_l2": 3.89,
+          "current_l3": 4.35,
+          "power_l1": 948.0,
+          "power_l2": 901.2,
+          "power_l3": 996.5,
+          "power_total": 2845.7,
+          "energy": 98765
+        }
+      ]
     }
   ]
 }
@@ -334,30 +456,15 @@ import TabItem from '@theme/TabItem';
   </TabItem>
   <TabItem value="lora" label="LoRaWAN">
 
-```json
-{
-  "voltage_rest": 3.7,
-  "voltage_load": 3.65,
-  "current_load": 45,
-  "orientation": 2,
-  "therm_temperature": 24.5,
-  "devices": [
-    {
-      "slot": 1,
-      "type": "sensecap_s1000",
-      "air_temperature": 22.5,
-      "air_humidity": 48.2,
-      "wind_speed": 3.2,
-      "wind_direction": 225
-    }
-  ]
-}
-```
+**CHESTER Serial** uses binary LoRaWAN payload encoding with Protocol v2 multi-device packing. The payload is compressed to fit within the LoRaWAN MTU (51–222 bytes depending on Data Rate). Multiple device readings are batched into single uplinks when possible.
 
-:::note
-Due to the **51-byte LoRaWAN payload limit**, the transmitted data is highly compressed. Not all measurements may be included in a single transmission. The payload structure varies based on configured devices and their data priorities.
+The ChirpStack/TTN decoder is available in the `codec/cs-decoder.js` file. It supports both Protocol v1 (single-device, legacy) and Protocol v2 (multi-device packing).
+
+:::info
+
+Due to LoRaWAN payload size constraints, device values are encoded using **Float16** (IEEE 754 half-precision) format. The decoder automatically converts these back to full-precision values.
+
 :::
 
   </TabItem>
 </Tabs>
-

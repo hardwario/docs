@@ -20,7 +20,7 @@ Some of the basics are not provided, as they are common for all CHESTER catalog 
 
 ## Application Overview
 
-**CHESTER Motion** is a configurable battery-operated NB-IoT/LTE-M motion sensor that detects and reports human movement using dual PIR sensors.
+**CHESTER Motion** is a directional motion detection device that uses dual PIR sensors to detect and track movement direction (left-to-right and right-to-left). The application counts motion events with direction information, and sends aggregated telemetry data via LTE to the HARDWARIO Cloud.
 
 **CHESTER Motion** is equipped with two PIR sensors to monitor the passage of individuals around the device, making it ideal for tracking foot traffic in factories, train stations, or retail environments. With wireless connectivity and long battery life, the device can be easily installed anywhere, including remote locations for monitoring protected natural areas.
 
@@ -64,9 +64,35 @@ See [**Ordering Codes**](../ordering-codes.md) for more details.
 
 ## Measurement and Behavior
 
-- All sensors are **sampled** with a configurable period (parameter `interval-sample`).
-- Each aggregated value has its timestamp and is sent in a batch in a report interval period (parameter `interval-report`).
-- The device counts **motion detections** and **detect events** for both **left** and **right** PIR sensors independently.
+The application operates in a three-stage pipeline:
+
+1. **Sampling** (controlled by `interval-sample`, default 60 seconds):
+   - Reads internal thermometer (temperature)
+   - Reads accelerometer (X, Y, Z axes and orientation)
+   - Captures accumulated motion counts since the last sample into a motion sample buffer
+   - Resets per-cycle motion counters after each sample
+
+2. **Motion detection** (continuous, interrupt-driven):
+   - The CHESTER-S3 module has two PIR sensor channels: **left** (L) and **right** (R)
+   - When one channel detects motion, a **750 ms window** opens to detect the opposite channel
+   - If the opposite channel fires within 750 ms, a directional movement event is recorded:
+     - L then R = left-to-right movement (`motion_right`)
+     - R then L = right-to-left movement (`motion_left`)
+   - If the opposite channel does not fire within 750 ms, only a single-sensor detection is counted (`detect_left` or `detect_right`)
+
+3. **Reporting** (controlled by `interval-report`, default 1800 seconds):
+   - Encodes all collected data into CBOR format
+   - Sends the report to the HARDWARIO Cloud via LTE
+   - Up to **30 motion samples** can be buffered per reporting period
+   - Motion sample counters reset after a successful send
+   - Totalizers (lifetime counters) persist across reports and are never reset
+
+:::info
+
+A random jitter of 0-20% is added to the report interval to prevent multiple devices from transmitting simultaneously.
+
+:::
+
 - Motion detection sensitivity can be configured using preset modes (**low**, **medium**, **high**) or **individual** custom parameters.
 
 ### PIR Sensitivity Modes
@@ -79,37 +105,64 @@ The application offers three preset sensitivity modes and one custom mode:
 **Medium** (default) — Balanced ratio between detection speed and false alarm resistance:
 - `motion-sens`: 64, `motion-blind`: 2 s, `motion-pulse`: 2, `motion-window`: 2 s
 
-**High** — Fastest detection with heightened motion sensitivity but higher false alarm risk:
-- `motion-sens`: 32, `motion-blind`: 1 s, `motion-pulse`: 1, `motion-window`: 0 s
+**High** — Fastest detection with highest sensitivity. Single pulse triggers detection immediately. Best for security systems or door sensors where immediate response is required:
+- `motion-sens`: 128, `motion-blind`: 1 s, `motion-pulse`: 1, `motion-window`: 0 s
 
 **Individual** — Allows manual adjustment of all four parameters for advanced control.
 
 :::tip
 
-For indoor environments, recommended `motion-sens` values are 50–80. For outdoor areas with potential interference, use 70–100 (lower value = higher sensitivity).
+The `motion-sens` parameter controls how strongly the sensor reacts to input. Higher values mean higher responsiveness.
 
 :::
+
+### LED Behavior
+
+| LED | Condition | Behavior |
+| :--- | :--- | :--- |
+| Red | Initialization | On during startup, off when initialization is complete |
+| Green | Service mode + LTE mode | Brief flash every 5 seconds |
+| Yellow | Service mode + no mode | Brief flash every 5 seconds |
+| Green | Service mode + left PIR trigger | 100 ms flash on left sensor detection |
+| Red | Service mode + right PIR trigger | 100 ms flash on right sensor detection |
+| Yellow | Button press | Pulses N times (N = number of clicks detected) |
+| LOAD | 5-click button action | On for 2 minutes |
+
+:::info
+
+Service mode LED indicators are only active when `service-mode-enabled` is set to `true`.
+
+:::
+
+### Button Behavior
+
+The INT button supports multi-click actions:
+
+| Clicks | Action |
+| :--- | :--- |
+| 1x | Send data to cloud immediately |
+| 2x | Sample all sensors immediately |
+| 3x | Sample all sensors + send data |
+| 4x | Reboot the device |
+| 5x | Turn on LOAD LED for 2 minutes (load indication) |
+
+Each button press is acknowledged with yellow LED flashes corresponding to the number of detected clicks.
 
 ## Default Configuration
 
 This is the default configuration (printed using the `app config show` command):
 
 ```
-app config mode lte
 app config interval-sample 60
 app config interval-report 1800
 app config interval-poll 0
 app config sensitivity medium
-app config service-mode-enabled false
-```
-
-When `sensitivity` is set to `individual`, the following parameters are also available:
-
-```
 app config motion-sens 64
 app config motion-blind 2
 app config motion-pulse 2
 app config motion-window 2
+app config service-mode-enabled false
+app config mode lte
 ```
 
 ## Specific Commands
@@ -162,7 +215,7 @@ When set to `individual`, you can fine-tune all four motion detection parameters
 
 :::
 
-Command to set **motion sensor sensitivity** (lower value = higher sensitivity):
+Command to set **motion sensor sensitivity** (higher value = higher responsiveness):
 
 ```
 app config motion-sens <1-255>
@@ -192,6 +245,32 @@ Command to enable/disable **service mode** for real-time motion monitoring:
 app config service-mode-enabled <true|false>
 ```
 
+### Action Commands
+
+Sample all sensors immediately:
+
+```
+sample
+```
+
+Send data to cloud immediately:
+
+```
+send
+```
+
+Monitor motion detection events in real-time (default timeout 60 seconds, max 1800 seconds):
+
+```
+motion detection [timeout_s]
+```
+
+Display buffered motion samples and totalizers:
+
+```
+motion samples
+```
+
 ## Firmware
 
 The latest firmware is available in the Catalog Applications [Firmware chapter](index.md#application-firmware).
@@ -201,100 +280,70 @@ The latest firmware is available in the Catalog Applications [Firmware chapter](
 ```json
 {
   "message": {
-    "version": 1,
-    "sequence": 1,
-    "timestamp": 1672910024
-  },
-  "attribute": {
-    "vendor_name": "HARDWARIO",
-    "product_name": "CHESTER-M",
-    "hw_variant": "CGLS",
-    "hw_revision": "R3.4",
-    "fw_name": "CHESTER Motion",
-    "fw_version": "v3.0.0",
-    "serial_number": "2159018247"
+    "version": 2,
+    "sequence": 42,
+    "timestamp": 1736942400
   },
   "system": {
-    "uptime": 173,
-    "voltage_rest": 3.52,
-    "voltage_load": 3.41,
+    "uptime": 86400,
+    "voltage_load": 3.21,
+    "voltage_rest": 3.65,
     "current_load": 38
   },
   "network": {
-    "imei": 351358815178303,
-    "imsi": 901288003957939,
     "parameter": {
       "eest": 7,
       "ecl": 0,
       "rsrp": -87,
       "rsrq": -6,
-      "snr": 13,
+      "snr": 12,
       "plmn": 23003,
-      "cid": 939040,
+      "cid": 2851843,
       "band": 20,
-      "earfcn": 6447
+      "earfcn": 6300
     }
   },
   "thermometer": {
-    "temperature": 21.56
+    "temperature": 23.45
   },
   "accelerometer": {
-    "accel_x": -0.31,
-    "accel_y": 0.15,
-    "accel_z": 9.88,
+    "accel_x": 0.02,
+    "accel_y": -0.01,
+    "accel_z": 9.81,
     "orientation": 2
   },
-  "motion_count": {
+  "motion": {
     "totalizer": {
-      "detect_left": 42,
-      "detect_right": 37,
-      "motion_left": 28,
-      "motion_right": 24
+      "detect_left": 1250,
+      "detect_right": 1180,
+      "motion_left": 485,
+      "motion_right": 520
     },
     "samples": [
-      {
-        "timestamp": 1672909464,
-        "detect_left": 5,
-        "detect_right": 3,
-        "motion_left": 4,
-        "motion_right": 2
-      },
-      {
-        "timestamp": 1672909524,
-        "detect_left": 8,
-        "detect_right": 6,
-        "motion_left": 5,
-        "motion_right": 4
-      },
-      {
-        "timestamp": 1672909584,
-        "detect_left": 3,
-        "detect_right": 4,
-        "motion_left": 2,
-        "motion_right": 3
-      },
-      {
-        "timestamp": 1672909644,
-        "detect_left": 7,
-        "detect_right": 5,
-        "motion_left": 4,
-        "motion_right": 3
-      },
-      {
-        "timestamp": 1672909704,
-        "detect_left": 10,
-        "detect_right": 9,
-        "motion_left": 6,
-        "motion_right": 5
-      },
-      {
-        "timestamp": 1672909764,
-        "detect_left": 9,
-        "detect_right": 10,
-        "motion_left": 7,
-        "motion_right": 7
-      }
+      1736942400,
+      [0, 3, 2, 1, 2],
+      [60, 5, 4, 2, 3],
+      [120, 2, 1, 0, 1],
+      [180, 4, 3, 1, 2],
+      [240, 6, 5, 3, 4]
     ]
   }
 }
 ```
+
+### Message Fields Description
+
+- **message**: Metadata (version, sequence, timestamp).
+- **system**: Power status (uptime, voltage, current).
+- **network.parameter**: LTE connection details (RSRP, SNR, Cell ID, etc.).
+- **thermometer**: Internal temperature in °C.
+- **accelerometer**: Acceleration in m/s² and orientation.
+- **motion**:
+  - **totalizer**: Lifetime event counters (never reset).
+  - **samples**: Time-sequence offset encoded array of motion events. The first element is the base timestamp. Each subsequent element is an array: `[offset, detect_left, detect_right, motion_left, motion_right]`.
+
+:::info
+
+Any value may be `null` if the corresponding sensor read failed.
+
+:::
