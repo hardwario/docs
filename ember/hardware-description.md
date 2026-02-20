@@ -18,7 +18,7 @@ The enclosure and connectors are **water-proof and dust-proof**, providing **IP6
 
 ### LoRaWAN
 
-- Requires one external antenna
+- Utilizes an internal antenna, an external one may be used however disconnecting the internal one is required. 
 
 ### LTE
 
@@ -30,12 +30,12 @@ The enclosure and connectors are **water-proof and dust-proof**, providing **IP6
 
 The **EMBER Hotspot** provides two metallic **RJ45 Ethernet ports** (100/10 Mbit/s):
 
-- **LAN**
+- **LAN** (Located on the left side of the device)
   - Local configuration
   - Device management
   - Troubleshooting
 
-- **WAN**
+- **WAN** (Located on the right side of the device)
   - Backup Internet connectivity to the cloud
   - Used for PoE power input
 
