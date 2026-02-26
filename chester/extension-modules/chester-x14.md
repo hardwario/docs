@@ -14,7 +14,7 @@ CHESTER-X14 provides support for 10/100 Ethernet connectivity. It also comes wit
 
 ## CHESTER Pin Configuration Diagram
 
-![](tb-chester-x14.png)
+![](images/tb-chester-x14.png)
 
 ## Pin Configuration and Functions
 
@@ -35,7 +35,7 @@ CHESTER-X14 provides support for 10/100 Ethernet connectivity. It also comes wit
 
 The module provides an interrupt output (pin 1), which needs to be connected to the INT pin on the CHESTER mainboard.
 
-![](int-pin.png)
+![](images/int-pin.png)
 
 * Example of interrupt connection for module in slot B
 
@@ -51,9 +51,9 @@ A schematic diagram is useful if you program low-level hardware-related code or 
 
 - [Schematic (PDF)](schematics/hio-chester-x14-r1.0.pdf)
 
-![](schematics/hio-chester-x14-r1.0-eth.png)
-![](schematics/hio-chester-x14-r1.0-stepdown.png)
+![](images/hio-chester-x14-r1.0-eth.png)
+![](images/hio-chester-x14-r1.0-stepdown.png)
 
 ## Module Drawing
 
-![](pc-chester-x14.png)
+![](images/pc-chester-x14.png)

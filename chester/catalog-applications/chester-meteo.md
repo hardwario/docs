@@ -577,3 +577,13 @@ Pressure is in **pascals**.
   </TabItem>
 </Tabs>
 
+---
+
+## Changelog
+
+### v3.5.0 — 2025-12-03
+
+- **Added**: Soil sensor support — moisture and temperature measurement via 1-Wire soil probes (`soil_sensors` in JSON output)
+- **Added**: New variant — **CHESTER Meteo P** with pyranometer input for solar irradiance measurement
+- **Added**: LoRaWAN support — single firmware binary for both LTE and LoRaWAN; mode selectable via `app config mode lte` / `app config mode lrw`
+- **Changed**: Cloud v2 protocol adopted (CBOR encoding, new API endpoints); previous Cloud v1 firmware remains separately available

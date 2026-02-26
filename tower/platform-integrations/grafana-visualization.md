@@ -16,7 +16,7 @@ You can use our [**Pre-Installed Image**](../server-raspberry-pi/installation-os
 
 [**Grafana**](https://grafana.com) is an open platform for beautiful analytics and monitoring. It allows you to create nice-looking dashboards that will give you quick insights into your sensor data.
 
-<Image img={require('./grafana-for-visualization-grafana.png')} />
+<Image img={require('./images/grafana-for-visualization-grafana.png')} />
 
 ## Install Grafana
 
@@ -185,7 +185,7 @@ To make this part work without any additional configuration you need to follow t
 
 Select **Add Data Source** and fill in the data
 
-<Image img={require('./add_data_source.png')} />
+<Image img={require('./images/add_data_source.png')} />
 <br />
 
 - Enter the Name: `node`
@@ -193,13 +193,13 @@ Select **Add Data Source** and fill in the data
 - Enter the URL: **http://localhost:8086**
 
 
-<Image img={require('./grafana-data-source.png')} />
+<Image img={require('./images/grafana-data-source.png')} />
 <br />
 
 - Enter the Database: `node`
 - Click on `Save & Test` button to check if everything is OK. You should see the same green notification as in the picture.
 
-<Image img={require('./set_db_name_and_test.png')} />
+<Image img={require('./images/set_db_name_and_test.png')} />
 
 ## Import dashboard
 
@@ -209,30 +209,30 @@ Select **Add Data Source** and fill in the data
 - Click on the **+** icon to expand the submenu (2)
 - Click on the **Import** (3)
 
-<Image img={require('./grafana-import_step_1.png')} />
+<Image img={require('./images/grafana-import_step_1.png')} />
 <br />
 
 - Click on the **Upload .json File** (4)
 
-<Image img={require('./grafana-import_step_2.png')} />
+<Image img={require('./images/grafana-import_step_2.png')} />
 <br />
 
 - Choose your JSON file (in our case **dashboard.json**) (5)
 - Select the file to upload (6)
 
-<Image img={require('./grafana-import_step_3.png')} />
+<Image img={require('./images/grafana-import_step_3.png')} />
 <br />
 
 - Select your database (7)
 - Click on the **Import** button (8)
 
-<Image img={require('./grafana-import_step_4.png')} />
+<Image img={require('./images/grafana-import_step_4.png')} />
 <br />
 
 - Your dashboard is imported.
 
 #### Example output for [**Wireless Climate Monitor**](https://www.hackster.io/jakub-smejkal/radio-climate-monitor-96de57) and [**Wireless CO2 Monitor**](https://www.hackster.io/jakub-smejkal/radio-co2-monitor-311d2c) projects
 
-<Image img={require('./grafana-dashboard.png')} />
+<Image img={require('./images/grafana-dashboard.png')} />
 
 

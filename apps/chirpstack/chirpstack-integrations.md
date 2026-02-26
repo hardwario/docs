@@ -15,7 +15,7 @@ Within your **Application**, go to the **Integrations** tab and choose the integ
 - External services  
 - Custom APIs  
 
-![ChirpStack v4 - Integrations](chirpstack-tutorial-20.png)
+![ChirpStack v4 - Integrations](images/chirpstack-tutorial-20.png)
 
 ---
 

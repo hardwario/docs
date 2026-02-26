@@ -3,7 +3,7 @@ slug: initial-configuration
 title: Initial Setup and Configuration
 ---
 
-# EMBER Initial Setup and Configuration
+# Initial Setup and Configuration
 
 This article is a step-by-step guide for updating and configuring the EMBER gateway (MikroTik RBM33G) before shipping.
 

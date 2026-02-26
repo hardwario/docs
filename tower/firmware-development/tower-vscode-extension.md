@@ -27,7 +27,7 @@ After a while, the extension should be installed and ready to use.
 <div class="container">
   <div class="row">
     <div class="col col--6">
-      <div><Image img={require('./extension-install-guide.png')}/></div>
+      <div><Image img={require('./images/extension-install-guide.png')}/></div>
     </div>
     <div class="col col--4">
     </div>

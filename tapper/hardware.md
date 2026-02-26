@@ -36,12 +36,12 @@ In this article, you will find the details about the TAPPER hardware configurati
 
 ### Power
 
-![](media/hio-tapper-r1.1-schematic-1.png)
+![](images/hio-tapper-r1.1-schematic-1.png)
 
 ### Raspberry Pi + PN532 Breakout Board
 
-![](media/hio-tapper-r1.1-schematic-2.png)
+![](images/hio-tapper-r1.1-schematic-2.png)
 
 ### Peripherals
 
-![](media/hio-tapper-r1.1-schematic-3.png)
+![](images/hio-tapper-r1.1-schematic-3.png)

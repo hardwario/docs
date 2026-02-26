@@ -77,7 +77,7 @@ If you don’t have a **git** installed on your system, you will have to [**inst
 </TabItem>
 </Tabs>
 
-<Image img={require('./hardwario-code.png')}/>
+<Image img={require('./images/hardwario-code.png')}/>
 <br />
 
 :::tip

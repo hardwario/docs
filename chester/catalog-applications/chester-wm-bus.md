@@ -10,7 +10,7 @@ import Image from '@theme/IdealImage';
   <div class="row">
     <div class="col col--8">
       <div>
-        <Image img={require('./chester-wm-bus.png')} width={376} height={376} />
+        <Image img={require('./images/chester-wm-bus.png')} width={376} height={376} />
       </div>
     </div>
     <div class="col col--24"></div>
@@ -419,5 +419,15 @@ There is also the option to take the incoming data from the Cloud and **manually
 For **CHESTER W-MBus**, we support several sensors from **BMeters** and **Zenner**.  
 We offer different types of devices, including **water meters**, **heat meters**, and **environmental sensors**.
 
-For the complete list and detailed information, see the documentation here:  
+For the complete list and detailed information, see the documentation here:
 ➡️ [Supported W-MBus Sensors](https://docs.hardwario.com/chester/supported-sensors/wm-bus_sensors)
+
+---
+
+## Changelog
+
+### v3.5.0 — 2025-12-03
+
+- **Fixed**: Receiving of long wM-Bus packets (previously truncated or dropped)
+- **Added**: Battery-powered variant support (6× D-cell) alongside the existing DC-powered variant
+- **Changed**: Cloud v2 protocol adopted (CBOR encoding, new API endpoints); Cloud v1 firmware was not available for this application

@@ -8,7 +8,7 @@ import Image from '@theme/IdealImage';
 
 **STICKER Motion** is a compact, wireless LoRaWAN motion detector built for ultra-low-power operation. Powered by two AA batteries, it uses a precise PIR sensor to detect movement and transmit events, making it suitable for security, facility monitoring, retail analytics, and logistics tracking.
 
-![Sticker Motion](sticker-motion-top.png)
+![Sticker Motion](images/sticker-motion-top.png)
 
 ## Quick Links
 

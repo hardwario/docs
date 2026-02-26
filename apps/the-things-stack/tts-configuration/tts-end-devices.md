@@ -15,7 +15,7 @@ This tutorial guides you through the process of creating device profiles and add
 1. On the **Home** tab, click **Create application**.  
    - If you are on a different tab, click the blue **+ Add** button in the top right and choose **Add application**.
 
-![](tts-end-device-0.png)
+![](images/tts-end-device-0.png)
 
 2. You will be taken to the application creation page. Fill in the following fields:
    - **Application ID (app id)**
@@ -25,7 +25,7 @@ This tutorial guides you through the process of creating device profiles and add
 
 3. Click the blue **Create application** button.
 
-![](tts-end-device-1.png)
+![](images/tts-end-device-1.png)
 
 ---
 
@@ -42,7 +42,7 @@ In The Things Stack, end devices can be registered in two ways:
 1. Inside the application, click the blue **+ Register end device** button.  
    - Alternatively, click **+ Add** and choose **Register end device in an application**.
 
-![](tts-end-device-2.png)
+![](images/tts-end-device-2.png)
 
 2. Select **Select the end device in the LoRaWAN Device Repository**.
 
@@ -67,7 +67,7 @@ This method is recommended whenever the device is available in the LoRaWAN Devic
 
 6. Click the blue **Register end device** button.
 
-![](tts-end-device-4.png)
+![](images/tts-end-device-4.png)
 
 ---
 
@@ -94,7 +94,7 @@ This method is used when the device is **not available** in the LoRaWAN Device R
      - Select the matching regional parameters version  
        (e.g. **RP002 Regional Parameters 1.0.4**).
 
-![](tts-end-device-5.png)
+![](images/tts-end-device-5.png)
 
 ---
 
@@ -122,7 +122,7 @@ This method is used when the device is **not available** in the LoRaWAN Device R
 
 8. Click the blue **Register end device** button.
 
-![](tts-end-device-6.png)
+![](images/tts-end-device-6.png)
 
 ---
 

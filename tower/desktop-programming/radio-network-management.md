@@ -14,7 +14,7 @@ Choose the **Radio Dongle** (there should be `twr-usb-dongle` or `bc-usb-dongle`
 
 If you just bought the **Radio Dongle** from our shop, you should receive it with the correct firmware and everything should work.
 
-<Image img={require('./devices-dongle-selection.png')}/>
+<Image img={require('./images/devices-dongle-selection.png')}/>
 <br />
 
 :::tip
@@ -27,7 +27,7 @@ If you don't know how to work with **Firmware Tab** you can visit a [**Firmware 
 
 After you successfully connect to your **Radio Dongle** the **Start pairing** button should light up and if there are any paired devices, you should see them in the list.
 
-<Image img={require('./devices-dongle-connected.png')}/>
+<Image img={require('./images/devices-dongle-connected.png')}/>
 <br />
 
 :::caution

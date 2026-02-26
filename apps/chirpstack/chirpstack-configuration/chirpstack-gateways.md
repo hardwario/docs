@@ -19,7 +19,7 @@ A form will appear where you can enter gateway information such as:
 
 Once completed, click **Submit**.  
 
-![ChirStack v4 - Gateways](chirpstack-tutorial-1.png)
+![ChirStack v4 - Gateways](images/chirpstack-tutorial-1.png)
 
 :::info
 If you are using our **Ember gateway**, the **Gateway ID** can be found through **[MikroTik software](/ember/mikrotik/gateway-configuration#3-link-lora-device-to-the-new-server)**.  

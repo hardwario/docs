@@ -39,7 +39,7 @@ If it is not active, touch a **magnet** to the sensor to wake it from hibernatio
   <div class="row">
     <div class="col col--8">
       <div style={{ width: '376px', height: '250px' }}>
-        <Image img={require('./tag-magnet.png')} />
+        <Image img={require('./images/tag-magnet.png')} />
       </div>
     </div>
     <div class="col col--24"></div>
@@ -104,7 +104,7 @@ This PIN can be changed later in the device settings.
   <div class="row">
     <div class="col col--5">
       <div>
-        <Image img={require('./ble-app-settings.png')} width={200} height={200} />
+        <Image img={require('./images/ble-app-settings.png')} width={200} height={200} />
       </div>
     </div>
     <div class="col col--24"></div>
@@ -122,7 +122,7 @@ This setup ensures stable data transmission, adequate advertising frequency for 
   <div class="row">
     <div class="col col--5">
       <div>
-        <Image img={require('./ble-settings.png')} width={200} height={200} />
+        <Image img={require('./images/ble-settings.png')} width={200} height={200} />
       </div>
     </div>
     <div class="col col--24"></div>

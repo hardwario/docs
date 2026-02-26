@@ -151,7 +151,7 @@ To learn more about this console you can visit [**HARDWARIO TOWER Console chapte
 
 :::
 
-<Image img={require('./code-console-debug-example.png')}/>
+<Image img={require('./images/code-console-debug-example.png')}/>
 <br />
 
 :::tip

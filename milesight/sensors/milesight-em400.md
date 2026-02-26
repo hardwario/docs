@@ -13,7 +13,7 @@ Milesight EM400-MUD is a **multifunctional ultrasonic distance sensor** designed
   <div class="row">
     <div class="col col--8">
       <div style={{ width: '500px', height: '500px' }}>
-        <Image img={require('./em400-mud.png')} />
+        <Image img={require('./images/em400-mud.png')} />
       </div>
     </div>
     <div class="col col--24"></div>

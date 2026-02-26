@@ -21,4 +21,4 @@ The playground can be used for:
 - [**Data Visualization**](./data-visualization.md) (**Dashboard**)
 - [**Firmware Flashing**](./firmware-flashing.md) (**Firmware**)
 
-<Image img={require('./playground-fresh.png')}/>
+<Image img={require('./images/playground-fresh.png')}/>

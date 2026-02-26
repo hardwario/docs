@@ -7,7 +7,7 @@ import Image from '@theme/IdealImage';
 
 [Web-Site](https://www.orno.pl/en/energy-meters-without-mid/340-1-phase-energy-meter-wtih-rs-485-80a-5901752481282.html#download)
 
-![ORNO OR-WE-504](orno-or-we-504.png)
+![ORNO OR-WE-504](images/orno-or-we-504.png)
 
 ### Description
 
@@ -37,7 +37,7 @@ Current and voltage are measured directly via internal circuitry.
 
 #### Connection Diagram (OR-WE-504)
 
-![ORNO Energy Analyzer - OR-WE-504 - Connection Diagram](orno-or-we-504-connection-diagram.png)
+![ORNO Energy Analyzer - OR-WE-504 - Connection Diagram](images/orno-or-we-504-connection-diagram.png)
 
 :::info
 
@@ -59,7 +59,7 @@ The neutral conductor can be connected either directly to the meter’s **N term
 
 #### Connection Diagram (OR-WE-504)
 
-![ORNO Energy Analyzer - OR-WE-504 - Modbus Communication](orno-or-we-504-modbus.png)
+![ORNO Energy Analyzer - OR-WE-504 - Modbus Communication](images/orno-or-we-504-modbus.png)
 
 :::info
 

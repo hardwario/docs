@@ -19,7 +19,7 @@ In this guide, you will learn how to connect your devices to HARDWARIO Cloud by 
    • `Trigger` – choose `Data`  
    • `Tag` – assign the tag you created earlier
    
-   ![ThingsBoard - Create a New Connector](thingsboard-cloud-1.png)
+   ![ThingsBoard - Create a New Connector](images/thingsboard-cloud-1.png)
    
 ---
 
@@ -28,14 +28,14 @@ In this guide, you will learn how to connect your devices to HARDWARIO Cloud by 
    In the connector page, scroll down to the `Transformation` section and click the magnifying glass icon 📄🔍 to open the code editor.
 
    
-   ![ThingsBoard - Transform Data for ThingsBoard Format](thingsboard-cloud-4.png)
+   ![ThingsBoard - Transform Data for ThingsBoard Format](images/thingsboard-cloud-4.png)
 
 ---
 
 3. #### **Insert the Transformation Code**  
    Add the transformation logic that converts incoming data to a ThingsBoard-compatible format.
 
-   ![ThingsBoard - Insert the Transformation Code](thingsboard-cloud-6.png)
+   ![ThingsBoard - Insert the Transformation Code](images/thingsboard-cloud-6.png)
 
    **Example of transformation code here:**
 
@@ -199,7 +199,7 @@ In this guide, you will learn how to connect your devices to HARDWARIO Cloud by 
     On the right side, you'll see the **transformed data** being sent to ThingsBoard.
 
 
-![ThingsBoard - Assign Devices to Connector](thingsboard-cloud-7.png)
+![ThingsBoard - Assign Devices to Connector](images/thingsboard-cloud-7.png)
 
 ---
 
@@ -209,7 +209,7 @@ Once everything is properly configured, your device’s data should begin flowin
 You can test the data by opening your device in ThingsBoard and checking whether the variables are being updated in real-time.  You can find them by clicking on the device and then selecting the **Latest Telemetry** tab.
 :::
 
-![Thingsboard - Latest Telemetry](thingsboard-device-6.png)
+![Thingsboard - Latest Telemetry](images/thingsboard-device-6.png)
 
 ## Video Tutorial
 

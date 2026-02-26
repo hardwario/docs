@@ -21,16 +21,16 @@ This guide walks you through updating RouterOS packages and the RouterBOARD (fir
 1. **Open your browser** and enter the gateway’s **IP address**.
 2. **Log in** with your administrator credentials.
 
-![](mikrotik-update-0.png)
+![](images/mikrotik-update-0.png)
 
 3. Go to **WebFig** → in the left menu open **System → Packages**.
 
-![](mikrotik-update-1.png)
+![](images/mikrotik-update-1.png)
 
 4. Click **Check For Updates** (top-left).
 5. When a new version is available, click **Download & Install**.
 
-![](mikrotik-update-2.png)
+![](images/mikrotik-update-2.png)
 
 ---
 
@@ -39,7 +39,7 @@ This guide walks you through updating RouterOS packages and the RouterBOARD (fir
 1. In the left menu, open **System → RouterBOARD**.
 2. Check whether a **new firmware version** is available — you can compare **Current Firmware** with **Upgrade Firmware**.
 
-![](mikrotik-update-3.png)
+![](images/mikrotik-update-3.png)
 
 3. If an upgrade is available, click **Upgrade**.
 

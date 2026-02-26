@@ -7,7 +7,7 @@ import Image from '@theme/IdealImage';
 
 [Web-Site](https://www.orno.pl/en/energy-meters-with-mid/349-3-phase-energy-meter-with-rs-485-80a-mid-4-5-modules-din-th-35mm-5902560322415.html#download)
 
-![ORNO OR-WE - 516](orno-or-we-516.png)
+![ORNO OR-WE - 516](images/orno-or-we-516.png)
 
 ### Description
 
@@ -37,7 +37,7 @@ This energy meter **does not require** any **external sensor** for current measu
 
 #### Connection Diagram (OR-WE-516)
 
-![ORNO Energy Analyzer - OR-WE-516 - Connection Diagram ](orno-or-we-516-connection-diagram.png)
+![ORNO Energy Analyzer - OR-WE-516 - Connection Diagram ](images/orno-or-we-516-connection-diagram.png)
 
 :::info
 
@@ -59,7 +59,7 @@ In this case, it is also possible to connect the energy analyzer in single-phase
 
 #### Connection Diagram (OR-WE-516)
 
-![ORNO Energy Analyzer - OR-WE-516 - Modbus Communication ](orno-or-we-516-modbus.png)
+![ORNO Energy Analyzer - OR-WE-516 - Modbus Communication ](images/orno-or-we-516-modbus.png)
 
 ---
 

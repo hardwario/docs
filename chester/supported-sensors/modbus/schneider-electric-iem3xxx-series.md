@@ -11,7 +11,7 @@ import Image from '@theme/IdealImage';
   <div class="row">
     <div class="col col--8">
       <div style={{ width: '376px', height: '376px' }}>
-        <Image img={require('./schneider-electric-iem3000-series.png')} />
+        <Image img={require('./images/schneider-electric-iem3000-series.png')} />
       </div>
     </div>
     <div class="col col--24"></div>
@@ -62,7 +62,7 @@ This energy meter **requires** the use of an **external sensor**, such as a curr
 
 #### Connection Diagram (IEM3250)
 
-![Connection Diagram (IEM3250)](connection-diagram-iem3250.png)
+![Connection Diagram (IEM3250)](images/connection-diagram-iem3250.png)
 
 ---
 
@@ -78,7 +78,7 @@ This energy meter **requires** the use of an **external sensor**, such as a curr
 
 #### Modbus communication (IEM3250)
 
-![Modbus communication (IEM3250)](modbus-communication-iem3250.png)
+![Modbus communication (IEM3250)](images/modbus-communication-iem3250.png)
 
 ---
 

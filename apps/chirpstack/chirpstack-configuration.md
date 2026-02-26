@@ -22,7 +22,7 @@ A form will appear where you can enter gateway information such as:
 
 Once completed, click **Submit**.  
 
-![ChirStack v4 - Gateways](chirpstack-tutorial-1.png)
+![ChirStack v4 - Gateways](images/chirpstack-tutorial-1.png)
 
 :::info
 If you are using our **Ember gateway**, the **Gateway ID** can be found through **[MikroTik software](/ember/mikrotik/gateway-configuration#3-link-lora-device-to-the-new-server)**.  
@@ -44,7 +44,7 @@ After adding gateways, the next step is to create device profiles in ChirpStack.
    - ADR Algorithm  
    - Expected Uplink Interval  
 
-![ChirStack v4 - Gateways](chirpstack-tutorial-5.png)
+![ChirStack v4 - Gateways](images/chirpstack-tutorial-5.png)
 
 ---
 
@@ -74,7 +74,7 @@ Next, create an application:
 
 Click **Submit**.  
 
-![ChirStack v4 - Gateways](chirpstack-tutorial-11.png)
+![ChirStack v4 - Gateways](images/chirpstack-tutorial-11.png)
 
 After creating the device, go to the **Activation** tab and enter:  
 - **Device Address**  
@@ -83,7 +83,7 @@ After creating the device, go to the **Activation** tab and enter:
 
 Finally, click **(Re)activate Device**.  
 
-![ChirStack v4 - Gateways](chirpstack-tutorial-13.png)
+![ChirStack v4 - Gateways](images/chirpstack-tutorial-13.png)
 
 ---
 
@@ -96,7 +96,7 @@ LoRaWAN data is transmitted in a compressed format and needs to be decoded.
 
 For **STICKER**, choose **JavaScript functions** as the payload codec, then click **Submit**.  
 
-![ChirStack v4 - Gateways](chirpstack-tutorial-17.png)
+![ChirStack v4 - Gateways](images/chirpstack-tutorial-17.png)
 
 #### Viewing Decoded Data  
 
@@ -243,7 +243,7 @@ Within your **Application**, go to the **Integrations** tab and choose the integ
 - External services  
 - Custom APIs  
 
-![ChirpStack v4 - Integrations](chirpstack-tutorial-20.png)
+![ChirpStack v4 - Integrations](images/chirpstack-tutorial-20.png)
 
 ---
 

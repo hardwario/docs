@@ -15,7 +15,7 @@ In the Variables section, you can upload **decryption keys** used to decode data
 1. In the left sidebar, select **Variables**.  
 2. Click the **+ NEW VARIABLE** button in the top-right corner.  
 
-![Cloud Variables](cloud-variables-0.png)
+![Cloud Variables](images/cloud-variables-0.png)
 
 3. Fill in the following information:  
    - **Device** → select your device  
@@ -29,6 +29,6 @@ If a device is specified, the decryption key applies **only to that specific dev
 If no device is selected, the key will apply **to the entire space**.
 :::
 
-![Variables - informations](cloud-variables-1.png)
+![Variables - informations](images/cloud-variables-1.png)
 
 4. Your data should now appear **decrypted** in the Cloud.  

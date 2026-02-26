@@ -48,7 +48,7 @@ Because **nRF Connect for Desktop** is multitool application, you have to instal
 <div class="container">
     <div class="row">
     <div class="col col--8">
-      <div><Image img={require('./nrf_connect_ppk2_install.png')}/></div>
+      <div><Image img={require('./images/nrf_connect_ppk2_install.png')}/></div>
     </div>
     <div class="col col--2">
     </div>
@@ -61,7 +61,7 @@ You should see **Power Profiler** at the top of the apps, when is installation c
 <div class="container">
     <div class="row">
     <div class="col col--8">
-      <div><Image img={require('./nrf_connect_ppk2_open.png')}/></div>
+      <div><Image img={require('./images/nrf_connect_ppk2_open.png')}/></div>
     </div>
     <div class="col col--2">
     </div>
@@ -74,7 +74,7 @@ After clicking at **Open** button, you should see window similir to this one:
 <div class="container">
     <div class="row">
     <div class="col col--10">
-      <div><Image img={require('./nrf_connect_plain.png')}/></div>
+      <div><Image img={require('./images/nrf_connect_plain.png')}/></div>
     </div>
     <div class="col col--2">
     </div>
@@ -102,7 +102,7 @@ Please make sure that power cable is in **PPK2** connected same way as on the pi
 <div class="container">
     <div class="row">
     <div class="col col--10">
-      <div><Image img={require('./ppk2_chester_device.jpg')}/></div>
+      <div><Image img={require('./images/ppk2_chester_device.jpg')}/></div>
     </div>
     <div class="col col--2">
     </div>
@@ -115,13 +115,13 @@ Now, you have to connect to your **PPK2**. Plug micro USB end of the cable to th
 Then you have to select your **PPK2** in **nRF Connect for Desktop**.
 
 
-<Image img={require('./nrf_connect_select_device.png')}/>
+<Image img={require('./images/nrf_connect_select_device.png')}/>
 
 <br />
 
 Click to **SELECT DEVICE** and choose your **PPK2** device.
 
-<Image img={require('./nrf_connect_choose_device.png')}/>
+<Image img={require('./images/nrf_connect_choose_device.png')}/>
 
 <br />
 
@@ -142,7 +142,7 @@ To start capturing some data, you have to:
 <div class="container">
     <div class="row">
     <div class="col col--12">
-      <div><Image img={require('./nrf_connect_main_window.png')}/></div>
+      <div><Image img={require('./images/nrf_connect_main_window.png')}/></div>
     </div>
     <div class="col col--2">
     </div>
@@ -155,7 +155,7 @@ When you click **Start** to capture data, your **PPK2** will start pulsing in co
 <div class="container">
     <div class="row">
     <div class="col col--12">
-      <div><Image img={require('./nrf_connect_running.png')}/></div>
+      <div><Image img={require('./images/nrf_connect_running.png')}/></div>
     </div>
     <div class="col col--2">
     </div>

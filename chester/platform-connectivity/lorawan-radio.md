@@ -87,7 +87,7 @@ Keys are exchanged automatically during **Join** process when the CHESTER boots 
 This configuration is easiest to set-up and use.
 
 In the **CHIRPSTACK** device profile in the **JOIN (OTAA/ABP)** tab enable **Device supports OTAA**.
-![Enable Device support OTAA in CHIRPSTACK Device Profile](lorawan-chirpstack-device-profile-otaa.png)
+![Enable Device support OTAA in CHIRPSTACK Device Profile](images/lorawan-chirpstack-device-profile-otaa.png)
 
 When you create a device, in CHIRPSTACK you can auto-generate keys and save them to the device.
 

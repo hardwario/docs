@@ -41,7 +41,7 @@ The address is displayed **on the device screen, to the left of the unit m³**, 
   <div class="row">
     <div class="col col--8">
       <div>
-        <Image img={require('./adress-location/zenner-minomess.png')} width={376} height={376} />
+        <Image img={require('./images/zenner-minomess.png')} width={376} height={376} />
       </div>
     </div>
     <div class="col col--24"></div>

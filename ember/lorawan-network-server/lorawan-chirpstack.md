@@ -69,7 +69,7 @@ https://docs.hardwario.com/apps/chirpstack/chirpstack-installation
    - **Stats Interval**: your preference
 4. Click **Submit**.
 
-![ChirStack v4 - Gateways](chirpstack-tutorial-1.png)
+![ChirStack v4 - Gateways](images/chirpstack-tutorial-1.png)
 
 ---
 

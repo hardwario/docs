@@ -11,7 +11,7 @@ This article describes the CHESTER-X1 extension module.
 <div class="container">
   <div class="row">
     <div class="col col--4">
-      <div><Image img={require('./chester-x1-top.png')} /></div>
+      <div><Image img={require('./images/chester-x1-top.png')} /></div>
     </div>
     <div class="col col--10">
     </div>
@@ -25,7 +25,7 @@ CHESTER-X1 provides 8 independent 1-Wire channels allowing to connect digital  s
 
 ## CHESTER Pin Configuration Diagram
 
-![](tb-chester-x1.png)
+![](images/tb-chester-x1.png)
 
 ## Pin Configuration and Functions
 
@@ -44,7 +44,7 @@ CHESTER-X1 provides 8 independent 1-Wire channels allowing to connect digital  s
 
 CHESTER-X1 supports connection using parasitic powering method. In that case only 2 wires are necessary. In the parasitic mode 5.0V power supply is used. Standard 3 wire connection powering from VDD supports only 3.0V peripheries. This figure shows parasitic and standard powering method:
 
-![](sc-chester-x1.png)
+![](images/sc-chester-x1.png)
 
 ## Schematic diagram
 
@@ -53,9 +53,9 @@ A schematic diagram is useful if you program low-level hardware-related code or 
 - [Schematic (PDF)](schematics/hio-chester-x1-r3.2.pdf)
 - [Interactive PCB connector, part, testpoint and signal browser](pathname:///download/ibom/hio-chester-x1-r3.2.html)
 
-![](schematics/hio-chester-x1-r3.2-1.png)
-![](schematics/hio-chester-x1-r3.2-2.png)
+![](images/hio-chester-x1-r3.2-1.png)
+![](images/hio-chester-x1-r3.2-2.png)
 
 ## Module Drawing
 
-![](pc-chester-x1.png)
+![](images/pc-chester-x1.png)

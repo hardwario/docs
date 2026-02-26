@@ -10,7 +10,7 @@ This article describes the **CHESTER-Z1** top-cover extension module.
 <div class="container">
   <div class="row">
     <div class="col col--5">
-      <div><Image img={require('./chester-z-top.png')} /></div>
+      <div><Image img={require('./images/chester-z-top.png')} /></div>
     </div>
     <div class="col col--10">
     </div>
@@ -79,7 +79,7 @@ Due to low charging current (100 mA) The charging temperature range is extended 
 
 ## Module Drawing
 
-![](chester-z1.png)
+![](images/chester-z1.png)
 
 ## Input / Output and Functions
 
@@ -96,10 +96,10 @@ _\* Use the BYPASS BUTTON to initiate start from the battery without DC input po
 
 ## SYSTEM Connector Pinout Description
 
-![](system.png)
+![](images/system.png)
 
 ## Block Diagram
-![](chester-z-block-diagram.png)
+![](images/chester-z-block-diagram.png)
 
 ## Schematic Diagram
 
@@ -111,8 +111,8 @@ A schematic diagram is useful if you program low-level hardware-related code or 
 - [TODO Interactive PCB connector, part, testpoint and signal browser]
 -->
 
-![](schematics/hio-chester-z1-r2.1-1.png)
-![](schematics/hio-chester-z1-r2.1-2.png)
-![](schematics/hio-chester-z1-r2.1-3.png)
-![](schematics/hio-chester-z1-r2.1-4.png)
-![](schematics/hio-chester-z1-r2.1-5.png)
+![](images/hio-chester-z1-r2.1-1.png)
+![](images/hio-chester-z1-r2.1-2.png)
+![](images/hio-chester-z1-r2.1-3.png)
+![](images/hio-chester-z1-r2.1-4.png)
+![](images/hio-chester-z1-r2.1-5.png)

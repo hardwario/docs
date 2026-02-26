@@ -14,21 +14,21 @@ Before you can send data to [Ubidots](https://ubidots.hardwario.com/) or create 
 1. #### **Click the Plus Button**  
    After logging into the [Ubidots web interface](https://ubidots.hardwario.com/), click the `+` button in the upper-right corner, just below your profile icon.
 
-   ![](ubidots-device-0.png)
+   ![](images/ubidots-device-0.png)
 
 ---
 
 2. #### **Choose to Create a Device**  
    A dialog will appear with two options. Click on `Create a device`.
 
-  ![](ubidots-device-1.png)
+  ![](images/ubidots-device-1.png)
 
 ---
 
 3. #### **Select Blank Device**  
    A new window will open. Click on the `Blank Device` option.
 
-  ![](ubidots-device-2.png)
+  ![](images/ubidots-device-2.png)
 
 ---
 
@@ -38,7 +38,7 @@ Before you can send data to [Ubidots](https://ubidots.hardwario.com/) or create 
    • `Label` – the unique identifier used in API and dashboard references  
    After filling both fields, click `SAVE`.
 
-   ![](ubidots-device-3.png)
+   ![](images/ubidots-device-3.png)
 
 ---
 
@@ -52,7 +52,7 @@ Before you can send data to [Ubidots](https://ubidots.hardwario.com/) or create 
    • `Tags`  
    • and more
 
-   ![](ubidots-device-5.png)
+   ![](images/ubidots-device-5.png)
 
 ---
 

@@ -13,7 +13,7 @@ Milesight WS201 is a **wireless fill level monitoring sensor** using **ToF (Time
   <div class="row">
     <div class="col col--8">
       <div style={{ width: '500px', height: '500px' }}>
-        <Image img={require('./ws201-868m.png')} />
+        <Image img={require('./images/ws201-868m.png')} />
       </div>
     </div>
     <div class="col col--24"></div>

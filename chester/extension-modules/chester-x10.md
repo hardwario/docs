@@ -10,7 +10,7 @@ This article describes the CHESTER-10 extension module.
 <div class="container">
   <div class="row">
     <div class="col col--4">
-      <div><Image img={require('./chester-x10-top.png')} /></div>
+      <div><Image img={require('./images/chester-x10-top.png')} /></div>
     </div>
     <div class="col col--10">
     </div>
@@ -37,7 +37,7 @@ CHESTER-X10 is a backup power supply module for CHESTER. The primary power input
 
 ## CHESTER Pin Configuration Diagram
 
-![](tb-chester-x10.png)
+![](images/tb-chester-x10.png)
 
 ## Pin Configuration and Functions
 
@@ -61,9 +61,9 @@ A schematic diagram is useful if you program low-level hardware-related code or 
 - [Schematic (PDF)](schematics/hio-chester-x10-r1.1.pdf)
 - [Interactive PCB connector, part, testpoint and signal browser](pathname:///download/ibom/hio-chester-x10-r1.1.html)
 
-![](schematics/hio-chester-x10-r1.1-1.png)
-![](schematics/hio-chester-x10-r1.1-2.png)
+![](images/hio-chester-x10-r1.1-1.png)
+![](images/hio-chester-x10-r1.1-2.png)
 
 ## Module Drawing
 
-![](pc-chester-x10.png)
+![](images/pc-chester-x10.png)

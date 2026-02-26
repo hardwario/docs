@@ -21,7 +21,7 @@ This step-by-step guide explains how to configure the LoRa interface on a MikroT
 1. Open your browser and log in to the gateway via its **IP address**.
 2. In the left menu, open **WebFig → LoRa**.
 
-![](mikrotik-configuration-0-disabled.png)
+![](images/mikrotik-configuration-0-disabled.png)
 
 3. Go to the **Devices** tab.
 4. Check that the **gateway status is set to Disabled** — all LoRa card settings must be made while the card is stopped.
@@ -33,7 +33,7 @@ This step-by-step guide explains how to configure the LoRa interface on a MikroT
 1. Go to the **Servers** tab.
 2. If there are **predefined servers** (from the manufacturer), you can **remove them**.
 
-![](mikrotik-configuration-1.png)
+![](images/mikrotik-configuration-1.png)
 
 3. Click **Add New** to create your own server.
 4. Enter the **server details**:
@@ -42,7 +42,7 @@ This step-by-step guide explains how to configure the LoRa interface on a MikroT
    - **Up/Down ports**
 5. Click **Apply** to save the server configuration.
 
-![](mikrotik-configuration-2.png)
+![](images/mikrotik-configuration-2.png)
 
 ---
 
@@ -51,7 +51,7 @@ This step-by-step guide explains how to configure the LoRa interface on a MikroT
 1. Go back to the **Devices** tab.
 2. Click on your LoRa card.
 
-![](mikrotik-configuration-0-disabled.png)
+![](images/mikrotik-configuration-0-disabled.png)
 
 :::info
 Here you can also find the **Gateway ID**
@@ -60,7 +60,7 @@ Here you can also find the **Gateway ID**
 1. Under the **Network** option, select **Public**.
 2. Click the **plus (+)** button next to **Network Servers** and select the **newly created server**.
 
-![](mikrotik-configuration-3.png)
+![](images/mikrotik-configuration-3.png)
 
 3. Once configured, **enable the LoRa card** by selecting it and clicking **Enabled**.
 
@@ -73,7 +73,7 @@ Here you can also find the **Gateway ID**
 3. If no messages appear, try **restarting your end device**.  
    - For example, with a sensor (Sticker), simply **remove and reinsert the power supply or battery**.
 
-![](mikrotik-configuration-4.png)
+![](images/mikrotik-configuration-4.png)
 
 
 ---

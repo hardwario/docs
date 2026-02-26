@@ -13,7 +13,7 @@ import Image from '@theme/IdealImage';
 <div class="container">
   <div class="row">
     <div class="col col--8">
-      <div><Image img={require('./hardwario-monitor.png')} /></div>
+      <div><Image img={require('./images/hardwario-monitor.png')} /></div>
     </div>
     <div class="col col--12">
     </div>

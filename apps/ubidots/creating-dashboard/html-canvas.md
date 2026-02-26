@@ -15,21 +15,21 @@ This widget allows you to create custom visualizations using HTML, CSS, and Java
 1. #### **Open Dashboards**  
    In the top navigation bar, click on `Data`, then select `Dashboards`. This will open the dashboard management area.
 
-   ![](ubidots-metric-0.png)
+   ![](images/ubidots-metric-0.png)
 
 ---
 
 2. #### **Add a New Widget**  
    Click the `Add new Widget` button (marked with a + icon).
 
-   ![](ubidots-metric-1.png)
+   ![](images/ubidots-metric-1.png)
 
 ---
 
 3. #### **Choose a Widget Type**  
    From the list of available widgets, choose the `HTML Canvas`.
 
-   ![](ubidots-html-0.png)
+   ![](images/ubidots-html-0.png)
 
 ---
 
@@ -43,14 +43,14 @@ This is where you can enable or disable features such as:
 
 After configuration, click **`Edit code`** under **Code editor** and insert your HTML, CSS, and JavaScript.
 
-![](ubidots-html-1.png)
+![](images/ubidots-html-1.png)
 
 ---
 
 5. #### **Add HTML Code to the Canvas**
 In the **Code Editor**, insert your desired layout and logic.  
 
-![](ubidots-html-2.png)
+![](images/ubidots-html-2.png)
 
 ---
 
@@ -62,13 +62,13 @@ You can set:
 - Option to **hide the header**  
 - Add a **custom style** (JSON format)
 
-![](ubidots-html-4.png)
+![](images/ubidots-html-4.png)
 
 ---
 
 ## Example of HTML Canvas (Floor Plan)
 
-![](ubidots-html-5.png)
+![](images/ubidots-html-5.png)
 
 ---
 
@@ -318,7 +318,7 @@ These define your Ubidots connection, the floor plan image, and the BLE tag posi
 
 ## Example of HTML Canvas (Data Table)
 
-![](ubidots-html-6.png)
+![](images/ubidots-html-6.png)
 
 ---
 

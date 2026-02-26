@@ -12,7 +12,7 @@ This article describes the CHESTER-X0 four-channel I/O extension module. Two var
 <div class="container">
   <div class="row">
     <div class="col col--4">
-      <div><Image img={require('./chester-x0a-top.png')} /></div>
+      <div><Image img={require('./images/chester-x0a-top.png')} /></div>
     </div>
     <div class="col col--10">
     </div>
@@ -25,7 +25,7 @@ This article describes the CHESTER-X0 four-channel I/O extension module. Two var
 <div class="container">
   <div class="row">
     <div class="col col--4">
-      <div><Image img={require('./chester-x0b-top.png')} /></div>
+      <div><Image img={require('./images/chester-x0b-top.png')} /></div>
     </div>
     <div class="col col--10">
     </div>
@@ -60,7 +60,7 @@ Depending on the application these configuration options are available for each 
 
 This picture show the electric circuit of each channel:
 
-![](sc-chester-x0.png)
+![](images/sc-chester-x0.png)
 
 ## Configuration Table
 
@@ -83,7 +83,7 @@ However, this is just to understand the modes. You only need to know which mode 
 
 ## CHESTER Pin Configuration Diagram
 
-![](tb-chester-x0.png)
+![](images/tb-chester-x0.png)
 
 ## Pin Configuration and Functions
 
@@ -107,12 +107,12 @@ A schematic diagram is useful if you program low-level hardware-related code or 
 - [Schematic (PDF)](schematics/hio-chester-x0-r2.0.pdf)
 - [Interactive PCB connector, part, testpoint and signal browser](pathname:///download/ibom/hio-chester-x0-r2.0.html)
 
-![](schematics/hio-chester-x0-r2.0-1.png)
-![](schematics/hio-chester-x0-r2.0-2.png)
-![](schematics/hio-chester-x0-r2.0-3.png)
+![](images/hio-chester-x0-r2.0-1.png)
+![](images/hio-chester-x0-r2.0-2.png)
+![](images/hio-chester-x0-r2.0-3.png)
 
 ## Module Drawing
-![](pc-chester-x0.png)
+![](images/pc-chester-x0.png)
 
 ## CHESTER SDK
 

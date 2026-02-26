@@ -35,7 +35,7 @@ node-red-contrib-homekit-bridged
 <div class="container">
   <div class="row">
     <div class="col col--9">
-      <div><Image img={require('./node-red-pallete.png')} /></div>
+      <div><Image img={require('./images/node-red-pallete.png')} /></div>
     </div>
     <div class="col col--1">
     </div>
@@ -52,7 +52,7 @@ When a message with the title Installing **'node-red-contrib-homekit-bridged'** 
 <div class="container">
   <div class="row">
     <div class="col col--9">
-      <div><Image img={require('./node-red-advanced-tab.png')} /></div>
+      <div><Image img={require('./images/node-red-advanced-tab.png')} /></div>
     </div>
     <div class="col col--1">
     </div>
@@ -71,7 +71,7 @@ When a message with the title Installing **'node-red-contrib-homekit-bridged'** 
 <div class="container">
   <div class="row">
     <div class="col col--9">
-      <div><Image img={require('./playgroud-flash-firmware.png')} /></div>
+      <div><Image img={require('./images/playgroud-flash-firmware.png')} /></div>
     </div>
     <div class="col col--1">
     </div>
@@ -85,7 +85,7 @@ Open **HARDWARIO Hub** page in the browser, same as in the chapter **Installatio
 <div class="container">
   <div class="row">
     <div class="col col--9">
-      <div><Image img={require('./playgroud-pair-hardware.png')} /></div>
+      <div><Image img={require('./images/playgroud-pair-hardware.png')} /></div>
     </div>
     <div class="col col--1">
     </div>
@@ -99,7 +99,7 @@ Now unplug the **Core Module** from the computer and connect it to the [**Batter
 <div class="container">
   <div class="row">
     <div class="col col--9">
-      <div><Image img={require('./homekit-and-siri-Core-standart-battery.jpg')} /></div>
+      <div><Image img={require('./images/homekit-and-siri-Core-standart-battery.jpg')} /></div>
     </div>
     <div class="col col--1">
     </div>
@@ -127,7 +127,7 @@ The imported flow should look like the following
 <div class="container">
   <div class="row">
     <div class="col col--9">
-      <div><Image img={require('./playground-flow-basic.png')} /></div>
+      <div><Image img={require('./images/playground-flow-basic.png')} /></div>
     </div>
     <div class="col col--1">
     </div>
@@ -139,7 +139,7 @@ The imported flow should look like the following
 <div class="container">
   <div class="row">
     <div class="col col--9">
-      <div><Image img={require('./homekit-connected.png')} /></div>
+      <div><Image img={require('./images/homekit-connected.png')} /></div>
     </div>
     <div class="col col--1">
     </div>
@@ -151,7 +151,7 @@ The imported flow should look like the following
 <div class="container">
   <div class="row">
     <div class="col col--9">
-      <div><Image img={require('./homekit-settings.png')} /></div>
+      <div><Image img={require('./images/homekit-settings.png')} /></div>
     </div>
     <div class="col col--1">
     </div>
@@ -171,7 +171,7 @@ Click on the **little pencil icon** next to the bridge part of the setting and f
 <div class="container">
   <div class="row">
     <div class="col col--5">
-      <div><Image img={require('./home-kit-bridge-settings.png')} /></div>
+      <div><Image img={require('./images/home-kit-bridge-settings.png')} /></div>
     </div>
     <div class="col col--5">
     </div>
@@ -183,7 +183,7 @@ Click on the **little pencil icon** next to the bridge part of the setting and f
 <div class="container">
   <div class="row">
     <div class="col col--5">
-      <div><Image img={require('./home-kit-settings.png')} /></div>
+      <div><Image img={require('./images/home-kit-settings.png')} /></div>
     </div>
     <div class="col col--5">
     </div>
@@ -199,7 +199,7 @@ Select **Add anyway** on the next screen. On the screen where you have to input 
 <div class="container">
   <div class="row">
     <div class="col col--9">
-      <div><Image img={require('./homekit-and-siri-iPhones-screens-1.png')} /></div>
+      <div><Image img={require('./images/homekit-and-siri-iPhones-screens-1.png')} /></div>
     </div>
     <div class="col col--1">
     </div>
@@ -213,7 +213,7 @@ Now just setup where is your bridge and temperature sensor.
 <div class="container">
   <div class="row">
     <div class="col col--9">
-      <div><Image img={require('./homekit-and-siri-iPhones-screens-2.png')} /></div>
+      <div><Image img={require('./images/homekit-and-siri-iPhones-screens-2.png')} /></div>
     </div>
     <div class="col col--1">
     </div>
@@ -233,7 +233,7 @@ So if you want to get the temperature from **Core Module** which we just set up,
 <div class="container">
   <div class="row">
     <div class="col col--9">
-      <div><Image img={require('./homekit-and-siri-iPhones-screens-siri.png')} /></div>
+      <div><Image img={require('./images/homekit-and-siri-iPhones-screens-siri.png')} /></div>
     </div>
     <div class="col col--1">
     </div>

@@ -34,7 +34,7 @@ If you already have your Raspberry Pi running with **Raspberry Pi OS** and you j
     <div class="container">
     <div class="row">
       <div class="col col--7">
-        <div><Image img={require('./raspberry-pi-imager-set-up.png')} /></div>
+        <div><Image img={require('./images/raspberry-pi-imager-set-up.png')} /></div>
       </div>
       <div class="col col--3">
       </div>
@@ -50,7 +50,7 @@ If you already have your Raspberry Pi running with **Raspberry Pi OS** and you j
   <div class="container">
     <div class="row">
       <div class="col col--7">
-        <div><Image img={require('./raspberry-pi-imager-advanced.png')} /></div>
+        <div><Image img={require('./images/raspberry-pi-imager-advanced.png')} /></div>
       </div>
       <div class="col col--3">
       </div>
@@ -85,7 +85,7 @@ To connect to your **Raspberry Pi** you have two options that you can put into t
   <div class="container">
     <div class="row">
       <div class="col col--10">
-        <div><Image img={require('./hardwario_hub.png')} /></div>
+        <div><Image img={require('./images/hardwario_hub.png')} /></div>
       </div>
       <div class="col col--3">
       </div>

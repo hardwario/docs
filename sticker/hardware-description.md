@@ -34,7 +34,7 @@ Device status is indicated by a **multi-color LED (R/G/Y)** and communication is
   <div class="row">
     <div class="col col--8">
       <div>
-        <Image img={require('./block-diagram-sticker.png')} />
+        <Image img={require('./images/block-diagram-sticker.png')} />
       </div>
     </div>
     <div class="col col--24">
@@ -49,15 +49,15 @@ Device status is indicated by a **multi-color LED (R/G/Y)** and communication is
 
 #### Sticker Clime - Enclosure, Mainboard, and Battery Holder
 
-![Sticker Clime](sticker-clime-overview.png)
+![Sticker Clime](images/sticker-clime-overview.png)
 
 #### Sticker Input - Enclosure, Mainboard, and Battery Holder
 
-![Sticker Input](sticker-input-overview.png)
+![Sticker Input](images/sticker-input-overview.png)
 
 #### Sticker Motion - Enclosure, Mainboard, and Battery Holder
 
-![Sticker Motion](sticker-motion-overview.png)
+![Sticker Motion](images/sticker-motion-overview.png)
 
 ---
 
@@ -65,27 +65,27 @@ Device status is indicated by a **multi-color LED (R/G/Y)** and communication is
 
 ### MCU
 
-![Sticker - MCU](hardware-diagrams/mcu.png)
+![Sticker - MCU](images/mcu.png)
 
 ### Antenna
 
-![Sticker - Antenna](hardware-diagrams/antenna.png)
+![Sticker - Antenna](images/antenna.png)
 
 ### Sensors
 
-![Sticker - Sensors](hardware-diagrams/sensors.png)
+![Sticker - Sensors](images/sensors.png)
 
 ### NFC
 
-![Sticker - NFC](hardware-diagrams/nfc.png)
+![Sticker - NFC](images/nfc.png)
 
 ### NFC Configuration Architecture
 
-![Sticker - NFC Configuration Architecture](sticker-nfc.drawio.png)
+![Sticker - NFC Configuration Architecture](images/sticker-nfc.drawio.png)
 
 ### Power
 
-![Sticker - Power](hardware-diagrams/power.png)
+![Sticker - Power](images/power.png)
 
 ---
 
@@ -96,4 +96,4 @@ Device status is indicated by a **multi-color LED (R/G/Y)** and communication is
 | **Enclosure material**| ABS                   |
 | **Dimension**         | 91 × 36.5 × 33.3 mm   |
 
-![Sticker - Catalog](sticker.png)
+![Sticker - Catalog](images/sticker.png)

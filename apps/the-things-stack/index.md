@@ -63,4 +63,4 @@ LoRaWAN follows a **star-of-stars topology**, where end devices connect to multi
 
 ### LoRaWAN Network Topology
 
-![LoRaWAN Network Topology](lora-example.png)
+![LoRaWAN Network Topology](images/lora-example.png)

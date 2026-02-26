@@ -10,7 +10,7 @@ This article describes the **CHESTER-C1** carrier board.
 <div class="container">
   <div class="row">
     <div class="col col--8">
-      <div><Image img={require('./chester-c1-top.png')} /></div>
+      <div><Image img={require('./images/chester-c1-top.png')} /></div>
     </div>
     <div class="col col--10">
     </div>
@@ -44,7 +44,7 @@ For more details see [**Ordering Codes**](../ordering-codes.md#chester-m).
 
 ## Module drawing
 
-![](chester-c1.png)
+![](images/chester-c1.png)
 
 ## Inputs and outputs overview
 
@@ -70,23 +70,23 @@ _\** Use the BYPASS BUTTON to initiate start from the battery without DC input p
 
 ### Block A Connectors
 
-![](block-a.png)
+![](images/block-a.png)
 
 ### 1-Wire Connectors
 
-![](1-wire.png)
+![](images/1-wire.png)
 
 ### I2C Connector
 
-![](i2c.png)
+![](images/i2c.png)
 
 ### SYSTEM Connector
 
-![](system.png)
+![](images/system.png)
 
 ### Block B Connectors
 
-![](block-b.png)
+![](images/block-b.png)
 
 ## Schematic Diagram
 
@@ -98,8 +98,8 @@ A schematic diagram is useful if you program low-level hardware-related code or 
 - [TODO Interactive PCB connector, part, testpoint and signal browser]
 -->
 
-![](schematics/hio-chester-c1-r1.1-1.png)
-![](schematics/hio-chester-c1-r1.1-2.png)
-![](schematics/hio-chester-c1-r1.1-3.png)
+![](images/hio-chester-c1-r1.1-1.png)
+![](images/hio-chester-c1-r1.1-2.png)
+![](images/hio-chester-c1-r1.1-3.png)
 
 

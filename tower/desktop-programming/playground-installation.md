@@ -21,7 +21,7 @@ If you want to download any other version or are interested in the application i
 There is always an **installation package** and also just an **executable option**. It is up to you which you choose to download, they should work the same.
 
 :::
-<Image img={require('./playground-download.png')}/>
+<Image img={require('./images/playground-download.png')}/>
 
 ## Installation
 

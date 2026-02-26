@@ -15,21 +15,21 @@ This widget allows you to display a single numerical value — such as temperatu
 1. #### **Open Dashboards**  
    In the top navigation bar, click on `Data`, then select `Dashboards`. This will open the dashboard management area.
 
-   ![](ubidots-metric-0.png)
+   ![](images/ubidots-metric-0.png)
 
 ---
 
 2. #### **Add a New Widget**  
    Click the `Add new Widget` button (marked with a + icon).
 
-   ![](ubidots-metric-1.png)
+   ![](images/ubidots-metric-1.png)
 
 ---
 
 3. #### **Choose a Widget Type**  
    From the list of available widgets, choose one of the `Metric` types (used to display numerical values).
 
-   ![](ubidots-metric-2.png)
+   ![](images/ubidots-metric-2.png)
 
 ---
 
@@ -39,14 +39,14 @@ This widget allows you to display a single numerical value — such as temperatu
    • Choose the desired variable  
    • Confirm the selection by clicking `SELECT`
 
-   ![](ubidots-metric-3.png)
+   ![](images/ubidots-metric-3.png)
 
 ---
 
 5. #### **Configure Aggregation and Time Span**  
    Set the `Aggregation Method` (e.g. average, last value) and `Span` (time range).
 
-   ![](ubidots-metric-7.png)
+   ![](images/ubidots-metric-7.png)
 
 ---
 
@@ -58,14 +58,14 @@ This widget allows you to display a single numerical value — such as temperatu
    • Date format  
    • ...  
 
-    ![](ubidots-metric-8.png)
+    ![](images/ubidots-metric-8.png)
 
 ---
 
 7. #### **Save the Widget**  
    Click `SAVE` to add the widget to your dashboard.
 
-    ![](ubidots-metric-9.png)
+    ![](images/ubidots-metric-9.png)
 
 ---
 

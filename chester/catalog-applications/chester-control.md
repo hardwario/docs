@@ -71,7 +71,7 @@ See [**Ordering Codes**](../ordering-codes.md) for more details.
 | ------------------------------------------- | -------------------------------------------------------------------------------------------- |
 | Use inputs **CH1** to **CH4** and **GND**   | Use **VIN** and **GND** to supply external power.                                            |
 |                                             | Use **CH1** to **CH4** outputs, which supply voltage from **VIN** when the output is enabled |
-| ![](../extension-modules/tb-chester-x0.png) | ![](../extension-modules/tb-chester-x4.png)                                                  |
+| ![](../extension-modules/images/tb-chester-x0.png) | ![](../extension-modules/images/tb-chester-x4.png)                                                  |
 
 ## Input Parameters and Behavior
 
@@ -452,3 +452,14 @@ import TabItem from '@theme/TabItem';
   </TabItem>
 </Tabs>
 
+---
+
+## Changelog
+
+### v3.5.0 — 2025-12-03
+
+- **Added**: LoRaWAN support — single firmware binary for both LTE and LoRaWAN; mode selectable via `app config mode lte` / `app config mode lrw`
+- **Added**: Downlink watchdog interval (`downlink-wdg-interval`) to detect loss of cloud communication
+- **Added**: Configurable poll interval (`interval-poll`) for cloud polling frequency
+- **Changed**: Cloud v2 protocol adopted (CBOR encoding, new API endpoints); previous Cloud v1 firmware remains separately available
+- **Changed**: Channel modes now explicitly configurable per channel (`channel-mode-1` through `channel-mode-4`)

@@ -11,7 +11,7 @@ This article describes the CHESTER-X4 extension module.
 <div class="container">
   <div class="row">
     <div class="col col--4">
-      <div><Image img={require('./chester-x4-top.png')} /></div>
+      <div><Image img={require('./images/chester-x4-top.png')} /></div>
     </div>
     <div class="col col--10">
     </div>
@@ -27,7 +27,7 @@ Each of the four outputs has a resetable PTC fuse protection (femtoSMDC005F). Ea
 
 ## CHESTER Pin Configuration Diagram
 
-![](tb-chester-x4.png)
+![](images/tb-chester-x4.png)
 
 ## Pin Configuration and Functions
 
@@ -49,8 +49,8 @@ A schematic diagram is useful if you program low-level hardware-related code or 
 - [Schematic (PDF)](schematics/hio-chester-x4-r3.1.pdf)
 - [Interactive PCB connector, part, testpoint and signal browser](pathname:///download/ibom/hio-chester-x4-r3.1.html)
 
-![](schematics/hio-chester-x4-r3.1-1.png)
+![](images/hio-chester-x4-r3.1-1.png)
 
 ## Module Drawing
 
-![](pc-chester-x4.png)
+![](images/pc-chester-x4.png)

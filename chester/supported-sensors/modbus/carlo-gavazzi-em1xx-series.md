@@ -7,7 +7,7 @@ import Image from '@theme/IdealImage';
 
 [Web-Site](https://www.gavazziautomation.com/en-global/product/EM111DINAV51XS1X)
 
-![Carlo Gavazzi - EM111](carlo-gavazzi-em111.png)
+![Carlo Gavazzi - EM111](images/carlo-gavazzi-em111.png)
 
 ### Description
 
@@ -34,7 +34,7 @@ This energy meter **does not require** any **external sensor** for current measu
 
 #### Connection Diagram (EM111)
 
-![](carlo-gavazzi-em111-power.png)
+![](images/carlo-gavazzi-em111-power.png)
 
 ---
 
@@ -50,7 +50,7 @@ This energy meter **does not require** any **external sensor** for current measu
 
 #### Modbus communication (EM111)
 
-![](carlo-gavazzi-em111-modbus.png)
+![](images/carlo-gavazzi-em111-modbus.png)
 
 ---
 

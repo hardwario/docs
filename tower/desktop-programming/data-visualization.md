@@ -19,7 +19,7 @@ On this tab, you can display **gauges**, **graphs**, **buttons** and **other wid
 <div class="container">
   <div class="row">
     <div class="col col--8">
-      <div><Image img={require('./dashboard-tab.png')}/></div>
+      <div><Image img={require('./images/dashboard-tab.png')}/></div>
     </div>
     <div class="col col--2">
     </div>

@@ -24,7 +24,7 @@ In this guide, you will learn how to flash application firmware to the CHESTER d
 
 ## 3. Insert the SIM Card
 
-![Chester - SIM card holder](chester-sim-holder.png)
+![Chester - SIM card holder](images/chester-sim-holder.png)
 
 ## 4. Add the Device to Cloud v2
 
@@ -35,13 +35,13 @@ In this guide, you will learn how to flash application firmware to the CHESTER d
 - First, you need to create a new Space.
 Click the button in the top-right corner labeled + NEW SPACE.
 
-![Cloud - Create a New Space](cloud-0.png)
+![Cloud - Create a New Space](images/cloud-0.png)
 
 #### 3. Create a New Device
 - Once the Space is created, you can add a new device.
 Click the button in the top-right corner labeled + NEW DEVICE.
 
-![Cloud - Create a New Device](cloud-2.png)
+![Cloud - Create a New Device](images/cloud-2.png)
 
 #### 4. Enter Device Details
 
@@ -58,7 +58,7 @@ Each tag has a **name** and **color**.
 :::
 
 
- ![Cloud - Enter Device Details](cloud-3.png)
+ ![Cloud - Enter Device Details](images/cloud-3.png)
 
 #### 5. Device Added
 Your device is now **successfully added** to Cloud v2.

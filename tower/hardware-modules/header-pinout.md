@@ -23,7 +23,7 @@ You can visit the separate chapter to learn more [**About Core Module**](./about
 <div class="container">
   <div class="row">
     <div class="col col--9">
-      <div><Image img={require('./core-module-pinout.png')} /></div>
+      <div><Image img={require('./images/core-module-pinout.png')} /></div>
     </div>
     <div class="col col--0">
     </div>
@@ -54,7 +54,7 @@ Format **Module** defines
 <div class="container">
   <div class="row">
     <div class="col col--4">
-      <div><Image img={require('./standard-module-drawing.png')} /></div>
+      <div><Image img={require('./images/standard-module-drawing.png')} /></div>
     </div>
   </div>
 </div>
@@ -64,7 +64,7 @@ Format **Module** defines
 <div class="container">
   <div class="row">
     <div class="col col--6">
-      <div><Image img={require('./large-module-drawing.png')} /></div>
+      <div><Image img={require('./images/large-module-drawing.png')} /></div>
     </div>
   </div>
 </div>
@@ -138,7 +138,7 @@ Format **Tag** defines
 <div class="container">
   <div class="row">
     <div class="col col--3">
-      <div><Image img={require('./tag-pinout.png')} /></div>
+      <div><Image img={require('./images/tag-pinout.png')} /></div>
     </div>
   </div>
 </div>
