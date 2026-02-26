@@ -15,21 +15,21 @@ This widget allows you to visualize how your variable changes over time. It’s 
 1. #### **Open Dashboards**  
    In the top navigation bar, click on `Data`, then select `Dashboards`. This will open the dashboard management area.
 
-    ![](ubidots-chart-0.png)
+    ![](images/ubidots-chart-0.png)
 
 ---
 
 2. #### **Add a New Widget**  
    Click the `Add new Widget` button (marked with a + icon).
 
-    ![](ubidots-chart-1.png)
+    ![](images/ubidots-chart-1.png)
 
 ---
 
 3. #### **Choose a Widget Type**  
    From the list of available widgets, scroll to the `Charts` section and choose a `Line Chart`.
 
-    ![](ubidots-chart-2.png)
+    ![](images/ubidots-chart-2.png)
 
 ---
 
@@ -39,7 +39,7 @@ This widget allows you to visualize how your variable changes over time. It’s 
    • Choose the desired variable  
    • Confirm the selection by clicking `SELECT`
 
-    ![](ubidots-chart-3.png)
+    ![](images/ubidots-chart-3.png)
 
 ---
 
@@ -51,7 +51,7 @@ This widget allows you to visualize how your variable changes over time. It’s 
    • Bar Width  
    • ...
 
-   ![](ubidots-chart-7.png)
+   ![](images/ubidots-chart-7.png)
 
 ---
 
@@ -62,7 +62,7 @@ This widget allows you to visualize how your variable changes over time. It’s 
    • Value range  
    • ...
 
-    ![](ubidots-chart-8.png)
+    ![](images/ubidots-chart-8.png)
 
 ---
 
@@ -73,21 +73,21 @@ This widget allows you to visualize how your variable changes over time. It’s 
    • Date format  
    • ...
 
-   ![](ubidots-chart-9.png)
+   ![](images/ubidots-chart-9.png)
 
 ---
 
 8. #### **Resize the Chart**  
    Once the widget is added to your dashboard, resize it using the arrow icon in the bottom-right corner of the chart.
 
-    ![](ubidots-chart-10.png)
+    ![](images/ubidots-chart-10.png)
 
 ---
 
 9. #### **View Data Points**  
    Hover over the chart line to view individual data values as tooltips.
 
-    ![](ubidots-chart-12.png)
+    ![](images/ubidots-chart-12.png)
     
 ---
 

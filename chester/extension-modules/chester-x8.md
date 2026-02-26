@@ -10,7 +10,7 @@ This article describes the CHESTER-X8 extension module.
 <div class="container">
   <div class="row">
     <div class="col col--4">
-      <div><Image img={require('./chester-x8-top.png')} /></div>
+      <div><Image img={require('./images/chester-x8-top.png')} /></div>
     </div>
     <div class="col col--10">
     </div>
@@ -23,7 +23,7 @@ CHESTER-X8 implements precise low zero g offset 3-axis accelerometer ADXL355 pro
 
 ## CHESTER Pin Configuration Diagram
 
-![](tb-chester-x8.png)
+![](images/tb-chester-x8.png)
 
 ## Pin Configuration and Functions
 
@@ -47,8 +47,8 @@ A schematic diagram is useful if you program low-level hardware-related code or 
 - [Schematic (PDF)](schematics/hio-chester-x8-r1.0.pdf)
 - [Interactive PCB connector, part, testpoint and signal browser](pathname:///download/ibom/hio-chester-x8-r1.0.html)
 
-![](schematics/hio-chester-x8-r1.0-1.png)
+![](images/hio-chester-x8-r1.0-1.png)
 
 ## Module Drawing
 
-![](pc-chester-x8.png)
+![](images/pc-chester-x8.png)

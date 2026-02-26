@@ -19,7 +19,7 @@ If you are returning to the project use the **Open folder** option in VSCode. Go
 <div class="container">
   <div class="row">
     <div class="col col--6">
-      <div><Image img={require('./hardwario-code-sidebar-icon.png')}/></div>
+      <div><Image img={require('./images/hardwario-code-sidebar-icon.png')}/></div>
     </div>
     <div class="col col--4">
     </div>

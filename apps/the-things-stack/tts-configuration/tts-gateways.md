@@ -15,13 +15,13 @@ This tutorial guides you through the process of adding and configuring a gateway
 1. On the **Home** tab, click **Register gateway**.  
    - If you are on a different tab, click the blue **+ Add** button in the top right and choose **Add new gateway**.
 
-![](tts-gateways-0.png)
+![](images/tts-gateways-0.png)
 
 2. You will be redirected to the gateway registration page.
    - TTS will first request the **Gateway EUI**.
    - You can find the Gateway EUI printed on your physical gateway.
 
-![](tts-gateways-1.png)
+![](images/tts-gateways-1.png)
 
 3. After entering the Gateway EUI, fill in the following fields:
    - **Gateway ID**
@@ -37,7 +37,7 @@ This tutorial guides you through the process of adding and configuring a gateway
 
 6. Click **Register gateway**.
 
-![](tts-gateways-2.png)
+![](images/tts-gateways-2.png)
 
 ---
 
@@ -56,7 +56,7 @@ After downloading:
 - The window will close automatically, or
 - Click **I have downloaded the keys**.
 
-![](tts-gateways-3.png)
+![](images/tts-gateways-3.png)
 
 ---
 

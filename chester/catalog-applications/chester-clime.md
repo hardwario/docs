@@ -1044,4 +1044,15 @@ In each structure with the current configuration, there are six aggregated value
   </TabItem>
 </Tabs>
 
+---
 
+## Changelog
+
+### v3.5.1 — 2025-12-08
+
+- **Added**: New variants — **CHESTER Clime SPS30** (particulate matter: PM1/PM2.5/PM10) and **CHESTER Clime Radon** (radon gas concentration)
+- **Added**: New variant — **CHESTER Clime TC** for two external Type K thermocouple sensors (via CHESTER-X3B)
+- **Improved**: DS18B20 1-Wire thermometer support — improved reliability and cleaner multi-sensor handling
+- **Changed**: Cloud v2 protocol adopted (CBOR encoding, new API endpoints); Cloud v1 variants remain available in a separate firmware table
+- **Changed**: Single combined firmware binary for both LTE and LoRaWAN; network selected via `app config mode lte` / `app config mode lrw`
+- **Removed**: Clime 1W and Clime 1WH variants dropped from Cloud v2 firmware builds (remain available under Cloud v1)

@@ -11,7 +11,7 @@ This article describes the CHESTER-X7 extension module.
 <div class="container">
   <div class="row">
     <div class="col col--4">
-      <div><Image img={require('./chester-x7-top.png')} /></div>
+      <div><Image img={require('./images/chester-x7-top.png')} /></div>
     </div>
     <div class="col col--10">
     </div>
@@ -24,7 +24,7 @@ The CHESTER-X7 provides one differential input for current probes or other indus
 
 ## CHESTER Pin Configuration Diagram
 
-![](tb-chester-x7.png)
+![](images/tb-chester-x7.png)
 
 ## Pin Configuration and Functions
 
@@ -48,9 +48,9 @@ A schematic diagram is useful if you program low-level hardware-related code or 
 - [Schematic (PDF)](schematics/hio-chester-x7-r2.1.pdf)
 - [Interactive PCB connector, part, testpoint and signal browser](pathname:///download/ibom/hio-chester-x7-r2.1.html)
 
-![](schematics/hio-chester-x7-r2.1-1.png)
-![](schematics/hio-chester-x7-r2.1-2.png)
+![](images/hio-chester-x7-r2.1-1.png)
+![](images/hio-chester-x7-r2.1-2.png)
 
 ## Module Drawing
 
-![](pc-chester-x7.png)
+![](images/pc-chester-x7.png)

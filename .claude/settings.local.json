@@ -17,7 +17,13 @@
       "Bash(copy:*)",
       "Bash(python:*)",
       "Bash(python -c:*)",
-      "Bash(pip install:*)"
+      "Bash(pip install:*)",
+      "Bash(find:*)",
+      "Bash(echo === $d ===:*)",
+      "Bash(sed:*)",
+      "Bash(ls:*)",
+      "Bash(npm install:*)",
+      "Bash(npm uninstall:*)"
     ],
     "deny": [],
     "ask": []

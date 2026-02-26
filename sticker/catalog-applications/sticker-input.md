@@ -8,7 +8,7 @@ import Image from '@theme/IdealImage';
 
 **STICKER Input** is a compact, wireless LoRaWAN module for connecting external sensors and reading digital or analog signals. Powered by two AA batteries, it supports 1-Wire temperature probes, voltage and current measurement, and monitoring of digital inputs up to 30 V, making it a versatile tool for industrial and monitoring applications.
 
-![Sticker Input](sticker-input-top.png)
+![Sticker Input](images/sticker-input-top.png)
 
 ## Quick Links
 

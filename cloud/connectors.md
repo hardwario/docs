@@ -17,15 +17,15 @@ You can set which type of uplink messages the webhook will be called:
 
 Tags are important. They connect a device or multiple devices to the connector.
 
-![](connector-new.png)
+![](images/connector-new.png)
 
 You can create a function, that will transform every message. It can act as a translator between CHESTER JSON data representation and your integration service.
 
-![](connector-transformation.png)
+![](images/connector-transformation.png)
 
 In the connector preview tab, you can select one of the latest messages and in real-time see, how the transformation works.
 
-![](connector-preview.png)
+![](images/connector-preview.png)
 
 In the **Advanced** tab in the **Connectors**, you might change how many times the **HARDWARIO Cloud** tries to call your callback and in which intervals.
 

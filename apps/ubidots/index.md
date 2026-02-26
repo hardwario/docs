@@ -12,7 +12,7 @@ import Image from '@theme/IdealImage';
 
 ## Example of an IoT Data Dashboard
 
-![Ubidots Dashboard Example](example-ubidots.png)
+![Ubidots Dashboard Example](images/example-ubidots.png)
 
 ## Getting Started
 

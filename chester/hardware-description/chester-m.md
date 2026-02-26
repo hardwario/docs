@@ -9,7 +9,7 @@ import Image from '@theme/IdealImage';
 <div class="container">
   <div class="row">
     <div class="col col--2">
-      <div><Image img={require('./chester-m-enclosure.png')} /></div>
+      <div><Image img={require('./images/chester-m-enclosure.png')} /></div>
     </div>
     <div class="col col--10">
     CHESTER-M is a versatile mainboard with LPWAN connectivity, extendable with <b>X</b> extension modules.
@@ -20,7 +20,7 @@ import Image from '@theme/IdealImage';
 
 ## Block Diagram
 
-![](block-diagram.png)
+![](images/block-diagram.png)
 
 
 ## Basic Parameters
@@ -72,11 +72,11 @@ block are duplicated to the 8-pin terminal blocks.
 
 Please note that the **solder bridges** are on the bottom side of the PCB. So in the picture below the blue solder bridge rectangles **on the right** of the PCB actually connects signals **to the left** 8-pin terminal blocks TB1 and TB2 when looked at the front of the PCB.
 
-![](solder-bridges.png)
+![](images/solder-bridges.png)
 
 This picture shows the terminal blocks connection:
 
-![](terminal-blocks.png)
+![](images/terminal-blocks.png)
 
 This table shows the connection of 1-Wire to terminal blocks and JST 8-pin connectors::
 
@@ -154,25 +154,25 @@ A schematic diagram is useful if you program low-level hardware-related code or 
 - [Interactive PCB connector, part, testpoint and signal browser R3.4](pathname:///download/ibom/chester-m-r3.4.html)
 
 ### MCU
-![](hio-chester-m-1.png)
+![](images/hio-chester-m-1.png)
 
 ### LTE
-![](hio-chester-m-2.png)
+![](images/hio-chester-m-2.png)
 
 ### LoRaWAN
-![](hio-chester-m-3.png)
+![](images/hio-chester-m-3.png)
 
 ### GNSS
-![](hio-chester-m-4.png)
+![](images/hio-chester-m-4.png)
 
 ### Power
-![](hio-chester-m-5.png)
+![](images/hio-chester-m-5.png)
 
 ### Terminals
-![](hio-chester-m-6.png)
+![](images/hio-chester-m-6.png)
 
 ### Nets
-![](hio-chester-m-7.png)
+![](images/hio-chester-m-7.png)
 
 
 ## Layout Placement
@@ -181,9 +181,9 @@ A schematic diagram is useful if you program low-level hardware-related code or 
 
 ### Top
 
-![](documentation-top.png)
+![](images/documentation-top.png)
 
 ### Bottom
 
-![](documentation-bot.png)
+![](images/documentation-bot.png)
 

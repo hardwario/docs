@@ -6,7 +6,6 @@ const sidebars = {
     'introduction',
     'getting-started',
     'hardware-description',
-    'initial-configuration',
     'hotspot-configuration',
     {
       type: 'category',

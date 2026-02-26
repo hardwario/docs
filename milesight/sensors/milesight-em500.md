@@ -13,7 +13,7 @@ Milesight EM500-CO2 is a **4-in-1 outdoor environmental monitoring sensor** desi
   <div class="row">
     <div class="col col--8">
       <div style={{ width: '500px', height: '500px' }}>
-        <Image img={require('./em500-co2.png')} />
+        <Image img={require('./images/em500-co2.png')} />
       </div>
     </div>
     <div class="col col--24"></div>

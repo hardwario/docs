@@ -9,7 +9,7 @@ import Image from '@theme/IdealImage';
 <div class="container">
   <div class="row">
     <div class="col col--8">
-      <div><Image img={require('./chester-k1-top.png')} /></div>
+      <div><Image img={require('./images/chester-k1-top.png')} /></div>
     </div>
     <div class="col col--10">
     </div>
@@ -19,7 +19,7 @@ import Image from '@theme/IdealImage';
 
 ## CHESTER Pin Configuration Diagram
 
-<Image img={require('./tb-chester-k1.png')} />
+<Image img={require('./images/tb-chester-k1.png')} />
 
 <br />
 
@@ -41,6 +41,6 @@ A schematic diagram is useful if you program low-level hardware-related code or 
 - [Schematic (PDF)](schematics/hio-chester-k1-r1.4.pdf)
 - [Interactive PCB connector, part, testpoint and signal browser](pathname:///download/ibom/hio-chester-k1-r1.4.html)
 
-![](schematics/hio-chester-k1-r1.4-1.png)
-![](schematics/hio-chester-k1-r1.4-2.png)
-![](schematics/hio-chester-k1-r1.4-3.png)
+![](images/hio-chester-k1-r1.4-1.png)
+![](images/hio-chester-k1-r1.4-2.png)
+![](images/hio-chester-k1-r1.4-3.png)

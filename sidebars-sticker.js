@@ -5,6 +5,7 @@ const sidebars = {
   docs: [
     'introduction',
     'getting-started',
+    'configuration',
     {
       type: 'category',
       label: 'Catalog Applications',

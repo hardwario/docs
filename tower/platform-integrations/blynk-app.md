@@ -17,7 +17,7 @@ You can find some examples of how to use [**TOWER with Blynk on our hackster.io 
 
 :::
 
-<Image img={require('./blynk-app-showcase.png')} />
+<Image img={require('./images/blynk-app-showcase.png')} />
 
 ## Setup Blynk
 
@@ -342,7 +342,7 @@ After the import, you should see this flow.
 <div class="container">
   <div class="row">
     <div class="col col--8">
-      <div><Image img={require('./blynk-flow-example.png')} /></div>
+      <div><Image img={require('./images/blynk-flow-example.png')} /></div>
     </div>
     <div class="col col--2">
     </div>
@@ -354,7 +354,7 @@ Now you can scan the QR below to import all the needed widgets into the Blynk ap
 <div class="container">
   <div class="row">
     <div class="col col--4">
-      <div><Image img={require('./blynk-example-qr-code.png')} /></div>
+      <div><Image img={require('./images/blynk-example-qr-code.png')} /></div>
     </div>
     <div class="col col--6">
     </div>
@@ -366,7 +366,7 @@ After you scan the QR code in the app, you should see widgets positioned like th
 <div class="container">
   <div class="row">
     <div class="col col--4">
-      <div><Image img={require('./blynk-example-widget-showcase.png')} /></div>
+      <div><Image img={require('./images/blynk-example-widget-showcase.png')} /></div>
     </div>
     <div class="col col--6">
     </div>

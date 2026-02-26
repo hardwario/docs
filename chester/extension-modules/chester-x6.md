@@ -11,7 +11,7 @@ This article describes the CHESTER-X6 extension module.
 <div class="container">
   <div class="row">
     <div class="col col--4">
-      <div><Image img={require('./chester-x6-top.png')} /></div>
+      <div><Image img={require('./images/chester-x6-top.png')} /></div>
     </div>
     <div class="col col--10">
     </div>
@@ -24,7 +24,7 @@ The CHESTER-X6 provides interface for HARDWARIO S-Wire protocol targeting low-po
 
 ## CHESTER Pin Configuration Diagram
 
-![](tb-chester-x6.png)
+![](images/tb-chester-x6.png)
 
 ## Pin Configuration and Functions
 
@@ -48,8 +48,8 @@ A schematic diagram is useful if you program low-level hardware-related code or 
 - [Schematic (PDF)](schematics/hio-chester-x6-r1.0.pdf)
 - [Interactive PCB connector, part, testpoint and signal browser](pathname:///download/ibom/hio-chester-x6-r1.0.html)
 
-![](schematics/hio-chester-x6-r1.0-1.png)
+![](images/hio-chester-x6-r1.0-1.png)
 
 ## Module Drawing
 
-![](pc-chester-x6.png)
+![](images/pc-chester-x6.png)

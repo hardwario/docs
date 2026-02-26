@@ -13,7 +13,7 @@ Milesight AM307 is an **indoor ambience monitoring sensor** that measures **seve
   <div class="row">
     <div class="col col--8">
       <div style={{ width: '500px', height: '500px' }}>
-        <Image img={require('./am319-868m.png')} />
+        <Image img={require('./images/am319-868m.png')} />
       </div>
     </div>
     <div class="col col--24"></div>

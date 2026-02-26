@@ -43,6 +43,19 @@ const config = {
     ],
   ],
 
+  themes: [
+    [
+      require.resolve('@easyops-cn/docusaurus-search-local'),
+      {
+        hashed: true,
+        language: ['en'],
+        highlightSearchTermsOnTargetPage: true,
+        explicitSearchResultPath: true,
+        docsRouteBasePath: ['chester', 'ember', 'fiber', 'tapper', 'tower', 'cloud', 'gauger', 'apps', 'sticker', 'milesight', 'rakwireless'],
+      },
+    ],
+  ],
+
   plugins: [
     [
       '@docusaurus/plugin-content-docs',
@@ -228,14 +241,6 @@ const config = {
             dark: 'rgb(50, 50, 50)',
           },
         },
-      },
-      algolia: {
-        apiKey: '00f3bf4268a994b715822ae701e41326',
-        indexName: 'hardwario',
-        appId: 'AKRT8SVTPP',
-        contextualSearch: false,
-        placeholder: 'search',
-        searchPagePath: false,
       },
       footer: {
         style: 'dark',

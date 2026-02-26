@@ -7,7 +7,7 @@ import Image from '@theme/IdealImage';
 <div class="container">
   <div class="row">
     <div class="col col--4">
-      <div><Image img={require('./core-module.png')} /></div>
+      <div><Image img={require('./images/core-module.png')} /></div>
     </div>
     <div class="col col--6">
       <p>
@@ -49,7 +49,7 @@ The maximum current for all **GPIOs combined is 90 mA**.
 <div class="container">
   <div class="row">
     <div class="col col--10">
-      <div><Image img={require('./core-module-pinout.png')} /></div>
+      <div><Image img={require('./images/core-module-pinout.png')} /></div>
     </div>
     <div class="col col--0">
     </div>

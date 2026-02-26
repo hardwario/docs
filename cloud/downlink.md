@@ -18,7 +18,7 @@ If you would like to send config or data from the web interface. Go to the devic
 
 You can send JSON commands that the device will decode and your code will receive structure with a filled data.
 
-![](downlink-data.png)
+![](images/downlink-data.png)
 
 ## Config
 
@@ -30,8 +30,8 @@ In cloud, don't type the `config save` command.
 
 In the messages or device detail, you can click on the **shell** icon and the shell console will open.
 
-![](shell-icon.png)
+![](images/shell-icon.png)
 
 In the console, you can enter **single or multiple commands** that will be executed next time **CHESTER** will boot, send data or poll to the cloud. After that you will receive the **response of every message** and the response appears in the console. You don't need to keep the console window open. You can schedule commands and return later or the next day to see the results.
 
-![](shell-console.png)
+![](images/shell-console.png)

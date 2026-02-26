@@ -56,7 +56,7 @@ The address is located **above the barcode and below the display**, as shown in 
   <div class="row">
     <div class="col col--8">
       <div>
-        <Image img={require('./adress-location/bmeters-hydroclima-2.png')} width={376} height={376} />
+        <Image img={require('./images/bmeters-hydroclima-2.png')} width={376} height={376} />
       </div>
     </div>
     <div class="col col--24"></div>

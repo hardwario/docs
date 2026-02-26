@@ -41,7 +41,7 @@ The address is located **at the very bottom of the device**, as shown in the ima
   <div class="row">
     <div class="col col--8">
       <div>
-        <Image img={require('./adress-location/zenner-caltos-e.png')} width={376} height={376} />
+        <Image img={require('./images/zenner-caltos-e.png')} width={376} height={376} />
       </div>
     </div>
     <div class="col col--24"></div>

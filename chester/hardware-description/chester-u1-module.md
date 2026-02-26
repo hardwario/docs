@@ -21,7 +21,7 @@ Instead of using **CHESTER-M** and putting extension modules in it, you design a
 - Contains a **nano SIM card holder** onboard
 - Connect just a **battery** and **u.Fl antenna**
 
-![CHESTER-U1 layout](chester-u1-description.png)
+![CHESTER-U1 layout](images/chester-u1-description.png)
 
 ## E-CAD Library
 
@@ -32,7 +32,7 @@ HARDWARIO can provide ECAD footprints for your integration.
 
 ## Layout
 
-![CHESTER-U1 layout](chester-u1-layout.png)
+![CHESTER-U1 layout](images/chester-u1-layout.png)
 
 ## Schematics
 
@@ -44,16 +44,16 @@ HARDWARIO can provide ECAD footprints for your integration.
 
 In this view, the signals are placed exactly as you look at the module from the top side. Signal placement has been optimized so you can easily route your wires on a two-layer printed circuit board.
 
-![](hio-chester-u1-r1.1-1.png)
+![](images/hio-chester-u1-r1.1-1.png)
 
 ### MCU
-![](hio-chester-u1-r1.1-2.png)
+![](images/hio-chester-u1-r1.1-2.png)
 
 ### LTE
-![](hio-chester-u1-r1.1-3.png)
+![](images/hio-chester-u1-r1.1-3.png)
 
 ### Power
-![](hio-chester-u1-r1.1-4.png)
+![](images/hio-chester-u1-r1.1-4.png)
 
 ## CHESTER-C4 Carrier Board
 
@@ -63,10 +63,10 @@ One of the carrier boards is **CHESTER-C4**, it contains a slot for two [**exten
 
 ### Bottom Side
 
-![CHESTER-C4 bottom](chester-c4-bottom.png)
+![CHESTER-C4 bottom](images/chester-c4-bottom.png)
 
 ### Top Side
 
 With "D" cell option.
 
-![CHESTER-C4 top](chester-c4-d-top-white.png)
+![CHESTER-C4 top](images/chester-c4-d-top-white.png)

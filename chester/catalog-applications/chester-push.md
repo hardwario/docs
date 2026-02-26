@@ -258,3 +258,12 @@ import TabItem from '@theme/TabItem';
   </TabItem>
 </Tabs>
 
+---
+
+## Changelog
+
+### v3.5.0 — 2025-12-03
+
+- **Added**: LoRaWAN support — single firmware binary for both LTE and LoRaWAN; mode selectable via `app config mode lte` / `app config mode lrw`
+- **Changed**: Refactored to new `app_lrw` LoRaWAN framework with unit test coverage
+- **Changed**: Cloud v2 protocol adopted (CBOR encoding, new API endpoints); previous Cloud v1 firmware remains separately available

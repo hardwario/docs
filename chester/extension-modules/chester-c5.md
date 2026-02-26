@@ -40,11 +40,11 @@ For initial start powering from the battery without DC input power supply** it i
 
 ## Module drawing: top
 
-![](chester-c5-top.png)
+![](images/chester-c5-top.png)
 
 ## Module drawing: bottom
 
-![](chester-c5-bot.png)
+![](images/chester-c5-bot.png)
 
 ## Module drawing description
 
@@ -85,19 +85,19 @@ _\** Use the BYPASS BUTTON to initiate start from the battery without DC input p
 
 ### BT/LED Connector
 
-![](btn-ext.png)
+![](images/btn-ext.png)
 
 ### SYSTEM Connector
 
-![](system.png)
+![](images/system.png)
 
 ### BATTERY Connector
 
-![](batt.png)
+![](images/batt.png)
 
 ### 1-Wire RJ-45 Connectors
 
-![](rj-45.png)
+![](images/rj-45.png)
 
 ## Schematic diagram
 
@@ -109,9 +109,9 @@ A schematic diagram is useful if you program low-level hardware-related code or 
 - [TODO Interactive PCB connector, part, testpoint and signal browser]
 -->
 
-![](schematics/hio-chester-c5-r1.1-1.png)
-![](schematics/hio-chester-c5-r1.1-2.png)
-![](schematics/hio-chester-c5-r1.1-3.png)
-![](schematics/hio-chester-c5-r1.1-4.png)
-![](schematics/hio-chester-c5-r1.1-5.png)
+![](images/hio-chester-c5-r1.1-1.png)
+![](images/hio-chester-c5-r1.1-2.png)
+![](images/hio-chester-c5-r1.1-3.png)
+![](images/hio-chester-c5-r1.1-4.png)
+![](images/hio-chester-c5-r1.1-5.png)
 

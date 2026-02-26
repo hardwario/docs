@@ -69,7 +69,7 @@ Connect the sensor to the **left terminal block A**
 | A3 (GND)                                                            | black                | GND    |
 | A4 (CH2)                                                            | yellow               | Pulse  |
 
-![](../extension-modules/tb-chester-x0.png)
+![](../extension-modules/images/tb-chester-x0.png)
 
 
 ## Default Configuration
@@ -257,4 +257,13 @@ Every available sensor has one aggrevated measurement, which contains the minimu
   </TabItem>
 </Tabs>
 
+---
+
+## Changelog
+
+### v3.5.0 — 2025-12-03
+
+- **Added**: LoRaWAN support — single firmware binary for both LTE and LoRaWAN; mode selectable via `app config mode lte` / `app config mode lrw`
+- **Added**: New variant — **CHESTER Range Z** with CHESTER-Z1 backup module support
+- **Changed**: Cloud v2 protocol adopted (CBOR encoding, new API endpoints); previous Cloud v1 firmware remains separately available
 

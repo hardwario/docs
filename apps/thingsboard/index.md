@@ -12,7 +12,7 @@ import Image from '@theme/IdealImage';
 
 ## Example of an IoT Data Dashboard
 
-![ThingsBoards](thingsboard-dashboard.png)
+![ThingsBoards](images/thingsboard-dashboard.png)
 
 ## Getting Started
 

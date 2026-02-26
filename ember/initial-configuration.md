@@ -4,7 +4,7 @@ title: Initial Setup and Configuration
 ---
 import Image from '@theme/IdealImage';
 
-# EMBER Quick Start Guide
+# Initial Setup and Configuration
 
 Welcome! This page helps you **power up (revive)** your HARDWARIO **EMBER** and choose what to do next:
 - run a **managed LoRaWAN backend** via **EMBER Cloud Service** (ChirpStack + Node-RED),

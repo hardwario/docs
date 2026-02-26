@@ -24,7 +24,7 @@ After adding gateways, the next step is to create device profiles in ChirpStack.
    - ADR Algorithm  
    - Expected Uplink Interval  
 
-![ChirStack v4 - Gateways](chirpstack-tutorial-5.png)
+![ChirStack v4 - Gateways](images/chirpstack-tutorial-5.png)
 
 ---
 
@@ -55,7 +55,7 @@ Next, create an application:
 
 Click **Submit**.  
 
-![ChirStack v4 - Gateways](chirpstack-tutorial-11.png)
+![ChirStack v4 - Gateways](images/chirpstack-tutorial-11.png)
 
 After creating the device, go to the **Activation** tab and enter:  
 - **Device Address**  
@@ -64,7 +64,7 @@ After creating the device, go to the **Activation** tab and enter:
 
 Finally, click **(Re)activate Device**.  
 
-![ChirStack v4 - Gateways](chirpstack-tutorial-13.png)
+![ChirStack v4 - Gateways](images/chirpstack-tutorial-13.png)
 
 ## Video Tutorial
 

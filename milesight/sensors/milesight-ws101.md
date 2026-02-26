@@ -13,7 +13,7 @@ Milesight WS101 is a **compact, battery-powered LoRaWAN smart button** designed 
   <div class="row">
     <div class="col col--8">
       <div style={{ width: '500px', height: '500px' }}>
-        <Image img={require('./ws101.png')} />
+        <Image img={require('./images/ws101.png')} />
       </div>
     </div>
     <div class="col col--24"></div>

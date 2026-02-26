@@ -14,7 +14,7 @@ In this guide, you will learn how to create a new device in ThingsBoard and mana
    In the left navigation bar, click on **Entities**, then select **Devices**.  
    In the top-right corner, click the **➕ (plus)** button and choose **Add Device**.
 
-![Thingsboard - Add a New Device](thingsboard-device-1.png)
+![Thingsboard - Add a New Device](images/thingsboard-device-1.png)
 
 ---
 
@@ -26,7 +26,7 @@ In this guide, you will learn how to create a new device in ThingsBoard and mana
    - and other optional fields.  
    After filling in the details, click **Next**.
 
-![Thingsboard - Fill in Device Details](thingsboard-device-2.png)
+![Thingsboard - Fill in Device Details](images/thingsboard-device-2.png)
 
 ---
 
@@ -34,14 +34,14 @@ In this guide, you will learn how to create a new device in ThingsBoard and mana
    Another window will appear for connectivity settings.  
    - If you don’t need to change anything, simply press **Enter** on your keyboard or close the dialog.
 
-![Thingsboard - Configure Connectivity](thingsboard-device-3.png)
+![Thingsboard - Configure Connectivity](images/thingsboard-device-3.png)
 
 ---
 
 5. **Device Created**  
    Your new device is now created and added to the list.
    
-![Thingsboard - Device Created](thingsboard-device-4.png)
+![Thingsboard - Device Created](images/thingsboard-device-4.png)
 
 ---
 
@@ -52,7 +52,7 @@ In this guide, you will learn how to create a new device in ThingsBoard and mana
    - **Latest Telemetry**
    - and more.
 
-![Thingsboard - View Device Information](thingsboard-device-5.png)
+![Thingsboard - View Device Information](images/thingsboard-device-5.png)
 
 ## Video Tutorial
 

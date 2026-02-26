@@ -12,7 +12,7 @@ In your space, you add your own devices.
 
 Click on the **+&nbsp;NEW DEVICE** button in the top right corner and create a new device.
 
-![](device-create.png)
+![](images/device-create.png)
 
 :::tip
 

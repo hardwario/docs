@@ -56,18 +56,18 @@ Suffix explanation:
 
 ### CHESTER-E1-P
 
-![](enclosures/chester-e1-p-hwe017-bottom-base.pdf-1.png)
-![](enclosures/chester-e1-p-hwe017-top-cover.pdf-1.png)
+![](images/chester-e1-p-hwe017-bottom-base.pdf-1.png)
+![](images/chester-e1-p-hwe017-top-cover.pdf-1.png)
 
 ### CHESTER-E2-P
 
-![](enclosures/chester-e2-p-hwe018-bottom-base.pdf-1.png)
-![](enclosures/chester-e2-p-hwe018-top-cover.pdf-1.png)
+![](images/chester-e2-p-hwe018-bottom-base.pdf-1.png)
+![](images/chester-e2-p-hwe018-top-cover.pdf-1.png)
 
 ### CHESTER-E3-P
 
-![](enclosures/chester-e3-p-hwe019-bottom-base.pdf-1.png)
-![](enclosures/chester-e3-p-hwe019-top-cover.pdf-1.png)
+![](images/chester-e3-p-hwe019-bottom-base.pdf-1.png)
+![](images/chester-e3-p-hwe019-top-cover.pdf-1.png)
 
 ### CHESTER-E4-FP
 
@@ -76,81 +76,81 @@ Suffix explanation:
 
 See `1`-`F` or `X` explanation in [CHESTER-Z1 Ordering Codes](../ordering-codes.md#chester-z).
 
-![](enclosures/chester-e4-fp-hwe020-bottom-base.pdf-1.png)
-![](enclosures/chester-e4-fp-hwe020-top-cover.pdf-1.png)
+![](images/chester-e4-fp-hwe020-bottom-base.pdf-1.png)
+![](images/chester-e4-fp-hwe020-top-cover.pdf-1.png)
 
 ### CHESTER-E5-P
 
-![](enclosures/chester-e5-p-hwe021-bottom-base.pdf-1.png)
-![](enclosures/chester-e5-p-hwe021-top-cover.pdf-1.png)
+![](images/chester-e5-p-hwe021-bottom-base.pdf-1.png)
+![](images/chester-e5-p-hwe021-top-cover.pdf-1.png)
 
 ### CHESTER-E6-P
 
-![](enclosures/chester-e6-p-hwe022-bottom-base.pdf-1.png)
-![](enclosures/chester-e6-p-hwe022-top-cover.pdf-1.png)
+![](images/chester-e6-p-hwe022-bottom-base.pdf-1.png)
+![](images/chester-e6-p-hwe022-top-cover.pdf-1.png)
 
 ### CHESTER-E7-P
 
-![](enclosures/chester-e7-p-hwe023-bottom-base.pdf-1.png)
-![](enclosures/chester-e7-p-hwe023-top-cover-1.pdf-1.png)
-![](enclosures/chester-e7-p-hwe023-top-cover-2.pdf-1.png)
+![](images/chester-e7-p-hwe023-bottom-base.pdf-1.png)
+![](images/chester-e7-p-hwe023-top-cover-1.pdf-1.png)
+![](images/chester-e7-p-hwe023-top-cover-2.pdf-1.png)
 
 ### CHESTER-E8-P
 
-![](enclosures/chester-e8-p-hwe028-bottom-base.pdf-1.png)
-![](enclosures/chester-e8-p-hwe028-top-cover.pdf-1.png)
+![](images/chester-e8-p-hwe028-bottom-base.pdf-1.png)
+![](images/chester-e8-p-hwe028-top-cover.pdf-1.png)
 
 ### CHESTER-E9-P
 
-![](enclosures/chester-e9-p-hwe029-bottom-base.pdf-1.png)
-![](enclosures/chester-e9-p-hwe029-top-cover.pdf-1.png)
+![](images/chester-e9-p-hwe029-bottom-base.pdf-1.png)
+![](images/chester-e9-p-hwe029-top-cover.pdf-1.png)
 
 ### CHESTER-E10-P
 
-![](enclosures/chester-e10-p-hwe030-bottom-base.pdf-1.png)
-![](enclosures/chester-e10-p-hwe030-top-cover.pdf-1.png)
+![](images/chester-e10-p-hwe030-bottom-base.pdf-1.png)
+![](images/chester-e10-p-hwe030-top-cover.pdf-1.png)
 
 ### CHESTER-E11-P
 
-![](enclosures/chester-e11-p-hwe031-bottom-base.pdf-1.png)
-![](enclosures/chester-e11-p-hwe031-top-cover.pdf-1.png)
+![](images/chester-e11-p-hwe031-bottom-base.pdf-1.png)
+![](images/chester-e11-p-hwe031-top-cover.pdf-1.png)
 
 ### CHESTER-E12-P
 
-![](enclosures/chester-e12-p-hwe032-bottom-base.pdf-1.png)
-![](enclosures/chester-e12-p-hwe032-top-cover.pdf-1.png)
+![](images/chester-e12-p-hwe032-bottom-base.pdf-1.png)
+![](images/chester-e12-p-hwe032-top-cover.pdf-1.png)
 
 ### CHESTER-E13-P
 
-![](enclosures/chester-e13-p-hwe033-bottom-base.pdf-1.png)
-![](enclosures/chester-e13-p-hwe033-top-cover.pdf-1.png)
+![](images/chester-e13-p-hwe033-bottom-base.pdf-1.png)
+![](images/chester-e13-p-hwe033-top-cover.pdf-1.png)
 
 ### CHESTER-E14-P
 
-![](enclosures/chester-e14-p-hwe034-bottom-base.pdf-1.png)
-![](enclosures/chester-e14-p-hwe034-top-cover.pdf-1.png)
+![](images/chester-e14-p-hwe034-bottom-base.pdf-1.png)
+![](images/chester-e14-p-hwe034-top-cover.pdf-1.png)
 
 ### CHESTER-E15-P
 
-![](enclosures/chester-e15-p-hwe035-bottom-base.pdf-1.png)
-![](enclosures/chester-e15-p-hwe035-top-cover.pdf-1.png)
+![](images/chester-e15-p-hwe035-bottom-base.pdf-1.png)
+![](images/chester-e15-p-hwe035-top-cover.pdf-1.png)
 
 ### CHESTER-E16-P
 
-![](enclosures/chester-e16-p-hwe036-bottom-base.pdf-1.png)
-![](enclosures/chester-e16-p-hwe036-top-cover.pdf-1.png)
+![](images/chester-e16-p-hwe036-bottom-base.pdf-1.png)
+![](images/chester-e16-p-hwe036-top-cover.pdf-1.png)
 
 ### CHESTER-E17-P
 
-![](enclosures/chester-e17-p-hwe037-bottom-base.pdf-1.png)
-![](enclosures/chester-e17-p-hwe037-top-cover.pdf-1.png)
+![](images/chester-e17-p-hwe037-bottom-base.pdf-1.png)
+![](images/chester-e17-p-hwe037-top-cover.pdf-1.png)
 
 ### CHESTER-E18-P
 
-![](enclosures/chester-e18-p-hwe038-bottom-base.pdf-1.png)
-![](enclosures/chester-e18-p-hwe038-top-cover.pdf-1.png)
+![](images/chester-e18-p-hwe038-bottom-base.pdf-1.png)
+![](images/chester-e18-p-hwe038-top-cover.pdf-1.png)
 
 ### CHESTER-E19-P
 
-![](enclosures/chester-e19-p-hwe039-bottom-base.pdf-1.png)
-![](enclosures/chester-e19-p-hwe039-top-cover.pdf-1.png)
+![](images/chester-e19-p-hwe039-bottom-base.pdf-1.png)
+![](images/chester-e19-p-hwe039-top-cover.pdf-1.png)

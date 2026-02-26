@@ -11,7 +11,7 @@ This article describes the CHESTER-X5 extension module.
 <div class="container">
   <div class="row">
     <div class="col col--4">
-      <div><Image img={require('./chester-x5-top.png')} /></div>
+      <div><Image img={require('./images/chester-x5-top.png')} /></div>
     </div>
     <div class="col col--10">
     </div>
@@ -25,7 +25,7 @@ CHESTER-X5 implements two **isolated** voltage inputs. Each can measure voltage 
 
 ## CHESTER Pin Configuration Diagram
 
-![](tb-chester-x5.png)
+![](images/tb-chester-x5.png)
 
 ## Pin Configuration and Functions
 
@@ -47,8 +47,8 @@ A schematic diagram is useful if you program low-level hardware-related code or 
 - [Schematic (PDF)](schematics/hio-chester-x5-r2.1.pdf)
 - [Interactive PCB connector, part, testpoint and signal browser](pathname:///download/ibom/hio-chester-x5-r2.1.html)
 
-![](schematics/hio-chester-x5-r2.1-1.png)
+![](images/hio-chester-x5-r2.1-1.png)
 
 ## Module Drawing
 
-![](pc-chester-x5.png)
+![](images/pc-chester-x5.png)

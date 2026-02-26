@@ -13,7 +13,7 @@ Milesight GS601 is a **ceiling-mounted vape and smoke detector** designed for **
   <div class="row">
     <div class="col col--8">
       <div style={{ width: '500px', height: '500px' }}>
-        <Image img={require('./gs601.png')} />
+        <Image img={require('./images/gs601.png')} />
       </div>
     </div>
     <div class="col col--24"></div>

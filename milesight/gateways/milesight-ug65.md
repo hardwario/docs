@@ -13,7 +13,7 @@ Milesight UG65 is a **semi-industrial LoRaWAN® gateway** powered by the **SX130
   <div class="row">
     <div class="col col--8">
       <div style={{ width: '500px', height: '500px' }}>
-        <Image img={require('./ug65-868m.png')} />
+        <Image img={require('./images/ug65-868m.png')} />
       </div>
     </div>
     <div class="col col--24"></div>

@@ -347,3 +347,16 @@ The latest firmware is available in the Catalog Applications [Firmware chapter](
 Any value may be `null` if the corresponding sensor read failed.
 
 :::
+
+---
+
+## Changelog
+
+### v1.0.0 — 2026-02-11
+
+- **Added**: Initial application release — dual PIR motion detection via CHESTER-S3 module
+- **Added**: Directional movement tracking — distinguishes left-to-right (`motion_right`) and right-to-left (`motion_left`) passage
+- **Added**: Configurable PIR sensitivity presets: `low`, `medium` (default), `high`, and `individual` for manual parameter tuning
+- **Added**: Lifetime motion totalizers that persist across reports and device reboots
+- **Added**: Service mode (`service-mode-enabled`) with real-time LED feedback for sensor testing and installation
+- **Added**: Multi-click button actions for immediate sampling, sending, and device reboot

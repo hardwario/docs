@@ -32,7 +32,7 @@ This extension is modular also in CHESTER-SDK development where each module has 
 <div class="container">
   <div class="row">
     <div class="col col--5">
-      <div><Image img={require('./explode-view.png')} /></div>
+      <div><Image img={require('./images/explode-view.png')} /></div>
     </div>
     <div class="col col--8">
     </div>
@@ -50,7 +50,7 @@ When CHESTER is mounted in the enclosure, you can check the module **"X_"** numb
 <div class="container">
   <div class="row">
     <div class="col col--5">
-      <div><Image img={require('./documentation-top.png')} /></div>
+      <div><Image img={require('./images/documentation-top.png')} /></div>
     </div>
     <div class="col col--8">
     </div>

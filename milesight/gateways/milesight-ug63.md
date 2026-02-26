@@ -13,7 +13,7 @@ Milesight UG63 is a **compact LoRaWAN® gateway** designed for **small-scale dep
   <div class="row">
     <div class="col col--8">
       <div style={{ width: '500px', height: '500px' }}>
-        <Image img={require('./ug63-868m.png')} />
+        <Image img={require('./images/ug63-868m.png')} />
       </div>
     </div>
     <div class="col col--24"></div>

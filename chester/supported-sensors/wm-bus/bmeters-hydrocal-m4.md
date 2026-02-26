@@ -102,7 +102,7 @@ The address is located on the **left side below the barcode**, as shown in the i
   <div class="row">
     <div class="col col--8">
       <div>
-        <Image img={require('./adress-location/bmeters-hydrocal-m4.png')} width={376} height={376} />
+        <Image img={require('./images/bmeters-hydrocal-m4.png')} width={376} height={376} />
       </div>
     </div>
     <div class="col col--24"></div>

@@ -83,7 +83,7 @@ This is an example of the electronic circuit of the **battery energizer**.
 <div class="container">
   <div class="row">
     <div class="col col--8">
-      <div><Image img={require('./energizer-circuit-battery.png')} /></div>
+      <div><Image img={require('./images/energizer-circuit-battery.png')} /></div>
     </div>
     <div class="col col--2">
       <p>
@@ -102,7 +102,7 @@ This is an example of the electronic circuit of the **battery energizer**.
 <div class="container">
   <div class="row">
     <div class="col col--8">
-      <div><Image img={require('./energizer-circuit-external.png')} /></div>
+      <div><Image img={require('./images/energizer-circuit-external.png')} /></div>
     </div>
     <div class="col col--2">
       <p>

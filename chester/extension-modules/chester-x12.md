@@ -13,7 +13,7 @@ The module features an I2C to UART bridge controller (**SC16IS740IPW**) and an R
 <div class="container">
   <div class="row">
     <div class="col col--4">
-      <div><Image img={require('./chester-x12-top.png')} /></div>
+      <div><Image img={require('./images/chester-x12-top.png')} /></div>
     </div>
     <div class="col col--10">
     </div>
@@ -26,7 +26,7 @@ The RS-232 transceiver uses negative voltage levels. CHESTER must have modified 
 
 <div style={{ maxWidth: '500px' }}>
 
-![TVS Diodes Location](chester-x12-tvs-modification.png)
+![TVS Diodes Location](images/chester-x12-tvs-modification.png)
 
 </div>
 :::
@@ -108,11 +108,11 @@ The CHESTER-X12 module can be used with various CHESTER mainboard configurations
   <div class="row">
     <div class="col col--6">
       <h4>CHESTER-M (CGLS)</h4>
-      <div><Image img={require('./chester-x12-cgls.png')} /></div>
+      <div><Image img={require('./images/chester-x12-cgls.png')} /></div>
     </div>
     <div class="col col--6">
       <h4>CHESTER-C4</h4>
-      <div><Image img={require('./chester-x12-c4.png')} /></div>
+      <div><Image img={require('./images/chester-x12-c4.png')} /></div>
     </div>
   </div>
 </div>
@@ -127,20 +127,20 @@ The following diagrams show the internal wiring of the module, including the sys
 
 ### Main Page
 
-![CHESTER-X12 Main Schematic](schematics/hio-chester-x12-r1.1-main-page.png)
+![CHESTER-X12 Main Schematic](images/hio-chester-x12-r1.1-main-page.png)
 
 ### Interface
 
-![CHESTER-X12 Interface Schematic](schematics/hio-chester-x12-r1.1-interface.png)
+![CHESTER-X12 Interface Schematic](images/hio-chester-x12-r1.1-interface.png)
 
 ### Power Supply
 
-![CHESTER-X12 Power Schematic](schematics/hio-chester-x12-r1.1-power.png)
+![CHESTER-X12 Power Schematic](images/hio-chester-x12-r1.1-power.png)
 
 ## Module Drawing
 
 <div style={{ width: '500px' }}>
 
-![CHESTER-X12 Pin Diagram](pc-chester-x12.png)
+![CHESTER-X12 Pin Diagram](images/pc-chester-x12.png)
 
 </div>

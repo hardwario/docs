@@ -18,13 +18,13 @@ import Image from '@theme/IdealImage';
 
 Here you can set users' login credentials and assign **organizations** and **roles** to them.
 
-![](user-config.png)
+![](images/user-config.png)
 
 ## Groups
 
 Here you can see **groups** within the **organization**. Here you can also set the **callbacks** for each group.
 
-![](groups.png)
+![](images/groups.png)
 
 ## Callbacks
 
@@ -34,17 +34,17 @@ In **callbacks**, you can set URL and HTTP parameters. You can also apply [JSONa
 http://my.callback.cloud/?temperature={{data.hygrometer.temperature.measurements.0.avg}}&humidity={{data.hygrometer.humidity.measurements.0.avg}}
 ```
 
-![](callback.png)
+![](images/callback.png)
 
 ## Devices
 
 In the group, you can see all the devices. You can also use a handy visualization that shows how many messages devices sent every day.
 
-![](devices.png)
+![](images/devices.png)
 
 ## Messages
 
 In the message section, you see all the received and decoded messages in **JSON** format. For each message, you can also check the callback endpoint response.
 
-![](messages.png)
+![](images/messages.png)
 

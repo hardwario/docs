@@ -13,7 +13,7 @@ Milesight FT101 is a **portable LoRaWAN® network testing device** designed for 
   <div class="row">
     <div class="col col--8">
       <div style={{ width: '500px', height: '500px' }}>
-        <Image img={require('./ft101.png')} />
+        <Image img={require('./images/ft101.png')} />
       </div>
     </div>
     <div class="col col--24"></div>

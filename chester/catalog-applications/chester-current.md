@@ -606,3 +606,13 @@ In **HARDWARIO**, we have a calibration kit for **CHESTER Current** made of seve
 1. Since we assumed a zero-current offset point, we can keep the `x0` parameter set as `0`.
 
 1. Save the configuration data (using the `config save` command) and verify the applied calibrated values.
+
+---
+
+## Changelog
+
+### v3.5.0 — 2025-12-03
+
+- **Added**: New variants — **CHESTER Current Z** (with CHESTER-Z1 backup module) and **CHESTER Current 1W** (with external DS18B20 1-Wire temperature sensors)
+- **Added**: LoRaWAN support — single firmware binary for both LTE and LoRaWAN; mode selectable via `app config mode lte` / `app config mode lrw`
+- **Changed**: Cloud v2 protocol adopted (CBOR encoding, new API endpoints); previous Cloud v1 firmware remains separately available
