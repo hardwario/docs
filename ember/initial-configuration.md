@@ -1,6 +1,6 @@
 ---
-slug: getting-started
-title: Getting Started
+slug: initial-configuration
+title: Initial Setup and Configuration
 ---
 import Image from '@theme/IdealImage';
 
