@@ -570,6 +570,62 @@ To clear calibration and return to raw mV output:
 ```shell
 channel 1 calib reset
 ```
+### Hall Effect Sensor Calibration
+
+This section describes how to configure the current measurement firmware for Hall effect sensors (e.g., **YHDC HSTS30**). To ensure accurate readings, the system must be configured for linear approximation and differential input mode.
+
+#### Calibration Logic
+
+A standard sensor (300 A / 2.5 V ± 0.625 V) uses a 2.5 V reference center. At a nominal current of 300 A, the output voltage swings by 625 mV from that center.
+
+By enabling **Differential Mode** (measuring INP against INM, where INM is the sensor's 2.5 V reference), we isolate the relevant signal and remove the DC bias.
+
+**Sensitivity Calculation:**
+
+```
+Sensitivity = 625 mV / 300 A = 2.0833 mV/A
+```
+
+#### Theoretical Parameters
+
+The CHESTER firmware uses two points [x, y] to define the linear scaling, where **x** is voltage (mV) and **y** is the physical value (A).
+
+| Parameter | Value | Description |
+| :--- | :--- | :--- |
+| **x0** | 0 | 0 mV input (zero offset) |
+| **y0** | 0 | 0 A measured |
+| **x1** | 625 | 625 mV input (full swing) |
+| **y1** | 300 | 300 A measured |
+
+:::info
+
+Ensure the physical values on the sensor label match the theoretical values above before applying this configuration.
+
+:::
+
+#### CLI Configuration Commands
+
+Replace `<n>` with the target channel number (1–4):
+
+```shell
+# Define linear approximation points
+app config channel-calib-x0 <n> 0
+app config channel-calib-y0 <n> 0
+app config channel-calib-x1 <n> 625
+app config channel-calib-y1 <n> 300
+
+# Set measurement mode to RMS (Root Mean Square)
+app config channel-calib-mode <n> rms
+
+# Enable differential input mode
+app config channel-differential <n> true
+```
+
+:::caution
+
+If your sensor has a different rating (e.g., 100 A / 1 V), you must update `x1` to `1000` and `y1` to `100` to maintain accuracy.
+
+:::
 
 ### Legacy Calibration Method
 
