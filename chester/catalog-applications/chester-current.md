@@ -1,32 +1,17 @@
----
-slug: chester-current
-title: CHESTER Current
----
-import Image from '@theme/IdealImage';
-
 # CHESTER Current
 
 This article describes the core functionality, hardware description, default configuration, example JSON message, and channel calibration of the catalog application **CHESTER Current**.
 
-:::caution
-
-Some of the basics are not provided, as they are common for all CHESTER catalog applications. Please see:
-
-- [**Getting started**](https://docs.hardwario.com/chester/getting-started/first-step) on how to connect device to Cloud.
-- [**Common functionality**](common-functionality.md) to know how LED, button and network configuration works.
-- [**Platform Management**](../category/platform-connectivity) on how to work with the interactive console.
-
-:::
+> **Caution:** Some of the basics are not provided, as they are common for all CHESTER catalog applications. Please see:
+> - [**Getting started**](https://docs.hardwario.com/chester/getting-started/first-step) on how to connect device to Cloud.
+> - [**Common functionality**](https://docs.hardwario.com/chester/catalog-applications/common-functionality) to know how LED, button and network configuration works.
+> - [**Platform Management**](https://docs.hardwario.com/chester/category/platform-connectivity) on how to work with the interactive console.
 
 ## Application Overview
 
 The application primarily targets non-invasive current measuring using the so-called **DC Current "Transformer"** (DCCT). It can measure up to 4 channels of both AC and DC currents. The current probes are clips around the measured line, which convert the magnetic flux (proportional to the electrical current) to a differential output voltage.
 
-:::tip
-
-The current probes require a 5 V power supply (generated using the boost converter on **CHESTER-K1**) during the measurement cycle. The boost converter and the power rails to each channel are software-controlled, so **CHESTER Current** can operate as a low-power device powered by the battery. Of course, the measurement interval plays a key role in the battery lifespan.
-
-:::
+> **Tip:** The current probes require a 5 V power supply (generated using the boost converter on **CHESTER-K1**) during the measurement cycle. The boost converter and the power rails to each channel are software-controlled, so **CHESTER Current** can operate as a low-power device powered by the battery. Of course, the measurement interval plays a key role in the battery lifespan.
 
 Apart from the current measurements, the device can be configured (on demand) to measure up to 4 voltage channels (in single-ended mode). It can combine both current and voltage measurements (the total number of channels never exceeds number 4).
 
@@ -34,15 +19,15 @@ Apart from the current measurements, the device can be configured (on demand) to
 
 **CHESTER Current** can be ordered in one of these variants:
 
-### CHESTER Current {#chester-current}
+### CHESTER Current
 
 The catalog **CHESTER Current** hardware consists of the following ordering codes:
 
-* `CHESTER-M-CGLS` - Standard mainboard
-* `CHESTER-K1-C1-C2-C3-C4` - 4x Diff. Input + 5 V Boost
-* `CHESTER-E2-LP` - Enclosure with SMA pigtail
+- `CHESTER-M-CGLS` - Standard mainboard
+- `CHESTER-K1-C1-C2-C3-C4` - 4x Diff. Input + 5 V Boost
+- `CHESTER-E2-LP` - Enclosure with SMA pigtail
 
-See [**Ordering Codes**](../ordering-codes.md) for more details.
+See [**Ordering Codes**](https://docs.hardwario.com/chester/ordering-codes) for more details.
 
 Firmware build shield options: `ctr_k1 ctr_lte`
 
@@ -50,12 +35,12 @@ Firmware build shield options: `ctr_k1 ctr_lte`
 
 The catalog **CHESTER Current Z** hardware consists of the following ordering codes:
 
-* `CHESTER-M-CGLS` - Standard mainboard
-* `CHESTER-K1-C1-C2-C3-C4` - 4x Diff. Input + 5 V Boost
-* `CHESTER-Z1` - Backup module
-* `CHESTER-E2-LP` - Enclosure with SMA pigtail
+- `CHESTER-M-CGLS` - Standard mainboard
+- `CHESTER-K1-C1-C2-C3-C4` - 4x Diff. Input + 5 V Boost
+- `CHESTER-Z1` - Backup module
+- `CHESTER-E2-LP` - Enclosure with SMA pigtail
 
-See [**Ordering Codes**](../ordering-codes.md) for more details.
+See [**Ordering Codes**](https://docs.hardwario.com/chester/ordering-codes) for more details.
 
 Firmware build shield options: `ctr_k1 ctr_lte ctr_z`
 
@@ -65,11 +50,11 @@ The catalog application **CHESTER Current 1W** supports multiple external DS18B2
 
 The hardware of this application consists of the following ordering codes:
 
-* `CHESTER-M-CGLS` - Standard mainboard
-* `CHESTER-K1-C1-C2-C3-C4` - 4x Diff. Input + 5 V Boost
-* `CHESTER-E2-LP` - Enclosure with SMA pigtail
+- `CHESTER-M-CGLS` - Standard mainboard
+- `CHESTER-K1-C1-C2-C3-C4` - 4x Diff. Input + 5 V Boost
+- `CHESTER-E2-LP` - Enclosure with SMA pigtail
 
-See [**Ordering Codes**](../ordering-codes.md) for more details.
+See [**Ordering Codes**](https://docs.hardwario.com/chester/ordering-codes) for more details.
 
 Firmware build shield options: `ctr_ds18b20 ctr_k1 ctr_lte`
 
@@ -77,101 +62,85 @@ Firmware build shield options: `ctr_ds18b20 ctr_k1 ctr_lte`
 
 You can choose up to 4 current probes with the following current ranges:
 
-* Maximum current **10 A**
-* Maximum current **100 A**
-* Maximum current **300 A**
-* Maximum current **1.000 A**
-* Maximum current **1.500 A**
+- Maximum current **10 A**
+- Maximum current **100 A**
+- Maximum current **300 A**
+- Maximum current **1,000 A**
+- Maximum current **1,500 A**
 
-:::caution
-
-The current range is specified for the DC. If you design your system for the AC, you have to multiply the maximum expected AC by the coefficient of `1.42` (square root of two) to see if the current probe fits within the limit.
-
-:::
+> **Caution:** The current range is specified for the DC. If you design your system for the AC, you have to multiply the maximum expected AC by the coefficient of `1.42` (square root of two) to see if the current probe fits within the limit.
 
 ## Application Behavior
 
-For the wiring diagram to **CHESTER Current**, please follow the [**terminal block description**](../extension-modules/chester-k1.md) of the **CHESTER-K1** extension module.
-The extension module **CHESTER-K1** use both slots **A** and **B**. So you use the corresponding terminals **A1** to **A8** and **B1** to **B8**.
+For the wiring diagram to **CHESTER Current**, please follow the [**terminal block description**](https://docs.hardwario.com/chester/extension-modules/chester-k1) of the **CHESTER-K1** extension module. The extension module **CHESTER-K1** uses both slots **A** and **B**. So you use the corresponding terminals **A1** to **A8** and **B1** to **B8**.
 
 ### Analog
 
-* The analog readings are sampled periodically (parameter `channel-interval-sample`). These readings are stored as a **buffer of samples**.
-
-* The collected samples are **aggregated** periodically (parameter `channel-interval-aggreg`). The minimum, maximum, average, and median aggregates are computed from the buffered samples. These aggregated results are referred to as **measurements**.
-
-* Each **measurement** has an associated timestamp. The buffer **measurements** are transferred as time-series data regularly (parameter `interval-report`).
-
+- The analog readings are sampled periodically (parameter `interval-sample`). These readings are stored as a **buffer of samples**.
+- The collected samples are **aggregated** periodically (parameter `interval-aggreg`). The minimum, maximum, average, and median aggregates are computed from the buffered samples. These aggregated results are referred to as **measurements**.
+- Each **measurement** has an associated timestamp. The buffer **measurements** are transferred as time-series data regularly (parameter `interval-report`).
 
 ### Backup
 
 **CHESTER Current Z** (equipped with **CHESTER-Z1**) can also report information on the backup battery and external DC power state.
 
-* The current **battery voltage** and **external DC voltage** are sent in every report.
+- The current **battery voltage** and **external DC voltage** are sent in every report.
+- When the DC power input changes, the timestamp of the change event is stored altogether with the **connected**/**disconnected** state, this information is buffered, and the buffer of the events is sent (at the latest) with the regular report (parameter `interval-report`).
+- Optionally, DC power input changes to the **connected** (parameter `backup-report-connected`) or **disconnected** (parameter `backup-report-disconnected`) states can be reported **immediately** or with a configurable **delay** (parameter `event-report-delay`) to allow capturing multiple consequent input changes.
+- The maximum number of reports per hour is configurable (parameter `event-report-rate`). The event throttling limits communication bandwidth and preserves the battery lifespan.
 
-* When the DC power input changes, the timestamp of the change event is stored altogether with the **connected**/**disconnected** state, this information is buffered, and the buffer of the events is sent (at the latest) with the regular report (parameter `interval-report`).
-
-* Optionally, DC power input changes to the **connected** (parameter `backup-report-connected`) or **disconnected** (parameter `backup-report-disconnected`) states can be reported **immediately** or with a configurable **delay** (parameter `event-report-delay`) to allow capturing multiple consequent input changes.
-
-* The maximum number of reports per hour is configurable (parameter `event-report-rate`). The event throttling limits communication bandwidth and preserves the battery lifespan.
-
-:::caution
-
-The next report interval is calculated at the beginning of the transmission cycle as the `interval-report` parameter (specified in seconds) ±20 % spread. This spread is intentionally random to avoid transmission aliasing for multiple devices operating in the same place (e.g., powered from a local DC line). If such a spread was not implemented, the device transmission could synchronously overlap.
-
-:::
+> **Caution:** The next report interval is calculated at the beginning of the transmission cycle as the `interval-report` parameter (specified in seconds) ±20 % spread. This spread is intentionally random to avoid transmission aliasing for multiple devices operating in the same place (e.g., powered from a local DC line). If such a spread was not implemented, the device transmission could synchronously overlap.
 
 ## Default Configuration
 
 This is the default configuration (printed using the `app config show` command):
 
 ```
+app config interval-sample 60
+app config interval-aggreg 300
 app config interval-report 900
+app config interval-poll 0
+app config downlink-wdg-interval 129600
 app config event-report-delay 1
 app config event-report-rate 30
 app config backup-report-connected true
 app config backup-report-disconnected true
-app config channel-interval-sample 60
-app config channel-interval-aggreg 300
-app config channel-active 1 false
-app config channel-active 2 false
-app config channel-active 3 false
-app config channel-active 4 false
-app config channel-differential 1 false
-app config channel-differential 2 false
-app config channel-differential 3 false
-app config channel-differential 4 false
-app config channel-calib-x0 1 0
-app config channel-calib-x0 2 0
-app config channel-calib-x0 3 0
-app config channel-calib-x0 4 0
-app config channel-calib-y0 1 0
-app config channel-calib-y0 2 0
-app config channel-calib-y0 3 0
-app config channel-calib-y0 4 0
-app config channel-calib-x1 1 0
-app config channel-calib-x1 2 0
-app config channel-calib-x1 3 0
-app config channel-calib-x1 4 0
-app config channel-calib-y1 1 0
-app config channel-calib-y1 2 0
-app config channel-calib-y1 3 0
-app config channel-calib-y1 4 0
-app config channel-calib-mode 1 rms
-app config channel-calib-mode 2 rms
-app config channel-calib-mode 3 rms
-app config channel-calib-mode 4 rms
+app config channel-active-1 false
+app config channel-active-2 false
+app config channel-active-3 false
+app config channel-active-4 false
+app config channel-differential-1 false
+app config channel-differential-2 false
+app config channel-differential-3 false
+app config channel-differential-4 false
+app config channel-calib-x0-1 0.00
+app config channel-calib-x0-2 0.00
+app config channel-calib-x0-3 0.00
+app config channel-calib-x0-4 0.00
+app config channel-calib-x1-1 0.00
+app config channel-calib-x1-2 0.00
+app config channel-calib-x1-3 0.00
+app config channel-calib-x1-4 0.00
+app config channel-calib-y0-1 0.00
+app config channel-calib-y0-2 0.00
+app config channel-calib-y0-3 0.00
+app config channel-calib-y0-4 0.00
+app config channel-calib-y1-1 0.00
+app config channel-calib-y1-2 0.00
+app config channel-calib-y1-3 0.00
+app config channel-calib-y1-4 0.00
+app config channel-calib-mode-1 "rms"
+app config channel-calib-mode-2 "rms"
+app config channel-calib-mode-3 "rms"
+app config channel-calib-mode-4 "rms"
 app config w1-therm-interval-sample 60
 app config w1-therm-interval-aggreg 300
+app config mode "lte"
 ```
 
 ## Specific Commands
 
-:::info
-
-You can easily explore the whole command tree structure - start with the `help` command.
-
-:::
+> **Info:** You can easily explore the whole command tree structure - start with the `help` command.
 
 ### Commands
 
@@ -203,11 +172,7 @@ Use this command to configure a short delay (in seconds) between the **backup** 
 app config event-report-delay <value>
 ```
 
-:::tip
-
-This feature is useful in systems where another change may arrive shortly after the first one.
-
-:::
+> **Tip:** This feature is useful in systems where another change may arrive shortly after the first one.
 
 Use this command to limit the number of asynchronous **backup** event reports in a one-hour window:
 
@@ -215,11 +180,7 @@ Use this command to limit the number of asynchronous **backup** event reports in
 app config event-report-rate <value>
 ```
 
-:::tip
-
-This feature helps to conserve power in the battery-operated device and optimizes the amount of transferred data. The regular (periodic) reports set by the parameter `interval-report` are not counted to this limit.
-
-:::
+> **Tip:** This feature helps to conserve power in the battery-operated device and optimizes the amount of transferred data. The regular (periodic) reports set by the parameter `interval-report` are not counted to this limit.
 
 Use these commands to enable/disable reporting of the backup module power input connect/disconnect events:
 
@@ -233,43 +194,43 @@ app config backup-report-disconnected <true/false>
 Command to **enable/disable** channel `n` (index 1-4):
 
 ```
-app config channel-active <n> <true/false>
+app config channel-active-<n> <true/false>
 ```
 
 Command to switch between **single-ended/differential** modes on the channel `n` (index 1-4):
 
 ```
-app config channel-differential <n> <true/false>
+app config channel-differential-<n> <true/false>
 ```
 
 Command to set **calibration point X0** (input) on the channel `n` (index 1-4):
 
 ```
-app config channel-calib-x0 <n> <value>
+app config channel-calib-x0-<n> <value>
 ```
 
 Command to set **calibration point Y0** (output) on the channel `n` (index 1-4):
 
 ```
-app config channel-calib-y0 <n> <value>
+app config channel-calib-y0-<n> <value>
 ```
 
 Command to set **calibration point X1** (input) on the channel `n` (index 1-4):
 
 ```
-app config channel-calib-x1 <n> <value>
+app config channel-calib-x1-<n> <value>
 ```
 
 Command to set **calibration point Y1** (output) on the channel `n` (index 1-4):
 
 ```
-app config channel-calib-y1 <n> <value>
+app config channel-calib-y1-<n> <value>
 ```
 
 Command to set **calibration mode** on the channel `n` (index 1-4):
 
 ```
-app config channel-calib-mode <n> <avg/rms>
+app config channel-calib-mode-<n> <avg/rms>
 ```
 
 | Mode | Description | Use Case |
@@ -279,18 +240,16 @@ app config channel-calib-mode <n> <avg/rms>
 
 ### Channel Commands
 
-The following shell commands allow interactive calibration and reading of channels:
+The following shell commands allow interactive calibration and reading of channels. Where `<n>` is channel number 1-4.
 
 | Command | Description |
 |---------|-------------|
-| `channel <n> read` | Read raw and calibrated values |
-| `channel <n> calib set-0 <value>` | Set calibration point 0 |
-| `channel <n> calib set-1 <value>` | Set calibration point 1 |
-| `channel <n> calib show` | Show calibration parameters |
-| `channel <n> calib reset` | Reset calibration to defaults |
-| `channel <n> calib mode [avg\|rms]` | Get/set calibration mode |
-
-Where `<n>` is channel number 1-4.
+| `current channel-<n> read` | Read raw and calibrated values |
+| `current channel-<n> calib set-0 <value>` | Capture current raw reading as X0, set Y0 to `<value>` |
+| `current channel-<n> calib set-1 <value>` | Capture current raw reading as X1, set Y1 to `<value>` |
+| `current channel-<n> calib show` | Show calibration parameters |
+| `current channel-<n> calib reset` | Reset calibration to defaults |
+| `current channel-<n> calib mode [avg\|rms]` | Get/set calibration mode |
 
 ### 1-Wire Thermometer
 
@@ -308,7 +267,7 @@ app config w1-therm-interval-aggreg <1-86400>
 
 ## Firmware
 
-The latest firmware is available in Catalog Applications [Firmware chapter](index.md#application-firmware).
+The latest firmware is available in Catalog Applications [Firmware chapter](https://docs.hardwario.com/chester/catalog-applications/catalog-applications#application-firmware).
 
 ### Firmware v3.5.1
 
@@ -319,11 +278,7 @@ The latest firmware is available in Catalog Applications [Firmware chapter](inde
 
 ## Example JSON Message
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
-<Tabs>
-  <TabItem value="lte" label="LTE">
+### LTE
 
 ```json
 {
@@ -390,23 +345,19 @@ import TabItem from '@theme/TabItem';
 }
 ```
 
-:::info
+> **Info:** The payload structure for analog channels has changed in **v3.5.1**:
+> - `raw_rms` - Contains RMS measurements in mV
+> - `raw_mean` - Contains mean (average) measurements in mV
+> - `calibration` - Contains calibrated values based on the selected mode (0=avg, 1=rms)
 
-The payload structure for analog channels has changed in **v3.5.1**:
-- `raw_rms` - Contains RMS measurements in mV
-- `raw_mean` - Contains mean (average) measurements in mV
-- `calibration` - Contains calibrated values based on the selected mode (0=avg, 1=rms)
-
-:::
-
-  </TabItem>
-  <TabItem value="lora" label="LoRaWAN">
+### LoRaWAN
 
 **CHESTER Current** supports binary LoRaWAN payload encoding. Example with battery + thermometer + channel 1 active:
 
 **Header:** `0x25 0x00` (bits: BATT=1, ACCEL=0, THERM=1, W1=0, BACKUP=0, CH1=1)
 
 **Raw bytes (hex):**
+
 ```
 25 00 45 0E 5A 0D 1C 29 09 00 47 00 48 E4 49
 ```
@@ -426,51 +377,36 @@ The payload structure for analog channels has changed in **v3.5.1**:
 
 **Total:** 15 bytes
 
-  </TabItem>
-</Tabs>
-
 ## Channel Calibration
 
-:::danger
+> **Danger:** When upgrading firmware from **v1.x.x** to version **v2.0.0 and newer** - it is necessary to [**backup configuration**](https://docs.hardwario.com/chester/catalog-applications/common-functionality#configuration-backup). In the case of using **CHESTER Current** also calibration data.
 
-When upgrading firmware from **v1.x.x** to version **v2.0.0 and newer** - it is necessary to [**backup configuration**](common-functionality.md#configuration-backup). In the case of using **CHESTER Current** also calibration data.
-
-:::
-
-:::caution
-
-The following section is provided only for reference. Usually, the **CHESTER Current** devices are ordered altogether with the current probes, and **HARDWARIO** does the channel calibration for their customers in such a case.
-
-:::
+> **Caution:** The following section is provided only for reference. Usually, the **CHESTER Current** devices are ordered altogether with the current probes, and **HARDWARIO** does the channel calibration for their customers in such a case.
 
 ### Calibration System Overview
 
 The calibration system uses **two-point linear interpolation** to convert raw mV readings to calibrated values (e.g., Amps, Watts, or any physical unit).
 
-:::tip
-
-Linear interpolation is defined by this formula for output calculation:
-
-`calibrated = (y0 × (x1 - raw) + y1 × (raw - x0)) / (x1 - x0)`
-
-Where:
-- `x0`, `x1` = Raw mV values at calibration points
-- `y0`, `y1` = Real physical values at calibration points
-- `raw` = Current raw mV reading
-
-:::
+> **Tip:** Linear interpolation is defined by this formula for output calculation:
+>
+> `calibrated = (y0 × (x1 - raw) + y1 × (raw - x0)) / (x1 - x0)`
+>
+> Where:
+> - `x0`, `x1` = Raw mV values at calibration points
+> - `y0`, `y1` = Real physical values at calibration points
+> - `raw` = Current raw mV reading
 
 ### Configuration Parameters
 
 | Parameter | Type | Range | Default | Description |
 |-----------|------|-------|---------|-------------|
-| `channel-active-1..4` | bool | true/false | false | Enable channel |
-| `channel-differential-1..4` | bool | true/false | true | Differential mode |
-| `channel-calib-x0-1..4` | float | -10000..10000 | 0 | Raw mV at point 0 |
-| `channel-calib-x1-1..4` | float | -10000..10000 | 0 | Raw mV at point 1 |
-| `channel-calib-y0-1..4` | float | -10000..10000 | 0 | Real value at point 0 |
-| `channel-calib-y1-1..4` | float | -10000..10000 | 0 | Real value at point 1 |
-| `channel-calib-mode-1..4` | enum | avg/rms | rms | Calibration mode |
+| `channel-active-<1..4>` | bool | true/false | false | Enable channel |
+| `channel-differential-<1..4>` | bool | true/false | false | Differential mode |
+| `channel-calib-x0-<1..4>` | float | -10000..10000 | 0.00 | Raw mV at point 0 |
+| `channel-calib-x1-<1..4>` | float | -10000..10000 | 0.00 | Raw mV at point 1 |
+| `channel-calib-y0-<1..4>` | float | -10000..10000 | 0.00 | Real value at point 0 |
+| `channel-calib-y1-<1..4>` | float | -10000..10000 | 0.00 | Real value at point 1 |
+| `channel-calib-mode-<1..4>` | enum | avg/rms | rms | Calibration mode |
 
 ### Calibration Procedure
 
@@ -484,7 +420,7 @@ Where:
 
 ##### 1. Enable the Channel
 
-```shell
+```
 app config channel-active-1 true
 ```
 
@@ -492,19 +428,20 @@ app config channel-active-1 true
 
 Choose `rms` for AC current transformers or `avg` for DC sensors:
 
-```shell
-channel 1 calib mode rms
+```
+current channel-1 calib mode rms
 ```
 
 ##### 3. Verify Raw Reading
 
 Read the current raw mV value:
 
-```shell
-channel 1 read
+```
+current channel-1 read
 ```
 
 Output example:
+
 ```
 Channel 1: avg=0.5 rms=1.2 mV (mode=rms, no calibration)
 ```
@@ -513,13 +450,14 @@ Channel 1: avg=0.5 rms=1.2 mV (mode=rms, no calibration)
 
 Apply a known **low** current (e.g., 0 A) and set the calibration:
 
-```shell
-channel 1 calib set-0 0
+```
+current channel-1 calib set-0 0
 ```
 
 This captures the current raw mV reading as `x0` and sets `y0 = 0`.
 
 Output:
+
 ```
 Channel 1: avg=0.5 rms=1.2 (using rms), point 0 set (x0=1.20, y0=0.00)
 ```
@@ -528,13 +466,14 @@ Channel 1: avg=0.5 rms=1.2 (using rms), point 0 set (x0=1.20, y0=0.00)
 
 Apply a known **high** current (e.g., 10 A) and set the calibration:
 
-```shell
-channel 1 calib set-1 10
+```
+current channel-1 calib set-1 10
 ```
 
 This captures the current raw mV reading as `x1` and sets `y1 = 10`.
 
 Output:
+
 ```
 Channel 1: avg=50.3 rms=71.5 (using rms), point 1 set (x1=71.50, y1=10.00)
 ```
@@ -543,22 +482,24 @@ Channel 1: avg=50.3 rms=71.5 (using rms), point 1 set (x1=71.50, y1=10.00)
 
 Read the channel to see calibrated output:
 
-```shell
-channel 1 read
+```
+current channel-1 read
 ```
 
 Output:
+
 ```
 Channel 1: avg=50.3 rms=71.5 mV (mode=rms, calibrated: 10.00)
 ```
 
 ##### 7. Show Calibration Parameters
 
-```shell
-channel 1 calib show
+```
+current channel-1 calib show
 ```
 
 Output:
+
 ```
 Channel 1 calibration: x0=1.20 y0=0.00, x1=71.50 y1=10.00, mode=rms
 ```
@@ -567,8 +508,8 @@ Channel 1 calibration: x0=1.20 y0=0.00, x1=71.50 y1=10.00, mode=rms
 
 To clear calibration and return to raw mV output:
 
-```shell
-channel 1 calib reset
+```
+current channel-1 calib reset
 ```
 
 ### Legacy Calibration Method
@@ -577,39 +518,31 @@ In **HARDWARIO**, we have a calibration kit for **CHESTER Current** made of seve
 
 #### Example Current Calibration (Legacy)
 
-1. Measure the **zero-current offsets** and write them for each channel as the `x0` parameter
+1. Measure the **zero-current offsets** and write them for each channel as the `x0` parameter.
 
-   :::tip
+   > **Tip:** Use the `sample` command to trigger the measurement.
 
-   Use the `sample` command to trigger the measurement.
+2. Let's assume calibration of **100 A** current probe and pick the **100-turn coil**.
+3. Set the laboratory power supply's current limit to **900 mA**, and connect the power supply to the coil.
+4. **Clip the current probe** around the calibration coil.
+5. Verify the current flowing to the coil using a **multimeter** connected in series.
+6. Measure the channel, and write the reading as the `x1` value.
+7. Set the `y1` parameter to the value `90000`.
 
-   :::
+   > **Info:** The value represents the multiplication of the number of turns on the coil and the power supply's current limit - in this example `90000`.
 
-1. Let's assume calibration of **100 A** current probe and pick the **100-turn coil**.
-
-1. Set the laboratory power supply's current limit to **900 mA**, and connect the power supply to the coil.
-
-1. **Clip the current probe** around the calibration coil.
-
-1. Verify the current flowing to the coil using a **multimeter** connected in series.
-
-1. Measure the channel, and write the reading as the `x1` value.
-
-1. Set the `y1` parameter to the value `90000`.
-
-   :::info
-
-   The value represents the multiplication of the number of turns on the coil and the power supply's current limit - in this example `90000`.
-
-   :::
-
-1. Since we assumed a zero-current offset point, we can keep the `x0` parameter set as `0`.
-
-1. Save the configuration data (using the `config save` command) and verify the applied calibrated values.
+8. Since we assumed a zero-current offset point, we can keep the `x0` parameter set as `0`.
+9. Save the configuration data (using the `config save` command) and verify the applied calibrated values.
 
 ---
 
 ## Changelog
+
+### v3.5.1
+
+- **Changed**: Standardized command structure for real-time channel interaction and calibration.
+- **Changed**: Refreshed default configuration profiles and system parameters to align with current firmware logic.
+- **Changed**: Documentation and parameter tables updated to reflect the latest system architecture and naming standards.
 
 ### v3.5.0 — 2025-12-03
 
