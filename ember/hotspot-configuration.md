@@ -72,11 +72,50 @@ The **EMBER Hotspot** name is a compound of the customer identifier + **EMBER Cl
 
 ```
 /interface ppp-client add apn=internet name=ppp-out1 port=usb3
-/interface lte apn set [ find default=yes ] ip-type=ipv4 use-network-apn=no
-/interface lte apn add apn=onomondo ip-type=ipv4 use-peer-dns=no
-/interface lte set [ find ] allow-roaming=yes apn-profiles=onomondo band="" name=lte1 network-mode=lte
+/interface lte apn set [ find default=yes ] apn=internet ip-type=ipv4 use-network-apn=no
+/interface lte set [ find ] allow-roaming=yes apn-profiles=default band="" name=lte1 network-mode=lte
 /ip dns set allow-remote-requests=yes servers=8.8.8.8,8.8.4.4
 /system clock set time-zone-autodetect=no time-zone-name=Europe/Prague
+```
+
+:::tip
+
+Replace `internet` with the **APN** provided by your mobile carrier.
+
+:::
+
+#### SIM PIN Unlock
+
+If the **SIM** card requires a **PIN** code, unlock it with:
+
+```
+/interface/lte/set lte1 pin="1234"
+```
+
+To permanently disable the **PIN** on the **SIM** card (recommended for unattended routers):
+
+```
+/interface/lte/at-chat lte1 input="AT+CLCK=\"SC\",0,\"1234\""
+```
+
+:::caution
+
+Replace `1234` with the actual **PIN** code of your **SIM** card.
+
+:::
+
+#### Verification
+
+Check the **LTE** connection status:
+
+```
+/interface/lte/monitor lte1 once
+```
+
+Verify internet connectivity:
+
+```
+/ping 8.8.8.8 count=3
 ```
 
 ### WAN
