@@ -19,11 +19,7 @@ The enclosure and connectors are **water-proof and dust-proof**, providing **IP6
 
 ## External Connectors & Antennas
 
-<<<<<<< HEAD
 The device is equipped with high-quality connectors for power, networking, and wireless communication.
-=======
-- Utilizes an internal antenna, an external one may be used however disconnecting the internal one is required. 
->>>>>>> 055895bfc5e2f23c75e071504b77ce642e802162
 
 ### Antennas
 - **LRW (LoRaWAN):** One N-type connector for the LoRa antenna. Required for gateway operation.
