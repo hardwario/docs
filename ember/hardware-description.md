@@ -15,7 +15,7 @@ It is equipped with a **LoRaWAN** card and can optionally include an **LTE modem
 The enclosure and connectors are **water-proof and dust-proof**, providing **IP67** protection.
 
 ### Connector Layout
-![EMBER Connector Label](./images/ember-connector-label-r2.png)
+![EMBER Connector Label](./Images/ember-connector-label-r2.png)
 
 ## External Connectors & Antennas
 
