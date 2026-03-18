@@ -39,13 +39,8 @@ The **EMBER Hotspot** provides two metallic **RJ45 Ethernet ports** (10/100/1000
   - Device management
   - Troubleshooting
 
-<<<<<<< HEAD
-- **WAN**
-  - Internet connectivity to the cloud
-=======
 - **WAN** (Located on the right side of the device)
-  - Backup Internet connectivity to the cloud
->>>>>>> 055895bfc5e2f23c75e071504b77ce642e802162
+  - Internet connectivity to the cloud
   - Used for PoE power input
 
 ## Power Supply Options
