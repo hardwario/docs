@@ -83,8 +83,8 @@ Then apply changes by typing `config save`. The device will reboot and use the c
 | [**CHESTER Clime Radon**](chester-clime.md#chester-clime-radon) | [**v3.5.1**](https://firmware.hardwario.com/chester/fb08fe524e73459c8bfa904cd1e39305) | <small>`fb08fe524e73459c8bfa904cd1e39305`</small> | 2025-12-08 |  |
 | [**CHESTER Control**](chester-control.md#chester-control) | [**v3.5.0**](https://firmware.hardwario.com/chester/d73d90f3759a4bc4a8958f882f3b26e2) | <small>`d73d90f3759a4bc4a8958f882f3b26e2`</small> | 2025-12-03 |  |
 | [**CHESTER Control Z**](chester-control.md#chester-control-z) | [**v3.5.0**](https://firmware.hardwario.com/chester/b0fb479dc1d9422abed4721c4a5d4e3c) | <small>`b0fb479dc1d9422abed4721c4a5d4e3c`</small> | 2025-12-03 | Support for CHESTER-Z |
-| [**CHESTER Current**](chester-current.md#chester-current) | [**v3.5.0**](https://firmware.hardwario.com/chester/d0f8c847743f4ccebdd10d2dcb4bd22b) | <small>`d0f8c847743f4ccebdd10d2dcb4bd22b`</small> | 2025-12-03 |  |
-| [**CHESTER Current Z**](chester-current.md#chester-current-z) | [**v3.5.0**](https://firmware.hardwario.com/chester/086308c993164525b5528ff3d263ce79) | <small>`086308c993164525b5528ff3d263ce79`</small> | 2025-12-03 | Support for CHESTER-Z |
+| [**CHESTER Current**](chester-current.md#chester-current) | [**v3.5.1**](https://firmware.hardwario.com/chester/c2ac3f9d94194573b43c56f54962e672) | <small>`c2ac3f9d94194573b43c56f54962e672`</small> | 2026-02-04 |  |
+| [**CHESTER Current Z**](chester-current.md#chester-current-z) | [**v3.5.1**](https://firmware.hardwario.com/chester/627823995dc34c4a9336d0534ce3e418) | <small>`627823995dc34c4a9336d0534ce3e418`</small> | 2026-02-04 | Support for CHESTER-Z |
 | **CHESTER Demo** | [**v3.5.0**](https://firmware.hardwario.com/chester/1503759f3dc14719a2a5a09a3682d280) | <small>`1503759f3dc14719a2a5a09a3682d280`</small> | 2025-12-03 |  |
 | [**CHESTER Meteo**](chester-meteo.md#chester-meteo) | [**v3.5.0**](https://firmware.hardwario.com/chester/631d0099060f4aac83bbb10feb0d0016) | <small>`631d0099060f4aac83bbb10feb0d0016`</small> | 2025-12-03 |  |
 | [**CHESTER Meteo Z**](chester-meteo.md#chester-meteo-z) | [**v3.5.0**](https://firmware.hardwario.com/chester/f1750cff871641008a8e5f1575e80979) | <small>`f1750cff871641008a8e5f1575e80979`</small> | 2025-12-03 | Support for CHESTER-Z |
@@ -95,6 +95,8 @@ Then apply changes by typing `config save`. The device will reboot and use the c
 | [**CHESTER Range Z**](chester-range.md#chester-range-z) | [**v3.5.0**](https://firmware.hardwario.com/chester/fe7186e6197e48edbe8eb319fdc0b814) | <small>`fe7186e6197e48edbe8eb319fdc0b814`</small> | 2025-12-03 | Support for CHESTER-Z |
 | **CHESTER Scale** | [**v3.5.0**](https://firmware.hardwario.com/chester/ebfe14ec6f074fa494a1f7961bcee258) | <small>`ebfe14ec6f074fa494a1f7961bcee258`</small> | 2025-12-03 |  |
 | **CHESTER Scale Z** | [**v3.5.0**](https://firmware.hardwario.com/chester/f046baa2f974460cac8443979a798732) | <small>`f046baa2f974460cac8443979a798732`</small> | 2025-12-03 | Support for CHESTER-Z |
+| [**CHESTER Serial RS-232**](chester-serial.md#chester-serial-rs232) | [**v3.5.1**](https://firmware.hardwario.com/chester/ee1adb273b184f03a9f1b2f4b7127040) | <small>`ee1adb273b184f03a9f1b2f4b7127040`</small> | 2026-02-10 |  |
+| [**CHESTER Serial RS-485**](chester-serial.md#chester-serial-rs485) | [**v3.5.1**](https://firmware.hardwario.com/chester/d526911651dd479f9bfc20a92a25a893) | <small>`d526911651dd479f9bfc20a92a25a893`</small> | 2026-02-10 |  |
 | [**CHESTER wM-Bus**](chester-wm-bus.md#chester-wm-bus) | [**v3.5.0**](https://firmware.hardwario.com/chester/844541b36a18410ab3904a31b862a063) | <small>`844541b36a18410ab3904a31b862a063`</small> | 2025-12-03 |  |
 
 

@@ -69,7 +69,7 @@ For outdoor installations, **EMBER Hotspot** has to be mounted with connectors f
 ## 2) Connect for local access
 
 EMBER runs **MikroTik RouterOS**.  
-For initial access and management, use the LAN interface and standard RouterOS tools.
+For initial access and management, use the LAN interface (leftmost port) and standard RouterOS tools.
 
 **Main documentation (recommended start):**
 - EMBER Hotspot configuration & local access:  
