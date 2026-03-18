@@ -122,56 +122,68 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Supported Sensors',
+      label: 'Supported Devices',
       link: {
         type: 'doc',
-        id: 'supported-sensors/index',
+        id: 'supported-devices/index',
       },
       collapsed: true,
       items: [
         {
           type: 'category',
-          label: 'M-Bus Sensors',
+          label: 'M-Bus Devices',
           link: {
             type: 'doc',
-            id: 'supported-sensors/m-bus',
+            id: 'supported-devices/m-bus',
           },
           collapsed: true,
           items: []
         },
         {
           type: 'category',
-          label: 'Modbus Sensors',
+          label: 'Modbus Devices',
           link: {
             type: 'doc',
-            id: 'supported-sensors/modbus',
+            id: 'supported-devices/modbus',
           },
           collapsed: true,
           items: [
-            'supported-sensors/modbus/carlo-gavazzi-em1xx-series',
-            'supported-sensors/modbus/carlo-gavazzi-em5xx-series',
-            'supported-sensors/modbus/orno-or-we-504',
-            'supported-sensors/modbus/orno-or-we-516',
-            'supported-sensors/modbus/schneider-electric-iem3xxx-series',
+            'supported-devices/modbus/carlo-gavazzi-em1xx-series',
+            'supported-devices/modbus/carlo-gavazzi-em5xx-series',
+            'supported-devices/modbus/orno-or-we-504',
+            'supported-devices/modbus/orno-or-we-516',
+            'supported-devices/modbus/schneider-electric-iem3xxx-series',
           ]
         },
         {
           type: 'category',
-          label: 'wm-Bus Sensors',
+          label: 'wm-Bus Devices',
           link: {
             type: 'doc',
-            id: 'supported-sensors/wm-bus',
+            id: 'supported-devices/wm-bus',
           },
           collapsed: true,
           items: [
-            'supported-sensors/wm-bus/bmeters-rfm-tx1.1',
-            'supported-sensors/wm-bus/bmeters_iwm-tx3',
-            'supported-sensors/wm-bus/bmeters_iwm-tx5',
-            'supported-sensors/wm-bus/bmeters-hydrocal-m4',
-            'supported-sensors/wm-bus/bmeters-hydroclima-2',
-            'supported-sensors/wm-bus/zenner-c5-isf',
-            'supported-sensors/wm-bus/zenner-caltos-e',
-            'supported-sensors/wm-bus/zenner-minomess',
+            'supported-devices/wm-bus/bmeters-rfm-tx1.1',
+            'supported-devices/wm-bus/bmeters_iwm-tx3',
+            'supported-devices/wm-bus/bmeters_iwm-tx5',
+            'supported-devices/wm-bus/bmeters-hydrocal-m4',
+            'supported-devices/wm-bus/bmeters-hydroclima-2',
+            'supported-devices/wm-bus/zenner-c5-isf',
+            'supported-devices/wm-bus/zenner-caltos-e',
+            'supported-devices/wm-bus/zenner-minomess',
+          ]
+        },
+        {
+          type: 'category',
+          label: 'Serial Devices',
+          link: {
+            type: 'doc',
+            id: 'supported-devices/serial',
+          },
+          collapsed: true,
+          items: [
+            'supported-devices/serial-devices/promag-mf7s',
           ]
         }
       ]
