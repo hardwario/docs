@@ -23,7 +23,11 @@
       "Bash(sed:*)",
       "Bash(ls:*)",
       "Bash(npm install:*)",
-      "Bash(npm uninstall:*)"
+      "Bash(npm uninstall:*)",
+      "Bash(git mv:*)",
+      "Bash(powershell:*)",
+      "WebFetch(domain:sdk.hardwario.com)",
+      "WebFetch(domain:www.hackster.io)"
     ],
     "deny": [],
     "ask": []

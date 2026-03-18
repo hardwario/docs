@@ -26,15 +26,17 @@ import Image from '@theme/IdealImage';
 :::
 
 ## Features
-- Large and robust button for **comfortable pressing**
-- Lifetime over **one million clicks**
-- Operating temperature range: -20 to 60 °C
+- Integrated **4 environmental sensors**: temperature, humidity, light intensity, and atmospheric pressure
+- All sensors are **digital** and connected via **I²C bus**
+- Sensors feature **low-power operating modes**
+- Operating temperature range: -20 to 70 °C
 - Mechanical dimensions: 33 x 55 mm
 
 ## References
 - [**Store**](https://www.hardwario.store/p/climate-module)
-- [**Schematics**](https://github.com/hardwario/bc-hardware/tree/master/out/bc-module-button)
-- [**SDK Library**](https://sdk.hardwario.com/group__twr__button)
-- [**Header File**](https://github.com/hardwario/twr-sdk/blob/master/twr/inc/twr_button.h)
-- [**Source File**](https://github.com/hardwario/twr-sdk/blob/master/twr/src/twr_button.c)
-- [**Projects**](https://www.hackster.io/hardwario/projects?part_id=73683)
+- [**Schematics**](https://github.com/hardwario/bc-hardware/tree/master/out/bc-module-climate)
+- [**SDK – Temperature (TMP112)**](https://sdk.hardwario.com/group__twr__tmp112)
+- [**SDK – Humidity & Temperature (HDC2080)**](https://sdk.hardwario.com/group__twr__hdc2080)
+- [**SDK – Light (OPT3001)**](https://sdk.hardwario.com/group__twr__opt3001)
+- [**SDK – Pressure (MPL3115A2)**](https://sdk.hardwario.com/group__twr__mpl3115a2)
+- [**Projects**](https://www.hackster.io/hardwario/projects?part_id=73735)

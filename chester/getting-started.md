@@ -67,6 +67,11 @@ If you use our Vodafone SIM card in a country other than the Czech Republic, ple
 
 In the case of using your own SIM card, after changing **PLMN** and **APN** you have also to change the [parameter to public IP](firmware-sdk/how-to-lte-v2.md#ip-and-port) for Cloud v2.
 
+### Network Mode Configuration
+If your device has trouble connecting to the network, you might need to check if the network mode is correctly set for your region or SIM card (e.g., forcing **NB-IoT** or **LTE-M**). You can find a detailed guide on how to verify and change these settings in the [**Network Mode Configuration**](platform-connectivity/cellular-networks.md#network-mode-configuration) section. 
+
+This is especially important if you are moving the device between different countries or using specialized roaming SIM cards.
+
 ## Cloud v1
 
 In [HARDWARIO Cloud v1](https://legacy.hardwario.cloud/), we need to make accounts manually. So, if you have a CHESTER device and don't already have access to the cloud, please contact your salesperson from HARDWARIO or write to ask@hardwario.com. Please send us the HSN (HARDWARIO Serial Nuber) of the device(s) or HEO (HARDWARIO Order code) together with the email(s) for which we create an account.

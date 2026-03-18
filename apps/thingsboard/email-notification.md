@@ -176,3 +176,64 @@ Here is how the connection in the Root Rule Chain should look:
 *(The data will now successfully flow from the device, save to the database, and proceed to your custom email notification chain!)*
 
 ![](images/email-notification-2.png)
+
+## Limiting Email Frequency
+
+If a device continuously sends data that exceeds the threshold (e.g., every 15 minutes), the setup above would send an email every 15 minutes. To prevent email spam, we can implement a mechanism to record the time of the last sent email and block further emails until a specific time interval (e.g., 24 hours) has passed.
+
+This involves modifying the Rule Chain to read a server attribute (`lastEmailTime`), check if enough time has passed, and if an email is sent, update that attribute with the new timestamp.
+
+Here is the modified flow:
+
+![](images/email-notification-3.png)
+
+### 1. Read the Last Email Time
+Add a node at the very beginning of the flow (before your threshold filters) to retrieve the timestamp of the last sent email.
+* **Node Type:** `Enrichment` -> `originator attributes`
+* **Name:** Get Last Email Time
+* **Server attributes:** Add `lastEmailTime`
+* **Connection:** Connect this node to the start of your threshold filters (e.g., replacing the connection from your previous formatting nodes).
+
+### 2. Modify the Threshold Filters to Check the Time
+Update your existing threshold filter scripts (e.g., `Temperature < 17`) to not only check the telemetry value but also verify if the required time delay has elapsed since `lastEmailTime`.
+* **Node Type:** `Filter` -> `script`
+* **Code Example (Checking for a 24-hour delay = 86400000 milliseconds):**
+
+```javascript
+var currentTime = new Date().getTime();
+var lastEmailTime = metadata.ss_lastEmailTime ? Number(metadata.ss_lastEmailTime) : 0;
+var delayMs = 24 * 60 * 60 * 1000; // 24 hours in milliseconds
+
+// Check if the value exceeds the threshold AND the delay has passed
+if (msg['hygrometer.temperature.avg'] < 17) {
+    if (currentTime - lastEmailTime >= delayMs) {
+        return true; // Send email
+    }
+}
+return false; // Do not send email
+```
+
+*(Apply this logic to all your threshold filters).*
+
+### 3. Prepare the New Timestamp
+If the filter passes (an email should be sent), we need to create a new message to save the current time back to the device's server attributes. We must route the flow in two directions: one to send the email, and one to update the attribute.
+* **Node Type:** `Transformation` -> `script`
+* **Name:** Prepare Timestamp - [Condition Name] (e.g., Prepare Timestamp - Temp < 17)
+* **Code:**
+
+```javascript
+// Create a new message containing the current timestamp
+var newMsg = {
+    "lastEmailTime": new Date().getTime()
+};
+return {msg: newMsg, metadata: metadata, msgType: 'POST_ATTRIBUTES_REQUEST'};
+```
+
+* **Connection:** Connect the specific threshold filter (e.g., `Temperature < 17`) to this node using the **True** link.
+
+### 4. Save the New Timestamp
+Finally, use an action node to save the new timestamp as a server attribute so it can be read during the next telemetry update.
+* **Node Type:** `Action` -> `save attributes`
+* **Name:** Save Last Email Time
+* **Scope:** Server attributes
+* **Connection:** Connect the "Prepare Timestamp" node to this node using the **Success** link.

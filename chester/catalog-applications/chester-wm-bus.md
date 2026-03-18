@@ -420,7 +420,7 @@ For **CHESTER W-MBus**, we support several sensors from **BMeters** and **Zenner
 We offer different types of devices, including **water meters**, **heat meters**, and **environmental sensors**.
 
 For the complete list and detailed information, see the documentation here:
-➡️ [Supported W-MBus Sensors](https://docs.hardwario.com/chester/supported-sensors/wm-bus_sensors)
+➡️ [Supported W-MBus Sensors](https://docs.hardwario.com/chester/supported-devices/wm-bus_sensors)
 
 ---
 
