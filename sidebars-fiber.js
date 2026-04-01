@@ -5,6 +5,11 @@ const sidebars = {
     docs: [
       'introduction',
       'installation',
+      {
+        type: 'doc',
+        id: 'changelog',
+        label: 'Changelog',
+      },
     ],
   };
   

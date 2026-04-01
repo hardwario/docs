@@ -34,6 +34,11 @@ const sidebars = {
         'operation-instructions/firmware-management',
       ],
     },
+    {
+      type: 'doc',
+      id: 'changelog',
+      label: 'Changelog',
+    },
   ],
 };
 
