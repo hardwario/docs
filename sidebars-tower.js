@@ -247,6 +247,11 @@ const sidebars = {
         'hardware-interfaces/one-wire-bus'
       ],
     },
+    {
+      type: 'doc',
+      id: 'changelog',
+      label: 'Changelog',
+    },
   ],
 };
 

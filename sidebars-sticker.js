@@ -53,6 +53,11 @@ const sidebars = {
     'hardware-description',
     'power-management',
     'ordering-codes',
+    {
+      type: 'doc',
+      id: 'changelog',
+      label: 'Changelog',
+    },
   ],
 };
 
