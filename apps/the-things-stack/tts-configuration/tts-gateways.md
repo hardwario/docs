@@ -18,14 +18,14 @@ This tutorial guides you through the process of adding and configuring a gateway
 ![](images/tts-gateways-0.png)
 
 2. You will be redirected to the gateway registration page.
-   - TTS will first request the **Gateway EUI**.
+   - TTS will first request the **Gateway EUI** (use RouterOS **Gateway ID**).
    - You can find the Gateway EUI printed on your physical gateway.
 
 ![](images/tts-gateways-1.png)
 
 3. After entering the Gateway EUI, fill in the following fields:
-   - **Gateway ID**
-   - **Gateway Name**
+   - **Gateway ID** ( Your chosen identifier for the device → example: **test-geteway-001**)
+   - **Gateway Name** (Your chosen name for the device → example **Test Geteways-001**)
    - **Frequency Plan** → select **Europe 868.1 MHz**
    - (Optional) **Label**
 
@@ -47,6 +47,7 @@ A window titled **Download gateway API keys** will appear.
 
 - Download both API keys (CUPS & LNS).
 - Store them in a secure and reliable location on your computer.
+- Do not share them with anyone.
 
 :::info
   **These keys are required when configuring the gateway interfaces** (see the documentation for your specific gateway under the *LNS & CUPS* section).

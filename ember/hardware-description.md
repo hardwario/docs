@@ -15,7 +15,7 @@ It is equipped with a **LoRaWAN** card and can optionally include an **LTE modem
 The enclosure and connectors are **water-proof and dust-proof**, providing **IP67** protection.
 
 ### Connector Layout
-![EMBER Connector Label](./Images/ember-connector-label-r2.png)
+![EMBER Connector Label](./images/ember-connector-label-r2.png)
 
 ## External Connectors & Antennas
 
@@ -34,12 +34,12 @@ The device is equipped with high-quality connectors for power, networking, and w
 
 The **EMBER Hotspot** provides two metallic **RJ45 Ethernet ports** (10/100/1000 Mbit/s) hidden behind waterproof cable glands:
 
-- **LAN** (Located on the left side of the device)
+- **LAN** (Located on the right side of the device)
   - Local configuration
   - Device management
   - Troubleshooting
 
-- **WAN** (Located on the right side of the device)
+- **WAN** (Located on the left side of the device)
   - Internet connectivity to the cloud
   - Used for PoE power input
 

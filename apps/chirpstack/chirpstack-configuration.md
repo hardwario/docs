@@ -25,7 +25,7 @@ Once completed, click **Submit**.
 ![ChirStack v4 - Gateways](images/chirpstack-tutorial-1.png)
 
 :::info
-If you are using our **Ember gateway**, the **Gateway ID** can be found through **[MikroTik software](/ember/mikrotik/gateway-configuration#3-link-lora-device-to-the-new-server)**.  
+If you are using our **Ember gateway**, the **Gateway ID** can be found in the **MikroTik software** under **LoRa → Devices**.  
 :::
 
 ---
@@ -255,8 +255,6 @@ Once configured, the gateway should become visible and ready to connect with the
 Here is the link to the **step-by-step guide** for **configuring the gateway via MikroTik**:
 https://docs.hardwario.com/ember/mikrotik/gateway-update
 
-Here is the link to the **step-by-step guide** for **updating the gateway via MikroTik**:
-https://docs.hardwario.com/ember/mikrotik/gateway-configuration
 
 ## Video Tutorial
 
