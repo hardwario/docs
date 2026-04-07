@@ -83,6 +83,7 @@ Then apply changes by typing `config save`. The device will reboot and use the c
 | [**CHESTER Clime Radon**](chester-clime.md#chester-clime-radon) | [**v3.5.1**](https://firmware.hardwario.com/chester/fb08fe524e73459c8bfa904cd1e39305) | <small>`fb08fe524e73459c8bfa904cd1e39305`</small> | 2025-12-08 |  |
 | [**CHESTER Control**](chester-control.md#chester-control) | [**v3.5.0**](https://firmware.hardwario.com/chester/d73d90f3759a4bc4a8958f882f3b26e2) | <small>`d73d90f3759a4bc4a8958f882f3b26e2`</small> | 2025-12-03 |  |
 | [**CHESTER Control Z**](chester-control.md#chester-control-z) | [**v3.5.0**](https://firmware.hardwario.com/chester/b0fb479dc1d9422abed4721c4a5d4e3c) | <small>`b0fb479dc1d9422abed4721c4a5d4e3c`</small> | 2025-12-03 | Support for CHESTER-Z |
+| [**CHESTER Control 8Ch Z**](chester-control.md#chester-control-8ch-z) | **v3.5.1** | <small>`TBD`</small> | TBD | Support for X0+X0 and CHESTER-Z |
 | [**CHESTER Current**](chester-current.md#chester-current) | [**v3.5.1**](https://firmware.hardwario.com/chester/c2ac3f9d94194573b43c56f54962e672) | <small>`c2ac3f9d94194573b43c56f54962e672`</small> | 2026-02-04 |  |
 | [**CHESTER Current Z**](chester-current.md#chester-current-z) | [**v3.5.1**](https://firmware.hardwario.com/chester/627823995dc34c4a9336d0534ce3e418) | <small>`627823995dc34c4a9336d0534ce3e418`</small> | 2026-02-04 | Support for CHESTER-Z |
 | **CHESTER Demo** | [**v3.5.0**](https://firmware.hardwario.com/chester/1503759f3dc14719a2a5a09a3682d280) | <small>`1503759f3dc14719a2a5a09a3682d280`</small> | 2025-12-03 |  |
