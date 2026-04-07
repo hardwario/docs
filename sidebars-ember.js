@@ -6,7 +6,6 @@ const sidebars = {
     'introduction',
     'getting-started',
     'hardware-description',
-    'hotspot-configuration',
     {
       type: 'category',
       label: 'LoRaWAN Network Server',
@@ -22,9 +21,10 @@ const sidebars = {
       collapsed: true,
       items: [
         'mikrotik/gateway-update',
-        'mikrotik/gateway-configuration',
+        'mikrotik/winbox-setup',
       ],
     },
+    'hotspot-configuration',
     'cloud-service',
     'ordering-codes',
   {

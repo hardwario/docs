@@ -29,4 +29,3 @@ In this guide, you will learn how to configure the LoRa interface on a MikroTik 
 </div>
 ---
 
-👉 **Step-by-Step Text Guide: https://docs.hardwario.com/ember/mikrotik/gateway-configuration**

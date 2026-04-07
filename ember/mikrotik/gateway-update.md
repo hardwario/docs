@@ -6,42 +6,29 @@ import Image from '@theme/IdealImage';
 
 # MikroTik Gateway Update
 
-This guide walks you through updating RouterOS packages and the RouterBOARD (firmware/“BIOS”) using the WebFig interface.
+This guide walks you through updating RouterOS packages and the RouterBOARD (firmware/“BIOS”) using the Winbox 4.
 
 ---
 
 ## Prerequisites
 - Admin access (username & password)
-- The gateway’s IP address (e.g., `http://192.168.1.1`)
 
 ---
 
 ## 1. Update RouterOS Software
 
-1. **Open your browser** and enter the gateway’s **IP address**.
-2. **Log in** with your administrator credentials.
-
-![](images/mikrotik-update-0.png)
-
-3. Go to **WebFig** → in the left menu open **System → Packages**.
-
-![](images/mikrotik-update-1.png)
-
-4. Click **Check For Updates** (top-left).
-5. When a new version is available, click **Download & Install**.
-
-![](images/mikrotik-update-2.png)
+In the left panel **System → Packages → Check for Updates**. A new window will open, check if the versions match. If not, click **Download&Install** and wait a few minutes.
+![Ember RouterOS update](images/ember-update-routeros.png)
 
 ---
 
 ## 2. Update RouterBOARD (Firmware/“BIOS”)
 
 1. In the left menu, open **System → RouterBOARD**.
-2. Check whether a **new firmware version** is available — you can compare **Current Firmware** with **Upgrade Firmware**.
-
-![](images/mikrotik-update-3.png)
-
+2. Compare **Current Firmware** with **Upgrade Firmware**.
 3. If an upgrade is available, click **Upgrade**.
+![Ember upgrade RouterBOARD](images/ember-upgrade-routerboard.png)
+
 
 ---
 
@@ -49,7 +36,13 @@ This guide walks you through updating RouterOS packages and the RouterBOARD (fir
 
 1. In the left menu, open **System → Reboot**.
 2. Confirm the reboot to apply the RouterBOARD firmware upgrade.
+
+![Ember reboot](images/ember-reboot.png)
+
 3. Wait for the device to come back online, then log in again.
+
+
+
 
 ---
 
@@ -60,6 +53,3 @@ This guide walks you through updating RouterOS packages and the RouterBOARD (fir
 2. **System → RouterBOARD**:  
    - Confirm that **Current Firmware** now matches **Upgrade Firmware** — meaning the firmware is successfully updated.
 
----
-
-✅ **The gateway is now fully updated and running the latest RouterOS and firmware versions.**
