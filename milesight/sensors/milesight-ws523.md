@@ -62,9 +62,9 @@ For information about supported LoRaWAN network server platforms, see 👉[**LoR
 
 | Type | GitHub Link |
 |------|--------------|
-| Decoder | [View decoder](https://github.com/Milesight-IoT/SensorDecoders/blob/main/ws-series/ws52x/ws52x-decoder.js) |
-| Encoder | [View encoder](https://github.com/Milesight-IoT/SensorDecoders/blob/main/ws-series/ws52x/ws52x-encoder.js) |
-| Codec | [View codec](https://github.com/Milesight-IoT/SensorDecoders/blob/main/ws-series/ws52x/ws52x-codec.json) |
+| Decoder | [View decoder](https://github.com/Milesight-IoT/SensorDecoders/blob/main/ws-series/ws523/ws523-decoder.js) |
+| Encoder | [View encoder](https://github.com/Milesight-IoT/SensorDecoders/blob/main/ws-series/ws523/ws523-encoder.js) |
+| Codec | [View codec](https://github.com/Milesight-IoT/SensorDecoders/blob/main/ws-series/ws523/ws523-codec.json) |
 
 :::info
 ### Terminology Overview
