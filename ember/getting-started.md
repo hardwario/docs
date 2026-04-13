@@ -87,12 +87,15 @@ After opening the application, look at the list where you should see your **EMBE
 ## 3) Initial RouterOS Configuration Script
 
 ### 3.1 Set Password
-
 **Open a New Terminal window** (or connect via SSH to your EMBER at `172.31.255.254`):
 
 ![Winbox 4 Open new Terminal](images/Winbox-open-terminal.png)    
 
 **Set a secure admin password**
+Then paste the following script, or you can do it manually.
+```
+/user set admin password=YOUR_NEW_PASSWORD
+```
 
 In the left panel, open **System**→ **Password**.
 
@@ -171,7 +174,6 @@ After reconnecting, go to the left panel **System → Packages → Check for Upd
 After reconnecting following the reboot, paste this script in the terminal to configure the LoRa interface:
 
 ```routeros
-/iot lora set 0 antenna=uFL
 /iot lora servers remove [find]
 ```
 

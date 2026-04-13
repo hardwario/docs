@@ -84,7 +84,7 @@ You need to select a network server.
 ---
 ## 4) Enable and verify
 1. In RouterOS: **IoT → LoRa → Devices → Enable**
-[Ember enable lrw card](images/ember-enable-lrw.png)
+![Ember enable lrw card](images/ember-enable-lrw.png)
 2. In TTS Console, open the gateway and confirm **Live data** updates.
 
 ---
