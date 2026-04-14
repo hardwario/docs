@@ -32,7 +32,7 @@ It supports 10 device types including energy meters, environmental sensors, and 
 
 **CHESTER Serial** can be ordered in one of these variants:
 
-### CHESTER Serial RS-485 {#chester-serial-rs485}
+### CHESTER Serial RS-485 {#chester-serial-rs-485}
 
 This variant is equipped with the **CHESTER-X2** extension module. It is designed for standard industrial bus communication where multiple devices are connected in a daisy-chain topology.
 
@@ -49,7 +49,7 @@ The hardware of this application consists of the following ordering codes:
 
 See [**Ordering Codes**](../ordering-codes.md) for more details.
 
-### CHESTER Serial RS-232 {#chester-serial-rs232}
+### CHESTER Serial RS-232 {#chester-serial-rs-232}
 
 This variant is equipped with the **CHESTER-X12** extension module. It is intended for point-to-point communication with a single peripheral device, legacy equipment, or sensors requiring a direct serial link.
 
