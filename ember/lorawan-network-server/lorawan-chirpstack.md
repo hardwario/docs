@@ -29,33 +29,31 @@ https://docs.hardwario.com/apps/chirpstack/chirpstack-installation
 ---
 
 ## 1) Get the Gateway ID (EUI-64) from EMBER
-1. Log into EMBER (WebFig).
-2. Navigate to **WebFig → LoRa → Devices**.
-3. Click your LoRa card (gateway) and note the **Gateway ID**.
-   - You will use this value as **Gateway ID** in ChirpStack.
+On MikroTik RouterOS, the gateway EUI is shown as **Gateway ID**:
+
+- **IoT → LoRa → Devices → Gateway ID**
+![Ember Geteway ID](images/ember-geteway-id.png)
 
 ---
 
-## 2) Point EMBER to your ChirpStack server (RouterOS LoRa settings)
-> Important: RouterOS requires the LoRa card to be **Disabled** while you change LoRa settings.
+## 2) Configure EMBER (MikroTik RouterOS) to connect to TTS
+> RouterOS typically requires the LoRa card to be **Disabled** while you change LoRa settings.
 
-### WebFig method
-1. Go to **WebFig → LoRa → Devices** and make sure the LoRa card is **Disabled**.
-2. Go to the **Servers** tab → **Add New**.
-3. Fill:
-   - **Name**: `chirpstack` (any name)
-   - **Address**: `<your-chirpstack-gateway-endpoint>`
-   - **Up/Down ports**: `<your-udp-ports>`
-4. Go back to **Devices** tab → open the LoRa card and set:
-   - **Network**: `Public` (or `Private` — must match your end devices)
-   - **Network Servers**: select your newly created server
-5. Enable the LoRa card (**Enabled**).
+1. In the left panel, open **IoT**→ **LoRa**. Click on line at the list and  aply disable. 
+![Ember disable lrw card](images/ember-disable-lrw-card.png)
 
-### RouterOS CLI example (optional)
-```bash
-/iot lora servers add name=chirpstack address=<HOST_OR_IP> up-port=<UP_PORT> down-port=<DOWN_PORT> protocol=UDP
-/iot lora set 0 servers=chirpstack network=public disabled=no
-```
+2. In the left panel, open **IoT**→ **LoRa**→ **Servers**. Select **New** and fill boxes:
+- Name: **Chirpstack**
+- Address: **ENTER_ADDRESS_OF_CHIRPSTACK_SERVER**
+- Protocol: **UDP**
+- Up/Down ports: **1700** (Or your custom port)
+![Ember add Chirpstack server](images/ember-add-chirpstack-server.png)
+
+3. Go to **IoT → LoRa → Devices** and double-click on the device. In the Network Servers field, check that ChirpStack is selected. If not, click **+** and add it.
+![Ember check network server](images/ember-check-chirpstack-net-ser.png)
+
+4. Enable your LoRa card. Go to **IoT → LoRa → Devices → Enable**
+![Ember enable lrw card](images/ember-enable-lrw.png)
 
 ---
 
@@ -63,12 +61,12 @@ https://docs.hardwario.com/apps/chirpstack/chirpstack-installation
 1. In **ChirpStack v4**, open **Tenant → Gateways**.
 2. Click **Add Gateway**.
 3. Fill in:
-   - **Name**: anything (e.g., `ember-01`)
-   - **Gateway ID**: the value from **RouterOS → LoRa → Devices → Gateway ID**
-   - **Stats Interval**: your preference
+   - Name: **Ember-0** (Or your preferred name)
+   - Gateway ID: **GETEWAY_ID**
+   - Stats Interval: **YOUR_PREFERENCE**
 4. Click **Submit**.
 
-![ChirStack v4 - Gateways](images/chirpstack-tutorial-1.png)
+![ChirStack v4 - Gateways](images/chirpstack-add-geteway.png)
 
 ---
 
