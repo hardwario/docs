@@ -25,20 +25,11 @@ For RouterOS release notes, refer to [MikroTik Changelog](https://mikrotik.com/d
 ## General Platform Updates
 
 <Tabs groupId="changelog-category">
-<TabItem value="all" label="All Changes" default>
+<TabItem value="all" label="Firmware & Applications" default>
 
 :::info
 
 No HARDWARIO-specific changes have been logged yet. Updates will appear here when new EMBER configurations, enclosure revisions, or HARDWARIO-side software changes are released.
-
-:::
-
-{/* separator */}
-</TabItem>
-
-<TabItem value="fw" label="Firmware">
-
-:::info
 
 EMBER firmware is RouterOS by MikroTik — updated via the MikroTik update mechanism. No HARDWARIO-specific firmware changelog available.
 

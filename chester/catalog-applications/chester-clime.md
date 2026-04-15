@@ -1056,3 +1056,9 @@ In each structure with the current configuration, there are six aggregated value
 - **Changed**: Cloud v2 protocol adopted (CBOR encoding, new API endpoints); Cloud v1 variants remain available in a separate firmware table
 - **Changed**: Single combined firmware binary for both LTE and LoRaWAN; network selected via `app config mode lte` / `app config mode lrw`
 - **Removed**: Clime 1W and Clime 1WH variants dropped from Cloud v2 firmware builds (remain available under Cloud v1)
+
+:::info
+
+For a complete overview of all platform changes, see the [**CHESTER Changelog**](/chester/changelog).
+
+:::

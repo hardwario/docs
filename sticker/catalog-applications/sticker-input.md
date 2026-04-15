@@ -49,3 +49,15 @@ Here you can find information about STICKER input wiring, including DIP switch s
   "input_2_count": 0
 }
 ```
+
+## Changelog
+
+### 2025-11-23 — v1.0.0
+
+- Initial release — digital inputs, pulse counting, 1-Wire temperature probes, and analog measurement via LoRaWAN
+
+:::info
+
+For a complete overview of all platform changes, see the [**STICKER Changelog**](/sticker/changelog).
+
+:::

@@ -41,8 +41,7 @@ const sidebars = {
         'thingsboard/creating-device',
         'thingsboard/cloud-connection',
         'thingsboard/creating-dashboard',
-        'thingsboard/notifications',
-        'thingsboard/email-notification',
+        'thingsboard/notifications-manager',
         'thingsboard/email-reports',
         {
           type: 'category',

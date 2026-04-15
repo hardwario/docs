@@ -43,3 +43,15 @@ import Image from '@theme/IdealImage';
   "count": 5
 }
 ```
+
+## Changelog
+
+### 2025-11-23 — v1.0.0
+
+- Initial release — PIR motion detection with accelerometer and orientation reporting via LoRaWAN
+
+:::info
+
+For a complete overview of all platform changes, see the [**STICKER Changelog**](/sticker/changelog).
+
+:::

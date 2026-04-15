@@ -587,3 +587,9 @@ Pressure is in **pascals**.
 - **Added**: New variant — **CHESTER Meteo P** with pyranometer input for solar irradiance measurement
 - **Added**: LoRaWAN support — single firmware binary for both LTE and LoRaWAN; mode selectable via `app config mode lte` / `app config mode lrw`
 - **Changed**: Cloud v2 protocol adopted (CBOR encoding, new API endpoints); previous Cloud v1 firmware remains separately available
+
+:::info
+
+For a complete overview of all platform changes, see the [**CHESTER Changelog**](/chester/changelog).
+
+:::

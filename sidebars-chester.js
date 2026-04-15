@@ -8,6 +8,10 @@ const sidebars = {
    {
           type: 'category',
           label: 'Video Tutorials',
+          link: {
+            type: 'doc',
+            id: 'videos-chester/index',
+          },
           collapsed: true,
           items: [
             'videos-chester/chester-connect-phone',

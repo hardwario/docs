@@ -370,3 +370,9 @@ Learn how to activate and configure this feature in the [**CHESTER BLE Tag Subsy
 - **Changed**: Cloud v2 protocol adopted (CBOR encoding, new API endpoints); previous Cloud v1 firmware remains separately available
 - **Changed**: Single combined firmware binary for both LTE and LoRaWAN; LoRaWAN support in progress (planned for next release)
 
+:::info
+
+For a complete overview of all platform changes, see the [**CHESTER Changelog**](/chester/changelog).
+
+:::
+

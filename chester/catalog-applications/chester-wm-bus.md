@@ -431,3 +431,9 @@ For the complete list and detailed information, see the documentation here:
 - **Fixed**: Receiving of long wM-Bus packets (previously truncated or dropped)
 - **Added**: Battery-powered variant support (6× D-cell) alongside the existing DC-powered variant
 - **Changed**: Cloud v2 protocol adopted (CBOR encoding, new API endpoints); Cloud v1 firmware was not available for this application
+
+:::info
+
+For a complete overview of all platform changes, see the [**CHESTER Changelog**](/chester/changelog).
+
+:::

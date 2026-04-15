@@ -267,3 +267,9 @@ Every available sensor has one aggrevated measurement, which contains the minimu
 - **Added**: New variant — **CHESTER Range Z** with CHESTER-Z1 backup module support
 - **Changed**: Cloud v2 protocol adopted (CBOR encoding, new API endpoints); previous Cloud v1 firmware remains separately available
 
+:::info
+
+For a complete overview of all platform changes, see the [**CHESTER Changelog**](/chester/changelog).
+
+:::
+
