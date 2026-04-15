@@ -1,11 +1,11 @@
 ---
 slug: catalog-applications-changelog
-title: Catalog Applications Changelog
+title: Changelog
 toc_min_heading_level: 2
 toc_max_heading_level: 3
 ---
 
-# Catalog Applications Changelog
+# Changelog
 
 This page tracks all notable changes in CHESTER catalog application firmware since **v3.0.0** (Cloud v2 migration).
 

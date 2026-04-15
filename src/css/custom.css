@@ -114,4 +114,18 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
   display: none !important;
 }
 
+/* Firmware builds table — column width adjustments */
+.firmware-builds-table table th:nth-child(1),
+.firmware-builds-table table td:nth-child(1) {
+  white-space: nowrap;
+}
 
+.firmware-builds-table table th:nth-child(4),
+.firmware-builds-table table td:nth-child(4) {
+  white-space: nowrap;
+}
+
+.firmware-builds-table table th:nth-child(5),
+.firmware-builds-table table td:nth-child(5) {
+  font-size: 0.85em;
+}

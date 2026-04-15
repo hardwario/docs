@@ -72,6 +72,8 @@ Then apply changes by typing `config save`. The device will reboot and use the c
 
 #### Available Application Firmware Builds
 
+<div className="firmware-builds-table">
+
 | Application name | Version | Identifier | Build date | Remark |
 | :--- | :--- | :---: | :---: | :--- |
 | [**CHESTER Clime**](chester-clime.md#chester-clime) | [**v3.5.4**](https://firmware.hardwario.com/chester/3e9ba1b864f547319bba909c06b48252) | <small>`3e9ba1b864f547319bba909c06b48252`</small> | 2026-04-14 |  |
@@ -101,6 +103,7 @@ Then apply changes by typing `config save`. The device will reboot and use the c
 | [**CHESTER Serial RS-232**](chester-serial.md#chester-serial-rs-232) | [**v3.5.4**](https://firmware.hardwario.com/chester/909a741426d0450c9df54c8273b5f89c) | <small>`909a741426d0450c9df54c8273b5f89c`</small> | 2026-04-14 | RS-232 (point-to-point, max 1 device) |
 | [**CHESTER wM-Bus**](chester-wm-bus.md#chester-wm-bus) | [**v3.5.4**](https://firmware.hardwario.com/chester/c3849faf99924fcbae49982bbfdcd2a0) | <small>`c3849faf99924fcbae49982bbfdcd2a0`</small> | 2026-04-14 |  |
 
+</div>
 
 ## Application Firmware Cloud v1
 
