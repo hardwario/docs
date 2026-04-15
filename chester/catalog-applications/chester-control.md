@@ -463,3 +463,9 @@ import TabItem from '@theme/TabItem';
 - **Added**: Configurable poll interval (`interval-poll`) for cloud polling frequency
 - **Changed**: Cloud v2 protocol adopted (CBOR encoding, new API endpoints); previous Cloud v1 firmware remains separately available
 - **Changed**: Channel modes now explicitly configurable per channel (`channel-mode-1` through `channel-mode-4`)
+
+:::info
+
+For a complete overview of all platform changes, see the [**CHESTER Changelog**](/chester/changelog).
+
+:::

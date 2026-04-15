@@ -360,3 +360,9 @@ Any value may be `null` if the corresponding sensor read failed.
 - **Added**: Lifetime motion totalizers that persist across reports and device reboots
 - **Added**: Service mode (`service-mode-enabled`) with real-time LED feedback for sensor testing and installation
 - **Added**: Multi-click button actions for immediate sampling, sending, and device reboot
+
+:::info
+
+For a complete overview of all platform changes, see the [**CHESTER Changelog**](/chester/changelog).
+
+:::

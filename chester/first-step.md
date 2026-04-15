@@ -70,7 +70,7 @@ You can find more in-depth information about the **HARDWARIO Cloud** here:
 👉 [https://docs.hardwario.com/cloud/](https://docs.hardwario.com/cloud/)
 
 Or check out our **video tutorial** on how to add your CHESTER device to the Cloud:  
-👉 [https://docs.hardwario.com/chester/getting-started/videos-chester/chester-cloud](https://docs.hardwario.com/chester/getting-started/videos-chester/chester-cloud)
+👉 [https://docs.hardwario.com/chester/videos-chester/chester-cloud](https://docs.hardwario.com/chester/videos-chester/chester-cloud)
 :::
 
 
@@ -95,21 +95,15 @@ Or check out our **video tutorial** on how to add your CHESTER device to the Clo
    🔹 For **CHESTER-M** (with blue supercapacitors):  
      - Hold the button or press it **five times** until the **white LED** turns on — this discharges the capacitors (takes ≈ 30 s)
 
-- If it doesn’t connect, try one of these quick actions:
-
-   🔹 **Press the button four times** → reboots the device  
-   🔹 **Remove and reinsert the batteries** 🔹 For **CHESTER-M** (with blue supercapacitors):  
-      - Hold the button or press it **five times** until the **white LED** turns on — this discharges the capacitors (takes ≈ 30 s)
-
 ---
 
-#### Network Mode & Connectivity Troubleshooting
+### Network Mode & Connectivity Troubleshooting
 
 If your device still has trouble connecting to the network (especially when using your own SIM card or roaming):
 
 * **Check Network Mode:** You might need to force a specific mode like **NB-IoT** or **LTE-M** based on your region. See the [**Network Mode Configuration guide**](https://docs.hardwario.com/chester/platform-connectivity/cellular-networks/#network-mode-configuration) for details.
-* **Verify APN/PLMN:** If you are outside the Czech Republic or using a non-Vodafone SIM, follow the [**Network Settings guide**](https://docs.hardwario.com/chester/platform-connectivity/cellular-networks.md#network-settings) to configure your PLMN and APN correctly.
-* **Public IP for Cloud v2:** When using your own SIM, you must also set the [**correct IP and Port parameters**](https://docs.hardwario.com/chester/firmware-sdk/how-to-lte-v2.md#ip-and-port) for Cloud v2 compatibility.
+* **Verify APN/PLMN:** If you are outside the Czech Republic or using a non-Vodafone SIM, follow the [**Network Settings guide**](https://docs.hardwario.com/chester/platform-connectivity/cellular-networks#network-settings) to configure your PLMN and APN correctly.
+* **Public IP for Cloud v2:** When using your own SIM, you must also set the [**correct IP and Port parameters**](https://docs.hardwario.com/chester/firmware-sdk/how-to-lte-v2#ip-and-port) for Cloud v2 compatibility.
 
 ---
 
@@ -135,9 +129,8 @@ For details about all LED color states and meanings, see the [**LED Behaviour do
 
 Once connected, you can:
 
-- Send [**Config commands**](https://docs.hardwario.com/cloud/downlink#config) directly from the Cloud
-- Use [**HARDWARIO Manager**](https://docs.hardwario.com/chester/getting-started/hardwario-manager) (mobile app via BLE)
-- Use [**HARDWARIO Monitor**](https://docs.hardwario.com/chester/getting-started/hardwario-monitor) (J-Link or BLE from your PC)
+- Use [**HARDWARIO Manager**](https://docs.hardwario.com/chester/platform-connectivity/hardwario-manager) (mobile app via BLE)
+- Use [**HARDWARIO Monitor**](https://docs.hardwario.com/chester/platform-connectivity/hardwario-monitor) (J-Link or BLE from your PC)
 - Use [**HARDWARIO Terminal**](https://docs.hardwario.com/chester/platform-connectivity/hardwario-terminal) (Google Chrome browser via WebSerial/WebBluetooth)
 - Access a [**Remote shell**](https://docs.hardwario.com/cloud/downlink/#shell-commands) and even perform [**FOTA updates**](https://docs.hardwario.com/cloud/fota)
 
@@ -150,11 +143,11 @@ It’s always a good idea to make sure your CHESTER is running the **latest firm
 ### Check Firmware Version
 You can check it in three ways:
 
-1. **Using** [**HARDWARIO Manager (mobile app)**](https://docs.hardwario.com/chester/getting-started/hardwario-manager)
+1. **Using** [**HARDWARIO Manager (mobile app)**](https://docs.hardwario.com/chester/platform-connectivity/hardwario-manager)
    - Open the app and connect to your CHESTER via Bluetooth
    - The firmware version will be displayed automatically
 
-2. **Using** [**HARDWARIO Monitor (desktop app)**](https://docs.hardwario.com/chester/getting-started/hardwario-monitor)
+2. **Using** [**HARDWARIO Monitor (desktop app)**](https://docs.hardwario.com/chester/platform-connectivity/hardwario-monitor)
    - Connect CHESTER via J-Link or BLE
    - Run the command:
      ```bash
@@ -173,7 +166,7 @@ You can check it in three ways:
 
 ### Download the Latest Firmware
 You can always find the newest firmware builds here:  
-👉 [**Available Application Firmware Builds**](https://docs.hardwario.com/chester/catalog-applications/catalog-applications#available-application-firmware-builds)
+👉 [**Available Application Firmware Builds**](https://docs.hardwario.com/chester/catalog-applications/#application-firmware)
 
 :::info
  The firmware table is organized by CHESTER type, so make sure to select the correct one for your device.
@@ -182,16 +175,15 @@ You can always find the newest firmware builds here:
 ### Update Firmware
 If a newer version is available, you can update it using one of these methods:
 
-1. **Update via [**HARDWARIO Manager  (mobile app)**](https://docs.hardwario.com/chester/getting-started/hardwario-manager)**
+1. **Update via HARDWARIO Manager (mobile app)**
 
    - Follow this step-by-step guide: 👉 [**Firmware update using HARDWARIO Manager**](https://docs.hardwario.com/chester/platform-connectivity/hardwario-manager#firmware-update)
 
-2. **Update Firmware from the Cloud ([**FOTA**](https://docs.hardwario.com/cloud/fota/))**
+2. **Update Firmware from the Cloud (FOTA)**
    - You can also update your CHESTER **remotely** via the cloud.
+   - For full technical details, see this guide: 👉 [**FOTA documentation**](https://docs.hardwario.com/cloud/fota/)
 
-   - For full technical details, see this guide: 👉 [**FOTA documentation**](https://docs.hardwario.com/cloud/fota/). 
-
-3. **Manual Update via [**J-Link**](https://docs.hardwario.com/chester/firmware-flashing/application-over-j-link)**
+3. **Manual Update via J-Link**
    - If you prefer flashing manually, see this guide: 👉 [**Application update over J-Link**](https://docs.hardwario.com/chester/firmware-flashing/application-over-j-link)
 
 ---

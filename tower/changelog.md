@@ -27,15 +27,11 @@ TOWER is currently in **maintenance mode** — receiving only bugfixes and minor
 ## General Platform Updates
 
 <Tabs groupId="changelog-category">
-<TabItem value="all" label="All Changes" default>
+<TabItem value="all" label="Firmware & Applications" default>
 
 ### 2025-09-10
 
 - **[FW/SDK]** `twr-zephyr`: Added README and LICENSE — Zephyr RTOS port for Core Module now documented
-
-### 2025-04-15
-
-- **[HW]** Added Eagle component library (`hardwario.lbr`) to `twr-hardware` repository
 
 ### 2025-03-03
 
@@ -53,10 +49,6 @@ TOWER is currently in **maintenance mode** — receiving only bugfixes and minor
 
 - **[FW/SDK]** `twr-sdk`: Added option for third flood detector on Sensor Module
 
-### 2023-10-13
-
-- **[HW]** Added Serial Dongle R1.0 schematics to `twr-hardware`
-
 ### 2023-02-20
 
 - **[FW/SDK]** `twr-sdk`: Replaced newlib nano with picolibc — fixes `%llx` formatting issues
@@ -68,43 +60,6 @@ TOWER is currently in **maintenance mode** — receiving only bugfixes and minor
 ### 2022-12-28
 
 - **[FW/SDK]** `twr-sdk`: Added parameter validation in scheduler functions; added `invalid parameter` error type
-
-{/* separator */}
-</TabItem>
-
-<TabItem value="fw" label="Firmware / SDK">
-
-### 2025-09-10
-
-- `twr-zephyr`: README and LICENSE added — Zephyr port documented
-
-### 2025-03-03
-
-- `twr-zephyr`: Push button application sample added
-
-### 2025-02-11
-
-- `twr-zephyr`: Active low power timer for Core Module
-
-### 2025-02-08
-
-- `twr-zephyr`: `twr_radio` subsystem implemented (Spirit1-based)
-
-### 2023-10-31
-
-- `twr-sdk`: Third flood detector support on Sensor Module
-
-### 2023-02-20
-
-- `twr-sdk`: Replaced newlib nano with picolibc
-
-### 2023-01-23
-
-- `twr-sdk`: Fixed LIS2DH12 alarm threshold calculation
-
-### 2022-12-28
-
-- `twr-sdk`: Parameter validation in scheduler; `invalid parameter` error type added
 
 {/* separator */}
 </TabItem>

@@ -23,7 +23,7 @@ Firmware source: [hardwario/sticker-firmware](https://github.com/hardwario/stick
 ## General Platform Updates
 
 <Tabs groupId="changelog-category">
-<TabItem value="all" label="All Changes" default>
+<TabItem value="all" label="Firmware & Applications" default>
 
 ### 2026-04-01
 
@@ -55,45 +55,11 @@ Firmware source: [hardwario/sticker-firmware](https://github.com/hardwario/stick
 ### 2025-11-23 — v1.0.0
 
 - **[FW]** Initial public release of STICKER firmware
-- **[FW]** Support for three catalog applications: **STICKER Clime**, **STICKER Input**, **STICKER Motion**
 - **[FW]** LoRaWAN connectivity (Class A)
 - **[FW]** MIFARE/NFC tag support via DS28E17
-
-{/* separator */}
-</TabItem>
-
-<TabItem value="fw" label="Firmware">
-
-### 2026-04-01
-
-- Fixed DS28E17 machine probe initialization reliability (retries + readback verification)
-- Fixed atomic state read in machine probe scan
-
-### 2026-02-17
-
-- Reduced PYQ1648 (PIR) IRQ latency from 2.5 ms to 100 µs
-- Added analog pinctrl for I2C1 sleep state — reduces idle leakage
-- Added NVS config version check with defaults reset on mismatch
-- Fixed GPIO pin conflict when PIR and input are both configured
-- Added delay after SI7210 ONEBURST trigger
-- Added `reset_counts` shell commands for hall and input counters
-- Fixed LoRaWAN state machine counter overflow (`uint8_t` → `int`)
-- Atomically snapshot notify flags in compose
-- Split LED message queue to reduce stack usage
-- Added watchdog feeds during boot init
-- Added CRC16 verification on DS28E17 read data
-
-### 2026-01-30 — v1.2.0
-
-- Fixed LED debug mode sequence (green before yellow)
-
-### 2025-12-15 — v1.1.0
-
-- Implemented LoRaWAN JOIN retry mechanism
-
-### 2025-11-23 — v1.0.0
-
-- Initial release — Clime, Input, Motion apps; LoRaWAN Class A; NFC/MIFARE support
+- **[Apps]** **STICKER Clime** — initial release (temperature, humidity)
+- **[Apps]** **STICKER Input** — initial release (digital inputs, pulse counting)
+- **[Apps]** **STICKER Motion** — initial release (PIR motion detection)
 
 {/* separator */}
 </TabItem>
@@ -108,17 +74,6 @@ No hardware revisions have been logged yet. Hardware updates will appear here wh
 
 {/* separator */}
 </TabItem>
-
-<TabItem value="apps" label="Applications">
-
-### 2025-11-23 — v1.0.0
-
-- **STICKER Clime** — initial release (temperature, humidity)
-- **STICKER Input** — initial release (digital inputs, pulse counting)
-- **STICKER Motion** — initial release (PIR motion detection)
-
-{/* separator */}
-</TabItem>
 </Tabs>
 
 ---
@@ -127,6 +82,6 @@ No hardware revisions have been logged yet. Hardware updates will appear here wh
 
 | Application | Changelog | Last Updated |
 |---|---|---|
-| STICKER Clime | — | — |
-| STICKER Input | — | — |
-| STICKER Motion | — | — |
+| STICKER Clime | [Changelog](catalog-applications/sticker-clime#changelog) | 2025-11-23 |
+| STICKER Input | [Changelog](catalog-applications/sticker-input#changelog) | 2025-11-23 |
+| STICKER Motion | [Changelog](catalog-applications/sticker-motion#changelog) | 2025-11-23 |

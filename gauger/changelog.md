@@ -23,22 +23,11 @@ GAUGER firmware is managed through HARDWARIO's internal release process (OTA upd
 ## General Platform Updates
 
 <Tabs groupId="changelog-category">
-<TabItem value="all" label="All Changes" default>
+<TabItem value="all" label="Firmware & Applications" default>
 
 :::info
 
 No changes have been logged yet. Updates will appear here when new firmware or hardware changes are released.
-
-:::
-
-{/* separator */}
-</TabItem>
-
-<TabItem value="fw" label="Firmware">
-
-:::info
-
-No firmware changes have been logged yet.
 
 :::
 

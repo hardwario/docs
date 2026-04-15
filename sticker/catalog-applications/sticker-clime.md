@@ -46,3 +46,15 @@ import Image from '@theme/IdealImage';
 }
 ```
 
+## Changelog
+
+### 2025-11-23 — v1.0.0
+
+- Initial release — temperature, humidity, illuminance, and pressure monitoring via LoRaWAN
+
+:::info
+
+For a complete overview of all platform changes, see the [**STICKER Changelog**](/sticker/changelog).
+
+:::
+

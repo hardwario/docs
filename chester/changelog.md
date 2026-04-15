@@ -23,7 +23,7 @@ General platform updates are listed here. For application-specific changelogs, s
 ## General Platform Updates
 
 <Tabs groupId="changelog-category">
-<TabItem value="all" label="All Changes" default>
+<TabItem value="all" label="Firmware & Applications" default>
 
 ### 2026-03-31
 
@@ -116,39 +116,6 @@ General platform updates are listed here. For application-specific changelogs, s
 {/* separator */}
 </TabItem>
 
-<TabItem value="fw" label="Firmware / SDK">
-
-### 2026-03-31
-
-- GNSS M8 initialization priority configurable via Kconfig (`CONFIG_CTR_GNSS_M8_INIT_PRIORITY`)
-
-### 2026-03-10
-
-- Default LTE mode changed from `lte-m` to `lte-m,nb-iot` — automatic NB-IoT fallback enabled by default
-
-### 2026-01-19
-
-- Soft timeout support added for cloud send/downlink operations
-
-### 2026-01-02
-
-- Metrics API added for cloud subsystem
-
-### 2025-10-30
-
-- Common aggregation data structure (`ctr_data_aggreg`) introduced
-
-### 2025-10-27
-
-- Configurable LTE attach policy added
-
-### 2025-01-31
-
-- Nordic Connect SDK (NCS) updated to **v2.9**
-
-{/* separator */}
-</TabItem>
-
 <TabItem value="hw" label="Hardware">
 
 ### CHESTER-M R3.4 *(current)*
@@ -177,71 +144,6 @@ General platform updates are listed here. For application-specific changelogs, s
 
 {/* separator */}
 </TabItem>
-
-<TabItem value="apps" label="Applications">
-
-### 2026-03-11
-
-- CHESTER Counter and CHESTER Signal moved to `_legacy` — no longer actively maintained
-
-### 2026-03-06
-
-- **CHESTER Serial** — initial release (RS-485 and RS-232 variants)
-
-### 2026-02-11
-
-- **CHESTER Motion** — initial release (PIR motion detection)
-
-### 2026-02-04
-
-- **CHESTER Meteo M** variant — Modbus RTU meteorological sensor integration
-
-### 2026-01-30
-
-- **CHESTER Scale** — LoRaWAN support added
-
-### 2025-12-08
-
-- **CHESTER Clime** v3.5.1 — SPS30, Radon, TC variants; Cloud v2 protocol adopted
-
-### 2025-12-03
-
-- **CHESTER Serial** v3.5.0 — LoRaWAN support; RS-232 variant; Cloud v2 protocol
-
-### 2025-11-28
-
-- **CHESTER Meteo** — soil sensor support added
-
-### 2025-10-24
-
-- **CHESTER Control** — LoRaWAN support added
-
-### 2025-10-15
-
-- **CHESTER wM-Bus** — enroll/teach mode; scan-all, shell send, manufacturer field, LED watchdog
-
-### 2025-08-21
-
-- **CHESTER Clime Radon** merged into CHESTER Clime application
-
-### 2025-07-14
-
-- **CHESTER wM-Bus** — initial release
-
-### 2025-02-14
-
-- **CHESTER Meteo** — LoRaWAN support added
-
-### 2025-01-20
-
-- **CHESTER Clime** — SPS30 particulate matter sensor subsystem added
-
-### 2025-01-16
-
-- Multiple catalog apps — downlink watchdog added
-
-{/* separator */}
-</TabItem>
 </Tabs>
 
 ---
@@ -252,13 +154,13 @@ The table below links directly to the changelog section of each catalog applicat
 
 | Application | Changelog | Last Updated |
 |---|---|---|
-| CHESTER Clime | [Changelog](catalog-applications/chester-clime.md#changelog) | 2026-04-01 |
-| CHESTER Control | [Changelog](catalog-applications/chester-control.md#changelog) | 2026-04-01 |
-| CHESTER Current | [Changelog](catalog-applications/chester-current.md#changelog) | 2026-04-01 |
-| CHESTER Meteo | [Changelog](catalog-applications/chester-meteo.md#changelog) | 2026-04-01 |
-| CHESTER Motion | [Changelog](catalog-applications/chester-motion.md#changelog) | 2026-04-01 |
-| CHESTER Push | [Changelog](catalog-applications/chester-push.md#changelog) | 2026-04-01 |
-| CHESTER Range | [Changelog](catalog-applications/chester-range.md#changelog) | 2026-04-01 |
-| CHESTER Scale | [Changelog](catalog-applications/chester-scale.md#changelog) | 2026-04-01 |
-| CHESTER Serial | [Changelog](catalog-applications/chester-serial.md#changelog) | 2026-04-01 |
-| CHESTER wM-Bus | [Changelog](catalog-applications/chester-wm-bus.md#changelog) | 2026-04-01 |
+| CHESTER Clime | [Changelog](catalog-applications/chester-clime#changelog) | 2026-04-01 |
+| CHESTER Control | [Changelog](catalog-applications/chester-control#changelog) | 2026-04-01 |
+| CHESTER Current | [Changelog](catalog-applications/chester-current#changelog) | 2026-04-01 |
+| CHESTER Meteo | [Changelog](catalog-applications/chester-meteo#changelog) | 2026-04-01 |
+| CHESTER Motion | [Changelog](catalog-applications/chester-motion#changelog) | 2026-04-01 |
+| CHESTER Push | [Changelog](catalog-applications/chester-push#changelog) | 2026-04-01 |
+| CHESTER Range | [Changelog](catalog-applications/chester-range#changelog) | 2026-04-01 |
+| CHESTER Scale | [Changelog](catalog-applications/chester-scale#changelog) | 2026-04-01 |
+| CHESTER Serial | [Changelog](catalog-applications/chester-serial#changelog) | 2026-04-01 |
+| CHESTER wM-Bus | [Changelog](catalog-applications/chester-wm-bus#changelog) | 2026-04-01 |
