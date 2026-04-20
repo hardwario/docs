@@ -50,3 +50,20 @@ If you skipped the activation step during creation, or if you need to resend the
    * **Display activation link:** Displays a URL that you can manually copy and send to the user. Once they click this link, they will be prompted to create their new password.
 
 ![](images/users-3.png)
+
+## How to Change Your Password
+
+1. Click on the **three dots** next to your user icon in the top right corner.
+2. Select **Account** from the drop-down menu.
+
+![](images/password-change-1.png)
+
+3. You will be directed to the **Profile** tab, where you can also update your general account information.
+4. To **change your password**, switch to the **Security** tab.
+5. Enter your current password, followed by your new password.
+
+:::info
+If you received a **temporary password via email**, please enter it in the current password field.
+:::
+
+![](images/password-change-2.png)
