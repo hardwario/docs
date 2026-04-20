@@ -28,6 +28,19 @@ The **Notifications** menu item is only visible to customers who have been grant
 
 ---
 
+## Access levels
+
+| Role | Access |
+|------|--------|
+| **Customer Administrator** | Full access — can create, edit, copy, delete, and enable/disable rules. |
+| **Customer User** | Read-only — can view rules but cannot create, edit, copy, delete, or toggle them. |
+
+:::info
+If you are a Customer User and need to modify a rule, contact your Customer Administrator.
+:::
+
+---
+
 ## Interface overview
 
 ![](images/notifications-manager-1.png)
