@@ -25,24 +25,47 @@ A cloud-based LoRaWAN Network Server suitable for both small and large deploymen
 #### Gateway Registration on TTS
 
 1. Log in to your TTS Console (e.g., `hardwario-com.eu1.cloud.thethings.industries`).
-2. Go to **Gateways > + Register gateway**.
-3. Paste your **Gateway EUI** (16 characters, found in the gateway Dashboard) and select the correct **Frequency Plan** (e.g., Europe 863-870 MHz).
-4. Navigate to **API Keys > + Add API key**.
-5. Select **"Link as Gateway to a Gateway Server..."** and click **Create API key**.
-6. **Copy the key string** (starts with `NNSXS...`) immediately – you will need it for gateway configuration.
+2. Go to **Gateways → Register gateway**.
+![TTS Register Geteway](images/tts-register-geteway.png)
 
-#### Gateway Configuration (Basics Station)
+3. Paste your **Gateway EUI** (16 characters, found in the gateway Dashboard) and click **Confirm**.
+![TTS Register Geteway](images/tts-geteway-eui.png)
 
-On your RAK gateway, navigate to **LoRa > Configuration** and select **Basics Station**:
 
-| Setting | Value |
-| :--- | :--- |
-| **Basics Station Mode** | LNS Server |
-| **Server URL** | `wss://hardwario-com.eu1.cloud.thethings.industries` (Port 8887) |
-| **Trust (CA Certificate)** | Upload the [ISRG Root X1 .pem](https://letsencrypt.org/certs/isrgrootx1.pem) file |
-| **Client Token** | Paste your TTS API Key |
 
-➡️ **Full configuration guide:** [Configure The Things Stack](/apps/the-things-stack/index#configure-the-things-stack)
+4. After entering the Gateway EUI, fill in the following fields:
+- Gateway ID: ( Your chosen identifier for the device → example: **rak-0x**)
+- Gateway Name: (Your chosen name for the device → example **Rak 0x**)
+- Frequency Plan: **Europe 863-870 MHz (SF9 for RX2 - recommended)**
+- **(Optional)** Label
+
+Check the box **Require authenticated connection**.
+
+Enable the following:
+- **Generate API key for CUPS**
+- **Generate API key for LNS**
+
+Click **Register gateway** and **download both API keys** (CUPS + LNS).
+
+![TTS Geteway Config](images/tts-geteway-config.png)
+
+5. A new window will appear. Click **Download LNS key**, then **Download CUPS key** to save both API keys to your device. Once both files are downloaded, click **I have downloaded the keys**.
+![TTS Download API Keys](images/tts-api-keys.png)
+#### Gateway Configuration
+
+On your RAK gateway, navigate to **LoRa → Configuration** and select **Basics Station** as **Work mode**.
+- Make sure the **Frequency Plan** and **Country** matches your regional settings.
+Click on **Configure Basics Station server setup** and fill the following field:
+- Basics Station Server Type: **LNS Server**
+- Server URL: **wss://hardwario-com.eu1.cloud.thethings.industries**
+- Server Port: **8887**
+- Authentication Mode: **TLS Server & Client Token Authentication**
+- Trust (CA Certificat): **isrgrootx1.pem** (Download from https://letsencrypt.org/certs/isrgrootx1.pem and select)
+- Client Token: **NNSXS.K5BHKTOO...** (From file **tc.key**)
+- Confirm by clicking **Save changes**.
+
+
+![Rak TTS Server Setup](images/rak-cofigure-tts-server.png)
 
 ---
 
@@ -51,15 +74,24 @@ On your RAK gateway, navigate to **LoRa > Configuration** and select **Basics St
 An open-source LoRaWAN Network Server ideal for on-premise or private network installations.
 
 #### Gateway Registration on ChirpStack
+1. In **ChirpStack v4**, open **Tenant → Gateways**.
+2. Click **Add Gateway**.
+![Rak ChirpStack add Gateway](images/chirpstack-add-gateway.png)
+3. Fill in:
+   - Name: **Rak-gate** (Or your preferred name)
+   - Gateway ID: **GATEWAY_ID**
+   - Stats Interval: **YOUR_PREFERENCE**
+4. Click **Submit**.
+![Rak ChirpStack config](images/chirpstack-config-gateway.png)
 
-1. Log in to your ChirpStack Console (e.g., `http://your-ip-address:8080`).
-2. Go to **Gateways > + Add gateway**.
-3. Paste your **Gateway EUI** (found in your RAK dashboard) into the **Gateway ID (EUI64)** field.
-4. Select a **Gateway Profile** (e.g., EU868 or US915) that matches your regional plan.
-5. Navigate to **API Keys** (found under the **Tenant** or **System** menu in the sidebar).
-6. Click **+ Create API key**, give it a name like "RAK7268-BasicsStation", and click **Submit**.
-7. **Copy the API Key string immediately** – you will use this in the "Gateway Token" field on your RAK gateway if you choose Token-based authentication.
+#### Gateway Configuration
+On your RAK gateway, navigate to **LoRa → Configuration** and select **Packet forwarder** as **Work mode**.
+- Make sure the **Frequency Plan** and **Country** matches your regional settings.
+Select **Samtech UDP GWMP Protocol** as Protocol.
+In **UDP Protocol parameters** category fill the following field:
+- Server address: **ADDRESS_OF_YOUR_CHIRPSTACK_SERVER**
+- Server Port up: **1700**
+- Server port down: **1700**
+- Confirm by clicking **Save changes**.
 
-➡️ **Getting started guide:** [Getting Started with ChirpStack v4](/apps/chirpstack/index#getting-started-with-chirpstack-v4)
-
----
+![Rak select ChirpStack](images/rak-chirpstack.png)

@@ -97,6 +97,9 @@ Before the gateway can communicate with a network server, it needs an internet c
 * **WiFi:** Go to **Wi-Fi**, enable the interface, and scan for your local network.
 * **Cellular (LTE Models):** If using a SIM card, configure the APN under **Cellular**.
 
+If your SIM card requires a PIN code, you need to configure it in the settings. Navigate to **Network → WAN → Cellular → General**, enable LTE Network, enter your SIM card PIN into the **PIN code** field, and click **Save**.
+![PIN code](images/sim-pin.png)
+
 :::warning Cellular Note
 If you are not using a SIM card, disable the cellular interface to prevent `SIM_ABSENT` log spam.
 :::
