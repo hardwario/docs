@@ -1,6 +1,6 @@
 ---
 slug: users-managing-cz
-title: Managing Users
+title: Správa Uživatelů
 ---
 
 import Image from '@theme/IdealImage';
