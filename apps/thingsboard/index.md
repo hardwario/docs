@@ -18,7 +18,7 @@ import Image from '@theme/IdealImage';
 
 ### 1. Create a Device in ThingsBoard
 
-Start by logging into [ThingsBoard](https://thingsboard.hardwario.com/) and creating a new device.  
+Start by logging into [ThingsBoard](https://app.hardwario.cloud/) and creating a new device.  
 This device will act as the endpoint that receives and stores data sent from HARDWARIO Cloud.  
 
 Here is a detailed step-by-step guide: 👉 [Adding a New Device](creating-device)
