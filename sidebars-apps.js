@@ -49,8 +49,7 @@ const sidebars = {
           collapsed: true,
           items: [
             'thingsboard/users',
-            'thingsboard/user-groups',
-            'thingsboard/user-roles',
+            'thingsboard/users-managing',
           ],
         },
       ],
