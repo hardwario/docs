@@ -24,15 +24,15 @@ This guide shows how to connect the **HARDWARIO EMBER** LoRaWAN gateway (MikroTi
 On MikroTik RouterOS, the gateway EUI is shown as **Gateway ID**:
 
 - **IoT → LoRa → Devices → Gateway ID**
-![Ember Geteway ID](images/ember-geteway-id.png)
+![Ember Gateway ID](images/ember-geteway-id.png)
 ---
 
 ## 2) Register the gateway in The Things Stack
 1. In TTS Console, click **Register gateway**.
 2. Enter the **Gateway EUI** (use RouterOS **Gateway ID**).
 3. Fill the gateway details:
-   - **Gateway ID** ( Your chosen identifier for the device → example: **test-geteway-001**)
-   - **Gateway Name** (Your chosen name for the device → example **Test Geteways-001**)   
+   - **Gateway ID** ( Your chosen identifier for the device → example: **test-gateway-001**)
+   - **Gateway Name** (Your chosen name for the device → example **Test Gateways-001**)   
    - **Frequency plan** (choose the one matching your region/hardware; e.g., Europe 868.1 MHz)
 4. Enable **Require authenticated connection**.
 5. Enable both:

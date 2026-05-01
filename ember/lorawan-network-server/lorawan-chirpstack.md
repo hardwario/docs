@@ -32,11 +32,11 @@ https://docs.hardwario.com/apps/chirpstack/chirpstack-installation
 On MikroTik RouterOS, the gateway EUI is shown as **Gateway ID**:
 
 - **IoT → LoRa → Devices → Gateway ID**
-![Ember Geteway ID](images/ember-geteway-id.png)
+![Ember Gateway ID](images/ember-geteway-id.png)
 
 ---
 
-## 2) Configure EMBER (MikroTik RouterOS) to connect to TTS
+## 2) Configure EMBER (MikroTik RouterOS) to connect to ChirpStack
 > RouterOS typically requires the LoRa card to be **Disabled** while you change LoRa settings.
 
 1. In the left panel, open **IoT**→ **LoRa**. Click on line at the list and  aply disable. 
@@ -62,7 +62,7 @@ On MikroTik RouterOS, the gateway EUI is shown as **Gateway ID**:
 2. Click **Add Gateway**.
 3. Fill in:
    - Name: **Ember-0** (Or your preferred name)
-   - Gateway ID: **GETEWAY_ID**
+   - Gateway ID: **GATEWAY_ID**
    - Stats Interval: **YOUR_PREFERENCE**
 4. Click **Submit**.
 
