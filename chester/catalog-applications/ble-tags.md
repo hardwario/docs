@@ -26,6 +26,10 @@ After enabling the subsystem, save the configuration and restart **CHESTER** to 
 config save
 ```
 
+```
+device restart
+```
+
 ---
 
 ## 2. Tag Activation
@@ -69,7 +73,59 @@ Lower values (e.g. `-128 dBm`) provide greater range, while higher values (e.g. 
 tag enroll <threshold>
 ```
 
+Example:
+
+```
+tag enroll -55
+```
+
 Once enrollment is complete, make it **persistent** by saving the configuration:
+
+```
+config save
+```
+
+To list all currently enrolled tags, run:
+
+```
+tag list
+```
+
+---
+
+## 4. Manual Tag Management
+
+Instead of using automatic enrollment, you can manually add or remove tags by their **MAC address**.
+
+### Add a Tag
+
+To manually add a tag, run:
+
+```
+tag config devices add <MAC_ADDRESS>
+```
+
+Example:
+
+```
+tag config devices add 7cd9f413e360
+```
+
+### Remove a Tag
+
+To remove a previously added tag, run:
+
+```
+tag config devices remove <MAC_ADDRESS>
+```
+
+Example:
+
+```
+tag config devices remove 7cd9f413e360
+```
+
+After adding or removing tags, save the configuration:
 
 ```
 config save
@@ -77,8 +133,7 @@ config save
 
 ---
 
-
-## 4. Configuring via EYE App
+## 5. Configuring via EYE App
 
 The tags can be configured using the [**Teltonika EYE App**](https://wiki.teltonika-gps.com/view/EYE_SENSOR_/_BTSMP1#EYE_App_Configuration).  
 We strongly recommend updating the firmware, as the default version does not allow some advanced settings.
@@ -141,7 +196,7 @@ This setup ensures stable data transmission, adequate advertising frequency for 
 
 ---
 
-## 5. Signal Testing
+## 6. Signal Testing
 
 The effective communication range between **CHESTER** and the Teltonika sensors depends on the **signal power configuration** of the tag.
 
@@ -154,7 +209,7 @@ tag read
 Check the **RSSI** value in the output:
 - If the signal is **lower than -85 dBm**, consider increasing the tag’s power level for better stability.
 
-## 6. Measured Parameters
+## 7. Measured Parameters
 
 | Measured Quantity       | Description                                                  |
 |-------------------------|--------------------------------------------------------------|
