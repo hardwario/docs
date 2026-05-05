@@ -56,6 +56,10 @@ Telemetry keys often contain dots (e.g., hygrometer.temperature.avg), which can 
 * **Language:** Switch from TBEL to **`JavaScript`**
 * **Code:**
 
+<details>
+<summary><b>Show Script</b></summary>
+<p>
+
 ```javascript
 // Initialize default values to prevent "is not defined" errors in email templates
 metadata.formattedTemperature = "N/A";
@@ -91,6 +95,10 @@ var seconds = pad(date.getSeconds());
 metadata.formattedTime = day + "." + month + "." + year + " " + hours + ":" + minutes + ":" + seconds;
 return {msg: msg, metadata: metadata, msgType: msgType};
 ```
+
+</p>
+</details>
+
 * **Connection:** Connect the Device Filter node to this node using the True link.
 
 ### 4. Filter: Script (Threshold Filters)
@@ -199,6 +207,10 @@ Update your existing threshold filter scripts (e.g., `Temperature < 17`) to not 
 * **Node Type:** `Filter` -> `script`
 * **Code Example (Checking for a 24-hour delay = 86400000 milliseconds):**
 
+<details>
+<summary><b>Show Script Example</b></summary>
+<p>
+
 ```javascript
 var currentTime = new Date().getTime();
 var lastEmailTime = metadata.ss_lastEmailTime ? Number(metadata.ss_lastEmailTime) : 0;
@@ -212,6 +224,9 @@ if (msg['hygrometer.temperature.avg'] < 17) {
 }
 return false; // Do not send email
 ```
+
+</p>
+</details>
 
 *(Apply this logic to all your threshold filters).*
 

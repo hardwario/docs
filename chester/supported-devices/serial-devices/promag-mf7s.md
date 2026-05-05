@@ -124,6 +124,10 @@ LTE mode sends a CBOR message (max 8 KB) with all collected cards. The buffer is
 
 #### Example Decoded JSON Payload
 
+<details>
+<summary><b>Show Example Decoded JSON Payload</b></summary>
+<p>
+
 ```json
 {
   "message": {
@@ -188,6 +192,9 @@ LTE mode sends a CBOR message (max 8 KB) with all collected cards. The buffer is
 }
 ```
 
+</p>
+</details>
+
 :::info
 
 `card_uid` is a uint32 (decimal). Hex conversion: `305419896` = `0x12345678`, `2864434397` = `0xAABBCCDD`.
@@ -236,6 +243,10 @@ D0 E0 4B 67            # Last read timestamp: 1735905488 (LE)
 
 #### Decoding in Node-RED / JavaScript
 
+<details>
+<summary><b>Show JavaScript Decoder</b></summary>
+<p>
+
 ```javascript
 function decode(payload) {
     var buf = Buffer.from(payload, 'hex');
@@ -270,6 +281,9 @@ function decode(payload) {
     }
 }
 ```
+
+</p>
+</details>
 
 ---
 

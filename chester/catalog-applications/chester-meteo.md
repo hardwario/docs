@@ -142,6 +142,10 @@ Wind speed is in **meters per second**.
 
 Pressure is in **pascals**.
 
+<details>
+<summary><b>Show JSON Example</b></summary>
+<p>
+
 ```json
 {
   "message": {
@@ -541,9 +545,15 @@ Pressure is in **pascals**.
 }
 ```
 
+</p>
+</details>
 
   </TabItem>
   <TabItem value="lora" label="LoRaWAN">
+
+<details>
+<summary><b>Show JSON Example</b></summary>
+<p>
 
 ```json
 {
@@ -573,6 +583,9 @@ Pressure is in **pascals**.
   ]
 }
 ```
+
+</p>
+</details>
 
   </TabItem>
 </Tabs>

@@ -303,6 +303,10 @@ Hygrometer **events** are:
 
 In each structure with the current configuration, there are six aggregated values. Each aggregated value has its timestamp and is computed from multiple samples, and `min`, `max`, `avg`, and `mdn` values are calculated.
 
+<details>
+<summary><b>Show JSON Example</b></summary>
+<p>
+
 ```json
 {
   "message": {
@@ -1026,8 +1030,16 @@ In each structure with the current configuration, there are six aggregated value
   ]
 }
 ```
+
+</p>
+</details>
+
   </TabItem>
   <TabItem value="lora" label="LoRaWAN">
+
+<details>
+<summary><b>Show JSON Example</b></summary>
+<p>
 
 ```json
 {
@@ -1040,6 +1052,9 @@ In each structure with the current configuration, there are six aggregated value
   "hygro_humidity": 45.1
 }
 ```
+
+</p>
+</details>
 
   </TabItem>
 </Tabs>

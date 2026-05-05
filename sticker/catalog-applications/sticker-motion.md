@@ -31,6 +31,10 @@ import Image from '@theme/IdealImage';
 
 ## Example JSON Message
 
+<details>
+<summary><b>Show JSON Example</b></summary>
+<p>
+
 ```json
 {
   "event": "motion",
@@ -43,6 +47,9 @@ import Image from '@theme/IdealImage';
   "count": 5
 }
 ```
+
+</p>
+</details>
 
 ## Changelog
 

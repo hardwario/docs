@@ -34,6 +34,10 @@ import Image from '@theme/IdealImage';
 
 ## Example JSON Message
 
+<details>
+<summary><b>Show JSON Example</b></summary>
+<p>
+
 ```json
 {
   "event": "interval",
@@ -45,6 +49,9 @@ import Image from '@theme/IdealImage';
   "pressure": 101300
 }
 ```
+
+</p>
+</details>
 
 ## Changelog
 

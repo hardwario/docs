@@ -307,6 +307,10 @@ In this example **JSON** you can see raw data from two wM-Bus sensors
 
 Each JSON cloud message contains up to 20 wM-Bus packets. If CHESTER is configured for more than 20 devices, then the raw wM-Bus packets are split to multiple JSON messages.
 
+<details>
+<summary><b>Show JSON Example</b></summary>
+<p>
+
 ```json
 {
     "accelerometer": {
@@ -364,8 +368,15 @@ Each JSON cloud message contains up to 20 wM-Bus packets. If CHESTER is configur
 }
 ```
 
+</p>
+</details>
+
   </TabItem>
   <TabItem value="lora" label="LoRaWAN">
+
+<details>
+<summary><b>Show JSON Example</b></summary>
+<p>
 
 ```json
 {
@@ -380,7 +391,10 @@ Each JSON cloud message contains up to 20 wM-Bus packets. If CHESTER is configur
   }
 }
 ```
-    
+
+</p>
+</details>
+
   </TabItem>
 </Tabs>
 

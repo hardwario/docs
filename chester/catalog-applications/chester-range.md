@@ -134,6 +134,10 @@ In this example **JSON** you can see data from all three variants
 
 Every available sensor has one aggrevated measurement, which contains the minimum, maximum, average and median value.
 
+<details>
+<summary><b>Show JSON Example</b></summary>
+<p>
+
 ```json
 {
   "message": {
@@ -246,6 +250,9 @@ Every available sensor has one aggrevated measurement, which contains the minimu
   ]
 }
 ```
+
+</p>
+</details>
 
   </TabItem>
   <TabItem value="lora" label="LoRaWAN">
