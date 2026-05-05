@@ -46,7 +46,7 @@ See [**Ordering Codes**](../ordering-codes.md) for more details.
 
 Firmware build shield options: `ctr_lrw ctr_lte ctr_x3_a` or `ctr_lrw ctr_lte ctr_x3_b`
 
-### CHESTER Scale Z
+### CHESTER Scale Z {#chester-scale-z}
 
 The catalog application **CHESTER Scale Z** includes backup battery support for uninterrupted operation.
 

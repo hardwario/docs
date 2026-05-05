@@ -21,6 +21,9 @@ This `app mode` configuration is needed currently for these catalog applications
 - [CHESTER Scale](chester-scale.md)
 - [CHESTER Meteo](chester-meteo.md)
 - [CHESTER Range](chester-range.md)
+- [CHESTER Motion](chester-motion.md)
+- [CHESTER Serial](chester-serial.md)
+- [CHESTER wM-Bus](chester-wm-bus.md)
 
 The default functionality is that a device **does not use any radio** (mode `none`) and you need to set configuration parameter **mode**.
 
@@ -28,6 +31,10 @@ The default functionality is that a device **does not use any radio** (mode `non
 - `app config mode lrw` for LoRaWAN network
 
 Then apply changes by typing `config save`. The device will reboot and use the correct network.
+
+### Default LTE Mode
+
+Starting from firmware **v3.5.0**, the default LTE mode has been changed to **LTE-M with NB-IoT fallback** (`lte-m,nb-iot`). This means the device will first try to connect using LTE-M and fall back to NB-IoT if LTE-M is not available.
 
 
 ## Button Behaviour
@@ -79,6 +86,32 @@ Reseting the configuration will also reset the connection parameters for LTE and
 You might also change configuration remotely over HARDWARIO Cloud using [**Config downlink command**](../../cloud/downlink#config).
 In cloud you don't send the `config save` command.
 
+## Runtime CHESTER-Z Detection
+
+Starting from firmware **v3.5.4**, some applications support **runtime detection** of the CHESTER-Z backup module. This means a single firmware binary works both with and without the CHESTER-Z module installed.
+
+- If CHESTER-Z is detected at boot, backup functionality (DC input monitoring, backup battery voltage, connection/disconnection events) is automatically enabled.
+- If CHESTER-Z is not present, backup features are silently skipped with no impact on other functionality.
+- This eliminates the need for separate "Z" firmware variants — for example, **CHESTER Clime** now covers what was previously **CHESTER Clime Z**.
+
+Applications with runtime CHESTER-Z detection:
+
+- [CHESTER Clime](chester-clime.md)
+
+:::note
+Other applications will gradually adopt runtime Z detection in future firmware releases.
+:::
+
+## Cloud Metrics
+
+The `cloud` shell command group provides diagnostic information about cloud communication. Use `cloud metrics` to display communication statistics:
+
+```
+cloud metrics
+```
+
+This shows uplink/downlink message counts, fragment counts, error counts with timestamps, and timestamps of last successful operations. This is useful for diagnosing connectivity issues in the field.
+
 ## BLE Tag Subsystem
 
 :::info
@@ -110,11 +143,14 @@ Available commands:
   accel    :Accelerometer commands.
   aggreg   :Aggregate data immediately
   app      :Application commands.
+  backup   :Backup module commands
   batt     :Battery commands.
   ble      :BLE commands.
   button   :Button commands.
+  cloud    :Cloud commands.
   config   :Configuration commands.
   flash    :Flash shell commands
+  gpio     :GPIO commands
   help     :Prints the help message.
   hygro    :Hygrometer commands.
   i2c      :I2C commands
@@ -129,18 +165,17 @@ Available commands:
   sample   :Sample immediately.
   send     :Send data immediately.
   therm    :Thermometer commands.
+  w1       :1-Wire bus commands
 ```
 
-## Report Interval Jitter
+Starting from firmware **v3.5.0**, all applications include the following diagnostic shell commands:
 
-The periodic sending of data with `interval-report` has intentional jitter. This is used in case lot of CHESTERs are placed near each other, so they don't transmit at the same time if they have set the same interval. This jitter is random in the range of ±20 % of `interval-report`.
-
-For example, if `interval-report` is set to 100 seconds, you can receive periodic data where two messages have a time difference from 80 (-20%) to 120 (+20%) seconds.
-
-In applications where there are multiple aggregated values, this jitter has a side-effect that sometimes you can see fewer or more aggregated values than expected. The missing values are not lost, they will be sent correctly in the next message.
-
-This jitter is not applied to **events** like button presses or input changes. They report immediately.
-
+- **`i2c`** — I2C bus operations (scan, read, write) for hardware diagnostics
+- **`mcuboot`** — MCUboot bootloader commands for firmware management
+- **`gpio`** — GPIO pin control and inspection
+- **`w1`** — 1-Wire bus scanning and device enumeration
+- **`backup`** — CHESTER-Z backup module status (serial number, HW revision, voltages, DC input state)
+- **`cloud`** — Cloud communication commands including `cloud metrics` for connectivity diagnostics
 
 ## Configuration backup v1.x.x → v2.x.x {#configuration-backup}
 

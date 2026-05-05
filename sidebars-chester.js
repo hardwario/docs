@@ -71,6 +71,7 @@ const sidebars = {
           collapsed: true,
           items: [
             'catalog-applications/ble-tags',
+            'catalog-applications/changelog',
           ],
         },
         'catalog-applications/chester-clime',
