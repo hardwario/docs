@@ -327,7 +327,6 @@ import TabItem from '@theme/TabItem';
 
 <details>
 <summary><b>Show JSON Example</b></summary>
-<p>
 
 ```json
 {
@@ -394,7 +393,6 @@ import TabItem from '@theme/TabItem';
 }
 ```
 
-</p>
 </details>
 
 :::info
