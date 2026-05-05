@@ -25,5 +25,5 @@ Once completed, click **Submit**.
 ![ChirStack v4 - Gateways](images/chirpstack-tutorial-1.png)
 
 :::info
-The **Gateway ID** can be found through **[MikroTik software](/ember/mikrotik/gateway-configuration#c-link-lora-device-to-the-new-server)**.  
+The **Gateway ID** can be found in the **MikroTik software** under **LoRa → Devices**.  
 :::
