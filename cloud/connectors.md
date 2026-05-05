@@ -55,6 +55,10 @@ Here is the structure of the `job` object.
 
 The object `body.message.body` contains the JSON from the CHESTER with its data.
 
+<details>
+<summary><b>Show `job` Object Structure</b></summary>
+<p>
+
 ```json
 {
   "url": "https://pipedream.net/",
@@ -120,6 +124,8 @@ The object `body.message.body` contains the JSON from the CHESTER with its data.
 }
 ```
 
+</p>
+</details>
 
 ### Callback Debugging
 

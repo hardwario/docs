@@ -98,6 +98,10 @@ These define your Ubidots connection, the floor plan image, and the BLE tag posi
 
 #### Example Code – HTML Floor Plan
 
+<details>
+<summary><b>Show HTML Floor Plan Code Example</b></summary>
+<p>
+
 ```
 <div id="floor-wrapper">
   <img id="floorplan" alt="Floor plan" />
@@ -313,6 +317,9 @@ These define your Ubidots connection, the floor plan image, and the BLE tag posi
 </script>
 ```
 
+</p>
+</details>
+
 
 
 
@@ -341,6 +348,10 @@ Before using the HTML code, you must update several parameters inside the **`CON
 
 
 #### Example Code – HTML Data Table
+
+<details>
+<summary><b>Show HTML Data Table Code Example</b></summary>
+<p>
 
 ```
 <!-- ======== HTML TABLE: BLE TAGS STATUS ======== -->
@@ -464,3 +475,6 @@ Before using the HTML code, you must update several parameters inside the **`CON
   setInterval(refreshOnce, CONFIG.pollingMs);
 </script>
 ```
+
+</p>
+</details>

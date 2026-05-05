@@ -136,6 +136,10 @@ While it is possible to decode the payload in the **ChirpStack** directly, we re
 
 Below is the example of the **Node-RED** function (in **JavaScript**) for decoding the **Base64** payload provided by **ChirpStack** in the **MQTT** message:
 
+<details>
+<summary><b>Show Node-RED Decoder Function</b></summary>
+<p>
+
 ```js
 if (msg.payload.applicationName !== 'ember-application-chester-clime') {
     return null;
@@ -265,6 +269,9 @@ function decode(buffer) {
     return data;
 }
 ```
+
+</p>
+</details>
 
 After decoding, you can further process the data - scalarizing, adding attributes, etc. The last action in the flow should be delivering the data through some common connector, e.g., an **HTTPS** request.
 

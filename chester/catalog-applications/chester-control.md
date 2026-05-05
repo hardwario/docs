@@ -297,7 +297,12 @@ import TabItem from '@theme/TabItem';
 
 <Tabs>
   <TabItem value="lte" label="LTE">
-    ```json
+
+<details>
+<summary><b>Show JSON Example</b></summary>
+<p>
+
+```json
 {
     "accelerometer": {
         "accel_x": 0,
@@ -406,8 +411,16 @@ import TabItem from '@theme/TabItem';
     ]
 }
 ```
+
+</p>
+</details>
+
   </TabItem>
   <TabItem value="lora" label="LoRaWAN">
+
+<details>
+<summary><b>Show JSON Example</b></summary>
+<p>
 
 ```json
 {
@@ -448,6 +461,9 @@ import TabItem from '@theme/TabItem';
   ]
 }
 ```
+
+</p>
+</details>
 
   </TabItem>
 </Tabs>

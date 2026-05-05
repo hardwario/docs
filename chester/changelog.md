@@ -25,6 +25,22 @@ General platform updates are listed here. For application-specific changelogs, s
 <Tabs groupId="changelog-category">
 <TabItem value="all" label="Firmware & Applications" default>
 
+### 2026-04-27
+
+- **[FW/SDK]** LED blink changed to non-blocking, rate-limited approach — prevents blocking during blink sequences
+- **[FW/SDK]** LoRaWAN payload for 8-channel variant split into two messages to comply with payload size limits
+
+### 2026-04-14
+
+- **[FW/SDK]** Fixed build for IAQ variant combining CHESTER-Z and CHESTER-X10 features
+- **[FW/SDK]** Added CLI argument support and completed application list in shell interface
+
+### 2026-04-02
+
+- **[FW/SDK]** Added dual CHESTER-X0 module variant with CHESTER-Z support
+- **[FW/SDK]** Added shell command for 1-Wire (W1) bus device scanning
+- **[FW/SDK]** Added runtime CHESTER-Z hardware detection
+
 ### 2026-03-31
 
 - **[FW/SDK]** GNSS M8 initialization priority is now configurable via Kconfig (`CONFIG_CTR_GNSS_M8_INIT_PRIORITY`)

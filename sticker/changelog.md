@@ -25,6 +25,10 @@ Firmware source: [hardwario/sticker-firmware](https://github.com/hardwario/stick
 <Tabs groupId="changelog-category">
 <TabItem value="all" label="Firmware & Applications" default>
 
+### 2026-04-21
+
+- **[FW]** Added calibration mode with Hall sensor activation
+
 ### 2026-04-01
 
 - **[FW]** Fixed DS28E17 machine probe initialization reliability — retries `write_config` and reads back echoed register for verification

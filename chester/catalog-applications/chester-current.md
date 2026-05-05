@@ -280,6 +280,9 @@ The latest firmware is available in Catalog Applications [Firmware chapter](http
 
 ### LTE
 
+<details>
+<summary><b>Show JSON Example</b></summary>
+
 ```json
 {
   "message": {
@@ -344,6 +347,8 @@ The latest firmware is available in Catalog Applications [Firmware chapter](http
   ]
 }
 ```
+
+</details>
 
 > **Info:** The payload structure for analog channels has changed in **v3.5.1**:
 > - `raw_rms` - Contains RMS measurements in mV

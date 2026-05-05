@@ -37,6 +37,10 @@ Here you can find information about STICKER input wiring, including DIP switch s
 
 ## Example JSON Message
 
+<details>
+<summary><b>Show JSON Example</b></summary>
+<p>
+
 ```json
 {
   "event": "change",
@@ -49,6 +53,9 @@ Here you can find information about STICKER input wiring, including DIP switch s
   "input_2_count": 0
 }
 ```
+
+</p>
+</details>
 
 ## Changelog
 
