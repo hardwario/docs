@@ -64,7 +64,7 @@ cd sticker-configuration
 ### Step 1 Install Python
 
 1. Go to https://www.python.org/downloads/ and click **Download Python 3.x.x** (any version 3.10 or newer).
-2. Open the installer. On the first screen, tick **"Add python.exe to PATH"**.
+2. Open the installer. On the first screen, tick **"Add python.exe to PATH"**/ **Add Python to environment variables**.
 3. Click **Install Now** and wait for it to finish.
 4. Open the Command Prompt (press the Windows key, type `cmd`, press Enter) and verify:
 
