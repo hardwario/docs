@@ -22,8 +22,9 @@ To resolve this, you must log in as a **Customer Administrator** for that specif
 1. **Navigate** to **Customers** in the left menu.
 2. **Find** the customer, click the **Manage customer users** icon, and log in as one of their administrators. 
 3. **Workaround:** If the sub-customer does not have any Customer Administrator accounts yet, you can create a temporary test profile. You do not need to use a real email address (e.g., `test@temp.local`). Create the user, log in as them to complete this tutorial, and delete the temporary user account afterward.
-:::
 
+*(Alternatively, if you only need to grab the public link without logging in as the sub-customer, check out the [**Pro Tip below**](#-pro-tip-how-to-get-the-link-without-logging-in-as-a-sub-customer)!)*
+:::
 ---
 
 ## Step 1: Make the Device Group Public
@@ -83,5 +84,21 @@ Now that both the devices and the dashboard are public, you can generate and sha
 5. **Result:** The URL is now copied to your clipboard. 
 
 You can now send this link to your clients or users. Anyone with this link can view the dashboard and its real-time data directly in their browser without needing to log in.
+
+![](images/public-link-5.png)
+
+
+## 💡 Pro Tip: How to Get the Link Without Logging in as a Sub-customer
+
+If you are operating at the parent customer level (Tenant Administrator) and want to grab the public link without the hassle of logging in as the sub-customer's administrator, you can use this shortcut:
+
+1. **Navigate** to your main **Dashboards** (or Devices) list where you can see all dashboards/devices across your entire system, including those belonging to sub-customers.
+2. **Locate** the specific dashboard you want to share.
+3. **Find** the **Groups** column in the row of that dashboard.
+4. **Click** directly on the name of the group in that column.
+
+![](images/public-link-6.png)
+
+5. **Result:** This will redirect you straight to the group's content page. From here, you can easily click the **Chain link icon (🔗)** to copy the public link, just as described in [**Step 3**](#step-3-obtain-the-public-link) above. 
 
 ![](images/public-link-5.png)
