@@ -4,8 +4,17 @@
 const sidebars = {
   docs: [
     'introduction',
-    'getting-started',
+    'first-step',
     'configuration',
+    {
+      type: 'category',
+      label: 'NFC Configurator APP',
+      collapsed: true,
+      items: [
+        'nfc-configurator-app/setup',
+        'nfc-configurator-app/config',
+      ],
+    },
     {
       type: 'category',
       label: 'Catalog Applications',
@@ -45,8 +54,32 @@ const sidebars = {
       label: 'LoRaWAN Network Server',
       collapsed: true,
       items: [
-        'lorawan-network-server/lorawan-chirpstack',
-        'lorawan-network-server/lorawan-tts',
+        {
+          type: 'category',
+          label: 'ChirpStack',
+          link: {
+            type: 'doc',
+            id: 'lorawan-network-server/lorawan-chirpstack',
+          },
+          collapsed: true,
+          items: [
+            'lorawan-network-server/chirpstack-otaa',
+            'lorawan-network-server/chirpstack-abp',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'The Things Stack',
+          link: {
+            type: 'doc',
+            id: 'lorawan-network-server/lorawan-tts',
+          },
+          collapsed: true,
+          items: [
+            'lorawan-network-server/tts-otaa',
+            'lorawan-network-server/tts-abp',
+          ],
+        },
       ],
     },
     'developer-mode',
