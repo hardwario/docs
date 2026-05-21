@@ -1,43 +1,62 @@
 ---
 slug: cloud-connection
-title: Connecting to the Cloud
+title: 2.Cloud
 ---
 import Image from '@theme/IdealImage';
 import EditCodeBlock from './edit-code-block.js';
+
+# Connecting to the HARDWARIO Cloud
 
 In this guide, you will learn how to connect your devices to HARDWARIO Cloud by creating a new connector, transforming your data, and sending it to ThingsBoard. By the end, your data will flow automatically into the platform.
 
 ---
 
-## Step-by-Step Instructions
+## Step 1: Prepare Your Device
 
-1. #### **Create a New Connector**  
-   To establish communication with ThingsBoard, go to the `Connectors` section in the left-hand menu.  
-   Click `+ New Connector` and configure the following:  
-   • `Name` – give your connector a name  
-   • `Type` – select `Webhook` for ThingsBoard integration  
-   • `Trigger` – choose `Data`  
-   • `Tag` – assign the tag you created earlier
-   
-   ![ThingsBoard - Create a New Connector](images/thingsboard-cloud-1.png)
-   
----
+Before setting up the connector, you need to prepare your device in the HARDWARIO Cloud so it knows where to send data and how to authenticate:
 
-2. #### **Transform Data for ThingsBoard Format**  
-   ThingsBoard requires a specific data format. You need to adjust your device data using a **transformation code**.  
-   In the connector page, scroll down to the `Transformation` section and click the magnifying glass icon 📄🔍 to open the code editor.
+- **Assign a Tag** – open your device details and assign a tag (created in the right-hand menu)
+- **Add the Access Token Label** – scroll down to the very bottom of the device page to find the `Labels` section. You need to create a new label here:
+  - `Name` – enter a name for your token, e.g., `thingsboardtoken`  
+    *(Note: You can choose any name, but it must be exactly the same for all devices sharing this connector and must match the name in your transformation code)*
+  - `Value` – paste your ThingsBoard Access Token here
 
-   
-   ![ThingsBoard - Transform Data for ThingsBoard Format](images/thingsboard-cloud-4.png)
+:::info How to get your ThingsBoard Access Token
+Log in to your ThingsBoard dashboard, navigate to **Entities > Devices**, and click on your specific device. In the device details panel that pops up, click the **Copy access token** button.
+:::
 
 ---
 
-3. #### **Insert the Transformation Code**  
-   Add the transformation logic that converts incoming data to a ThingsBoard-compatible format.
+## Step 2: Create a New Connector
 
-   ![ThingsBoard - Insert the Transformation Code](images/thingsboard-cloud-6.png)
+To establish communication with ThingsBoard, go to the `Connectors` section in the left-hand menu.  
+Click `+ New Connector` and configure the following:
 
-   **Example of transformation code here:**
+- `Name` – give your connector a name
+- `Type` – select `Webhook` for ThingsBoard integration
+- `Trigger` – choose `Data`
+- `Tag` – assign the tag you created earlier
+
+![ThingsBoard - Create a New Connector](images/thingsboard-cloud-1.png)
+
+---
+
+## Step 3: Transform Data for ThingsBoard Format
+
+ThingsBoard requires a specific data format. You need to adjust your device data using a **transformation code**.  
+In the connector page, scroll down to the `Transformation` section and click the magnifying glass icon 📄🔍 to open the code editor.
+
+![ThingsBoard - Transform Data for ThingsBoard Format](images/thingsboard-cloud-4.png)
+
+---
+
+## Step 4: Insert the Transformation Code
+
+Add the transformation logic that converts incoming data to a ThingsBoard-compatible format.
+
+![ThingsBoard - Insert the Transformation Code](images/thingsboard-cloud-6.png)
+
+**Example of transformation code here:**
 
 <EditCodeBlock initialText={`function main(job) {
     let body = job.message.body;
@@ -193,10 +212,13 @@ In this guide, you will learn how to connect your devices to HARDWARIO Cloud by 
 
 ---
 
-4.  #### **Assign Devices to Connector**  
-    Scroll down and select which devices (with the matching tag) should be connected.  
-    On the left side, you'll see **incoming data** from the device.  
-    On the right side, you'll see the **transformed data** being sent to ThingsBoard.
+---
+
+## Step 5: Assign Devices to Connector
+
+Scroll down and select which devices (with the matching tag) should be connected.  
+On the left side, you'll see **incoming data** from the device.  
+On the right side, you'll see the **transformed data** being sent to ThingsBoard.
 
 
 ![ThingsBoard - Assign Devices to Connector](images/thingsboard-cloud-7.png)

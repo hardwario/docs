@@ -6,8 +6,6 @@ import Image from '@theme/IdealImage';
 
 # Notification Rules Manager
 
-## What is the Notification Rules Manager?
-
 The **Notification Rules Manager** is a tool for setting up automatic alerts based on data from your IoT devices (sensors, meters, etc.). It lets you define precise conditions under which you receive an e-mail or SMS — for example when temperature exceeds a set value, humidity drops below a threshold, or a device reports an unexpected reading.
 
 :::info Example use case
@@ -16,7 +14,7 @@ A customer operating warehouses wants to be notified when the temperature in any
 
 ---
 
-## Logging in and accessing the dashboard
+## Logging In and Accessing the Dashboard
 
 1. Log in to the platform at **app.hardwario.cloud** with your e-mail and password.
 2. In the left navigation menu, click **Notifications**.
@@ -28,7 +26,7 @@ The **Notifications** menu item is only visible to customers who have been grant
 
 ---
 
-## Access levels
+## Access Levels
 
 | Role | Access |
 |------|--------|
@@ -41,11 +39,11 @@ If you are a Customer User and need to modify a rule, contact your Customer Admi
 
 ---
 
-## Interface overview
+## Interface Overview
 
 ![](images/notifications-manager-1.png)
 
-### Table columns explained
+### Table Columns Explained
 
 | Column | Description |
 |--------|-------------|
@@ -59,11 +57,11 @@ If you are a Customer User and need to modify a rule, contact your Customer Admi
 
 ---
 
-## Creating a new rule
+## Creating a New Rule
 
 Click **+ Add Rule** in the top-right corner of the widget. The rule form opens below the header.
 
-### Selecting devices
+### Step 1: Select Devices
 
 In the **DEVICES** section, select the device(s) this rule should monitor. A single rule can watch multiple devices at the same time.
 
@@ -76,7 +74,7 @@ In the **DEVICES** section, select the device(s) this rule should monitor. A sin
 Adding multiple devices means the rule will be evaluated for *each* device independently. A notification fires whenever *any* of the selected devices meets the condition.
 :::
 
-### Selecting variables
+### Step 2: Select Variables
 
 In the **VARIABLES** section, select or type the telemetry key(s) to monitor.
 
@@ -97,7 +95,7 @@ Type any key name directly in the field and press **Enter** or click **+ Add**. 
 The variable name must match the telemetry key exactly as sent by the device (case-sensitive). To verify available keys, open the device in ThingsBoard → *Latest Telemetry* tab.
 :::
 
-### Setting the condition
+### Step 3: Set the Condition
 
 In the **CONDITION** block, define when the notification should fire.
 
@@ -108,7 +106,7 @@ In the **CONDITION** block, define when the notification should fire.
 
 Example: *Operator = > greater than, Threshold = 28* means: "Send a notification when the variable value exceeds 28."
 
-### Timing settings
+### Step 4: Configure Timing
 
 The **TIMING** block contains two optional fields for fine-grained control. Leave them at 0 for default behaviour.
 
@@ -117,7 +115,7 @@ The **TIMING** block contains two optional fields for fine-grained control. Leav
 | **Duration (min)** | The condition must be met continuously for this many minutes before a notification is sent. Eliminates short spikes. | 0 = send immediately |
 | **Cooldown (min)** | Minimum time between two notifications for this rule. Prevents notification flooding. | 0 = no limit |
 
-### Notification recipients
+### Step 5: Add Recipients
 
 **Notification type** — Select **Email** or **SMS** in the **NOTIFICATION TYPE** section. The appropriate recipient field will appear.
 
@@ -133,7 +131,7 @@ Enter a phone number in international format: `+420600123456`. Adding works the 
 You can add any number of recipients to one rule — the notification is sent to all of them simultaneously.
 :::
 
-### Saving the rule
+### Step 6: Save the Rule
 
 Once all required fields are filled in, click **Save Rule**. The rule is saved immediately and starts being evaluated in an enabled state. It appears in the rules table.
 
@@ -148,13 +146,13 @@ Once all required fields are filled in, click **Save Rule**. The rule is saved i
 
 ---
 
-## Managing existing rules
+## Managing Existing Rules
 
-### Editing a rule
+### Editing a Rule
 
 Click **Edit** on the rule you want to change. The form opens with pre-filled values. Make your changes and click **Save Rule**.
 
-### Copying a rule
+### Copying a Rule
 
 Click **Copy**. A new rule form opens with the same values as the original. Adjust what you need (e.g. different threshold or device) and save.
 
@@ -162,7 +160,7 @@ Click **Copy**. A new rule form opens with the same values as the original. Adju
 Copying is ideal when you want a similar rule for a different device or threshold, without filling in everything from scratch.
 :::
 
-### Deleting a rule
+### Deleting a Rule
 
 Click **Delete**. A confirmation dialog appears. Once confirmed, the rule is permanently removed from all devices it was saved on.
 
@@ -170,7 +168,7 @@ Click **Delete**. A confirmation dialog appears. Once confirmed, the rule is per
 Deletion is permanent and cannot be undone. If you only want to temporarily stop notifications, use the **Enabled** toggle instead.
 :::
 
-### Enabling / disabling a rule
+### Enabling / Disabling a Rule
 
 Each rule has a toggle switch in the **Enabled** column. Switching it off deactivates the rule — no notifications will be sent, but the rule remains saved and can be re-enabled at any time.
 
@@ -178,13 +176,13 @@ Each rule has a toggle switch in the **Enabled** column. Switching it off deacti
 
 ---
 
-## Filtering and sorting rules
+## Filtering and Sorting Rules
 
 ### Search
 
 Use the *Search rules...* field in the top-right corner. Results update in real time across all fields (device name, variable, recipient, etc.).
 
-### Customer filter
+### Customer Filter
 
 If your organisation manages sub-customers, a dropdown filter appears in the top bar. Selecting a customer shows only rules for devices belonging to that customer.
 
@@ -213,7 +211,7 @@ If you are unsure, set **Duration = 0** and **Cooldown = 30**. Notifications fir
 
 ---
 
-## Frequently asked questions
+## Frequently Asked Questions
 
 **I did not receive a notification even though the condition should have been met. What should I check?**
 - Is the rule enabled? Check the **Enabled** toggle in the table.
