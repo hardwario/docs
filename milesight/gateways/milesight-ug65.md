@@ -50,13 +50,57 @@ Milesight UG65 is a **semi-industrial LoRaWAN® gateway** powered by the **SX130
 3. Open web browser and go to **http://192.168.1.1**
 4. Log in with: **admin** / **password**
 
-**Important Note:**
-- The gateway comes with a **default destination** that **cannot be modified**
-- You must **disable** this default destination and **create a new one**
+---
+
+## General settings
+
+Before configuring packet forwarding, set up the basic system parameters via the gateway's web interface.
+
+### System → General Settings
+
+Set the **Hostname** to the device ID printed on the device label (e.g., `ER10G-XXXX-XX`).
+
+| Setting  | Value                                  |
+|----------|----------------------------------------|
+| Hostname | Device ID from label (`ER10G-XXXX-XX`) |
+
+### System → Time
+
+Configure the gateway's time zone and enable NTP synchronization.
+
+| Setting           | Value                            |
+|-------------------|----------------------------------|
+| Time Zone         | 1 Czech Republic (Prague)        |
+| Enable NTP Server | True                             |
+
+### System → User Management
+
+Change the default credentials to secure the gateway.
+
+| Setting  | Value                       |
+|----------|-----------------------------|
+| Username | *(set a new username)*      |
+| Password | *(set a strong password)*   |
+
+### Network → Interface → WLAN
+
+Disable the gateway's Wi-Fi access point.
+
+| Setting | Value |
+|---------|-------|
+| Enable  | False |
+
+:::note
+This disables the Wi-Fi access point used to connect to the gateway's web interface. Make sure you have working access via Ethernet before disabling it.
+:::
 
 ---
 
 ## Packet forwarding (CUPS)
+
+:::caution
+The gateway comes with a **default destination** that **cannot be modified**. You must **disable** this default destination and **create a new one** as described below.
+:::
 
 **What is CUPS?**
 CUPS (Configuration and Update Server) automatically configures your gateway. You only need to upload the CUPS key, and the gateway will download all other settings automatically.
@@ -86,6 +130,10 @@ CUPS (Configuration and Update Server) automatically configures your gateway. Yo
 | Type   | Value                |
 |--------|----------------------|
 | Power  | PoE or power adapter |
+
+:::warning
+If the gateway is powered via the RJ45 Ethernet cable with PoE, **do not connect an external power adapter at the same time**. Using both power sources simultaneously can damage the device.
+:::
 
 ---
 
