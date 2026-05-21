@@ -1,6 +1,6 @@
 ---
 slug: email-reports
-title: Email Reports
+title: Reports
 ---
 import Image from '@theme/IdealImage';
 

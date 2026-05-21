@@ -1,6 +1,6 @@
 ---
 slug: email-notification
-title: Email Notification
+title: Email Notifications
 ---
 import Image from '@theme/IdealImage';
 
@@ -24,7 +24,7 @@ Before you begin, ensure that your ThingsBoard instance has an outgoing SMTP ser
 
 ## Step-by-Step Guide
 
-### 1. Enrichment: Originator Fields (Adding Labels)
+### Step 1: Enrichment: Originator Fields (Adding Labels)
 By default, ThingsBoard does not pass the "Label" of a device into the rule engine metadata. We need to fetch it first so we can use it in our scripts and emails.
 * **Node Type:** `Enrichment` -> `originator fields`
 * **Name:** Adding Labels
@@ -33,7 +33,7 @@ By default, ThingsBoard does not pass the "Label" of a device into the rule engi
   * Target key: `deviceLabel`  
   * Add mapped originator fields to: `Metadata`
 
-### 2. Filter: Script (Device Filter)
+### Step 2: Filter: Script (Device Filter)
 We only want to process alerts for specific devices based on their labels.
 * **Node Type:** `Filter` -> `script`
 * **Name:** Device Filter
@@ -48,7 +48,7 @@ return deviceLabel === '2159020251' || deviceLabel === '2159020252';
 
 * **Connection:** Connect the Adding Labels node to this node using the Success link.
 
-### 3. Transformation: Script (Formatting Data)
+### Step 3: Transformation: Script (Formatting Data)
 Telemetry keys often contain dots (e.g., hygrometer.temperature.avg), which can break the default email templating. Also, the default timestamp is in Unix milliseconds (UTC). This script extracts the values safely and formats the time to a readable format (adding 1 hour for CET).
 
 * **Node Type:** `Transformation` -> `script`
@@ -101,7 +101,7 @@ return {msg: msg, metadata: metadata, msgType: msgType};
 
 * **Connection:** Connect the Device Filter node to this node using the True link.
 
-### 4. Filter: Script (Threshold Filters)
+### Step 4: Filter: Script (Threshold Filters)
 Now we split the flow based on specific conditions. Create a filter for each condition. For example, to check for low temperature:
 
 * **Node Type:** `Filter` -> `script`
@@ -115,7 +115,7 @@ return msg['hygrometer.temperature.avg'] < 17;
 
 * **Connection:** Connect the Temperature & Humidity Formatting node to all your threshold filters using Success links.
 
-### 5. Transformation: To Email (Email Info)
+### Step 5: Transformation: To Email (Email Info)
 This node constructs the actual email subject and body. You can choose whether to send a simple Plain Text email or a formatted HTML email. Create one for each threshold filter.
 
 * **Node Type:** `Transformation` -> `to email`
@@ -160,7 +160,7 @@ Your HARDWARIO IoT Team
 
 * **Connection:** Connect your respective threshold filter (e.g., Temperature < 17) to this node using the True link.
 
-### 6. Action: Send Email
+### Step 6: Action: Send Email
 This is the final execution node that communicates with your SMTP server to dispatch the constructed emails.
 
 * **Node Type:** `Action` -> `send email`
@@ -168,7 +168,7 @@ This is the final execution node that communicates with your SMTP server to disp
 * **Configuration:** Leave as default (it uses the System SMTP settings).
 * **Connection:** Connect all your Email Info nodes to this single Send Email node using Success links.
 
-### 7. Connecting to the Root Rule Chain
+### Step 7: Connecting to the Root Rule Chain
 Your custom notification Rule Chain is now fully built, but ThingsBoard doesn't know it should route incoming telemetry to it. We need to link it inside the main Root Rule Chain.
 
 1. Go to **Rule Chains** and open your **Root Rule Chain** (the default chain that handles all incoming messages).
@@ -195,14 +195,14 @@ Here is the modified flow:
 
 ![](images/email-notification-3.png)
 
-### 1. Read the Last Email Time
+### Step 1: Read the Last Email Time
 Add a node at the very beginning of the flow (before your threshold filters) to retrieve the timestamp of the last sent email.
 * **Node Type:** `Enrichment` -> `originator attributes`
 * **Name:** Get Last Email Time
 * **Server attributes:** Add `lastEmailTime`
 * **Connection:** Connect this node to the start of your threshold filters (e.g., replacing the connection from your previous formatting nodes).
 
-### 2. Modify the Threshold Filters to Check the Time
+### Step 2: Modify the Threshold Filters to Check the Time
 Update your existing threshold filter scripts (e.g., `Temperature < 17`) to not only check the telemetry value but also verify if the required time delay has elapsed since `lastEmailTime`.
 * **Node Type:** `Filter` -> `script`
 * **Code Example (Checking for a 24-hour delay = 86400000 milliseconds):**
@@ -230,7 +230,7 @@ return false; // Do not send email
 
 *(Apply this logic to all your threshold filters).*
 
-### 3. Prepare the New Timestamp
+### Step 3: Prepare the New Timestamp
 If the filter passes (an email should be sent), we need to create a new message to save the current time back to the device's server attributes. We must route the flow in two directions: one to send the email, and one to update the attribute.
 * **Node Type:** `Transformation` -> `script`
 * **Name:** Prepare Timestamp - [Condition Name] (e.g., Prepare Timestamp - Temp < 17)
@@ -246,7 +246,7 @@ return {msg: newMsg, metadata: metadata, msgType: 'POST_ATTRIBUTES_REQUEST'};
 
 * **Connection:** Connect the specific threshold filter (e.g., `Temperature < 17`) to this node using the **True** link.
 
-### 4. Save the New Timestamp
+### Step 4: Save the New Timestamp
 Finally, use an action node to save the new timestamp as a server attribute so it can be read during the next telemetry update.
 * **Node Type:** `Action` -> `save attributes`
 * **Name:** Save Last Email Time

@@ -1,19 +1,19 @@
 ---
 slug: users-managing
-title: User Management
+title: 4.User Management
 ---
 
 import Image from '@theme/IdealImage';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# Managing User Visibility and Permissions in ThingsBoard
+# Managing User Visibility and Permissions
 
 ThingsBoard is incredibly powerful because it allows us to **completely determine what a customer can and cannot see**, and precisely define what they can and cannot do within the system. This ensures a clean and secure environment for all your users.
 
 ---
 
-## 1. Creating User Roles
+## Step 1: Creating User Roles
 
 The first step is to define roles, which act as sets of permissions.
 
@@ -44,7 +44,7 @@ For users with restricted access, it is recommended to create a **Generic** role
 
 ---
 
-## 2. Creating User Groups
+## Step 2: Creating User Groups
 
 Next, you need to create groups to which you will assign the roles created above.
 
@@ -79,7 +79,7 @@ If you are adding a **Generic** role (like the profile editing role), you only n
 
 ---
 
-## 3. Adding Users to the Group
+## Step 3: Adding Users to the Group
 
 You can add users to your newly configured group in two ways:
 
