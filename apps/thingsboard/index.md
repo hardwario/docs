@@ -16,7 +16,86 @@ import Image from '@theme/IdealImage';
 
 ## Example of an IoT Data Dashboard
 
-![ThingsBoard Dashboard](images/thingsboard-dashboard.png)
+import React, { useRef, useState, useEffect } from 'react';
+
+export const DashboardContainer = () => {
+  const containerRef = useRef(null);
+  const [isFullscreen, setIsFullscreen] = useState(false);
+
+  // Tento hook sleduje, zda se prohlížeč přepnul do režimu celé obrazovky
+  useEffect(() => {
+    const handleFullscreenChange = () => {
+      setIsFullscreen(!!document.fullscreenElement);
+    };
+
+    document.addEventListener('fullscreenchange', handleFullscreenChange);
+    return () => document.removeEventListener('fullscreenchange', handleFullscreenChange);
+  }, []);
+
+  const toggleFullscreen = () => {
+    if (!containerRef.current) return;
+
+    if (!document.fullscreenElement) {
+      containerRef.current.requestFullscreen().catch(err => {
+        console.error(`Chyba při spouštění fullscreenu: ${err.message}`);
+      });
+    } else {
+      document.exitFullscreen();
+    }
+  };
+
+  return (
+    <div style={{ margin: '20px 0' }}>
+      {/* Decentní tlačítko přesně podle zadání */}
+      <div style={{ textAlign: 'right', marginBottom: '10px' }}>
+        <button 
+          onClick={toggleFullscreen}
+          style={{
+            background: 'none',
+            border: 'none',
+            cursor: 'pointer',
+            color: '#666',
+            fontSize: '14px',
+            textDecoration: 'underline'
+          }}
+        >
+          ⛶ Fullscreen
+        </button>
+      </div>
+
+      {/* Kontejner, který se buď drží v textu, nebo se roztáhne na celou obrazovku */}
+      <div 
+        ref={containerRef} 
+        style={{ 
+          width: isFullscreen ? '100vw' : '960px', 
+          height: isFullscreen ? '100vh' : '525px', 
+          overflow: 'hidden', 
+          position: 'relative',
+          backgroundColor: '#fff',
+          border: isFullscreen ? 'none' : '1px solid #e0e0e0',
+          borderRadius: isFullscreen ? '0' : '8px'
+        }}
+      >
+        <iframe 
+          src="https://app.hardwario.cloud/dashboard/15bcc940-5504-11f1-b26d-7f43ae666fcf?publicId=b11cbfe0-55bc-11f1-b26d-7f43ae666fcf" 
+          width={isFullscreen ? "100%" : "1600px"} 
+          height={isFullscreen ? "100%" : "900px"} 
+          frameBorder="0" 
+          allowFullScreen
+          style={{ 
+            transform: isFullscreen ? 'none' : 'scale(0.6)', 
+            transformOrigin: '0 0', 
+            position: 'absolute',
+            top: 0,
+            left: 0
+          }}
+        />
+      </div>
+    </div>
+  );
+};
+
+<DashboardContainer />
 
 ---
 
