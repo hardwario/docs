@@ -51,7 +51,7 @@ const config = {
         language: ['en'],
         highlightSearchTermsOnTargetPage: true,
         explicitSearchResultPath: true,
-        docsRouteBasePath: ['chester', 'ember', 'fiber', 'tapper', 'tower', 'cloud', 'gauger', 'apps', 'sticker', 'milesight', 'rakwireless'],
+        docsRouteBasePath: ['chester', 'ember', 'fiber', 'tapper', 'tower', 'cloud', 'gauger', 'glider', 'apps', 'sticker', 'milesight', 'rakwireless'],
       },
     ],
   ],
@@ -130,6 +130,16 @@ const config = {
     [
       '@docusaurus/plugin-content-docs',
       ({
+        id: 'glider',
+        path: 'glider',
+        routeBasePath: 'glider',
+        sidebarPath: require.resolve('./sidebars-glider.js'),
+        editUrl: 'https://github.com/hardwario/docs/edit/main',
+      }),
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      ({
         id: 'apps',
         path: 'apps',
         routeBasePath: 'apps',
@@ -200,6 +210,7 @@ const config = {
               { to: '/ember/',   label: 'EMBER',   activeBaseRegex: `/ember/` },
               { to: '/fiber/',   label: 'FIBER',   activeBaseRegex: `/fiber/` },
               { to: '/gauger/',  label: 'GAUGER',  activeBaseRegex: `/gauger/` },
+              { to: '/glider/',  label: 'GLIDER',  activeBaseRegex: `/glider/` },
               { to: '/tapper/',  label: 'TAPPER',  activeBaseRegex: `/tapper/` },
               { to: '/tower/',   label: 'TOWER',   activeBaseRegex: `/tower/` },
             ],
