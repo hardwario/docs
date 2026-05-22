@@ -1,6 +1,6 @@
 ---
 slug: creating-dashboard
-title: 3.Dashboards
+title: Dashboards
 ---
 import Image from '@theme/IdealImage';
 
