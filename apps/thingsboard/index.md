@@ -21,8 +21,9 @@ import React, { useRef, useState, useEffect } from 'react';
 export const DashboardContainer = () => {
   const containerRef = useRef(null);
   const [isFullscreen, setIsFullscreen] = useState(false);
+  const [scale, setScale] = useState(0.6); // Výchozí měřítko
 
-  // Tento hook sleduje, zda se prohlížeč přepnul do režimu celé obrazovky
+  // Sledování zapnutí/vypnutí fullscreenu
   useEffect(() => {
     const handleFullscreenChange = () => {
       setIsFullscreen(!!document.fullscreenElement);
@@ -30,6 +31,23 @@ export const DashboardContainer = () => {
 
     document.addEventListener('fullscreenchange', handleFullscreenChange);
     return () => document.removeEventListener('fullscreenchange', handleFullscreenChange);
+  }, []);
+
+  // Sledování šířky kontejneru pro plynulý responzivní design (zoom/menší okna)
+  useEffect(() => {
+    if (!containerRef.current) return;
+
+    const observer = new ResizeObserver((entries) => {
+      for (let entry of entries) {
+        // Zjistíme, kolik pixelů nám Docusaurus aktuálně dovolí využít
+        const availableWidth = entry.contentRect.width;
+        // Přepočítáme měřítko (1600 je originální šířka iframe)
+        setScale(availableWidth / 1600);
+      }
+    });
+
+    observer.observe(containerRef.current);
+    return () => observer.disconnect();
   }, []);
 
   const toggleFullscreen = () => {
@@ -46,7 +64,7 @@ export const DashboardContainer = () => {
 
   return (
     <div style={{ margin: '20px 0' }}>
-      {/* Decentní tlačítko přesně podle zadání */}
+      {/* Tlačítko */}
       <div style={{ textAlign: 'right', marginBottom: '10px' }}>
         <button 
           onClick={toggleFullscreen}
@@ -63,12 +81,12 @@ export const DashboardContainer = () => {
         </button>
       </div>
 
-      {/* Kontejner, který se buď drží v textu, nebo se roztáhne na celou obrazovku */}
+      {/* Kontejner s dynamickou velikostí */}
       <div 
         ref={containerRef} 
         style={{ 
-          width: isFullscreen ? '100vw' : '960px', 
-          height: isFullscreen ? '100vh' : '525px', 
+          width: '100%', // Nyní zabere vždy přesně tolik místa, kolik může
+          height: isFullscreen ? '100vh' : `${880 * scale}px`, // Dynamická výška podle měřítka
           overflow: 'hidden', 
           position: 'relative',
           backgroundColor: '#fff',
@@ -83,7 +101,7 @@ export const DashboardContainer = () => {
           frameBorder="0" 
           allowFullScreen
           style={{ 
-            transform: isFullscreen ? 'none' : 'scale(0.6)', 
+            transform: isFullscreen ? 'none' : `scale(${scale})`, // Aplikace vypočítaného měřítka
             transformOrigin: '0 0', 
             position: 'absolute',
             top: 0,
