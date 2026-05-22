@@ -38,12 +38,12 @@ const sidebars = {
       },
       collapsed: true,
       items: [
-        'thingsboard/creating-device',
+        'thingsboard/users',
         'thingsboard/cloud-connection',
         'thingsboard/creating-dashboard',
-        'thingsboard/users-managing',
-        'thingsboard/users',
+        'thingsboard/creating-device',
         'thingsboard/public-link',
+        'thingsboard/users-managing',
         {
           type: 'category',
           label: 'Features',

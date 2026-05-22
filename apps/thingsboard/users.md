@@ -1,6 +1,6 @@
 ---
 slug: users
-title: 5.Adding Users
+title: Adding Users
 ---
 
 import Image from '@theme/IdealImage';

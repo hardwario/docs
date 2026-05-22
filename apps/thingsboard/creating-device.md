@@ -1,6 +1,6 @@
 ---
 slug: creating-device
-title: 1.Devices
+title: Devices
 ---
 import Image from '@theme/IdealImage';
 

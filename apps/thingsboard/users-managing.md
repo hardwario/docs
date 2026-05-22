@@ -1,6 +1,6 @@
 ---
 slug: users-managing
-title: 4.User Management
+title: User Management
 ---
 
 import Image from '@theme/IdealImage';

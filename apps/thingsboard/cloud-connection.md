@@ -1,6 +1,6 @@
 ---
 slug: cloud-connection
-title: 2.Cloud
+title: Cloud
 ---
 import Image from '@theme/IdealImage';
 import EditCodeBlock from './edit-code-block.js';

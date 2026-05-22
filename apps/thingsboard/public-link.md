@@ -1,6 +1,6 @@
 ---
 slug: public-link
-title: 6.Public Link
+title: Public Link
 ---
 
 import Image from '@theme/IdealImage';
