@@ -70,6 +70,19 @@ const FeatureList = [
     ),
   },
   {
+    title: 'GLIDER',
+    subtitle: 'Cellular IoT Sensor Logger',
+    link: '/glider/',
+    src: '/img/glider.png',
+    width: 200,
+    height: 200,
+    description: (
+      <>
+        GLIDER is a compact LTE-M / NB-IoT device built around the Nordic nRF9151, designed for temperature, pulse, and Modbus RTU monitoring with HARDWARIO Cloud integration.
+      </>
+    ),
+  },
+  {
     title: 'TAPPER',
     subtitle: 'NFC Tag Reader',
     link: '/tapper/',
