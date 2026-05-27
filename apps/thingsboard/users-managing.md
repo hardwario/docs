@@ -94,3 +94,32 @@ You can add users to your newly configured group in two ways:
 
 ![](images/user-2.png)
 
+---
+
+## Step 4: Creating and Sharing Device Groups
+
+As mentioned in the previous steps, to give users access to specific devices without showing them everything, you need to use **Device Groups**. ThingsBoard allows a flexible structure where a single device group can be shared with multiple user groups (for example, allowing both the end customer and your internal maintenance team to see the same devices).
+
+### Creating a Device Group
+1. Go to the **Entities** section in the left menu and select **Devices**.
+2. Switch to the **Groups** tab.
+3. Click the **plus (+) icon** in the top right corner to create a new group.
+4. Enter a **Name** and **Description** for the group, then save it.
+
+### Adding Devices to the Group
+1. Click on your newly created device group to open it.
+2. Go to the **Entities** tab inside the group.
+3. Click the **plus (+) icon** and select the specific devices you want to include. *(Note: A single device can belong to multiple groups at the same time).*
+
+### Sharing the Device Group with Users
+Once your device group is populated, you need to grant users access to it by linking it to the user groups created in Step 2.
+
+1. Go back to **Users** -> **Groups** and open your specific user group.
+2. Navigate to the **Roles** tab and click the **plus (+) icon**.
+3. Select a **Group** role type (e.g., a role that grants read-only or read/write access).
+4. Set the **Type** to *Device* and select your newly created **Entity Group** (the Device Group).
+5. Click **Add**.
+
+:::tip
+You can repeat this sharing process across as many user groups as needed. The exact same device group can be shared with "Customer A" (with read-only rights) and your "Service Team" (with full access rights) simultaneously!
+:::

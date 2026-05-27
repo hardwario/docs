@@ -93,3 +93,33 @@ Uživatele můžete do připravené skupiny přidat dvěma způsoby:
     * Vyberte požadovanou skupinu a potvrďte tlačítkem **Update**.
 
 ![](images/user-2.png)
+
+---
+
+## 4. Vytvoření a sdílení skupin zařízení
+
+Jak již bylo zmíněno v předchozích krocích, abyste uživatelům poskytli přístup ke konkrétním zařízením, aniž by viděli vše ostatní, musíte využít **Skupiny zařízení (Device Groups)**. ThingsBoard umožňuje flexibilní strukturu, kdy lze jednu skupinu zařízení sdílet s více uživatelskými skupinami (můžete tak například nastavit, aby ta samá zařízení viděl koncový zákazník a zároveň váš interní servisní tým).
+
+### Vytvoření skupiny zařízení
+1. V levém menu přejděte do sekce **Entities** a vyberte **Devices**.
+2. Přepněte se na záložku **Groups**.
+3. Klikněte na tlačítko **plus (+)** vpravo nahoře pro vytvoření nové skupiny.
+4. Zadejte **Název (Name)** a **Popis (Description)** skupiny a uložte ji.
+
+### Přidání zařízení do skupiny
+1. Kliknutím na nově vytvořenou skupinu zařízení ji otevřete.
+2. Uvnitř skupiny přejděte na záložku **Entities**.
+3. Klikněte na tlačítko **plus (+)** a vyberte konkrétní zařízení, která chcete do skupiny přidat. *(Poznámka: Jedno konkrétní zařízení může být součástí více různých skupin současně).*
+
+### Sdílení skupiny zařízení uživatelům
+Jakmile máte skupinu zařízení naplněnou, musíte k ní uživatelům udělit přístup tím, že ji propojíte s uživatelskou skupinou, kterou jste si vytvořili v kroku 2.
+
+1. Vraťte se do sekce **Users** -> **Groups** a otevřete vaši konkrétní uživatelskou skupinu.
+2. Přejděte na záložku **Roles** a klikněte na tlačítko **plus (+)**.
+3. Vyberte typ role **Group** (např. roli, která dává uživatelům práva pouze pro čtení, nebo pro plný přístup).
+4. Položku **Type** nastavte na *Device* a vyberte vaši nově vytvořenou **Entity Group** (vaši skupinu zařízení).
+5. Klikněte na tlačítko **Add**.
+
+:::tip
+Tento proces sdílení můžete opakovat pro libovolné množství uživatelských skupin. Naprosto stejnou skupinu zařízení tak můžete sdílet například "Zákazníkovi A" (pouze s právy pro čtení) a zároveň vašemu "Servisnímu týmu" (s plnými právy k úpravám) najednou!
+:::
