@@ -57,6 +57,35 @@ A height of `800px` is recommended for full dashboards to prevent excessive inte
 
 ---
 
+## Embedding a Single Widget
+
+Sometimes you only want to display a **single chart or widget** instead of an entire dashboard. ThingsBoard does not currently provide a clean public URL for an individual widget, so the recommended approach is:
+
+> **Create a separate dashboard for each widget you want to embed.**
+
+In practice:
+1. Create a new dashboard and add only the **one widget** you want to display.
+2. Remove any extra layout elements, headers, or state controllers so only the chart remains.
+3. Make this single-widget dashboard public and embed it exactly as described in [Embedding a Full Dashboard](#embedding-a-full-dashboard).
+
+Because the dashboard contains only one widget, you can use a **smaller height** to fit it neatly into your page:
+
+```jsx
+<iframe
+  src="https://app.hardwario.cloud/dashboard/<DASHBOARD_ID>?publicId=<PUBLIC_ID>"
+  width="100%"
+  height="400px"
+  frameBorder="0"
+  allowFullScreen
+/>
+```
+
+:::tip
+Adjust `height` to match the widget — around `300–450px` usually works well for a single chart. This per-widget dashboard pattern is the cleanest way to embed individual charts until ThingsBoard offers native single-widget public links.
+:::
+
+---
+
 ## Formatting Rules for Docusaurus (MDX)
 
 If you are using Docusaurus or any MDX-based framework, plain HTML can break the build or render incorrectly. Always follow these two rules.
