@@ -57,6 +57,7 @@ const sidebars = {
             'thingsboard/notifications-manager',
             'thingsboard/email-reports',
             'thingsboard/rule-engine',
+            'thingsboard/embedding-dashboards',
           ],
         },
       ],
