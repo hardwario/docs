@@ -54,6 +54,17 @@ Automatically generate and send periodic PDF reports to your customers on a defi
 
 ---
 
+## [Embedding Dashboards](embedding-dashboards)
+
+Embed public ThingsBoard dashboards directly into external web applications using a simple `iframe`. The approach is optimized for React-based documentation frameworks like Docusaurus (MDX), so your live charts render right inside your own pages.
+
+**Use dashboard embedding when you need to:**
+- Display live telemetry and charts inside an external website or documentation page
+- Share a read-only dashboard without requiring viewers to log in
+- Integrate ThingsBoard visuals into a Docusaurus (MDX) project with the correct JSX syntax
+
+---
+
 ## [Rule Engine](rule-engine)
 
 The Rule Engine is ThingsBoard's core automation system. It processes every incoming message from your devices using a visual node-based editor, giving you full control over data transformation, alarm management, and third-party integrations.
