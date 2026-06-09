@@ -35,6 +35,7 @@ const sidebars = {
               collapsed: true,
               items: []
             },
+            'sticker-input-wiring/external-sensors',
           ]
         },
         'catalog-applications/sticker-motion',
