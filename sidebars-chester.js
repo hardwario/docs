@@ -127,7 +127,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Supported Devices',
+      label: 'Supported Sensors',
       link: {
         type: 'doc',
         id: 'supported-devices/index',
