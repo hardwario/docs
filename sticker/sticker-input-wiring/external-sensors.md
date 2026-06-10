@@ -19,6 +19,12 @@ This chapter describes the currently supported external interfaces:
 
 **MACHINE PROBE** is an external measurement probe designed to be mounted directly on the monitored equipment. A single enclosure integrates a set of digital sensors (temperature, humidity, accelerometer, ambient light, Hall sensor) that communicate over an internal **I²C** bus. A 1-Wire-to-I²C bridge exposes the whole probe over a single **1-Wire** data line, so from the perspective of STICKER Input the probe behaves as one device connected with a three-wire cable.
 
+:::tip
+
+The MACHINE PROBE is not limited to STICKER Input — it is also fully compatible with **HARDWARIO CHESTER**, which exposes the same 1-Wire interface. The same probe can therefore be reused across both platforms without any hardware modification.
+
+:::
+
 ### Description and real-world use
 
 The probe has already proven itself in the field — for example monitoring **shakers** at OK SERVIS, where it reliably:
@@ -28,6 +34,16 @@ The probe has already proven itself in the field — for example monitoring **sh
 - detects **motion, shock and vibration** using its accelerometer.
 
 By combining these quantities you can monitor not only the operating conditions but also the actual operation of the machine — for instance recognizing whether the equipment is genuinely running, has stopped, or is vibrating abnormally.
+
+#### Example: monitoring motor vibration
+
+A typical use case is **vibration monitoring of electric motors, pumps and fans**. The MACHINE PROBE is mounted directly on the motor housing, and its built-in accelerometer continuously senses mechanical vibration. From the measured data you can:
+
+- confirm whether the motor is **running or stopped** (presence and level of vibration),
+- detect a **gradual increase in vibration** that often precedes a mechanical fault — worn bearings, shaft misalignment or an unbalanced load,
+- combine the vibration reading with the probe's **temperature** measurement to catch overheating that develops alongside excessive vibration.
+
+This makes the probe a simple building block for **predictive maintenance**: instead of waiting for a motor to fail, the trend in vibration and temperature is sent over LoRaWAN and an alert can be raised before a breakdown occurs.
 
 ### Electrical specifications
 
