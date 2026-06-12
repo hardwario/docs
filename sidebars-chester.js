@@ -157,6 +157,7 @@ const sidebars = {
             'supported-devices/modbus/carlo-gavazzi-em5xx-series',
             'supported-devices/modbus/orno-or-we-504',
             'supported-devices/modbus/orno-or-we-516',
+            'supported-devices/modbus/piketronic-rpp-r',
             'supported-devices/modbus/schneider-electric-iem3xxx-series',
           ]
         },
