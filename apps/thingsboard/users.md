@@ -54,7 +54,7 @@ If you skipped the activation step during creation, or if you need to resend the
 
 ---
 
-## How Change Your Password
+## How to Change Your Password
 
 1. Click on the **three dots** next to your user icon in the top right corner.
 2. Select **Account** from the drop-down menu.
