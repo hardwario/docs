@@ -46,6 +46,10 @@ See [**Ordering Codes**](../ordering-codes.md) for more details.
 
 Firmware build shield options: `ctr_lrw ctr_lte ctr_x3_a` or `ctr_lrw ctr_lte ctr_x3_b`
 
+:::info
+Since **v3.5.5**, the firmware built with `ctr_x3_b` detects the CHESTER-X3 module in slot B at runtime. A single firmware therefore covers both single-slot (A only) and dual-slot (A+B) hardware — channels B1/B2 are skipped automatically when the slot B module is not installed.
+:::
+
 ### CHESTER Scale Z {#chester-scale-z}
 
 The catalog application **CHESTER Scale Z** includes backup battery support for uninterrupted operation.
@@ -376,6 +380,10 @@ Learn how to activate and configure this feature in the [**CHESTER BLE Tag Subsy
 ---
 
 ## Changelog
+
+### v3.5.5 — 2026-06-12
+
+- **Added**: Runtime detection of **CHESTER-X3 in slot B** — a single firmware now covers both single-slot (A) and dual-slot (A+B) hardware; channels B1/B2 are skipped when the module is not installed
 
 ### v3.5.0 — 2025-12-03
 
