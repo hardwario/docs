@@ -40,7 +40,7 @@ The hardware of this application consists of the following ordering codes:
 
 See [**Ordering Codes**](../ordering-codes.md) for more details.
 
-Firmware build shield options: `ctr_lrw ctr_lte ctr_s2`
+Firmware build variant: `west chester-update clime --variant "CHESTER Clime"`
 
 ### CHESTER Clime Z
 
@@ -57,7 +57,7 @@ The hardware of this application consists of the following ordering codes:
 
 See [**Ordering Codes**](../ordering-codes.md) for more details.
 
-Firmware build shield options: `ctr_lrw ctr_lte ctr_s2 ctr_z`
+Firmware build variant: `west chester-update clime --variant "CHESTER Clime"` (CHESTER-Z backup support is built into the base **CHESTER Clime** firmware)
 
 ### CHESTER Clime IAQ
 
@@ -88,7 +88,7 @@ The hardware of this application consists of the following ordering codes:
 
 See [**Ordering Codes**](../ordering-codes.md) for more details.
 
-Firmware build shield options: `ctr_lrw ctr_lte ctr_s1 ctr_x10`
+Firmware build variant: `west chester-update clime --variant "CHESTER Clime IAQ"`
 
 
 
@@ -103,7 +103,7 @@ The hardware of this application consists of the following ordering codes:
 
 See [**Ordering Codes**](../ordering-codes.md) for more details.
 
-Firmware build shield options: `ctr_lrw ctr_lte ctr_ds18b20`
+Firmware build variant: `west chester-update clime --variant "CHESTER Clime"` (DS18B20 1-Wire support is built into the base **CHESTER Clime** firmware)
 
 ### CHESTER Clime 1WH
 
@@ -117,7 +117,7 @@ The hardware of this application consists of the following ordering codes:
 
 See [**Ordering Codes**](../ordering-codes.md) for more details.
 
-Firmware build shield options: `ctr_lrw ctr_lte ctr_ds18b20 ctr_s2`
+Firmware build variant: `west chester-update clime --variant "CHESTER Clime"` (DS18B20 1-Wire and CHESTER-S2 support is built into the base **CHESTER Clime** firmware)
 
 ### CHESTER Clime RTD
 
@@ -131,7 +131,7 @@ The hardware of this application consists of the following ordering codes:
 
 See [**Ordering Codes**](../ordering-codes.md) for more details.
 
-Firmware build shield options: `ctr_lrw ctr_lte ctr_rtd_a`
+Firmware build variant: `west chester-update clime --variant "CHESTER Clime RTD"`
 
 ### CHESTER Clime TC
 
@@ -145,7 +145,7 @@ The hardware of this application consists of the following ordering codes:
 
 See [**Ordering Codes**](../ordering-codes.md) for more details.
 
-Firmware build shield options: `ctr_lrw ctr_lte ctr_tc_a`
+Firmware build variant: `west chester-update clime --variant "CHESTER Clime TC"`
 
 ## Measurement and Behavior
 

@@ -60,6 +60,18 @@ const sidebars = {
             'thingsboard/embedding-dashboards',
           ],
         },
+        {
+          type: 'category',
+          label: 'Integrations',
+          link: {
+            type: 'doc',
+            id: 'thingsboard/integrations',
+          },
+          collapsed: true,
+          items: [
+            'thingsboard/chirpstack-integration',
+          ],
+        },
       ],
     },
     {

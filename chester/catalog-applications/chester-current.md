@@ -29,7 +29,7 @@ The catalog **CHESTER Current** hardware consists of the following ordering code
 
 See [**Ordering Codes**](https://docs.hardwario.com/chester/ordering-codes) for more details.
 
-Firmware build shield options: `ctr_k1 ctr_lte`
+Firmware build variant: `west chester-update current --variant "CHESTER Current"`
 
 ### CHESTER Current Z
 
@@ -42,7 +42,7 @@ The catalog **CHESTER Current Z** hardware consists of the following ordering co
 
 See [**Ordering Codes**](https://docs.hardwario.com/chester/ordering-codes) for more details.
 
-Firmware build shield options: `ctr_k1 ctr_lte ctr_z`
+Firmware build variant: `west chester-update current --variant "CHESTER Current Z"`
 
 ### CHESTER Current 1W
 
@@ -56,7 +56,7 @@ The hardware of this application consists of the following ordering codes:
 
 See [**Ordering Codes**](https://docs.hardwario.com/chester/ordering-codes) for more details.
 
-Firmware build shield options: `ctr_ds18b20 ctr_k1 ctr_lte`
+Firmware build variant: `west chester-update current --variant "CHESTER Current"` (DS18B20 1-Wire support is built into the base **CHESTER Current** firmware)
 
 ### Probes
 

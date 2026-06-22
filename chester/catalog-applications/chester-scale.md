@@ -44,7 +44,7 @@ The hardware of this application consists of the following ordering codes:
 
 See [**Ordering Codes**](../ordering-codes.md) for more details.
 
-Firmware build shield options: `ctr_lrw ctr_lte ctr_x3_a` or `ctr_lrw ctr_lte ctr_x3_b`
+Firmware build variant: `west chester-update scale --variant "CHESTER Scale"`
 
 ### CHESTER Scale Z {#chester-scale-z}
 
@@ -59,7 +59,7 @@ The hardware of this application consists of the following ordering codes:
 
 See [**Ordering Codes**](../ordering-codes.md) for more details.
 
-Firmware build shield options: `ctr_lrw ctr_lte ctr_x3_a ctr_z` or `ctr_lrw ctr_lte ctr_x3_b ctr_z`
+Firmware build variant: `west chester-update scale --variant "CHESTER Scale Z"`
 
 ## Measurement and Behavior
 
