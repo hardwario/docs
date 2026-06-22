@@ -45,6 +45,12 @@ Device status is indicated by a **multi-color LED (R/G/Y)** and communication is
 
 ---
 
+### NFC Configuration Architecture
+
+![Sticker - NFC Configuration Architecture](images/sticker-nfc.drawio.png)
+
+---
+
 ## Overview
 
 #### Sticker Clime - Enclosure, Mainboard, and Battery Holder
@@ -61,31 +67,32 @@ Device status is indicated by a **multi-color LED (R/G/Y)** and communication is
 
 ---
 
-## Schematics
+## Hardware Schematics
 
-### MCU
+### Power
 
-![Sticker - MCU](images/mcu.png)
+**[Download Power Schematic (PDF)](hardware-diagrams/power.pdf)**
+![Sticker - Power](images/power.png)
 
 ### Antenna
 
+**[Download Antenna Schematic (PDF)](hardware-diagrams/antenna.pdf)**
 ![Sticker - Antenna](images/antenna.png)
+
+### MCU
+
+**[Download MCU Schematic (PDF)](hardware-diagrams/mcu.pdf)**
+![Sticker - MCU](images/mcu.png)
 
 ### Sensors
 
+**[Download Sensors Schematic (PDF)](hardware-diagrams/sensors.pdf)**
 ![Sticker - Sensors](images/sensors.png)
 
 ### NFC
 
+**[Download NFC Schematic (PDF)](hardware-diagrams/nfc.pdf)**
 ![Sticker - NFC](images/nfc.png)
-
-### NFC Configuration Architecture
-
-![Sticker - NFC Configuration Architecture](images/sticker-nfc.drawio.png)
-
-### Power
-
-![Sticker - Power](images/power.png)
 
 ---
 

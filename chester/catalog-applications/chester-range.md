@@ -37,7 +37,7 @@ The catalog **CHESTER Range** hardware consists of the following ordering codes:
 
 See [**Ordering Codes**](../ordering-codes.md) for more details.
 
-Firmware build shield options: `ctr_lte ctr_mb7066_a`
+Firmware build variant: `west chester-update range --variant "CHESTER Range"`
 
 ### CHESTER Range Z
 
@@ -51,7 +51,7 @@ The catalog **CHESTER Range Z** hardware consists of the following ordering code
 
 See [**Ordering Codes**](../ordering-codes.md) for more details.
 
-Firmware build shield options: `ctr_lte ctr_mb7066_a ctr_z`
+Firmware build variant: `west chester-update range --variant "CHESTER Range Z"`
 
 ## Measurement and Behavior
 

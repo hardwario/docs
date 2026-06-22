@@ -47,7 +47,7 @@ The hardware of this application consists of the following ordering codes:
 
 See [**Ordering Codes**](../ordering-codes.md) for more details.
 
-Firmware build shield options: `ctr_barometer_tag ctr_ds18b20 ctr_lte ctr_s2 ctr_meteo_a ctr_soil_sensor`
+Firmware build variant: `west chester-update meteo --variant "CHESTER Meteo"`
 
 ### CHESTER Meteo Z
 
@@ -62,7 +62,7 @@ The hardware of this application consists of the following ordering codes:
 
 See [**Ordering Codes**](../ordering-codes.md) for more details.
 
-Firmware build shield options: `ctr_barometer_tag ctr_ds18b20 ctr_lte ctr_s2 ctr_meteo_a ctr_soil_sensor ctr_z`
+Firmware build variant: `west chester-update meteo --variant "CHESTER Meteo Z"`
 
 ## Measurement and Behavior
 
