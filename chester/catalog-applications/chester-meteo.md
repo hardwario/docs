@@ -594,11 +594,17 @@ Pressure is in **pascals**.
 
 ## Changelog
 
+### v3.5.1 — 2025-12-08
+
+- **Added**: New variant — **CHESTER Meteo M** (Modbus RTU — supports Lambrecht and Sensecap/OPM sensors; sensor type selectable via `meteo-type`)
+- **Added**: Soil sensor support — moisture and temperature via Modbus soil probes
+- **Added**: LoRaWAN support — single firmware binary for both LTE and LoRaWAN; mode selectable via `app config mode lte` / `app config mode lrw`
+- **Improved**: Pyranometer (solar irradiance) support
+
 ### v3.5.0 — 2025-12-03
 
 - **Added**: Soil sensor support — moisture and temperature measurement via 1-Wire soil probes (`soil_sensors` in JSON output)
 - **Added**: New variant — **CHESTER Meteo P** with pyranometer input for solar irradiance measurement
-- **Added**: LoRaWAN support — single firmware binary for both LTE and LoRaWAN; mode selectable via `app config mode lte` / `app config mode lrw`
 - **Changed**: Cloud v2 protocol adopted (CBOR encoding, new API endpoints); previous Cloud v1 firmware remains separately available
 
 :::info

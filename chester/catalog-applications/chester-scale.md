@@ -381,9 +381,9 @@ Learn how to activate and configure this feature in the [**CHESTER BLE Tag Subsy
 
 ## Changelog
 
-### v3.5.5 — 2026-06-12
+### v3.5.5 — 2026-06-22
 
-- **Added**: Runtime detection of **CHESTER-X3 in slot B** — a single firmware now covers both single-slot (A) and dual-slot (A+B) hardware; channels B1/B2 are skipped when the module is not installed
+- **Added**: Runtime detection of CHESTER-X3 module in slot B
 
 ### v3.5.0 — 2025-12-03
 

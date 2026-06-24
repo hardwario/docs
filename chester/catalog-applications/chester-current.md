@@ -599,11 +599,12 @@ In **HARDWARIO**, we have a calibration kit for **CHESTER Current** made of seve
 
 ## Changelog
 
-### v3.5.1
+### v3.5.1 — 2025-12-08
 
-- **Changed**: Standardized command structure for real-time channel interaction and calibration.
-- **Changed**: Refreshed default configuration profiles and system parameters to align with current firmware logic.
-- **Changed**: Documentation and parameter tables updated to reflect the latest system architecture and naming standards.
+- **Added**: Shell commands for real-time per-channel calibration — set zero and span points interactively
+- **Added**: Downlink watchdog — detects loss of cloud communication
+- **Improved**: LoRaWAN reliability and encoding
+- **Fixed**: Calibration range validation
 
 ### v3.5.0 — 2025-12-03
 

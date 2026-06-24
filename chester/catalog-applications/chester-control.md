@@ -472,6 +472,10 @@ import TabItem from '@theme/TabItem';
 
 ## Changelog
 
+### v3.5.5 — 2026-06-22
+
+- **Changed**: Reduced memory footprint — soil sensor and thermometer data now dynamically allocated
+
 ### v3.5.0 — 2025-12-03
 
 - **Added**: LoRaWAN support — single firmware binary for both LTE and LoRaWAN; mode selectable via `app config mode lte` / `app config mode lrw`

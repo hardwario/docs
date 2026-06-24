@@ -14,7 +14,7 @@ This page tracks all notable changes across the CHESTER platform — including *
 
 :::info
 
-General platform updates are listed here. For application-specific changelogs, see the [**Catalog Application Changelogs**](#catalog-application-changelogs) table at the bottom of this page.
+This page tracks platform-level changes by **date**. For versioned SDK release notes and per-application changelogs, see the [**Catalog Application Changelog**](catalog-applications/changelog.md).
 
 :::
 
@@ -24,6 +24,15 @@ General platform updates are listed here. For application-specific changelogs, s
 
 <Tabs groupId="changelog-category">
 <TabItem value="all" label="Firmware & Applications" default>
+
+### 2026-06-22
+
+- **[SDK v3.5.5]** SDK **v3.5.5** released — [GitHub Release](https://github.com/hardwario/chester-sdk/releases/tag/v3.5.5) · [Detailed Changelog](catalog-applications/changelog.md#v355-2026-06-22)
+- **[FW/SDK]** Added RTC sync status API (`ctr_rtc_is_synced`, `ctr_rtc_get_ts_ms`, `ctr_rtc_set_event_cb`)
+- **[FW/SDK]** Fixed power consumption regression on CHESTER board (vbatt removed)
+- **[FW/SDK]** Added TMP112 shutdown and one-shot power modes
+- **[FW/SDK]** Fixed TLA2024 ADC initialization priority
+- **[FW/SDK]** Switched to git tag-based versioning
 
 ### 2026-04-27
 
@@ -170,13 +179,13 @@ The table below links directly to the changelog section of each catalog applicat
 
 | Application | Changelog | Last Updated |
 |---|---|---|
-| CHESTER Clime | [Changelog](catalog-applications/chester-clime#changelog) | 2026-04-01 |
-| CHESTER Control | [Changelog](catalog-applications/chester-control#changelog) | 2026-04-01 |
-| CHESTER Current | [Changelog](catalog-applications/chester-current#changelog) | 2026-04-01 |
-| CHESTER Meteo | [Changelog](catalog-applications/chester-meteo#changelog) | 2026-04-01 |
+| CHESTER Clime | [Changelog](catalog-applications/chester-clime#changelog) | 2026-06-24 |
+| CHESTER Control | [Changelog](catalog-applications/chester-control#changelog) | 2026-06-22 |
+| CHESTER Current | [Changelog](catalog-applications/chester-current#changelog) | 2026-06-24 |
+| CHESTER Meteo | [Changelog](catalog-applications/chester-meteo#changelog) | 2026-06-24 |
 | CHESTER Motion | [Changelog](catalog-applications/chester-motion#changelog) | 2026-04-01 |
 | CHESTER Push | [Changelog](catalog-applications/chester-push#changelog) | 2026-04-01 |
 | CHESTER Range | [Changelog](catalog-applications/chester-range#changelog) | 2026-04-01 |
-| CHESTER Scale | [Changelog](catalog-applications/chester-scale#changelog) | 2026-04-01 |
+| CHESTER Scale | [Changelog](catalog-applications/chester-scale#changelog) | 2026-06-22 |
 | CHESTER Serial | [Changelog](catalog-applications/chester-serial#changelog) | 2026-04-01 |
-| CHESTER wM-Bus | [Changelog](catalog-applications/chester-wm-bus#changelog) | 2026-04-01 |
+| CHESTER wM-Bus | [Changelog](catalog-applications/chester-wm-bus#changelog) | 2026-06-24 |
