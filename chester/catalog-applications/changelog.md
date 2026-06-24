@@ -9,6 +9,41 @@ toc_max_heading_level: 3
 
 This page tracks all notable changes in CHESTER catalog application firmware since **v3.0.0** (Cloud v2 migration).
 
+:::tip Latest Release
+
+**SDK v3.5.5** (2026-06-22) — [GitHub Release](https://github.com/hardwario/chester-sdk/releases/tag/v3.5.5) · [Firmware Downloads](catalog-applications#application-firmware)
+
+:::
+
+:::info
+
+This changelog covers **SDK version releases** and catalog application changes. For a date-based log of all platform changes including hardware revisions, see the [**CHESTER Platform Changelog**](/chester/changelog).
+
+:::
+
+---
+
+## v3.5.5 (2026-06-22)
+
+*NCS **2.9.0** · Zephyr **3.7.99** · [GitHub Release](https://github.com/hardwario/chester-sdk/releases/tag/v3.5.5)*
+
+### SDK / Common
+- LED blink changed to non-blocking, rate-limited approach — prevents blocking during blink sequences
+- LoRaWAN payload for 8-channel X0 variant split into two messages to comply with 51-byte payload limit
+- Added RTC sync status API: `ctr_rtc_is_synced()`, `ctr_rtc_get_ts_ms()`, `ctr_rtc_set_event_cb()`
+- Switched to git tag-based versioning (VERSION files removed)
+- Fixed TLA2024 ADC initialization priority
+- Fixed power consumption regression on CHESTER board (vbatt removed)
+- Added TMP112 shutdown and one-shot power modes
+- Lowered W1 thermometer slots (10 → 5) and soil sensor slots (10 → 3)
+- Extended electricity meter drivers; CBOR encoding switched to native float32
+
+### CHESTER Scale
+- Added runtime detection of CHESTER-X3 in slot B
+
+### CHESTER Control
+- Reduced memory footprint — soil sensor and thermometer data now dynamically allocated
+
 ---
 
 ## v3.5.4 (2026-04-14)

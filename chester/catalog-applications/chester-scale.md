@@ -377,6 +377,10 @@ Learn how to activate and configure this feature in the [**CHESTER BLE Tag Subsy
 
 ## Changelog
 
+### v3.5.5 — 2026-06-22
+
+- **Added**: Runtime detection of CHESTER-X3 module in slot B
+
 ### v3.5.0 — 2025-12-03
 
 - **Added**: New variant — **CHESTER Scale Z** with CHESTER-Z1 backup module support

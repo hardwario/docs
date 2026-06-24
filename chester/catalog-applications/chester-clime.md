@@ -1063,6 +1063,11 @@ In each structure with the current configuration, there are six aggregated value
 
 ## Changelog
 
+### v3.5.4 — 2026-04-14
+
+- **Changed**: Runtime CHESTER-Z detection — single firmware now works with or without CHESTER-Z module; separate **CHESTER Clime Z** variant removed
+- **Fixed**: Build failure for IAQ variant when both CHESTER-Z and CHESTER-X10 features are enabled simultaneously
+
 ### v3.5.1 — 2025-12-08
 
 - **Added**: New variants — **CHESTER Clime SPS30** (particulate matter: PM1/PM2.5/PM10) and **CHESTER Clime Radon** (radon gas concentration)

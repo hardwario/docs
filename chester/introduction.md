@@ -67,3 +67,9 @@ TODO Enable these articles
 
 * To see the complete reference of the product certification - see the article:<br/>
   [**Product Certification**](./product-certification.md)
+
+* For the latest SDK releases, firmware versions, and per-application changes - see the article:<br/>
+  [**Catalog Application Changelog**](catalog-applications/changelog.md)
+
+* For the complete platform log including all SDK changes and hardware revisions - see the article:<br/>
+  [**CHESTER Platform Changelog**](./changelog.md)

@@ -25,6 +25,29 @@ Firmware source: [hardwario/sticker-firmware](https://github.com/hardwario/stick
 <Tabs groupId="changelog-category">
 <TabItem value="all" label="Firmware & Applications" default>
 
+### 2026-05-25 — v1.3.4
+
+- **[FW]** Unified alarm/event delivery — immediate LoRaWAN send and centralized LED handling
+- **[FW]** Fixed US915/AU915 sub-band selection and NFC `sub_band` field ingestion
+- **[FW]** Fixed LoRaWAN 1.0.x OTAA — AppKey now correctly fed into NwkKey slot
+- **[FW]** App sensor sample timer now starts even on partial sensor init failure
+
+### 2026-05-15 — v1.3.2 / v1.3.3
+
+- **[FW]** LoRaWAN sync word switches to private only when explicitly configured
+- **[FW]** Calibration mode forces public LoRaWAN network
+- **[FW]** Added ChirpStack v3 decoder compatibility wrapper (`ttn.js`)
+
+### 2026-05-14 — v1.3.1
+
+- **[FW]** Fixed calibration mode — activates when `config calibration true` is set via shell or NFC, not only on dual-magnet detection at boot
+- **[FW]** Calibration flag cleared at start of calibration init — run is one-shot (2h deadline or earlier reset returns device to normal OTAA)
+
+### 2026-05-04 — v1.3.0
+
+- **[FW]** Calibration mode with dual-magnet Hall sensor detection (see 2026-04-21)
+- **[FW]** Comprehensive bug fix release: LoRaWAN state machine, DS28E17, sensor init, NFC config ingestion (see 2026-02-17 and 2026-04-01 for full details)
+
 ### 2026-04-21
 
 - **[FW]** Added calibration mode with Hall sensor activation

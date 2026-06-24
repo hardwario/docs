@@ -440,6 +440,13 @@ For the complete list and detailed information, see the documentation here:
 
 ## Changelog
 
+### v3.5.1 — 2025-12-08
+
+- **Added**: Enroll (teach) mode for wireless meter pairing
+- **Added**: Scan-all mode with cloud-side decode configuration support
+- **Added**: Shell send command for manual packet injection
+- **Added**: Manufacturer field in decoded data
+
 ### v3.5.0 — 2025-12-03
 
 - **Fixed**: Receiving of long wM-Bus packets (previously truncated or dropped)
