@@ -46,6 +46,13 @@ This changelog covers **SDK version releases** and catalog application changes. 
 
 ---
 
+## v3.5.5 (2026-06-12)
+
+### CHESTER Scale
+- Added runtime detection of CHESTER-X3 in slot B — single firmware now covers both single-slot (A) and dual-slot (A+B) hardware; channels B1/B2 are skipped with an info log when the module is absent instead of emitting measurement errors
+
+---
+
 ## v3.5.4 (2026-04-14)
 
 ### SDK / Common

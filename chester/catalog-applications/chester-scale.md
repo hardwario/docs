@@ -46,6 +46,10 @@ See [**Ordering Codes**](../ordering-codes.md) for more details.
 
 Firmware build variant: `west chester-update scale --variant "CHESTER Scale"`
 
+:::info
+Since **v3.5.5**, the firmware built with `ctr_x3_b` detects the CHESTER-X3 module in slot B at runtime. A single firmware therefore covers both single-slot (A only) and dual-slot (A+B) hardware — channels B1/B2 are skipped automatically when the slot B module is not installed.
+:::
+
 ### CHESTER Scale Z {#chester-scale-z}
 
 The catalog application **CHESTER Scale Z** includes backup battery support for uninterrupted operation.

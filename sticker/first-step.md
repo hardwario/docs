@@ -1,5 +1,5 @@
 ---
-slug: getting-started
+slug: first-step
 title: Getting Started
 ---
 import Image from '@theme/IdealImage';
@@ -9,9 +9,7 @@ import Image from '@theme/IdealImage';
 Welcome! This page helps you **power up (revive)** your STICKER and choose what to do next:
 - connect it to **ChirpStack**,
 - connect it to **The Things Stack (TTS)**,
-- or use **your own LoRaWAN network**,
-and then visualize data in **Ubidots** or **ThingsBoard**.
-
+- or use **your own LoRaWAN network**
 ---
 
 ## Before you start
@@ -27,7 +25,6 @@ For detailed technical specifications of the hardware, please refer to the [**Ha
 - **2× AA batteries**
 - A **LoRaWAN gateway** within range (your own or a public network gateway)
 - A **LoRaWAN Network Server** (ChirpStack / TTS / other)
-- (Optional) A dashboard platform (Ubidots / ThingsBoard)
 
 #### Useful links
 - STICKER overview: https://docs.hardwario.com/sticker/
@@ -56,7 +53,7 @@ https://docs.hardwario.com/sticker/catalog-applications/catalog-applications/
 
 ---
 
-## 2) “Revive” STICKER
+## 2) Set up your STICKER
 
 1. **Open the enclosure** and access the battery holder.
 2. **Insert two AA cells** (check polarity).
@@ -78,9 +75,6 @@ A HARDWARIO provisioning and configuration application using NFC is currently un
 
 ## 3) Choose your LoRaWAN backend
 
-You always need:
-**STICKER → (LoRa radio) → Gateway → Network Server → Application/Cloud/Dashboard**
-
 ### ChirpStack v4
 Best if you want a private LoRaWAN network you control.
 
@@ -88,7 +82,7 @@ Start here (HARDWARIO guide):
 - **https://docs.hardwario.com/sticker/lorawan-network-server/lorawan-chirpstack**
 
 Step-by-step sections:
-- Installation: https://docs.hardwario.com/ember/chirpstack/chirpstack-installation
+- Installation: https://docs.hardwario.com/apps/chirpstack/chirpstack-installation
 - Gateways: https://docs.hardwario.com/apps/chirpstack/chirpstack-configuration/chirpstack-gateways
 - End devices: https://docs.hardwario.com/apps/chirpstack/chirpstack-configuration/chirpstack-end-devices
 - Payload decoding: https://docs.hardwario.com/apps/chirpstack/chirpstack-configuration/chirpstack-decoding
@@ -106,37 +100,6 @@ Step-by-step sections:
 - Gateways: https://docs.hardwario.com/apps/the-things-stack/tts-configuration/tts-gateways
 - End devices: https://docs.hardwario.com/apps/the-things-stack/tts-configuration/tts-end-devices
 - STICKER **Decoder**: https://github.com/hardwario/sticker-firmware/blob/main/app/decoder/ttn.js
-
----
-
-### Self-Hosted LoRaWAN Server
-If you already operate a LoRaWAN backend (or a local LoRaWAN stack), integrate STICKER as a standard LoRaWAN end device:
-
-- Register the device in your NS
-- Use the correct **frequency plan/region**
-- Configure keys / activation method required by your firmware
-- Add a [**payload decoder**](https://github.com/hardwario/sticker-firmware/blob/main/app/decoder/ttn.js) (so you get engineering values)
-- Forward data via **MQTT / Webhooks / HTTP** to your application
-
----
-
-## 4) Visualize data
-
-### Ubidots
-HARDWARIO guide:
-- **https://docs.hardwario.com/apps/ubidots/index/**
-
-Useful links:
-- Ubidots (HARDWARIO instance): https://ubidots.hardwario.com
-- Ubidots official: https://ubidots.com
-
-### ThingsBoard
-HARDWARIO guide:
-- **https://docs.hardwario.com/apps/thingsboard/index/**
-
-Useful links:
-- ThingsBoard (HARDWARIO instance): https://thingsboard.hardwario.com
-- ThingsBoard official: https://thingsboard.io
 
 ---
 

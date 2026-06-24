@@ -21,9 +21,12 @@ When the device wakes up on battery power, it reads the NFC tag, applies the sto
 
 The following parameters can be set via NFC:
 - LoRaWAN region, network type, activation mode, and keys
-- Sampling and report intervals
-- Alarm thresholds (temperature, humidity, pressure)
-- Input and hall sensor notification settings
+- Sampling, aggregation and report intervals
+- Alarm thresholds (temperature, humidity, pressure, external T1/T2)
+- Hall and external input notification settings
+- Temperature corrections
+- Capability flags
+- Calibration mode
 
 :::info
 A HARDWARIO NFC provisioning and configuration application is currently under development.
@@ -64,21 +67,12 @@ config show
 
 ---
 
-### Device Identity
-
-| Command | Argument | Description |
-|---|---|---|
-| `config serial-number` | 10 decimal digits | Device serial number |
-| `config secret-key` | 32 hex digits | Device secret key |
-| `config nonce-counter` | Unsigned integer | Cryptographic nonce counter |
-
----
-
 ### Reporting Intervals
 
 | Command | Argument | Description |
 |---|---|---|
 | `config interval-sample` | `0` or `5`–`3600` (seconds) | How often the device samples sensors. `0` means sample immediately before each report. |
+| `config interval-aggreg` | `0`–`86400` (seconds) | How often the device aggregates samples. `0` means aggregation is disabled. |
 | `config interval-report` | `60`–`86400` (seconds) | How often the device sends an uplink report. Default: `900` (15 minutes). |
 
 **Example** — set report interval to 10 minutes:
