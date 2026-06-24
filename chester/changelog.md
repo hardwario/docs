@@ -31,7 +31,6 @@ This page tracks platform-level changes by **date**. For versioned SDK release n
 - **[FW/SDK]** Added RTC sync status API (`ctr_rtc_is_synced`, `ctr_rtc_get_ts_ms`, `ctr_rtc_set_event_cb`)
 - **[FW/SDK]** Fixed power consumption regression on CHESTER board (vbatt removed)
 - **[FW/SDK]** Added TMP112 shutdown and one-shot power modes
-- **[FW/SDK]** Fixed TLA2024 ADC initialization priority
 - **[FW/SDK]** Switched to git tag-based versioning
 
 ### 2026-04-27
