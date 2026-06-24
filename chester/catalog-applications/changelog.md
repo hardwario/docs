@@ -32,24 +32,15 @@ This changelog covers **SDK version releases** and catalog application changes. 
 - LoRaWAN payload for 8-channel X0 variant split into two messages to comply with 51-byte payload limit
 - Added RTC sync status API: `ctr_rtc_is_synced()`, `ctr_rtc_get_ts_ms()`, `ctr_rtc_set_event_cb()`
 - Switched to git tag-based versioning (VERSION files removed)
-- Fixed TLA2024 ADC initialization priority
 - Fixed power consumption regression on CHESTER board (vbatt removed)
 - Added TMP112 shutdown and one-shot power modes
-- Lowered W1 thermometer slots (10 → 5) and soil sensor slots (10 → 3)
 - Extended electricity meter drivers; CBOR encoding switched to native float32
 
 ### CHESTER Scale
-- Added runtime detection of CHESTER-X3 in slot B
+- Added runtime detection of CHESTER-X3 in slot B — single firmware now covers both single-slot (A) and dual-slot (A+B) hardware; channels B1/B2 are skipped with an info log when the module is absent instead of emitting measurement errors
 
 ### CHESTER Control
 - Reduced memory footprint — soil sensor and thermometer data now dynamically allocated
-
----
-
-## v3.5.5 (2026-06-12)
-
-### CHESTER Scale
-- Added runtime detection of CHESTER-X3 in slot B — single firmware now covers both single-slot (A) and dual-slot (A+B) hardware; channels B1/B2 are skipped with an info log when the module is absent instead of emitting measurement errors
 
 ---
 
