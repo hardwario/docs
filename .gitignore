@@ -24,3 +24,7 @@ yarn-error.log*
 
 # IDE
 .idea
+
+# Claude context lives in hardwario/website-admin, not here
+.claude/
+CLAUDE.md

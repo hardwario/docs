@@ -34,7 +34,7 @@ const config = {
           routeBasePath: 'chester',
           path: 'chester',
           sidebarPath: require.resolve('./sidebars-chester.js'),
-          editUrl: 'https://github.com/hardwario/docs/edit/main',
+          editUrl: 'https://github.com/hardwario/website-hardwario-docs/edit/main',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -64,7 +64,7 @@ const config = {
         path: 'ember',
         routeBasePath: 'ember',
         sidebarPath: require.resolve('./sidebars-ember.js'),
-        editUrl: 'https://github.com/hardwario/docs/edit/main',
+        editUrl: 'https://github.com/hardwario/website-hardwario-docs/edit/main',
       }),
     ],
     [
@@ -74,7 +74,7 @@ const config = {
         path: 'fiber',
         routeBasePath: 'fiber',
         sidebarPath: require.resolve('./sidebars-fiber.js'),
-        editUrl: 'https://github.com/hardwario/docs/edit/main',
+        editUrl: 'https://github.com/hardwario/website-hardwario-docs/edit/main',
       }),
     ],
     [
@@ -84,7 +84,7 @@ const config = {
         path: 'tapper',
         routeBasePath: 'tapper',
         sidebarPath: require.resolve('./sidebars-tapper.js'),
-        editUrl: 'https://github.com/hardwario/docs/edit/main',
+        editUrl: 'https://github.com/hardwario/website-hardwario-docs/edit/main',
       }),
     ],
     [
@@ -94,7 +94,7 @@ const config = {
         path: 'tower',
         routeBasePath: 'tower',
         sidebarPath: require.resolve('./sidebars-tower.js'),
-        editUrl: 'https://github.com/hardwario/docs/edit/main',
+        editUrl: 'https://github.com/hardwario/website-hardwario-docs/edit/main',
       }),
     ],
     [
@@ -104,7 +104,7 @@ const config = {
         path: 'cloud',
         routeBasePath: 'cloud',
         sidebarPath: require.resolve('./sidebars-cloud.js'),
-        editUrl: 'https://github.com/hardwario/docs/edit/main',
+        editUrl: 'https://github.com/hardwario/website-hardwario-docs/edit/main',
       }),
     ],
     [
@@ -114,7 +114,7 @@ const config = {
         path: 'cloud-new',
         routeBasePath: 'cloud-new',
         sidebarPath: require.resolve('./sidebars-cloud-new.js'),
-        editUrl: 'https://github.com/hardwario/docs/edit/main',
+        editUrl: 'https://github.com/hardwario/website-hardwario-docs/edit/main',
       }),
     ],
     [
@@ -124,7 +124,7 @@ const config = {
         path: 'gauger',
         routeBasePath: 'gauger',
         sidebarPath: require.resolve('./sidebars-gauger.js'),
-        editUrl: 'https://github.com/hardwario/docs/edit/main',
+        editUrl: 'https://github.com/hardwario/website-hardwario-docs/edit/main',
       }),
     ],
     [
@@ -134,7 +134,7 @@ const config = {
         path: 'glider',
         routeBasePath: 'glider',
         sidebarPath: require.resolve('./sidebars-glider.js'),
-        editUrl: 'https://github.com/hardwario/docs/edit/main',
+        editUrl: 'https://github.com/hardwario/website-hardwario-docs/edit/main',
       }),
     ],
     [
@@ -163,7 +163,7 @@ const config = {
         path: 'milesight',
         routeBasePath: 'milesight',
         sidebarPath: require.resolve('./sidebars-milesight.js'),
-        editUrl: 'https://github.com/hardwario/docs/edit/main',
+        editUrl: 'https://github.com/hardwario/website-hardwario-docs/edit/main',
       }),
     ],
     // ➜ NEW: RAKwireless docs plugin
@@ -174,7 +174,7 @@ const config = {
         path: 'rakwireless',
         routeBasePath: 'rakwireless',
         sidebarPath: require.resolve('./sidebars-rakwireless.js'),
-        editUrl: 'https://github.com/hardwario/docs/edit/main',
+        editUrl: 'https://github.com/hardwario/website-hardwario-docs/edit/main',
       }),
     ],
     [
