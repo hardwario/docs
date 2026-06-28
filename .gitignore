@@ -30,3 +30,7 @@ yarn-error.log*
 # Claude context lives in hardwario/website-admin, not here
 .claude/
 CLAUDE.md
+
+.dev.vars*
+!.dev.vars.example
+!.env.example
