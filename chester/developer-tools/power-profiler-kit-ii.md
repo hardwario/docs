@@ -167,4 +167,4 @@ When you click **Start** to capture data, your **PPK2** will start pulsing in co
 
 Here is short video tutorial on **how to use Power Profiler Kit II** from **Nordic Semiconductor**.
 
-<ReactPlayer controls url='https://youtu.be/B42lPvkUSoc' />
+<ReactPlayer controls src='https://youtu.be/B42lPvkUSoc' />
