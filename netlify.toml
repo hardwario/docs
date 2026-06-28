@@ -1,3 +1,7 @@
+[build]
+  command = "npm run build"
+  publish = "build"
+
 [[redirects]]
   from = "http://doc.hardwario.com/*"
   to = "https://docs.hardwario.com/:splat"
@@ -216,7 +220,7 @@
 
 [[redirects]]
   from = "https://tower.hardwario.com/en/latest/integrations/grafana--visualization/*"
-  to = "https://docs.hardwario.com/tower/platform-integrations/grafana-viforsualization/"
+  to = "https://docs.hardwario.com/tower/platform-integrations/grafana-visualization/"
   status = 301
   force = true
 
@@ -670,12 +674,6 @@
   force = true
 
 [[redirects]]
-  from = "https://docs.hardwario.com/chester/extension-modules"
-  to = "https://docs.hardwario.com/chester/extension-modules/extension-modules"
-  status = 301
-  force = true
-
-[[redirects]]
   from = "https://docs.hardwario.com/chester/chester-x3"
   to = "https://docs.hardwario.com/chester/extension-modules/chester-x3"
   status = 301
@@ -742,18 +740,6 @@
   force = true
 
 [[redirects]]
-  from = "https://docs.hardwario.com/chester/cellular-networks"
-  to = "https://docs.hardwario.com/chester/platform-management/cellular-networks"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://docs.hardwario.com/chester/hardwario-manager"
-  to = "https://docs.hardwario.com/chester/platform-management/hardwario-manager"
-  status = 301
-  force = true
-
-[[redirects]]
   from = "https://docs.hardwario.com/chester/power-profiler-kit-ii"
   to = "https://docs.hardwario.com/chester/developer-tools/power-profiler-kit-ii"
   status = 301
@@ -773,13 +759,13 @@
 
 [[redirects]]
   from = "https://docs.hardwario.com/chester/connector-description"
-  to = "https://docs.hardwario.com/chester/hardware-description/connector-description"
+  to = "https://docs.hardwario.com/chester/hardware-description/chester-m#connector-description"
   status = 301
   force = true
 
 [[redirects]]
   from = "https://docs.hardwario.com/chester/basic-parameters"
-  to = "https://docs.hardwario.com/chester/hardware-description/basic-parameters"
+  to = "https://docs.hardwario.com/chester/hardware-description/chester-m#basic-parameters"
   status = 301
   force = true
 
@@ -791,7 +777,7 @@
 
 [[redirects]]
   from = "https://docs.hardwario.com/chester/block-diagram"
-  to = "https://docs.hardwario.com/chester/hardware-description/block-diagram"
+  to = "https://docs.hardwario.com/chester/hardware-description/chester-m#block-diagram"
   status = 301
   force = true
 
@@ -809,7 +795,7 @@
 
 [[redirects]]
   from = "https://docs.hardwario.com/chester/chester-input"
-  to = "https://docs.hardwario.com/chester/catalog-applications/chester-input"
+  to = "https://docs.hardwario.com/chester/catalog-applications/legacy/chester-input"
   status = 301
   force = true
 

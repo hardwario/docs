@@ -144,6 +144,7 @@ const config = {
         path: 'apps',
         routeBasePath: 'apps',
         sidebarPath: require.resolve('./sidebars-apps.js'),
+        editUrl: 'https://github.com/hardwario/website-hardwario-docs/edit/main',
       }),
     ],
     [
@@ -153,6 +154,7 @@ const config = {
         path: 'sticker',
         routeBasePath: 'sticker',
         sidebarPath: require.resolve('./sidebars-sticker.js'),
+        editUrl: 'https://github.com/hardwario/website-hardwario-docs/edit/main',
       }),
     ],
     // ➜ Milesight docs plugin
@@ -244,7 +246,7 @@ const config = {
             ],
           },
           {
-            href: 'https://github.com/hardwario/docs',
+            href: 'https://github.com/hardwario/website-hardwario-docs',
             label: 'GitHub',
             position: 'right',
           },
@@ -268,7 +270,7 @@ const config = {
         links: [
           {
             title: 'Sites',
-            items: [{ label: 'Homepage', to: 'https://hardwario.com' }],
+            items: [{ label: 'Homepage', href: 'https://hardwario.com' }],
           },
           {
             title: 'Community',
