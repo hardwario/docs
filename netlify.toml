@@ -674,6 +674,11 @@
   force = true
 
 [[redirects]]
+  from = "https://docs.hardwario.com/chester/extension-modules"
+  to = "https://docs.hardwario.com/chester/extension-modules/extension-modules"
+  status = 301
+
+[[redirects]]
   from = "https://docs.hardwario.com/chester/chester-x3"
   to = "https://docs.hardwario.com/chester/extension-modules/chester-x3"
   status = 301
@@ -738,6 +743,16 @@
   to = "https://docs.hardwario.com/chester/extension-modules/chester-x8"
   status = 301
   force = true
+
+[[redirects]]
+  from = "https://docs.hardwario.com/chester/cellular-networks"
+  to = "https://docs.hardwario.com/chester/platform-connectivity/cellular-networks"
+  status = 301
+
+[[redirects]]
+  from = "https://docs.hardwario.com/chester/hardwario-manager"
+  to = "https://docs.hardwario.com/chester/platform-connectivity/hardwario-manager"
+  status = 301
 
 [[redirects]]
   from = "https://docs.hardwario.com/chester/power-profiler-kit-ii"
