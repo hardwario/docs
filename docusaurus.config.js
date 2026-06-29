@@ -14,6 +14,32 @@ const config = {
   onBrokenLinks: 'throw',
   favicon: 'img/favicon.ico',
 
+  // Organization structured data (schema.org JSON-LD) — consistent across HARDWARIO sites
+  headTags: [
+    {
+      tagName: 'script',
+      attributes: { type: 'application/ld+json' },
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'Organization',
+        name: 'HARDWARIO',
+        legalName: 'HARDWARIO a.s.',
+        url: 'https://www.hardwario.com',
+        logo: 'https://docs.hardwario.com/img/logo.svg',
+        description:
+          'Czech manufacturer of industrial / wireless IoT (LPWAN) hardware and software.',
+        address: { '@type': 'PostalAddress', addressCountry: 'CZ' },
+        areaServed: 'Europe',
+        sameAs: [
+          'https://www.linkedin.com/company/13187032',
+          'https://twitter.com/hardwario_en',
+          'https://www.youtube.com/c/hardwario',
+          'https://github.com/hardwario',
+        ],
+      }),
+    },
+  ],
+
   // ✅ Přesunuto z kořene: onBrokenMarkdownLinks → markdown.hooks.onBrokenMarkdownLinks
   markdown: {
     hooks: {
@@ -196,6 +222,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      image: 'img/social-card.jpg',
       navbar: {
         logo: {
           alt: 'HARDWARIO Logo',
