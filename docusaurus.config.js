@@ -66,6 +66,16 @@ const config = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
+        sitemap: {
+          // Emit <lastmod> so crawlers can prioritize fresh pages, and keep the
+          // Docusaurus boilerplate (the tutorial /markdown-page and the /search
+          // UI) out of the sitemap.
+          lastmod: 'date',
+          changefreq: 'weekly',
+          priority: 0.5,
+          ignorePatterns: ['/search', '/markdown-page'],
+          filename: 'sitemap.xml',
+        },
       }),
     ],
   ],
