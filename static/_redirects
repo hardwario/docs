@@ -47,3 +47,6 @@
 /chester/hardware-description/connector-description  /chester/hardware-description/chester-m                        301
 /chester/hardware-description/layout-placement       /chester/hardware-description/chester-m                        301
 /chester/hardware-description/schematic-diagram      /chester/hardware-description/chester-m                        301
+
+# Fixed a typo'd slug (chirpstack-ataa -> chirpstack-otaa)
+/sticker/lorawan-network-server/chirpstack-ataa      /sticker/lorawan-network-server/chirpstack-otaa                301

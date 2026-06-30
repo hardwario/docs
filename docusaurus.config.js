@@ -308,7 +308,7 @@ const config = {
         links: [
           {
             title: 'Sites',
-            items: [{ label: 'Homepage', href: 'https://hardwario.com' }],
+            items: [{ label: 'Homepage', href: 'https://www.hardwario.com' }],
           },
           {
             title: 'Community',

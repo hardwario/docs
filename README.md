@@ -9,7 +9,7 @@ own doc set served under `/<product>/`.
 
 - **Docusaurus 3** — React + MDX static site generator
 - **Multi-instance docs** — one `@docusaurus/plugin-content-docs` instance per product
-- **Algolia DocSearch** — site-wide search (index `hardwario`)
+- **Local search** — offline site-wide search via `@easyops-cn/docusaurus-search-local`
 - **Cloudflare Workers** — hosting (static assets, auto-deploy via Workers Builds)
 
 ## Develop
@@ -25,7 +25,7 @@ npm run clear      # clear the Docusaurus cache
 ## Project structure
 
 ```
-docusaurus.config.js     # site config: presets, plugin instances, navbar, footer, Algolia, theme
+docusaurus.config.js     # site config: presets, plugin instances, navbar, footer, search, theme
 sidebars-<product>.js    # one sidebar per product instance
 <product>/               # one content folder per product, served at /<product>/:
                          #   chester, sticker, ember, fiber, gauger, tapper, tower,
@@ -63,8 +63,9 @@ website-admin repo for the multi-instance details.
 
 ## Search
 
-Algolia DocSearch, configured in `docusaurus.config.js` (`themeConfig.algolia`,
-index `hardwario`). Contextual search is disabled — search spans all products.
+Offline/local search via the `@easyops-cn/docusaurus-search-local` theme,
+configured in `docusaurus.config.js` (the `themes` array). The index is built at
+`npm run build`; contextual search is disabled, so search spans all products.
 
 ## Deployment
 

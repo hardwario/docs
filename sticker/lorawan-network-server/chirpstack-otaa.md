@@ -1,5 +1,5 @@
 ---
-slug: chirpstack-ataa
+slug: chirpstack-otaa
 title: ChirpStack v4 – OTAA
 ---
 import Image from '@theme/IdealImage';
