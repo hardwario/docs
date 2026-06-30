@@ -10,7 +10,7 @@ own doc set served under `/<product>/`.
 - **Docusaurus 3** — React + MDX static site generator
 - **Multi-instance docs** — one `@docusaurus/plugin-content-docs` instance per product
 - **Algolia DocSearch** — site-wide search (index `hardwario`)
-- **Netlify** — hosting
+- **Cloudflare Workers** — hosting (static assets, auto-deploy via Workers Builds)
 
 ## Develop
 
@@ -34,7 +34,8 @@ src/
   pages/index.js         # custom homepage
   css/custom.css         # global styles / CSS variables
 static/                  # assets; reference images by absolute path (/img/…)
-netlify.toml             # Netlify build + redirects
+                         #   incl. static/_redirects (same-domain slug redirects)
+wrangler.jsonc           # Cloudflare Worker config — serves build/ as static assets
 ```
 
 The main preset is the `chester` instance; the others are configured in the
@@ -67,8 +68,9 @@ index `hardwario`). Contextual search is disabled — search spans all products.
 
 ## Deployment
 
-Hosted on **Netlify** — **pushing to `main` auto-deploys** (Netlify runs the
-build and publishes `build/`). After a push, confirm the live URL returns 200.
+Hosted on **Cloudflare Workers** (static assets) — **pushing to `main` auto-deploys**
+(Workers Builds runs `npm run build` then `npx wrangler deploy`, serving `build/`).
+After a push, confirm the live URL returns 200.
 `editUrl` in `docusaurus.config.js` points "Edit this page" links at this repo.
 
 ---

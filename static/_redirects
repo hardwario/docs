@@ -1,6 +1,6 @@
-# Cloudflare Pages redirects (migrated from netlify.toml).
+# Cloudflare Workers static-asset redirects (migrated from netlify.toml).
 # Same-domain CHESTER slug-fix redirects. Cross-domain (tower/chester/doc/cooper)
-# legacy-subdomain redirects live in zone-level Bulk Redirects, not here.
+# legacy-subdomain redirects live in the website-redirects Worker (in website-admin), not here.
 /chester/power-mgmt                                  /chester/power-management                                      301
 /chester/chester-z-over-j-link                       /chester/firmware-flashing/chester-z-over-j-link               301
 /chester/lte-modem-over-j-link                       /chester/firmware-flashing/lte-modem-over-j-link               301
