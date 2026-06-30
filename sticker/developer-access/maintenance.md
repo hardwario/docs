@@ -3,6 +3,11 @@ title: Maintenance
 ---
 import Image from '@theme/IdealImage';
 
+
+:::info Firmware v1.4.0
+`settings save` and `settings reset` also work on v1.3.x. **New in the upcoming STICKER firmware v1.4.0**: `settings erase` (full NVS wipe), and `settings reset` now keeps device identity + LoRaWAN credentials.
+:::
+
 # Maintenance (`settings`)
 
 The `settings` command persists and resets stored configuration over the developer shell (see [**Firmware Setup**](firmware-setup.md) for opening the console). A `config` change applies in RAM immediately but is lost on reboot until it is saved.

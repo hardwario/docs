@@ -3,6 +3,11 @@ title: Alarm Rules
 ---
 import Image from '@theme/IdealImage';
 
+
+:::info Firmware v1.4.0
+The functionality described on this page is part of the upcoming **STICKER firmware v1.4.0** and is not available in v1.3.x.
+:::
+
 # Alarm Rules (`alarm`)
 
 Alarms generate an immediate uplink when a condition is met. The rules are managed with the `alarm` command over the developer shell (see [**Firmware Setup**](firmware-setup.md) for opening the console). Two related `config` parameters control how often alarm uplinks are sent:

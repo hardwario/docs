@@ -24,6 +24,10 @@ To set up the firmware locally, flash a debug image, and open the console, follo
 
 ---
 
+:::info Firmware v1.4.0
+Several of the shell commands below — `clock`, `history`, the dynamic `alarm` rules, `settings erase`, and the renamed `ats` diagnostics — are new in the upcoming **STICKER firmware v1.4.0**.
+:::
+
 ## Shell command reference
 
 Once the console is open, configuration and diagnostics are entered as shell commands. Each command has its own page:

@@ -4,6 +4,11 @@ title: Downlink Commands
 ---
 import Image from '@theme/IdealImage';
 
+
+:::info Firmware v1.4.0
+The functionality described on this page is part of the upcoming **STICKER firmware v1.4.0** and is not available in v1.3.x.
+:::
+
 # Downlink Commands
 
 STICKER accepts commands as LoRaWAN **downlinks on fPort 85** and replies on fPort 85. Commands can request device info, change configuration, force a report, set alarm rules, replay history, reboot, and more.

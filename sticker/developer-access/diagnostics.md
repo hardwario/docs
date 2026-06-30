@@ -3,6 +3,11 @@ title: Diagnostics
 ---
 import Image from '@theme/IdealImage';
 
+
+:::info Firmware v1.4.0
+This diagnostics command was **renamed `tester` → `ats` in STICKER firmware v1.4.0**; its core subcommands also exist on v1.3.x (as `tester`). New in v1.4.0: `ats lrw reset`, `ats lrw compose`, `ats lrw lc`, `ats cmd lrw|nfc`, and the claim token shown by `ats device info`.
+:::
+
 # Diagnostics (`ats`)
 
 The `ats` command (Automated Test System, renamed from `tester` in v1.4.0) groups read-only diagnostics and bench-test helpers over the developer shell (see [**Firmware Setup**](firmware-setup.md) for opening the console). Unlike `config`, these commands do not change stored settings.

@@ -3,6 +3,11 @@ title: Sensor History
 ---
 import Image from '@theme/IdealImage';
 
+
+:::info Firmware v1.4.0
+The functionality described on this page is part of the upcoming **STICKER firmware v1.4.0** and is not available in v1.3.x.
+:::
+
 # Sensor History (`history`)
 
 Store-and-forward buffering records readings while the device is offline and replays them on request. Records survive power loss. Recording is enabled with two `config` parameters, and the buffer is inspected and managed with the `history` command over the developer shell (see [**Firmware Setup**](firmware-setup.md) for opening the console).

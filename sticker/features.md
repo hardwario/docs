@@ -4,6 +4,11 @@ title: Features
 ---
 import Image from '@theme/IdealImage';
 
+
+:::info Firmware v1.4.0
+The features highlighted on this page are new in the upcoming **STICKER firmware v1.4.0**. The baseline they build on — battery-powered operation with interval telemetry — already exists in v1.3.x.
+:::
+
 # Firmware Features
 
 This page describes notable behaviors of the STICKER firmware: how the device manages power, keeps its LoRaWAN connection healthy, and protects stored data. For the shell commands and configuration parameters that control these behaviors, see [**Developer Access**](developer-mode.md).
