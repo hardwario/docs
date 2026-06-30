@@ -8,7 +8,7 @@ const FeatureList = [
     title: 'CHESTER',
     subtitle: 'Configurable IoT Gateway',
     link: '/chester/',
-    src: '/img/chester.png',
+    src: '/img/chester.webp',
     width: 300,
     height: 200,
     description: (
@@ -21,7 +21,7 @@ const FeatureList = [
     title: 'STICKER',
     subtitle: 'LoRaWAN Sensor Platform',
     link: '/sticker/',
-    src: '/img/sticker.png',
+    src: '/img/sticker.webp',
     width: 300,
     height: 200,
     description: (
@@ -34,7 +34,7 @@ const FeatureList = [
     title: 'EMBER',
     subtitle: 'LoRaWAN IoT Hotspot',
     link: '/ember/',
-    src: '/img/ember.png',
+    src: '/img/ember.webp',
     width: 267,
     height: 200,
     description: (
@@ -47,7 +47,7 @@ const FeatureList = [
     title: 'FIBER',
     subtitle: 'Sensor IoT Monitor',
     link: '/fiber/',
-    src: '/img/fiber.png',
+    src: '/img/fiber.webp',
     width: 250,
     height: 200,
     description: (
@@ -60,7 +60,7 @@ const FeatureList = [
     title: 'GAUGER',
     subtitle: 'Wi-Fi/LAN Input Module',
     link: '/gauger/',
-    src: '/img/gauger.png',
+    src: '/img/gauger.webp',
     width: 200,
     height: 200,
     description: (
@@ -73,7 +73,7 @@ const FeatureList = [
     title: 'GLIDER',
     subtitle: 'Cellular IoT Sensor Logger',
     link: '/glider/',
-    src: '/img/glider.png',
+    src: '/img/glider.webp',
     width: 200,
     height: 200,
     description: (
@@ -86,7 +86,7 @@ const FeatureList = [
     title: 'TAPPER',
     subtitle: 'NFC Tag Reader',
     link: '/tapper/',
-    src: '/img/tapper.png',
+    src: '/img/tapper.webp',
     width: 200,
     height: 200,
     description: (
@@ -99,7 +99,7 @@ const FeatureList = [
     title: 'TOWER',
     subtitle: 'Pluggable IoT Platform',
     link: '/tower/',
-    src: '/img/tower.png',
+    src: '/img/tower.webp',
     width: 300,
     height: 200,
     description: (
@@ -125,7 +125,7 @@ const FeatureList = [
     title: 'APPS',
     subtitle: 'Dashboards and Applications',
     link: '/apps/',
-    src: '/img/apps.png',
+    src: '/img/apps.webp',
     width: 200,
     height: 200,
     description: (
