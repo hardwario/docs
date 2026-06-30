@@ -6,7 +6,7 @@ import Image from '@theme/IdealImage';
 
 
 :::info Firmware v1.4.0
-The features highlighted on this page are new in the upcoming **STICKER firmware v1.4.0**. The baseline they build on — battery-powered operation with interval telemetry — already exists in v1.3.x.
+The features on this page will be added in the upcoming **STICKER firmware v1.4.0**.
 :::
 
 # Firmware Features
