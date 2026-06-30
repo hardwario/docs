@@ -108,12 +108,12 @@ Step-by-step sections:
 STICKER can be configured to adjust reporting intervals, set alarm thresholds, or change LoRaWAN keys.
 
 Configuration is available via two methods:
-- **NFC** — configure with a smartphone, no tools needed (NFC app under development)
-- **Shell (RTT terminal)** — for developers via a debug connection
+- **NFC**: configure with a smartphone, no tools needed (NFC app under development)
+- **Shell (RTT terminal)**: for developers via a debug connection
 
 For a full list of all configuration parameters and commands, see:
 
-**[Configuration →](configuration)**
+**[Developer Access →](developer-mode)**
 
 ---
 
@@ -125,7 +125,7 @@ Typical next steps:
 
 - **Install the device in its final location** and verify long-term LoRaWAN coverage.
 - **Observe data for several hours or days** to confirm stability and expected update intervals.
-- **Adjust reporting behavior** — see [**Configuration**](https://docs.hardwario.com/sticker/configuration/) to tune sample and report intervals.
+- **Adjust reporting behavior**, see [**Developer Access**](https://docs.hardwario.com/sticker/developer-mode/) to tune sample and report intervals.
 - **Set alerts or thresholds** in your dashboard platform or using STICKER's built-in alarm feature.
 
 :::info
